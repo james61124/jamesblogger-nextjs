@@ -44,6 +44,39 @@ export default function Navbar() {
         },
       },
     },
+    {
+      label: "Travel",
+      path: {
+        pathname: "/travel",
+        query: {
+          json_path: "/metadata/travel_metadata.json",
+          title: "Travel Memories",
+          category: "travel"
+        },
+      },
+    },
+    {
+      label: "Program",
+      path: {
+        pathname: "/program",
+        query: {
+          json_path: "/metadata/program_metadata.json",
+          title: "Program Journey",
+          category: "program"
+        },
+      },
+    },
+    {
+      label: "Leetcode",
+      path: {
+        pathname: "/leetcode",
+        query: {
+          json_path: "/metadata/leetcode_metadata.json",
+          title: "Leetcoce Notes",
+          category: "leetcode"
+        },
+      },
+    },
   ];
 
   return (

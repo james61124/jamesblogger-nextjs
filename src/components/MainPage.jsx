@@ -40,10 +40,10 @@ export default function MainPage() {
         {/* 背景圖片 + 視差效果 */}
         <motion.div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/Guitar.JPEG')", y: backgroundY, opacity: 0.6 }}
+          style={{ backgroundImage: "url('/images/Guitar.JPEG')", y: backgroundY, opacity: 0.5 }}
         />
 
-        <div className="absolute inset-0 bg-black/20 mix-blend-overlay" />
+        <div className="absolute inset-0 bg-black/60 mix-blend-overlay" />
 
         {/* 內容區域 */}
         <div
