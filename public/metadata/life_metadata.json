@@ -1,0 +1,43 @@
+[
+    {
+        "title": "ASML 荷蘭總部實習全紀錄",
+        "date": "2025-02-21",
+        "author": "James",
+        "tags": [
+            "ASML",
+            "Veldhoven",
+            "Netherlands",
+            "Intern"
+        ],
+        "image": "/images/life/asml/asml.jpg",
+        "description": "分享我在荷蘭 ASML 總部實習半年的所見所聞，從科技巨頭的工作環境、多元文化的團隊合作，到歐洲生活的點滴體驗，這段經歷讓我開拓視野，學會在工作與生活間找到平衡，也深刻體會到旅行與成長的價值。",
+        "readTime": 8,
+        "path": "asml"
+    },
+    {
+        "title": "從琴弦到領導：我在吉他社的成長與挑戰",
+        "date": "2024-02-23",
+        "author": "James",
+        "tags": [
+            "NYCU",
+            "Guitar Club"
+        ],
+        "image": "/images/life/guitar-club/guitar-club.jpg",
+        "description": "我是交大吉他社 13 級社長，大二的社團生活於我而言，不僅僅是享受大學時光並結交新朋友，他是一個人生重要的歷練，也是一次對音樂認真地奉獻。",
+        "readTime": 5,
+        "path": "guitar-club"
+    },
+    {
+        "title": "梅竹黑客松籌備全紀錄",
+        "date": "2024-02-17",
+        "author": "James",
+        "tags": [
+            "NYCU",
+            "Hackathon"
+        ],
+        "image": "/images/life/meichu-hackathon-event-planning-leader/10th-meiChu-hackathon.jpg",
+        "description": "梅竹黑客松是全台最大的校園黑客松，先稍微介紹一下黑客松，黑客松其實就是「Hack」跟「Marathon」兩個字合在一起的結果，比賽期間參賽者須要在很短的時間內完成一個專案，這其中包含想法的發想以及專案的實作，算是挑戰性很高的一個比賽，因此籌備團隊的目的就是要確保活動順利的進行，並且通過一整年的準備，將過去的弊病解決並推陳出新，將這個活動越辦越好。",
+        "readTime": 5,
+        "path": "meichu-hackathon-event-planning-leader"
+    }
+]
