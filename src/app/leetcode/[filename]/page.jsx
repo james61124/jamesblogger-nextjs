@@ -1,5 +1,5 @@
 // app/article/leetcode/[fileName]/page.jsx
-import LeetcodeList from "../../../components/LeetcodeList";
+import LeetcodeList from "../../components/LeetcodeList";
 
 export default function LeetcodePage({ params }) {
   const { fileName } = params;

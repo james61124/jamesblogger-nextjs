@@ -33,10 +33,17 @@ export default function Navbar() {
   const hoverTextColor = isScrolled || !isHome ? "hover:text-black" : "hover:text-gray-300";
 
   const navLinks = [
-    // { label: "Life", path: "/article/life" },
-    // { label: "Travel", path: "/article/travel" },
-    // { label: "Program", path: "/article/program" },
-    // { label: "Leetcode", path: "/article/leetcode" },
+    {
+      label: "Life",
+      path: {
+        pathname: "/life",
+        query: {
+          json_path: "/metadata/life_metadata.json",
+          title: "Life Journey",
+          category: "life"
+        },
+      },
+    },
   ];
 
   return (

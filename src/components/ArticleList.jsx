@@ -1,15 +1,23 @@
+"use client";
+
 import { useState, useEffect } from "react";
-import { Link, useSearchParams } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion"; // ✨ 加入動畫
-import Pagination from "./Pagination";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
+import { useSearchParams } from "next/navigation";
+// import Pagination from "./Pagination";
 
 const articlesPerPage = 6;
 
 export default function ArticleListPage({ json_path, title, category }) {
   const [articles, setArticles] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [searchParams] = useSearchParams();
   const [realTitle, setTitle] = useState(title);
+  
+
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const selectedTag = searchParams.get("tag");
 
   useEffect(() => {
@@ -17,7 +25,7 @@ export default function ArticleListPage({ json_path, title, category }) {
       .then((response) => response.json())
       .then((data) => {
         const filteredData = selectedTag
-          ? data.filter(article => article.tags && article.tags.includes(selectedTag))
+          ? data.filter((article) => article.tags && article.tags.includes(selectedTag))
           : data;
 
         setArticles(filteredData);
@@ -70,17 +78,19 @@ export default function ArticleListPage({ json_path, title, category }) {
               transition={{ duration: 0.4, delay: index * 0.1 }}
             >
               <Link
-                to={`/${category}/${article.path}`}
+                href={`/${category}/${article.path}`}
                 className="group block overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-transform transform hover:-translate-y-2 bg-white"
               >
                 {/* 文章圖片 */}
-                <motion.img
-                  src={article.image}
-                  alt={article.title}
-                  className="w-full h-56 object-cover"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.3 }}
-                />
+                <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
+                  <Image
+                    src={article.image}
+                    alt={article.title}
+                    width={600}
+                    height={300}
+                    className="w-full h-56 object-cover"
+                  />
+                </motion.div>
                 {/* 文章內容 */}
                 <div className="p-6">
                   <h2 className="text-2xl font-semibold text-gray-900 group-hover:text-blue-600 transition-all">
@@ -89,9 +99,7 @@ export default function ArticleListPage({ json_path, title, category }) {
                   <p className="text-gray-600 mt-4 line-clamp-3">
                     {article.description}
                   </p>
-                  <p className="mt-6 text-sm text-gray-500">
-                    發佈日期：{article.date}
-                  </p>
+                  <p className="mt-6 text-sm text-gray-500">發佈日期：{article.date}</p>
 
                   {/* Tag 顯示區域 */}
                   {article.tags && article.tags.length > 0 && (
@@ -126,7 +134,7 @@ export default function ArticleListPage({ json_path, title, category }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <Pagination currentPage={currentPage} totalPages={totalPages} goToPage={goToPage} />
+        {/* <Pagination currentPage={currentPage} totalPages={totalPages} goToPage={goToPage} /> */}
       </motion.div>
     </div>
   );
