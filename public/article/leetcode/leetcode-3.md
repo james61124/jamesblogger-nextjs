@@ -4,7 +4,7 @@ date: "2025-03-03"
 author: James
 tags: String,Sliding Window,Hash Table
 difficulty: Medium
-image: /images/program/leetcode.jpeg
+image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 1
 ---

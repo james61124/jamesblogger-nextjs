@@ -4,7 +4,7 @@ date: "2025-03-03"
 author: James
 tags: Linked List,Two Pointers
 difficulty: Medium
-image: /images/program/leetcode.jpeg
+image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
 ---
