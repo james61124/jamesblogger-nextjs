@@ -39,7 +39,7 @@ export default function Navbar() {
         pathname: "/life",
         query: {
           json_path: "/metadata/life_metadata.json",
-          title: "Life Journey",
+          title: "Life Journal",
           category: "life"
         },
       },
@@ -50,7 +50,7 @@ export default function Navbar() {
         pathname: "/travel",
         query: {
           json_path: "/metadata/travel_metadata.json",
-          title: "Travel Memories",
+          title: "Journey Memories",
           category: "travel"
         },
       },
@@ -61,7 +61,7 @@ export default function Navbar() {
         pathname: "/program",
         query: {
           json_path: "/metadata/program_metadata.json",
-          title: "Program Journey",
+          title: "Program Notes",
           category: "program"
         },
       },
