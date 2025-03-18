@@ -5,14 +5,17 @@ import Article from "../../../components/Article";
 import { use } from "react";
 
 export default function CategoryPage({ params, searchParams }) {
-  const { category } = use(params);
+  // const { category } = use(params);
   const fileName = use(searchParams)?.file;
+  const json_path = use(searchParams)?.json_path; 
+  const title = use(searchParams)?.title;         
+  const category = use(searchParams)?.category; 
 
   if (!fileName) {
     return <h1 className="text-center text-3xl mt-10">請選擇一篇文章</h1>;
   }
 
-  return <Article category={category} fileName={fileName} />;
+  return <Article category={category} fileName={fileName} json_path={json_path} title={title}/>;
 }
 
 // 預先產生靜態頁面 (SEO 友好)

@@ -19,6 +19,7 @@ export default function LeetCodeList({ json_path, category }) {
   const [searchTag, setSearchTag] = useState("");
 
   const searchParams = useSearchParams();
+  const selectedTag = searchParams.get("tag");
   const router = useRouter(); // ✅ Next.js 用 useRouter 來導航
 
   useEffect(() => {
@@ -34,11 +35,10 @@ export default function LeetCodeList({ json_path, category }) {
   }, [json_path]);
 
   useEffect(() => {
-    const tagFromURL = searchParams.get("tag");
-    if (tagFromURL && !selectedTags.includes(tagFromURL)) {
-      setSelectedTags([tagFromURL]);
+    if (selectedTag && !selectedTags.includes(selectedTag)) {
+      setSelectedTags([selectedTag]);
     }
-  }, [searchParams]);
+  }, [selectedTag]);
 
   const toggleDifficulty = (difficulty) => {
     setSelectedDifficulty((prev) =>

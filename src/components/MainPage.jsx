@@ -40,7 +40,7 @@ export default function MainPage() {
         {/* 背景圖片 + 視差效果 */}
         <motion.div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/Guitar.JPEG')", y: backgroundY, opacity: 0.5 }}
+          style={{ backgroundImage: "url('/images/Guitar.JPEG')", opacity: 0.5 }}
         />
 
         <div className="absolute inset-0 bg-black/60 mix-blend-overlay" />
@@ -102,7 +102,7 @@ export default function MainPage() {
       {/* About Me Section */}
       <section id="about-me" className="max-w-5xl mx-auto py-16 px-6 sm:px-12">
         <motion.h2
-          className="text-4xl font-bold text-center text-gray-900 dark:text-gray-100 mb-12"
+          className="text-4xl font-bold text-center text-gray-900 mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -115,17 +115,17 @@ export default function MainPage() {
             { title: 'Education', icon: FaGraduationCap, items: education, color: 'bg-green-600' }].map((section, i) => (
             <motion.div
               key={i}
-              className="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6"
+              className="bg-white shadow-lg rounded-2xl p-6"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: i * 0.2 }}
               viewport={{ once: true }}
             >
-              <div className="flex items-center gap-3 text-gray-900 dark:text-gray-100">
+              <div className="flex items-center gap-3 text-gray-900">
                 <section.icon className="text-3xl" />
                 <h3 className="text-2xl font-semibold">{section.title}</h3>
               </div>
-              <div className="relative border-l border-gray-300 dark:border-gray-700 mt-4 pl-6">
+              <div className="relative border-l border-gray-300 mt-4 pl-6">
                 {section.items.map((item, index) => (
                   <motion.div
                     key={index}

@@ -10,13 +10,12 @@ import { useParams, useSearchParams } from "next/navigation";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 import Image from "next/image";
-// import ShareAndCopy from "@/components/ShareAndCopy";
+import ShareAndCopy from "@/components/ShareAndCopy";
 
-export default function Article({ category, fileName }) {
+export default function Article({ category, fileName, json_path, title }) {
   const searchParams = useSearchParams();
-  const jsonPath = searchParams.get("json_path");
-  const title = searchParams.get("title");
-  console.log(category, fileName);
+  // const jsonPath = searchParams.get("json_path");
+  // const title = searchParams.get("title");
 
   const file = `/article/${category}/${fileName}.md`;
 
@@ -77,11 +76,17 @@ export default function Article({ category, fileName }) {
         {metadata.tags && (
           <div className="w-full mt-4 mb-4 text-center">
             <div className="flex flex-wrap gap-2 text-sm justify-center">
-              {metadata.tags.split(",").map((tag) => (
+              {metadata.tags.split(",").map((tag, index) => (
                 <Link
-                  key={tag}
-                  href={`/${category}?tag=${encodeURIComponent(tag.trim())}`}
-                  className="bg-gray-200 text-gray-800 px-3 py-1 rounded-full cursor-pointer hover:bg-gray-300 transition duration-300 ease-in-out"
+                    key={`${tag.trim()}-${index}`} 
+                    href={{
+                        pathname: `/${category}/tags`,
+                        query: {  json_path: json_path,
+                                  title: title,
+                                  category: category,
+                                  tag: tag.trim() },
+                    }}
+                    className="bg-gray-200 text-gray-800 px-3 py-1 rounded-full cursor-pointer hover:bg-gray-300 transition duration-300 ease-in-out"
                 >
                   {tag.trim()}
                 </Link>
@@ -203,7 +208,7 @@ export default function Article({ category, fileName }) {
           </ReactMarkdown>
         </article>
 
-        {/* <ShareAndCopy /> */}
+        <ShareAndCopy />
       </main>
     </div>
   );

@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
-// import Pagination from "./Pagination";
+import Pagination from "./Pagination";
 
 const articlesPerPage = 6;
 
@@ -15,10 +15,10 @@ export default function ArticleListPage({ json_path, title, category }) {
   const [currentPage, setCurrentPage] = useState(1);
   const [realTitle, setTitle] = useState(title);
   
-
   const router = useRouter();
   const searchParams = useSearchParams();
   const selectedTag = searchParams.get("tag");
+  console.log(selectedTag);
 
   useEffect(() => {
     fetch(json_path)
@@ -82,7 +82,10 @@ export default function ArticleListPage({ json_path, title, category }) {
               <Link
                 href={{
                   pathname: `/${category}/articles`,
-                  query: { file: article.path },
+                  query: {  json_path: json_path,
+                            title: title,
+                            category: category,
+                            file: article.path },
                 }}
                 className="group block overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-transform transform hover:-translate-y-2 bg-white"
               >
@@ -139,7 +142,7 @@ export default function ArticleListPage({ json_path, title, category }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        {/* <Pagination currentPage={currentPage} totalPages={totalPages} goToPage={goToPage} /> */}
+        <Pagination currentPage={currentPage} totalPages={totalPages} goToPage={goToPage} />
       </motion.div>
     </div>
   );
