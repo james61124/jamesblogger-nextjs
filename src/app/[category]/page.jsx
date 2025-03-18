@@ -3,9 +3,10 @@ import { Suspense } from "react";
 
 export default function LeetcodePage({ params, searchParams }) {
   const { fileName } = params;
-  const json_path = searchParams?.json_path; // ✅ 修正這裡
-  const title = searchParams?.title;         // ✅ 修正這裡
-  const category = searchParams?.category;   
+  // const json_path = searchParams?.json_path; 
+  // const title = searchParams?.title;      
+  // const category = searchParams?.category;   
+  const { json_path, title, category } = searchParams || {};
 
   return (
     <Suspense fallback={<div>Loading...</div>}>

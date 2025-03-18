@@ -42,8 +42,6 @@ export default function ArticleListPage({ json_path, title, category }) {
     currentPage * articlesPerPage
   );
 
-  console.log(currentArticles);
-
   const goToPage = (page) => {
     if (page >= 1 && page <= totalPages) {
       setCurrentPage(page);
@@ -80,11 +78,10 @@ export default function ArticleListPage({ json_path, title, category }) {
             >
               <Link
                 href={{
-                  pathname: `/${category}/articles`,
+                  pathname: `/${category}/articles/${article.path}`,
                   query: {  json_path: json_path,
                             title: title,
-                            category: category,
-                            file: article.path },
+                            category: category},
                 }}
                 className="group block overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-transform transform hover:-translate-y-2 bg-white"
               >

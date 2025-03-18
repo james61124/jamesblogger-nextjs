@@ -5,7 +5,6 @@ import { Suspense } from "react";
 
 // Server Component
 export default function CategoryPage({ params, searchParams }) {
-  // const { fileName } = params;
   const { json_path, title, category, file } = searchParams || {};
 
   if (!file) {
