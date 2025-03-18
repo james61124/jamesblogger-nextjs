@@ -21,7 +21,7 @@ ASML 荷蘭總部位在 Veldhoven，他是一個在 Eindhoven 旁邊的小鎮，
 那 Veldhoven 簡單來說就是一個很寧靜很舒服的小鎮，附近都是住宅區，優點就是非常的安靜，也非常的安全，長期住在這裡真的會忘記所有可能會遇到的危險，沒有颱風、沒有龍捲風、沒有地震、政治安定、公民福利極好等等，但當然方便性跟台灣就沒有辦法比了，像是走到最近的 supermarket 可能就要一公里，騎腳踏車到最近的車站也要八公里，附近也沒有 convenience store 可以隨時都去添購一些東西，也沒有 24-hour 的店可以點宵夜。
 
 <figure>
-  <img src="/images/life/ASML/table.JPG" alt="table" />
+  <img src="/images/life/asml/table.JPG" alt="table" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     ASML 的工作環境，大家沒有固定位置，來了就隨便坐
   </figcaption>
@@ -34,7 +34,7 @@ ASML 荷蘭總部位在 Veldhoven，他是一個在 Eindhoven 旁邊的小鎮，
 ### **多元文化大熔爐，團隊成員來自世界各地**
 
 <figure>
-  <img src="/images/life/ASML/members.JPG" alt="members" />
+  <img src="/images/life/asml/members.JPG" alt="members" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     實習結束前團隊內的最後一次聚餐
   </figcaption>
@@ -51,7 +51,7 @@ ASML 荷蘭總部位在 Veldhoven，他是一個在 Eindhoven 旁邊的小鎮，
 不過 mentor 很快又找到了另一個 project 可以讓我完成，簡單來說 competence engineers 會評估這個 issue 的各種指標，他們的 project leaders 負責 prioritize 各種 issue 並 drive 給不同的部門，在 prioritize 各種 issues 的時候沒有一個整合平台來幫他們統整這些資訊，所以需要一個平台來 visualize 這些資料並做一些資料分析，這就是我後來都在協助的部分。
 
 <figure>
-  <img src="/images/life/ASML/badminton.JPG" alt="badminton" />
+  <img src="/images/life/asml/badminton.JPG" alt="badminton" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     很幸運參加到的羽球比賽場地
   </figcaption>
@@ -62,7 +62,7 @@ ASML 荷蘭總部位在 Veldhoven，他是一個在 Eindhoven 旁邊的小鎮，
 ### **歐洲生活體驗**
 
 <figure>
-  <img src="/images/life/ASML/cooked.jpg" alt="cooked" />
+  <img src="/images/life/asml/cooked.jpg" alt="cooked" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     來歐洲廚藝真的不得不進步，雖然我們秉持的原則還是會熟就好
   </figcaption>
@@ -77,7 +77,7 @@ ASML 荷蘭總部位在 Veldhoven，他是一個在 Eindhoven 旁邊的小鎮，
 ### **這半年，我學到了什麼？**
 
 <figure>
-  <img src="/images/life/ASML/sunset.JPG" alt="sunset" />
+  <img src="/images/life/asml/sunset.JPG" alt="sunset" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     實習最後一天公司外的夕陽
   </figcaption>
@@ -88,7 +88,7 @@ ASML 荷蘭總部位在 Veldhoven，他是一個在 Eindhoven 旁邊的小鎮，
 荷蘭給我的感覺比台灣安全很多，不知道是不是錯覺。歐洲每個國家都有自己的特色，荷蘭是我看到最務實也最自由的國家，這裡相對其實很安全，除了腳踏車可能會被偷，其實不太會有小偷或黑手黨在路上亂偷亂搶，所以走在路上基本上我非常放鬆，還有很宜居的地方就是這邊也沒甚麼天災，沒有地震、颱風、火山、戰爭，出生即養老，非常愜意。
 
 <figure>
-  <img src="/images/life/ASML/bike.jpg" alt="bike" />
+  <img src="/images/life/asml/bike.jpg" alt="bike" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     陪伴我們半年的腳踏車
   </figcaption>
