@@ -111,7 +111,12 @@ TRUFFE CLASSIQUE 經典松露巧克力是這裡的鎮店之寶，據說全世界
 
 山上下來的滑翔傘都會降落在這個地方，不過滑翔傘要玩的話大概要台幣 6000，後來想想就算了。
 
-![Interlaken](/images/travel/Switzerland-20240914/Interlaken-2.jpg)
+<figure>
+  <img src="/images/travel/Switzerland-20240914/Interlaken-2" alt="Interlaken" />
+  <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
+    路邊的大草原
+  </figcaption>
+</figure>
 
 雖然看不到湖，但是這條路會路過一條河，推測是直接流進去湖水裡的，而河水的顏色很夢幻，整條河都是這種非常乾淨的綠。
 
