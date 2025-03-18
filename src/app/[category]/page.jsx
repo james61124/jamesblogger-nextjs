@@ -1,4 +1,5 @@
 import ArticleList from "@/components/ArticleList";
+import { Suspense } from "react";
 
 export default function LeetcodePage({ params, searchParams }) {
   const { fileName } = params;
@@ -6,13 +7,17 @@ export default function LeetcodePage({ params, searchParams }) {
   const title = searchParams?.title;         // ✅ 修正這裡
   const category = searchParams?.category;   
 
-  return <ArticleList json_path={json_path} title={title} category={category} />;
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ArticleList json_path={json_path} title={title} category={category} />;
+    </Suspense>
+  );
 }
 
-// 產生靜態頁面
 export async function generateStaticParams() {
   return [
-    { fileName: "two-sum" },
-    { fileName: "binary-tree-traversal" },
+    { category: "life" },
+    { category: "program" },
+    { category: "travel" }
   ];
 }

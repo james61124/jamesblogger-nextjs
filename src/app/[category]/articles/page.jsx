@@ -1,28 +1,29 @@
-"use client";
+import Article from "@/components/Article";
+import fs from "fs";
+import path from "path";
+import { Suspense } from "react";
 
-import { useSearchParams } from "next/navigation";
-import Article from "../../../components/Article";
-import { use } from "react";
-
+// Server Component
 export default function CategoryPage({ params, searchParams }) {
-  // const { category } = use(params);
-  const fileName = use(searchParams)?.file;
-  const json_path = use(searchParams)?.json_path; 
-  const title = use(searchParams)?.title;         
-  const category = use(searchParams)?.category; 
+  // const { fileName } = params;
+  const { json_path, title, category, file } = searchParams || {};
 
-  if (!fileName) {
+  if (!file) {
     return <h1 className="text-center text-3xl mt-10">請選擇一篇文章</h1>;
   }
 
-  return <Article category={category} fileName={fileName} json_path={json_path} title={title}/>;
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Article json_path={json_path} title={title} category={category} fileName={file}/>;
+    </Suspense>
+  );
 }
 
-// 預先產生靜態頁面 (SEO 友好)
-// export async function generateStaticParams() {
-//   return [
-//     { category: "life", fileName: "asml" },
-//     { category: "program", fileName: "nextjs-guide" },
-//     { category: "travel", fileName: "kyoto-trip" },
-//   ];
-// }
+
+export async function generateStaticParams() {
+  return [
+    { category: "life" },
+    { category: "program" },
+    { category: "travel" },
+  ];
+}
