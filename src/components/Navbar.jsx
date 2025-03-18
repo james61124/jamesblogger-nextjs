@@ -24,7 +24,7 @@ export default function Navbar() {
 
   // 控制手機選單的動畫
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(prev => !prev); // ✅ 確保狀態正確更新
     controls.start({ opacity: isOpen ? 0 : 1, x: isOpen ? 50 : 0 });
   };
 
@@ -112,33 +112,36 @@ export default function Navbar() {
         </div>
 
         {/* 行動裝置漢堡按鈕 */}
-        <button className={`md:hidden ${navTextColor}`} onClick={toggleMenu}>
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        <button className="md:hidden text-gray-300 hover:text-white" onClick={toggleMenu}>
+          <motion.div animate={{ rotate: isOpen ? 180 : 0 }}>
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </motion.div>
         </button>
 
         {/* 行動選單 */}
         {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={controls}
-            exit={{ opacity: 0, x: 50 }}
-            className="absolute top-20 left-0 w-full bg-black/80 backdrop-blur-lg md:hidden"
-          >
-            <ul className="flex flex-col items-center py-4 space-y-4">
-              {navLinks.map((link, index) => (
-                <li key={index}>
-                  <Link
-                    href={link.path}
-                    className="text-white text-xl hover:text-gray-300"
-                    onClick={toggleMenu}
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-        )}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+          className="absolute top-16 left-0 w-full bg-[rgba(30,30,30,0.85)] backdrop-blur-lg md:hidden transition-all"
+        >
+          <ul className="flex flex-col items-center py-6 space-y-6">
+            {navLinks.map((link, index) => (
+              <motion.li key={index} whileHover={{ scale: 1.05 }}>
+                <Link
+                  href={link.path}
+                  className="text-[#EDE9E3] text-xl px-6 py-3 rounded-lg hover:text-[#C0B9A8] transition-all"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              </motion.li>
+            ))}
+          </ul>
+        </motion.div>
+      )}
       </div>
     </motion.nav>
   );

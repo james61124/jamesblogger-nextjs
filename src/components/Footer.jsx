@@ -10,10 +10,62 @@ export default function Footer() {
           <h2 className="text-xl font-semibold mb-4">Quick Navigation</h2>
           <ul className="space-y-2">
             <li><Link href="/" className="hover:text-blue-600 transition">Main</Link></li>
-            <li><Link href="/life" className="hover:text-blue-600 transition">Life</Link></li>
-            <li><Link href="/travel" className="hover:text-blue-600 transition">Travel</Link></li>
-            <li><Link href="/program" className="hover:text-blue-600 transition">Programming</Link></li>
-            <li><Link href="/leetcode" className="hover:text-blue-600 transition">Leetcode</Link></li>
+            <li>
+              <Link 
+                href={{
+                  pathname: "/life",
+                  query: {
+                    json_path: "/metadata/life_metadata.json",
+                    title: "Life Journal",
+                    category: "life"
+                  },
+                }} 
+                className="hover:text-blue-600 transition">
+                  Life
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href={{
+                  pathname: "/travel",
+                  query: {
+                    json_path: "/metadata/travel_metadata.json",
+                    title: "Journey Memories",
+                    category: "travel"
+                  },
+                }} 
+                className="hover:text-blue-600 transition">
+                  Travel
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href={{
+                  pathname: "/program",
+                  query: {
+                    json_path: "/metadata/program_metadata.json",
+                    title: "Program Notes",
+                    category: "program"
+                  },
+                }} 
+                className="hover:text-blue-600 transition">
+                  Program
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href={{
+                  pathname: "/leetcode",
+                  query: {
+                    json_path: "/metadata/leetcode_metadata.json",
+                    title: "Leetcoce Notes",
+                    category: "leetcode"
+                  },
+                }} 
+                className="hover:text-blue-600 transition">
+                  Leetcode
+              </Link>
+            </li>
           </ul>
         </div>
 

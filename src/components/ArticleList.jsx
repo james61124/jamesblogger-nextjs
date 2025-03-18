@@ -18,7 +18,6 @@ export default function ArticleListPage({ json_path, title, category }) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const selectedTag = searchParams.get("tag");
-  console.log(selectedTag);
 
   useEffect(() => {
     fetch(json_path)
