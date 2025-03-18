@@ -3,9 +3,7 @@ import path from "path";
 import Article from "@/components/Article";
 import { Suspense } from "react";
 
-// Server Component：透過 props 拿到 params
 export default async function CategoryPage({ params }) {
-  // 確保 params 是 Promise 時會等待解析
   const { fileName } = await params;
 
   if (!fileName) {
@@ -20,7 +18,6 @@ export default async function CategoryPage({ params }) {
   
 }
 
-// 產生靜態路由
 export async function generateStaticParams() {
   const articlesPath = path.join(process.cwd(), "public", "article", "leetcode");
   const filenames = fs.readdirSync(articlesPath);
