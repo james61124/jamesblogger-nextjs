@@ -9,7 +9,7 @@ export default function LeetcodePage({ params, searchParams }) {
 
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <ArticleList json_path={json_path} title={title} category={category} />;
+      <ArticleList json_path={json_path} title={title} category={category} />
     </Suspense>
   );
 }

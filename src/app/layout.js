@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Script from "next/script";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: "My Blog",
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
         </head>
         <Navbar />
         <main>{children}</main>
+        <Analytics/>
         <Footer />
       </body>
     </html>
