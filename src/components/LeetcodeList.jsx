@@ -153,7 +153,7 @@ export default function LeetCodeList({ json_path, category }) {
         </button>
       </div>
 
-      <div className="bg-white shadow-md rounded-lg overflow-hidden">
+      <div className="bg-white shadow-md rounded-lg overflow-hidden mb-20">
         <div className="overflow-x-auto"> {/* ✅ 讓表格可左右滾動 */}
             <table className="min-w-full border-collapse border-none outline-none shadow-none">
             <thead>

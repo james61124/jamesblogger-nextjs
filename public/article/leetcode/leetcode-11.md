@@ -36,7 +36,7 @@ Return the maximum amount of water a container can store.
 
 <p></p>
 
-題目連結🔗：[https://leetcode.com/problems/container-with-most-water/](https://leetcode.com/problems/container-with-most-water/)
+題目連結 🔗：[https://leetcode.com/problems/container-with-most-water/](https://leetcode.com/problems/container-with-most-water/)
 
 ### **解題思路 - Opposite Direction Two Pointers**
 

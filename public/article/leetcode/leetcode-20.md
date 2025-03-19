@@ -9,42 +9,9 @@ description: ""
 readTime: 3
 ---
 
-Given a string `s` containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is valid.
+給一個只包含 `'('`, `')'`, `'{'`, `'}'`, `'['`, `']'` 的 string `s`，檢查這個 string 是否是 valid 的括號組合。
 
-An input string is valid if:
-
-1. Open brackets must be closed by the same type of brackets.
-2. Open brackets must be closed in the correct order.
-3. Every close bracket has a corresponding open bracket of the same type.
- 
-**Example 1**:
-
-> Input: s = `"()"`<br>
-> Output: true
-
-**Example 2**:
-
-> Input: s = `"()[]{}"`<br>
-> Output: true
-
-**Example 3**:
-
-> Input: s = `"(]"`<br>
-> Output: false
-
-**Example 4**:
-
-> Input: s = `"([])"`<br>
-> Output: true
-
-**Constraints**:
-
-- `1 <= s.length <= 104`
-- `s` consists of parentheses only `'()[]{}'`.
-
-<p></p>
-
-題目連結🔗：[https://leetcode.com/problems/valid-parentheses/](https://leetcode.com/problems/valid-parentheses/)
+題目連結 🔗：[https://leetcode.com/problems/valid-parentheses/](https://leetcode.com/problems/valid-parentheses/)
 
 ### **問題分析**
 
@@ -52,7 +19,7 @@ An input string is valid if:
 
 ### **解題思路 - Stack**
 
-這題需要一個 stack，在 iterate string 的時候，如果碰到左括號，就把 char 塞進去 stack 裡，如果碰到右括號：
+這題需要一個 stack，在 iterate string 的時候，如果碰到左括號，就把 char 塞進去 stack 裡，那如果碰到右括號 :
 - 如果 stack 最上面的那個 element 不是相對應的左括號 -> invalid
 - 如果是，就直接把這個 element pop 出來然後繼續 iterate
 

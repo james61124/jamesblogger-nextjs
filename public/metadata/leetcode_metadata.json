@@ -1,5 +1,19 @@
 [
     {
+        "title": "[ Leetcode 20 ] Valid Parentheses | 解題思路分享",
+        "date": "2025-03-06",
+        "author": "James",
+        "tags": [
+            "String",
+            "Stack"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-20"
+    },
+    {
         "title": "[ Leetcode 11 ] Container With Most Water | 解題思路分享",
         "date": "2025-02-27",
         "author": "James",
@@ -13,6 +27,79 @@
         "description": "",
         "readTime": 2,
         "path": "leetcode-11"
+    },
+    {
+        "title": "[ Leetcode 21 ] Merge Two Sorted Lists | 解題思路分享",
+        "date": "2025-03-06",
+        "author": "James",
+        "tags": [
+            "Linked List",
+            "Two Pointers"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-21"
+    },
+    {
+        "title": "[ Leetcode 167 ] Two Sum II - Input Array Is Sorted | 解題思路分享",
+        "date": "2025-02-26",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Two Pointers"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-167"
+    },
+    {
+        "title": "[ Leetcode 133 ] Clone Graph | 解題思路分享",
+        "date": "2025-03-08",
+        "author": "James",
+        "tags": [
+            "DFS",
+            "BFS",
+            "Graph",
+            "Hash Table"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-133"
+    },
+    {
+        "title": "[ Leetcode 141 ] Linked List Cycle | 解題思路分享",
+        "date": "2025-03-03",
+        "author": "James",
+        "tags": [
+            "Linked List",
+            "Two Pointers"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-141"
+    },
+    {
+        "title": "[ Leetcode 3 ] Longest Substring Without Repeating Characters | 解題思路分享",
+        "date": "2025-03-03",
+        "author": "James",
+        "tags": [
+            "String",
+            "Sliding Window",
+            "Hash Table"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-3"
     },
     {
         "title": "[ Leetcode 19 ] Remove Nth Node From End of List | 解題思路分享",
@@ -29,32 +116,46 @@
         "path": "leetcode-19"
     },
     {
-        "title": "[ Leetcode 20 ] Valid Parentheses | 解題思路分享",
-        "date": "2025-03-06",
+        "title": "[ Leetcode 125 ] Valid Palindrome | 解題思路分享",
+        "date": "2025-02-15",
         "author": "James",
         "tags": [
-            "String",
-            "Stack"
+            "Two Pointers",
+            "String"
         ],
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
-        "readTime": 2,
-        "path": "leetcode-20"
+        "readTime": 1,
+        "path": "leetcode-125"
     },
     {
-        "title": "[ Leetcode 3 ] Longest Substring Without Repeating Characters | 解題思路分享",
-        "date": "2025-03-03",
+        "title": "[ Leetcode 26 ] Remove Duplicates from Sorted Array | 解題思路分享",
+        "date": "2025-02-26",
         "author": "James",
         "tags": [
-            "String",
-            "Sliding Window",
-            "Hash Table"
+            "Array",
+            "Two Pointers"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-26"
+    },
+    {
+        "title": "[ Leetcode 36 ] Valid Sudoku | 解題思路分享",
+        "date": "2025-03-10",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Hash Table",
+            "Matrix"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
         "readTime": 3,
-        "path": "leetcode-3"
+        "path": "leetcode-36"
     }
 ]

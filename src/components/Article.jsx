@@ -105,7 +105,7 @@ export default function Article({ category, fileName, json_path, title }) {
           />
         )}
 
-<article className="prose lg:prose-lg max-w-none">
+        <article className="prose lg:prose-lg max-w-none">
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             rehypePlugins={[rehypeRaw]}
@@ -135,7 +135,7 @@ export default function Article({ category, fileName, json_path, title }) {
                 />
               ),
               p: ({ node, ...props }) => (
-                <p className="text-lg leading-relaxed mb-6 text-gray-800" {...props} />
+                <p className="text-lg leading-relaxed mb-3 mt-3 text-gray-800" {...props} />
               ),
               a: ({ node, ...props }) => (
                 <a
@@ -186,10 +186,10 @@ export default function Article({ category, fileName, json_path, title }) {
               ),
               hr: () => <hr className="my-12 border-t border-gray-300" />,
               ul: ({ node, ...props }) => (
-                <ul className="list-disc text-lg list-outside space-y-2 pl-5 text-gray-800" {...props} />
+                <ul className="list-disc text-lg list-outside space-y-0 pl-5 text-gray-800" {...props} />
               ),
               ol: ({ node, ...props }) => (
-                <ol className="list-decimal text-lg list-outside space-y-2 pl-5 text-gray-800" {...props} />
+                <ol className="list-decimal text-lg list-outside space-y-0 pl-5 text-gray-800" {...props} />
               ),
               li: ({ node, children, ...props }) => {
                 if (

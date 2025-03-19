@@ -35,7 +35,7 @@ Given the `head` of a linked list, remove the `nᵗʰ` node from the end of the 
 
 <p></p>
 
-題目連結🔗：[https://leetcode.com/problems/remove-nth-node-from-end-of-list/](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+題目連結 🔗：[https://leetcode.com/problems/remove-nth-node-from-end-of-list/](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 
 ### **問題分析**
 

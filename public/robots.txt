@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://jamesblogger.com
+
+# Sitemaps
+Sitemap: https://jamesblogger.com/sitemap.xml

@@ -38,7 +38,7 @@ Given a string `s`, find the length of the **longest substring** without duplica
 
 <p></p>
 
-題目連結🔗：[https://leetcode.com/problems/longest-substring-without-repeating-characters/](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+題目連結 🔗：[https://leetcode.com/problems/longest-substring-without-repeating-characters/](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
 ### **問題分析**
 
