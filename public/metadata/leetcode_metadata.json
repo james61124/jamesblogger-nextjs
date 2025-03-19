@@ -57,6 +57,23 @@
         "path": "leetcode-167"
     },
     {
+        "title": "[ Leetcode 200 ] Number of Islands | 解題思路分享",
+        "date": "2025-03-08",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Matrix",
+            "DFS",
+            "BFS",
+            "Union Find"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 5,
+        "path": "leetcode-200"
+    },
+    {
         "title": "[ Leetcode 133 ] Clone Graph | 解題思路分享",
         "date": "2025-03-08",
         "author": "James",
@@ -157,5 +174,21 @@
         "description": "",
         "readTime": 3,
         "path": "leetcode-36"
+    },
+    {
+        "title": "[ Leetcode 209 ] Minimum Size Subarray Sum | 解題思路分享",
+        "date": "2025-03-08",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Sliding Window",
+            "Binary Search",
+            "Prefix Sum"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-209"
     }
 ]
