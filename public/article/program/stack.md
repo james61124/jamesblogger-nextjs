@@ -21,8 +21,8 @@ Stack 是一種 Last In, First Out (LIFO) 的 data structure，有點像是疊�
 
 #### **範例**
 
-[[ Leetcode 20 ] Valid Parentheses | 解題思路分享](https://jamesblogger.com/leetcode/leetcode-20/)<br>
-[[ Leetcode 227 ] Basic Calculator II | 解題思路分享](https://jamesblogger.com/leetcode/leetcode-227/)
+[[ Leetcode 20 ] Valid Parentheses | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-20/)<br>
+[[ Leetcode 227 ] Basic Calculator II | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-227/)
 
 ### **Monotonic Stack**
 
@@ -53,5 +53,5 @@ stack = [8, 6]
 
 #### **範例**
 
-[[ Leetcode 496 ] Next Greater Element I | 解題思路分享](https://jamesblogger.com/leetcode/leetcode-496/)<br>
-[[ Leetcode 739 ] Daily Temperatures | 解題思路分享](https://jamesblogger.com/leetcode/leetcode-739/)
+[[ Leetcode 496 ] Next Greater Element I | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-496/)<br>
+[[ Leetcode 739 ] Daily Temperatures | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-739/)

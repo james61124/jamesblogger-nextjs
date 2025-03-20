@@ -9,7 +9,7 @@ description: ""
 readTime: 2
 ---
 
-給一個 Binary Tree，要 return Level Order Traversal 的結果，而每一層的 node 都是一個 subarray。
+給一個 Binary Tree，要 return Level Order Traversal 的結果，而每一層的 node 從左到右都是一個 subarray。
 
 題目連結 🔗：[https://leetcode.com/problems/binary-tree-level-order-traversal/](https://leetcode.com/problems/binary-tree-level-order-traversal/)
 

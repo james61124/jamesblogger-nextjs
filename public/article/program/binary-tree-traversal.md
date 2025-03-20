@@ -1,5 +1,5 @@
 ---
-title: "[ Data Structure ] Binary Tree | 核心概念與 Leetcode 題型解析"
+title: "[ Data Structure ] Binary Tree - Traversal | 核心概念與 Leetcode 題型解析"
 date: "2025-02-27"
 author: James
 tags: Data Structure,Binary Tree
@@ -41,7 +41,7 @@ void preorder(vector<int>& result, TreeNode* node){
 
 #### **範例**
 
-144
+[[ Leetcode 144 ] Binary Tree Preorder Traversal | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-144/)
 
 ### **Inorder Traversal**
 
@@ -64,7 +64,7 @@ void inorder(vector<int>& result, TreeNode* node){
 
 #### **範例**
 
-94.
+[[ Leetcode 94 ] Binary Tree Inorder Traversal | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-94/)
 
 ### **Postorder Traversal**
 
@@ -87,11 +87,21 @@ void postorder(vector<int>& result, TreeNode* node){
 
 #### **範例**
 
-145.
+[[ Leetcode 145 ] Binary Tree Postorder Traversal | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-145/)
 
 ### **Level Order Traversal**
 
-##### **Template**
+將 traverse 的結果由左到右由上到下一層一層放到 array 裡，每一層都是一個 subarray，所以最後的結果是一個 2D Array，有點像這樣
+
+```
+[ [Level 1], [Level 2], [Level 3] ]
+```
+
+因為要一層一層看的原因，所以直接用 BFS 去想，BFS 就是當我看完一個 node，我就把我的 children push 進去 queue 裡，然後每拿出一個 node 就一樣找他的 children 再推進去 queue 裡，這裡只需要解決一個問題，就是只要分辨哪些 node 是同一層就行了，因為同一層的 node 要放在同一個 subarray 裡。
+
+這個問題也很好解決，當一層處理完要處理下一層的時候，表示現在 queue 裡只會有下一層的 node，所以 queue 的 size 就是下一層的 node 的數量，紀錄這個數字 `currentSize`，我們只要 pop `currentSize` 個 node 就是處理完下一層了。
+
+#### **Template**
 
 ```cpp
 vector<vector<int>> levelOrder(TreeNode* root) {
@@ -112,3 +122,7 @@ vector<vector<int>> levelOrder(TreeNode* root) {
     return result;
 }
 ```
+
+#### **範例**
+
+[[ Leetcode 102 ] Binary Tree Level Order Traversal | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-102/)

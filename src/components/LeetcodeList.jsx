@@ -151,6 +151,7 @@ export default function LeetCodeList({ json_path, category }) {
         >
           {sortConfig.key === "date" && sortConfig.direction === "desc" ? "最新優先" : "最舊優先"}
         </button>
+
       </div>
 
       <div className="bg-white shadow-md rounded-lg overflow-hidden mb-20">
@@ -180,21 +181,54 @@ export default function LeetCodeList({ json_path, category }) {
                     <td className="px-6 py-4 text-sm">
                     <div className="whitespace-nowrap">{article.date}</div>
                     </td>
-                    <td className="px-6 py-4 font-medium text-blue-600">{article.title}</td>
+                    <td className="px-6 py-4 font-medium text-blue-600 max-w-[500px] truncate" title={article.title}>
+                      {article.title}
+                    </td>
                     <td className="px-6 py-4">
                     <span className={`px-3 py-1 text-sm font-medium rounded-full ${difficultyColors[article.difficulty]}`}>
                         {article.difficulty}
                     </span>
                     </td>
                     <td className="px-6 py-4">
-                    <div className="flex flex-wrap gap-2"> {/* ✅ 讓 tags 自動換行 */}
-                        {article.tags.map((tag) => (
-                        <span key={tag} className="px-3 py-1 text-sm font-medium bg-gray-200 text-gray-800 rounded-full">
-                            {tag}
-                        </span>
-                        ))}
+                    <div className="flex gap-2 items-center overflow-hidden">
+                      {(() => {
+                        let displayTags = [];
+                        let remainingTags = article.tags.length;
+                        let totalLength = 0;
+                        const maxLength = 50; // ✅ 根據需求調整最大長度
+
+                        for (const tag of article.tags) {
+                          const tagLength = tag.length;
+
+                          if (totalLength + tagLength <= maxLength) {
+                            displayTags.push(
+                              <span
+                                key={tag}
+                                className="px-3 py-1 text-sm font-medium bg-gray-200 text-gray-800 rounded-full whitespace-nowrap"
+                              >
+                                {tag}
+                              </span>
+                            );
+                            totalLength += tagLength;
+                            remainingTags--;
+                          } else {
+                            break;
+                          }
+                        }
+
+                        return (
+                          <>
+                            {displayTags}
+                            {remainingTags > 0 && (
+                              <span className="px-3 py-1 text-sm font-medium bg-gray-200 text-gray-800 rounded-full whitespace-nowrap">
+                                +{remainingTags} 更多
+                              </span>
+                            )}
+                          </>
+                        );
+                      })()}
                     </div>
-                    </td>
+                  </td>
                 </tr>
                 ))}
             </tbody>
