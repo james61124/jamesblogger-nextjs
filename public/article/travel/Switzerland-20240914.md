@@ -112,17 +112,20 @@ TRUFFE CLASSIQUE 經典松露巧克力是這裡的鎮店之寶，據說全世界
 山上下來的滑翔傘都會降落在這個地方，不過滑翔傘要玩的話大概要台幣 6000，後來想想就算了。
 
 <figure>
-  <img src="/images/travel/Switzerland-20240914/Interlaken-2" alt="Interlaken" />
+  <img src="/images/travel/Switzerland-20240914/Interlaken-2.jpg" alt="Interlaken" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
-    路邊的大草原
+    沿路上的一條河，顏色真的很漂亮
   </figcaption>
 </figure>
 
 雖然看不到湖，但是這條路會路過一條河，推測是直接流進去湖水裡的，而河水的顏色很夢幻，整條河都是這種非常乾淨的綠。
 
-![Interlaken](/images/travel/Switzerland-20240914/Interlaken-3.jpg)
-
-被偷拍了，但是拍得可真好。
+<figure>
+  <img src="/images/travel/Switzerland-20240914/Interlaken-3.jpg" alt="Interlaken" />
+  <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
+    被偷拍了！
+  </figcaption>
+</figure>
 
 Interlaken West 火車站位置🔗：[https://maps.app.goo.gl/rc1tkj4d3noQ64qJ8](https://maps.app.goo.gl/rc1tkj4d3noQ64qJ8)
 
@@ -130,19 +133,39 @@ Interlaken Ost 火車站位置🔗：[https://maps.app.goo.gl/xg3CzF1uNM1cqgWG8]
 
 ### **Speiz**
 
-![Speiz](/images/travel/Switzerland-20240914/Speiz-4.jpg)
+<figure>
+  <img src="/images/travel/Switzerland-20240914/Speiz-4.jpg" alt="Interlaken" />
+  <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
+    從 Speiz 下公車之後的路邊，這一整天天氣超好拍照起來光線都很完美
+  </figcaption>
+</figure>
 
 原本的計畫是要從 Interlaken Ost 搭船回 Speiz，但是因為我們到的時候剛好是他們中午休息時間，所以就乾脆搭公車回 Speiz，先在這裡晃晃之後再搭船回 Interlaken。
 
-![Speiz](/images/travel/Switzerland-20240914/Speiz.jpg)
+<figure>
+  <img src="/images/travel/Switzerland-20240914/Speiz.jpg" alt="Interlaken" />
+  <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
+    這些房子的主視覺都很一致，不知道是不是特別設計過的
+  </figcaption>
+</figure>
 
 路上的風景感覺隨便拍都是電影畫面，有點可惜自己竟然不會攝影。
 
-![Speiz](/images/travel/Switzerland-20240914/Speiz-2.jpg)
+<figure>
+  <img src="/images/travel/Switzerland-20240914/Speiz-2.jpg" alt="Interlaken" />
+  <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
+    走下去的一個運動區，游泳池、球場等等應有盡有，很熱鬧
+  </figcaption>
+</figure>
 
 這裡還滿熱鬧的，走到湖邊有個運動區，各種運動都有，也可以看到很多人帶小孩來這裡玩。
 
-![Speiz](/images/travel/Switzerland-20240914/Speiz-3.jpg)
+<figure>
+  <img src="/images/travel/Switzerland-20240914/Speiz-3.jpg" alt="Interlaken" />
+  <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
+    港口邊上的風景
+  </figcaption>
+</figure>
 
 走一走就到悠閒的港口邊，在這就已經可以看到遠處的山峰有落雪了，但這個時候我其實還不知道這趟會爬到那邊去。這個湖邊有一小塊其實沒有護欄或甚麼的，靠近可以直接摸到冰冰的湖水，還可以看到鴨子超可愛，這邊不曉得為什麼遇到水就有很多鴨子。
 
@@ -168,7 +191,12 @@ Speiz 碼頭位置🔗：[https://maps.app.goo.gl/f1CVn5aabsBrcYas9](https://map
 
 下船後可以走來這個攻略上會出現的橋，這天的天氣真的很好，整條河綠的很清澈很舒服。
 
-![Golden Bridge](/images/travel/Switzerland-20240914/Golden-Bridge.jpg)
+<figure>
+  <img src="/images/travel/Switzerland-20240914/Golden-Bridge.jpg" alt="Interlaken" />
+  <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
+    從來沒有看過這種顏色的小河，也算是開了眼界
+  </figcaption>
+</figure>
 
 這是岸邊的景，當下我只知道這是綠色很好看，但是旅伴們很堅持說這是 Tiffany 綠哈哈。但真的滿好奇為什麼不同的水會呈現不一樣的顏色，像國王湖就是整片的綠色，這裡就是整片藍色，但是到小河上又呈現這種不一樣的綠色，覺得很特別。
 
@@ -176,7 +204,7 @@ Speiz 碼頭位置🔗：[https://maps.app.goo.gl/f1CVn5aabsBrcYas9](https://map
 
 Golden Bridge 位置🔗：[https://maps.app.goo.gl/fbefporhP9WqZGgJA](https://maps.app.goo.gl/fbefporhP9WqZGgJA)
 
-## **小結**
+### **小結**
 
 瑞士的湖光山色完全顛覆了我對漂亮的大自然的想像，他們的山坡地是很乾淨的綠色，山坡上房子都是木製的屋子，配色也不會太鮮豔，完全就是動畫裡會出現的那種阿爾卑斯山悠閒悠閒的那種場景，整片湖水很廣闊，水質又很乾淨，在太陽底下簡直就是人間仙境，完全不會後悔舟車勞頓跑來這個國家。
 

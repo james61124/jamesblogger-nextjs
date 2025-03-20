@@ -70,11 +70,6 @@ export default function Navbar() {
       label: "Leetcode",
       path: {
         pathname: "/leetcode",
-        query: {
-          json_path: "/metadata/leetcode_metadata.json",
-          title: "Leetcoce Notes",
-          category: "leetcode"
-        },
       },
     },
   ];

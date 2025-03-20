@@ -4,7 +4,7 @@ date: "2025-02-27"
 author: James
 tags: Data Structure,Binary Tree
 image: /images/program/data-structure.jpeg
-description: ""
+description: "Binary Tree 的定義就是在一個 tree 中，每一個 node 的 children 數量不能超過兩個，所以如果寫成一個 class 的話可以這樣表示"
 readTime: 2
 ---
 

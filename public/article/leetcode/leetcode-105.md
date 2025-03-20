@@ -55,7 +55,16 @@ Root = 1，所以 Left Subtree = [2, 3, 4, 5] 這個沒有問題，但是 Right 
 #### **四個指標的位置變化**
 
 Left Subtree 中，
-`preLeft = preLeft + 1`，因為就是 Root 的下一個
+`preLeft = preLeft + 1` - 因為就是 Root 的下一個<br>
+`preRight = preLeft + leftSize` - 因為 leftSize 就是 Left Subtree 的大小，那剩下就是 Right Subtree 了<br>
+`inLeft = inLeft` - 這個不動，應該也很好理解<br>
+`inRight = rootInorderIndex - 1` - 因為 Root 的左邊就全部都是 Left Subtree
+
+Right Subtree 中，
+`preLeft = preLeft + leftSize + 1` - preLeft + leftSize 是 Left Subtree 的範圍，後面開始就是 Right Subtree 了<br>
+`preRight = preRight` - 這個不動，應該也很好理解<br>
+`inLeft = rootInorderIndex + 1` - inorder 中 Root 的右邊就是 Right Subtree 的開始<br>
+`inRight = inRight` - 這個就一樣不用動
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
