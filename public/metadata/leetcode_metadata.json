@@ -14,6 +14,22 @@
         "path": "leetcode-20"
     },
     {
+        "title": "[ Leetcode 496 ] Next Greater Element I | 解題思路分享",
+        "date": "2025-03-06",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Hash Table",
+            "Stack",
+            "Monotonic Stack"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-496"
+    },
+    {
         "title": "[ Leetcode 11 ] Container With Most Water | 解題思路分享",
         "date": "2025-02-27",
         "author": "James",
@@ -43,6 +59,51 @@
         "path": "leetcode-21"
     },
     {
+        "title": "[ Leetcode 713 ] Subarray Product Less Than K | 解題思路分享",
+        "date": "2025-03-05",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Sliding Window"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-713"
+    },
+    {
+        "title": "[ Leetcode 841 ] Keys and Rooms | 解題思路分享",
+        "date": "2025-01-29",
+        "author": "James",
+        "tags": [
+            "Graph",
+            "DFS",
+            "BFS"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-841"
+    },
+    {
+        "title": "[ Leetcode 300 ] Longest Increasing Subsequence | 解題思路分享",
+        "date": "2025-01-29",
+        "author": "James",
+        "tags": [
+            "DP",
+            "Array",
+            "Binary Search",
+            "Greedy"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-300"
+    },
+    {
         "title": "[ Leetcode 167 ] Two Sum II - Input Array Is Sorted | 解題思路分享",
         "date": "2025-02-26",
         "author": "James",
@@ -55,6 +116,35 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-167"
+    },
+    {
+        "title": "[ Leetcode 1143 ] Longest Common Subsequence | 解題思路分享",
+        "date": "2025-03-01",
+        "author": "James",
+        "tags": [
+            "String",
+            "DP"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-1143"
+    },
+    {
+        "title": "[ Leetcode 739 ] Daily Temperatures | 解題思路分享",
+        "date": "2025-03-06",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Stack",
+            "Monotonic Stack"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-739"
     },
     {
         "title": "[ Leetcode 200 ] Number of Islands | 解題思路分享",
@@ -90,6 +180,36 @@
         "path": "leetcode-133"
     },
     {
+        "title": "[ Leetcode 210 ] Course Schedule II | 解題思路分享",
+        "date": "2025-03-08",
+        "author": "James",
+        "tags": [
+            "BFS",
+            "DFS",
+            "Graph",
+            "Topological Sort"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-210"
+    },
+    {
+        "title": "[ Leetcode 217 ] Contains Duplicate | 解題思路分享",
+        "date": "2025-03-10",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Hash Table"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-217"
+    },
+    {
         "title": "[ Leetcode 141 ] Linked List Cycle | 解題思路分享",
         "date": "2025-03-03",
         "author": "James",
@@ -102,6 +222,35 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-141"
+    },
+    {
+        "title": "[ Leetcode 1343 ] Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold | 解題思路分享",
+        "date": "2025-03-03",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Sliding Window"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-1343"
+    },
+    {
+        "title": "[ Leetcode 227 ] Basic Calculator II | 解題思路分享",
+        "date": "2025-03-06",
+        "author": "James",
+        "tags": [
+            "String",
+            "Stack",
+            "Math"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-227"
     },
     {
         "title": "[ Leetcode 3 ] Longest Substring Without Repeating Characters | 解題思路分享",
@@ -190,5 +339,48 @@
         "description": "",
         "readTime": 3,
         "path": "leetcode-209"
+    },
+    {
+        "title": "[ Leetcode 349 ] Intersection of Two Arrays | 解題思路分享",
+        "date": "2025-02-23",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Hash Table"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-349"
+    },
+    {
+        "title": "[ Leetcode 219 ] Contains Duplicate II | 解題思路分享",
+        "date": "2025-03-10",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Hash Table",
+            "Sliding Window"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-219"
+    },
+    {
+        "title": "[ Leetcode 876 ] Middle of the Linked List | 解題思路分享",
+        "date": "2025-03-03",
+        "author": "James",
+        "tags": [
+            "Linked List",
+            "Two Pointers"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-876"
     }
 ]
