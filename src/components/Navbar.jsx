@@ -37,33 +37,18 @@ export default function Navbar() {
       label: "Life",
       path: {
         pathname: "/life",
-        query: {
-          json_path: "/metadata/life_metadata.json",
-          title: "Life Journal",
-          category: "life"
-        },
       },
     },
     {
       label: "Travel",
       path: {
         pathname: "/travel",
-        query: {
-          json_path: "/metadata/travel_metadata.json",
-          title: "Journey Memories",
-          category: "travel"
-        },
       },
     },
     {
       label: "Program",
       path: {
         pathname: "/program",
-        query: {
-          json_path: "/metadata/program_metadata.json",
-          title: "Program Notes",
-          category: "program"
-        },
       },
     },
     {

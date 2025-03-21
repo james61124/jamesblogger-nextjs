@@ -5,8 +5,27 @@ import { Suspense } from "react";
 
 // Server Component
 export default function CategoryPage({ params, searchParams }) {
-  const { fileName } = params;
-  const { json_path, title, category } = searchParams || {};
+  const { category, fileName } = params;
+
+  const defaultConfig = {
+    life: {
+      title: "Life Journal",
+      json_path: "/metadata/life_metadata.json",
+    },
+    travel: {
+      title: "Journey Memories",
+      json_path: "/metadata/travel_metadata.json",
+    },
+    program: {
+      title: "Program Notes",
+      json_path: "/metadata/program_metadata.json",
+    },
+  };
+
+  const { title, json_path } = defaultConfig[category] || {
+    title: queryTitle || "Default Articles",
+    json_path: queryJsonPath || "/metadata/default_metadata.json",
+  };
 
   if (!fileName) {
     return <h1 className="text-center text-3xl mt-10">請選擇一篇文章</h1>;

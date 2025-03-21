@@ -39,32 +39,34 @@ readTime: 2
 
 直接建立 Hash Table - Unordered_map 就行了。
 
+#### **Subtree 的資訊傳遞**
+
+在將 Subtree 的資訊傳給下一層遞迴時不用再建一個 Array，我們直接用 `preLeft`, `preRight`, `inLeft`, `inRight` 來標示就行了
+
+**Left Subtree 中 :**<br>
+`preLeft = preLeft + 1` - 因為就是 Root 的下一個<br>
+`preRight = preLeft + leftSize` - 因為 leftSize 就是 Left Subtree 的大小，那剩下就是 Right Subtree 了<br>
+`inLeft = inLeft` - 這個不動，應該也很好理解<br>
+`inRight = rootInorderIndex - 1` - 因為 Root 的左邊就全部都是 Left Subtree
+
+**Right Subtree 中 :**<br>
+`preLeft = preLeft + leftSize + 1` - preLeft + leftSize 是 Left Subtree 的範圍，後面開始就是 Right Subtree 了<br>
+`preRight = preRight` - 這個不動，應該也很好理解<br>
+`inLeft = rootInorderIndex + 1` - inorder 中 Root 的右邊就是 Right Subtree 的開始<br>
+`inRight = inRight` - 這個就一樣不用動
+
 #### **如何判斷這個 node 是 null 要 return？**
 
-在將 Subtree 的資訊傳給下一層遞迴時不用再建一個 Array，我們直接用 `preLeft`, `preRight`, `inLeft`, `inRight` 來標示就行了，換句話說 inLeft 跟 inRight 代表的是 inorder 的有效區間，所以如果今天 `inLeft > inRight`，那就表示這個 Subtree 根本不存在，`preLeft > preRight` 也是一樣意思，舉一個例子
+inLeft 跟 inRight 代表的是 inorder 的有效區間，所以如果今天 `inLeft > inRight`，那就表示這個 Subtree 根本不存在，`preLeft > preRight` 也是一樣意思，舉一個例子
 
 ```
 preorder = [1, 2, 3, 4, 5]
 inorder  = [2, 3, 4, 5, 1]
 ```
 
-Root = 1，所以 Left Subtree = [2, 3, 4, 5] 這個沒有問題，但是 Right Subtree 就得直接 return nullptr 了，我們來看一下右邊的指標狀況。
+從 preorder 可以看到 Root = 1，所以 inorder 中 Left Subtree = [2, 3, 4, 5] 這個沒有問題，但是 Right Subtree 就得直接 return nullptr 了，我們來看一下右邊的指標狀況。
 
 假設 Root 在 inorder 中的 index 是 `rootInorderIndex`，那 Right Subtree 的 inLeft = rootInorderIndex + 1，但 inRight 不會變，因為 inorder 的最右邊那個元素本來就是 Right Subtree 的，是因為現在沒有 Right Subtree 所以那邊才會是 Root，也就是說這個 case `inleft > inRight` 了，就代表他沒有 Right subtree，也就應該 return nullptr。
-
-#### **四個指標的位置變化**
-
-Left Subtree 中，
-`preLeft = preLeft + 1` - 因為就是 Root 的下一個<br>
-`preRight = preLeft + leftSize` - 因為 leftSize 就是 Left Subtree 的大小，那剩下就是 Right Subtree 了<br>
-`inLeft = inLeft` - 這個不動，應該也很好理解<br>
-`inRight = rootInorderIndex - 1` - 因為 Root 的左邊就全部都是 Left Subtree
-
-Right Subtree 中，
-`preLeft = preLeft + leftSize + 1` - preLeft + leftSize 是 Left Subtree 的範圍，後面開始就是 Right Subtree 了<br>
-`preRight = preRight` - 這個不動，應該也很好理解<br>
-`inLeft = rootInorderIndex + 1` - inorder 中 Root 的右邊就是 Right Subtree 的開始<br>
-`inRight = inRight` - 這個就一樣不用動
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
