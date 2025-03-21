@@ -89,7 +89,7 @@
     },
     {
         "title": "[ Leetcode 106 ] Construct Binary Tree from Inorder and Postorder Traversal | 解題思路分享",
-        "date": "2025-03-20",
+        "date": "2025-03-21",
         "author": "James",
         "tags": [
             "Array",
@@ -148,6 +148,23 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-167"
+    },
+    {
+        "title": "[ Leetcode 889 ] Construct Binary Tree from Preorder and Postorder Traversal | 解題思路分享",
+        "date": "2025-03-21",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Hash Table",
+            "Divide and Conquer",
+            "Tree",
+            "Binary Tree"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-889"
     },
     {
         "title": "[ Leetcode 1143 ] Longest Common Subsequence | 解題思路分享",
@@ -301,7 +318,7 @@
     },
     {
         "title": "[ Leetcode 105 ] Construct Binary Tree from Preorder and Inorder Traversal | 解題思路分享",
-        "date": "2025-03-20",
+        "date": "2025-03-21",
         "author": "James",
         "tags": [
             "Array",
@@ -419,6 +436,21 @@
         "path": "leetcode-36"
     },
     {
+        "title": "[ Leetcode 700 ] Search in a Binary Search Tree | 解題思路分享",
+        "date": "2025-03-21",
+        "author": "James",
+        "tags": [
+            "Tree",
+            "Binary Tree",
+            "Binary Search Tree"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-700"
+    },
+    {
         "title": "[ Leetcode 209 ] Minimum Size Subarray Sum | 解題思路分享",
         "date": "2025-03-08",
         "author": "James",
@@ -476,5 +508,20 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-876"
+    },
+    {
+        "title": "[ Leetcode 701 ] Insert into a Binary Search Tree | 解題思路分享",
+        "date": "2025-03-21",
+        "author": "James",
+        "tags": [
+            "Tree",
+            "Binary Tree",
+            "Binary Search Tree"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-701"
     }
 ]

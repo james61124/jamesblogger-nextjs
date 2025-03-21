@@ -1,6 +1,6 @@
 ---
 title: "[ Leetcode 889 ] Construct Binary Tree from Preorder and Postorder Traversal | 解題思路分享"
-date: "2025-03-20"
+date: "2025-03-21"
 author: James
 tags: Array, Hash Table, Divide and Conquer,Tree,Binary Tree
 difficulty: Medium
@@ -46,27 +46,20 @@ readTime: 2
 **Left Subtree 中 :**<br>
 `preLeft = preLeft + 1` - 因為就是 Root 的下一個<br>
 `preRight = preLeft + leftSize` - 因為 leftSize 就是 Left Subtree 的大小，那剩下就是 Right Subtree 了<br>
-`postLeft = inLeft` - 這個不動，應該也很好理解<br>
-`postRight = rootInorderIndex - 1` - 因為 Root 的左邊就全部都是 Left Subtree
+`postLeft = postLeft` - 這個不動，應該也很好理解<br>
+`postRight = postLeft + leftSize - 1` - 因為 leftSize 就是 Left Subtree 的大小
 
 **Right Subtree 中 :**<br>
-`preLeft = preLeft + 1` - 因為就是 Root 的下一個<br>
-`preRight = preLeft + leftSize` - 因為 leftSize 就是 Left Subtree 的大小，那剩下就是 Right Subtree 了<br>
-`postLeft = inLeft` - 這個不動，應該也很好理解<br>
-`postRight = rootInorderIndex - 1` - 因為 Root 的左邊就全部都是 Left Subtree
+`preLeft = preLeft + leftSize + 1` - 因為 Left Subtree 的後面就是 Right Subtree<br>
+`preRight = preRight` - 這個不動，Preorder 的最右邊就是 Right Subtree 的最右邊<br>
+`postLeft = postLeft + leftSize` - 因為 Left Subtree 的後面就是 Right Subtree<br>
+`postRight = postRight - 1` - 因為 Root 的左邊就是 Right Subtree 的最右邊
 
 #### **如何判斷這個 node 是 null 要 return？**
 
-inLeft 跟 inRight 代表的是 inorder 的有效區間，所以如果今天 `inLeft > inRight`，那就表示這個 Subtree 根本不存在，`postLeft > postRight` 也是一樣意思，舉一個例子
+preLeft 跟 preRight 代表的是 preorder 的有效區間，所以如果今天 `preLeft > preRight`，那就表示這個 Subtree 根本不存在。
 
-```
-postorder = [1, 2, 3, 4, 5]
-inorder  = [2, 3, 4, 1, 5]
-```
-
-從 postorder 可以看到 Root = 5，所以 inorder 中 Left Subtree = [2, 3, 4, 1] 這個沒有問題，但是 Right Subtree 就得直接 return nullptr 了，我們來看一下 Right Subtree 指標狀況。
-
-假設 Root 在 inorder 中的 index 是 `rootInorderIndex`，那 Right Subtree 的 inLeft = rootInorderIndex + 1，但 inRight 不會變，因為 inorder 的最右邊那個元素本來就是 Right Subtree 的，是因為現在沒有 Right Subtree 所以那邊才會是 Root，也就是說這個 case `inleft > inRight` 了，就代表他沒有 Right subtree，也就應該 return nullptr。
+但是這題還需要多一個判斷，假設這個 Subtree 只有一個 node，表示他沒有 Left Subtree 跟 Right Subtree，如果我們沒有 return 這個 root 的話他就會往下去計算 Left Subtree 的 root，那就會 segmentation fault，所以在 `preLeft == preRight` 的時候要直接 return root。
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
@@ -74,8 +67,9 @@ inorder  = [2, 3, 4, 1, 5]
 #### **Implementation**
 
 ```cpp
-TreeNode* buildTreeHelper(vector<int>& preorder, unordered_map<int, int>& umap, int preLeft, int preRight, int postLeft, int postRight) {
-    
+TreeNode* buildTreeHelper(vector<int>& preorder, unordered_map<int, int>& umap, 
+        int preLeft, int preRight, int postLeft, int postRight) {
+
     if(preLeft > preRight) return nullptr;
     TreeNode* root = new TreeNode(preorder[preLeft]);
     if(preLeft == preRight) return root;
@@ -83,8 +77,10 @@ TreeNode* buildTreeHelper(vector<int>& preorder, unordered_map<int, int>& umap, 
     int leftSubtreeRootIndex = umap[preorder[preLeft+1]];
     int leftSize = leftSubtreeRootIndex - postLeft + 1;
 
-    root->left = buildTreeHelper(preorder, umap, preLeft + 1, preLeft + leftSize, postLeft, postLeft + leftSize - 1);
-    root->right = buildTreeHelper(preorder, umap, preLeft + leftSize + 1, preRight, postLeft + leftSize, postRight - 1);
+    root->left = buildTreeHelper(preorder, umap, 
+            preLeft + 1, preLeft + leftSize, postLeft, postLeft + leftSize - 1);
+    root->right = buildTreeHelper(preorder, umap, 
+            preLeft + leftSize + 1, preRight, postLeft + leftSize, postRight - 1);
 
     return root;
 }
