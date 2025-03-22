@@ -1,0 +1,1 @@
+vector<string>board(n, string(n, '.'));

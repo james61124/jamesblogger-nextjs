@@ -28,7 +28,7 @@ if(key < root->val) root->left = deleteNode(root->left, key);
 else if(key > root->val) root->right = deleteNode(root->right, key);
 ```
 
-假設 key == root->val，表示這個就是需要被刪除的 node，這邊需要分三個部分處理，
+假設 `key == root->val`，表示這個就是需要被刪除的 node，這邊需要分三個部分處理，如果這個 node 沒有 Right Subtree，那就直接 return Left Subtree，如果這個 node 沒有 Left Subtree，那就直接 return Right Subtree，但如果兩個 Tree 都有的話，就得做特殊的處理，首先要找到 Right Subtree 中最小的 value `minRight`，也就是大於被刪除的 node 的最小值，然後用他來替換要被刪掉的 node，最後再去把他刪掉。
 
 **Time Complexity** - `O(logn)`，因為 Tree 的平均高度就是 logn<br>
 **Space Complexity** - `O(1)`
