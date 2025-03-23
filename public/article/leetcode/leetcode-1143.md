@@ -32,7 +32,7 @@ readTime: 3
 
 最後右下角那格就是 iterate 過兩個 string 的結果，也就是最終答案。
 
-**Time Complexity** - `O(m×n)`，因為 iterate 過兩個 string
+**Time Complexity** - `O(m×n)`，因為 iterate 過兩個 string<br>
 **Space Complexity** - `O(m×n)`，因為開了一個 m x n 的 2D array
 
 ### **Implementation**
