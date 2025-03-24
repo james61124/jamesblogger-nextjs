@@ -27,7 +27,9 @@ export default function ArticleListPage({ json_path, title, category }) {
           ? data.filter((article) => article.tags && article.tags.includes(selectedTag))
           : data;
 
-        setArticles(filteredData);
+          const sortedData = filteredData.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        setArticles(sortedData);
         setTitle(selectedTag || title);
       })
       .catch((error) => {

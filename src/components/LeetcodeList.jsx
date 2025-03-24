@@ -66,12 +66,37 @@ export default function LeetCodeList({ json_path, category }) {
     }));
   };
 
+  const difficultyOrder = {
+    Easy: 1,
+    Medium: 2,
+    Hard: 3,
+  };
+
+  const extractLeetcodeNumber = (title) => {
+    const match = title.match(/\[ Leetcode (\d+) \]/i); // 提取數字
+    return match ? parseInt(match[1], 10) : Infinity; // 如果沒匹配到，放到最後
+  };
+
   const filteredArticles = articles
     .filter(article =>
       (selectedDifficulty.length === 0 || selectedDifficulty.includes(article.difficulty)) &&
       (selectedTags.length === 0 || selectedTags.every(tag => article.tags.includes(tag)))
     )
     .sort((a, b) => {
+      if (sortConfig.key === "difficulty") {
+        // 按自定義難度排序
+        const aValue = difficultyOrder[a.difficulty] || 0;
+        const bValue = difficultyOrder[b.difficulty] || 0;
+        return sortConfig.direction === "asc" ? aValue - bValue : bValue - aValue;
+      }
+
+      if (sortConfig.key === "title") {
+        // 按 Leetcode 編號排序
+        const aValue = extractLeetcodeNumber(a.title);
+        const bValue = extractLeetcodeNumber(b.title);
+        return sortConfig.direction === "asc" ? aValue - bValue : bValue - aValue;
+      }
+
       let aValue = a[sortConfig.key];
       let bValue = b[sortConfig.key];
 
@@ -96,7 +121,7 @@ export default function LeetCodeList({ json_path, category }) {
         Leetcode Notes
       </motion.h1>
 
-      <div className="flex flex-wrap items-center gap-4 mb-6">
+      <div className="flex flex-wrap items-center gap-4 mb-0">
         <div className="flex gap-2">
           {["Easy", "Medium", "Hard"].map(level => (
             <button
@@ -136,6 +161,8 @@ export default function LeetCodeList({ json_path, category }) {
           )}
         </div>
 
+        
+
         <div className="flex flex-wrap gap-2">
           {selectedTags.map(tag => (
             <span key={tag} className="px-3 py-1 text-sm font-medium bg-gray-200 text-gray-800 rounded-full flex items-center gap-2">
@@ -152,6 +179,12 @@ export default function LeetCodeList({ json_path, category }) {
           {sortConfig.key === "date" && sortConfig.direction === "desc" ? "最新優先" : "最舊優先"}
         </button>
 
+      </div>
+        
+      <div className="flex justify-end mb-1">
+        <div className="text-gray-600 text-sm font-semibold">
+          Total: {filteredArticles.length}
+        </div>
       </div>
 
       <div className="bg-white shadow-md rounded-lg overflow-hidden mb-20">

@@ -14,17 +14,31 @@
         "path": "binary-search-tree"
     },
     {
-        "title": "[ Data Structure ] Binary Tree - Traversal | 核心概念與 Leetcode 題型解析",
-        "date": "2025-03-21",
+        "title": "[ Data Structure ] Stack & Monotonic Stack | 核心概念與 Leetcode 題型解析",
+        "date": "2025-03-07",
         "author": "James",
         "tags": [
             "Data Structure",
-            "Binary Tree"
+            "Stack",
+            "Monotonic Stack"
         ],
         "image": "/images/program/data-structure.jpeg",
-        "description": "Binary Tree 的定義就是在一個 tree 中，每一個 node 的 children 數量不能超過兩個，所以如果寫成一個 class 的話可以這樣表示",
-        "readTime": 3,
-        "path": "binary-tree-traversal"
+        "description": "Stack 是一種 Last In, First Out (LIFO) 的 data structure，有點像是疊積木，所以最大的特色就是，你永遠只能看到最上面這個 element，要 remove element 也只能 remove 最上面的這個，所以沒有辦法看到其他的 element。",
+        "readTime": 2,
+        "path": "stack"
+    },
+    {
+        "title": "[ Algorithm ] Sliding Window | 核心概念與 Leetcode 題型解析",
+        "date": "2025-03-05",
+        "author": "James",
+        "tags": [
+            "Algorithm",
+            "Sliding Window"
+        ],
+        "image": "/images/program/algorithm.jpg",
+        "description": "Sliding Window 就是利用 left 和 right 兩個指標來維持一個動態區間 ( window )，透過移動這個 window 來減少重複運算，主要用在處理 subarray 或是 substring 之類的問題。",
+        "readTime": 2,
+        "path": "sliding-window"
     },
     {
         "title": "[ Algorithm ] DFS & BFS | 核心概念與 Leetcode 題型解析",
@@ -41,33 +55,6 @@
         "path": "DFS-BFS"
     },
     {
-        "title": "[ Algorithm ] Sliding Window | 核心概念與 Leetcode 題型解析",
-        "date": "2025-03-05",
-        "author": "James",
-        "tags": [
-            "Algorithm",
-            "Sliding Window"
-        ],
-        "image": "/images/program/algorithm.jpg",
-        "description": "Sliding Window 就是利用 left 和 right 兩個指標來維持一個動態區間 ( window )，透過移動這個 window 來減少重複運算，主要用在處理 subarray 或是 substring 之類的問題。",
-        "readTime": 2,
-        "path": "sliding-window"
-    },
-    {
-        "title": "[ Data Structure ] Stack & Monotonic Stack | 核心概念與 Leetcode 題型解析",
-        "date": "2025-03-07",
-        "author": "James",
-        "tags": [
-            "Data Structure",
-            "Stack",
-            "Monotonic Stack"
-        ],
-        "image": "/images/program/data-structure.jpeg",
-        "description": "Stack 是一種 Last In, First Out (LIFO) 的 data structure，有點像是疊積木，所以最大的特色就是，你永遠只能看到最上面這個 element，要 remove element 也只能 remove 最上面的這個，所以沒有辦法看到其他的 element。",
-        "readTime": 2,
-        "path": "stack"
-    },
-    {
         "title": "[ Algorithm ] Two Pointers | 核心概念與 Leetcode 題型解析",
         "date": "2025-03-05",
         "author": "James",
@@ -79,5 +66,18 @@
         "description": "Two Pointers 就是 iterate 的時候不是用一個指標，用兩個指標 iterate，用不同速度、方向、位置等等來想辦法找到題目所求，Two Pointers 大致上分成三類：",
         "readTime": 2,
         "path": "two-pointers"
+    },
+    {
+        "title": "[ Data Structure ] Binary Tree - Traversal | 核心概念與 Leetcode 題型解析",
+        "date": "2025-03-21",
+        "author": "James",
+        "tags": [
+            "Data Structure",
+            "Binary Tree"
+        ],
+        "image": "/images/program/data-structure.jpeg",
+        "description": "Binary Tree 的定義就是在一個 tree 中，每一個 node 的 children 數量不能超過兩個，所以如果寫成一個 class 的話可以這樣表示",
+        "readTime": 3,
+        "path": "binary-tree-traversal"
     }
 ]
