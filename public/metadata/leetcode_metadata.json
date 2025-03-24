@@ -679,6 +679,20 @@
         "path": "leetcode-876"
     },
     {
+        "title": "[ Leetcode 650 ] 2 Keys Keyboard | 解題思路分享",
+        "date": "2025-03-24",
+        "author": "James",
+        "tags": [
+            "Math",
+            "DP"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-650"
+    },
+    {
         "title": "[ Leetcode 701 ] Insert into a Binary Search Tree | 解題思路分享",
         "date": "2025-03-21",
         "author": "James",

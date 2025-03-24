@@ -9,7 +9,7 @@ description: ""
 readTime: 3
 ---
 
-給定一個正整數 n，將其拆分為至少兩個正整數的和，並 return 這些數的最大乘積。
+給一個 array `nums`，找出前 k 個出現最多次的數字。
 
 題目連結 🔗：[https://leetcode.com/problems/top-k-frequent-elements/](https://leetcode.com/problems/top-k-frequent-elements/)
 
