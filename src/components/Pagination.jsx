@@ -5,19 +5,9 @@ import { ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from "lucide-r
 import { Button } from "./ui/button";
 import { useCallback } from "react";
 
-const Pagination = ({ currentPage, totalPages }) => {
+const Pagination = ({ currentPage, totalPages, goToPage }) => {
   const router = useRouter();
   const searchParams = useSearchParams();
-
-  // 更新 URL Query 參數
-  const goToPage = useCallback(
-    (page) => {
-      const params = new URLSearchParams(searchParams);
-      params.set("page", page);
-      router.push(`?${params.toString()}`);
-    },
-    [router, searchParams]
-  );
 
   const getPageNumbers = () => {
     if (totalPages <= 5) {

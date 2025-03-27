@@ -60,7 +60,7 @@ vector<int> maxSlidingWindow(vector<int>& nums, int k) {
 }
 ```
 
-### **時間優化 - Monotonic Dequeue**
+### **時間優化 - Monotonic Deque**
 
 但這題其實有更快的解法，我們甚至不用將資訊儲存進去可以自動排序的 STL，我們可以手動維護一個遞減的 Monotonic Deque，這樣 insert 的時候就不用耗費 O(logn)，用 O(1) 就可以解決了，而且還可以保證 dq.front() 是最大值。
 

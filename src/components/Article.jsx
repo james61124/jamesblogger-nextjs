@@ -201,7 +201,16 @@ export default function Article({ category, fileName, json_path, title }) {
                   return <li className="leading-relaxed text-lg list-item" {...props}>{children[0].props.children}</li>;
                 }
                 return <li className="leading-relaxed text-lg list-item" {...props}>{children}</li>;
-              }
+              },
+              table: ({ node, ...props }) => (
+                <table className="border-collapse border border-gray-300 w-full text-left" {...props} />
+              ),
+              th: ({ node, ...props }) => (
+                <th className="border border-gray-300 px-4 py-2 bg-gray-200" {...props} />
+              ),
+              td: ({ node, ...props }) => (
+                <td className="border border-gray-300 px-4 py-2" {...props} />
+              )
             }}
           >
             {content}

@@ -24,15 +24,17 @@ unordered_set 有兩個特色：
 
 常用 function :
 
-- **unordered_set**<**int**>**uset;** - 宣告
-- **uset.insert(value);** - 在 unordered_set 中插入元素, O(1)
-- **uset.find(value);**	- 確認 value 是不是在 unordered_set 中，沒有的話會 return uset.end(), O(1)
-- **uset.count(value)**	- 計算 value 的數量，只會 return 0 或 1，因為 unordered_set 不允許重複的 element, O(1)
-- **uset.erase(value);** - 刪除特定元素, O(1)
-- **uset.empty();** - 檢查 unordered_set 是否為 empty (回傳 true/false), O(1)
-- **uset.clear();**, O(n)
-- **uset.size()**, O(1)
-- **for(auto& x : uset)** - iterate 整個 unordered_set, O(n)
+| **Function** | **Description** | **Time Complexity** |
+|-------------|----------------|---------------------|
+| `unordered_set<int> uset;` | 宣告 unordered_set | - |
+| `uset.insert(value);` | 插入元素 | O(1) |
+| `uset.find(value);` | 確認 value 是否存在，回傳 iterator 或 `uset.end()` | O(1) |
+| `uset.count(value);` | 計算某值的數量（0 或 1） | O(1) |
+| `uset.erase(value);` | 刪除特定元素 | O(1) |
+| `uset.empty();` | 檢查 set 是否為空 | O(1) |
+| `uset.clear();` | 清空所有元素 | O(n) |
+| `uset.size();` | 返回元素數量 | O(1) |
+| `for(auto& x : uset)` | 遍歷 unordered_set | O(n) |
 
 常常用在一些像是檢查元素是否存在、去除 duplicate 等等的地方。
 
@@ -47,16 +49,18 @@ unordered_map 有幾個特色：
 
 常用 function :
 
-- **unordered_map<**int, int**> umap;** - 宣告
-- **umap[key] = value;** - 插入或更新 Key 對應的 Value
-- **umap.insert({key, value});** - 插入 Key-Value pair
-- **umap.find(key);** - return Iterator，若找不到則 return umap.end()
-- **umap.count(key);** - 判斷 Key 是否存在（回傳 0 或 1）
-- **umap.erase(key);** - 刪除指定 Key
-- **umap.empty();** - 判斷是否為空
-- **umap.clear();** - 清空 Map
-- **umap.size();** - 回傳元素數量
-- **for (auto& [k, v] : umap)** - iterate Map
+| **Function** | **Description** | **Time Complexity** |
+|-------------|----------------|---------------------|
+| `unordered_map<int, int> umap;` | 宣告 unordered_map | - |
+| `umap[key] = value;` | 插入或更新 Key 對應的 Value | O(1) |
+| `umap.insert({key, value});` | 插入 Key-Value pair | O(1) |
+| `umap.find(key);` | 查找 Key，回傳 Iterator 或 `umap.end()` | O(1) |
+| `umap.count(key);` | 判斷 Key 是否存在（0 或 1） | O(1) |
+| `umap.erase(key);` | 刪除指定 Key | O(1) |
+| `umap.empty();` | 判斷是否為空 | O(1) |
+| `umap.clear();` | 清空 Map | O(n) |
+| `umap.size();` | 返回元素數量 | O(1) |
+| `for (auto& [k, v] : umap)` | 遍歷 Map | O(n) |
 
 常常用在一些像是統計元素出現次數、建立 key-value 關係、快速查詢/更新 key 等等地方。
 
@@ -66,12 +70,14 @@ unordered_map 有幾個特色：
 
 常用 function :
 
-- **unordered_multiset<**int**> umset;** - 宣告
-- **umset.insert(value);** - 插入元素（可重複）
-- **umset.count(value);** - 計算某個值的出現次數
-- **umset.find(value);** - 返回第一個匹配的 Iterator
-- **umset.equal_range(value);** - 返回一個範圍，表示所有匹配的元素
-- **umset.erase(value);** - 刪除所有匹配的元素
+| **Function** | **Description** | **Time Complexity** |
+|-------------|----------------|---------------------|
+| `unordered_multiset<int> umset;` | 宣告 unordered_multiset | - |
+| `umset.insert(value);` | 插入元素（可重複） | O(1) |
+| `umset.count(value);` | 計算某個值的出現次數 | O(n) |
+| `umset.find(value);` | 返回第一個匹配的 Iterator | O(1) |
+| `umset.equal_range(value);` | 返回所有匹配的範圍 | O(n) |
+| `umset.erase(value);` | 刪除所有匹配的元素 | O(n) |
 
 ### **unordered_multimap**
 
@@ -79,12 +85,14 @@ unordered_map 有幾個特色：
 
 常用 function :
 
-- **unordered_multimap<**Key, Value**> ummap;** - 宣告
-- **ummap.insert({key, value});** - 插入 Key-Value pair（允許多個相同 Key）
-- **ummap.find(key);** - 返回第一個匹配 Key 的 Iterator
-- **ummap.count(key);** - 回傳 Key 出現次數
-- **ummap.equal_range(key);** - 返回一個範圍 (pair<iterator, iterator>)，表示所有匹配 Key 的範圍
-- **ummap.erase(key);** - 刪除所有匹配 Key 的元素
+| **Function** | **Description** | **Time Complexity** |
+|-------------|----------------|---------------------|
+| `unordered_multimap<Key, Value> ummap;` | 宣告 unordered_multimap | - |
+| `ummap.insert({key, value});` | 插入 Key-Value pair（允許多個相同 Key） | O(1) |
+| `ummap.find(key);` | 返回第一個匹配 Key 的 Iterator | O(1) |
+| `ummap.count(key);` | 回傳 Key 出現次數 | O(n) |
+| `ummap.equal_range(key);` | 返回所有匹配 Key 的範圍 | O(n) |
+| `ummap.erase(key);` | 刪除所有匹配 Key 的元素 | O(n) |
 
 
 
