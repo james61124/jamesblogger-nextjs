@@ -14,31 +14,18 @@
         "path": "binary-search-tree"
     },
     {
-        "title": "[ Data Structure ] Binary Tree - Traversal | 核心概念與 Leetcode 題型解析",
-        "date": "2025-03-21",
+        "title": "[ Data Structure ] Stack & Monotonic Stack | 核心概念與 Leetcode 題型解析",
+        "date": "2025-03-07",
         "author": "James",
         "tags": [
             "Data Structure",
-            "Binary Tree"
+            "Stack",
+            "Monotonic Stack"
         ],
         "image": "/images/program/data-structure.jpeg",
-        "description": "Binary Tree 的定義就是在一個 tree 中，每一個 node 的 children 數量不能超過兩個，所以如果寫成一個 class 的話可以這樣表示",
-        "readTime": 3,
-        "path": "binary-tree-traversal"
-    },
-    {
-        "title": "[ Algorithm ] DFS & BFS | 核心概念與 Leetcode 題型解析",
-        "date": "2025-03-08",
-        "author": "James",
-        "tags": [
-            "Algorithm",
-            "DFS",
-            "BFS"
-        ],
-        "image": "/images/program/algorithm.jpg",
-        "description": "要 traverse 一個 Graph 有兩種方式，一種是深度優先，也就是所謂的 DFS，我們找到 neighbor 之後不會急著把所有 neighbor 都找到，會再繼續往下找 neighbor 的 neighbor 直到找到底再回來，那另一種就是廣度優先，也就是所謂的 BFS，我們會先把所有 neighbors 找到之後再往下找他們各自的所有 neighbors，這裡根據這兩種方式來進行討論：",
+        "description": "Stack 是一種 Last In, First Out (LIFO) 的 data structure，有點像是疊積木，所以最大的特色就是，你永遠只能看到最上面這個 element，要 remove element 也只能 remove 最上面的這個，所以沒有辦法看到其他的 element。",
         "readTime": 2,
-        "path": "DFS-BFS"
+        "path": "stack"
     },
     {
         "title": "[ Data Structure ] Queue & Priority Queue | 核心概念與 Leetcode 題型解析",
@@ -68,18 +55,18 @@
         "path": "sliding-window"
     },
     {
-        "title": "[ Data Structure ] Stack & Monotonic Stack | 核心概念與 Leetcode 題型解析",
-        "date": "2025-03-07",
+        "title": "[ Algorithm ] DFS & BFS | 核心概念與 Leetcode 題型解析",
+        "date": "2025-03-08",
         "author": "James",
         "tags": [
-            "Data Structure",
-            "Stack",
-            "Monotonic Stack"
+            "Algorithm",
+            "DFS",
+            "BFS"
         ],
-        "image": "/images/program/data-structure.jpeg",
-        "description": "Stack 是一種 Last In, First Out (LIFO) 的 data structure，有點像是疊積木，所以最大的特色就是，你永遠只能看到最上面這個 element，要 remove element 也只能 remove 最上面的這個，所以沒有辦法看到其他的 element。",
+        "image": "/images/program/algorithm.jpg",
+        "description": "要 traverse 一個 Graph 有兩種方式，一種是深度優先，也就是所謂的 DFS，我們找到 neighbor 之後不會急著把所有 neighbor 都找到，會再繼續往下找 neighbor 的 neighbor 直到找到底再回來，那另一種就是廣度優先，也就是所謂的 BFS，我們會先把所有 neighbors 找到之後再往下找他們各自的所有 neighbors，這裡根據這兩種方式來進行討論：",
         "readTime": 2,
-        "path": "stack"
+        "path": "DFS-BFS"
     },
     {
         "title": "[ Algorithm ] Two Pointers | 核心概念與 Leetcode 題型解析",
@@ -93,5 +80,18 @@
         "description": "Two Pointers 就是 iterate 的時候不是用一個指標，用兩個指標 iterate，用不同速度、方向、位置等等來想辦法找到題目所求，Two Pointers 大致上分成三類：",
         "readTime": 2,
         "path": "two-pointers"
+    },
+    {
+        "title": "[ Data Structure ] Binary Tree - Traversal | 核心概念與 Leetcode 題型解析",
+        "date": "2025-03-21",
+        "author": "James",
+        "tags": [
+            "Data Structure",
+            "Binary Tree"
+        ],
+        "image": "/images/program/data-structure.jpeg",
+        "description": "Binary Tree 的定義就是在一個 tree 中，每一個 node 的 children 數量不能超過兩個，所以如果寫成一個 class 的話可以這樣表示",
+        "readTime": 3,
+        "path": "binary-tree-traversal"
     }
 ]
