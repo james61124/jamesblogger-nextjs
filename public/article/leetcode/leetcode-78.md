@@ -9,13 +9,13 @@ description: ""
 readTime: 2
 ---
 
-題目要求我們找到一個 Array 的所有 Subset
+題目要求我們找到一個 Array 的所有 Subset。
 
 題目連結 🔗：[https://leetcode.com/problems/subsets/](https://leetcode.com/problems/subsets/)
 
 ### **解題思路 - Baktracking**
 
-如果要找所有的 subset，每一個 node 就會面臨「選 / 不選」的決策，當看完一種決策要回到現在這個狀態繼續看下一種，那這種 `現在的 decision 不合適或是不夠，就撤回這個 decision 繼續嘗試其他 action`，就是 Backtracking。
+如果要找所有的 subset，每一個 node 就會面臨「選 / 不選」的決策，當看完一種決策要回到現在這個狀態繼續看下一種，那這種「現在的 decision 不合適或是不夠，就撤回這個 decision 繼續嘗試其他 action」，就是 Backtracking。
 
 <figure>
   <img src="/images/leetcode/leetcode-78/decision-tree.png" alt="backtracking" />

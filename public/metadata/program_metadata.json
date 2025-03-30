@@ -1,5 +1,18 @@
 [
     {
+        "title": "[ Algorithm ] Backtracking | 核心概念與 Leetcode 題型解析",
+        "date": "2025-03-30",
+        "author": "James",
+        "tags": [
+            "Algorithm",
+            "Backtracking"
+        ],
+        "image": "/images/program/algorithm.jpg",
+        "description": "Backtracking 的想法很簡單，我通常會把他想成 DFS，每一個 level 可以有至多 n 種 actions，當看完一種要回到現在這個狀態繼續看下一種，那這種「現在的 decision 不合適或是不夠，就撤回這個 decision 繼續嘗試其他 action」，就是 Backtracking。",
+        "readTime": 2,
+        "path": "backtracking"
+    },
+    {
         "title": "[ Data Structure ] Binary Search Tree | 核心概念與 Leetcode 題型解析",
         "date": "2025-03-21",
         "author": "James",
@@ -14,18 +27,48 @@
         "path": "binary-search-tree"
     },
     {
-        "title": "[ Data Structure ] Stack & Monotonic Stack | 核心概念與 Leetcode 題型解析",
-        "date": "2025-03-07",
+        "title": "[ Data Structure ] Binary Tree - Traversal | 核心概念與 Leetcode 題型解析",
+        "date": "2025-03-21",
         "author": "James",
         "tags": [
             "Data Structure",
-            "Stack",
-            "Monotonic Stack"
+            "Binary Tree"
         ],
         "image": "/images/program/data-structure.jpeg",
-        "description": "Stack 是一種 Last In, First Out (LIFO) 的 data structure，有點像是疊積木，所以最大的特色就是，你永遠只能看到最上面這個 element，要 remove element 也只能 remove 最上面的這個，所以沒有辦法看到其他的 element。",
+        "description": "Binary Tree 的定義就是在一個 tree 中，每一個 node 的 children 數量不能超過兩個，所以如果寫成一個 class 的話可以這樣表示",
+        "readTime": 3,
+        "path": "binary-tree-traversal"
+    },
+    {
+        "title": "[ Algorithm ] DFS & BFS | 核心概念與 Leetcode 題型解析",
+        "date": "2025-03-08",
+        "author": "James",
+        "tags": [
+            "Algorithm",
+            "DFS",
+            "BFS"
+        ],
+        "image": "/images/program/algorithm.jpg",
+        "description": "要 traverse 一個 Graph 有兩種方式，一種是深度優先，也就是所謂的 DFS，我們找到 neighbor 之後不會急著把所有 neighbor 都找到，會再繼續往下找 neighbor 的 neighbor 直到找到底再回來，那另一種就是廣度優先，也就是所謂的 BFS，我們會先把所有 neighbors 找到之後再往下找他們各自的所有 neighbors，這裡根據這兩種方式來進行討論：",
         "readTime": 2,
-        "path": "stack"
+        "path": "DFS-BFS"
+    },
+    {
+        "title": "[ Data Structure ] Hash Table | 核心概念與 Leetcode 題型解析",
+        "date": "2025-03-30",
+        "author": "James",
+        "tags": [
+            "Data Structure",
+            "Hash Table",
+            "Unordered Set",
+            "Unordered Map",
+            "Unordered Multiset",
+            "Unordered Multimap"
+        ],
+        "image": "/images/program/data-structure.jpeg",
+        "description": "Hash Table 是一種基於 key-value pair 的 data structure，主要目的就是要讓 search, delete, insert 這些操作都是 O(1)，他利用一個 Hash Function 將 Key 映射到一個 index，然後再把 value 填進來，所以才可以用極短的時間就做到 searching 的動作。常見的 C++ Hash Table 包括下面幾種：",
+        "readTime": 4,
+        "path": "hash-table"
     },
     {
         "title": "[ Data Structure ] Queue & Priority Queue | 核心概念與 Leetcode 題型解析",
@@ -55,18 +98,18 @@
         "path": "sliding-window"
     },
     {
-        "title": "[ Algorithm ] DFS & BFS | 核心概念與 Leetcode 題型解析",
-        "date": "2025-03-08",
+        "title": "[ Data Structure ] Stack & Monotonic Stack | 核心概念與 Leetcode 題型解析",
+        "date": "2025-03-07",
         "author": "James",
         "tags": [
-            "Algorithm",
-            "DFS",
-            "BFS"
+            "Data Structure",
+            "Stack",
+            "Monotonic Stack"
         ],
-        "image": "/images/program/algorithm.jpg",
-        "description": "要 traverse 一個 Graph 有兩種方式，一種是深度優先，也就是所謂的 DFS，我們找到 neighbor 之後不會急著把所有 neighbor 都找到，會再繼續往下找 neighbor 的 neighbor 直到找到底再回來，那另一種就是廣度優先，也就是所謂的 BFS，我們會先把所有 neighbors 找到之後再往下找他們各自的所有 neighbors，這裡根據這兩種方式來進行討論：",
+        "image": "/images/program/data-structure.jpeg",
+        "description": "Stack 是一種 Last In, First Out (LIFO) 的 data structure，有點像是疊積木，所以最大的特色就是，你永遠只能看到最上面這個 element，要 remove element 也只能 remove 最上面的這個，所以沒有辦法看到其他的 element。",
         "readTime": 2,
-        "path": "DFS-BFS"
+        "path": "stack"
     },
     {
         "title": "[ Algorithm ] Two Pointers | 核心概念與 Leetcode 題型解析",
@@ -80,18 +123,5 @@
         "description": "Two Pointers 就是 iterate 的時候不是用一個指標，用兩個指標 iterate，用不同速度、方向、位置等等來想辦法找到題目所求，Two Pointers 大致上分成三類：",
         "readTime": 2,
         "path": "two-pointers"
-    },
-    {
-        "title": "[ Data Structure ] Binary Tree - Traversal | 核心概念與 Leetcode 題型解析",
-        "date": "2025-03-21",
-        "author": "James",
-        "tags": [
-            "Data Structure",
-            "Binary Tree"
-        ],
-        "image": "/images/program/data-structure.jpeg",
-        "description": "Binary Tree 的定義就是在一個 tree 中，每一個 node 的 children 數量不能超過兩個，所以如果寫成一個 class 的話可以這樣表示",
-        "readTime": 3,
-        "path": "binary-tree-traversal"
     }
 ]

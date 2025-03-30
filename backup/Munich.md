@@ -14,47 +14,76 @@ categories:
   - 旅行
 ---
 
-這次是我們第一次到慕尼黑，後面聖誕市集也是第一次到德國，
+這次是我們第一次到慕尼黑，也是第一次到德國，德國給我的感覺很務實，路上的街景不會看到太華麗的裝飾，也沒有一個很明顯的特色，
 
 ## **Day 1**
 
-這次從 Eindhoven 搭了 10 幾個小時的 Flixbus 夜車到慕尼黑，除了價錢便宜真的沒甚麼優點，坐著睡覺腳不能伸直，到點就要開始玩真的挺累，不過至少這樣一來一回可以省掉兩天的住宿費，不然我真的要吃土了。
+這次從 Eindhoven 搭了 10 幾個小時的 Flixbus 夜車到慕尼黑，對於窮學生來說這真是個不錯的選擇，一來一回的夜車可以省掉兩天的住宿，cp 值非常高。
 
-這次我們有從交換社團找到旅伴一起去，所以算是自駕遊，就不用在大眾運輸上面晃啊晃晃很久，因為我們這次去的點像是國王湖跟新天鵝堡其實都離市區滿遠的。
+而這次我們有從交換社團找到旅伴一起去，所以算是自駕遊，就不用在大眾運輸上面晃啊晃晃很久，因為我們這次去的點像是國王湖跟新天鵝堡其實都離市區滿遠的。
 
 ![Munich](/images/travel/Munich-20240823/Munich.jpg)
 
-看到這個門就代表老城區到了，裡面有很多商家跟餐廳，就可以開始隨意走走逛逛。
+在跑到很遠的國王湖跟新天鵝堡前，第一天先逛老城區，看到這個門就代表老城區到了，裡面有很多商家跟餐廳，就可以開始隨意走走逛逛。
 
 ### **慕尼黑王宮 Residenz Munchen**
 
-![Residenz-Munchen](/images/travel/Munich-20240823/Residenz-Munchen.jpg)
+第一站首先先來逛慕尼黑王宮，人生第一次逛金碧輝煌的宮殿，走路的時候都在想像如果我如果住在王宮裡那這輩子是不是也不會有甚麼煩惱了。
 
-第一站是這個王宮，這應該是我第一次逛金碧輝煌的地方哈哈，走路的時候都會想說如果我超級有錢蓋一棟大城堡來住感覺很爽。
+進王宮是需要門票的，不過價錢不會太貴現場買就可以了，然後裡面有中文導覽，但老實說這邊太多藝術跟歷史相關的介紹了，我就算聽中文導覽其實我也不太曉得他在講甚麼，很多人名地名還有故事有點太 detail 了完全沒有聽過。
 
-進去是要門票的，不過也沒有很貴。然後裡面有中文導覽很不錯，不然這邊一堆 history 跟奇怪的專有名詞，如果我聽英文導覽應該會直接放棄，不過其實我聽中文導覽也快放棄了哈哈，對歷史真的一竅不通。但 honestly speaking，這邊在二戰的時候被毀掉太多地方了有點可惜，很多房間根本都是重建的，導覽也有說很大一部分都已經不是原本的東西，所以有些房間其實看起來沒有想像中的那麼金碧輝煌。
+<figure>
+  <img src="/images/travel/Munich-20240823/Residenz-Munchen.jpg" alt="Residenz-Munchen" />
+  <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
+    非常華麗的古物大廳
+  </figcaption>
+</figure>
 
-對其中幾個房間特別有印象，這個錯視的壁畫也是後來重建的，從整個房間的正中央看會感覺天花板是挑高的狀態，但其實他就是天花板而已，特別好玩。
+一進來就會先看到這個 70 公尺長的古物大廳，整個會場非常大，旁邊陳列了很多巴伐利亞時期的古文物，頭上的壁畫也都畫得很細節，歐洲的建築內常常都會看到一大堆的壁畫跟雕像，但是這些數量真的多到沒有辦法一一去了解他們背後的故事，我們就抱著欣賞的心情去感受這裡的氣氛。
 
-![Residenz-Munchen-2](/images/travel/Munich-20240823/Residenz-Munchen-2.jpg)
+<figure>
+  <img src="/images/travel/Munich-20240823/Residenz-Munchen-2.jpg" alt="Residenz-Munchen" />
+  <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
+    金光閃閃，超級羨慕
+  </figcaption>
+</figure>
 
-金光閃閃挖勒，超羨慕。
+裡面就是可以看到一些像這樣非常閃亮的房間，有時候真的會覺得貧窮限制了想像。
 
-![Residenz-Munchen-3](/images/travel/Munich-20240823/Residenz-Munchen-3.jpg)
+<figure>
+  <img src="/images/travel/Munich-20240823/Residenz-Munchen-3.jpg" alt="Residenz-Munchen" />
+  <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
+    先祖畫廊
+  </figcaption>
+</figure>
 
-這邊每一個人都是這個家族裡面的人，他們把畫像都掛在這邊。
+這邊也滿有趣的，他把上百位巴伐利亞歷代的皇族成員的畫像都掛在這邊，而且每一幅都是鑲金的，真的非常奢華。
 
-![Residenz-Munchen-4](/images/travel/Munich-20240823/Residenz-Munchen-4.jpg)
+<figure>
+  <img src="/images/travel/Munich-20240823/Residenz-Munchen-4.jpg" alt="Residenz-Munchen" />
+  <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
+    還有族譜，超酷的！
+  </figcaption>
+</figure>
 
-還有族譜，超酷的！
+不過慕尼黑王宮有一個我覺得很可惜的地方，這邊在二戰期間被摧毀太多地方了，很多房間其實都是重建的所以都沒有這麼金碧輝煌，導覽也有說很大一部分都已經不是原本的樣子了，所以其實除了少數房間，大部分其實都沒有到這麼奢華，但來感受一下這邊的氛圍還是很不錯的。
+
+另外其實有一個漏網鏡頭，有一個房間放的是錯視的壁畫，從房間的正中間往上看會覺得整個天花板是挑高的，但其實它就是普通高度的天花板而已，我找不到適合的圖片放上來，所以就文字紀錄一下！
 
 [慕尼黑王宮位置](https://maps.app.goo.gl/aiznLRFXbMeMApkWA)
 
 ### **達豪集中營 Dachau Concentration Camp Memorial Site**
 
-![Dachau-1](/images/travel/Munich-20240823/Dachau-1.jpg)
+達豪集中營在一個奇怪的地方，所以一般的大眾運輸其實會不太方便，還好這次有朋朋可以開車帶我們過去。
 
-大推特推！這邊真的超大，不過倒不是說這邊是個多好玩的地方，而是可以深入了解德國納粹當時的所作所為跟一些小時候看電影不知道的細節。
+<figure>
+  <img src="/images/travel/Munich-20240823/Dachau-1.jpg" alt="Dachau" />
+  <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
+    集中營超大的廣場
+  </figcaption>
+</figure>
+
+如果有機會來慕尼黑，我認為一定要逛的地方就是他們的集中營，而且要排足夠的時間，倒不是說這裡是個好玩的地方，而是我們可以更深入了解納粹當時的所作所為跟小時候看電影不會出現得更多細節。
 
 這個集中營比較大的特色是他的展品不多，絕大多數都被拆掉了，只留了一棟廁所跟宿舍，但是他的文字敘述非常詳細，很像在看一個很長的英文小說，進到主展區之後就是一幅一幅的文字掛幅，有德文也有英文，我沒有租他們的語音導覽因為時間太趕了，但是光這些就很夠了，內容真的太恐怖，現在回頭想想還是會起雞皮疙瘩。
 
