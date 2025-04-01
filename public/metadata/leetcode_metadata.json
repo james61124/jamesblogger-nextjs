@@ -134,6 +134,19 @@
         "path": "leetcode-21"
     },
     {
+        "title": "[ Leetcode 70 ] Climbing Stairs | 解題思路分享",
+        "date": "2025-04-01",
+        "author": "James",
+        "tags": [
+            "DP"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-70"
+    },
+    {
         "title": "[ Leetcode 15 ] 3Sum | 解題思路分享",
         "date": "2025-03-27",
         "author": "James",
@@ -736,6 +749,21 @@
         "path": "leetcode-516"
     },
     {
+        "title": "[ Leetcode 73 ] Set Matrix Zeros | 解題思路分享",
+        "date": "2025-04-01",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Matrix",
+            "Hash Table"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-73"
+    },
+    {
         "title": "[ Leetcode 209 ] Minimum Size Subarray Sum | 解題思路分享",
         "date": "2025-03-08",
         "author": "James",
@@ -764,6 +792,20 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-349"
+    },
+    {
+        "title": "[ Leetcode 57 ] Insert Interval | 解題思路分享",
+        "date": "2025-04-01",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Interval"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-57"
     },
     {
         "title": "[ Leetcode 219 ] Contains Duplicate II | 解題思路分享",
@@ -866,6 +908,21 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-56"
+    },
+    {
+        "title": "[ Leetcode 62 ] Unique Paths | 解題思路分享",
+        "date": "2025-04-01",
+        "author": "James",
+        "tags": [
+            "Math",
+            "DP",
+            "Combinatorics"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-62"
     },
     {
         "title": "[ Leetcode 416 ] Partition Equal Subset Sum | 解題思路分享",
