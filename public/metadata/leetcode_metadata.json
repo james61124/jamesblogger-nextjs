@@ -236,6 +236,22 @@
         "path": "leetcode-718"
     },
     {
+        "title": "[ Leetcode 98 ] Validate Binary Search Tree | 解題思路分享",
+        "date": "2025-04-07",
+        "author": "James",
+        "tags": [
+            "Tree",
+            "DFS",
+            "Binary Search Tree",
+            "Binary Tree"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-98"
+    },
+    {
         "title": "[ Leetcode 300 ] Longest Increasing Subsequence | 解題思路分享",
         "date": "2025-01-29",
         "author": "James",
@@ -405,6 +421,21 @@
         "path": "leetcode-210"
     },
     {
+        "title": "[ Leetcode 100 ] Same Tree | 解題思路分享",
+        "date": "2025-04-07",
+        "author": "James",
+        "tags": [
+            "Tree",
+            "DFS",
+            "Binary Tree"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-100"
+    },
+    {
         "title": "[ Leetcode 49 ] Group Anagrams | 解題思路分享",
         "date": "2025-03-30",
         "author": "James",
@@ -466,6 +497,23 @@
         "path": "leetcode-141"
     },
     {
+        "title": "[ Leetcode 79 ] Word Search | 解題思路分享",
+        "date": "2025-04-07",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Backtracking",
+            "DFS",
+            "Matrix",
+            "String"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 5,
+        "path": "leetcode-79"
+    },
+    {
         "title": "[ Leetcode 343 ] Integer Break | 解題思路分享",
         "date": "2025-03-23",
         "author": "James",
@@ -492,6 +540,21 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-1343"
+    },
+    {
+        "title": "[ Leetcode 104 ] Maximum Depth of Binary Tree | 解題思路分享",
+        "date": "2025-04-07",
+        "author": "James",
+        "tags": [
+            "Tree",
+            "DFS",
+            "Binary Tree"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-104"
     },
     {
         "title": "[ Leetcode 227 ] Basic Calculator II | 解題思路分享",
@@ -598,6 +661,20 @@
         "description": "",
         "readTime": 2,
         "path": "leetcode-39"
+    },
+    {
+        "title": "[ Leetcode 121 ] Best Time to Buy and Sell Stock | 解題思路分享",
+        "date": "2025-04-07",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Greedy"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-121"
     },
     {
         "title": "[ Leetcode 48 ] Rotate Image | 解題思路分享",
@@ -908,6 +985,20 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-56"
+    },
+    {
+        "title": "[ Leetcode 91 ] Decode Ways | 解題思路分享",
+        "date": "2025-04-07",
+        "author": "James",
+        "tags": [
+            "String",
+            "DP"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-91"
     },
     {
         "title": "[ Leetcode 62 ] Unique Paths | 解題思路分享",

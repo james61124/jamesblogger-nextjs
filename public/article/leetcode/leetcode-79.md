@@ -1,6 +1,6 @@
 ---
 title: "[ Leetcode 79 ] Word Search | 解題思路分享"
-date: "2025-04-02"
+date: "2025-04-07"
 author: James
 tags: Array,Backtracking,DFS,Matrix,String
 difficulty: Medium
@@ -9,7 +9,7 @@ description: ""
 readTime: 3
 ---
 
-
+給一個 2D 的 Matrix `board`，還有一個 string `word`，判斷這個 `word` 能不能在 `board` 中相鄰的被拼出來。 
 
 題目連結 🔗：[https://leetcode.com/problems/word-search/](https://leetcode.com/problems/word-search/)
 
@@ -32,8 +32,8 @@ word = "AAB";
 
 如果先看 (0, 1)->(1, 1)->(1, 0) 會找到三個 'A'，所以會是錯的，但如果我們沒有 backtracking，我們就永遠找不到 (1, 1)->(1, 0)->(2, 0) 這條正確答案了。
 
-<!-- **Time Complexity** - `O(mxn)`<br>
-**Space Complexity** - `O(mxn)` -->
+**Time Complexity** - `O(m x n x (3^L))`，因為每一個 node 可以看到三個不同的方向（ 不含回頭 ），而 L 是 word 的長度<br>
+**Space Complexity** - `O( L )`
 
 #### **Implementation**
 
@@ -116,4 +116,63 @@ bool dfs(vector<vector<char>>& board, string& word, int i, int j, int w){
     }
 ```
 
-再來有一招最重要的，直接大幅提升運行速度，就是如果 board[i][j] 裏面有 element 的數量比 word 
+再來有一招最重要的，直接大幅提升運行速度，就是如果 `word` 內有字母的數量在 `board` 裡不夠的話，那怎麼樣也不會在 `board` 中找到 `word`，那就可以直接 return false 了。
+
+```cpp
+unordered_map<char, int>boardFreq, wordFreq;
+for(int i=0; i<board.size(); i++){
+    for(int j=0; j<board[0].size(); j++){
+        boardFreq[board[i][j]]++;
+    }
+}
+for(char c : word) wordFreq[c]++;
+for(unordered_map<char, int>::iterator iter = wordFreq.begin(); 
+            iter != wordFreq.end(); iter++){
+    if(boardFreq[iter->first] < iter->second) return false;
+}
+```
+
+**Time Complexity** - `O(m x n x (3^L))`，因為每一個 node 可以看到三個不同的方向（ 不含回頭 ），而 L 是 word 的長度<br>
+**Space Complexity** - `O( L )`
+
+#### **Implementation**
+
+```cpp
+bool dfs(vector<vector<char>>& board, string& word, int i, int j, int w){
+
+    if (i < 0 || i >= board.size() || j < 0 || j >= board[0].size() 
+            || board[i][j] != word[w]) return false;
+    if(w == word.size() - 1) return true;
+    
+    char temp = board[i][j];`
+    board[i][j] = '#';
+
+    bool found = dfs(board, word, i + 1, j, w + 1) || dfs(board, word, i - 1, j, w + 1) ||
+        dfs(board, word, i, j + 1, w + 1) || dfs(board, word, i, j - 1, w + 1);
+
+    board[i][j] = temp;
+    return found;
+}
+
+bool exist(vector<vector<char>>& board, string word) {
+    unordered_map<char, int>boardFreq, wordFreq;
+    for(int i=0; i<board.size(); i++){
+        for(int j=0; j<board[0].size(); j++){
+            boardFreq[board[i][j]]++;
+        }
+    }
+    for(char c : word) wordFreq[c]++;
+    for(unordered_map<char, int>::iterator iter = wordFreq.begin(); iter != wordFreq.end(); iter++){
+        if(boardFreq[iter->first] < iter->second) return false;
+    }
+
+    for(int i=0; i<board.size(); i++){
+        for(int j=0; j<board[0].size(); j++){
+            if (board[i][j] == word[0] && dfs(board, word, i, j, 0))
+                return true;
+        }
+    }
+
+    return false;
+}
+```
