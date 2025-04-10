@@ -3,7 +3,7 @@ title: "[ Algorithm ] Two Pointers | 核心概念與 Leetcode 題型解析"
 date: "2025-03-05"
 author: James
 tags: Algorithm,Two Pointers
-image: /images/program/algorithm.jpg
+image: /images/program/algorithm.png
 description: "Two Pointers 就是 iterate 的時候不是用一個指標，用兩個指標 iterate，用不同速度、方向、位置等等來想辦法找到題目所求，Two Pointers 大致上分成三類："
 readTime: 2
 ---

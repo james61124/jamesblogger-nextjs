@@ -3,7 +3,7 @@ title: "[ Algorithm ] DFS & BFS | 核心概念與 Leetcode 題型解析"
 date: "2025-03-08"
 author: James
 tags: Algorithm,DFS,BFS
-image: /images/program/algorithm.jpg
+image: /images/program/algorithm.png
 description: "要 traverse 一個 Graph 有兩種方式，一種是深度優先，也就是所謂的 DFS，我們找到 neighbor 之後不會急著把所有 neighbor 都找到，會再繼續往下找 neighbor 的 neighbor 直到找到底再回來，那另一種就是廣度優先，也就是所謂的 BFS，我們會先把所有 neighbors 找到之後再往下找他們各自的所有 neighbors，這裡根據這兩種方式來進行討論："
 readTime: 2
 ---

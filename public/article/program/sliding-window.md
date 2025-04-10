@@ -3,7 +3,7 @@ title: "[ Algorithm ] Sliding Window | 核心概念與 Leetcode 題型解析"
 date: "2025-03-05"
 author: James
 tags: Algorithm,Sliding Window
-image: /images/program/algorithm.jpg
+image: /images/program/algorithm.png
 description: "Sliding Window 就是利用 left 和 right 兩個指標來維持一個動態區間 ( window )，透過移動這個 window 來減少重複運算，主要用在處理 subarray 或是 substring 之類的問題。"
 readTime: 2
 ---

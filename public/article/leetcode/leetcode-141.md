@@ -17,7 +17,7 @@ readTime: 3
 
 這是最經典的 linked list 判斷有沒有 cycle 的題目，讓 fast iterate 的速度是 slow 的兩倍，如果 linked list 有 cycle 的話，fast 最後會追上 slow。
 
-**Time Complexity** - `O(n)`，最多 iterate n 個 node
+**Time Complexity** - `O(n)`，最多 iterate n 個 node<br>
 **Space Complexity** - `O(1)`
 
 ### **Implementation**

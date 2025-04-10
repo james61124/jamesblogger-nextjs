@@ -28,6 +28,20 @@
         "path": "leetcode-55"
     },
     {
+        "title": "[ Leetcode 128 ] Longest Consecutive Sequence | 解題思路分享",
+        "date": "2025-04-08",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Hash Table"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-128"
+    },
+    {
         "title": "[ Leetcode 450 ] Delete Node in a BST | 解題思路分享",
         "date": "2025-03-21",
         "author": "James",
@@ -118,6 +132,24 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-455"
+    },
+    {
+        "title": "[ Leetcode 139 ] Word Break | 解題思路分享",
+        "date": "2025-04-10",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Hash Table",
+            "String",
+            "DP",
+            "Recursion",
+            "Memorization"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 4,
+        "path": "leetcode-139"
     },
     {
         "title": "[ Leetcode 21 ] Merge Two Sorted Lists | 解題思路分享",
@@ -343,6 +375,20 @@
         "path": "leetcode-221"
     },
     {
+        "title": "[ Leetcode 152 ] Maximum Product Subarray| 解題思路分享",
+        "date": "2025-04-10",
+        "author": "James",
+        "tags": [
+            "Array",
+            "DP"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-152"
+    },
+    {
         "title": "[ Leetcode 739 ] Daily Temperatures | 解題思路分享",
         "date": "2025-03-06",
         "author": "James",
@@ -481,6 +527,22 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-217"
+    },
+    {
+        "title": "[ Leetcode 124 ] Binary Tree Maximum Path Sum | 解題思路分享",
+        "date": "2025-04-08",
+        "author": "James",
+        "tags": [
+            "Tree",
+            "DFS",
+            "Binary Tree",
+            "DP"
+        ],
+        "difficulty": "Hard",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-124"
     },
     {
         "title": "[ Leetcode 141 ] Linked List Cycle | 解題思路分享",
