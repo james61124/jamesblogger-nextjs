@@ -237,6 +237,20 @@
         "path": "leetcode-841"
     },
     {
+        "title": "[ Leetcode 190 ] Reverse Bits | 解題思路分享",
+        "date": "2025-04-14",
+        "author": "James",
+        "tags": [
+            "Bit Manipulation",
+            "Divide and Conquer"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 4,
+        "path": "leetcode-190"
+    },
+    {
         "title": "[ Leetcode 106 ] Construct Binary Tree from Inorder and Postorder Traversal | 解題思路分享",
         "date": "2025-03-21",
         "author": "James",
@@ -298,6 +312,20 @@
         "description": "",
         "readTime": 3,
         "path": "leetcode-300"
+    },
+    {
+        "title": "[ Leetcode 153 ] Find Minimum in Rotated Sorted Array | 解題思路分享",
+        "date": "2025-04-14",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Binary Search"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-153"
     },
     {
         "title": "[ Leetcode 102 ] Binary Tree Level Order Traversal | 解題思路分享",
