@@ -84,6 +84,19 @@
         "path": "binary-search"
     },
     {
+        "title": "[ System Design ] CAP 理論完整解釋：分散式系統的設計抉擇與實務應用",
+        "date": "2025-04-15",
+        "author": "James",
+        "tags": [
+            "System Design",
+            "CAP Theorem"
+        ],
+        "image": "/images/program/system-design.png",
+        "description": "設計 Distributed System 時不可能同時滿足 Consistency ( 一致性 ), Availability ( 可用性 ), Partition Tolerance ( 分區容錯性 ) 三角，我們一次只能保證 Consistency 或是 Availability 兩件事的其中一件，也就是我們需要 trade-off",
+        "readTime": 4,
+        "path": "cap-theorem"
+    },
+    {
         "title": "[ Data Structure ] Queue & Priority Queue | 核心概念與 Leetcode 題型解析",
         "date": "2025-03-07",
         "author": "James",

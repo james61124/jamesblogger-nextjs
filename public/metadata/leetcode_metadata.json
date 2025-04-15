@@ -449,6 +449,20 @@
         "path": "leetcode-200"
     },
     {
+        "title": "[ Leetcode 191 ] Number of 1 Bits | 解題思路分享",
+        "date": "2025-04-15",
+        "author": "James",
+        "tags": [
+            "Bit Manipulation",
+            "Divide and Conquer"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-191"
+    },
+    {
         "title": "[ Leetcode 133 ] Clone Graph | 解題思路分享",
         "date": "2025-03-08",
         "author": "James",
@@ -794,6 +808,20 @@
         "description": "",
         "readTime": 2,
         "path": "leetcode-19"
+    },
+    {
+        "title": "[ Leetcode 206 ] Reverse Linked List | 解題思路分享",
+        "date": "2025-04-15",
+        "author": "James",
+        "tags": [
+            "Linked List",
+            "Recursion"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-206"
     },
     {
         "title": "[ Leetcode 125 ] Valid Palindrome | 解題思路分享",
