@@ -15,7 +15,14 @@ readTime: 3
 
 ### **問題分析 - Trie 介紹**
 
+<figure>
+  <img src="/images/leetcode/leetcode-208/trie.png" alt="Trie" />
+  <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
+    Trie 架構圖
+  </figcaption>
+</figure>
 
+Trie 又叫 Prefix Tree，架構圖大概長這樣，他是一個樹狀的 Data Structure，特別適合用來儲存 string 跟查找 string。所以對於每一個 node 來說，最多會有 26 個 children，而每一條 trajectory 就是一個字。
 
 ### **解題思路**
 

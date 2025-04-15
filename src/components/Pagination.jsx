@@ -28,7 +28,7 @@ const Pagination = ({ currentPage, totalPages, goToPage }) => {
       <Button
         onClick={() => goToPage(1)}
         disabled={currentPage === 1}
-        className="px-3 py-2 border border-gray-400 text-gray-600 hover:bg-gray-600 hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="px-3 py-2 border border-gray-400 text-gray-600 hover:bg-gray-600 cursor-pointer hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
       >
         <ChevronsLeft size={20} />
       </Button>
@@ -37,7 +37,7 @@ const Pagination = ({ currentPage, totalPages, goToPage }) => {
       <Button
         onClick={() => goToPage(currentPage - 1)}
         disabled={currentPage === 1}
-        className="px-3 py-2 border border-gray-400 text-gray-600 hover:bg-gray-600 hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="px-3 py-2 border border-gray-400 text-gray-600 hover:bg-gray-600 cursor-pointer hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
       >
         <ChevronLeft size={20} />
       </Button>
@@ -52,7 +52,7 @@ const Pagination = ({ currentPage, totalPages, goToPage }) => {
           <Button
             key={page}
             onClick={() => goToPage(page)}
-            className={`px-3 py-2 border border-gray-400 text-gray-600 hover:bg-gray-600 hover:text-white transition-all duration-300 ${
+            className={`px-3 py-2 border border-gray-400 text-gray-600 hover:bg-gray-600 cursor-pointer hover:text-white transition-all duration-300 ${
               currentPage === page ? "bg-gray-600 text-white" : "bg-white"
             }`}
           >
@@ -65,7 +65,7 @@ const Pagination = ({ currentPage, totalPages, goToPage }) => {
       <Button
         onClick={() => goToPage(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className="px-3 py-2 border border-gray-400 text-gray-600 hover:bg-gray-600 hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="px-3 py-2 border border-gray-400 text-gray-600 hover:bg-gray-600 cursor-pointer hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
       >
         <ChevronRight size={20} />
       </Button>
@@ -74,7 +74,7 @@ const Pagination = ({ currentPage, totalPages, goToPage }) => {
       <Button
         onClick={() => goToPage(totalPages)}
         disabled={currentPage === totalPages}
-        className="px-3 py-2 border border-gray-400 text-gray-600 hover:bg-gray-600 hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="px-3 py-2 border border-gray-400 text-gray-600 hover:bg-gray-600 cursor-pointer hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
       >
         <ChevronsRight size={20} />
       </Button>
