@@ -1,5 +1,18 @@
 [
     {
+        "title": "[ Algorithm ] Backtracking | 核心概念與 Leetcode 題型解析",
+        "date": "2025-03-30",
+        "author": "James",
+        "tags": [
+            "Algorithm",
+            "Backtracking"
+        ],
+        "image": "/images/program/algorithm.png",
+        "description": "Backtracking 的想法很簡單，我通常會把他想成 DFS，每一個 level 可以有至多 n 種 actions，當看完一種要回到現在這個狀態繼續看下一種，那這種「現在的 decision 不合適或是不夠，就撤回這個 decision 繼續嘗試其他 action」，就是 Backtracking。",
+        "readTime": 2,
+        "path": "backtracking"
+    },
+    {
         "title": "[ Data Structure ] Binary Search Tree | 核心概念與 Leetcode 題型解析",
         "date": "2025-03-21",
         "author": "James",
@@ -14,18 +27,83 @@
         "path": "binary-search-tree"
     },
     {
-        "title": "[ Data Structure ] Stack & Monotonic Stack | 核心概念與 Leetcode 題型解析",
-        "date": "2025-03-07",
+        "title": "[ Algorithm ] Binary Search | 核心概念與 Leetcode 題型解析",
+        "date": "2025-04-11",
+        "author": "James",
+        "tags": [
+            "Algorithm",
+            "Binary Search"
+        ],
+        "image": "/images/program/algorithm.png",
+        "description": "最基本款的 Binary Search，就是在 sorted array `nums` 中找到特定的 target，並回傳 index，但是用時只需要 `O(logn)`，他的原理就是先用兩個 pointers `left`, `right` 分別在 array 的最左跟最右，並計算兩個 pointers 的中點 `mid`，如果 `nums[mid] > target`，表示 target 在左半邊，就把 right 縮到左半邊，反之就是表示 target 在右半邊，就把 left 縮到右半邊，持續這個過程直到 `nums[mid] == target` 就代表找到了，聽起來很簡單，實作起來長這樣：",
+        "readTime": 5,
+        "path": "binary-search"
+    },
+    {
+        "title": "[ Data Structure ] Binary Tree - Reconstruction | 核心概念與 Leetcode 題型解析",
+        "date": "2025-04-10",
         "author": "James",
         "tags": [
             "Data Structure",
-            "Stack",
-            "Monotonic Stack"
+            "Binary Tree"
         ],
         "image": "/images/program/data-structure.jpeg",
-        "description": "Stack 是一種 Last In, First Out (LIFO) 的 data structure，有點像是疊積木，所以最大的特色就是，你永遠只能看到最上面這個 element，要 remove element 也只能 remove 最上面的這個，所以沒有辦法看到其他的 element。",
+        "description": "Binary Tree 除了要會三種基本的 traversal，如何從這些 traversal 的 array 重新建構出一棵樹也是很重要的，下面舉了三種最常見的例子跟解題思路，簡單來說，我們要先找到其中一種 traversal 的 root，在另一邊定位出來之後，就可以很好的分辨 left subtree 跟 right subtree 的位置了。",
+        "readTime": 10,
+        "path": "binary-tree-reconstruction"
+    },
+    {
+        "title": "[ Data Structure ] Binary Tree - Traversal | 核心概念與 Leetcode 題型解析",
+        "date": "2025-03-21",
+        "author": "James",
+        "tags": [
+            "Data Structure",
+            "Binary Tree"
+        ],
+        "image": "/images/program/data-structure.jpeg",
+        "description": "Binary Tree 的定義就是在一個 tree 中，每一個 node 的 children 數量不能超過兩個，所以如果寫成一個 class 的話可以這樣表示",
+        "readTime": 3,
+        "path": "binary-tree-traversal"
+    },
+    {
+        "title": "[ System Design ] CAP 理論完整解釋：分散式系統的設計抉擇與實務應用",
+        "date": "2025-04-15",
+        "author": "James",
+        "tags": [
+            "System Design",
+            "CAP Theorem"
+        ],
+        "image": "/images/program/system-design.png",
+        "description": "設計 Distributed System 時不可能同時滿足 Consistency ( 一致性 ), Availability ( 可用性 ), Partition Tolerance ( 分區容錯性 ) 三角，我們一次只能保證 Consistency 或是 Availability 兩件事的其中一件，也就是我們需要 trade-off",
+        "readTime": 4,
+        "path": "cap-theorem"
+    },
+    {
+        "title": "[ Algorithm ] DFS & BFS | 核心概念與 Leetcode 題型解析",
+        "date": "2025-03-08",
+        "author": "James",
+        "tags": [
+            "Algorithm",
+            "DFS",
+            "BFS"
+        ],
+        "image": "/images/program/algorithm.png",
+        "description": "要 traverse 一個 Graph 有兩種方式，一種是深度優先，也就是所謂的 DFS，我們找到 neighbor 之後不會急著把所有 neighbor 都找到，會再繼續往下找 neighbor 的 neighbor 直到找到底再回來，那另一種就是廣度優先，也就是所謂的 BFS，我們會先把所有 neighbors 找到之後再往下找他們各自的所有 neighbors，這裡根據這兩種方式來進行討論：",
         "readTime": 2,
-        "path": "stack"
+        "path": "DFS-BFS"
+    },
+    {
+        "title": "[ Algorithm ] Greedy | 核心概念與 Leetcode 題型解析",
+        "date": "2025-04-20",
+        "author": "James",
+        "tags": [
+            "Algorithm",
+            "Greedy"
+        ],
+        "image": "/images/program/algorithm.png",
+        "description": "Greedy Algorithm 最核心的價值就是每一步都選擇當前狀況下最優的選擇，期望能夠得到全局最優解，這種算法不考慮未來的後果，只專注於當前的局部最優解。",
+        "readTime": 3,
+        "path": "Greedy"
     },
     {
         "title": "[ Data Structure ] Hash Table | 核心概念與 Leetcode 題型解析",
@@ -43,58 +121,6 @@
         "description": "Hash Table 是一種基於 key-value pair 的 data structure，主要目的就是要讓 search, delete, insert 這些操作都是 O(1)，他利用一個 Hash Function 將 Key 映射到一個 index，然後再把 value 填進來，所以才可以用極短的時間就做到 searching 的動作。常見的 C++ Hash Table 包括下面幾種：",
         "readTime": 4,
         "path": "hash-table"
-    },
-    {
-        "title": "[ Data Structure ] Binary Tree - Reconstruction | 核心概念與 Leetcode 題型解析",
-        "date": "2025-04-10",
-        "author": "James",
-        "tags": [
-            "Data Structure",
-            "Binary Tree"
-        ],
-        "image": "/images/program/data-structure.jpeg",
-        "description": "Binary Tree 除了要會三種基本的 traversal，如何從這些 traversal 的 array 重新建構出一棵樹也是很重要的，下面舉了三種最常見的例子跟解題思路，簡單來說，我們要先找到其中一種 traversal 的 root，在另一邊定位出來之後，就可以很好的分辨 left subtree 跟 right subtree 的位置了。",
-        "readTime": 10,
-        "path": "binary-tree-reconstruction"
-    },
-    {
-        "title": "[ Algorithm ] Backtracking | 核心概念與 Leetcode 題型解析",
-        "date": "2025-03-30",
-        "author": "James",
-        "tags": [
-            "Algorithm",
-            "Backtracking"
-        ],
-        "image": "/images/program/algorithm.png",
-        "description": "Backtracking 的想法很簡單，我通常會把他想成 DFS，每一個 level 可以有至多 n 種 actions，當看完一種要回到現在這個狀態繼續看下一種，那這種「現在的 decision 不合適或是不夠，就撤回這個 decision 繼續嘗試其他 action」，就是 Backtracking。",
-        "readTime": 2,
-        "path": "backtracking"
-    },
-    {
-        "title": "[ Algorithm ] Binary Search | 核心概念與 Leetcode 題型解析",
-        "date": "2025-04-11",
-        "author": "James",
-        "tags": [
-            "Algorithm",
-            "Binary Search"
-        ],
-        "image": "/images/program/algorithm.png",
-        "description": "最基本款的 Binary Search，就是在 sorted array `nums` 中找到特定的 target，並回傳 index，但是用時只需要 `O(logn)`，他的原理就是先用兩個 pointers `left`, `right` 分別在 array 的最左跟最右，並計算兩個 pointers 的中點 `mid`，如果 `nums[mid] > target`，表示 target 在左半邊，就把 right 縮到左半邊，反之就是表示 target 在右半邊，就把 left 縮到右半邊，持續這個過程直到 `nums[mid] == target` 就代表找到了，聽起來很簡單，實作起來長這樣：",
-        "readTime": 5,
-        "path": "binary-search"
-    },
-    {
-        "title": "[ System Design ] CAP 理論完整解釋：分散式系統的設計抉擇與實務應用",
-        "date": "2025-04-15",
-        "author": "James",
-        "tags": [
-            "System Design",
-            "CAP Theorem"
-        ],
-        "image": "/images/program/system-design.png",
-        "description": "設計 Distributed System 時不可能同時滿足 Consistency ( 一致性 ), Availability ( 可用性 ), Partition Tolerance ( 分區容錯性 ) 三角，我們一次只能保證 Consistency 或是 Availability 兩件事的其中一件，也就是我們需要 trade-off",
-        "readTime": 4,
-        "path": "cap-theorem"
     },
     {
         "title": "[ Data Structure ] Queue & Priority Queue | 核心概念與 Leetcode 題型解析",
@@ -124,18 +150,18 @@
         "path": "sliding-window"
     },
     {
-        "title": "[ Algorithm ] DFS & BFS | 核心概念與 Leetcode 題型解析",
-        "date": "2025-03-08",
+        "title": "[ Data Structure ] Stack & Monotonic Stack | 核心概念與 Leetcode 題型解析",
+        "date": "2025-03-07",
         "author": "James",
         "tags": [
-            "Algorithm",
-            "DFS",
-            "BFS"
+            "Data Structure",
+            "Stack",
+            "Monotonic Stack"
         ],
-        "image": "/images/program/algorithm.png",
-        "description": "要 traverse 一個 Graph 有兩種方式，一種是深度優先，也就是所謂的 DFS，我們找到 neighbor 之後不會急著把所有 neighbor 都找到，會再繼續往下找 neighbor 的 neighbor 直到找到底再回來，那另一種就是廣度優先，也就是所謂的 BFS，我們會先把所有 neighbors 找到之後再往下找他們各自的所有 neighbors，這裡根據這兩種方式來進行討論：",
+        "image": "/images/program/data-structure.jpeg",
+        "description": "Stack 是一種 Last In, First Out (LIFO) 的 data structure，有點像是疊積木，所以最大的特色就是，你永遠只能看到最上面這個 element，要 remove element 也只能 remove 最上面的這個，所以沒有辦法看到其他的 element。",
         "readTime": 2,
-        "path": "DFS-BFS"
+        "path": "stack"
     },
     {
         "title": "[ Algorithm ] Two Pointers | 核心概念與 Leetcode 題型解析",
@@ -149,18 +175,5 @@
         "description": "Two Pointers 就是 iterate 的時候不是用一個指標，用兩個指標 iterate，用不同速度、方向、位置等等來想辦法找到題目所求，Two Pointers 大致上分成三類：",
         "readTime": 2,
         "path": "two-pointers"
-    },
-    {
-        "title": "[ Data Structure ] Binary Tree - Traversal | 核心概念與 Leetcode 題型解析",
-        "date": "2025-03-21",
-        "author": "James",
-        "tags": [
-            "Data Structure",
-            "Binary Tree"
-        ],
-        "image": "/images/program/data-structure.jpeg",
-        "description": "Binary Tree 的定義就是在一個 tree 中，每一個 node 的 children 數量不能超過兩個，所以如果寫成一個 class 的話可以這樣表示",
-        "readTime": 3,
-        "path": "binary-tree-traversal"
     }
 ]
