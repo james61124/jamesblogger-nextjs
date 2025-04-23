@@ -1,7 +1,27 @@
+---
+title: "[ Algorithm ] Dynamic Programming (三) - 背包問題 | 核心概念與 Leetcode 題型解析"
+date: "2025-04-20"
+author: James
+tags: Algorithm,DP
+image: /images/program/algorithm.png
+description: ""
+readTime: 2
+---
+
+背包問題是一種很經典的 DP 問題，敘述如下：
+
+> 有一個背包，他最多可以容納總重 W 的物品，而我總共有 n 個物品，每個物品的重量為 w[i]，價值為 v[i]，請選擇一組放物品的方法讓背包內的重量不會超重且價值最大化。
+
+當然題目不會都這樣出，大部分題目都會包裝過，不過如果問題核心都是背包問題的話，那就會有一套很完整的解題流程。那根據不同類型，我們還可以將背包問題分類，
+
+1. 0/1 背包問題：每個物品只有一個，也就是說每個物品只能選擇「放 / 不放」。
+2. 
+
+
+
 ### **0/1 Knapsack Problem**
 
 Unbounded
-
 279
 
 ### **Bounded Knapsack Problem**

@@ -12,7 +12,7 @@ categories:
   - 生活
 ---
 
-LINE FRESH 是一個
+LINE FRESH 是一個結合
 
 ## **作品介紹**
 
