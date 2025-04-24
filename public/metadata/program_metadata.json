@@ -151,6 +151,20 @@
         "path": "two-pointers"
     },
     {
+        "title": "[ Algorithm ] Two Pointers - Linked List | 核心概念與 Leetcode 題型解析",
+        "date": "2025-04-23",
+        "author": "James",
+        "tags": [
+            "Algorithm",
+            "Linked List",
+            "Two Pointers"
+        ],
+        "image": "/images/program/algorithm.png",
+        "description": "Two Pointers 中，原本是分三種 : 1. Opposite Direction Two Pointers - 一頭一尾方向不同 2. Fast and Slow Pointers - 同方向",
+        "readTime": 2,
+        "path": "linked-list-two-pointer"
+    },
+    {
         "title": "[ Data Structure ] Binary Tree - Traversal | 核心概念與 Leetcode 題型解析",
         "date": "2025-03-21",
         "author": "James",

@@ -1,5 +1,5 @@
 ---
-title: "[ Algorithm ] Dynamic Programming (一) - Linear DP | 核心概念與 Leetcode 題型解析"
+title: "[ Algorithm ] Dynamic Programming (二) - Linear DP | 核心概念與 Leetcode 題型解析"
 date: "2025-04-20"
 author: James
 tags: Algorithm,DP,Linear DP

@@ -14,14 +14,21 @@ readTime: 2
 
 當然題目不會都這樣出，大部分題目都會包裝過，不過如果問題核心都是背包問題的話，那就會有一套很完整的解題流程。那根據不同類型，我們還可以將背包問題分類，
 
-1. 0/1 背包問題：每個物品只有一個，也就是說每個物品只能選擇「放 / 不放」。
-2. 
+1. 0/1 Knapsack Problem：每個物品只有一個，也就是說每個物品只能選擇「放 / 不放」。
+2. Unbounded Knapsack Problem
+3. Bounded Knapsack Problem
 
 
 
 ### **0/1 Knapsack Problem**
 
-Unbounded
+> 有 n 種物品和只能裝 W 的背包，第 i 種 item 的重量和價值分別是 weight[i], value[i]，每種物品只有一個，要求不超過限重的情況下背包能裝的最大 value 是多少。
+
+這是最經典的背包問題，換句話說，每一種物品只有「放 / 不放」兩種狀態。dp[i][j] 的定義是「前 i 個物品放入限重為 j 的背包中最大的 value」，也就是說我們最後要的答案就是 dp[n-1][m-1]，dp 的右下角那一格。
+
+
+
+### Unbounded
 279
 
 ### **Bounded Knapsack Problem**

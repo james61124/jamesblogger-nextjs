@@ -8,7 +8,7 @@ import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import Pagination from "./Pagination";
 
-const articlesPerPage = 6;
+const articlesPerPage = 24;
 
 export default function ArticleListPage({ json_path, title, category }) {
   const [articles, setArticles] = useState([]);
