@@ -251,6 +251,21 @@
         "path": "leetcode-190"
     },
     {
+        "title": "[ Leetcode 235 ] Lowest Common Ancestor of a Binary Search Tree | 解題思路分享",
+        "date": "2025-04-23",
+        "author": "James",
+        "tags": [
+            "Tree",
+            "DFS",
+            "Binary Tree"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-235"
+    },
+    {
         "title": "[ Leetcode 106 ] Construct Binary Tree from Inorder and Postorder Traversal | 解題思路分享",
         "date": "2025-03-21",
         "author": "James",
@@ -720,6 +735,20 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-145"
+    },
+    {
+        "title": "[ Leetcode 242 ] Valid Anagram | 解題思路分享",
+        "date": "2025-04-25",
+        "author": "James",
+        "tags": [
+            "Hash Table",
+            "String"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-242"
     },
     {
         "title": "[ Leetcode 213 ] House Robber II | 解題思路分享",
@@ -1255,6 +1284,20 @@
         "description": "",
         "readTime": 4,
         "path": "leetcode-416"
+    },
+    {
+        "title": "[ Leetcode 238 ] Product of Array Except Self | 解題思路分享",
+        "date": "2025-04-25",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Prefix Sum"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-238"
     },
     {
         "title": "[ Leetcode 76 ] Minimum Window Substring | 解題思路分享",
