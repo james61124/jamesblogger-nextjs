@@ -419,6 +419,20 @@
         "path": "leetcode-1143"
     },
     {
+        "title": "[ Leetcode 215 ] Kth Largest Element in an Array | 解題思路分享",
+        "date": "2025-05-06",
+        "author": "James",
+        "tags": [
+            "Quick Select",
+            "Priority Queue"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-215"
+    },
+    {
         "title": "[ Leetcode 221 ] Maximal Square | 解題思路分享",
         "date": "2025-03-23",
         "author": "James",
@@ -960,6 +974,20 @@
         "description": "",
         "readTime": 3,
         "path": "leetcode-239"
+    },
+    {
+        "title": "[ Leetcode 268 ] Missing Number | 解題思路分享",
+        "date": "2025-05-06",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Bit Manipulation"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-268"
     },
     {
         "title": "[ Leetcode 26 ] Remove Duplicates from Sorted Array | 解題思路分享",

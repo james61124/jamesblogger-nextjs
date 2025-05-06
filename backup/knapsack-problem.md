@@ -26,15 +26,26 @@ readTime: 2
 
 這是最經典的背包問題，換句話說，每一種物品只有「放 / 不放」兩種狀態。dp[i][j] 的定義是「前 i 個物品放入限重為 j 的背包中最大的 value」，也就是說我們最後要的答案就是 dp[n-1][m-1]，dp 的右下角那一格。
 
-對於每一個 item `i` 來說，我們有「選 / 不選」兩種 actions，所以 dp[i][j] 會從兩個地方來，如果 item i 不選的話，dp[i][j] 就是 dp[i-1][j]，等於說「前 i-1 個物品放入限重 j 的背包中最大的 value」，那如果 item i 要選的話，dp[i][j] 就是 dp[i][j-w[i]] + v[i]，也就是說「前 i 個物品放入限重 j-w[i] 的背包中最大的 value」再加上 item i 自己的 value，因為限重 j-w[i] 在放入 item i 之後裡面的東西確定可以放入限重為 j 的背包，所以我們的 Transition Function 就是
+對於每一個 item `i` 來說，我們有「選 / 不選」兩種 actions，所以 dp[i][j] 會從兩個地方來，如果 item i 不選的話，dp[i][j] 就是 dp[i-1][j]，等於說「前 i-1 個物品放入限重 j 的背包中最大的 value」，那如果 item i 要選的話，dp[i][j] 就是 dp[i-1][j-w[i]] + v[i]，也就是說「前 i-1 個物品放入限重 j-w[i] 的背包中最大的 value」再加上 「item i 自己的 value」，因為限重 j-w[i] 在放入 item i 之後裡面的東西確定可以放入限重為 j 的背包，所以我們的 Transition Function 就是
+
+```cpp
+dp[i][j] = max(dp[i-1][j], dp[i-1][j-w[i]] + v[i])
+```
+
+
+
+### **Unbounded Knapsack Problem**
+
+> 有 n 種物品和只能裝 W 的背包，第 i 種 item 的重量和價值分別是 w[i], v[i]，每種物品有無限多個，要求不超過限重的情況下背包能裝的最大 value 是多少。
+
+跟上一題比較不一樣的地方是，對於每一個 item `i` 來說，我們有「不選 / 選 n 次」很多種 actions，先看不選，dp[i][j] 就是 dp[i-1][j]，等於「前 i-1 個物品放入限重 j 的背包中最大的 value」，再來「選 n 次」可以一起看，因為今天不管 item i 選了幾次，dp[i][j] 都是 `dp[i][j-w[i]] + v[i]`，代表「前 i 個物品放入限重 j-w[i] 的背包中最大的 value」再加上 「item i 自己的 value」，跟 0/1 Knapsack Problem 不一樣的地方就在這裡，這裡取的是 dp[i][j-w[i]] 而不是 dp[i-1][j-w[i]]，因為 item i 可以取無限次，所以在選 item i 時背包裡面可能已經有 item i 了，所以用的是「前 i 個物品」而不是「前 i-1 個物品」。
+
+Transition Function 可以寫成這樣：
 
 ```cpp
 dp[i][j] = max(dp[i-1][j], dp[i][j-w[i]] + v[i])
 ```
 
-
-
-### Unbounded
 279
 
 ### **Bounded Knapsack Problem**
