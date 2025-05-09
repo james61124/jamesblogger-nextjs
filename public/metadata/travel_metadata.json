@@ -1,5 +1,32 @@
 [
     {
+        "title": "根特 + 布魯塞爾自由行｜中世紀古堡、街頭音樂與粉紅大象啤酒的夏日狂歡",
+        "date": "2024-09-09",
+        "author": "James",
+        "tags": [
+            "Ghent",
+            "Brussels",
+            "Belgium"
+        ],
+        "image": "/images/travel/ghent-20240727/scenery.jpg",
+        "description": "前幾個禮拜在跟同事聊天，就有聊到比利時如果要選幾個城市來的話，反而不是推首都 - Brussels，應該要直接去 Ghent 跟 Bruges，剛好這周末是根特節的最後一天，就順便來朝聖一下。",
+        "readTime": 5,
+        "path": "ghent-20240727"
+    },
+    {
+        "title": "慕尼黑自由行｜走進巴伐利亞心臟，文化、美景與啤酒香的深度體驗",
+        "date": "2024-09-10",
+        "author": "James",
+        "tags": [
+            "Germany",
+            "Munich"
+        ],
+        "image": "/images/travel/Munich-20240823/scenery.jpg",
+        "description": "這次是我們第一次到慕尼黑，也是第一次到德國，德國給我的感覺很務實，路上的街景不會看到太華麗的裝飾，也沒有一個很明顯的特色，但這座城市最獨特的地方就在他的簡樸與沉穩，而走在大街上，卻又能感受到濃厚的歷史氛圍，讓每一個瞬間都充滿探索的價值。",
+        "readTime": 13,
+        "path": "Munich-20240823"
+    },
+    {
         "title": "瑞士自由行｜四天沉浸阿爾卑斯秘境，從湖泊到雪山的大冒險",
         "date": "2024-12-06",
         "author": "James",
