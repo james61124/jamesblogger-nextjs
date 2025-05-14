@@ -1,28 +1,17 @@
 ---
 title: "[ Leetcode 802 ] Find Eventual Safe States | 解題思路分享"
-date: 2025-03-10
-draft: false
-author: "James"
-tags:
-  - BFS
-  - DFS
-  - Graph
-  - Topological Sort
-  - Leetcode
+date: "2025-03-10"
+author: James
+tags: Graph,DFS,BFS,Topological Sort
+difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
-toc: 
-categories:
-  - Algorithm
+readTime: 3
 ---
 
-你需要修 numCourses 門課，這些課程從 0 到 numCourses - 1 編號。某些課程有先修課，用一個 prerequisites array 來表示，prerequisites[i] = [a, b]，意思是：
 
-- 想修課 a，必須先修課 b（b → a）。
 
-題目要求返回一個可行的修課順序，讓你可以完成所有課程。如果無法完成所有課程（ Graph 中存在 Cycle ），則返回 empty array []。
-
-題目連結🔗：[https://leetcode.com/problems/course-schedule-ii/](https://leetcode.com/problems/course-schedule-ii/)
+題目連結🔗：[https://leetcode.com/problems/find-eventual-safe-states/](https://leetcode.com/problems/find-eventual-safe-states/)
 
 ### **問題分析**
 
@@ -30,13 +19,14 @@ categories:
 
 ##### **解題思路 - Topological Sort**
 
-這題思路要轉一下，我們的目標是找到所有 out-degree 不會經過 cycle 的 node，如果做一般的 Topological Sort，因為從一個 in-degree=0 的 node 找到一條 order 我們只能確定這個 node 可以到達 terminal node，但不能確定他一定不會到達 cycle。
+這題思路要轉一下，我們的目標是找到所有 out-degree 不會經過 cycle 的 node，如果做一般的 Topological Sort，從一個 `in-degree=0` 的 node 找到一條 order 我們只能確定這個 node 可以到達 terminal node，但不能確定他一定不會到達 cycle，所以這題我們要做反向的 Topological Sort。
 
-**Time Complexity** - O( V + E )，因為用 BFS traverse 過整個 Graph
+反向的 Topological Sort 意味著我們會利用 out-degree 計算，起始位置是 terminal node，也就是 `out-degree = 0` 的 node，而出現在 order 裡的一定是 out-degree 最後會變成 0 的 node，也就代表這個 node 不管怎麼走都會走到 terminal node。
 
-**Space Complexity** - O( V + E )，建了一個 Adjacency List
+**Time Complexity** - `O(V+E)`，因為用 BFS traverse 過整個 Graph<br>
+**Space Complexity** - `O(V+E)`，建了一個 Adjacency List
 
-##### **Implementation**
+#### **Implementation**
 
 ```cpp
 vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
@@ -71,7 +61,11 @@ vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
 }
 ```
 
-##### **Implementation**
+### **時間優化 - Topological Sort (DFS)**
+
+
+
+#### **Implementation**
 
 ```cpp
 enum class State : char {
