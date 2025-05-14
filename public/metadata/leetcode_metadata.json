@@ -1048,6 +1048,20 @@
         "path": "leetcode-36"
     },
     {
+        "title": "[ Leetcode 338 ] Counting Bits | 解題思路分享",
+        "date": "2025-05-12",
+        "author": "James",
+        "tags": [
+            "DP",
+            "Bit Manipulation"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-338"
+    },
+    {
         "title": "[ Leetcode 53 ] Maximum Subarray | 解題思路分享",
         "date": "2025-03-01",
         "author": "James",
@@ -1061,6 +1075,19 @@
         "description": "",
         "readTime": 2,
         "path": "leetcode-53"
+    },
+    {
+        "title": "[ Leetcode 371 ] Sum of Two Integers | 解題思路分享",
+        "date": "2025-05-13",
+        "author": "James",
+        "tags": [
+            "Bit Manipulation"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcoce-371"
     },
     {
         "title": "[ Leetcode 700 ] Search in a Binary Search Tree | 解題思路分享",
