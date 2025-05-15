@@ -32,7 +32,39 @@ readTime: 2
 dp[i][j] = max(dp[i-1][j], dp[i-1][j-w[i]] + v[i])
 ```
 
+完整的程式碼就會長這樣，要注意這裡的 dp 是 1-based index，所以如果限重是 W 的話，空間就要開 W + 1。
 
+```cpp
+int knapsack01(int W, const vector<int>& weights, const vector<int>& values) {
+    int n = weights.size();
+    vector<vector<int>> dp(n + 1, vector<int>(W + 1, 0));
+
+    for (int i = 1; i <= n; ++i) {
+        for (int j = 0; j <= W; ++j) {
+            if (j >= weights[i - 1]) {
+                dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - weights[i - 1]] + values[i - 1]);
+            } else {
+                dp[i][j] = dp[i - 1][j];
+            }
+        }
+    }
+    return dp[n][W];
+}
+```
+
+但我們會發現，更新 dp[i][j] 的時候同時只需要關注兩個格子，所以我們根本不需要開 2d array 這麼大的空間。
+
+我們可以從後面反向更新 dp[j]，這樣 Transition Function 中的 `dp[i-1][j]` 就是原本留在 array 中的 dp[j]，那 `dp[i-1][j-w[i]] + v[i]` 自然就是 `dp[j - w[i]] + v[i]`，而為什麼需要反向更新呢？因為我們在更新 dp[j] 的時候會用到上一輪的資料，所以不能先把它洗掉，反向更新的話等到把它洗掉了我們也用不著了。
+
+```cpp
+vector<int> dp(W + 1, 0);
+
+for (int i = 1; i <= n; ++i) {
+    for (int j = W; j >= w[i]; --j) {
+        dp[j] = max(dp[j], dp[j - w[i]] + v[i]);
+    }
+}
+```
 
 ### **Unbounded Knapsack Problem**
 

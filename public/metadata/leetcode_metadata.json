@@ -345,6 +345,19 @@
         "path": "leetcode-300"
     },
     {
+        "title": "[ Leetcode 371 ] Sum of Two Integers | 解題思路分享",
+        "date": "2025-05-13",
+        "author": "James",
+        "tags": [
+            "Bit Manipulation"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-371"
+    },
+    {
         "title": "[ Leetcode 153 ] Find Minimum in Rotated Sorted Array | 解題思路分享",
         "date": "2025-04-14",
         "author": "James",
@@ -1077,19 +1090,6 @@
         "path": "leetcode-53"
     },
     {
-        "title": "[ Leetcode 371 ] Sum of Two Integers | 解題思路分享",
-        "date": "2025-05-13",
-        "author": "James",
-        "tags": [
-            "Bit Manipulation"
-        ],
-        "difficulty": "Medium",
-        "image": "/images/program/Leetcode.jpeg",
-        "description": "",
-        "readTime": 3,
-        "path": "leetcoce-371"
-    },
-    {
         "title": "[ Leetcode 700 ] Search in a Binary Search Tree | 解題思路分享",
         "date": "2025-03-21",
         "author": "James",
@@ -1208,6 +1208,22 @@
         "path": "leetcode-219"
     },
     {
+        "title": "[ Leetcode 417 ] Pacific Atlantic Water Flow | 解題思路分享",
+        "date": "2025-05-14",
+        "author": "James",
+        "tags": [
+            "Array",
+            "DFS",
+            "BFS",
+            "Matrix"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-417"
+    },
+    {
         "title": "[ Leetcode 876 ] Middle of the Linked List | 解題思路分享",
         "date": "2025-03-03",
         "author": "James",
@@ -1249,6 +1265,21 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-701"
+    },
+    {
+        "title": "[ Leetcode 853 ] Car Fleet | 解題思路分享",
+        "date": "2025-05-15",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Sorting",
+            "Greedy"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-853"
     },
     {
         "title": "[ Leetcode 208 ] Implement Trie (Prefix Tree) | 解題思路分享",
