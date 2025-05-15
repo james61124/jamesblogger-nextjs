@@ -14,8 +14,8 @@ def run_cmd(cmd, check=True):
         shell=True,
         capture_output=True,
         text=True,
-        encoding="utf-8",  # ← 加這行
-        errors="replace"   # ← 加這行會用 � 替換無法解碼的字元，避免 crash
+        encoding="utf-8",
+        errors="replace"
     )
     if check and result.returncode != 0:
         print(f"Error running command: {cmd}\n{result.stderr}")
