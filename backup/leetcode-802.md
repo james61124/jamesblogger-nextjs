@@ -63,7 +63,7 @@ vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
 
 ### **時間優化 - Topological Sort (DFS)**
 
-
+如果是用 DFS 來做 Topological Sort，剛 visit 到的就會先
 
 #### **Implementation**
 

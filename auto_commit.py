@@ -28,6 +28,7 @@ def summarize_large_diff(file: str, diff: str) -> str:
             messages=[{"role": "user", "content": prompt}],
             temperature=0.2,
         )
+        print(response.choices[0].message.content.strip())
         summaries.append(response.choices[0].message.content.strip())
     
     # Combine chunk summaries into a final summary for this file
