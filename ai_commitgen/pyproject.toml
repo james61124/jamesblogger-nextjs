@@ -1,0 +1,13 @@
+[project]
+name = "ai-commitgen"
+version = "0.1.0"
+description = "Generate Git commit messages using OpenAI GPT"
+authors = [{ name = "Hung-Chun Chiu", email = "james61124@gmail.com" }]
+license = "MIT"
+dependencies = [
+    "openai",
+    "python-dotenv"
+]
+
+[project.scripts]
+ai-commit = "ai_commitgen.cli:main"

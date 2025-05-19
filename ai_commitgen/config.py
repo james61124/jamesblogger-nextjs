@@ -1,0 +1,3 @@
+MAX_CHUNK_LINES = 200
+DEFAULT_MODEL = "gpt-3.5-turbo"
+DEFAULT_LANG = "en"

@@ -84,7 +84,7 @@ def get_diff_by_file(files=None):
     file_list = files or run_cmd("git diff --cached --name-only").splitlines()
     diff_by_file = {}
     for file in file_list:
-        diff = run_cmd(f"git diff --cached {file}")
+        diff = run_cmd(f"git diff --cached -- {file}")
         if diff.strip():
             diff_by_file[file] = diff
     return diff_by_file

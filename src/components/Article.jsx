@@ -118,7 +118,7 @@ export default function Article({ category, fileName, json_path, title }) {
               ),
               h2: ({ node, ...props }) => (
                 <h2
-                  className="text-3xl sm:text-3xl font-semibold tracking-wide my-4 text-gray-800"
+                  className="text-3xl sm:text-3xl font-medium tracking-wide my-4 text-gray-800"
                   {...props}
                 />
               ),
