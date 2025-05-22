@@ -84,6 +84,21 @@
         "path": "backtracking"
     },
     {
+        "title": "[ Algorithm ] Manacher's Algorithm | 核心概念與 Leetcode 題型解析",
+        "date": "2025-05-22",
+        "author": "James",
+        "tags": [
+            "Algorithm",
+            "String Matching",
+            "EAC",
+            "Manacher"
+        ],
+        "image": "/images/program/algorithm.png",
+        "description": "Manacher Algorithm 底層其實還是 EAC，但是可以利用回文的特性省略掉一些重複的部分，進而讓時間複雜度降低。",
+        "readTime": 25,
+        "path": "manacher"
+    },
+    {
         "title": "[ Algorithm ] Binary Search | 核心概念與 Leetcode 題型解析",
         "date": "2025-04-11",
         "author": "James",

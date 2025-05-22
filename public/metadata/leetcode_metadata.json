@@ -535,6 +535,22 @@
         "path": "leetcode-739"
     },
     {
+        "title": "[ Leetcode 5 ] Longest Palindromic Substring | 解題思路分享",
+        "date": "2025-05-22",
+        "author": "James",
+        "tags": [
+            "String",
+            "DP",
+            "Manacher",
+            "EAC"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-5"
+    },
+    {
         "title": "[ Leetcode 200 ] Number of Islands | 解題思路分享",
         "date": "2025-03-08",
         "author": "James",
@@ -1310,6 +1326,22 @@
         "description": "",
         "readTime": 2,
         "path": "leetcode-853"
+    },
+    {
+        "title": "[ Leetcode 572 ] Subtree of Another Tree | 解題思路分享",
+        "date": "2025-05-20",
+        "author": "James",
+        "tags": [
+            "Tree",
+            "DFS",
+            "Binary Tree",
+            "KMP"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 4,
+        "path": "leetcode-572"
     },
     {
         "title": "[ Leetcode 208 ] Implement Trie (Prefix Tree) | 解題思路分享",
