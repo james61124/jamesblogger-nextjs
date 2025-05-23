@@ -313,6 +313,23 @@
         "path": "leetcode-106"
     },
     {
+        "title": "[ Leetcode 297 ] Serialize and Deserialize Binary Tree | 解題思路分享",
+        "date": "2025-05-23",
+        "author": "James",
+        "tags": [
+            "String",
+            "Tree",
+            "BFS",
+            "Binary Tree",
+            "Design"
+        ],
+        "difficulty": "Hard",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-297"
+    },
+    {
         "title": "[ Leetcode 718 ] Maximum Length of Repeated Subarray | 解題思路分享",
         "date": "2025-03-01",
         "author": "James",
@@ -792,6 +809,21 @@
         "description": "",
         "readTime": 2,
         "path": "leetcode-295"
+    },
+    {
+        "title": "[ Leetcode 2 ] Add Two Numbers | 解題思路分享",
+        "date": "2025-05-23",
+        "author": "James",
+        "tags": [
+            "Linked List",
+            "Math",
+            "Recursion"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-2"
     },
     {
         "title": "[ Leetcode 227 ] Basic Calculator II | 解題思路分享",
