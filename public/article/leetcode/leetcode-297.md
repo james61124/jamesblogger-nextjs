@@ -9,6 +9,7 @@ description: ""
 readTime: 2
 ---
 
+這題要 implement 兩個 function，`serialize` 要把一個 binary tree 轉成 string 儲存，而 `deserialize` 要把 string 轉回 binary tree。
 
 題目連結 🔗：[https://leetcode.com/problems/serialize-and-deserialize-binary-tree/](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
 
