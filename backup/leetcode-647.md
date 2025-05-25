@@ -73,7 +73,7 @@ center = 3 -> left = 1, right = 2
 ...
 ```
 
-這樣就完美跑過所有基數偶數中心的狀況了。
+這樣就完美跑過所有奇數偶數中心的狀況了。
 
 **Time Complexity** - `O(n^2)`<br>
 **Space Complexity** - `O(1)`
@@ -96,13 +96,22 @@ int countSubstrings(string s) {
 }
 ```
 
-### **另解 - Manacher**
+### **時間優化 - Manacher**
+
+Manacher Algorithm 是一個 based on EAC 的演算法，他可以把時間複雜度從 O(n^2) 降到 O(n)，我另外寫了一篇文章專門講 Manacher's Algorithm，先看完再來解這題。
+
+文章連結🔗：[[ Algorithm ] Manacher's Algorithm | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/manacher)
+
+所以我們會利用 Manacher 維護一個 p[i] 代表「以 i 為中心的最長回文半徑」，再來我們要利用 p[i] 計算以每一個 i 為中心的回文數量，先看奇數中心
 
 ```
-index = 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
-t    = $ # a # a # c # a # a # c # a # ^
-p[i] = 0 0 1 2 1 0 5 0 1 2 6 0 3 0 1 0 0
+s    = $ # a # c # a # ^
+p[i] = 0 0 1 0 3 0 1 0 0
 ```
+
+以這個 `c` 來說，像這樣 "aca" 的 p[i] 是 3，總共會有兩組回文，而每增加一組回文，p[i] 會加二，可以列出下面這個關係表：
+
+
 
 **Time Complexity** - `O(m+n)`<br>
 **Space Complexity** - `O(m+n)`

@@ -1,33 +1,5 @@
 [
     {
-        "title": "瑞士自由行｜四天沉浸阿爾卑斯秘境，從湖泊到雪山的大冒險",
-        "date": "2024-12-06",
-        "author": "James",
-        "tags": [
-            "Switzerland",
-            "Bern",
-            "Interlaken",
-            "Jungfraujoch"
-        ],
-        "image": "/images/travel/Switzerland-20240914/scenary.jpg",
-        "description": "瑞士就是一個全世界物價最高的地方，原本以為荷蘭、英國已經很貴了，但這裡的物價體感幾乎是這些地區的 1.5 ~ 2 倍。不過即便是這樣，瑞士還是目前所有國家中我最喜歡的，之前聽到瑞士不外乎就是幾個關鍵字，一堆有錢人、手錶、阿爾卑斯山、然後壯闊的大自然，這次就來實地感受一下。",
-        "readTime": 16,
-        "path": "Switzerland-20240914"
-    },
-    {
-        "title": "斯洛維尼亞三日小旅行 | 山湖秘境與地下奇觀的療癒冒險",
-        "date": "2025-05-19",
-        "author": "James",
-        "tags": [
-            "Republic of Slovenia",
-            "Ljubljana"
-        ],
-        "image": "/images/travel/ljubljana-20250116/lake-observation.JPG",
-        "description": "如果不是因為來歐洲半年，我覺得這輩子可能都不會來這個國家，畢竟歐洲國家太多了，先挑最重要的幾個去怎麼想都不會想到要去斯洛維尼亞，來這邊除了可以開發幾個比較冷門的國家試試看，他剛好在我們的上一站 - 匈牙利跟下一站 - 波蘭的中間，我們從布達佩斯搭 Flixbus 來到這裡，可以充當一個過渡站。",
-        "readTime": 12,
-        "path": "ljubljana-20250116"
-    },
-    {
         "title": "杜拜一日快閃｜穿越沙漠與天際，打卡奢華與神秘的中東奇蹟",
         "date": "2025-05-17",
         "author": "James",
@@ -55,6 +27,47 @@
         "path": "ghent-20240727"
     },
     {
+        "title": "漢堡自由行｜走進德國港都日常：微縮世界、紅燈街與海味漢堡的3日探索",
+        "date": "2025-05-25",
+        "author": "James",
+        "tags": [
+            "Germany",
+            "Hamburg",
+            "Lübeck"
+        ],
+        "image": "/images/travel/Hamburg-20240829/Hamburg.jpg",
+        "description": "漢堡簡單來說就是一個海港，我覺得德國的城市特色都不會到太鮮明，像義大利的城市可能各個城市之間就差距很大，德國就是務實，不會有太多很浮誇的東西。",
+        "readTime": 9,
+        "path": "hamburg-20240829"
+    },
+    {
+        "title": "斯洛維尼亞三日小旅行 | 山湖秘境與地下奇觀的療癒冒險",
+        "date": "2025-05-19",
+        "author": "James",
+        "tags": [
+            "Republic of Slovenia",
+            "Ljubljana"
+        ],
+        "image": "/images/travel/ljubljana-20250116/lake-observation.JPG",
+        "description": "如果不是因為來歐洲半年，我覺得這輩子可能都不會來這個國家，畢竟歐洲國家太多了，先挑最重要的幾個去怎麼想都不會想到要去斯洛維尼亞，來這邊除了可以開發幾個比較冷門的國家試試看，他剛好在我們的上一站 - 匈牙利跟下一站 - 波蘭的中間，我們從布達佩斯搭 Flixbus 來到這裡，可以充當一個過渡站。",
+        "readTime": 12,
+        "path": "ljubljana-20250116"
+    },
+    {
+        "title": "德國漢堡｜微縮景觀世界 Miniatur Wunderland 實錄遊記",
+        "date": "2025-05-25",
+        "author": "James",
+        "tags": [
+            "Germany",
+            "Hamburg",
+            "Miniatur Wunderland"
+        ],
+        "image": "/images/travel/miniatur-wunderland/concert.jpg",
+        "description": "太喜歡這裡了所以決定拉一篇出來寫，這裡因為太熱門了所以一定要提前預約，然後要選好的時段，因為我們總共在這裡待了 5 個小時，如果逛到最後時間不夠一定會覺得超可惜。",
+        "readTime": 11,
+        "path": "miniatur-wunderland"
+    },
+    {
         "title": "慕尼黑自由行｜走進巴伐利亞心臟，文化、美景與啤酒香的深度體驗",
         "date": "2024-09-10",
         "author": "James",
@@ -66,5 +79,20 @@
         "description": "這次是我們第一次到慕尼黑，也是第一次到德國，德國給我的感覺很務實，路上的街景不會看到太華麗的裝飾，也沒有一個很明顯的特色，但這座城市最獨特的地方就在他的簡樸與沉穩，而走在大街上，卻又能感受到濃厚的歷史氛圍，讓每一個瞬間都充滿探索的價值。",
         "readTime": 13,
         "path": "Munich-20240823"
+    },
+    {
+        "title": "瑞士自由行｜四天沉浸阿爾卑斯秘境，從湖泊到雪山的大冒險",
+        "date": "2024-12-06",
+        "author": "James",
+        "tags": [
+            "Switzerland",
+            "Bern",
+            "Interlaken",
+            "Jungfraujoch"
+        ],
+        "image": "/images/travel/Switzerland-20240914/scenary.jpg",
+        "description": "瑞士就是一個全世界物價最高的地方，原本以為荷蘭、英國已經很貴了，但這裡的物價體感幾乎是這些地區的 1.5 ~ 2 倍。不過即便是這樣，瑞士還是目前所有國家中我最喜歡的，之前聽到瑞士不外乎就是幾個關鍵字，一堆有錢人、手錶、阿爾卑斯山、然後壯闊的大自然，這次就來實地感受一下。",
+        "readTime": 16,
+        "path": "Switzerland-20240914"
     }
 ]
