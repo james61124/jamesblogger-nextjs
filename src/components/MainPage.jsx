@@ -149,3 +149,131 @@ export default function MainPage() {
     </div>
   );
 }
+
+// 'use client';
+// import dynamic from 'next/dynamic';
+// import { useState } from 'react';
+// import * as THREE from 'three';
+
+// const ForceGraph3D = dynamic(() => import('react-force-graph-3d'), { ssr: false });
+
+// const data = {
+//   nodes: [
+//     { id: 'You', group: 0 },
+//     { id: 'Company A', group: 1, title: 'Frontend Developer', tech: ['React', 'TypeScript'], achievements: ['Built UI Library', 'Improved UX by 40%'] },
+//     { id: 'Company B', group: 1, title: 'Fullstack Developer', tech: ['Node.js', 'MongoDB'], achievements: ['Led API redesign', 'Decreased response time by 30%'] },
+//     { id: 'Company C', group: 1, title: 'Tech Lead', tech: ['GraphQL', 'AWS'], achievements: ['Mentored 5 devs', 'Scaled system to 1M users'] },
+//   ],
+//   links: [
+//     { source: 'You', target: 'Company A' },
+//     { source: 'You', target: 'Company B' },
+//     { source: 'You', target: 'Company C' },
+//   ]
+// };
+
+// export default function MainPage() {
+//   const [hoverNode, setHoverNode] = useState(null);
+
+//   return (
+//     <div className="h-screen w-full">
+//       <ForceGraph3D
+//         graphData={data}
+//         nodeAutoColorBy="group"
+//         linkDirectionalParticles={2}
+//         linkDirectionalParticleSpeed={d => 0.005}
+//         nodeThreeObject={node => {
+//           const sprite = new THREE.Sprite(new THREE.SpriteMaterial({
+//             map: new THREE.CanvasTexture(getNodeLabelCanvas(node)),
+//           }));
+//           sprite.scale.set(10, 5, 1);
+//           return sprite;
+//         }}
+//         onNodeHover={node => setHoverNode(node)}
+//       />
+//       {hoverNode && (
+//         <div className="absolute top-4 right-4 bg-white rounded-xl shadow-lg p-4 w-72 text-black z-10">
+//           <h2 className="font-bold text-lg mb-2">{hoverNode.id}</h2>
+//           {hoverNode.title && <p className="text-sm mb-1">{hoverNode.title}</p>}
+//           {hoverNode.tech && (
+//             <div className="text-sm mb-1">
+//               <strong>Tech:</strong> {hoverNode.tech.join(', ')}
+//             </div>
+//           )}
+//           {hoverNode.achievements && (
+//             <ul className="list-disc list-inside text-sm">
+//               {hoverNode.achievements.map((ach, i) => <li key={i}>{ach}</li>)}
+//             </ul>
+//           )}
+//         </div>
+//       )}
+//     </div>
+//   );
+// }
+
+// function getNodeLabelCanvas(node) {
+//   const canvas = document.createElement('canvas');
+//   const ctx = canvas.getContext('2d');
+//   const size = 256;
+//   canvas.width = size;
+//   canvas.height = size;
+//   ctx.fillStyle = 'white';
+//   ctx.fillRect(0, 0, size, size);
+//   ctx.fillStyle = 'black';
+//   ctx.font = '20px sans-serif';
+//   ctx.textAlign = 'center';
+//   ctx.textBaseline = 'middle';
+//   ctx.fillText(node.id, size / 2, size / 2);
+//   return canvas;
+// }
+
+// 'use client';
+// import { Canvas } from '@react-three/fiber';
+// import { Html, OrbitControls, Stars } from '@react-three/drei';
+// import { useRef } from 'react';
+// import * as THREE from 'three';
+
+// const experiences = [
+//   { id: 'Company A', title: 'Frontend Developer', year: '2019-2020', description: 'Worked on UI components and UX improvements.' },
+//   { id: 'Company B', title: 'Fullstack Developer', year: '2020-2022', description: 'Built backend services and integrated frontend.' },
+//   { id: 'Company C', title: 'Tech Lead', year: '2022-Now', description: 'Led team, system architecture, and scaling.' },
+// ];
+
+// function ExperienceCard({ position, experience }) {
+//   return (
+//     <group position={position}>
+//       <mesh>
+//         <boxGeometry args={[4, 2.5, 0.1]} />
+//         <meshStandardMaterial color="#1e293b" />
+//       </mesh>
+//       <Html center distanceFactor={1.2} zIndexRange={[1, 0]}>
+//         <div className="bg-slate-900 text-white p-4 rounded-xl w-64 shadow-lg">
+//           <h3 className="font-bold text-lg">{experience.title}</h3>
+//           <p className="text-sm text-slate-300">{experience.year}</p>
+//           <p className="text-sm mt-1">{experience.description}</p>
+//         </div>
+//       </Html>
+//     </group>
+//   );
+// }
+
+// export default function TimeTunnelScene() {
+//   return (
+//     <div className="h-screen w-full">
+//       <Canvas camera={{ position: [0, 0, 10], fov: 60 }}>
+//         <ambientLight intensity={0.8} />
+//         <pointLight position={[10, 10, 10]} />
+//         <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
+
+//         {experiences.map((exp, idx) => (
+//           <ExperienceCard
+//             key={exp.id}
+//             position={[0, 0, -idx * 6]}
+//             experience={exp}
+//           />
+//         ))}
+
+//         <OrbitControls enablePan={false} enableZoom={false} />
+//       </Canvas>
+//     </div>
+//   );
+// }

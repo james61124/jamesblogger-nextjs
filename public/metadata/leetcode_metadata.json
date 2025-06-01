@@ -344,6 +344,21 @@
         "path": "leetcode-167"
     },
     {
+        "title": "[ Leetcode 17 ] Letter Combinations of a Phone Number | 解題思路分享",
+        "date": "2025-05-27",
+        "author": "James",
+        "tags": [
+            "Backtracking",
+            "Hash Table",
+            "String"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-17"
+    },
+    {
         "title": "[ Leetcode 19 ] Remove Nth Node From End of List | 解題思路分享",
         "date": "2025-03-03",
         "author": "James",
@@ -1239,6 +1254,22 @@
         "description": "",
         "readTime": 2,
         "path": "leetcode-64"
+    },
+    {
+        "title": "[ Leetcode 647 ] Palindromic Substrings | 解題思路分享",
+        "date": "2025-05-20",
+        "author": "James",
+        "tags": [
+            "String",
+            "Two Pointers",
+            "Manacher",
+            "EAC"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-647"
     },
     {
         "title": "[ Leetcode 650 ] 2 Keys Keyboard | 解題思路分享",

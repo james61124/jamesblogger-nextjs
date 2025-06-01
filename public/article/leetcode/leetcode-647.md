@@ -3,13 +3,13 @@ title: "[ Leetcode 647 ] Palindromic Substrings | 解題思路分享"
 date: "2025-05-20"
 author: James
 tags: String,Two Pointers,Manacher,EAC
-difficulty: Easy
+difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
 ---
 
-
+給一個 string `s`，計算 `s` 中有多少回文。
 
 題目連結 🔗：[https://leetcode.com/problems/palindromic-substrings/](https://leetcode.com/problems/palindromic-substrings/)
 
@@ -102,22 +102,64 @@ Manacher Algorithm 是一個 based on EAC 的演算法，他可以把時間複�
 
 文章連結🔗：[[ Algorithm ] Manacher's Algorithm | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/manacher)
 
-所以我們會利用 Manacher 維護一個 p[i] 代表「以 i 為中心的最長回文半徑」，再來我們要利用 p[i] 計算以每一個 i 為中心的回文數量，先看奇數中心
+所以我們會利用 Manacher 維護一個 p[i] 代表「以 i 為中心的最長回文半徑」，再來我們要利用 p[i] 計算以每一個 i 為中心的回文數量。
 
-```
-s    = $ # a # c # a # ^
-p[i] = 0 0 1 0 3 0 1 0 0
-```
+先看奇數回文中心，回文中心點 c 的 p[i] 跟「以 c 為中心的回文數量」關係如下，可以發現 p[i] 每增加兩個，回文數量就會加一。
 
-以這個 `c` 來說，像這樣 "aca" 的 p[i] 是 3，總共會有兩組回文，而每增加一組回文，p[i] 會加二，可以列出下面這個關係表：
+| s | c 的 p[i] | # of 回文 |
+|-------------|----------------|---------------------|
+| # c # | 1 | 1 |
+| # a # c # a # | 3 | 2 |
+| # a # a # c # a # a # | 5 | 3 |
 
+再來看偶數回文中心，所以 p[i] 會在 `#` 上，而中心點 `#` 的 p[i] 跟「以 `#` 為中心的回文數量」關係如下，一樣可以發現 p[i] 每增加兩個，回文數量就會加一。
 
+| s | 中心的 p[i] | # of 回文 |
+|-------------|----------------|---------------------|
+| # a # a # | 2 | 1 |
+| # a # a # a # a # | 4 | 2 |
+| # a # a # a # a # a # a # | 6 | 3 |
 
-**Time Complexity** - `O(m+n)`<br>
-**Space Complexity** - `O(m+n)`
+那根據這兩張表我們就可以知道，回文數量 `count` 就是 (p[i] + 1) / 2;
+
+**Time Complexity** - `O(n)`<br>
+**Space Complexity** - `O(n)`
 
 #### **Implementation**
 
 ```cpp
+string preprocess(const string& s) {
+    string t = "^";
+    for (char c : s) {
+        t += "#" + string(1, c);
+    }
+    t += "#$";
+    return t;
+}
 
+int countSubstrings(string s) {
+    string t = preprocess(s);
+    int n = t.size();
+    vector<int> p(n, 0); 
+
+    int center = 0, right = 0;
+    for (int i = 1; i < n - 1; i++) {
+
+        int mirror = 2 * center - i;
+        if (i < right) p[i] = min(right - i, p[mirror]);
+
+        while (t[i + p[i] + 1] == t[i - p[i] - 1]) p[i]++;
+
+        if (i + p[i] > right) {
+            center = i;
+            right = i + p[i];
+        }
+    }
+
+    int count = 0;
+    for (int i = 1; i < n - 1; ++i) {
+        count += (p[i] + 1) / 2; 
+    }
+    return count;
+}
 ```
