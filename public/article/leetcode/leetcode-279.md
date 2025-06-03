@@ -2,7 +2,7 @@
 title: "[ Leetcode 279 ] Perfect Squares | 解題思路分享"
 date: "2025-03-25"
 author: James
-tags: DP,Math
+tags: DP,Math,Knapsack Problem,Unbounded Knapsack Problem
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""

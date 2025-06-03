@@ -79,6 +79,20 @@
         "path": "cap-theorem"
     },
     {
+        "title": "[ Algorithm ] Dynamic Programming (七) - Counting DP | 核心概念與 Leetcode 題型解析",
+        "date": "2025-06-03",
+        "author": "James",
+        "tags": [
+            "Algorithm",
+            "DP",
+            "Counting DP"
+        ],
+        "image": "/images/program/algorithm.png",
+        "description": "Counting DP 有別於一般 DP 求最大值 / 最小值，他主要是用來計算某種「方法數」、「組合數」、「路徑數」等結果的總數，所以 Transition Function 是用加法轉移的，不是 max() 或是 min()。",
+        "readTime": 2,
+        "path": "counting-dp"
+    },
+    {
         "title": "[ Algorithm ] DFS & BFS | 核心概念與 Leetcode 題型解析",
         "date": "2025-03-08",
         "author": "James",
@@ -91,6 +105,47 @@
         "description": "要 traverse 一個 Graph 有兩種方式，一種是深度優先，也就是所謂的 DFS，我們找到 neighbor 之後不會急著把所有 neighbor 都找到，會再繼續往下找 neighbor 的 neighbor 直到找到底再回來，那另一種就是廣度優先，也就是所謂的 BFS，我們會先把所有 neighbors 找到之後再往下找他們各自的所有 neighbors，這裡根據這兩種方式來進行討論：",
         "readTime": 2,
         "path": "DFS-BFS"
+    },
+    {
+        "title": "[ Algorithm ] Dynamic Programming (六) - Digit DP | 核心概念與 Leetcode 題型解析",
+        "date": "2025-06-03",
+        "author": "James",
+        "tags": [
+            "Algorithm",
+            "DP",
+            "Digit DP"
+        ],
+        "image": "/images/program/algorithm.png",
+        "description": "Digit DP 指的是在數字上做 DP，這裡的數字指的是個位、十位、百位等等。",
+        "readTime": 7,
+        "path": "digit-dp"
+    },
+    {
+        "title": "[ Algorithm ] Dynamic Programming (二) - Memorization | 核心概念與 Leetcode 題型解析",
+        "date": "2025-06-03",
+        "author": "James",
+        "tags": [
+            "Algorithm",
+            "DP",
+            "Memorization"
+        ],
+        "image": "/images/program/algorithm.png",
+        "description": "最基礎的 DP，就是從遞迴講起，有一種題目一看就是用遞迴解，但是如果就只有這樣的話會碰到很多重複的狀態，因此大大增加時間複雜度，舉一個最經典的例子，我們要計算一個 Fibonacci 數列的第 n 為的數字，最簡單的方式就是遞迴：",
+        "readTime": 2,
+        "path": "dp-memo"
+    },
+    {
+        "title": "[ Algorithm ] Dynamic Programming (一) - Introduction | 核心概念與 Leetcode 題型解析",
+        "date": "2025-06-03",
+        "author": "James",
+        "tags": [
+            "Algorithm",
+            "DP"
+        ],
+        "image": "/images/program/algorithm.png",
+        "description": "Dynamic Programming (DP) 是一種算法技巧，簡單來說想要求得原問題的最優解，就先往下拆解成小問題，最後把小問題的解組合起來得到原問題的解",
+        "readTime": 3,
+        "path": "dp"
     },
     {
         "title": "[ Algorithm ] Greedy | 核心概念與 Leetcode 題型解析",
@@ -121,6 +176,50 @@
         "description": "Hash Table 是一種基於 key-value pair 的 data structure，主要目的就是要讓 search, delete, insert 這些操作都是 O(1)，他利用一個 Hash Function 將 Key 映射到一個 index，然後再把 value 填進來，所以才可以用極短的時間就做到 searching 的動作。常見的 C++ Hash Table 包括下面幾種：",
         "readTime": 4,
         "path": "hash-table"
+    },
+    {
+        "title": "[ Algorithm ] Dynamic Programming (五) - Interval DP | 核心概念與 Leetcode 題型解析",
+        "date": "2025-06-03",
+        "author": "James",
+        "tags": [
+            "Algorithm",
+            "DP",
+            "Interval DP"
+        ],
+        "image": "/images/program/algorithm.png",
+        "description": "狀態描述如果是一個區間的 DP，沒有特別整理過第一次遇到都會想不太到，這邊整理了兩種遇到 Interval DP 可以去思考的方向。",
+        "readTime": 5,
+        "path": "interval-dp"
+    },
+    {
+        "title": "[ Algorithm ] Dynamic Programming (四) - Knapsack Problem | 核心概念與 Leetcode 題型解析",
+        "date": "2025-06-03",
+        "author": "James",
+        "tags": [
+            "Algorithm",
+            "DP",
+            "0/1 Knapsack Problem",
+            "Unbounded Knapsack Problem",
+            "Bounded Knapsack Problem"
+        ],
+        "image": "/images/program/algorithm.png",
+        "description": "背包問題是一種很經典的 DP 問題，敘述如下：有一個背包，他最多可以容納總重 W 的物品，而我總共有 n 個物品，每個物品的重量為 w[i]，價值為 v[i]，請選擇一組放物品的方法讓背包內的重量不會超重且價值最大化。",
+        "readTime": 12,
+        "path": "knapsack-problem"
+    },
+    {
+        "title": "[ Algorithm ] Dynamic Programming (三) - Linear DP | 核心概念與 Leetcode 題型解析",
+        "date": "2025-06-03",
+        "author": "James",
+        "tags": [
+            "Algorithm",
+            "DP",
+            "Linear DP"
+        ],
+        "image": "/images/program/algorithm.png",
+        "description": "當一個問題可以被分成「線性順序」的多個階段，而每個階段只依賴前面幾個階段的狀態，就是 Linear DP",
+        "readTime": 7,
+        "path": "linear-dp"
     },
     {
         "title": "[ Algorithm ] Two Pointers - Linked List | 核心概念與 Leetcode 題型解析",

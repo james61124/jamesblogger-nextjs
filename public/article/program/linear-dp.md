@@ -1,6 +1,6 @@
 ---
-title: "[ Algorithm ] Dynamic Programming (二) - Linear DP | 核心概念與 Leetcode 題型解析"
-date: "2025-04-20"
+title: "[ Algorithm ] Dynamic Programming (三) - Linear DP | 核心概念與 Leetcode 題型解析"
+date: "2025-06-03"
 author: James
 tags: Algorithm,DP,Linear DP
 image: /images/program/algorithm.png
@@ -74,6 +74,9 @@ return dp[right];
 
 ps. dp[i] 在這兩種情況是「思路上」的分類，他在宣告上有可能會有 size n 跟 size n+1 的區別，取決於題目需不需要處理 empty 的情況。
 
+[[ Leetcode 300 ] Longest Increasing Subsequence | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-300/)<br>
+[[ Leetcode 213 ] House Robber II | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-213/)
+
 ### **Linear DP - Two Sequences**
 
 在輸入狀態為兩個序列的 DP，通常就會需要 2D 的 dp table，這種我都將他歸類成 Two Sequences Linear DP，那最常見的兩種 dp[i][j] 的定義方式如下：
@@ -101,6 +104,8 @@ dp[i][j] = min(dp[i-1][j-1], min(dp[i-1][j], dp[i][j-1])) + 1;
 
 ps. 一樣的狀況，dp[i][j] 在這兩種情況是「思路上」的分類，他在宣告上有可能會有 size n 跟 size n+1 的區別，取決於題目需不需要處理 empty 的情況，上面這個例子就是 size n+1 的範例。
 
+[[ Leetcode 72 ] Edit Distance | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-72/)
+
 ### **Linear DP - Grid DP**
 
 在輸入為一個 2D 的 Matrix 時，通常就會需要一個 2D 的 dp table，這種可以歸類成 Grid DP，最常見的 dp[i][j] 的定義如下：
@@ -122,6 +127,8 @@ ps. 一樣的狀況，dp[i][j] 在這兩種情況是「思路上」的分類，�
 dp[i][j] = min(dp[i-1][j-1], min(dp[i-1][j], dp[i][j-1])) + 1;
 ```
 
+[[ Leetcode 221 ] Maximal Square | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-221/)
+
 ### **Linear DP - No Sequence**
 
 最後一種 Linear DP，就是如果問題的輸入沒有明確的形式，但是還是可以分成很多子 DP 問題的話，就可以被歸類成 No Sequence 的 Linear DP 問題，這種 dp[i] 就比較沒有規則可言，但是按照我目前的經驗來說，如果完全沒有想法可以先把 dp[i] 設為「題目所求」，常常就可以寫出相對應的 Transition Function。
@@ -140,40 +147,13 @@ for(int i=2; i<=n; i++){
 }
 ```
 
+[[ Leetcode 343 ] Integer Break | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-343/)
 
+### **DP 其他系列文章**
 
-### **樹形 DP**
-
-
-
-
-
-300
-53
-873
-
-雙串 DP
-
-1143
-718
-72
-
-矩陣線性 DP
-
-64
-
-沒規律 DP
-
-650
-
-
-0-1 背包問題
-416
-
-區間 DP
-
-516
-
-樹形 DP
-
-124
+[[ Algorithm ] Dynamic Programming (一) - Introduction | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/dp/)<br>
+[[ Algorithm ] Dynamic Programming (二) - Memorization | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/memorization/)<br>
+[[ Algorithm ] Dynamic Programming (四) - Knapsack Problem | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/knapsack-problem/)<br>
+[[ Algorithm ] Dynamic Programming (五) - Interval DP | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/interval-dp/)<br>
+[[ Algorithm ] Dynamic Programming (六) - Digit DP | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/digit-dp/)<br>
+[[ Algorithm ] Dynamic Programming (七) - Counting DP | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/counting-dp/)

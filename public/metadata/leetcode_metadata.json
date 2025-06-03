@@ -782,7 +782,9 @@
         "author": "James",
         "tags": [
             "DP",
-            "Math"
+            "Math",
+            "Knapsack Problem",
+            "Unbounded Knapsack Problem"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
@@ -851,6 +853,21 @@
         "description": "",
         "readTime": 3,
         "path": "leetcode-300"
+    },
+    {
+        "title": "[ Leetcode 310 ] Minimum Height Trees | 解題思路分享",
+        "date": "2025-06-02",
+        "author": "James",
+        "tags": [
+            "DFS",
+            "Tree",
+            "Topological Sort"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 5,
+        "path": "leetcode-310"
     },
     {
         "title": "[ Leetcode 338 ] Counting Bits | 解題思路分享",
