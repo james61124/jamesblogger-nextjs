@@ -613,6 +613,20 @@
         "path": "leetcode-219"
     },
     {
+        "title": "[ Leetcode 22 ] Generate Parentheses | 解題思路分享",
+        "date": "2025-06-05",
+        "author": "James",
+        "tags": [
+            "String",
+            "Backtracking"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-22"
+    },
+    {
         "title": "[ Leetcode 221 ] Maximal Square | 解題思路分享",
         "date": "2025-03-23",
         "author": "James",

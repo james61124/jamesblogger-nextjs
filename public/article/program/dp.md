@@ -1,6 +1,6 @@
 ---
 title: "[ Algorithm ] Dynamic Programming (一) - Introduction | 核心概念與 Leetcode 題型解析"
-date: "2025-06-03"
+date: "2025-05-27"
 author: James
 tags: Algorithm,DP
 image: /images/program/algorithm.png

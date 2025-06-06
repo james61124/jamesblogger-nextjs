@@ -3,7 +3,7 @@ title: "[ Data Structure ] Hash Table | 核心概念與 Leetcode 題型解析"
 date: "2025-03-30"
 author: James
 tags: Data Structure,Hash Table,Unordered Set,Unordered Map,Unordered Multiset,Unordered Multimap
-image: /images/program/data-structure.jpeg
+image: /images/program/data-structure.png
 description: "Hash Table 是一種基於 key-value pair 的 data structure，主要目的就是要讓 search, delete, insert 這些操作都是 O(1)，他利用一個 Hash Function 將 Key 映射到一個 index，然後再把 value 填進來，所以才可以用極短的時間就做到 searching 的動作。常見的 C++ Hash Table 包括下面幾種："
 readTime: 2
 ---

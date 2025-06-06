@@ -150,130 +150,170 @@ export default function MainPage() {
   );
 }
 
+
 // 'use client';
-// import dynamic from 'next/dynamic';
-// import { useState } from 'react';
-// import * as THREE from 'three';
 
-// const ForceGraph3D = dynamic(() => import('react-force-graph-3d'), { ssr: false });
+// import ReactFlow from 'reactflow';
+// import 'reactflow/dist/style.css';
+// import { useCallback, useState } from 'react';
+// import { Dialog } from '@headlessui/react';
+// import { motion } from 'framer-motion';
 
-// const data = {
-//   nodes: [
-//     { id: 'You', group: 0 },
-//     { id: 'Company A', group: 1, title: 'Frontend Developer', tech: ['React', 'TypeScript'], achievements: ['Built UI Library', 'Improved UX by 40%'] },
-//     { id: 'Company B', group: 1, title: 'Fullstack Developer', tech: ['Node.js', 'MongoDB'], achievements: ['Led API redesign', 'Decreased response time by 30%'] },
-//     { id: 'Company C', group: 1, title: 'Tech Lead', tech: ['GraphQL', 'AWS'], achievements: ['Mentored 5 devs', 'Scaled system to 1M users'] },
-//   ],
-//   links: [
-//     { source: 'You', target: 'Company A' },
-//     { source: 'You', target: 'Company B' },
-//     { source: 'You', target: 'Company C' },
-//   ]
-// };
+// const initialNodes = [
+//   {
+//     id: '1',
+//     position: { x: 100, y: 100 },
+//     data: { label: 'Array & Strings' },
+//     type: 'default',
+//   },
+//   {
+//     id: '2',
+//     position: { x: 100, y: 150 },
+//     data: { label: 'Linked List' },
+//     type: 'default',
+//   },
+//   {
+//     id: '3',
+//     position: { x: 100, y: 200 },
+//     data: { label: 'Two Pointers' },
+//     type: 'default',
+//   },
+// ];
+
+// const initialEdges = [
+//   {
+//     id: 'e1-2',
+//     source: '1',
+//     target: '2',
+//     type: 'straight', // ✅ 使用直線
+//   },
+//   {
+//     id: 'e2-3',
+//     source: '2',
+//     target: '3',
+//     type: 'straight',
+//   },
+// ];
 
 // export default function MainPage() {
-//   const [hoverNode, setHoverNode] = useState(null);
+//   const [selectedNode, setSelectedNode] = useState(null);
+
+//   const onNodeClick = useCallback((_, node) => {
+//     setSelectedNode(node.data.label);
+//   }, []);
 
 //   return (
-//     <div className="h-screen w-full">
-//       <ForceGraph3D
-//         graphData={data}
-//         nodeAutoColorBy="group"
-//         linkDirectionalParticles={2}
-//         linkDirectionalParticleSpeed={d => 0.005}
-//         nodeThreeObject={node => {
-//           const sprite = new THREE.Sprite(new THREE.SpriteMaterial({
-//             map: new THREE.CanvasTexture(getNodeLabelCanvas(node)),
-//           }));
-//           sprite.scale.set(10, 5, 1);
-//           return sprite;
-//         }}
-//         onNodeHover={node => setHoverNode(node)}
-//       />
-//       {hoverNode && (
-//         <div className="absolute top-4 right-4 bg-white rounded-xl shadow-lg p-4 w-72 text-black z-10">
-//           <h2 className="font-bold text-lg mb-2">{hoverNode.id}</h2>
-//           {hoverNode.title && <p className="text-sm mb-1">{hoverNode.title}</p>}
-//           {hoverNode.tech && (
-//             <div className="text-sm mb-1">
-//               <strong>Tech:</strong> {hoverNode.tech.join(', ')}
-//             </div>
-//           )}
-//           {hoverNode.achievements && (
-//             <ul className="list-disc list-inside text-sm">
-//               {hoverNode.achievements.map((ach, i) => <li key={i}>{ach}</li>)}
-//             </ul>
-//           )}
+//     <div className="min-h-screen bg-gradient-to-br from-rose-50 to-sky-50 py-12 px-4">
+//       <div className="max-w-5xl mx-auto border rounded-2xl shadow bg-white p-4">
+//         <div style={{ width: '100%', height: '500px' }}>
+//           <ReactFlow
+//             nodes={initialNodes}
+//             edges={initialEdges}
+//             onNodeClick={onNodeClick}
+//             fitView
+//             zoomOnScroll={false}
+//             panOnScroll={false}
+//             panOnDrag={false}
+//             zoomOnPinch={false}
+//             nodesDraggable={false}
+//             nodesConnectable={false}
+//             elementsSelectable={false}
+//           />
 //         </div>
-//       )}
+//       </div>
+
+//       <Dialog open={!!selectedNode} onClose={() => setSelectedNode(null)} className="relative z-50">
+//         <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
+//         <div className="fixed inset-0 flex items-center justify-center p-4">
+//           <Dialog.Panel
+//             as={motion.div}
+//             initial={{ scale: 0.9, opacity: 0 }}
+//             animate={{ scale: 1, opacity: 1 }}
+//             exit={{ scale: 0.9, opacity: 0 }}
+//             className="bg-white p-6 rounded-2xl shadow-xl w-full max-w-md"
+//           >
+//             <Dialog.Title className="text-xl font-semibold mb-2">
+//               {selectedNode}
+//             </Dialog.Title>
+//             <Dialog.Description className="text-gray-600">
+//               這是 {selectedNode} 的文章內容，未來可以串 markdown、Notion、CMS。
+//             </Dialog.Description>
+//           </Dialog.Panel>
+//         </div>
+//       </Dialog>
 //     </div>
 //   );
 // }
 
-// function getNodeLabelCanvas(node) {
-//   const canvas = document.createElement('canvas');
-//   const ctx = canvas.getContext('2d');
-//   const size = 256;
-//   canvas.width = size;
-//   canvas.height = size;
-//   ctx.fillStyle = 'white';
-//   ctx.fillRect(0, 0, size, size);
-//   ctx.fillStyle = 'black';
-//   ctx.font = '20px sans-serif';
-//   ctx.textAlign = 'center';
-//   ctx.textBaseline = 'middle';
-//   ctx.fillText(node.id, size / 2, size / 2);
-//   return canvas;
-// }
 
 // 'use client';
-// import { Canvas } from '@react-three/fiber';
-// import { Html, OrbitControls, Stars } from '@react-three/drei';
-// import { useRef } from 'react';
-// import * as THREE from 'three';
+// import ReactFlow, { Background } from 'reactflow';
+// import 'reactflow/dist/style.css';
+// import { CustomNode } from './CustomNode';
+// import CustomDashedEdge from './CustomEdge';
 
-// const experiences = [
-//   { id: 'Company A', title: 'Frontend Developer', year: '2019-2020', description: 'Worked on UI components and UX improvements.' },
-//   { id: 'Company B', title: 'Fullstack Developer', year: '2020-2022', description: 'Built backend services and integrated frontend.' },
-//   { id: 'Company C', title: 'Tech Lead', year: '2022-Now', description: 'Led team, system architecture, and scaling.' },
+// const nodeTypes = { custom: CustomNode };
+// const edgeTypes = { dashed: CustomDashedEdge };
+
+// const nodes = [
+//   {
+//     id: '1',
+//     type: 'custom',
+//     position: { x: 400, y: 0 }, // 第一個 node 在上
+//     data: { label: 'Introduction', type: 'main' },
+//   },
+//   {
+//     id: '2',
+//     type: 'custom',
+//     position: { x: 400, y: 100 }, // 第二個 node 在下面
+//     data: { label: 'Performance vs Scalability', type: 'sub' },
+//   },
+//   {
+//     id: '3',
+//     type: 'custom',
+//     position: { x: 400, y: 200 }, // 再下一層
+//     data: { label: 'Availability vs Consistency', type: 'sub' },
+//   },
 // ];
 
-// function ExperienceCard({ position, experience }) {
+// const edges = [
+//   {
+//     id: 'e1-2',
+//     source: '1',
+//     target: '2',
+//     type: 'default', // 預設線，不用自定義
+//   },
+//   {
+//     id: 'e2-3',
+//     source: '2',
+//     target: '3',
+//     type: 'default',
+//   },
+// ];
+
+
+
+// export default function MainPage() {
 //   return (
-//     <group position={position}>
-//       <mesh>
-//         <boxGeometry args={[4, 2.5, 0.1]} />
-//         <meshStandardMaterial color="#1e293b" />
-//       </mesh>
-//       <Html center distanceFactor={1.2} zIndexRange={[1, 0]}>
-//         <div className="bg-slate-900 text-white p-4 rounded-xl w-64 shadow-lg">
-//           <h3 className="font-bold text-lg">{experience.title}</h3>
-//           <p className="text-sm text-slate-300">{experience.year}</p>
-//           <p className="text-sm mt-1">{experience.description}</p>
-//         </div>
-//       </Html>
-//     </group>
-//   );
-// }
+//     <div className="w-full h-screen">
+//       <ReactFlow
+//         nodes={nodes}
+//         edges={edges}
+//         nodeTypes={nodeTypes}
+//         edgeTypes={edgeTypes}
+//         fitView
+//         zoomOnScroll
+//         panOnDrag
+//         nodesDraggable={false}
+//         nodesConnectable={false}
+//         elementsSelectable={false}
 
-// export default function TimeTunnelScene() {
-//   return (
-//     <div className="h-screen w-full">
-//       <Canvas camera={{ position: [0, 0, 10], fov: 60 }}>
-//         <ambientLight intensity={0.8} />
-//         <pointLight position={[10, 10, 10]} />
-//         <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
-
-//         {experiences.map((exp, idx) => (
-//           <ExperienceCard
-//             key={exp.id}
-//             position={[0, 0, -idx * 6]}
-//             experience={exp}
-//           />
-//         ))}
-
-//         <OrbitControls enablePan={false} enableZoom={false} />
-//       </Canvas>
+//         minZoom={0.2} // 可以調整最小 zoom 比例
+//         maxZoom={2}
+//         className="w-full h-full"
+//       >
+//         <Background color="#f0f0f0" />
+//       </ReactFlow>
 //     </div>
 //   );
 // }

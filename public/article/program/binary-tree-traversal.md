@@ -3,7 +3,7 @@ title: "[ Data Structure ] Binary Tree - Traversal | 核心概念與 Leetcode �
 date: "2025-03-21"
 author: James
 tags: Data Structure,Binary Tree
-image: /images/program/data-structure.jpeg
+image: /images/program/data-structure.png
 description: "Binary Tree 的定義就是在一個 tree 中，每一個 node 的 children 數量不能超過兩個，所以如果寫成一個 class 的話可以這樣表示"
 readTime: 2
 ---

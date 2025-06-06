@@ -3,7 +3,7 @@ title: "[ Data Structure ] Binary Tree - Reconstruction | 核心概念與 Leetco
 date: "2025-04-10"
 author: James
 tags: Data Structure,Binary Tree
-image: /images/program/data-structure.jpeg
+image: /images/program/data-structure.png
 description: "Binary Tree 除了要會三種基本的 traversal，如何從這些 traversal 的 array 重新建構出一棵樹也是很重要的，下面舉了三種最常見的例子跟解題思路，簡單來說，我們要先找到其中一種 traversal 的 root，在另一邊定位出來之後，就可以很好的分辨 left subtree 跟 right subtree 的位置了。"
 readTime: 5
 ---

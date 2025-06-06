@@ -1,6 +1,6 @@
 ---
 title: "[ Algorithm ] Dynamic Programming (五) - Interval DP | 核心概念與 Leetcode 題型解析"
-date: "2025-06-03"
+date: "2025-06-01"
 author: James
 tags: Algorithm,DP,Interval DP
 image: /images/program/algorithm.png

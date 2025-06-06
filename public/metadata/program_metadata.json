@@ -21,7 +21,7 @@
             "Binary Tree",
             "Binary Search Tree"
         ],
-        "image": "/images/program/data-structure.jpeg",
+        "image": "/images/program/data-structure.png",
         "description": "Binary Search Tree 除了每個 node 最多只能有兩個 children 外，還必須符合下面這條規則",
         "readTime": 3,
         "path": "binary-search-tree"
@@ -47,7 +47,7 @@
             "Data Structure",
             "Binary Tree"
         ],
-        "image": "/images/program/data-structure.jpeg",
+        "image": "/images/program/data-structure.png",
         "description": "Binary Tree 除了要會三種基本的 traversal，如何從這些 traversal 的 array 重新建構出一棵樹也是很重要的，下面舉了三種最常見的例子跟解題思路，簡單來說，我們要先找到其中一種 traversal 的 root，在另一邊定位出來之後，就可以很好的分辨 left subtree 跟 right subtree 的位置了。",
         "readTime": 10,
         "path": "binary-tree-reconstruction"
@@ -60,7 +60,7 @@
             "Data Structure",
             "Binary Tree"
         ],
-        "image": "/images/program/data-structure.jpeg",
+        "image": "/images/program/data-structure.png",
         "description": "Binary Tree 的定義就是在一個 tree 中，每一個 node 的 children 數量不能超過兩個，所以如果寫成一個 class 的話可以這樣表示",
         "readTime": 3,
         "path": "binary-tree-traversal"
@@ -108,7 +108,7 @@
     },
     {
         "title": "[ Algorithm ] Dynamic Programming (六) - Digit DP | 核心概念與 Leetcode 題型解析",
-        "date": "2025-06-03",
+        "date": "2025-06-02",
         "author": "James",
         "tags": [
             "Algorithm",
@@ -122,7 +122,7 @@
     },
     {
         "title": "[ Algorithm ] Dynamic Programming (二) - Memorization | 核心概念與 Leetcode 題型解析",
-        "date": "2025-06-03",
+        "date": "2025-05-28",
         "author": "James",
         "tags": [
             "Algorithm",
@@ -136,7 +136,7 @@
     },
     {
         "title": "[ Algorithm ] Dynamic Programming (一) - Introduction | 核心概念與 Leetcode 題型解析",
-        "date": "2025-06-03",
+        "date": "2025-05-27",
         "author": "James",
         "tags": [
             "Algorithm",
@@ -172,14 +172,14 @@
             "Unordered Multiset",
             "Unordered Multimap"
         ],
-        "image": "/images/program/data-structure.jpeg",
+        "image": "/images/program/data-structure.png",
         "description": "Hash Table 是一種基於 key-value pair 的 data structure，主要目的就是要讓 search, delete, insert 這些操作都是 O(1)，他利用一個 Hash Function 將 Key 映射到一個 index，然後再把 value 填進來，所以才可以用極短的時間就做到 searching 的動作。常見的 C++ Hash Table 包括下面幾種：",
         "readTime": 4,
         "path": "hash-table"
     },
     {
         "title": "[ Algorithm ] Dynamic Programming (五) - Interval DP | 核心概念與 Leetcode 題型解析",
-        "date": "2025-06-03",
+        "date": "2025-06-01",
         "author": "James",
         "tags": [
             "Algorithm",
@@ -193,7 +193,7 @@
     },
     {
         "title": "[ Algorithm ] Dynamic Programming (四) - Knapsack Problem | 核心概念與 Leetcode 題型解析",
-        "date": "2025-06-03",
+        "date": "2025-05-30",
         "author": "James",
         "tags": [
             "Algorithm",
@@ -209,7 +209,7 @@
     },
     {
         "title": "[ Algorithm ] Dynamic Programming (三) - Linear DP | 核心概念與 Leetcode 題型解析",
-        "date": "2025-06-03",
+        "date": "2025-05-29",
         "author": "James",
         "tags": [
             "Algorithm",
@@ -259,7 +259,7 @@
             "Stack",
             "Monotonic Stack"
         ],
-        "image": "/images/program/data-structure.jpeg",
+        "image": "/images/program/data-structure.png",
         "description": "Stack 是一種 Last In, First Out (LIFO) 的 data structure，有點像是疊積木，所以最大的特色就是，你永遠只能看到最上面這個 element，要 remove element 也只能 remove 最上面的這個，所以沒有辦法看到其他的 element。",
         "readTime": 2,
         "path": "queue"
@@ -299,7 +299,7 @@
             "Stack",
             "Monotonic Stack"
         ],
-        "image": "/images/program/data-structure.jpeg",
+        "image": "/images/program/data-structure.png",
         "description": "Stack 是一種 Last In, First Out (LIFO) 的 data structure，有點像是疊積木，所以最大的特色就是，你永遠只能看到最上面這個 element，要 remove element 也只能 remove 最上面的這個，所以沒有辦法看到其他的 element。",
         "readTime": 2,
         "path": "stack"

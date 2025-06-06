@@ -1,6 +1,6 @@
 ---
 title: "[ Algorithm ] Dynamic Programming (六) - Digit DP | 核心概念與 Leetcode 題型解析"
-date: "2025-06-03"
+date: "2025-06-02"
 author: James
 tags: Algorithm,DP,Digit DP
 image: /images/program/algorithm.png
