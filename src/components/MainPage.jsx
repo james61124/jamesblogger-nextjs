@@ -21,6 +21,7 @@ export default function MainPage() {
   ];
 
   const education = [
+    { degree: 'Master of Computer Science', school: 'Rice University', duration: '2025 - 2026' },
     { degree: 'B.S. in Computer Science', school: 'National Yang Ming Chiao Tung University', duration: '2020 - 2024' },
     { degree: 'Senior High School', school: 'Kaohsiung Municipal Kaohsiung Senior High School', duration: '2017 - 2020' },
   ];
@@ -313,6 +314,67 @@ export default function MainPage() {
 //         className="w-full h-full"
 //       >
 //         <Background color="#f0f0f0" />
+//       </ReactFlow>
+//     </div>
+//   );
+// }
+
+// 'use client';
+
+// import React from 'react';
+// import ReactFlow, { Background, Controls } from 'reactflow';
+// import 'reactflow/dist/style.css';
+
+// // 自訂節點樣式
+// // const nodeStyle = {
+// //   background: '#e0f0ff',
+// //   border: '2px solid #a0c4ff',
+// //   borderRadius: 12,
+// //   padding: 10,
+// //   boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
+// //   color: '#333',
+// //   textAlign: 'center',
+// //   fontSize: '16px',
+// //   width: 150,
+// // };
+
+// const nodes = [
+//   {
+//     id: '1',
+//     position: { x: 250, y: 150 },
+//     data: { label: <div>節點 1</div> },
+//     type: 'default',
+//   },
+//   {
+//     id: '2',
+//     position: { x: 250, y: 250 },
+//     data: { label: <div>節點 2</div> },
+//     type: 'default',
+//   },
+// ];
+
+// const edges = [
+//   {
+//     id: 'e1-2',
+//     source: '1',
+//     target: '2',
+//     animated: true,
+//     style: { stroke: '#90caf9', strokeWidth: 2 },
+//     type: 'smoothstep',
+//   },
+// ];
+
+// export default function MainPage() {
+//   return (
+//     <div style={{ width: '100%', height: '100vh' }}>
+//       <ReactFlow nodes={nodes} edges={edges} fitView
+      
+//       zoomOnScroll={false}
+//       zoomOnPinch={false}
+//       panOnDrag={false}
+//       panOnScroll={false}>
+//         {/* <Background color="#f0f4f8" gap={16} /> */}
+//         <Controls />
 //       </ReactFlow>
 //     </div>
 //   );

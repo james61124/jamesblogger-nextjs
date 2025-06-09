@@ -763,6 +763,20 @@
         "path": "leetcode-242"
     },
     {
+        "title": "[ Leetcode 25 ] Reverse Nodes in k-Group | 解題思路分享",
+        "date": "2025-06-09",
+        "author": "James",
+        "tags": [
+            "Linked List",
+            "Head Insertion Method"
+        ],
+        "difficulty": "Hard",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-25"
+    },
+    {
         "title": "[ Leetcode 26 ] Remove Duplicates from Sorted Array | 解題思路分享",
         "date": "2025-02-26",
         "author": "James",
@@ -882,6 +896,20 @@
         "description": "",
         "readTime": 5,
         "path": "leetcode-310"
+    },
+    {
+        "title": "[ Leetcode 33 ] Search in Rotated Sorted Array | 解題思路分享",
+        "date": "2025-06-09",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Binary Search"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 4,
+        "path": "leetcode-33"
     },
     {
         "title": "[ Leetcode 338 ] Counting Bits | 解題思路分享",
