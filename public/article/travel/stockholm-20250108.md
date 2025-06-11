@@ -3,7 +3,7 @@ title: 三日走跳斯德哥爾摩 | 魚湯、冰杯、地鐵藝術與意外飄�
 date: "2025-06-09"
 author: James
 tags: Sweden,Stockholm
-image: /images/travel/stockholm-20250108/museum-5.jpg
+image: /images/travel/stockholm-20250108/museum-5.JPG
 description: "雖然北歐五國已經去過冰島，但冰島算是一個奇葩我都下意識沒把他當北歐，也雖然波羅的海三小國文化上是屬於北歐的，但是大部分定義上還是沒有把他們歸進去北歐五國，所以這次踏上瑞典有一種第一次踏上北歐的錯覺。"
 readTime: 3
 ---
