@@ -162,6 +162,21 @@
         "path": "leetcode-40"
     },
     {
+        "title": "[ Leetcode 74 ] Search a 2D Matrix | 解題思路分享",
+        "date": "2025-06-13",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Binary Search",
+            "Matrix"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 4,
+        "path": "leetcode-74"
+    },
+    {
         "title": "[ Leetcode 25 ] Reverse Nodes in k-Group | 解題思路分享",
         "date": "2025-06-09",
         "author": "James",
@@ -1196,6 +1211,21 @@
         "path": "leetcode-26"
     },
     {
+        "title": "[ Leetcode 84 ] Largest Rectangle in Histogram | 解題思路分享",
+        "date": "2025-06-13",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Stack",
+            "Monotonic Stack"
+        ],
+        "difficulty": "Hard",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 4,
+        "path": "leetcode-84"
+    },
+    {
         "title": "[ Leetcode 94 ] Binary Tree Inorder Traversal | 解題思路分享",
         "date": "2025-03-20",
         "author": "James",
@@ -1667,6 +1697,20 @@
         "description": "",
         "readTime": 3,
         "path": "leetcode-76"
+    },
+    {
+        "title": "[ Leetcode 66 ] Plus One | 解題思路分享",
+        "date": "2025-06-13",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Math"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-66"
     },
     {
         "title": "[ Leetcode 279 ] Perfect Squares | 解題思路分享",
