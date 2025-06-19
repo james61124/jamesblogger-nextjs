@@ -1030,6 +1030,22 @@
         "path": "leetcode-213"
     },
     {
+        "title": "[ Leetcode 131 ] Palindrome Partitioning | 解題思路分享",
+        "date": "2025-06-17",
+        "author": "James",
+        "tags": [
+            "String",
+            "DP",
+            "Backtracking",
+            "Manacher"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 6,
+        "path": "leetcode-131"
+    },
+    {
         "title": "[ Leetcode 78 ] Subsets | 解題思路分享",
         "date": "2025-03-22",
         "author": "James",
