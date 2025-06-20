@@ -1,5 +1,19 @@
 [
     {
+        "title": "[ Leetcode 138 ] Copy List with Random Pointer | 解題思路分享",
+        "date": "2025-06-18",
+        "author": "James",
+        "tags": [
+            "Linked List",
+            "Interleaved List"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-138"
+    },
+    {
         "title": "[ Leetcode 20 ] Valid Parentheses | 解題思路分享",
         "date": "2025-03-06",
         "author": "James",
@@ -550,6 +564,20 @@
         "path": "leetcode-102"
     },
     {
+        "title": "[ Leetcode 136 ] Single Number | 解題思路分享",
+        "date": "2025-06-18",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Bit Manipulation"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-136"
+    },
+    {
         "title": "[ Leetcode 167 ] Two Sum II - Input Array Is Sorted | 解題思路分享",
         "date": "2025-02-26",
         "author": "James",
@@ -790,6 +818,20 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-49"
+    },
+    {
+        "title": "[ Leetcode 134 ] Gas Station | 解題思路分享",
+        "date": "2025-06-17",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Greedy"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-134"
     },
     {
         "title": "[ Leetcode 347 ] Top K Frequent Elements | 解題思路分享",
