@@ -28,4 +28,6 @@ matrix dfs：不一定要按照順序 dfs，要記得可以反向 dfs！
 linked list - interleaved list
 linked list - reverse, find middle node
 
+double linked list -> list -> 146
+
 
