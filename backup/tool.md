@@ -26,5 +26,6 @@ matrix dfs：不一定要按照順序 dfs，要記得可以反向 dfs！
 2D DP：狀態會從前面兩種地方來！
 
 linked list - interleaved list
+linked list - reverse, find middle node
 
 
