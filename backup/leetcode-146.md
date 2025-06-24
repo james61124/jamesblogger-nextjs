@@ -9,7 +9,10 @@ description: ""
 readTime: 2
 ---
 
+實作一個 LRU Cache，支援兩種 function：
 
+> `get(int key)` - 如果 key 存在於 cache 中，回傳其 value，並將該項設為最近使用，否則回傳 -1。<br>
+> `put(int key, int value)` - 將 key-value 插入 cache 中，若 key 已存在，更新其 value 並視為最近使用，若插入後超出容量（capacity），就移除最久未使用的那一個項目。
 
 題目連結 🔗：[https://leetcode.com/problems/lru-cache/](https://leetcode.com/problems/lru-cache/)
 
@@ -55,9 +58,120 @@ int get(int key) {
 }
 ```
 
-`put` 分成幾種情況，
+`put` 分成幾種情況，如果 key 存在，就要更新 value 同時更新 `lruList`，所以事實上就是要 erase 原本在 `lruList` 的 key-value，重新推一個到前面，然後用 hash table 記起來。
 
-**Time Complexity** - `O(m*n)`<br>
+```cpp
+void put(int key, int value) {  
+    if (umap.find(key) != umap.end()) {
+        lruList.erase(umap[key]);
+        lruList.push_front({key, value});
+        umap[key] = lruList.begin();
+    }
+}
+```
+
+那如果這個 key 不存在，就不用 erase 原本在 `lruList` 的 key-value，但還是必須推一個 key-value 到 lruList，所以其實可以這樣寫
+
+```cpp
+void put(int key, int value) {  
+    if (umap.find(key) != umap.end()) {
+        lruList.erase(umap[key]);
+    }
+    lruList.push_front({key, value});
+    umap[key] = lruList.begin();
+}
+```
+
+最後如果超過 capacity，要把 least recently used key 拔掉，hash table 裡面也要 erase。
+
+```cpp
+void put(int key, int value) {  
+    if (umap.find(key) != umap.end()) {
+        lruList.erase(umap[key]);
+    } else if(lruList.size() == capacity) {
+        int oldKey = lruList.back().first;
+        lruList.pop_back();
+        umap.erase(oldKey);
+    }
+    lruList.push_front({key, value});
+    umap[key] = lruList.begin();
+}
+```
+
+以上是利用 c++ 內建 STL `list` 的寫法，當然如果不曉得這個 STL，實作一個 double linked list 也不會很複雜，主要可以注意一個小技巧，如果再 double linked list 的前後建一個 dummy head 跟 dummy tail，這樣就不用處理 pointer 跑到 nullptr 的問題，實作起來會比較簡單。
+
+```cpp
+struct Node {
+    int key;
+    int value;
+    Node* prev;
+    Node* next;
+    Node(int k, int v) : key(k), value(v), prev(nullptr), next(nullptr) {}
+};
+
+class LRUCache {
+private:
+    Node* head;
+    Node* tail;
+    unordered_map<int, Node*>umap;
+    int capacity;
+    int size;
+public:
+    LRUCache(int capacity) {
+        this->capacity = capacity;
+        this->size = 0;
+        this->head = new Node(0, 0);
+        this->tail = new Node(0, 0);
+        this->head->next = this->tail;
+        this->tail->prev = this->head;
+    }
+
+    void erase(Node* node) {
+        Node* prev = node->prev;
+        Node* next = node->next;
+        prev->next = next;
+        next->prev = prev;
+        this->size--;
+    }
+
+    Node* push_front(int key, int value) {
+        Node* node = new Node(key, value);
+        Node* next = head->next;
+        head->next = node;
+        node->prev = head;
+        node->next = next;
+        next->prev = node;
+        this->size++;
+        return node;
+    }
+
+    void pop_back() {
+        erase(tail->prev);
+    }
+    
+    int get(int key) {
+        if(umap.find(key) == umap.end()) return -1;
+        int value = umap[key]->value;
+        erase(umap[key]);
+        umap[key] = push_front(key, value);
+        return value;
+    }
+    
+    void put(int key, int value) {  
+        if(umap.find(key) != umap.end()) {
+            erase(umap[key]);
+        } else if (size == capacity) {
+            int oldKey = tail->prev->key;
+            pop_back();
+            umap.erase(oldKey);
+        }
+        umap[key] = push_front(key, value);
+    }
+};
+
+```
+
+**Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
 ### **Implementation**
