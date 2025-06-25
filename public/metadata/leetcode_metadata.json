@@ -787,6 +787,21 @@
         "path": "leetcode-1"
     },
     {
+        "title": "[ Leetcode 146 ] LRU Cache | 解題思路分享",
+        "date": "2025-06-25",
+        "author": "James",
+        "tags": [
+            "Hash Table",
+            "Linked List",
+            "Double Linked List"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 5,
+        "path": "leetcode-146"
+    },
+    {
         "title": "[ Leetcode 210 ] Course Schedule II | 解題思路分享",
         "date": "2025-03-08",
         "author": "James",
@@ -846,6 +861,22 @@
         "description": "",
         "readTime": 3,
         "path": "leetcode-134"
+    },
+    {
+        "title": "[ Leetcode 207 ] Course Schedule | 解題思路分享",
+        "date": "2025-06-25",
+        "author": "James",
+        "tags": [
+            "Graph",
+            "DFS",
+            "BFS",
+            "Topological Sort"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-207"
     },
     {
         "title": "[ Leetcode 347 ] Top K Frequent Elements | 解題思路分享",
@@ -968,6 +999,20 @@
         "description": "",
         "readTime": 3,
         "path": "leetcode-343"
+    },
+    {
+        "title": "[ Leetcode 155 ] Min Stack | 解題思路分享",
+        "date": "2025-06-24",
+        "author": "James",
+        "tags": [
+            "Stack",
+            "Design"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-155"
     },
     {
         "title": "[ Leetcode 1343 ] Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold | 解題思路分享",
@@ -1100,6 +1145,21 @@
         "description": "",
         "readTime": 6,
         "path": "leetcode-131"
+    },
+    {
+        "title": "[ Leetcode 202 ] Happy Number | 解題思路分享",
+        "date": "2025-06-25",
+        "author": "James",
+        "tags": [
+            "Hash Table",
+            "Two Pointers",
+            "Math"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-202"
     },
     {
         "title": "[ Leetcode 78 ] Subsets | 解題思路分享",
@@ -1236,6 +1296,19 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-121"
+    },
+    {
+        "title": "[ Leetcode 150 ] Evaluate Reverse Polish Notation | 解題思路分享",
+        "date": "2025-06-24",
+        "author": "James",
+        "tags": [
+            "Stack"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-150"
     },
     {
         "title": "[ Leetcode 48 ] Rotate Image | 解題思路分享",
@@ -1490,6 +1563,20 @@
         "path": "leetcode-209"
     },
     {
+        "title": "[ Leetcode 198 ] House Robber | 解題思路分享",
+        "date": "2025-06-25",
+        "author": "James",
+        "tags": [
+            "Array",
+            "DP"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-198"
+    },
+    {
         "title": "[ Leetcode 349 ] Intersection of Two Arrays | 解題思路分享",
         "date": "2025-02-23",
         "author": "James",
@@ -1649,6 +1736,21 @@
         "description": "",
         "readTime": 4,
         "path": "leetcode-572"
+    },
+    {
+        "title": "[ Leetcode 199 ] Binary Tree Right Side View | 解題思路分享",
+        "date": "2025-06-25",
+        "author": "James",
+        "tags": [
+            "Tree",
+            "DFS",
+            "Binary Tree"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-199"
     },
     {
         "title": "[ Leetcode 208 ] Implement Trie (Prefix Tree) | 解題思路分享",
