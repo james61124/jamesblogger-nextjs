@@ -2,7 +2,7 @@
 title: "[ Leetcode 202 ] Happy Number | 解題思路分享"
 date: "2025-06-25"
 author: James
-tags: Hash Table,Two Pointers,Math
+tags: Hash Table,Two Pointers,Math,Floyd's Cycle Detection
 difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
