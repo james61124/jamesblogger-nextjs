@@ -20,7 +20,7 @@ export default function LeetCodeList({ json_path, category }) {
 
   const searchParams = useSearchParams();
   const selectedTag = searchParams.get("tag");
-  const router = useRouter(); // ✅ Next.js 用 useRouter 來導航
+  const router = useRouter();
 
   useEffect(() => {
     fetch(json_path)
