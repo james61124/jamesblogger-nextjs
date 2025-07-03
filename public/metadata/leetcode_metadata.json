@@ -940,6 +940,21 @@
         "path": "leetcode-347"
     },
     {
+        "title": "[ Leetcode 518 ] Coin Change II | 解題思路分享",
+        "date": "2025-07-03",
+        "author": "James",
+        "tags": [
+            "Array",
+            "DP",
+            "Unbounded Knapsack Problem"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-518"
+    },
+    {
         "title": "[ Leetcode 217 ] Contains Duplicate | 解題思路分享",
         "date": "2025-03-10",
         "author": "James",
@@ -1425,6 +1440,21 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-125"
+    },
+    {
+        "title": "[ Leetcode 543 ] Diameter of Binary Tree | 解題思路分享",
+        "date": "2025-07-03",
+        "author": "James",
+        "tags": [
+            "Tree",
+            "Binary Tree",
+            "DFS"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-543"
     },
     {
         "title": "[ Leetcode 239 ] Sliding Window Maximum | 解題思路分享",
@@ -1971,6 +2001,21 @@
         "description": "",
         "readTime": 4,
         "path": "leetcode-416"
+    },
+    {
+        "title": "[ Leetcode 494 ] Target Sum | 解題思路分享",
+        "date": "2025-07-02",
+        "author": "James",
+        "tags": [
+            "Array",
+            "DP",
+            "0/1 Knapsack Problem"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 4,
+        "path": "leetcode-494"
     },
     {
         "title": "[ Leetcode 42 ] Trapping Rain Water | 解題思路分享",
