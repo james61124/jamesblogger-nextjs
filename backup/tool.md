@@ -30,4 +30,6 @@ linked list - reverse, find middle node
 
 double linked list -> list -> 146
 
+26 字母 -> hash table 開 vector
+
 

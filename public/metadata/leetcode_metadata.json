@@ -1442,6 +1442,20 @@
         "path": "leetcode-125"
     },
     {
+        "title": "[ Leetcode 621 ] Task Scheduler | 解題思路分享",
+        "date": "2025-07-04",
+        "author": "James",
+        "tags": [
+            "Hash Table",
+            "Greedy"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-621"
+    },
+    {
         "title": "[ Leetcode 543 ] Diameter of Binary Tree | 解題思路分享",
         "date": "2025-07-03",
         "author": "James",
@@ -1575,6 +1589,20 @@
         "description": "",
         "readTime": 2,
         "path": "leetcode-53"
+    },
+    {
+        "title": "[ Leetcode 567 ] Permutation in String | 解題思路分享",
+        "date": "2025-07-04",
+        "author": "James",
+        "tags": [
+            "Hash Table",
+            "Sliding Window"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-567"
     },
     {
         "title": "[ Leetcode 700 ] Search in a Binary Search Tree | 解題思路分享",
