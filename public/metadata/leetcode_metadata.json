@@ -263,6 +263,20 @@
         "path": "leetcode-424"
     },
     {
+        "title": "[ Leetcode 684 ] Redundant Connection | 解題思路分享",
+        "date": "2025-07-07",
+        "author": "James",
+        "tags": [
+            "Graph",
+            "Union Find"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-684"
+    },
+    {
         "title": "[ Leetcode 455 ] Assign Cookies | 解題思路分享",
         "date": "2025-03-22",
         "author": "James",
@@ -605,6 +619,19 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-167"
+    },
+    {
+        "title": "[ Leetcode 678 ] Valid Parenthesis String | 解題思路分享",
+        "date": "2025-07-04",
+        "author": "James",
+        "tags": [
+            "Greedy"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-678"
     },
     {
         "title": "[ Leetcode 889 ] Construct Binary Tree from Preorder and Postorder Traversal | 解題思路分享",
