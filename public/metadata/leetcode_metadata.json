@@ -70,6 +70,20 @@
         "path": "leetcode-128"
     },
     {
+        "title": "[ Leetcode 695 ] Max Area of Island | 解題思路分享",
+        "date": "2025-07-07",
+        "author": "James",
+        "tags": [
+            "Matrix",
+            "DFS"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-695"
+    },
+    {
         "title": "[ Leetcode 450 ] Delete Node in a BST | 解題思路分享",
         "date": "2025-03-21",
         "author": "James",
@@ -261,6 +275,19 @@
         "description": "",
         "readTime": 3,
         "path": "leetcode-424"
+    },
+    {
+        "title": "[ Leetcode 703 ] Kth Largest Element in a Stream | 解題思路分享",
+        "date": "2025-07-08",
+        "author": "James",
+        "tags": [
+            "Priority Queue"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-703"
     },
     {
         "title": "[ Leetcode 684 ] Redundant Connection | 解題思路分享",
@@ -1496,6 +1523,19 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-543"
+    },
+    {
+        "title": "[ Leetcode 704 ] Binary Search | 解題思路分享",
+        "date": "2025-07-08",
+        "author": "James",
+        "tags": [
+            "Binary Search"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-704"
     },
     {
         "title": "[ Leetcode 239 ] Sliding Window Maximum | 解題思路分享",
