@@ -1,66 +1,98 @@
 
 > single source shortest path
 
-Dijkstra 可以找到 single source 到其他所有 nodes 的 shortest path
+Dijkstra 運用在 weighted graph 上，可以找到 single source 到其他所有 nodes 的 shortest path，因此輸出是一個 dist[i]，代表起始點 `k` 到每一個 nodes 的最短距離。
 
-首先 adjacency list
-
-利用 dist[i] 儲存當前 `i` 到 `k` 的最短路徑，也就是說 dist[k] = 0。
-
-dist 會持續更新，而 Dijkstra 的目標是將所有 node `src` 轉成「已經確定起始點 `k` 到自己最短距離」的狀態，到達這個狀態的 node 我們將不會再修改 dist[src]，而當所有 `src` 都到達這個狀態，就可以回傳 dist。
-
-當我們 visit 到一個「已經確定起始點 `k` 到自己最短距離」的 node `src`，就可以去更新 dist[i]，因為 dist[src] 已經不會再變，所以所有 `src` 的 neighbor 在通過 `src` 的這條路徑的最短路線已經確定，就是
+因為是 weighted graph，我們會使用 adjacency list 來儲存 graph 的結構，同時記錄每個相鄰 node 的 cost。可以使用以下的資料結構：
 
 ```cpp
-dist[neighbor] = dist[src] + (src->neighbor cost)
+vector<vector<pair<int, int>>>adj
 ```
 
-但是要注意，這個只是「從 `k` 出發通過 `src`」的最短路徑，並不一定是從 `k` 出發的最短路徑，所以如果 `dist[src] + (src->neighbor value)` 比原始的 dist[neighbor] 還要小，那也不用更新到 dist 上了，甚至也不用 push 進去 priority queue。
+其中，`pair<int, int>` 代表 {neighbor, cost}，即：相鄰節點與其對應的邊的權重。
+
+Dijkstra 的關鍵思想是：**由近到遠地依序探索每個 node**，並不斷更新最短距離。為了實現這一點，我們選擇使用 priority queue 來維護目前已知距離最短的 nodes，而流程如下：
+
+我們需要 dist[i] 來儲存 output，需要 priority queue 來儲存 { 起始點 `k` 到 node 的距離, node }
 
 ```cpp
-for(auto [neighborCost, neighbor] : adj[src]){
-    if(dist[neighbor] > dist[src] + neighborCost){
-        dist[neighbor] = dist[src] + neighborCost;
-        pq.push({dist[neighbor], neighbor});
+vector<int>dist(n + 1, INT_MAX);
+priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>>pq;
+```
+
+將起點 `k` 加入 priority queue 中，因為起始點就是自己，所以 dist[k] 設置為 0。
+
+```cpp
+dist[k] = 0;
+pq.push({0, k});
+```
+
+每次從 queue 中取出目前已知距離最短的 node，而這樣就算是 visit 完這個 node
+
+```cpp
+while(!pq.empty()){
+    auto [srcCost, src] = pq.top();
+    pq.pop();
+
+    // ...
+}
+```
+
+每 visit 一個 `src`，我們要去計算 `src` 的每個 neighbors 在 `k`->`src`->`neighbor` 的最短距離，如果發現這個距離比當前的 dist[neighbor] 還要小，表示找到更短的 `k`->`neighbor` 的 path，就要推進去這個 priority queue 等待待會的 visit，同時更新 dist[neighbor]，而這個過程就是 relexation
+
+```cpp
+while(!pq.empty()){
+    auto [srcCost, src] = pq.top();
+    pq.pop();
+
+    // relexation
+    for(auto [neighborCost, neighbor] : adj[src]){
+        if(dist[neighbor] > dist[src] + neighborCost){
+            dist[neighbor] = dist[src] + neighborCost;
+            pq.push({dist[neighbor], neighbor});
+        }
     }
 }
 ```
 
-如果 priority queue 裡面放的都是「從 `k` 出發通過 `src` 的最短路徑」，那先被 pop 出來的 pair { 到 `k` 的距離, node } 就已經確定到 `k` 的最短距離了，因為後面再被 pop 出來的 node 到 `k` 的距離都會更長，簡單來說
+寫到這邊我們會發現，dist[i] 裡面存的是 `i` 目前為止跟 `k` 的最短距離，他是會因為新的 path 被發掘而一直被更新的，直到 node `i` 被 visit，表示 `i` 已經找到最短路徑了，就不會再被繼續更新，而 priority queue 就是存著準備被 visit 的路徑，而因為 minHeap 的特性，我們會由近到遠 visit 每一個 node，所以 node `i` 在第一次被 visit 的路徑一定是最短路徑。
 
-> 被 pop 出來的 node，就是「已經確定起始點 `k` 到自己最短距離」的 node
+再來我們思考幾個問題，每 visit 一個 `src`，我們要計算 `src` 的每個 neighbors 在 `k`->`src`->`neighbor` 的最短距離，為什麼要先比較一下這個距離是不是比 dist[neighbor] 小呢？我們都用 priority queue 了直接推進去不就好了嗎？反正 pop 出來都會是最小的。假設某個 node 有三條 path：
 
-寫到這邊 Dijkstra 就是一個 cycle
+> `k -> v`，距離 3
+> `k -> ... -> v`，距離 8
+> `k -> ... -> ... -> v`，距離 12
 
-> 1. pop 出已經確定起始點 `k` 到自己最短距離」的 node `src`<br>
-> 2. 計算 `k` -> `src` -> `neighbor` 的最短距離<br>
-> 3. 如果找到從 `k` 出發更短的路徑就推入 priority queue 並更新 dist[neighbor]
+如果不比較就放入 priority queue，裡面就會出現 {3, v}, {8, v}, {12, v}，多 push 進去跟 pop 出來都很花時間，先檢查過就不用浪費時間了。
 
-我們把所有 visit 到新的更短路徑的 nodes 都丟進去 priority queue 中，queue 裡面放的是一個 pair { 到 `k` 的距離, node }，如果每一次都將「到 `k` 的距離」最小的 pop 出來，表示被 pop 出來的 node 已經確定起始點 `k` 到自己的最短距離了，
+但是有一種情況是真的得重複 push，例如說目前 dist[v] = 8，所以 push 進去 {8, v}，但是再來更新後發現出現 dist[v] = 3，於是又推 {3, v} 進去 priority queue，等到 visit 到 v 時會發現 3 處理過後，怎麼又會出現 8，為了解決這件事情，我們要把 outdated 的 path 剔除，所以需要在前面的程式碼補上一行：
 
-而我們持續 visit「已經確定起始點 `k` 到自己的最短距離」的 node，我們叫它 `src`，`src` 的 neighbors 就可以計算路徑經過 `src` 的最短路徑，如果這條路徑
+```cpp
+while(!pq.empty()){
+    auto [srcCost, src] = pq.top();
+    pq.pop();
 
-每 pop 出一個點 `src`，代表這個 node 已經確定了起始點 `k` 到自己的最短距離了，所以就可以更新他所有 neighbors 目前的最小距離，也就是
-
+    if(srcCost > dist[src]) continue; // 剔除 outdated
+    for(auto [neighborCost, neighbor] : adj[src]){
+        if(dist[neighbor] > dist[src] + neighborCost){
+            dist[neighbor] = dist[src] + neighborCost;
+            pq.push({dist[neighbor], neighbor});
+        }
+    }
+}
 ```
-dist[neighbor] = cost + dist[src]
-```
 
-而 dist[neighbor] 如果要放進去 priority queue 裡面，表示找到了更小的 dist[neighbor]，
+而這才是完整的 Dijkstra。
 
-dist[1] = 1
-push 1, 1
-dist[3] = 2
-push 3, 4
+### **Dijkstra 的限制**
 
-pop 1, 1
-dist[2] = 2
-push 2, 1
+因為 Dijkstra 是利用類似 Greedy 的方式
 
-pop 2, 1
+> 一旦你從起點 `k` 到某節點 `v` 找到距離最短的路徑，你就不用再考慮別的路徑了。
 
-pop 3, 2
+這只有在所有邊的權重都是非負的時才成立，如果今天出現 negative weight edges，後面可能出現「繞遠路但有負邊」的更短路徑，Dijkstra 就會出錯了，而這個時候就必須用到 - Bellman-Ford Algorithm。
 
+### **Template**
 
 ```cpp
 vector<int> dijkstra(int n, int k, vector<vector<pair<int, int>>>&adj){
