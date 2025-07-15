@@ -84,6 +84,21 @@
         "path": "leetcode-695"
     },
     {
+        "title": "[ Leetcode 743 ] Network Delay Time | 解題思路分享",
+        "date": "2025-07-14",
+        "author": "James",
+        "tags": [
+            "Graph",
+            "Shortest Path",
+            "Dijkstra"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-743"
+    },
+    {
         "title": "[ Leetcode 450 ] Delete Node in a BST | 解題思路分享",
         "date": "2025-03-21",
         "author": "James",
@@ -97,6 +112,22 @@
         "description": "",
         "readTime": 2,
         "path": "leetcode-450"
+    },
+    {
+        "title": "[ Leetcode 763 ] Partition Labels | 解題思路分享",
+        "date": "2025-07-14",
+        "author": "James",
+        "tags": [
+            "Two Pointers",
+            "String",
+            "Greedy",
+            "Hash Table"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-763"
     },
     {
         "title": "[ Leetcode 435 ] Non-overlapping Intervals | 解題思路分享",
@@ -260,6 +291,20 @@
         "description": "",
         "readTime": 3,
         "path": "leetcode-50"
+    },
+    {
+        "title": "[ Leetcode 746 ] Min Cost Climbing Stairs | 解題思路分享",
+        "date": "2025-07-14",
+        "author": "James",
+        "tags": [
+            "Array",
+            "DP"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-746"
     },
     {
         "title": "[ Leetcode 424 ] Longest Repeating Character Replacement | 解題思路分享",
@@ -808,6 +853,21 @@
         "description": "",
         "readTime": 3,
         "path": "leetcode-5"
+    },
+    {
+        "title": "[ Leetcode 778 ] Swim in Rising Water | 解題思路分享",
+        "date": "2025-07-14",
+        "author": "James",
+        "tags": [
+            "Matrix",
+            "Shortest Path",
+            "Dijkstra"
+        ],
+        "difficulty": "Hard",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 5,
+        "path": "leetcode-778"
     },
     {
         "title": "[ Leetcode 200 ] Number of Islands | 解題思路分享",

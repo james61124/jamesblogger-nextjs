@@ -1,7 +1,14 @@
+---
+title: "[ Algorithm ] Shortest Path - Dijkstra | 核心概念與 Leetcode 題型解析"
+date: "2025-07-14"
+author: James
+tags: Algorithm,Shortest Path,Dijkstra
+image: /images/program/algorithm.png
+description: "Dijkstra 是一個 single source shortest path 的 Algorithm，運用在 weighted graph 上，可以找到 single source 到其他所有 nodes 的 shortest path，因此輸出是一個 dist[i]，代表起始點 `k` 到每一個 nodes 的最短距離。"
+readTime: 2
+---
 
-> single source shortest path
-
-Dijkstra 運用在 weighted graph 上，可以找到 single source 到其他所有 nodes 的 shortest path，因此輸出是一個 dist[i]，代表起始點 `k` 到每一個 nodes 的最短距離。
+Dijkstra 是一個 single source shortest path 的 Algorithm，運用在 weighted graph 上，可以找到 single source 到其他所有 nodes 的 shortest path，因此輸出是一個 dist[i]，代表起始點 `k` 到每一個 nodes 的最短距離。
 
 因為是 weighted graph，我們會使用 adjacency list 來儲存 graph 的結構，同時記錄每個相鄰 node 的 cost。可以使用以下的資料結構：
 
@@ -11,9 +18,9 @@ vector<vector<pair<int, int>>>adj
 
 其中，`pair<int, int>` 代表 {neighbor, cost}，即：相鄰節點與其對應的邊的權重。
 
-Dijkstra 的關鍵思想是：**由近到遠地依序探索每個 node**，並不斷更新最短距離。為了實現這一點，我們選擇使用 priority queue 來維護目前已知距離最短的 nodes，而流程如下：
+Dijkstra 的關鍵思想是：**由近到遠地依序探索每個 node**，並不斷更新最短距離 dist[i]。為了實現這一點，我們選擇使用 priority queue 來維護目前已知距離最短的 nodes，而流程如下：
 
-我們需要 dist[i] 來儲存 output，需要 priority queue 來儲存 { 起始點 `k` 到 node 的距離, node }
+首先我們需要 dist[i] 來儲存 output，需要 priority queue 來儲存 { 起始點 `k` 到 node 的距離, node }
 
 ```cpp
 vector<int>dist(n + 1, INT_MAX);
@@ -59,8 +66,8 @@ while(!pq.empty()){
 
 再來我們思考幾個問題，每 visit 一個 `src`，我們要計算 `src` 的每個 neighbors 在 `k`->`src`->`neighbor` 的最短距離，為什麼要先比較一下這個距離是不是比 dist[neighbor] 小呢？我們都用 priority queue 了直接推進去不就好了嗎？反正 pop 出來都會是最小的。假設某個 node 有三條 path：
 
-> `k -> v`，距離 3
-> `k -> ... -> v`，距離 8
+> `k -> v`，距離 3<br>
+> `k -> ... -> v`，距離 8<br>
 > `k -> ... -> ... -> v`，距離 12
 
 如果不比較就放入 priority queue，裡面就會出現 {3, v}, {8, v}, {12, v}，多 push 進去跟 pop 出來都很花時間，先檢查過就不用浪費時間了。
@@ -83,6 +90,9 @@ while(!pq.empty()){
 ```
 
 而這才是完整的 Dijkstra。
+
+**Time Complexity** - `O((V + E) log V)`<br>
+**Space Complexity** - `O(V + E)`
 
 ### **Dijkstra 的限制**
 
@@ -119,6 +129,6 @@ vector<int> dijkstra(int n, int k, vector<vector<pair<int, int>>>&adj){
 }
 ```
 
-ex
+### **範例**
 
-743
+[[ Leetcode 743 ] Network Delay Time | 解題思路分享](https://www.jamesblogger.com/leetcode/articles/leetcode-743)
