@@ -1732,6 +1732,21 @@
         "path": "leetcode-567"
     },
     {
+        "title": "[ Leetcode 846 ] Hand of Straights | 解題思路分享",
+        "date": "2025-07-17",
+        "author": "James",
+        "tags": [
+            "Hash Table",
+            "Greedy",
+            "Sorting"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-846"
+    },
+    {
         "title": "[ Leetcode 700 ] Search in a Binary Search Tree | 解題思路分享",
         "date": "2025-03-21",
         "author": "James",
@@ -2141,6 +2156,22 @@
         "description": "",
         "readTime": 2,
         "path": "leetcode-62"
+    },
+    {
+        "title": "[ Leetcode 787 ] Cheapest Flights Within K Stops | 解題思路分享",
+        "date": "2025-07-15",
+        "author": "James",
+        "tags": [
+            "Graph",
+            "Shortest Path",
+            "Dijkstra",
+            "Bellman-Ford"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 7,
+        "path": "leetcode-787"
     },
     {
         "title": "[ Leetcode 416 ] Partition Equal Subset Sum | 解題思路分享",

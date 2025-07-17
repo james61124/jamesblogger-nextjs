@@ -40,3 +40,7 @@ shortest path
 Dijkstra
 Bellman-Ford
 Floyd-Warshall
+
+map 的 visit 不是 O(1) 是 O(log n)，因為他用紅黑樹實作
+
+⌈a / b⌉ = (a + b - 1) / b
