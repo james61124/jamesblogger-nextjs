@@ -156,3 +156,25 @@ int quickSelect(vector<int>& nums, int left, int right, int k) {
     else return quickSelect(nums, pivotIndex + 1, right, k);
 }
 ```
+
+### **C++ Function**
+
+不過 Quick Select 其實不用自己寫，C++ 的 Algorithm 有 function 可以直接用，用法如下：
+
+```cpp
+auto compare = [](int& a, int& b){
+    return a < b;
+};
+
+nth_element(nums.begin(), nums.begin() + k, nums.end(), compare);
+```
+
+如果 compare function return `true`，代表 a 會放在 b 前面，所以這個 case 來說，第 `k + 1` 小的會放在 nums[k] 的位置，而因為 partition 的關係，左側的數字都會比 nums[k] 小，而右側都會比 nums[k] 大。
+
+### **應用場景**
+
+> 1. 找「第 k 大 / 第 k 小」
+> 2. 找「前 k 大 / 前 k 小」
+
+[[ Leetcode 215 ] Kth Largest Element in an Array | 解題思路分享](https://www.jamesblogger.com/leetcode/articles/leetcode-215)<br>
+[[ Leetcode 973 ] K Closest Points to Origin | 解題思路分享](https://www.jamesblogger.com/leetcode/articles/leetcode-973)

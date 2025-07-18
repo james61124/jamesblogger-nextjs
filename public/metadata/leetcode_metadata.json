@@ -439,6 +439,20 @@
         "path": "leetcode-54"
     },
     {
+        "title": "[ Leetcode 875 ] Koko Eating Bananas | 解題思路分享",
+        "date": "2025-07-17",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Binary Search"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-875"
+    },
+    {
         "title": "[ Leetcode 713 ] Subarray Product Less Than K | 解題思路分享",
         "date": "2025-03-05",
         "author": "James",
@@ -1554,6 +1568,20 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-125"
+    },
+    {
+        "title": "[ Leetcode 973 ] K Closest Points to Origin | 解題思路分享",
+        "date": "2025-07-17",
+        "author": "James",
+        "tags": [
+            "Priority Queue",
+            "Quick Select"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-973"
     },
     {
         "title": "[ Leetcode 621 ] Task Scheduler | 解題思路分享",

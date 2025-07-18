@@ -44,3 +44,6 @@ Floyd-Warshall
 map 的 visit 不是 O(1) 是 O(log n)，因為他用紅黑樹實作
 
 ⌈a / b⌉ = (a + b - 1) / b
+
+973 quick select 手刻
+
