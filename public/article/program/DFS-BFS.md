@@ -39,6 +39,10 @@ void DFS(vector<vector<int>>& arr, vector<bool>& visit, int v) {
 
 顧名思義廣度優先，所以會先看完所有的 neighbor，才會繼續往下看。用 queue 想就很簡單了，因為我先把所有的 neighbors 推進去 queue 裡面，再來看其中一個的時候，再把他的 neighbors 推進去 queue 裡排隊，這樣看的順序就會是廣度優先了，跟上面的 DFS 想法一樣，如果已經被 visited 的 node 就不要再推進去 queue 裡了。
 
+#### **特殊使用場景**
+
+1. 多點擴散 - 一開始先把所有 source 都推進去 queue 即可。
+
 #### **Template**
 
 ```cpp
@@ -60,4 +64,8 @@ void BFS(vector<vector<int>>& arr, vector<bool>& visit, int start) {
     }
 }
 ```
+
+#### **範例**
+
+[[ Leetcode 994 ] Rotting Oranges | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-994/)
 

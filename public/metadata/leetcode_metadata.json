@@ -482,6 +482,19 @@
         "path": "leetcode-841"
     },
     {
+        "title": "[ Leetcode 1046 ] Last Stone Weight | 解題思路分享",
+        "date": "2025-07-23",
+        "author": "James",
+        "tags": [
+            "Priority Queue"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-1046"
+    },
+    {
         "title": "[ Leetcode 310 ] Minimum Height Trees | 解題思路分享",
         "date": "2025-06-02",
         "author": "James",
@@ -1081,6 +1094,21 @@
         "description": "",
         "readTime": 3,
         "path": "leetcode-518"
+    },
+    {
+        "title": "[ Leetcode 1448 ] Count Good Nodes in Binary Tree | 解題思路分享",
+        "date": "2025-07-23",
+        "author": "James",
+        "tags": [
+            "Tree",
+            "Binary Tree",
+            "DFS"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-1448"
     },
     {
         "title": "[ Leetcode 217 ] Contains Duplicate | 解題思路分享",
@@ -1951,6 +1979,19 @@
         "path": "leetcode-417"
     },
     {
+        "title": "[ Leetcode 994 ] Rotting Oranges | 解題思路分享",
+        "date": "2025-07-23",
+        "author": "James",
+        "tags": [
+            "BFS"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 4,
+        "path": "leetcode-994"
+    },
+    {
         "title": "[ Leetcode 876 ] Middle of the Linked List | 解題思路分享",
         "date": "2025-03-03",
         "author": "James",
@@ -2215,6 +2256,22 @@
         "description": "",
         "readTime": 4,
         "path": "leetcode-416"
+    },
+    {
+        "title": "[ Leetcode 981 ] Time Based Key-Value Store | 解題思路分享",
+        "date": "2025-07-17",
+        "author": "James",
+        "tags": [
+            "String",
+            "Hash Table",
+            "Binary Search",
+            "Design"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-981"
     },
     {
         "title": "[ Leetcode 494 ] Target Sum | 解題思路分享",

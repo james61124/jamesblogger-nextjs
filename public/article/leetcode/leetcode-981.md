@@ -9,7 +9,9 @@ description: ""
 readTime: 3
 ---
 
+設計兩個 function - `set` 和 `get`
 
+`void set(string key, string value, int timestamp)` 要儲存 key 對應的 value 和 timestamp，輸入會保證 timestamp 是遞增的（對每個 key 而言）。而 `string get(string key, int timestamp)` 要回傳該 key 在 timestamp 當時或更早時間所儲存的 value，如果該時間點沒有設定過，就往前找最近的 timestamp，如果找不到，回傳空字串 ""。
 
 題目連結 🔗：[https://leetcode.com/problems/time-based-key-value-store/](https://leetcode.com/problems/time-based-key-value-store/)
 
@@ -67,9 +69,64 @@ list     = [2, 3, 4, 5, 6]
 is_valid = [1, 1, 1, 1, 1]
 ```
 
+知道 `is_valid` 怎麼寫後，基本上這題就解完了
 
+```cpp
+bool is_valid(string& key, int& mid, int& timestamp) {
+    auto& vec = umap[key]; 
+    return vec[mid].second > timestamp;
+}
 
+string get(string key, int timestamp) {
+    auto& vec = umap[key]; 
+    int left = 0;
+    int right = vec.size() - 1;
+    while(left <= right){
+        int mid = left + (right - left) / 2;
+        if(vec[mid].second > timestamp) right = mid - 1;
+        else left = mid + 1;
+    }
 
+    if(left <= 0) return "";
+    return vec[left - 1].first;
+}
+```
 
-**Time Complexity** - `O(n x log k)`<br>
-**Space Complexity** - `O(k)`
+**Time Complexity** - `O(log n)`<br>
+**Space Complexity** - `O(1)`
+
+### **Implementation**
+
+```cpp
+class TimeMap {
+private:
+    unordered_map<string, vector<pair<string, int>>>umap;
+public:
+    TimeMap() {
+        
+    }
+    
+    void set(string key, string value, int timestamp) {
+        umap[key].push_back({value, timestamp});
+    }
+
+    bool is_valid(string& key, int& mid, int& timestamp) {
+        auto& vec = umap[key]; 
+        return vec[mid].second > timestamp;
+    }
+    
+    string get(string key, int timestamp) {
+        auto& vec = umap[key]; 
+        int left = 0;
+        int right = vec.size() - 1;
+        while(left <= right){
+            int mid = left + (right - left) / 2;
+            if(vec[mid].second > timestamp) right = mid - 1;
+            else left = mid + 1;
+        }
+
+        if(left <= 0) return "";
+        return vec[left - 1].first;
+    }
+};
+```

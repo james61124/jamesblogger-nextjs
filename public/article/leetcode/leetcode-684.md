@@ -2,7 +2,7 @@
 title: "[ Leetcode 684 ] Redundant Connection | 解題思路分享"
 date: "2025-07-07"
 author: James
-tags: Graph,Union Find
+tags: Graph,Union Find,Minimum Spanning Tree,Kruskal’s Algorithm
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
