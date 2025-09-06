@@ -15,5 +15,6 @@ export async function generateStaticParams() {
     { category: "life" },
     { category: "program" },
     { category: "travel" },
+    { category: "other" },
   ];
 }

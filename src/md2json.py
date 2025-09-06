@@ -100,7 +100,7 @@ if __name__ == "__main__":
     output_folder = "../public/metadata"  # Output folder for JSON files
 
     # Process folders: life, program, travel, leetcode
-    for folder_name in ["life", "program", "travel", "leetcode"]:
+    for folder_name in ["life", "program", "other", "travel", "leetcode"]:
         directory = os.path.join(input_root_directory, folder_name)
         process_folder(folder_name, directory, output_folder)
 

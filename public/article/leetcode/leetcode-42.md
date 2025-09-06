@@ -2,10 +2,11 @@
 title: "[ Leetcode 42 ] Trapping Rain Water | 解題思路分享"
 date: "2025-06-10"
 author: James
-tags: Array,Two Pointers,Stack,Monotonic Stack
+tags: Array,Two Pointers,Stack,Monotonic Stack,Google
 difficulty: Hard
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 1
 readTime: 2
 ---
 

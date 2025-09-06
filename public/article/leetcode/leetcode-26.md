@@ -2,10 +2,11 @@
 title: "[ Leetcode 26 ] Remove Duplicates from Sorted Array | 解題思路分享"
 date: "2025-02-26"
 author: James
-tags: Array,Two Pointers
+tags: Array,Two Pointers,Top Interview
 difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 5
 readTime: 3
 ---
 

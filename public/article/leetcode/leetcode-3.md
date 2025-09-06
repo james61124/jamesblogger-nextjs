@@ -2,10 +2,11 @@
 title: "[ Leetcode 3 ] Longest Substring Without Repeating Characters | 解題思路分享"
 date: "2025-03-03"
 author: James
-tags: String,Sliding Window,Hash Table
+tags: String,Sliding Window,Hash Table,Top Interview
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 3
 readTime: 1
 ---
 

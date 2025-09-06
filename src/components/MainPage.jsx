@@ -34,119 +34,168 @@ export default function MainPage() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  const roadmapData = [
+  {
+    title: "Backend Basics",
+    subItems: ["HTTP", "REST APIs", "Databases", "Authentication"],
+  },
+  {
+    title: "Advanced Topics",
+    subItems: ["Caching", "Queues", "Microservices", "GraphQL"],
+  },
+  {
+    title: "DevOps",
+    subItems: ["Docker", "Kubernetes", "CI/CD", "Monitoring"],
+  },
+];
+
   return (
-    <div>
-      {/* Main Cover Section */}
-      <div className="relative w-full h-screen overflow-hidden">
-        {/* 背景圖片 + 視差效果 */}
-        <motion.div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/Guitar.JPEG')", opacity: 0.5 }}
-        />
+    // <div>
+    //   {/* Main Cover Section */}
+    //   <div className="relative w-full h-screen overflow-hidden">
+    //     {/* 背景圖片 + 視差效果 */}
+    //     <motion.div
+    //       className="absolute inset-0 bg-cover bg-center"
+    //       style={{ backgroundImage: "url('/images/Guitar.JPEG')", opacity: 0.5 }}
+    //     />
 
-        <div className="absolute inset-0 bg-black/60 mix-blend-overlay" />
+    //     <div className="absolute inset-0 bg-black/60 mix-blend-overlay" />
 
-        {/* 內容區域 */}
-        <div
-          className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 mt-12"
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
-        >
-          <motion.h1
-            className={`font-extrabold text-white drop-shadow-lg ${isMobile ? 'text-4xl' : 'text-7xl'}`}
-            animate={{ scale: hovered ? 1.1 : 1 }}
-            transition={{ type: 'spring', stiffness: 200 }}
+    //     {/* 內容區域 */}
+    //     <div
+    //       className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 mt-12"
+    //       onMouseEnter={() => setHovered(true)}
+    //       onMouseLeave={() => setHovered(false)}
+    //     >
+    //       <motion.h1
+    //         className={`font-extrabold text-white drop-shadow-lg ${isMobile ? 'text-4xl' : 'text-7xl'}`}
+    //         animate={{ scale: hovered ? 1.1 : 1 }}
+    //         transition={{ type: 'spring', stiffness: 200 }}
+    //       >
+    //         James Blogger
+    //       </motion.h1>
+
+    //       <motion.p
+    //         className={`mt-7 text-white ${isMobile ? 'text-sm' : 'text-lg'} opacity-80`}
+    //         initial={{ opacity: 0 }}
+    //         animate={{ opacity: 1 }}
+    //         transition={{ delay: 0.5 }}
+    //       >
+    //         Exploring Life & Sharing Tech Insights
+    //       </motion.p>
+
+    //       <Link href="#about-me">
+    //         <motion.button
+    //           className="mt-8 px-6 py-3 text-lg font-medium text-white bg-blue-600 rounded-full shadow-xl hover:bg-blue-500 transition-transform transform hover:scale-105"
+    //           whileHover={{ scale: 1.1 }}
+    //         >
+    //           About Me
+    //         </motion.button>
+    //       </Link>
+    //     </div>
+
+    //     {/* Scroll Indicator */}
+    //     <Link href="#about-me">
+    //       <motion.div
+    //         className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
+    //         initial={{ opacity: 0 }}
+    //         animate={{ opacity: 1 }}
+    //         transition={{ delay: 1 }}
+    //       >
+    //         <svg
+    //           className="w-6 h-6 text-white animate-bounce"
+    //           xmlns="http://www.w3.org/2000/svg"
+    //           fill="none"
+    //           viewBox="0 0 24 24"
+    //           stroke="currentColor"
+    //         >
+    //           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+    //         </svg>
+    //       </motion.div>
+    //     </Link>
+    //   </div>
+
+    //   {/* About Me Section */}
+    //   <section id="about-me" className="max-w-5xl mx-auto py-16 px-6 sm:px-12">
+    //     <motion.h2
+    //       className="text-4xl font-bold text-center text-gray-900 mb-12"
+    //       initial={{ opacity: 0, y: 20 }}
+    //       animate={{ opacity: 1, y: 0 }}
+    //       transition={{ duration: 0.6 }}
+    //     >
+    //       About Me
+    //     </motion.h2>
+
+    //     <div className="grid md:grid-cols-2 gap-8">
+    //       {[{ title: 'Work Experience', icon: FaBriefcase, items: experiences, color: 'bg-blue-600' },
+    //         { title: 'Education', icon: FaGraduationCap, items: education, color: 'bg-green-600' }].map((section, i) => (
+    //         <motion.div
+    //           key={i}
+    //           className="bg-white shadow-lg rounded-2xl p-6"
+    //           initial={{ opacity: 0, y: 30 }}
+    //           whileInView={{ opacity: 1, y: 0 }}
+    //           transition={{ duration: 0.6, delay: i * 0.2 }}
+    //           viewport={{ once: true }}
+    //         >
+    //           <div className="flex items-center gap-3 text-gray-900">
+    //             <section.icon className="text-3xl" />
+    //             <h3 className="text-2xl font-semibold">{section.title}</h3>
+    //           </div>
+    //           <div className="relative border-l border-gray-300 mt-4 pl-6">
+    //             {section.items.map((item, index) => (
+    //               <motion.div
+    //                 key={index}
+    //                 className="mb-6"
+    //                 initial={{ opacity: 0, x: -20 }}
+    //                 whileInView={{ opacity: 1, x: 0 }}
+    //                 transition={{ duration: 0.5, delay: index * 0.2 }}
+    //                 viewport={{ once: true }}
+    //               >
+    //                 <div className={`absolute -left-3 w-6 h-6 ${section.color} rounded-full`} />
+    //                 <h4 className="text-lg font-semibold">{item.title || item.degree}</h4>
+    //                 <p className="text-sm">{item.company || item.school}</p>
+    //                 <p className="text-sm text-gray-500">{item.duration}</p>
+    //               </motion.div>
+    //             ))}
+    //           </div>
+    //         </motion.div>
+    //       ))}
+    //     </div>
+    //   </section>
+    // </div>
+
+    <div className="p-8 bg-gray-50 min-h-screen flex justify-center">
+      <div className="relative w-2/3">
+        {/* 道路 */}
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 bg-gray-300 h-full"></div>
+
+        {/* 節點 */}
+        {roadmapData.map((section, idx) => (
+          <div
+            key={idx}
+            className={`relative mb-20 flex flex-col items-center`}
+            style={{ zIndex: 10 }}
           >
-            James Blogger
-          </motion.h1>
+            {/* 主節點 */}
+            <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center z-20">
+              {idx + 1}
+            </div>
+            <div className="mt-4 text-center font-semibold">{section.title}</div>
 
-          <motion.p
-            className={`mt-7 text-white ${isMobile ? 'text-sm' : 'text-lg'} opacity-80`}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-          >
-            Exploring Life & Sharing Tech Insights
-          </motion.p>
-
-          <Link href="#about-me">
-            <motion.button
-              className="mt-8 px-6 py-3 text-lg font-medium text-white bg-blue-600 rounded-full shadow-xl hover:bg-blue-500 transition-transform transform hover:scale-105"
-              whileHover={{ scale: 1.1 }}
-            >
-              About Me
-            </motion.button>
-          </Link>
-        </div>
-
-        {/* Scroll Indicator */}
-        <Link href="#about-me">
-          <motion.div
-            className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
-          >
-            <svg
-              className="w-6 h-6 text-white animate-bounce"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
-          </motion.div>
-        </Link>
+            {/* 子節點 */}
+            <div className="mt-6 flex space-x-4">
+              {section.subItems.map((sub, i) => (
+                <div
+                  key={i}
+                  className="bg-blue-100 text-blue-800 rounded-lg px-4 py-2"
+                >
+                  {sub}
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
-
-      {/* About Me Section */}
-      <section id="about-me" className="max-w-5xl mx-auto py-16 px-6 sm:px-12">
-        <motion.h2
-          className="text-4xl font-bold text-center text-gray-900 mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          About Me
-        </motion.h2>
-
-        <div className="grid md:grid-cols-2 gap-8">
-          {[{ title: 'Work Experience', icon: FaBriefcase, items: experiences, color: 'bg-blue-600' },
-            { title: 'Education', icon: FaGraduationCap, items: education, color: 'bg-green-600' }].map((section, i) => (
-            <motion.div
-              key={i}
-              className="bg-white shadow-lg rounded-2xl p-6"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: i * 0.2 }}
-              viewport={{ once: true }}
-            >
-              <div className="flex items-center gap-3 text-gray-900">
-                <section.icon className="text-3xl" />
-                <h3 className="text-2xl font-semibold">{section.title}</h3>
-              </div>
-              <div className="relative border-l border-gray-300 mt-4 pl-6">
-                {section.items.map((item, index) => (
-                  <motion.div
-                    key={index}
-                    className="mb-6"
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: index * 0.2 }}
-                    viewport={{ once: true }}
-                  >
-                    <div className={`absolute -left-3 w-6 h-6 ${section.color} rounded-full`} />
-                    <h4 className="text-lg font-semibold">{item.title || item.degree}</h4>
-                    <p className="text-sm">{item.company || item.school}</p>
-                    <p className="text-sm text-gray-500">{item.duration}</p>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </section>
     </div>
   );
 }

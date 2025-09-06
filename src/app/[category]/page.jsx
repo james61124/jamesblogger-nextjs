@@ -17,6 +17,10 @@ export default function LeetcodePage({ params, searchParams }) {
       title: "Program Notes",
       json_path: "/metadata/program_metadata.json",
     },
+    other: {
+      title: "Program Notes",
+      json_path: "/metadata/other_metadata.json",
+    },
   };
 
   const { title, json_path } = defaultConfig[category] || {
@@ -35,6 +39,7 @@ export async function generateStaticParams() {
   return [
     { category: "life" },
     { category: "program" },
-    { category: "travel" }
+    { category: "travel" },
+    { category: "other" }
   ];
 }

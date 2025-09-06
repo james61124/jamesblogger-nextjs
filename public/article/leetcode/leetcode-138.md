@@ -6,6 +6,7 @@ tags: Linked List, Interleaved List
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 1
 readTime: 2
 ---
 

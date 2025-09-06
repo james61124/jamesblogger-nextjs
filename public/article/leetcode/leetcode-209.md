@@ -6,6 +6,7 @@ tags: Array,Sliding Window,Binary Search,Prefix Sum
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 5
 readTime: 3
 ---
 

@@ -2,10 +2,11 @@
 title: "[ Leetcode 167 ] Two Sum II - Input Array Is Sorted | 解題思路分享"
 date: "2025-02-26"
 author: James
-tags: Array,Two Pointers
+tags: Array,Two Pointers,Top Interview
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 3
 readTime: 3
 ---
 

@@ -2,10 +2,11 @@
 title: "[ Leetcode 238 ] Product of Array Except Self | 解題思路分享"
 date: "2025-04-25"
 author: James
-tags: Array,Prefix Sum
+tags: Array,Prefix Sum,Top Interview
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 2
 readTime: 3
 ---
 

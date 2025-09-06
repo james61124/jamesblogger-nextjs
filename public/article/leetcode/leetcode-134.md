@@ -2,10 +2,11 @@
 title: "[ Leetcode 134 ] Gas Station | 解題思路分享"
 date: "2025-06-17"
 author: James
-tags: Array,Greedy
+tags: Array,Greedy,Top Interview
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 1
 readTime: 2
 ---
 

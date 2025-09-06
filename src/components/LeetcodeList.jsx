@@ -66,6 +66,15 @@ export default function LeetCodeList({ json_path, category }) {
     }));
   };
 
+  const renderStars = (count) => {
+    const total = 5;
+    return [...Array(total)].map((_, i) => (
+      <span key={i} className={i < count ? "text-yellow-400" : "text-gray-300"}>
+        ★
+      </span>
+    ));
+  };
+
   const difficultyOrder = {
     Easy: 1,
     Medium: 2,
@@ -103,6 +112,12 @@ export default function LeetCodeList({ json_path, category }) {
       if (sortConfig.key === "date") {
         aValue = new Date(aValue);
         bValue = new Date(bValue);
+      }
+
+      if (sortConfig.key === "proficiency") {
+        const aValue = a.proficiency || 0;
+        const bValue = b.proficiency || 0;
+        return sortConfig.direction === "asc" ? aValue - bValue : bValue - aValue;
       }
 
       if (aValue < bValue) return sortConfig.direction === "asc" ? -1 : 1;
@@ -201,7 +216,13 @@ export default function LeetCodeList({ json_path, category }) {
                 <th onClick={() => handleSort("difficulty")} className="px-6 py-3 text-left text-gray-700 font-semibold cursor-pointer">
                     Difficulty
                 </th>
+
+                <th onClick={() => handleSort("proficiency")} className="px-6 py-3 text-left text-gray-700 font-semibold cursor-pointer">
+                  Proficiency
+                </th>
+
                 <th className="px-6 py-3 text-left text-gray-700 font-semibold">Tags</th>
+                
                 </tr>
             </thead>
             <tbody>
@@ -222,6 +243,11 @@ export default function LeetCodeList({ json_path, category }) {
                         {article.difficulty}
                     </span>
                     </td>
+
+                    <td className="px-6 py-4">
+                      <div className="flex">{renderStars(article.proficiency || 0)}</div>
+                    </td>
+
                     <td className="px-6 py-4">
                     <div className="flex gap-2 items-center overflow-hidden">
                       {(() => {
@@ -262,6 +288,7 @@ export default function LeetCodeList({ json_path, category }) {
                       })()}
                     </div>
                   </td>
+                  
                 </tr>
                 ))}
             </tbody>

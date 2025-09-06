@@ -2,10 +2,11 @@
 title: "[ Leetcode 121 ] Best Time to Buy and Sell Stock | 解題思路分享"
 date: "2025-04-07"
 author: James
-tags: Array,Greedy
+tags: Array,Greedy,Top Interview
 difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 4
 readTime: 3
 ---
 

@@ -171,6 +171,19 @@
         "path": "counting-dp"
     },
     {
+        "title": "[ Algorithm ] KMP Algorithm | 核心概念與 Leetcode 題型解析",
+        "date": "2025-09-05",
+        "author": "James",
+        "tags": [
+            "Algorithm",
+            "KMP"
+        ],
+        "image": "/images/program/algorithm.png",
+        "description": "如果想要在一個 string `text` 底下判斷 string `pattern` 是不是他的 substring，暴力解非常直覺，舉個例：",
+        "readTime": 7,
+        "path": "kmp"
+    },
+    {
         "title": "[ Algorithm ] Binary Search | 核心概念與 Leetcode 題型解析",
         "date": "2025-04-11",
         "author": "James",
@@ -182,19 +195,6 @@
         "description": "最基本款的 Binary Search，就是在 sorted array `nums` 中找到特定的 target，並回傳 index，但是用時只需要 `O(logn)`，他的原理就是先用兩個 pointers `left`, `right` 分別在 array 的最左跟最右，並計算兩個 pointers 的中點 `mid`，如果 `nums[mid] > target`，表示 target 在左半邊，就把 right 縮到左半邊，反之就是表示 target 在右半邊，就把 left 縮到右半邊，持續這個過程直到 `nums[mid] == target` 就代表找到了，聽起來很簡單，實作起來長這樣：",
         "readTime": 5,
         "path": "binary-search"
-    },
-    {
-        "title": "[ System Design ] CAP 理論完整解釋：分散式系統的設計抉擇與實務應用",
-        "date": "2025-04-15",
-        "author": "James",
-        "tags": [
-            "System Design",
-            "CAP Theorem"
-        ],
-        "image": "/images/program/system-design.png",
-        "description": "設計 Distributed System 時不可能同時滿足 Consistency ( 一致性 ), Availability ( 可用性 ), Partition Tolerance ( 分區容錯性 ) 三角，我們一次只能保證 Consistency 或是 Availability 兩件事的其中一件，也就是我們需要 trade-off",
-        "readTime": 4,
-        "path": "cap-theorem"
     },
     {
         "title": "[ Algorithm ] Shortest Path - Bellman-Ford | 核心概念與 Leetcode 題型解析",

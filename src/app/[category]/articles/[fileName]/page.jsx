@@ -20,6 +20,10 @@ export default function CategoryPage({ params, searchParams }) {
       title: "Program Notes",
       json_path: "/metadata/program_metadata.json",
     },
+    other: {
+      title: "Program Notes",
+      json_path: "/metadata/other_metadata.json",
+    },
   };
 
   const { title, json_path } = defaultConfig[category] || {
@@ -39,7 +43,7 @@ export default function CategoryPage({ params, searchParams }) {
 }
 
 export async function generateStaticParams() {
-  const categories = ["life", "program", "travel"];
+  const categories = ["life", "program", "travel", "other"];
   let paths = [];
 
   categories.forEach((category) => {

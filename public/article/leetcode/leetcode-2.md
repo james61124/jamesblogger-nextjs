@@ -6,6 +6,7 @@ tags: Linked List,Math,Recursion
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 3
 readTime: 2
 ---
 
