@@ -6,6 +6,7 @@ tags: Tree,DFS,Binary Tree
 difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 5
 readTime: 3
 ---
 

@@ -63,3 +63,5 @@ while(curr){
     curr = prev->next;
 }
 
+遇到 in-place -> swap, reverse
+

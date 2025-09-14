@@ -6,10 +6,11 @@ tags: Array,Matrix,Hash Table
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 5
 readTime: 3
 ---
 
-
+如果那個 column 或 row 原本有 0，就要把整條都標成 0，而這個轉換必須在 in-place 完成
 
 題目連結 🔗：[https://leetcode.com/problems/set-matrix-zeroes/](https://leetcode.com/problems/set-matrix-zeroes/)
 

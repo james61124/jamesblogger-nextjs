@@ -2,10 +2,11 @@
 title: "[ Leetcode 56 ] Merge Intervals | 解題思路分享"
 date: "2025-03-31"
 author: James
-tags: Array,Sorting,Greedy
+tags: Array,Sorting,Greedy,Top Interview
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 5
 readTime: 3
 ---
 

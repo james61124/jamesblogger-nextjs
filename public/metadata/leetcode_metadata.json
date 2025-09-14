@@ -223,6 +223,22 @@
         "path": "leetcode-51"
     },
     {
+        "title": "[ Leetcode 289 ] Set Matrix Zeros | 解題思路分享",
+        "date": "2025-09-10",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Matrix",
+            "Top Interview"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 5,
+        "readTime": 2,
+        "path": "leetcode-289"
+    },
+    {
         "title": "[ Leetcode 496 ] Next Greater Element I | 解題思路分享",
         "date": "2025-03-06",
         "author": "James",
@@ -504,6 +520,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 4,
         "readTime": 1,
         "path": "leetcode-54"
     },
@@ -985,6 +1002,22 @@
         "path": "leetcode-230"
     },
     {
+        "title": "[ Leetcode 383 ] Ransom Note | 解題思路分享",
+        "date": "2025-09-10",
+        "author": "James",
+        "tags": [
+            "Hash Table",
+            "String",
+            "Top Interview"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 5,
+        "readTime": 1,
+        "path": "leetcode-383"
+    },
+    {
         "title": "[ Leetcode 152 ] Maximum Product Subarray| 解題思路分享",
         "date": "2025-04-10",
         "author": "James",
@@ -1150,6 +1183,7 @@
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-100"
     },
@@ -1483,6 +1517,7 @@
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-104"
     },
@@ -1559,6 +1594,22 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-242"
+    },
+    {
+        "title": "[ Leetcode 69 ] Sqrt(x) | 解題思路分享",
+        "date": "2025-09-10",
+        "author": "James",
+        "tags": [
+            "Math",
+            "Binary Search",
+            "Top Interview"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 5,
+        "readTime": 2,
+        "path": "leetcode-69"
     },
     {
         "title": "[ Leetcode 213 ] House Robber II | 解題思路分享",
@@ -1771,6 +1822,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 3,
         "readTime": 2,
         "path": "leetcode-48"
     },
@@ -2010,6 +2062,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 3,
         "path": "leetcode-36"
     },
@@ -2127,6 +2180,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 3,
         "path": "leetcode-73"
     },
@@ -2216,6 +2270,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 2,
         "readTime": 2,
         "path": "leetcode-57"
     },
@@ -2447,11 +2502,13 @@
         "tags": [
             "Array",
             "Sorting",
-            "Greedy"
+            "Greedy",
+            "Top Interview"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-56"
     },
