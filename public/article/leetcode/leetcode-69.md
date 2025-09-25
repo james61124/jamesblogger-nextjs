@@ -2,7 +2,7 @@
 title: "[ Leetcode 69 ] Sqrt(x) | 解題思路分享"
 date: "2025-09-10"
 author: James
-tags: Math,Binary Search,Top Interview
+tags: Math,Binary Search,Top Interview,Google,Meta
 difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""

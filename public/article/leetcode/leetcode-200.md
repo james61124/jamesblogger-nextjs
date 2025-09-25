@@ -6,6 +6,7 @@ tags: Array,Matrix,DFS,BFS,Union Find
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 5
 readTime: 3
 ---
 

@@ -2,10 +2,11 @@
 title: "[ Leetcode 66 ] Plus One | 解題思路分享"
 date: "2025-06-13"
 author: James
-tags: Array,Math
+tags: Array,Math,Google,Meta
 difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 5
 readTime: 2
 ---
 

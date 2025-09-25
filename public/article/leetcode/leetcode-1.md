@@ -2,7 +2,7 @@
 title: "[ Leetcode 1 ] Two Sum | 解題思路分享"
 date: "2025-03-26"
 author: James
-tags: Array,Hash Table,Google
+tags: Array,Hash Table,Google,Meta
 difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""

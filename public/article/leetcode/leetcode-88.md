@@ -2,10 +2,11 @@
 title: "[ Leetcode 88 ] Merge Sorted Array | 解題思路分享"
 date: "2025-08-29"
 author: James
-tags: Array,Two Pointers,Top Interview
+tags: Array,Two Pointers,Top Interview,Google,Meta
 difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 5
 readTime: 2
 ---
 

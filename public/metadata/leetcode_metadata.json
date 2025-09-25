@@ -6,7 +6,9 @@
         "tags": [
             "Array",
             "Boyer-Moore Voting Algorithm",
-            "Top Interview"
+            "Top Interview",
+            "Google",
+            "Meta"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
@@ -66,7 +68,9 @@
         "tags": [
             "Array",
             "String",
-            "Top Interview"
+            "Top Interview",
+            "Google",
+            "Meta"
         ],
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
@@ -91,16 +95,51 @@
         "path": "leetcode-55"
     },
     {
+        "title": "[ Leetcode 61 ] Rotate List | 解題思路分享",
+        "date": "2025-09-16",
+        "author": "James",
+        "tags": [
+            "Linked List",
+            "Google",
+            "Top Interview"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 4,
+        "readTime": 1,
+        "path": "leetcode-61"
+    },
+    {
+        "title": "[ Leetcode 2235 ] Add Two Integers | 解題思路分享",
+        "date": "2025-09-20",
+        "author": "James",
+        "tags": [
+            "Math",
+            "Google",
+            "Meta"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 5,
+        "readTime": 1,
+        "path": "leetcode-2235"
+    },
+    {
         "title": "[ Leetcode 128 ] Longest Consecutive Sequence | 解題思路分享",
         "date": "2025-04-08",
         "author": "James",
         "tags": [
             "Array",
-            "Hash Table"
+            "Hash Table",
+            "Google",
+            "Meta"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 1,
         "readTime": 2,
         "path": "leetcode-128"
     },
@@ -192,6 +231,21 @@
         "description": "",
         "readTime": 2,
         "path": "leetcode-435"
+    },
+    {
+        "title": "[ Leetcode 75 ] Sort Colors | 解題思路分享",
+        "date": "2025-09-10",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Two Pointers",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-75"
     },
     {
         "title": "[ Leetcode 2013 ] Detect Squares | 解題思路分享",
@@ -500,7 +554,9 @@
         "tags": [
             "Array",
             "Two Pointers",
-            "Sorting"
+            "Sorting",
+            "Google",
+            "Meta"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
@@ -568,6 +624,40 @@
         "path": "leetcode-841"
     },
     {
+        "title": "[ Leetcode 560 ] Subarray Sum Equals K | 解題思路分享",
+        "date": "2025-09-20",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Hash Table",
+            "Prefix Sum",
+            "Google",
+            "Meta"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-560"
+    },
+    {
+        "title": "[ Leetcode 1935 ] Maximum Number of Words You Can Type | 解題思路分享",
+        "date": "2025-09-20",
+        "author": "James",
+        "tags": [
+            "Hash Table",
+            "String",
+            "Google",
+            "Meta"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 5,
+        "readTime": 1,
+        "path": "leetcode-1935"
+    },
+    {
         "title": "[ Leetcode 1046 ] Last Stone Weight | 解題思路分享",
         "date": "2025-07-23",
         "author": "James",
@@ -616,11 +706,14 @@
         "tags": [
             "Array",
             "Two Pointers",
-            "Top Interview"
+            "Top Interview",
+            "Google",
+            "Meta"
         ],
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 2,
         "path": "leetcode-88"
     },
@@ -825,6 +918,22 @@
         "path": "leetcode-102"
     },
     {
+        "title": "[ Leetcode 205 ] Isomorphic Strings | 解題思路分享",
+        "date": "2025-09-10",
+        "author": "James",
+        "tags": [
+            "Hash Table",
+            "String",
+            "Top Interview"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 3,
+        "readTime": 1,
+        "path": "leetcode-205"
+    },
+    {
         "title": "[ Leetcode 136 ] Single Number | 解題思路分享",
         "date": "2025-06-18",
         "author": "James",
@@ -942,6 +1051,23 @@
         "path": "leetcode-215"
     },
     {
+        "title": "[ Leetcode 1304 ] Find N Unique Integers Sum up to Zero | 解題思路分享",
+        "date": "2025-09-20",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Math",
+            "Google",
+            "Meta"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 5,
+        "readTime": 1,
+        "path": "leetcode-1304"
+    },
+    {
         "title": "[ Leetcode 143 ] Reorder List | 解題思路分享",
         "date": "2025-06-18",
         "author": "James",
@@ -1032,6 +1158,23 @@
         "path": "leetcode-152"
     },
     {
+        "title": "[ Leetcode 204 ] Count Primes | 解題思路分享",
+        "date": "2025-09-20",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Math",
+            "Google",
+            "Meta"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 1,
+        "readTime": 3,
+        "path": "leetcode-204"
+    },
+    {
         "title": "[ Leetcode 739 ] Daily Temperatures | 解題思路分享",
         "date": "2025-03-06",
         "author": "James",
@@ -1054,11 +1197,14 @@
             "String",
             "DP",
             "Manacher",
-            "EAC"
+            "EAC",
+            "Google",
+            "Meta"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 1,
         "readTime": 3,
         "path": "leetcode-5"
     },
@@ -1091,6 +1237,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 5,
         "path": "leetcode-200"
     },
@@ -1131,7 +1278,8 @@
         "tags": [
             "Array",
             "Hash Table",
-            "Google"
+            "Google",
+            "Meta"
         ],
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
@@ -1154,6 +1302,21 @@
         "description": "",
         "readTime": 5,
         "path": "leetcode-146"
+    },
+    {
+        "title": "[ Leetcode 172 ] Factorial Trailing Zeroes | 解題思路分享",
+        "date": "2025-09-16",
+        "author": "James",
+        "tags": [
+            "Math",
+            "Top Interview"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 4,
+        "readTime": 1,
+        "path": "leetcode-172"
     },
     {
         "title": "[ Leetcode 210 ] Course Schedule II | 解題思路分享",
@@ -1454,7 +1617,9 @@
         "tags": [
             "String",
             "KMP Algorithm",
-            "Top Interview"
+            "Top Interview",
+            "Google",
+            "Meta"
         ],
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
@@ -1542,7 +1707,9 @@
         "tags": [
             "Linked List",
             "Math",
-            "Recursion"
+            "Recursion",
+            "Google",
+            "Meta"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
@@ -1602,7 +1769,9 @@
         "tags": [
             "Math",
             "Binary Search",
-            "Top Interview"
+            "Top Interview",
+            "Google",
+            "Meta"
         ],
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
@@ -1697,7 +1866,9 @@
             "String",
             "Sliding Window",
             "Hash Table",
-            "Top Interview"
+            "Top Interview",
+            "Google",
+            "Meta"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
@@ -1718,6 +1889,7 @@
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-226"
     },
@@ -1788,7 +1960,9 @@
         "tags": [
             "Array",
             "Greedy",
-            "Top Interview"
+            "Top Interview",
+            "Google",
+            "Meta"
         ],
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
@@ -1915,6 +2089,24 @@
         "path": "leetcode-973"
     },
     {
+        "title": "[ Leetcode 1466 ] Reorder Routes to Make All Paths Lead to the City Zero | 解題思路分享",
+        "date": "2025-09-21",
+        "author": "James",
+        "tags": [
+            "Graph",
+            "DFS",
+            "BFS",
+            "Google",
+            "Meta"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 2,
+        "readTime": 2,
+        "path": "leetcode-1466"
+    },
+    {
         "title": "[ Leetcode 621 ] Task Scheduler | 解題思路分享",
         "date": "2025-07-04",
         "author": "James",
@@ -1942,6 +2134,22 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-543"
+    },
+    {
+        "title": "[ Leetcode 1792 ] Maximum Average Pass Ratio | 解題思路分享",
+        "date": "2025-09-21",
+        "author": "James",
+        "tags": [
+            "Greedy",
+            "Priority Queue",
+            "Google",
+            "Meta"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-1792"
     },
     {
         "title": "[ Leetcode 704 ] Binary Search | 解題思路分享",
@@ -2087,11 +2295,14 @@
         "tags": [
             "Array",
             "DP",
-            "Divide and Conquer"
+            "Divide and Conquer",
+            "Google",
+            "Meta"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 2,
         "path": "leetcode-53"
     },
@@ -2207,11 +2418,14 @@
         "author": "James",
         "tags": [
             "Array",
-            "DP"
+            "DP",
+            "Google",
+            "Meta"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 2,
         "path": "leetcode-198"
     },
@@ -2622,12 +2836,14 @@
         "author": "James",
         "tags": [
             "Math",
-            "Google"
+            "Google",
+            "Meta"
         ],
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
-        "readTime": 1,
+        "proficiency": 3,
+        "readTime": 2,
         "path": "leetcode-9"
     },
     {
@@ -2670,7 +2886,8 @@
             "Two Pointers",
             "Stack",
             "Monotonic Stack",
-            "Google"
+            "Google",
+            "Meta"
         ],
         "difficulty": "Hard",
         "image": "/images/program/Leetcode.jpeg",
@@ -2764,11 +2981,14 @@
         "author": "James",
         "tags": [
             "Array",
-            "Math"
+            "Math",
+            "Google",
+            "Meta"
         ],
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-66"
     },

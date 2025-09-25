@@ -2,7 +2,7 @@
 title: "[ Leetcode 28 ] Find the Index of the First Occurrence in a String | 解題思路分享"
 date: "2025-09-05"
 author: James
-tags: String,KMP Algorithm,Top Interview
+tags: String,KMP Algorithm,Top Interview,Google,Meta
 difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""

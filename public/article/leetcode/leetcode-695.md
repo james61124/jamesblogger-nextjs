@@ -6,6 +6,7 @@ tags: Matrix,DFS
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 5
 readTime: 3
 ---
 

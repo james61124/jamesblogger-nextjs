@@ -2,10 +2,11 @@
 title: "[ Leetcode 5 ] Longest Palindromic Substring | 解題思路分享"
 date: "2025-05-22"
 author: James
-tags: String,DP,Manacher,EAC
+tags: String,DP,Manacher,EAC,Google,Meta
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 1
 readTime: 3
 ---
 

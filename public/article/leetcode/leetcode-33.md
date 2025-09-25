@@ -5,7 +5,7 @@ author: James
 tags: Array,Binary Search
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
-description: ""
+description: ""  
 readTime: 2
 ---
 

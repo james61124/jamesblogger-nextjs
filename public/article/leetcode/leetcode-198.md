@@ -2,10 +2,11 @@
 title: "[ Leetcode 198 ] House Robber | 解題思路分享"
 date: "2025-06-25"
 author: James
-tags: Array,DP
+tags: Array,DP,Google,Meta
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 5
 readTime: 2
 ---
 

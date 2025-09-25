@@ -2,7 +2,7 @@
 title: "[ Leetcode 14 ] Longest Common Prefix | 解題思路分享"
 date: "2025-09-01"
 author: James
-tags: Array,String,Top Interview
+tags: Array,String,Top Interview,Google,Meta
 difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""

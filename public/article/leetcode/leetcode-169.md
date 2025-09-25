@@ -2,7 +2,7 @@
 title: "[ Leetcode 169 ] Majority Element | 解題思路分享"
 date: "2025-08-30"
 author: James
-tags: Array,Boyer-Moore Voting Algorithm,Top Interview
+tags: Array,Boyer-Moore Voting Algorithm,Top Interview,Google,Meta
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""

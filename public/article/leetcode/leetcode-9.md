@@ -2,10 +2,11 @@
 title: "[ Leetcode 9 ] Palindrome Number | 解題思路分享"
 date: "2025-08-25"
 author: James
-tags: Math,Google
+tags: Math,Google,Meta
 difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 3
 readTime: 2
 ---
 

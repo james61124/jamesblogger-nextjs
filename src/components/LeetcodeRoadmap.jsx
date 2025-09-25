@@ -51,7 +51,7 @@ const TopicRoadmap = () => {
       description: 'Tree data structures and operations',
       items: [
         { id: 'binary-tree-traversal', title: '[ Data Structure ] Binary Tree - Traversal | 核心概念與 Leetcode 題型解析', difficulty: 'Easy', link: '/program/articles/binary-tree-traversal' },
-        { id: 'binary-search-tree', title: '[ Data Structure ] Binary Search Tree | 核心概念與 Leetcode 題型解析', difficulty: 'Medium', link: '/program/articles/binary-search-Tree' },
+        { id: 'binary-search-tree', title: '[ Data Structure ] Binary Search Tree | 核心概念與 Leetcode 題型解析', difficulty: 'Medium', link: '/program/articles/binary-search-tree' },
         { id: 'binary-tree-reconstruction', title: '[ Data Structure ] Binary Tree - Reconstruction | 核心概念與 Leetcode 題型解析', difficulty: 'Hard', link: '/program/articles/binary-tree-reconstruction' }
       ]
     },
@@ -62,7 +62,7 @@ const TopicRoadmap = () => {
       description: 'Graph traversal and shortest path algorithms',
       items: [
         { id: 'dfs-bfs', title: '[ Algorithm ] DFS & BFS | 核心概念與 Leetcode 題型解析', difficulty: 'Medium', link: '/program/articles/DFS-BFS' },
-        { id: 'topological-sort', title: '[ Algorithm ] Topological Sort | 核心概念與 Leetcode 題型解析', difficulty: 'Medium', link: '/program/articles/topological-Sort' },
+        { id: 'topological-sort', title: '[ Algorithm ] Topological Sort | 核心概念與 Leetcode 題型解析', difficulty: 'Medium', link: '/program/articles/topological-sort' },
         { id: 'union-find', title: '[ Algorithm ] Union Find | 核心概念與 Leetcode 題型解析', difficulty: 'Medium', link: '/program/articles/union-find' },
         { id: 'dijkstra', title: '[ Algorithm ] Shortest Path - Dijkstra | 核心概念與 Leetcode 題型解析', difficulty: 'Hard', link: '/program/articles/dijkstra' },
         { id: 'bellman-ford', title: '[ Algorithm ] Shortest Path - Bellman-Ford | 核心概念與 Leetcode 題型解析', difficulty: 'Hard', link: '/program/articles/bellman-ford' }
@@ -74,9 +74,9 @@ const TopicRoadmap = () => {
       color: 'bg-pink-500',
       description: 'Essential data structures and operations',
       items: [
-        { id: 'hash-tables', title: '[ Data Structure ] Hash Table | 核心概念與 Leetcode 題型解析', difficulty: 'Easy', link: '/program/articles/hash-Table' },
-        { id: 'stack', title: '[ Data Structure ] Stack & Monotonic Stack | 核心概念與 Leetcode 題型解析', difficulty: 'Easy', link: '/program/articles/Stack' },
-        { id: 'queue', title: '[ Data Structure ] Queue & Priority Queue | 核心概念與 Leetcode 題型解析', difficulty: 'Easy', link: '/program/articles/Queue' }
+        { id: 'hash-tables', title: '[ Data Structure ] Hash Table | 核心概念與 Leetcode 題型解析', difficulty: 'Easy', link: '/program/articles/hash-table' },
+        { id: 'stack', title: '[ Data Structure ] Stack & Monotonic Stack | 核心概念與 Leetcode 題型解析', difficulty: 'Easy', link: '/program/articles/stack' },
+        { id: 'queue', title: '[ Data Structure ] Queue & Priority Queue | 核心概念與 Leetcode 題型解析', difficulty: 'Easy', link: '/program/articles/queue' }
       ]
     },
     {

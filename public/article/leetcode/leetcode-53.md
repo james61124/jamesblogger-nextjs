@@ -2,10 +2,11 @@
 title: "[ Leetcode 53 ] Maximum Subarray | 解題思路分享"
 date: "2025-03-01"
 author: James
-tags: Array,DP,Divide and Conquer
+tags: Array,DP,Divide and Conquer,Google,Meta
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 5
 readTime: 2
 ---
 

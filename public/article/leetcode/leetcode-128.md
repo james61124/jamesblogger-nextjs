@@ -2,10 +2,11 @@
 title: "[ Leetcode 128 ] Longest Consecutive Sequence | 解題思路分享"
 date: "2025-04-08"
 author: James
-tags: Array,Hash Table
+tags: Array,Hash Table,Google,Meta
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency : 1
 readTime: 3
 ---
 
