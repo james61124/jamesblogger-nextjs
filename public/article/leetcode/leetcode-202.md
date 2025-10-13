@@ -6,6 +6,7 @@ tags: Hash Table,Two Pointers,Math,Floyd's Cycle Detection
 difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 1
 readTime: 2
 ---
 

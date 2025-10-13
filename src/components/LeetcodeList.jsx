@@ -230,7 +230,10 @@ export default function LeetCodeList({ json_path, category }) {
                 <tr
                     key={article.path}
                     className="border-t hover:bg-gray-100 transition-all cursor-pointer"
-                    onClick={() => router.push(`/${category}/articles/${article.path}`)}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      window.open(`/${category}/articles/${article.path}`, "_blank");
+                    }}
                 >
                     <td className="px-6 py-4 text-sm">
                     <div className="whitespace-nowrap">{article.date}</div>

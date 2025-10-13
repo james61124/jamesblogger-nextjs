@@ -6,6 +6,7 @@ tags: Array,Hash Table,Sliding Window
 difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 2
 readTime: 3
 ---
 

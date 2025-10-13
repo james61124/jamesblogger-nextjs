@@ -43,8 +43,24 @@
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-20"
+    },
+    {
+        "title": "[ Leetcode 71 ] Simplify Path | 解題思路分享",
+        "date": "2025-10-09",
+        "author": "James",
+        "tags": [
+            "String",
+            "Stack",
+            "Top Interview"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-71"
     },
     {
         "title": "[ Leetcode 45 ] Jump Game II | 解題思路分享",
@@ -154,8 +170,26 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-92"
+    },
+    {
+        "title": "[ Leetcode 637 ] Average of Levels in Binary Tree | 解題思路分享",
+        "date": "2025-10-09",
+        "author": "James",
+        "tags": [
+            "Tree",
+            "Binary Tree",
+            "DFS",
+            "BFS",
+            "Top Interview"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-637"
     },
     {
         "title": "[ Leetcode 695 ] Max Area of Island | 解題思路分享",
@@ -168,6 +202,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 2,
         "path": "leetcode-695"
     },
@@ -185,6 +220,21 @@
         "description": "",
         "readTime": 3,
         "path": "leetcode-743"
+    },
+    {
+        "title": "[ Leetcode 530 ] Minimum Absolute Difference in BST | 解題思路分享",
+        "date": "2025-10-09",
+        "author": "James",
+        "tags": [
+            "Tree",
+            "Binary Tree",
+            "Top Interview"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-530"
     },
     {
         "title": "[ Leetcode 450 ] Delete Node in a BST | 解題思路分享",
@@ -428,6 +478,23 @@
         "path": "leetcode-50"
     },
     {
+        "title": "[ Leetcode 399 ] Evaluate Division | 解題思路分享",
+        "date": "2025-10-06",
+        "author": "James",
+        "tags": [
+            "DFS",
+            "BFS",
+            "Graph",
+            "Union Find",
+            "Top Interview"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 8,
+        "path": "leetcode-399"
+    },
+    {
         "title": "[ Leetcode 746 ] Min Cost Climbing Stairs | 解題思路分享",
         "date": "2025-07-14",
         "author": "James",
@@ -579,6 +646,23 @@
         "proficiency": 4,
         "readTime": 1,
         "path": "leetcode-54"
+    },
+    {
+        "title": "[ Leetcode 129 ] Sum Root to Leaf Numbers | 解題思路分享",
+        "date": "2025-09-27",
+        "author": "James",
+        "tags": [
+            "Linked List",
+            "Tree",
+            "Binary Tree",
+            "Top Interview"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 5,
+        "readTime": 2,
+        "path": "leetcode-129"
     },
     {
         "title": "[ Leetcode 875 ] Koko Eating Bananas | 解題思路分享",
@@ -840,8 +924,26 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 2,
         "path": "leetcode-98"
+    },
+    {
+        "title": "[ Leetcode 173 ] Binary Search Tree Iterator | 解題思路分享",
+        "date": "2025-09-27",
+        "author": "James",
+        "tags": [
+            "Tree",
+            "Binary Tree",
+            "Morris Traversal",
+            "Top Interview"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 1,
+        "readTime": 4,
+        "path": "leetcode-173"
     },
     {
         "title": "[ Leetcode 211 ] Design Add and Search Words Data Structure | 解題思路分享",
@@ -914,6 +1016,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-102"
     },
@@ -1068,6 +1171,22 @@
         "path": "leetcode-1304"
     },
     {
+        "title": "[ Leetcode 112 ] Path Sum | 解題思路分享",
+        "date": "2025-09-27",
+        "author": "James",
+        "tags": [
+            "Tree",
+            "Binary Tree",
+            "Top Interview"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 5,
+        "readTime": 1,
+        "path": "leetcode-112"
+    },
+    {
         "title": "[ Leetcode 143 ] Reorder List | 解題思路分享",
         "date": "2025-06-18",
         "author": "James",
@@ -1124,6 +1243,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-230"
     },
@@ -1156,6 +1276,21 @@
         "description": "",
         "readTime": 3,
         "path": "leetcode-152"
+    },
+    {
+        "title": "[ Leetcode 103 ] Binary Tree Zigzag Level Order Traversal | 解題思路分享",
+        "date": "2025-10-09",
+        "author": "James",
+        "tags": [
+            "Tree",
+            "Binary Tree",
+            "Top Interview"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-103"
     },
     {
         "title": "[ Leetcode 204 ] Count Primes | 解題思路分享",
@@ -1268,6 +1403,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 4,
         "readTime": 1,
         "path": "leetcode-133"
     },
@@ -1302,6 +1438,23 @@
         "description": "",
         "readTime": 5,
         "path": "leetcode-146"
+    },
+    {
+        "title": "[ Leetcode 117 ] Populating Next Right Pointers in Each Node II | 解題思路分享",
+        "date": "2025-09-25",
+        "author": "James",
+        "tags": [
+            "Linked List",
+            "Tree",
+            "Binary Tree",
+            "BFS",
+            "Top Interview"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-117"
     },
     {
         "title": "[ Leetcode 172 ] Factorial Trailing Zeroes | 解題思路分享",
@@ -1393,6 +1546,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 4,
         "readTime": 1,
         "path": "leetcode-49"
     },
@@ -1576,6 +1730,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 3,
         "path": "leetcode-130"
     },
@@ -1653,6 +1808,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 2,
         "readTime": 1,
         "path": "leetcode-155"
     },
@@ -1734,6 +1890,21 @@
         "path": "leetcode-227"
     },
     {
+        "title": "[ Leetcode 114 ] Flatten Binary Tree to Linked List | 解題思路分享",
+        "date": "2025-09-27",
+        "author": "James",
+        "tags": [
+            "Tree",
+            "Binary Tree",
+            "Top Interview"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-114"
+    },
+    {
         "title": "[ Leetcode 145 ] Binary Tree Postorder Traversal | 解題思路分享",
         "date": "2025-03-20",
         "author": "James",
@@ -1759,6 +1930,7 @@
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-242"
     },
@@ -1823,6 +1995,7 @@
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 1,
         "readTime": 2,
         "path": "leetcode-202"
     },
@@ -1857,6 +2030,38 @@
         "description": "",
         "readTime": 3,
         "path": "leetcode-105"
+    },
+    {
+        "title": "[ Leetcode 236 ] Lowest Common Ancestor of a Binary Tree | 解題思路分享",
+        "date": "2025-10-06",
+        "author": "James",
+        "tags": [
+            "Tree",
+            "Binary Tree",
+            "Top Interview"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 2,
+        "readTime": 2,
+        "path": "leetcode-236"
+    },
+    {
+        "title": "[ Leetcode 909 ] Snakes and Ladders | 解題思路分享",
+        "date": "2025-10-10",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Matrix",
+            "BFS",
+            "Top Interview"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 5,
+        "path": "leetcode-909"
     },
     {
         "title": "[ Leetcode 3 ] Longest Substring Without Repeating Characters | 解題思路分享",
@@ -1972,6 +2177,39 @@
         "path": "leetcode-121"
     },
     {
+        "title": "[ Leetcode 101 ] Symmetric Tree | 解題思路分享",
+        "date": "2025-09-25",
+        "author": "James",
+        "tags": [
+            "Tree",
+            "Binary Tree",
+            "DFS",
+            "Top Interview"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 5,
+        "readTime": 1,
+        "path": "leetcode-101"
+    },
+    {
+        "title": "[ Leetcode 290 ] Word Pattern | 解題思路分享",
+        "date": "2025-10-06",
+        "author": "James",
+        "tags": [
+            "Hash Table",
+            "String",
+            "Top Interview"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 3,
+        "readTime": 2,
+        "path": "leetcode-290"
+    },
+    {
         "title": "[ Leetcode 150 ] Evaluate Reverse Polish Notation | 解題思路分享",
         "date": "2025-06-24",
         "author": "James",
@@ -1981,6 +2219,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 3,
         "path": "leetcode-150"
     },
@@ -2075,6 +2314,22 @@
         "path": "leetcode-58"
     },
     {
+        "title": "[ Leetcode 222 ] Count Complete Tree Nodes | 解題思路分享",
+        "date": "2025-10-06",
+        "author": "James",
+        "tags": [
+            "Tree",
+            "Binary Tree",
+            "Top Interview"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 2,
+        "readTime": 2,
+        "path": "leetcode-222"
+    },
+    {
         "title": "[ Leetcode 973 ] K Closest Points to Origin | 解題思路分享",
         "date": "2025-07-17",
         "author": "James",
@@ -2134,6 +2389,23 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-543"
+    },
+    {
+        "title": "[ Leetcode 3481 ] Apply Substitutions | 解題思路分享",
+        "date": "2025-09-28",
+        "author": "James",
+        "tags": [
+            "Graph",
+            "DFS",
+            "String",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 3,
+        "readTime": 3,
+        "path": "leetcode-3481"
     },
     {
         "title": "[ Leetcode 1792 ] Maximum Average Pass Ratio | 解題思路分享",
@@ -2514,6 +2786,7 @@
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 2,
         "readTime": 2,
         "path": "leetcode-219"
     },
@@ -2632,6 +2905,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 2,
         "readTime": 1,
         "path": "leetcode-199"
     },
@@ -2769,6 +3043,21 @@
         "path": "leetcode-33"
     },
     {
+        "title": "[ Leetcode 2327 ] Number of People Aware of a Secret | 解題思路分享",
+        "date": "2025-09-21",
+        "author": "James",
+        "tags": [
+            "DP",
+            "Google",
+            "Meta"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-2327"
+    },
+    {
         "title": "[ Leetcode 189 ] Rotate Array | 解題思路分享",
         "date": "2025-08-30",
         "author": "James",
@@ -2876,6 +3165,21 @@
         "description": "",
         "readTime": 4,
         "path": "leetcode-494"
+    },
+    {
+        "title": "[ Leetcode 2939 ] Maximum Xor Product | 解題思路分享",
+        "date": "2025-10-13",
+        "author": "James",
+        "tags": [
+            "Math",
+            "Greedy",
+            "Bit Manipulation"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-2939"
     },
     {
         "title": "[ Leetcode 42 ] Trapping Rain Water | 解題思路分享",
@@ -3022,5 +3326,21 @@
         "description": "",
         "readTime": 2,
         "path": "leetcode-873"
+    },
+    {
+        "title": "[ Leetcode 962 ] Maximum Width Ramp | 解題思路分享",
+        "date": "2025-09-25",
+        "author": "James",
+        "tags": [
+            "Stack",
+            "Monotonic Stack",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 1,
+        "readTime": 2,
+        "path": "leetcode-962"
     }
 ]

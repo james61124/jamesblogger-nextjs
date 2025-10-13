@@ -38,10 +38,10 @@ const TopicRoadmap = () => {
         { id: 'dp', title: '[ Algorithm ] Dynamic Programming (一) - Introduction | 核心概念與 Leetcode 題型解析', difficulty: 'Medium', link: '/program/articles/dp' },
         { id: 'dp-memo', title: '[ Algorithm ] Dynamic Programming (二) - Memorization | 核心概念與 Leetcode 題型解析', difficulty: 'Medium', link: '/program/articles/dp-memo' },
         { id: 'linear-dp', title: '[ Algorithm ] Dynamic Programming (三) - Linear DP | 核心概念與 Leetcode 題型解析', difficulty: 'Medium', link: '/program/articles/linear-dp' },
-        { id: 'knapsack-problem', title: '[ Algorithm ] Dynamic Programming (四) - Knapsack Problem | 核心概念與 Leetcode 題型解析', difficulty: 'Hard', link: '/program/articles/knapsack-Problem' },
+        { id: 'knapsack-problem', title: '[ Algorithm ] Dynamic Programming (四) - Knapsack Problem | 核心概念與 Leetcode 題型解析', difficulty: 'Hard', link: '/program/articles/knapsack-problem' },
         { id: 'interval-dp', title: '[ Algorithm ] Dynamic Programming (五) - Interval DP | 核心概念與 Leetcode 題型解析', difficulty: 'Hard', link: '/program/articles/interval-dp' },
-        { id: 'digit-dp', title: '[ Algorithm ] Dynamic Programming (六) - Digit DP | 核心概念與 Leetcode 題型解析', difficulty: 'Hard', link: '/program/articles/digit-DP' },
-        { id: 'counting-dp', title: '[ Algorithm ] Dynamic Programming (七) - Counting DP | 核心概念與 Leetcode 題型解析', difficulty: 'Medium', link: '/program/articles/counting-DP' },
+        { id: 'digit-dp', title: '[ Algorithm ] Dynamic Programming (六) - Digit DP | 核心概念與 Leetcode 題型解析', difficulty: 'Hard', link: '/program/articles/digit-dp' },
+        { id: 'counting-dp', title: '[ Algorithm ] Dynamic Programming (七) - Counting DP | 核心概念與 Leetcode 題型解析', difficulty: 'Medium', link: '/program/articles/counting-dp' },
       ]
     },
     {

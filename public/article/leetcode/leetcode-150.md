@@ -6,6 +6,7 @@ tags: Stack
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 5
 readTime: 2
 ---
 

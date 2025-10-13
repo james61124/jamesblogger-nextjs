@@ -6,6 +6,7 @@ tags: Array,Hash Table,String,Sorting
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 4
 readTime: 2
 ---
 
