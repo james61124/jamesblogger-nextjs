@@ -280,6 +280,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 2,
         "readTime": 2,
         "path": "leetcode-435"
     },
@@ -297,6 +298,21 @@
         "description": "",
         "readTime": 2,
         "path": "leetcode-75"
+    },
+    {
+        "title": "[ Leetcode 34 ] Find First and Last Position of Element in Sorted Array | 解題思路分享",
+        "date": "2025-11-19",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Binary Search",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-34"
     },
     {
         "title": "[ Leetcode 2013 ] Detect Squares | 解題思路分享",
@@ -404,6 +420,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 4,
         "readTime": 3,
         "path": "leetcode-40"
     },
@@ -510,6 +527,20 @@
         "description": "",
         "readTime": 2,
         "path": "leetcode-746"
+    },
+    {
+        "title": "[ Leetcode 2768 ] Number of Black Blocks | 解題思路分享",
+        "date": "2025-11-17",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Hash Table"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-2768"
     },
     {
         "title": "[ Leetcode 424 ] Longest Repeating Character Replacement | 解題思路分享",
@@ -730,6 +761,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 1,
         "readTime": 2,
         "path": "leetcode-560"
     },
@@ -860,6 +892,20 @@
         "description": "",
         "readTime": 5,
         "path": "leetcode-297"
+    },
+    {
+        "title": "[ Leetcode 2483 ] Minimum Penalty for a Shop | 解題思路分享",
+        "date": "2025-11-16",
+        "author": "James",
+        "tags": [
+            "String"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 3,
+        "readTime": 2,
+        "path": "leetcode-2483"
     },
     {
         "title": "[ Leetcode 718 ] Maximum Length of Repeated Subarray | 解題思路分享",
@@ -1425,6 +1471,21 @@
         "path": "leetcode-133"
     },
     {
+        "title": "[ Leetcode 3354 ] Make Array Elements Equal to Zero | 解題思路分享",
+        "date": "2025-11-20",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Simulation",
+            "Google"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-3354"
+    },
+    {
         "title": "[ Leetcode 1 ] Two Sum | 解題思路分享",
         "date": "2025-03-26",
         "author": "James",
@@ -1472,6 +1533,20 @@
         "description": "",
         "readTime": 2,
         "path": "leetcode-117"
+    },
+    {
+        "title": "[ Leetcode 3370 ] Smallest Number With All Set Bits | 解題思路分享",
+        "date": "2025-11-20",
+        "author": "James",
+        "tags": [
+            "Math",
+            "Google"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-3370"
     },
     {
         "title": "[ Leetcode 172 ] Factorial Trailing Zeroes | 解題思路分享",
@@ -1638,7 +1713,8 @@
         "tags": [
             "Array",
             "DP",
-            "Unbounded Knapsack Problem"
+            "Unbounded Knapsack Problem",
+            "Google"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
@@ -1942,6 +2018,22 @@
         "path": "leetcode-145"
     },
     {
+        "title": "[ Leetcode 394 ] Decode String | 解題思路分享",
+        "date": "2025-11-18",
+        "author": "James",
+        "tags": [
+            "String",
+            "Stack",
+            "Recursion",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-394"
+    },
+    {
         "title": "[ Leetcode 242 ] Valid Anagram | 解題思路分享",
         "date": "2025-04-25",
         "author": "James",
@@ -2037,6 +2129,21 @@
         "proficiency": 5,
         "readTime": 3,
         "path": "leetcode-78"
+    },
+    {
+        "title": "[ Leetcode 253 ] Meeting Rooms II | 解題思路分享",
+        "date": "2025-11-18",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Priority Queue",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-253"
     },
     {
         "title": "[ Leetcode 105 ] Construct Binary Tree from Preorder and Inorder Traversal | 解題思路分享",
@@ -2309,6 +2416,20 @@
         "description": "",
         "readTime": 1,
         "path": "leetcode-206"
+    },
+    {
+        "title": "[ Leetcode 7 ] Reverse Integer | 解題思路分享",
+        "date": "2025-11-18",
+        "author": "James",
+        "tags": [
+            "Math",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-7"
     },
     {
         "title": "[ Leetcode 125 ] Valid Palindrome | 解題思路分享",
@@ -2772,6 +2893,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 1,
         "readTime": 2,
         "path": "leetcode-22"
     },
@@ -2941,6 +3063,7 @@
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 1,
         "readTime": 4,
         "path": "leetcode-572"
     },
@@ -3005,6 +3128,21 @@
         "description": "",
         "readTime": 2,
         "path": "leetcode-23"
+    },
+    {
+        "title": "[ Leetcode 3228 ] Maximum Number of Operations to Move Ones to the End | 解題思路分享",
+        "date": "2025-11-19",
+        "author": "James",
+        "tags": [
+            "String",
+            "Greedy",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-3228"
     },
     {
         "title": "[ Leetcode 17 ] Letter Combinations of a Phone Number | 解題思路分享",
