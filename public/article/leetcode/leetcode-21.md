@@ -10,7 +10,7 @@ proficiency: 4
 readTime: 3
 ---
 
-給一個正整數 array `nums` 和一個正整數 `k`，找出乘積小於 `k` 的 subarray 數量。
+給兩個 sorted linked list，合併成一個 sorted linked list
 
 題目連結 🔗：[https://leetcode.com/problems/merge-two-sorted-lists/](https://leetcode.com/problems/merge-two-sorted-lists/)
 

@@ -6,6 +6,7 @@ tags: Tree,DFS,Binary Tree,KMP
 difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 1
 readTime: 2
 ---
 

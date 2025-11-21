@@ -6,6 +6,7 @@ tags: Array,Backtracking,DFS,Matrix,String
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 4
 readTime: 3
 ---
 

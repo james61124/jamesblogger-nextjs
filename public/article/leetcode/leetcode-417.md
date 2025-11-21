@@ -6,6 +6,7 @@ tags: Array,DFS,BFS,Matrix
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 4
 readTime: 2
 ---
 

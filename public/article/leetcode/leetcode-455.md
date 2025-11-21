@@ -6,6 +6,7 @@ tags: Array,Greedy,Two Pointers,Sorting
 difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 5
 readTime: 2
 ---
 

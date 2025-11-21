@@ -6,6 +6,7 @@ tags: Bit Manipulation,Divide and Conquer
 difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 1
 readTime: 3
 ---
 

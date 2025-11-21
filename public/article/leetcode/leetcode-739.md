@@ -6,6 +6,7 @@ tags: Array,Stack,Monotonic Stack
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 4
 readTime: 3
 ---
 

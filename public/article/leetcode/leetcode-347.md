@@ -6,6 +6,7 @@ tags: Array,Hash Table,Queue,Priority Queue,Partial Sorting
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 3
 readTime: 3
 ---
 

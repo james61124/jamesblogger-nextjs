@@ -6,6 +6,7 @@ tags: DP,Math,Knapsack Problem,Unbounded Knapsack Problem
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 3
 readTime: 3
 ---
 

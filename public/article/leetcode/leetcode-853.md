@@ -6,6 +6,7 @@ tags: Array,Sorting,Greedy
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 2
 readTime: 2
 ---
 

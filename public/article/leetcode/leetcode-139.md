@@ -6,6 +6,7 @@ tags: Array,Hash Table,String,DP,Recursion,Memorization
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 1
 readTime: 3
 ---
 

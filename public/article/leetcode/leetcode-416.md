@@ -6,6 +6,7 @@ tags: Array,DP,0/1 Knapsack Problem
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 1
 readTime: 2
 ---
 

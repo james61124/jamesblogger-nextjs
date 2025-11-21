@@ -6,6 +6,7 @@ tags: Array,Backtracking
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 4
 readTime: 2
 ---
 
@@ -118,3 +119,4 @@ vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
     return result;
 }
 ```
+

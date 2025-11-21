@@ -89,3 +89,38 @@ int lengthOfLongestSubstring(string s) {
     return result;
 }
 ```
+
+### **另解**
+
+我們其實不一定要利用 Hash Table 紀錄目前 sliding window 內的字母種類，這樣 left 在縮減時還要把他們 erase 出來，我們其實可以直接紀錄這個字母「最後一次出現的 index」即可，這樣當遇到重複的字母，我們馬上就可以知道目前的 substring without repeated characters 長度要縮減到哪裡，舉個例子：
+
+```
+s = "dabca"
+```
+
+原本 `dabc` 是目前沒有重複字母的 substring，當看到最後一個 `a` 的時候有重複，而因為兩者的 index 差是 3，所以就可以把目前沒有重複字母的 substring 更新成 3，不過如果是像這樣
+
+```
+s = "addebca"
+```
+
+原本 `debc` 是目前沒有重複字母的 substring，當看到最後一個 `a` 的時候有重複，但上一次看到 a 時已經不在目前的 substring 中了，那就不用管他，所以寫起來會像下面這樣
+
+```cpp
+int lengthOfLongestSubstring(string s) {
+    int curr = 0;
+    int result = 0;
+    unordered_map<char, int>umap;
+    for(int i = 0; i < s.size(); i++){
+        if(!umap.count(s[i]) || i - umap[s[i]] > curr){
+            curr++;
+            result = max(result, curr);
+        } else {
+            curr = i - umap[s[i]];
+        }
+        umap[s[i]] = i;
+    }
+
+    return result;
+}
+```

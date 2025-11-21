@@ -6,6 +6,7 @@ tags: Array,Hash Table,Prefix Sum,Google,Meta
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 1
 readTime: 2
 ---
 

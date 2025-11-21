@@ -6,6 +6,7 @@ tags: Array,Queue,Priority Queue,Sliding Window,Deque,Monotonic Deque
 difficulty: Hard
 image: /images/program/Leetcode.jpeg
 description: ""
+proficiency: 1
 readTime: 3
 ---
 

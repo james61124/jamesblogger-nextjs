@@ -248,6 +248,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 2,
         "path": "leetcode-450"
     },
@@ -355,6 +356,7 @@
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 4,
         "readTime": 2,
         "path": "leetcode-496"
     },
@@ -446,6 +448,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 2,
         "path": "leetcode-64"
     },
@@ -520,6 +523,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 2,
         "readTime": 3,
         "path": "leetcode-424"
     },
@@ -565,6 +569,7 @@
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-455"
     },
@@ -583,6 +588,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 1,
         "readTime": 4,
         "path": "leetcode-139"
     },
@@ -611,6 +617,7 @@
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-70"
     },
@@ -689,6 +696,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 2,
         "readTime": 2,
         "path": "leetcode-713"
     },
@@ -704,6 +712,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-841"
     },
@@ -780,6 +789,7 @@
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 1,
         "readTime": 4,
         "path": "leetcode-190"
     },
@@ -813,6 +823,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 4,
         "readTime": 1,
         "path": "leetcode-235"
     },
@@ -974,6 +985,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 1,
         "readTime": 3,
         "path": "leetcode-300"
     },
@@ -1001,6 +1013,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 4,
         "readTime": 2,
         "path": "leetcode-153"
     },
@@ -1121,6 +1134,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 3,
         "readTime": 2,
         "path": "leetcode-1143"
     },
@@ -1228,6 +1242,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 4,
         "readTime": 2,
         "path": "leetcode-221"
     },
@@ -1274,6 +1289,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 3,
         "readTime": 3,
         "path": "leetcode-152"
     },
@@ -1321,6 +1337,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 4,
         "readTime": 2,
         "path": "leetcode-739"
     },
@@ -1610,6 +1627,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 3,
         "readTime": 2,
         "path": "leetcode-347"
     },
@@ -1669,6 +1687,7 @@
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-217"
     },
@@ -1685,6 +1704,7 @@
         "difficulty": "Hard",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 4,
         "readTime": 2,
         "path": "leetcode-124"
     },
@@ -1748,6 +1768,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 4,
         "readTime": 5,
         "path": "leetcode-79"
     },
@@ -1916,6 +1937,7 @@
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-145"
     },
@@ -1963,6 +1985,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 3,
         "readTime": 3,
         "path": "leetcode-213"
     },
@@ -2011,6 +2034,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 3,
         "path": "leetcode-78"
     },
@@ -2079,7 +2103,7 @@
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
         "proficiency": 3,
-        "readTime": 3,
+        "readTime": 4,
         "path": "leetcode-3"
     },
     {
@@ -2124,6 +2148,7 @@
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-144"
     },
@@ -2138,6 +2163,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 4,
         "readTime": 2,
         "path": "leetcode-39"
     },
@@ -2250,6 +2276,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 2,
         "path": "leetcode-19"
     },
@@ -2451,6 +2478,7 @@
         "difficulty": "Hard",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 1,
         "readTime": 3,
         "path": "leetcode-239"
     },
@@ -2501,6 +2529,20 @@
         "path": "leetcode-26"
     },
     {
+        "title": "[ Leetcode 77 ] Combinations | 解題思路分享",
+        "date": "2025-10-13",
+        "author": "James",
+        "tags": [
+            "Backtracking",
+            "Top Interview"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-77"
+    },
+    {
         "title": "[ Leetcode 84 ] Largest Rectangle in Histogram | 解題思路分享",
         "date": "2025-06-13",
         "author": "James",
@@ -2527,6 +2569,7 @@
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-94"
     },
@@ -2619,6 +2662,7 @@
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-700"
     },
@@ -2648,6 +2692,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 3,
         "readTime": 2,
         "path": "leetcode-516"
     },
@@ -2712,6 +2757,7 @@
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-349"
     },
@@ -2756,7 +2802,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
-        "proficiency": 2,
+        "proficiency": 4,
         "readTime": 2,
         "path": "leetcode-57"
     },
@@ -2786,7 +2832,7 @@
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
-        "proficiency": 2,
+        "proficiency": 5,
         "readTime": 2,
         "path": "leetcode-219"
     },
@@ -2803,6 +2849,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 4,
         "readTime": 3,
         "path": "leetcode-417"
     },
@@ -2830,6 +2877,7 @@
         "difficulty": "Easy",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-876"
     },
@@ -2844,6 +2892,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 1,
         "readTime": 3,
         "path": "leetcode-650"
     },
@@ -2859,6 +2908,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-701"
     },
@@ -2874,6 +2924,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 2,
         "readTime": 2,
         "path": "leetcode-853"
     },
@@ -2936,6 +2987,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 2,
         "readTime": 3,
         "path": "leetcode-72"
     },
@@ -3011,6 +3063,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 3,
         "readTime": 2,
         "path": "leetcode-91"
     },
@@ -3116,6 +3169,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 1,
         "readTime": 4,
         "path": "leetcode-416"
     },
@@ -3309,6 +3363,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 3,
         "readTime": 4,
         "path": "leetcode-279"
     },
@@ -3324,6 +3379,7 @@
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
         "description": "",
+        "proficiency": 1,
         "readTime": 2,
         "path": "leetcode-873"
     },
