@@ -91,41 +91,13 @@ v 3354. Make Array Elements Equal to Zero
 68.4%
 Easy
 
-3370. Smallest Number With All Set Bits
-80.3%
-Easy
-
-3542. Minimum Operations to Convert All Elements to Zero
+v 3542. Minimum Operations to Convert All Elements to Zero
 52.7%
 Med.
 
-39. Combination Sum
-75.6%
-Med.
-
-53. Maximum Subarray
-52.6%
-Med.
-
-54. Spiral Matrix
-55.4%
-Med.
-
-55. Jump Game
-40.1%
-Med.
-
-62. Unique Paths
+v 62. Unique Paths
 66.3%
 Med.
-
-66. Plus One
-48.3%
-Easy
-
-67. Add Binary
-56.4%
-Easy
 
 68. Text Justification
 49.7%
@@ -135,47 +107,15 @@ Hard
 71.6%
 Med.
 
-162. Find Peak Element
+v 162. Find Peak Element
 46.7%
 Med.
-
-167. Two Sum II - Input Array Is Sorted
-64.1%
-Med.
-
-175. Combine Two Tables
-78.7%
-Easy
-
-176. Second Highest Salary
-45.5%
-Med.
-
-181. Employees Earning More Than Their Managers
-72.3%
-Easy
-
-217. Contains Duplicate
-63.7%
-Easy
-
-221. Maximal Square
-49.6%
-Med.
-
-283. Move Zeroes
-63.2%
-Easy
 
 354. Russian Doll Envelopes
 37.6%
 Hard
 
-380. Insert Delete GetRandom O(1)
-55.2%
-Med.
-
-389. Find the Difference
+v 389. Find the Difference
 59.9%
 Easy
 
@@ -187,31 +127,19 @@ Med.
 59.3%
 Hard
 
-528. Random Pick with Weight
+v 528. Random Pick with Weight
 48.7%
 Med.
 
-876. Middle of the Linked List
-81.2%
-Easy
-
-904. Fruit Into Baskets
+v 904. Fruit Into Baskets
 49.9%
 Med.
 
-994. Rotting Oranges
+v 994. Rotting Oranges
 57.6%
 Med.
 
-2011. Final Value of Variable After Performing Operations
-90.5%
-Easy
-
-2043. Simple Bank System
-70.1%
-Med.
-
-2654. Minimum Number of Operations to Make All Array Elements Equal to 1
+v 2654. Minimum Number of Operations to Make All Array Elements Equal to 1
 54.6%
 Med.
 

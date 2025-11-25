@@ -360,6 +360,22 @@
         "path": "leetcode-289"
     },
     {
+        "title": "[ Leetcode 904 ] Fruit Into Baskets | 解題思路分享",
+        "date": "2025-11-21",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Sliding Window",
+            "Hash Table",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-904"
+    },
+    {
         "title": "[ Leetcode 496 ] Next Greater Element I | 解題思路分享",
         "date": "2025-03-06",
         "author": "James",
@@ -391,6 +407,21 @@
         "description": "",
         "readTime": 3,
         "path": "leetcode-647"
+    },
+    {
+        "title": "[ Leetcode 389 ] Find the Difference | 解題思路分享",
+        "date": "2025-11-20",
+        "author": "James",
+        "tags": [
+            "String",
+            "Bit Manipulation",
+            "Google"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-389"
     },
     {
         "title": "[ Leetcode 11 ] Container With Most Water | 解題思路分享",
@@ -1247,6 +1278,21 @@
         "path": "leetcode-112"
     },
     {
+        "title": "[ Leetcode 283 ] Move Zeroes | 解題思路分享",
+        "date": "2025-11-20",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Google"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 5,
+        "readTime": 1,
+        "path": "leetcode-283"
+    },
+    {
         "title": "[ Leetcode 143 ] Reorder List | 解題思路分享",
         "date": "2025-06-18",
         "author": "James",
@@ -1454,6 +1500,22 @@
         "path": "leetcode-191"
     },
     {
+        "title": "[ Leetcode 162 ] Find Peak Element | 解題思路分享",
+        "date": "2025-11-20",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Binary Search",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 4,
+        "readTime": 1,
+        "path": "leetcode-162"
+    },
+    {
         "title": "[ Leetcode 133 ] Clone Graph | 解題思路分享",
         "date": "2025-03-08",
         "author": "James",
@@ -1602,7 +1664,8 @@
         "tags": [
             "Array",
             "Hash Table",
-            "Top Interview"
+            "Top Interview",
+            "Google"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
@@ -1721,6 +1784,22 @@
         "description": "",
         "readTime": 3,
         "path": "leetcode-518"
+    },
+    {
+        "title": "[ Leetcode 2654 ] Minimum Number of Operations to Make All Array Elements Equal to 1 | 解題思路分享",
+        "date": "2025-11-21",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Math",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 1,
+        "readTime": 2,
+        "path": "leetcode-2654"
     },
     {
         "title": "[ Leetcode 1448 ] Count Good Nodes in Binary Tree | 解題思路分享",
@@ -1952,6 +2031,21 @@
         "description": "",
         "readTime": 2,
         "path": "leetcode-295"
+    },
+    {
+        "title": "[ Leetcode 528 ] Random Pick with Weight | 解題思路分享",
+        "date": "2025-11-20",
+        "author": "James",
+        "tags": [
+            "Prefix Sum",
+            "Binary Search",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-528"
     },
     {
         "title": "[ Leetcode 2 ] Add Two Numbers | 解題思路分享",
@@ -2265,7 +2359,8 @@
         "author": "James",
         "tags": [
             "Array",
-            "Backtracking"
+            "Backtracking",
+            "Google"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
@@ -2693,6 +2788,22 @@
         "proficiency": 5,
         "readTime": 1,
         "path": "leetcode-94"
+    },
+    {
+        "title": "[ Leetcode 67 ] Add Binary | 解題思路分享",
+        "date": "2025-11-20",
+        "author": "James",
+        "tags": [
+            "Math",
+            "String",
+            "Google"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 4,
+        "readTime": 1,
+        "path": "leetcode-67"
     },
     {
         "title": "[ Leetcode 36 ] Valid Sudoku | 解題思路分享",
@@ -3326,6 +3437,22 @@
         "proficiency": 3,
         "readTime": 2,
         "path": "leetcode-9"
+    },
+    {
+        "title": "[ Leetcode 3542 ] Minimum Operations to Convert All Elements to Zero | 解題思路分享",
+        "date": "2025-11-20",
+        "author": "James",
+        "tags": [
+            "Stack",
+            "Monotonic Stack",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 1,
+        "readTime": 2,
+        "path": "leetcode-3542"
     },
     {
         "title": "[ Leetcode 981 ] Time Based Key-Value Store | 解題思路分享",

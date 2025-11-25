@@ -2,7 +2,7 @@
 title: "[ Leetcode 380 ] Insert Delete GetRandom O(1) | 解題思路分享"
 date: "2025-08-31"
 author: James
-tags: Array,Hash Table,Top Interview
+tags: Array,Hash Table,Top Interview,Google
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
