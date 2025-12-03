@@ -2,7 +2,7 @@
 title: "[ Leetcode 235 ] Lowest Common Ancestor of a Binary Search Tree | 解題思路分享"
 date: "2025-04-23"
 author: James
-tags: Tree,DFS,Binary Tree
+tags: Tree,DFS,Binary Tree,Google
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""

@@ -2,7 +2,7 @@
 title: "[ Leetcode 135 ] Candy | 解題思路分享"
 date: "2025-08-31"
 author: James
-tags: Array,Greedy,Top Interview
+tags: Array,Greedy,Top Interview,Google
 difficulty: Hard
 image: /images/program/Leetcode.jpeg
 description: ""

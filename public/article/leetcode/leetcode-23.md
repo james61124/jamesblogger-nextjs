@@ -2,7 +2,7 @@
 title: "[ Leetcode 23 ] Merge k Sorted Lists | 解題思路分享"
 date: "2025-03-27"
 author: James
-tags: Linked List,Priority Queue,Merge Sort
+tags: Linked List,Priority Queue,Merge Sort,Google
 difficulty: Hard
 image: /images/program/Leetcode.jpeg
 description: ""

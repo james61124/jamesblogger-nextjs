@@ -2,7 +2,7 @@
 title: "[ Leetcode 236 ] Lowest Common Ancestor of a Binary Tree | 解題思路分享"
 date: "2025-10-06"
 author: James
-tags: Tree,Binary Tree,Top Interview
+tags: Tree,Binary Tree,Top Interview,Google
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""

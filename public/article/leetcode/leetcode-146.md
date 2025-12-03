@@ -2,7 +2,7 @@
 title: "[ Leetcode 146 ] LRU Cache | 解題思路分享"
 date: "2025-06-25"
 author: James
-tags: Hash Table,Linked List,Double Linked List
+tags: Hash Table,Linked List,Double Linked List,Google
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""

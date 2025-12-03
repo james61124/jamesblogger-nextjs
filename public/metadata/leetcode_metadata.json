@@ -1,5 +1,22 @@
 [
     {
+        "title": "[ Leetcode 3607 ] Power Grid Maintenance | 解題思路分享",
+        "date": "2025-11-24",
+        "author": "James",
+        "tags": [
+            "Union Find",
+            "Hash Table",
+            "Graph",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 1,
+        "readTime": 5,
+        "path": "leetcode-3607"
+    },
+    {
         "title": "[ Leetcode 169 ] Majority Element | 解題思路分享",
         "date": "2025-08-30",
         "author": "James",
@@ -717,6 +734,22 @@
         "path": "leetcode-54"
     },
     {
+        "title": "[ Leetcode 31 ] Next Permutation | 解題思路分享",
+        "date": "2025-12-01",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Two Pointers",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 4,
+        "readTime": 3,
+        "path": "leetcode-31"
+    },
+    {
         "title": "[ Leetcode 129 ] Sum Root to Leaf Numbers | 解題思路分享",
         "date": "2025-09-27",
         "author": "James",
@@ -881,7 +914,8 @@
         "tags": [
             "Tree",
             "DFS",
-            "Binary Tree"
+            "Binary Tree",
+            "Google"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
@@ -983,6 +1017,21 @@
         "proficiency": 1,
         "readTime": 2,
         "path": "leetcode-274"
+    },
+    {
+        "title": "[ Leetcode 334 ] Increasing Triplet Subsequence | 解題思路分享",
+        "date": "2025-12-02",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Greedy",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-334"
     },
     {
         "title": "[ Leetcode 122 ] Best Time to Buy and Sell Stock II | 解題思路分享",
@@ -1236,7 +1285,8 @@
         "author": "James",
         "tags": [
             "Quick Select",
-            "Priority Queue"
+            "Priority Queue",
+            "Google"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
@@ -1418,6 +1468,21 @@
         "path": "leetcode-204"
     },
     {
+        "title": "[ Leetcode 137 ] Single Number II | 解題思路分享",
+        "date": "2025-12-01",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Bit Manipulation",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-137"
+    },
+    {
         "title": "[ Leetcode 739 ] Daily Temperatures | 解題思路分享",
         "date": "2025-03-06",
         "author": "James",
@@ -1571,7 +1636,8 @@
         "tags": [
             "Hash Table",
             "Linked List",
-            "Double Linked List"
+            "Double Linked List",
+            "Google"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
@@ -1696,7 +1762,8 @@
             "Array",
             "Hash Table",
             "String",
-            "Sorting"
+            "Sorting",
+            "Google"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
@@ -1726,7 +1793,8 @@
         "tags": [
             "Array",
             "Greedy",
-            "Top Interview"
+            "Top Interview",
+            "Google"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
@@ -1822,7 +1890,8 @@
         "author": "James",
         "tags": [
             "String",
-            "Top Interview"
+            "Top Interview",
+            "Google"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
@@ -1918,7 +1987,8 @@
             "Backtracking",
             "DFS",
             "Matrix",
-            "String"
+            "String",
+            "Google"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
@@ -2031,6 +2101,20 @@
         "description": "",
         "readTime": 2,
         "path": "leetcode-295"
+    },
+    {
+        "title": "[ Leetcode 237 ] Delete Node in a Linked List | 解題思路分享",
+        "date": "2025-12-02",
+        "author": "James",
+        "tags": [
+            "Linked List",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-237"
     },
     {
         "title": "[ Leetcode 528 ] Random Pick with Weight | 解題思路分享",
@@ -2263,7 +2347,8 @@
         "tags": [
             "Tree",
             "Binary Tree",
-            "Top Interview"
+            "Top Interview",
+            "Google"
         ],
         "difficulty": "Medium",
         "image": "/images/program/Leetcode.jpeg",
@@ -2489,7 +2574,8 @@
         "tags": [
             "Array",
             "Greedy",
-            "Top Interview"
+            "Top Interview",
+            "Google"
         ],
         "difficulty": "Hard",
         "image": "/images/program/Leetcode.jpeg",
@@ -2697,6 +2783,20 @@
         "proficiency": 1,
         "readTime": 3,
         "path": "leetcode-239"
+    },
+    {
+        "title": "[ Leetcode 328 ] Odd Even Linked List | 解題思路分享",
+        "date": "2025-12-02",
+        "author": "James",
+        "tags": [
+            "Linked List",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-328"
     },
     {
         "title": "[ Leetcode 268 ] Missing Number | 解題思路分享",
@@ -3115,6 +3215,20 @@
         "path": "leetcode-876"
     },
     {
+        "title": "[ Leetcode 8 ] String to Integer (atoi) | 解題思路分享",
+        "date": "2025-11-24",
+        "author": "James",
+        "tags": [
+            "String",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-8"
+    },
+    {
         "title": "[ Leetcode 650 ] 2 Keys Keyboard | 解題思路分享",
         "date": "2025-03-24",
         "author": "James",
@@ -3232,7 +3346,8 @@
         "tags": [
             "Linked List",
             "Priority Queue",
-            "Merge Sort"
+            "Merge Sort",
+            "Google"
         ],
         "difficulty": "Hard",
         "image": "/images/program/Leetcode.jpeg",

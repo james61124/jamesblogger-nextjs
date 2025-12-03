@@ -2,7 +2,7 @@
 title: "[ Leetcode 6 ] Zigzag Conversion | 解題思路分享"
 date: "2025-09-02"
 author: James
-tags: String,Top Interview
+tags: String,Top Interview,Google
 difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
