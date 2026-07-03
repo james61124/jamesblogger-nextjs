@@ -6,6 +6,8 @@ istringstream iss(s);
 string token;
 while(getline(iss, token, ' ')){}
 
+s.substr(start, len);
+
 
 
 bool compare(int a, int b){
