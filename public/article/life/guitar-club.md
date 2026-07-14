@@ -1,5 +1,5 @@
 ---
-title: 從琴弦到領導：我在吉他社的成長與挑戰
+title: 交大吉他社回顧
 date: "2024-02-23"
 author: James
 tags: NYCU,Guitar Club

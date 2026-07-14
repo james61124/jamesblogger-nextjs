@@ -1,5 +1,5 @@
 ---
-title: 打造為身障者量身設計的 APP｜第十一屆梅竹黑客松全紀錄
+title: 第十一屆梅竹黑客松參賽紀錄
 date: "2024-04-20"
 author: James
 tags: Life, Hackathon

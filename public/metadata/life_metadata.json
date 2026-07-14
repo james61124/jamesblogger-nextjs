@@ -1,6 +1,6 @@
 [
     {
-        "title": "ASML 荷蘭總部實習全紀錄",
+        "title": "ASML 荷蘭總部實習紀錄與心得",
         "date": "2025-02-21",
         "author": "James",
         "tags": [
@@ -15,7 +15,21 @@
         "path": "asml"
     },
     {
-        "title": "從琴弦到領導：我在吉他社的成長與挑戰",
+        "title": "美國留學申請心得",
+        "date": "2026-07-06",
+        "author": "James",
+        "tags": [
+            "United States",
+            "Grad School",
+            "MCS"
+        ],
+        "image": "/images/life/us-grad-school-application/application.png",
+        "description": "我發現我很不適合寫攻略，所以就寫寫自己的心路歷程跟心得就好。其實一開始來美國留學的選項完全不在人生規劃中，所以這決定做得非常突然，大概大四已經過了一半，出國這個選項突然出現在生命中，我自己都覺得很荒謬，但認真想了一下，發現好像不是完全沒有可能。",
+        "readTime": 7,
+        "path": "us-grad-school-application"
+    },
+    {
+        "title": "交大吉他社回顧",
         "date": "2024-02-23",
         "author": "James",
         "tags": [
@@ -41,7 +55,7 @@
         "path": "meichu-hackathon-event-planning-leader"
     },
     {
-        "title": "打造為身障者量身設計的 APP｜第十一屆梅竹黑客松全紀錄",
+        "title": "第十一屆梅竹黑客松參賽紀錄",
         "date": "2024-04-20",
         "author": "James",
         "tags": [

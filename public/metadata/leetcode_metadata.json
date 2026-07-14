@@ -17,6 +17,20 @@
         "path": "leetcode-3607"
     },
     {
+        "title": "[ Leetcode 767 ] Reorganize String | 解題思路分享",
+        "date": "2025-03-12",
+        "author": "James",
+        "tags": [
+            "String",
+            "Amazon"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 2,
+        "path": "leetcode-767"
+    },
+    {
         "title": "[ Leetcode 169 ] Majority Element | 解題思路分享",
         "date": "2025-08-30",
         "author": "James",
@@ -971,6 +985,20 @@
         "proficiency": 3,
         "readTime": 2,
         "path": "leetcode-2483"
+    },
+    {
+        "title": "[ Leetcode 1648 ] Sell Diminishing-Valued Colored Balls | 解題思路分享",
+        "date": "2025-03-11",
+        "author": "James",
+        "tags": [
+            "Binary Search",
+            "Amazon"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 3,
+        "path": "leetcode-1648"
     },
     {
         "title": "[ Leetcode 718 ] Maximum Length of Repeated Subarray | 解題思路分享",
@@ -2103,6 +2131,21 @@
         "path": "leetcode-295"
     },
     {
+        "title": "[ Leetcode 377 ] Combination Sum IV | 解題思路分享",
+        "date": "2025-12-03",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Greedy",
+            "Google"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-377"
+    },
+    {
         "title": "[ Leetcode 237 ] Delete Node in a Linked List | 解題思路分享",
         "date": "2025-12-02",
         "author": "James",
@@ -2453,6 +2496,21 @@
         "proficiency": 4,
         "readTime": 2,
         "path": "leetcode-39"
+    },
+    {
+        "title": "[ Leetcode 1004 ] Max Consecutive Ones III | 解題思路分享",
+        "date": "2025-03-11",
+        "author": "James",
+        "tags": [
+            "Array",
+            "Sliding Window",
+            "Amazon"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "readTime": 1,
+        "path": "leetcode-1004"
     },
     {
         "title": "[ Leetcode 212 ] Word Search II | 解題思路分享",
@@ -3125,6 +3183,21 @@
         "path": "leetcode-80"
     },
     {
+        "title": "[ Leetcode 16 ] 3Sum Closest | 解題思路分享",
+        "date": "2026-03-13",
+        "author": "James",
+        "tags": [
+            "Two Pointers",
+            "Amazon"
+        ],
+        "difficulty": "Medium",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 2,
+        "readTime": 1,
+        "path": "leetcode-16"
+    },
+    {
         "title": "[ Leetcode 57 ] Insert Interval | 解題思路分享",
         "date": "2025-04-01",
         "author": "James",
@@ -3536,6 +3609,21 @@
         "proficiency": 1,
         "readTime": 4,
         "path": "leetcode-416"
+    },
+    {
+        "title": "[ Leetcode 696 ] Count Binary Substrings | 解題思路分享",
+        "date": "2026-03-13",
+        "author": "James",
+        "tags": [
+            "String",
+            "Amazon"
+        ],
+        "difficulty": "Easy",
+        "image": "/images/program/Leetcode.jpeg",
+        "description": "",
+        "proficiency": 2,
+        "readTime": 1,
+        "path": "leetcode-696"
     },
     {
         "title": "[ Leetcode 9 ] Palindrome Number | 解題思路分享",

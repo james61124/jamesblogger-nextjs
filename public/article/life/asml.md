@@ -1,5 +1,5 @@
 ---
-title: ASML 荷蘭總部實習全紀錄
+title: ASML 荷蘭總部實習紀錄與心得
 date: "2025-02-21"
 author: James
 tags: ASML,Veldhoven,Netherlands,Intern
