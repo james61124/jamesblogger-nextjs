@@ -50,95 +50,136 @@ export default function ArticleListPage({ json_path, title, category }) {
     }
   };
 
-  return (
+return (
+  <main className="min-h-screen bg-[#f4efe6] px-5 pb-28 pt-32 sm:px-8 lg:px-12">
+    {/* 紙張紋理 */}
     <div
-      className="min-h-screen pt-32 pb-32 px-8"
+      aria-hidden
+      className="pointer-events-none fixed inset-0 opacity-25"
       style={{
-        background: "linear-gradient(to bottom, #f9fafb, #e5e7eb)",
+        backgroundImage:
+          "radial-gradient(circle at 1px 1px, rgba(70,61,49,0.12) 0.65px, transparent 0)",
+        backgroundSize: "6px 6px",
       }}
-    >
+    />
+
+    <div className="relative mx-auto max-w-[1450px]">
       {/* 頁面標題 */}
-      <motion.h1
-        className="text-4xl font-bold mb-16 text-center text-gray-900"
-        initial={{ opacity: 0, y: -20 }}
+      <motion.header
+        className="mb-16 text-center sm:mb-20"
+        initial={{ opacity: 0, y: 18 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.65 }}
       >
-        {realTitle}
-      </motion.h1>
+        <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#857968]">
+          Personal Journal
+        </p>
+
+        <h1 className="mt-4 font-serif text-5xl font-normal tracking-[-0.025em] text-[#29251f] sm:text-6xl">
+          {realTitle}
+        </h1>
+
+        <div className="mx-auto mt-7 h-px w-14 bg-[#786f63]/35" />
+      </motion.header>
 
       {/* 文章列表 */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
         <AnimatePresence mode="popLayout">
           {currentArticles.map((article, index) => (
-            <motion.div
+            <motion.article
               key={article.path}
-              initial={{ opacity: 0, y: 20 }}
+              layout
+              initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              // transition={{ duration: 0.4, delay: index * 0.1 }}
+              exit={{ opacity: 0, y: -16 }}
+              transition={{
+                duration: 0.55,
+                delay: Math.min(index * 0.05, 0.3),
+              }}
             >
               <Link
                 href={{
                   pathname: `/${category}/articles/${article.path}`,
                 }}
-                className="group block overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-transform transform hover:-translate-y-2 bg-white"
+                className="group block"
               >
-                {/* 文章圖片 */}
-                <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
+                {/* 圖片 */}
+                <div className="relative aspect-[4/3] overflow-hidden bg-[#ddd5c8]">
                   <Image
                     src={article.image}
                     alt={article.title}
-                    width={600}
-                    height={300}
-                    className="w-full h-56 object-cover"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.025]"
                   />
-                </motion.div>
+
+                  <div className="absolute inset-0 bg-black/0 transition-colors duration-500 group-hover:bg-black/[0.035]" />
+                </div>
+
                 {/* 文章內容 */}
-                <div className="p-6">
-                  <h2 className="text-2xl font-semibold text-gray-900 group-hover:text-blue-600 transition-all">
+                <div className="pt-6">
+                  <div className="flex items-center justify-between gap-4">
+                    <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-[#817769]">
+                      {article.date}
+                    </p>
+
+                    {article.tags?.[0] && (
+                      <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-[#476c9d]">
+                        {article.tags[0]}
+                      </p>
+                    )}
+                  </div>
+
+                  <h2 className="mt-4 font-serif text-[1.85rem] font-normal leading-[1.2] tracking-[-0.018em] text-[#29251f] transition-colors duration-300 group-hover:text-[#456b9b]">
                     {article.title}
                   </h2>
-                  <p className="text-gray-600 mt-4 line-clamp-3">
+
+                  <p className="mt-4 line-clamp-3 font-serif text-[15px] leading-7 text-[#6b645a]">
                     {article.description}
                   </p>
-                  <p className="mt-6 text-sm text-gray-500">發佈日期：{article.date}</p>
 
-                  {/* Tag 顯示區域 */}
-                  {article.tags && article.tags.length > 0 && (
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {article.tags.slice(0, 4).map((tag) => (
-                        <motion.span
+                  {article.tags && article.tags.length > 1 && (
+                    <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2">
+                      {article.tags.slice(1, 4).map((tag) => (
+                        <span
                           key={tag}
-                          className="px-3 py-1 text-sm font-medium bg-gray-200 text-gray-800 rounded-full"
-                          whileHover={{ scale: 1.1 }}
-                          transition={{ duration: 0.2 }}
+                          className="text-[12px] text-[#847a6c]"
                         >
-                          {tag}
-                        </motion.span>
-                      ))}
-                      {article.tags.length > 4 && (
-                        <span className="px-3 py-1 text-sm font-medium bg-gray-300 text-gray-700 rounded-full">
-                          +{article.tags.length - 4} 更多
+                          #{tag}
                         </span>
-                      )}
+                      ))}
                     </div>
                   )}
+
+                  <div className="mt-6 flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.14em] text-[#514b43]">
+                    <span>Read story</span>
+                    <span className="transition-transform duration-300 group-hover:translate-x-1">
+                      →
+                    </span>
+                  </div>
                 </div>
               </Link>
-            </motion.div>
+            </motion.article>
           ))}
         </AnimatePresence>
       </div>
 
-      {/* 分頁按鈕 */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-      >
-        <Pagination currentPage={currentPage} totalPages={totalPages} goToPage={goToPage} />
-      </motion.div>
+      {/* 分頁 */}
+      {totalPages > 1 && (
+        <motion.div
+          className="mt-24 flex justify-center"
+          initial={{ opacity: 0, y: 18 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            goToPage={goToPage}
+          />
+        </motion.div>
+      )}
     </div>
-  );
+  </main>
+);
 }

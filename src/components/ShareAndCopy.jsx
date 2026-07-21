@@ -1,47 +1,76 @@
 "use client";
 
 import { useState } from "react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaCopy, FaCheck } from "react-icons/fa";
+import { Check, Clipboard, Facebook, Linkedin, Share2 } from "lucide-react";
 
-export default function ShareAndCopy({ title, url }) {
+export default function ShareAndCopy() {
   const [copied, setCopied] = useState(false);
+  const currentUrl = () => (typeof window === "undefined" ? "" : window.location.href);
 
-  const shareText = encodeURIComponent(title);
-  const shareUrl = encodeURIComponent(url);
-
-  const socialLinks = [
-    { platform: "Facebook", url: `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`, icon: <FaFacebook />, color: "hover:bg-blue-600" },
-    { platform: "Twitter", url: `https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}`, icon: <FaTwitter />, color: "hover:bg-blue-400" },
-    { platform: "LinkedIn", url: `https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`, icon: <FaLinkedin />, color: "hover:bg-blue-700" },
-  ];
-
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(url);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 3000);
+  const copyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(currentUrl());
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 1600);
+    } catch (error) {
+      console.error("Unable to copy link:", error);
+    }
   };
 
+  const sharePage = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: document.title, url: currentUrl() });
+      } catch {}
+      return;
+    }
+    copyLink();
+  };
+
+  const openShare = (url) =>
+    window.open(url, "_blank", "noopener,noreferrer,width=720,height=560");
+
+  const pill =
+    "inline-flex h-11 items-center gap-2 rounded-full border border-[#746b5e]/18 bg-white/20 px-4 text-[12px] font-semibold uppercase tracking-[0.12em] text-[#61594f] transition-all hover:-translate-y-0.5 hover:border-[#746b5e]/35 hover:bg-white/45";
+
+  const icon =
+    "inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#746b5e]/18 bg-white/20 text-[#61594f] transition-all hover:-translate-y-0.5 hover:border-[#746b5e]/35 hover:bg-white/45";
+
   return (
-    <div className="flex items-center gap-4 mt-8">
-      {socialLinks.map(({ platform, url, icon, color }) => (
-        <a
-          key={platform}
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`flex items-center justify-center w-12 h-12 rounded-2xl transition-all duration-300 shadow-lg ${color} bg-gray-800 text-white`}
-          aria-label={`Share on ${platform}`}
-        >
-          {icon}
-        </a>
-      ))}
+    <div className="flex flex-wrap items-center justify-center gap-3">
+      <button type="button" onClick={sharePage} className={pill}>
+        <Share2 size={15} strokeWidth={1.7} /> Share
+      </button>
+
+      <button type="button" onClick={copyLink} className={pill}>
+        {copied ? <Check size={15} /> : <Clipboard size={15} />}
+        {copied ? "Copied" : "Copy link"}
+      </button>
 
       <button
-        onClick={copyToClipboard}
-        className="flex items-center justify-center w-12 h-12 rounded-2xl bg-gray-800 text-white hover:bg-green-500 transition-all duration-300 shadow-lg"
-        aria-label="Copy to clipboard"
+        type="button"
+        className={icon}
+        aria-label="Share on LinkedIn"
+        onClick={() =>
+          openShare(
+            `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl())}`
+          )
+        }
       >
-        {copied ? <FaCheck /> : <FaCopy />}
+        <Linkedin size={15} />
+      </button>
+
+      <button
+        type="button"
+        className={icon}
+        aria-label="Share on Facebook"
+        onClick={() =>
+          openShare(
+            `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl())}`
+          )
+        }
+      >
+        <Facebook size={15} />
       </button>
     </div>
   );

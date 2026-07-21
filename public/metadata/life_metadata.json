@@ -1,6 +1,6 @@
 [
     {
-        "title": "ASML 荷蘭總部實習紀錄與心得",
+        "title": "ASML 荷蘭總部實習紀錄",
         "date": "2025-02-21",
         "author": "James",
         "tags": [
@@ -24,9 +24,9 @@
             "MCS"
         ],
         "image": "/images/life/us-grad-school-application/application.png",
-        "description": "我發現我很不適合寫攻略，所以就寫寫自己的心路歷程跟心得就好。其實一開始來美國留學的選項完全不在人生規劃中，所以這決定做得非常突然，大概大四已經過了一半，出國這個選項突然出現在生命中，我自己都覺得很荒謬，但認真想了一下，發現好像不是完全沒有可能。",
-        "readTime": 7,
-        "path": "us-grad-school-application"
+        "description": "我發現我很不適合寫攻略，所以就寫寫自己的心路歷程跟心得就好。",
+        "path": "us-grad-school-application",
+        "readTime": 7
     },
     {
         "title": "交大吉他社回顧",
@@ -37,9 +37,9 @@
             "Guitar Club"
         ],
         "image": "/images/life/guitar-club/guitar-club.jpg",
-        "description": "我是交大吉他社 13 級社長，大二的社團生活於我而言，不僅僅是享受大學時光並結交新朋友，他是一個人生重要的歷練，也是一次對音樂認真地奉獻。",
-        "readTime": 5,
-        "path": "guitar-club"
+        "description": "擔任交大吉他社社長的一年，是我第一次真正帶領一個團隊，也讓我重新理解什麼是責任、決策與領導。",
+        "path": "guitar-club",
+        "readTime": 4
     },
     {
         "title": "梅竹黑客松籌備全紀錄",

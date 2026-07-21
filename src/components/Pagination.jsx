@@ -1,85 +1,36 @@
 "use client";
 
-import { useRouter, useSearchParams } from "next/navigation";
-import { ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from "lucide-react";
-import { Button } from "./ui/button";
-import { useCallback } from "react";
+export default function Pagination({ currentPage, totalPages, goToPage }) {
+  if (totalPages <= 1) return null;
 
-const Pagination = ({ currentPage, totalPages, goToPage }) => {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-
-  const getPageNumbers = () => {
-    if (totalPages <= 5) {
-      return Array.from({ length: totalPages }, (_, i) => i + 1);
-    }
-    if (currentPage <= 3) {
-      return [1, 2, 3, "...", totalPages];
-    }
-    if (currentPage >= totalPages - 2) {
-      return [1, "...", totalPages - 2, totalPages - 1, totalPages];
-    }
-    return [1, "...", currentPage - 1, currentPage, currentPage + 1, "...", totalPages];
-  };
+  const buttonClass =
+    "inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#746b5e]/20 bg-white/15 text-lg text-[#5e574e] transition-all hover:border-[#746b5e]/40 hover:bg-white/40 disabled:cursor-not-allowed disabled:opacity-30";
 
   return (
-    <div className="flex justify-center mt-16 space-x-1">
-      {/* 跳到第一頁 */}
-      <Button
-        onClick={() => goToPage(1)}
-        disabled={currentPage === 1}
-        className="px-3 py-2 border border-gray-400 text-gray-600 hover:bg-gray-600 cursor-pointer hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-      >
-        <ChevronsLeft size={20} />
-      </Button>
-
-      {/* 上一頁 */}
-      <Button
+    <nav aria-label="Pagination" className="flex items-center justify-center gap-3">
+      <button
+        type="button"
         onClick={() => goToPage(currentPage - 1)}
         disabled={currentPage === 1}
-        className="px-3 py-2 border border-gray-400 text-gray-600 hover:bg-gray-600 cursor-pointer hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+        className={buttonClass}
+        aria-label="Previous page"
       >
-        <ChevronLeft size={20} />
-      </Button>
+        ←
+      </button>
 
-      {/* 頁碼 */}
-      {getPageNumbers().map((page, index) =>
-        page === "..." ? (
-          <span key={index} className="px-3 py-2 text-gray-500">
-            ...
-          </span>
-        ) : (
-          <Button
-            key={page}
-            onClick={() => goToPage(page)}
-            className={`px-3 py-2 border border-gray-400 text-gray-600 hover:bg-gray-600 cursor-pointer hover:text-white transition-all duration-300 ${
-              currentPage === page ? "bg-gray-600 text-white" : "bg-white"
-            }`}
-          >
-            {page}
-          </Button>
-        )
-      )}
+      <span className="min-w-[130px] text-center font-serif text-sm italic text-[#746b5e]">
+        Page {currentPage} of {totalPages}
+      </span>
 
-      {/* 下一頁 */}
-      <Button
+      <button
+        type="button"
         onClick={() => goToPage(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className="px-3 py-2 border border-gray-400 text-gray-600 hover:bg-gray-600 cursor-pointer hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+        className={buttonClass}
+        aria-label="Next page"
       >
-        <ChevronRight size={20} />
-      </Button>
-
-      {/* 跳到最後一頁 */}
-      <Button
-        onClick={() => goToPage(totalPages)}
-        disabled={currentPage === totalPages}
-        className="px-3 py-2 border border-gray-400 text-gray-600 hover:bg-gray-600 cursor-pointer hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-      >
-        <ChevronsRight size={20} />
-      </Button>
-    </div>
+        →
+      </button>
+    </nav>
   );
-};
-
-export default Pagination;
+}

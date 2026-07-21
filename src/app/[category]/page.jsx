@@ -1,8 +1,8 @@
-import ArticleList from "@/components/ArticleList";
+import ArticleList from "../../components/ArticleList";
 import { Suspense } from "react";
 
-export default function LeetcodePage({ params, searchParams }) {
-  const { category } = params; 
+export default async function LeetcodePage({ params, searchParams }) {
+  const { category } = await params;
 
   const defaultConfig = {
     life: {
@@ -24,13 +24,17 @@ export default function LeetcodePage({ params, searchParams }) {
   };
 
   const { title, json_path } = defaultConfig[category] || {
-    title: queryTitle || "Default Articles",
-    json_path: queryJsonPath || "/metadata/default_metadata.json",
+    title: "Default Articles",
+    json_path: "/metadata/default_metadata.json",
   };
 
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <ArticleList json_path={json_path} title={title} category={category} />
+      <ArticleList
+        json_path={json_path}
+        title={title}
+        category={category}
+      />
     </Suspense>
   );
 }
@@ -40,6 +44,6 @@ export async function generateStaticParams() {
     { category: "life" },
     { category: "program" },
     { category: "travel" },
-    { category: "other" }
+    { category: "other" },
   ];
 }

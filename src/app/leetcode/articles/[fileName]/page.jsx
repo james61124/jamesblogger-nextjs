@@ -12,7 +12,7 @@ export default async function CategoryPage({ params }) {
 
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <Article category="leetcode" fileName={fileName} json_path="/metadata/leetcode_metadata.json" title="Leetcode Notes" />;
+      <Article category="leetcode" fileName={fileName} json_path="/metadata/leetcode_metadata.json" title="Leetcode Notes" />
     </Suspense>
   );
   
