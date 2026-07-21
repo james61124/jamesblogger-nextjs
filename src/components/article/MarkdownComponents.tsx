@@ -123,7 +123,10 @@ export const markdownComponents: Components = {
   ),
 
   img: ({ src, alt }) => (
-    <EditorialImage src={src || ""} alt={alt || ""} />
+    <EditorialImage
+      src={typeof src === "string" ? src : ""}
+      alt={typeof alt === "string" ? alt : ""}
+    />
   ),
 
   div: ({ node, className, children, ...props }) => {
