@@ -12,7 +12,7 @@ const journeyItems: JourneyItem[] = [
     subtitle: "SDE Intern",
     description:
       "My first experience as a software engineer in the United States, building large-scale distributed systems while learning how software is developed and operated at Amazon's scale.",
-    image: "/images/amazon.jpg",
+    image: "/images/amazon.JPG",
     imageAlt: "Amazon office building",
     stamp: "Jul 2026 · USA",
     accent: "blue",
