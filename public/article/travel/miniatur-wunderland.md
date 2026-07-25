@@ -6,6 +6,7 @@ tags: Germany,Hamburg,Miniatur Wunderland
 image: /images/travel/miniatur-wunderland/concert.jpg
 description: "太喜歡這裡了所以決定拉一篇出來寫，這裡因為太熱門了所以一定要提前預約，然後要選好的時段，因為我們總共在這裡待了 5 個小時，如果逛到最後時間不夠一定會覺得超可惜。"
 readTime: 3
+id: 8c4f3b28-ad21-4ce6-9f66-1ed6b4d4faf0
 ---
 
 太喜歡這裡了所以決定拉一篇出來寫，這裡因為太熱門了所以一定要提前預約，然後要選好的時段，因為我們總共在這裡待了 5 個小時，如果逛到最後時間不夠一定會覺得超可惜。

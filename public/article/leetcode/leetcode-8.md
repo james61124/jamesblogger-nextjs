@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: f3991e1c-2a10-443e-baae-2568ad019d55
 ---
 
 給一個 string，要去掉 leading whitespace，判斷正負號，去掉 leading zeros，最後回傳這個 string 轉成 integer 的結果，如果這個數字超過 [-2^31, 2^31 - 1]，就回傳 -2^31 或 2^31 - 1

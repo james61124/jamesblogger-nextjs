@@ -7,6 +7,7 @@ difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: 71ce1eae-4666-47c0-81c7-3f49e06ac5c9
 ---
 
 給一個數字 n，計算 0 ~ n 每個數字的 binary 各有多少 1。

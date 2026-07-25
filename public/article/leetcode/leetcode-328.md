@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: a6d2a93e-c4aa-4cba-8110-d8d5f9093db4
 ---
 
 給一條 linked list，重新 reorder，其中單數 index 的 node 要放前面，雙數 index 的 node 要放後面

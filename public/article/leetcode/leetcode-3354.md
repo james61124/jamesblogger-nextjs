@@ -7,6 +7,7 @@ difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 9f2a702f-7897-457f-b284-1cc609ec7035
 ---
 
 給 nums[i]，我們只能選擇 nums[i] == 0 的點當 starting point，我們可以任選從左邊或右邊出發，當碰到非 0 的 grid，該格就要減一並往反方向走，如果走出 array 的邊界就結束，要問我們有多少種出發的方式可以讓我們把整個 array 都清成 0

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 2
+id: ae77015e-48a3-41ce-b02a-2f40c7c5abdf
 ---
 
 給一個 strictly increasing array，要找到最長的 Fibonacci Subsequence，注意 Subsequence 本身不用像 Subarray 一樣要連續

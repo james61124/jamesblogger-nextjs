@@ -6,6 +6,7 @@ tags: Algorithm,DP,0/1 Knapsack Problem,Unbounded Knapsack Problem,Bounded Knaps
 image: /images/program/algorithm.png
 description: "背包問題是一種很經典的 DP 問題，敘述如下：有一個背包，他最多可以容納總重 W 的物品，而我總共有 n 個物品，每個物品的重量為 w[i]，價值為 v[i]，請選擇一組放物品的方法讓背包內的重量不會超重且價值最大化。"
 readTime: 2
+id: f742443d-3ebf-48ee-836d-9a0656067c9d
 ---
 
 背包問題是一種很經典的 DP 問題，敘述如下：

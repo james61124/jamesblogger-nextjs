@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 2
 readTime: 3
+id: e60b9dc0-41e6-4804-88b4-61ba95d36f10
 ---
 
 給一個整數 array `nums`，找出所有不重複的 a, b, c，使得 `a + b + c = 0`

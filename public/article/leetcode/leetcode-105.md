@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: 9c409c9f-929d-45a2-a9f8-e27f7d09b4d0
 ---
 
 給 Preorder Traversal 跟 Inorder Traversal 的結果，要 return 原先的 Tree。

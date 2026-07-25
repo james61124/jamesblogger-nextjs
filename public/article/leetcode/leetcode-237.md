@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: 17074389-f479-4feb-b899-5fd4d51618db
 ---
 
 給一個要被刪除的 ListNode pointer，刪除這個 node，要注意題目只會給這個 node，並不會給 linked list 的 head

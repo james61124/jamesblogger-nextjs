@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 3
+id: 47a22340-50c4-4702-9b24-e665be47c06b
 ---
 
 給一個 2D 的 Matrix `board`，還有一個 string `word`，判斷這個 `word` 能不能在 `board` 中相鄰的被拼出來。 

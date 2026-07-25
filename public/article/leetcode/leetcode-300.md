@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 3
+id: 9a7a3732-093a-41a7-b7ca-81bf30dce537
 ---
 
 在一個給定的 array 中，找出一個長度最長的遞增的 subarray，這個 subarray 中的 element 必須是按順序排列，但並不要求它們在原本的 array 中的位置是連續的。

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 3
 readTime: 3
+id: b56cf223-ab17-45e5-8a92-5d0566d6024a
 ---
 
 題目給一個 `text` 還有一份 `replacements` 的對應表，`text` 會出現 `%<key>%` 的 placeholder，要去 `replacements` 裡面找到 key 對應的 value 把它替換掉，但是要注意的是在這個 value 裡面可能也會有 `%<key>%`，所以要持替換下去直到沒有出現 `%`。

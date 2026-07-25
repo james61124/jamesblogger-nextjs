@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 2
+id: af8c40c0-8e50-41af-b232-a88934b9383a
 ---
 
 給定一個 `m × n` 的 matrix `grid`，其中 grid[i][j] 代表該位置的 value。你只能向右或向下移動，從左上角 (0,0) 走到 右下角 (m-1, n-1)，求路徑上的數值總和的 min。

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 3
+id: f23aeb92-cf1d-40c5-acb2-9e9351fde764
 ---
 
 給兩個 sorted linked list，合併成一個 sorted linked list

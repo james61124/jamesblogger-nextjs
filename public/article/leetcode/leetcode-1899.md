@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: f9b8fd2d-e681-4a7f-b2f6-c29b6c06b027
 ---
 
 給一個 triplets array，而 triplets[i] = [ai, bi, ci]，再來給一個 target = [x, y, z]，任選兩個 triplets i 跟 j，可以將其中一個 triplet 改成 [max(ai, aj), max(bi, bj), max(ci, cj)]，如果可以成功合併出 target 就回傳 `true`，否則回傳 `false`。

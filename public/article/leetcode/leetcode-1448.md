@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 06121719-5fd3-402e-89af-e7c63dc8cbbd
 ---
 
 給一個 Binary Tree，如果有一個 node 從 root 走到這個 node 路上沒有任何 node 的 value 比他的 value 大，那這個 node 就是 good node，計算所有 good node 的數量。

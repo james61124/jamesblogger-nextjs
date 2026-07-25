@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 700ab870-715a-491f-80c3-f6e897081e90
 ---
 
 你有一支股票的價格清單 `prices`，prices[i] 是第 i 天的價格，你可以在任意天買入或賣出股票，但賣出後你必須冷卻（ cooldown ）一天，才能再買入下一支股票，請找出可以獲得的最大利潤是多少。

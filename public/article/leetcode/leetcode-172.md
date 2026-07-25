@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 3
+id: 8cccabb0-17ae-4bb0-9762-e45523fc0a14
 ---
 
 給一個數字 `n`，輸出 n 階乘的數字中結尾會出現幾個 0

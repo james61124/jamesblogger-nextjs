@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 16687a93-387b-4cfa-a717-09eedf77e0bd
 ---
 
 給一個 n x n 的 board[i][j]，用從下到上、左右交錯的方式編號成 1...n^2，如果 board[i][j] = -1 代表沒事，如果是正數 v，代表他可以直接傳送到編號 v，題目要求如果從編號 1 出發，每次可以選擇走 1 ~ 6 步，問最短幾個 steps 可以走到編號 n * n。

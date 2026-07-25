@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 2
+id: 5b373957-7363-4684-bc95-ff17c6624dce
 ---
 
 給一個 `m x n` 的 2D Matrix `board`，每個格子是 `X` 或 `O`，目標是將所有被 `X` 完全包圍的 `O` 改為 `X`。

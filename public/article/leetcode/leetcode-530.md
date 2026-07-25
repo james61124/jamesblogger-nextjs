@@ -7,6 +7,7 @@ difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 7524758d-2451-4c6c-b2c8-5dbefdf5ecad
 ---
 
 給一個 Binary Search Tree，回傳任意兩個 nodes 之間最小的差值

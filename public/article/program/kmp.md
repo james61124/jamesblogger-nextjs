@@ -6,6 +6,7 @@ tags: Algorithm,KMP
 image: /images/program/algorithm.png
 description: "如果想要在一個 string `text` 底下判斷 string `pattern` 是不是他的 substring，暴力解非常直覺，舉個例："
 readTime: 2
+id: 4d2f65b4-5de6-4f50-ae75-0c76664eb4af
 ---
 
 如果想要在一個 string `text` 底下判斷 string `pattern` 是不是他的 substring，暴力解非常直覺，舉個例：

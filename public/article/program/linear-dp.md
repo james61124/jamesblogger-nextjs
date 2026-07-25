@@ -6,6 +6,7 @@ tags: Algorithm,DP,Linear DP
 image: /images/program/algorithm.png
 description: "當一個問題可以被分成「線性順序」的多個階段，而每個階段只依賴前面幾個階段的狀態，就是 Linear DP"
 readTime: 2
+id: a0453b78-23ce-402d-9574-0fe770337d4f
 ---
 
 Linear DP 是什麼呢？簡單來說，就是

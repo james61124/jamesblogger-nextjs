@@ -7,6 +7,7 @@ difficulty: Hard
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: e15dbe74-e6ff-4113-b8ba-bb10ea725a89
 ---
 
 這題要 implement 兩個 function，`serialize` 要把一個 binary tree 轉成 string 儲存，而 `deserialize` 要把 string 轉回 binary tree。

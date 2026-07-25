@@ -6,6 +6,7 @@ tags: Algorithm,Union Find
 image: /images/program/algorithm.png
 description: "Union Find 是一種 Tree Structure，專門用來判斷兩個 element 是不是隸屬同一個 Disjoint Set，而他的想法非常好理解，只要兩個 element 的 root 是同一個人，就表示他們在同一顆 Tree 中，也就是他們在同一個 Disjoint Set 裡面。"
 readTime: 2
+id: 5f225eba-9e81-4a1b-a9c6-c9edc2955547
 ---
 
 Union Find 是一種 Tree Structure，專門用來判斷兩個 element 是不是隸屬同一個 Disjoint Set，而他的想法非常好理解，只要兩個 element 的 root 是同一個人，就表示他們在同一顆 Tree 中，也就是他們在同一個 Disjoint Set 裡面。

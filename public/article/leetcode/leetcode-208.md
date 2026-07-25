@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: c5a92c0a-9eb8-4043-a7d4-c1d637ec4c22
 ---
 
 實作出 Trie 的 insert, search, startsWith

@@ -7,6 +7,7 @@ difficulty: Hard
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 203ccf65-9bec-49be-9a3d-836f33f093d4
 ---
 
 給一個 `n x n` 的矩陣，格子裡是高度 `0` ~ `n^2-1`，水面每秒上升 1，當水面到達 t 時，你可以走到高度 ≤ t 的格子，一開始在左上 (0,0)，要走到右下 (n-1, n-1)，只能走上下左右相鄰，求最小的時間 t，使得你可以順利從左上走到右下。

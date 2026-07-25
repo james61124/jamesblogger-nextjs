@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 3
+id: 85cc2c6d-7dd3-45d3-929c-88edf9b00778
 ---
 
 給一個 nums[i]，如果 j < i 且 nums[j] < nums[i] 就表示 (j, i) 是一個 ramp，一個 ramp 的 width = i - j，求整個 nums[i] 中 width 最大的 ramp 是多少

@@ -7,6 +7,7 @@ difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 0ade77c4-85fc-40b6-bd3a-5475bbee8f9f
 ---
 
 回傳 `nums` 中 `target` 的 index，如果找不到就回傳 -1。

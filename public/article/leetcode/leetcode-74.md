@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: 24b12445-447b-45c8-a682-a8027e5b51b1
 ---
 
 給你一個 `m x n` 的 2D matrix，每一個 row 的數字是 increasing，每個 row 的第一個數字會大於上一個 row 的最後一個數字，給一個 target 判斷他是不是在這個 matrix 中。

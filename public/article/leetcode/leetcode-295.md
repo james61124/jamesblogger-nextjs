@@ -7,6 +7,7 @@ difficulty: Hard
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: b46b01aa-bc1f-4654-a52f-978c98691352
 ---
 
 設計一個 class `MedianFinder`，支援以下兩個操作：

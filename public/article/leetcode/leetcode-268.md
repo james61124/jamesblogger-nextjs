@@ -7,6 +7,7 @@ difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: ef5cd195-5368-4bb6-b95d-ef86aed5cb9a
 ---
 
 給一個 size n 的 array，裡面會儲存 0 ~ n 其中的 ｎ 個數字，要找出缺少的那個數字。

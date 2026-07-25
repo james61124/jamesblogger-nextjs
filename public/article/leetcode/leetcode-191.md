@@ -7,6 +7,7 @@ difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: b79246ff-97e2-438b-9669-15864bd44ec5
 ---
 
 給一個 32 bits unsigned integer，return 他有幾個 １。

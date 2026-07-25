@@ -7,6 +7,7 @@ difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: fefa1970-e47b-4469-b5fd-6f1232dca68a
 ---
 
 給一個 n，求大於等於 n 最小的數且 binary 每一個 bit 都是 1 的數

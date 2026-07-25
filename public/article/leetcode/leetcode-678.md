@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 2eb0689a-546f-482f-8457-03716c8c45c8
 ---
 
 給一個 string，裡面包含 `(`, `*`, `)`，其中 `*` 可以轉成 `(`, `)` 或空字串，判斷該 string 是不是合法的括號組合。

@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: af8cffa8-9ce1-4f60-8ea7-9ea77f97801c
 ---
 
 給 `m`, `n` 代表有一張 m * n 的 matrix，給 coordinates[i][j] 代表顏色是黑色的 grid 的座標，最後要輸出一個 size 5 的 result[i]，其中 result[i] 代表「所有 2 * 2 的 block 中有 i 個黑色 grid 的 block 的數量」

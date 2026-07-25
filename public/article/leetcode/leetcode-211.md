@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: e45a6fa3-0418-404a-b232-294d5670e972
 ---
 
 實作一個 WordDictionary 的 class，要可以支援 insert string 進去，也要可以 search，不過 search 的 `word` 中可能會含有 `.`，代表該位置可以放入任意字母。 

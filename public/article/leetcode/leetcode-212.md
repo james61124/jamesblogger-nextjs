@@ -7,6 +7,7 @@ difficulty: Hard
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 97c478d8-f956-4551-aa22-c161a2adf431
 ---
 
 給一個 2D Array `board` 跟一個字串陣列 `words`，找出所有在 `board` 出現過的 string。

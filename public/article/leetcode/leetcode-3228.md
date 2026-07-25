@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 121c5248-5c5a-4c9c-a096-c9938df10a36
 ---
 
 給一個 string `s`，裡面只會出現 0 跟 1，遇到 1 可以把它往右推到下一個 1 之前，這樣算是一次 operation，直到不能再推為止，求最大可以做幾次 operation

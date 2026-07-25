@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 3
+id: 12acfc08-f7d6-44ac-b8b0-6d15c817711f
 ---
 
 透過最少的操作次數，將字母 'A' 複製並貼上，最終讓螢幕上有 n 個 'A'。

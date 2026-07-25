@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: ee953dc3-5a37-4113-908e-8b9a920677da
 ---
 
 給 nums[i]，判斷有沒有三個數字 (i, j, k) 使得 nums[i] < nums[j] < nums[k]

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: 44c2b481-7f16-45f2-a5ed-48cf45d5ab73
 ---
 
 給兩個字串 `s` 和 `t`，請判斷 `t` 是否是 `s` 的 anagram。

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 3
+id: ee91a105-dd08-4d8e-b7b0-38a332d45db8
 ---
 
 給一個 nums[i]，回傳 rotate k 次後的結果

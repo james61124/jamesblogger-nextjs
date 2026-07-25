@@ -7,6 +7,7 @@ difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 90e96ba8-0d4b-4594-98cb-180a5b038e08
 ---
 
 給一堆石頭，stones[i] 代表每顆石頭的重量，每次選出兩個最重的石頭 `x`, `y` 進行碰撞，如果 `x == y`，那兩者消失，如果 `x != y`，則留下 `abs(x - y)`，重複上述過程直到只剩一顆或沒有石頭，回傳最後石頭的重量（或 0）

@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: c9953a2f-65d5-4b0a-a656-a61eb51d6a55
 ---
 
 給一個 nums[i]，裡面只會出現 0, 1, 2 三種數字，輸出 sort 後的結果

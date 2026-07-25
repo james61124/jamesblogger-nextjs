@@ -6,6 +6,7 @@ tags: Data Structure,Hash Table,Unordered Set,Unordered Map,Unordered Multiset,U
 image: /images/program/data-structure.png
 description: "Hash Table 是一種基於 key-value pair 的 data structure，主要目的就是要讓 search, delete, insert 這些操作都是 O(1)，他利用一個 Hash Function 將 Key 映射到一個 index，然後再把 value 填進來，所以才可以用極短的時間就做到 searching 的動作。常見的 C++ Hash Table 包括下面幾種："
 readTime: 2
+id: 9e5dbef5-839b-4bf2-9ae1-a49c92908236
 ---
 
 Hash Table 是一種基於 key-value pair 的 data structure，主要目的就是要讓 search, delete, insert 這些操作都是 O(1)，他利用一個 Hash Function 將 Key 映射到一個 index，然後再把 value 填進來，所以才可以用極短的時間就做到 searching 的動作。常見的 C++ Hash Table 包括下面幾種：

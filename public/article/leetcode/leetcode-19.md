@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: 0f8bb066-5c18-4657-ad59-68795fff3287
 ---
 
 Given the `head` of a linked list, remove the `nᵗʰ` node from the end of the list and return its head.

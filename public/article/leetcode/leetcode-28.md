@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 2
+id: d057bc65-a4f2-4c49-ac38-58192d211532
 ---
 
 給兩個 string `haystack` 跟 `needle`，找出 `haystack` 中第一次出現 `needle` 的 index。

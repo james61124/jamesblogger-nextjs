@@ -6,6 +6,7 @@ tags: Data Structure,Stack,Monotonic Stack
 image: /images/program/data-structure.png
 description: "Stack 是一種 Last In, First Out (LIFO) 的 data structure，有點像是疊積木，所以最大的特色就是，你永遠只能看到最上面這個 element，要 remove element 也只能 remove 最上面的這個，所以沒有辦法看到其他的 element。"
 readTime: 2
+id: b2c98d99-06e1-44e1-94ac-3d172628df7b
 ---
 
 Stack 是一種 Last In, First Out (LIFO) 的 data structure，有點像是疊積木，所以最大的特色就是，你永遠只能看到最上面這個 element，要 remove element 也只能 remove 最上面的這個，所以沒有辦法看到其他的 element。

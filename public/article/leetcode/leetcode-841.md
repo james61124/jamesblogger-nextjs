@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: 44093491-c8bf-4afa-b824-c80459ac0b82
 ---
 
 有 n 個房間，編號從 0 到 n-1，其中 rooms[i] 包含一個 list，代表房間 i 中可以獲得的鑰匙，這些鑰匙可以用來打開其他房間。最開始，你在房間 0，且已經打開它。請判斷是否能夠訪問所有房間。

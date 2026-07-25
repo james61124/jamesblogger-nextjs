@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 2
+id: 9b878a22-4f64-4219-9cc7-59dd368000c8
 ---
 
 你是一名小偷，計畫沿著一條街道偷竊，每間房子都有一定金額的財物，存放於一個 nums[i] 中，但他不能偷相鄰的兩間房子，否則會觸發警報，請計算在這條街道上最多能偷多少錢。

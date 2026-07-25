@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 2
+id: 149d429f-36b4-4103-9c0f-67bd3d5cb48f
 ---
 
 給定一個整數 `num`，將它轉換成羅馬數字並回傳。

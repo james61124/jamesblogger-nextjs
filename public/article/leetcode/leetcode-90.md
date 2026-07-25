@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: e9169e7b-79e7-4b9b-aad2-5cfe1f440944
 ---
 
 給一個可能含有重複元素的 nums[i]，回傳其所有「不重複的 subsets」。

@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: fff1c216-c9b5-4b0d-a78a-a791b88bbd1c
 ---
 
 給一個 unsorted array，找出第 k 大的數。

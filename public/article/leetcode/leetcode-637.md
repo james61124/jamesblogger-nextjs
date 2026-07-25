@@ -7,6 +7,7 @@ difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: c94fb564-870e-409e-8908-16a604e03a69
 ---
 
 給一個 Binary Tree，求把每一層 nodes `val` 總和的平均

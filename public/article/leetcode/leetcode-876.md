@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: 0cbadc8c-db19-45d4-858d-6a52dc16589a
 ---
 
 給一個 linked list，要 return 中間那個 node。

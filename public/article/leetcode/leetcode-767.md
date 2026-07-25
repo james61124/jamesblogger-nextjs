@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 42c868bb-93b6-432a-a50f-2e7560a0fe43
 ---
 
 給一個 string `s`，要 reorganize `s` 讓每個重複的字母都不相鄰，如果沒辦法就要回傳 ""

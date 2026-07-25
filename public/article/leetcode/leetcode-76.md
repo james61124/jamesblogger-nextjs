@@ -7,6 +7,7 @@ difficulty: Hard
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: a0e7669b-b85b-49c3-9954-7d0cf75a9095
 ---
 
 給兩個 string `s` 和 `t`，請在 `s` 中找到最短的 substring，使得這個 substring 包含 `t` 中的所有字母（包括重複的字母）。

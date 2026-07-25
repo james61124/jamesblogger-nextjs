@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 2
 readTime: 3
+id: e2515db2-1b7c-461f-8ead-555e51834129
 ---
 
 給 n 個城市與 n - 1 條 edges，保證整張 graph 是聯通的，問最少需要 reverse 多少條 edges 才能讓所有 nodes 都可以到達 node 0

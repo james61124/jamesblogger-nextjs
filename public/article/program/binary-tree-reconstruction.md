@@ -6,6 +6,7 @@ tags: Data Structure,Binary Tree
 image: /images/program/data-structure.png
 description: "Binary Tree 除了要會三種基本的 traversal，如何從這些 traversal 的 array 重新建構出一棵樹也是很重要的，下面舉了三種最常見的例子跟解題思路，簡單來說，我們要先找到其中一種 traversal 的 root，在另一邊定位出來之後，就可以很好的分辨 left subtree 跟 right subtree 的位置了。"
 readTime: 5
+id: 30fec699-b75f-41b4-9c38-ee4eb31e5ac6
 ---
 
 Binary Tree 除了要會三種基本的 traversal，如何從這些 traversal 的 array 重新建構出一棵樹也是很重要的，下面舉了三種最常見的例子跟解題思路，Construct Binary Tree from Preorder and Inorder Traversal、Construct Binary Tree from Postorder and Inorder Traversal 和 Construct Binary Tree from Preorder and Postorder Traversal。

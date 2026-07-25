@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 3
+id: 114d4423-05ae-4982-ba7a-c5a79d611fea
 ---
 
 給你一個字串 `s`，找出最長的回文 substring 並回傳它。

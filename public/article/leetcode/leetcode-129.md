@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: a70f37f8-f345-45fb-9b50-91dbc7f547f8
 ---
 
 給一個 Binary Tree，每個 node 都是 0-9 的數字，從 root -> leaf 會有一條 path，把 path 上的數字視為一個整數，然後把所有整數相加，回傳總和

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 2
 readTime: 3
+id: 42405387-b437-458f-bf4a-7b8854dbc0f6
 ---
 
 給一個 string `s`，裡面只有 `0`, `1`，算出所有 `0`, `1` 數量一樣且 `0`, `1` 彼此相連的 substring 的數量

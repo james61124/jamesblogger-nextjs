@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 8b05a15f-5b0a-4a78-af9e-438befec3f7b
 ---
 
 給一個 nums[i]，random 取出其中一個數字，其中每個數字被取到的機率為 nums[i] / sum(nums)

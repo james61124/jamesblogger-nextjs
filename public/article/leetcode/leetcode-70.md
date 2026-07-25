@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: 8f318a0c-7f63-4f44-bd92-908aca645188
 ---
 
 有一條階梯，我們只能跳一步或是跳兩步，求我們要跳到第 n 階總共有幾種跳法？

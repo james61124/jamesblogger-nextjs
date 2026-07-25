@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: 349d43e8-868d-4719-b00d-5cc1c1b73ae5
 ---
 
 給一個區間列表 `intervals`，其中每個區間由一個 array 表示 [start, end]，請合併所有重疊的區間並返回合併後的區間。

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: f892b223-6c51-47e2-bf4e-365510851e13
 ---
 
 給一個 Binary Tree，判斷他是不是對稱的

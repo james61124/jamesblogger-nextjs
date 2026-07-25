@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 2
 readTime: 3
+id: 50bb855f-32e6-46bd-960a-e77711949e8a
 ---
 
 給一個 complete binary tree，就是除了最後一層，其他層都是滿的，且最後一層是由左到右排，然後要計算出這個 tree 有多少 nodes

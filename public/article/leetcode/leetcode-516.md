@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 3
 readTime: 3
+id: 64441b19-7b1c-48cc-ac4c-5dbf241e8888
 ---
 
 給一個 string `s`，找出最長的 palindromic subsequence 長度。

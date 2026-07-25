@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: 4ad1cd5a-84b3-496c-81e7-ff1b60081f63
 ---
 
 給一個整數 array `nums` 和一個整數 `k`，請判斷是否存在兩個相同的數字，且它們的 index 距離最多為 k。

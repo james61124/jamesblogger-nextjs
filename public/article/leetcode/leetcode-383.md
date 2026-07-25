@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: 52c06c74-7b3c-46e3-a5e1-36709ff3fdb0
 ---
 
 給兩個 string `ransomNote` 跟 `magazine`，判斷 `ransomNote` 是不是可以用 `magazine` 的字母組合出來

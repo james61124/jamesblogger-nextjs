@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 3
+id: 19767747-f368-4f32-b21d-08f78628aaad
 ---
 
 給一個 increasing 但是被 rotate 過的 sorted array，回傳他被 rotate 了幾次。

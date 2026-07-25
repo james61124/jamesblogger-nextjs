@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 3
+id: 446fb038-6338-40bd-8764-bca83e244aa3
 ---
 
 給一個整數 array `temperatures`，表示每天的溫度，對於每一天，我們需要找到離當天最近的一個更高的日子，並返回該天跟當前天的天數，如果沒有更高的溫度，就返回 0。

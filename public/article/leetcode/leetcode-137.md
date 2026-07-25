@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: 5b5a154d-dc1e-40c8-8827-6c6da0464088
 ---
 
 給 nums[i]，每種數字都會出現剛好三次，只有一種數字只出現一次，找出這個數字

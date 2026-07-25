@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: a5fe6f35-870a-4064-a7b8-5467b6e2a5c9
 ---
 
 給一個包含 n + 1 個整數的陣列 `nums`，其中每個整數都在範圍 [1, n] 之間，回傳唯一重複的那個值。

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: 9063c2d1-c3da-4384-b823-5bbd0a17b540
 ---
 
 給兩個 string `s`, `t`，判斷 `s` 是不是 `t` 的 subsequence。

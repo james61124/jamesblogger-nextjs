@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: 20645195-cc56-44cc-84da-910b557fa121
 ---
 
 給你一個 coins[i]，代表各種硬幣的面額（ 每種面額的硬幣數量無限 ），再給一個 int `amount`，代表你要湊出的金額，請找出最少需要幾枚硬幣，才能剛好湊出 amount。

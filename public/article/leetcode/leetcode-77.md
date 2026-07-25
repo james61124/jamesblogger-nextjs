@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 6b8eb84d-d7ed-492b-b87f-99efeaf25980
 ---
 
 給 n, k，求 [1, n] 中所有 k 個數字的 combinations

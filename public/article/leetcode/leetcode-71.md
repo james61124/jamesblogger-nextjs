@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 87c24057-d959-49fb-ab24-0b1910bf82ca
 ---
 
 給一個 Unix 風格的檔案路徑，要把它 simplify 成標準格式。

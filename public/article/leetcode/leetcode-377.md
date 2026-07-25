@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 2855b541-fc97-4822-92dc-b1dca6f6bd39
 ---
 
 給 nums[i] 還有 target，從 nums[i] 裡拿數字出來加總成 target，問總共有幾種方法可以讓總和剛好為 target，注意順序不一樣要算成不同組合數

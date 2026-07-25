@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 2
+id: b3a29228-99e9-4f73-92a0-533ccec15889
 ---
 
 給一個只包含正整數的 array `nums`，請判斷是否能將這個陣列分成兩個 subset，使得它們的總和相等。

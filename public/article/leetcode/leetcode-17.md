@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: 81931f80-50f5-477b-ad3e-445542851348
 ---
 
 給一個只包含數字 `2-9` 的字串 `digits`，請回傳所有可能的字母組合。這些組合是根據電話鍵盤上的數字對應字母所轉換出來的。

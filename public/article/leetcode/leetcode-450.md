@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 2
+id: 958c2f86-b121-4362-bb71-b9bdddd6a9c2
 ---
 
 給一個 Binary Search Tree (BST) 的 `root` 和一個整數 `val`，要在 BST 中 delete `val` 這個 node。

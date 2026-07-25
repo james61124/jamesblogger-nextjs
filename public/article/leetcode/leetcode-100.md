@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: 63788f38-d2a4-406f-bb68-fb8989255053
 ---
 
 給兩個 binary tree，判斷兩個 binary tree 是不是長一樣。

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 3
+id: f2b2028c-50ff-4f54-a443-fe33aed9f7b8
 ---
 
 給一個 nums[i]，找到一個 peak，他前面跟後面的數字都比自己小

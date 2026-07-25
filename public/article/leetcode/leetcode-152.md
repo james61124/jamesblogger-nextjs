@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 3
 readTime: 3
+id: fb776d26-2751-46f2-9866-7c0f4d7be493
 ---
 
 給一個整數 array，return 乘積最大的 subarray 的乘積。

@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: ca6f7716-22cb-4b27-999c-f8e576df9222
 ---
 
 給定一個不含重複數字的 nums[i]，請回傳所有可能的排列（ permutations ）。

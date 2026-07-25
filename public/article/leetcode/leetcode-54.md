@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 2
+id: 95bc5602-fe1d-4d8c-aefa-0a94208545f7
 ---
 
 給一個 `m x n` 的 matrix，請按照 spiral order 返回 matrix 中的所有 element。

@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: d35590f6-c088-4864-9d72-fc37bf2d9f18
 ---
 
 你需要修 numCourses 門課，這些課程從 0 到 numCourses - 1 編號。某些課程有先修課，用一個 prerequisites array 來表示，prerequisites[i] = [a, b]，意思是：

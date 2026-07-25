@@ -1,236 +1,3 @@
-// "use client";
-
-// import { useState, useEffect, useRef } from "react";
-// import { motion, useAnimationControls, AnimatePresence } from "framer-motion";
-// import Link from "next/link";
-// import { usePathname } from "next/navigation";
-// import { Menu, X, ChevronDown } from "lucide-react";
-
-// export default function Navbar() {
-//   const [isScrolled, setIsScrolled] = useState(false);
-//   const [isOpen, setIsOpen] = useState(false);
-//   const [isProgramDropdownOpen, setIsProgramDropdownOpen] = useState(false);
-//   const controls = useAnimationControls();
-//   const pathname = usePathname();
-//   const dropdownRef = useRef(null);
-
-//   // 是否在首頁
-//   const isHome = pathname === "/";
-
-//   // 監聽滾動事件，切換 Navbar 狀態
-//   useEffect(() => {
-//     const handleScroll = () => setIsScrolled(window.scrollY > 50);
-//     window.addEventListener("scroll", handleScroll);
-//     return () => window.removeEventListener("scroll", handleScroll);
-//   }, []);
-
-//   // 點擊外部關閉下拉選單
-//   useEffect(() => {
-//     const handleClickOutside = (event) => {
-//       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-//         setIsProgramDropdownOpen(false);
-//       }
-//     };
-
-//     document.addEventListener("mousedown", handleClickOutside);
-//     return () => document.removeEventListener("mousedown", handleClickOutside);
-//   }, []);
-
-//   // 控制手機選單的動畫
-//   const toggleMenu = () => {
-//     setIsOpen(prev => !prev);
-//     controls.start({ opacity: isOpen ? 0 : 1, x: isOpen ? 50 : 0 });
-//   };
-
-//   // 根據是否滾動 + 是否為首頁 決定 Navbar 顏色
-//   const navTextColor = isScrolled || !isHome ? "text-gray-900" : "text-white";
-//   const hoverTextColor = isScrolled || !isHome ? "hover:text-black" : "hover:text-gray-300";
-
-//   const navLinks = [
-//     {
-//       label: "Life",
-//       path: {
-//         pathname: "/life",
-//       },
-//     },
-//     {
-//       label: "Travel",
-//       path: {
-//         pathname: "/travel",
-//       },
-//     },
-//     {
-//       label: "Program",
-//       path: null, // 這個有下拉選單，所以不直接導航
-//       hasDropdown: true,
-//       dropdownItems: [
-//         {
-//           label: "Leetcode Roadmap",
-//           path: {
-//             pathname: "/leetcode-roadmap",
-//           },
-//         },
-//         {
-//           label: "Others",
-//           path: {
-//             pathname: "/other",
-//           },
-//         },
-//       ],
-//     },
-//     {
-//       label: "Leetcode",
-//       path: {
-//         pathname: "/leetcode",
-//       },
-//     },
-//   ];
-
-//   // 檢查是否為 Program 相關頁面
-//   const isProgramActive = pathname.startsWith("/program");
-
-//   return (
-//     <motion.nav
-//       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-//         isScrolled || !isHome ? "bg-white shadow-md h-16" : "bg-transparent h-20"
-//       }`}
-//     >
-//       <div className="container mx-auto flex items-center justify-between px-6 py-4">
-//         {/* Logo 區域 */}
-//         <Link href="/" className={`text-2xl font-bold ${navTextColor}`}>
-//           James Blogger
-//         </Link>
-
-//         {/* Desktop 導航連結 */}
-//         <div className="hidden md:flex space-x-8">
-//           {navLinks.map((link, index) => {
-//             if (link.hasDropdown) {
-//               return (
-//                 <div key={index} className="relative" ref={dropdownRef}>
-//                   <button
-//                     onClick={() => setIsProgramDropdownOpen(!isProgramDropdownOpen)}
-//                     className={`flex items-center space-x-1 cursor-pointer transition-colors duration-300 ${navTextColor} ${hoverTextColor} ${
-//                       isProgramActive ? 'text-blue-600' : ''
-//                     }`}
-//                   >
-//                     <span>{link.label}</span>
-//                     <motion.div
-//                       animate={{ rotate: isProgramDropdownOpen ? 180 : 0 }}
-//                       transition={{ duration: 0.2 }}
-//                     >
-//                       <ChevronDown size={16} />
-//                     </motion.div>
-//                   </button>
-
-//                   {/* 下拉選單 */}
-//                   <AnimatePresence>
-//                     {isProgramDropdownOpen && (
-//                       <motion.div
-//                         initial={{ opacity: 0, y: -10 }}
-//                         animate={{ opacity: 1, y: 0 }}
-//                         exit={{ opacity: 0, y: -10 }}
-//                         transition={{ duration: 0.2 }}
-//                         className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden"
-//                       >
-//                         {link.dropdownItems.map((item, itemIndex) => (
-//                           <Link
-//                             key={itemIndex}
-//                             href={item.path}
-//                             className={`block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-colors ${
-//                               pathname === item.path.pathname ? 'bg-blue-50 text-blue-600' : ''
-//                             }`}
-//                             onClick={() => setIsProgramDropdownOpen(false)}
-//                           >
-//                             {item.label}
-//                           </Link>
-//                         ))}
-//                       </motion.div>
-//                     )}
-//                   </AnimatePresence>
-//                 </div>
-//               );
-//             }
-
-//             return (
-//               <motion.div key={index} whileHover={{ scale: 1.1 }}>
-//                 <Link
-//                   href={link.path}
-//                   className={`relative transition-colors duration-300 ${navTextColor} ${hoverTextColor} ${
-//                     pathname === link.path.pathname ? 'text-blue-600' : ''
-//                   }`}
-//                 >
-//                   {link.label}
-//                   <motion.span
-//                     className="absolute left-0 bottom-0 w-full h-0.5 bg-current"
-//                     initial={{ scaleX: 0 }}
-//                     whileHover={{ scaleX: 1 }}
-//                     transition={{ duration: 0.3 }}
-//                   />
-//                 </Link>
-//               </motion.div>
-//             );
-//           })}
-//         </div>
-
-//         {/* 行動裝置漢堡按鈕 */}
-//         <button className="md:hidden text-gray-300 hover:text-white" onClick={toggleMenu}>
-//           <motion.div animate={{ rotate: isOpen ? 180 : 0 }}>
-//             {isOpen ? <X size={28} /> : <Menu size={28} />}
-//           </motion.div>
-//         </button>
-
-//         {/* 行動選單 */}
-//         {isOpen && (
-//           <motion.div
-//             initial={{ opacity: 0, y: -20 }}
-//             animate={{ opacity: 1, y: 0 }}
-//             exit={{ opacity: 0, y: -20 }}
-//             transition={{ duration: 0.3, ease: "easeInOut" }}
-//             className="absolute top-16 left-0 w-full bg-[rgba(30,30,30,0.85)] backdrop-blur-lg md:hidden transition-all"
-//           >
-//             <ul className="flex flex-col items-center py-6 space-y-6">
-//               {navLinks.map((link, index) => {
-//                 if (link.hasDropdown) {
-//                   return (
-//                     <div key={index} className="w-full">
-//                       <div className="text-center text-[#EDE9E3] text-xl font-medium mb-2">
-//                         {link.label}
-//                       </div>
-//                       {link.dropdownItems.map((item, itemIndex) => (
-//                         <motion.li key={itemIndex} whileHover={{ scale: 1.05 }} className="w-full">
-//                           <Link
-//                             href={item.path}
-//                             className="block text-[#C0B9A8] text-lg px-6 py-2 text-center hover:text-[#EDE9E3] transition-all"
-//                             onClick={() => setIsOpen(false)}
-//                           >
-//                             • {item.label}
-//                           </Link>
-//                         </motion.li>
-//                       ))}
-//                     </div>
-//                   );
-//                 }
-
-//                 return (
-//                   <motion.li key={index} whileHover={{ scale: 1.05 }}>
-//                     <Link
-//                       href={link.path}
-//                       className="text-[#EDE9E3] text-xl px-6 py-3 rounded-lg hover:text-[#C0B9A8] transition-all"
-//                       onClick={() => setIsOpen(false)}
-//                     >
-//                       {link.label}
-//                     </Link>
-//                   </motion.li>
-//                 );
-//               })}
-//             </ul>
-//           </motion.div>
-//         )}
-//       </div>
-//     </motion.nav>
-//   );
-// }
-
 "use client";
 
 import { useEffect, useRef, useState } from "react";
@@ -238,6 +5,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
+import { createClient } from "@/lib/supabase/client";
+import { CircleUserRound } from "lucide-react";
+import { syncUserProfile } from "@/lib/supabase/profile";
+const supabase = createClient();
 
 type NavPath = {
   pathname: string;
@@ -295,9 +66,18 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isProjectsOpen, setIsProjectsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   const isHome = pathname === "/";
-  const hasSolidBackground = isScrolled || !isHome;
+  const hasSolidBackground = !isHome || (mounted && isScrolled);
+
+  const [user, setUser] = useState<any>(null);
+  const userMenuRef = useRef<HTMLDivElement | null>(null);
+  const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 48);
@@ -325,6 +105,66 @@ export default function Navbar() {
     setIsOpen(false);
     setIsProjectsOpen(false);
   }, [pathname]);
+
+  useEffect(() => {
+    const supabase = createClient();
+
+    async function loadUser() {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+
+      setUser(user);
+
+      if (user) {
+        await syncUserProfile();
+      }
+    }
+
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange(async (_event, session) => {
+      setUser(session?.user ?? null);
+
+      if (session?.user) {
+        await syncUserProfile();
+      }
+    });
+
+    return () => subscription.unsubscribe();
+  }, []);
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (
+        userMenuRef.current &&
+        !userMenuRef.current.contains(e.target as Node)
+      ) {
+        setIsUserMenuOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () =>
+      document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  async function handleAvatarClick() {
+    if (!user) {
+      await supabase.auth.signInWithOAuth({
+        provider: "google",
+        options: {
+          redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(
+            window.location.pathname + window.location.search
+          )}`,
+        },
+      });
+      return;
+    }
+
+    setIsUserMenuOpen((v) => !v);
+  }
 
   const isProjectsActive =
     pathname.startsWith("/leetcode-roadmap") ||
@@ -478,6 +318,92 @@ export default function Navbar() {
               </Link>
             );
           })}
+
+          <div className="relative" ref={userMenuRef}>
+            <button
+              onClick={handleAvatarClick}
+              className="overflow-hidden rounded-full transition-opacity hover:opacity-80 cursor-pointer"
+            >
+              {user ? (
+                <img
+                  src={user.user_metadata.avatar_url}
+                  alt=""
+                  className="h-9 w-9 rounded-full border border-black/10"
+                />
+              ) : (
+                <div
+                  className={[
+                    "flex h-9 w-9 items-center justify-center rounded-full transition",
+                    hasSolidBackground
+                      ? "border border-black/10 text-[#29251f] hover:border-black/25"
+                      : "border border-white/25 text-white/80 hover:border-white/60 hover:text-white",
+                  ].join(" ")}
+                >
+                  <CircleUserRound size={22} />
+                </div>
+              )}
+            </button>
+
+            <AnimatePresence>
+              {user && isUserMenuOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 8 }}
+                  className="absolute right-0 mt-4 w-72 rounded-2xl border border-black/5 bg-[#fffdf8] p-5 shadow-xl"
+                >
+                  {user ? (
+                    <>
+                      <div className="flex items-center gap-3">
+                        <img
+                          src={user.user_metadata.avatar_url}
+                          className="h-12 w-12 rounded-full"
+                        />
+
+                        <div>
+                          <p className="font-medium">
+                            {user.user_metadata.full_name}
+                          </p>
+
+                          <p className="text-sm text-[#746b60]">
+                            {user.email}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="my-4 border-t border-black/8" />
+
+                      <button
+                        onClick={async () => {
+                          await createClient().auth.signOut();
+                        }}
+                        className="mt-5 cursor-pointer text-sm text-[#746b60] transition-colors hover:text-black"
+                      >
+                        Sign out
+                      </button>
+                    </>
+                  ) : (
+                    <button
+                      onClick={() =>
+                        createClient().auth.signInWithOAuth({
+                          provider: "google",
+                          options: {
+                            redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(
+                              window.location.pathname + window.location.search
+                            )}`,
+                          },
+                        })
+                      }
+                      className="cursor-pointer text-sm font-medium text-[#746b60] transition-colors hover:text-[#29251f]"
+                    >
+                      Sign in
+                    </button>
+                  )}
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
         </div>
 
         <button

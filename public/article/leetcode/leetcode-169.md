@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 3
+id: ee1982a3-f015-478d-92f5-95f8caac4a41
 ---
 
 給一個 nums[i]，其中有一個 element 總數大於二分之一，找出這個 element

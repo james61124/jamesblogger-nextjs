@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 2
 readTime: 3
+id: 0f8bb808-cf38-45c9-adc0-1b05ba461c3d
 ---
 
 給一個 array `nums`，要求 return 一個新的 array `output` 使得 output[i] 等於 nums 陣列中除了 nums[i] 以外的所有數字的乘積。其中不可以使用除法，而且必須在 O(n) 內解完題目。

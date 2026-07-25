@@ -7,6 +7,7 @@ difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 733ca795-a71b-4181-8b19-9c5919bc5292
 ---
 
 給一個 Binary Tree，求任兩 node 間最長的 edge 數量。

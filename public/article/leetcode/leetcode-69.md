@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: 0592c694-6a06-48fd-81aa-8f585cf45981
 ---
 
 給一個數字 `x`，找出他的平方根，但是不可以使用內建的 math function。

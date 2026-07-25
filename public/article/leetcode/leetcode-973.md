@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 02a78a8b-e4f7-4610-bf95-e9532c0ccf68
 ---
 
 points[i] 代表不同點的點座標，找出離原點最近的 `k` 個點。

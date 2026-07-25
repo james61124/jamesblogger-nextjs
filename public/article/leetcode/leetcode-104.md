@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: aa5c5156-168e-4218-8a93-f7842cbaf1ca
 ---
 
 給一個 binary tree，return 他的最大深度。

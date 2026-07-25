@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 2
+id: c8da36fd-08ac-4b31-ae3e-e85a2946634b
 ---
 
 給一個 string vector `strs`，將其中的 Anagrams 分組，Anagrams 是指由相同字母組成但順序不同的 string，例如 "eat", "tea", "ate" 都是 Anagrams。

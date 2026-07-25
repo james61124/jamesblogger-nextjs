@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 3
+id: 5cc734d4-4c35-49f4-b114-aa9cf0d8df05
 ---
 
 給 nums[i]，回傳 next permutation，只能 in-place 做

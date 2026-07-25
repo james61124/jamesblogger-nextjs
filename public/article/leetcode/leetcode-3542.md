@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 3
+id: dd51607b-f889-4df6-a602-7437496ed158
 ---
 
 給一個 nums[i]，可以挑任意的 subarray 將裡面最小的數字全部變成 0，問最少需要幾次可以將所有數字變成 0

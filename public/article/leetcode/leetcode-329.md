@@ -7,6 +7,7 @@ difficulty: Hard
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: 4222cf5f-1159-4073-91f3-a12bc76edcc7
 ---
 
 給定一個 `matrix`，你要找出一條最長的嚴格遞增路徑（ increasing path ）。你可以從矩陣中的任意一個格子出發，並且每次只能移動到上下左右四個方向中數值比當前格子大的相鄰格子。

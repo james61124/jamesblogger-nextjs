@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 2
 readTime: 3
+id: ff222981-0aa8-483b-83ab-77889683f040
 ---
 
 給一個 Binary Tree，給 node `p`, `q`，找到這兩個 node 的 lowest common ancestor

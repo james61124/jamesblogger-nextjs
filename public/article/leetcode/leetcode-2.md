@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 3
 readTime: 2
+id: ff946542-2420-4c77-9090-15bae3b2de8e
 ---
 
 給兩個 Linked List，代表兩個整數，只是是以 reverse order 的方式儲存，要回傳這兩個整數的總和，一樣要以 Linked List + reverse order 的方式儲存。

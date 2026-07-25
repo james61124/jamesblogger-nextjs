@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: 9989beee-7281-4574-ae0f-7009166ff4bd
 ---
 
 實作一個 LRU Cache，支援兩種 function：

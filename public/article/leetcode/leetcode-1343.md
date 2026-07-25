@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: fed0a6e1-b43c-4336-be63-fd61380a529d
 ---
 
 給一個整數 array `nums`，還有兩個數 k 和 threshold，找出長度為 k 且平均值大於或等於 threshold 的 subarray 數量。

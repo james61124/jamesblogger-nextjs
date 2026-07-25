@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: cccb9b30-b469-499c-8341-7b437638f0c0
 ---
 
 給一個 Linked List，再給兩個整數 `left`, `right`，把 index `left` ~ `right` 中間的 node reverse。 

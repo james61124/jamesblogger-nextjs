@@ -7,6 +7,7 @@ difficulty: Hard
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 5d802e5b-bb05-4133-9e2c-5fd28c3b83b2
 ---
 
 給 k 個 sorted linked list，將它們 merge 成一個排序後的 linked list。

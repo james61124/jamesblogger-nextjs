@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 75cc2324-93e0-4111-9892-2f1b8f588d34
 ---
 
 給一個 string 例如 `2[a]3[ab4[c]]`，給出 decode 後的結果，數字代表括號內的東西要重複的次數

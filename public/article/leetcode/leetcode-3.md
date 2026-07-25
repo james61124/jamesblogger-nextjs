@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 3
 readTime: 1
+id: c240945d-a055-435e-ac51-7c24146f7770
 ---
 
 Given a string `s`, find the length of the **longest substring** without duplicate characters.

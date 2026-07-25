@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 2
 readTime: 2
+id: 02bb4941-646d-4a54-a160-914d306822ac
 ---
 
 計算從 string `word1` 轉換為 `word2` 所需的最小 operation 數量，可以 insert, delete 或是 replace。

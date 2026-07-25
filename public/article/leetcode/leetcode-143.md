@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 2
 readTime: 2
+id: a25344c6-7b1e-44f7-b5cc-e6a0ba1d10c7
 ---
 
 給一組 Linked List

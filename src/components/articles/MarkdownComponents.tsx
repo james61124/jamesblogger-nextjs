@@ -18,6 +18,7 @@ import TwoImages from "./TwoImages";
 import Video from "./Video";
 import { getImages, getProperty, getText } from "./markdownNodeUtils";
 
+
 function textOf(children: unknown): string {
   if (typeof children === "string" || typeof children === "number") {
     return String(children);

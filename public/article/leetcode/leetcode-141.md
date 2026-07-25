@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: c1f2c8b8-a5d8-4dff-b674-106cd604deb3
 ---
 
 給一個 linked list，要判斷有沒有 cycle。

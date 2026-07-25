@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 3
+id: e4977433-d64b-4509-bc68-15e6dbf01789
 ---
 
 給一個 linked list，輸出向右 rotate k 次的結果

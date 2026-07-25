@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 3
+id: e29e116c-6a20-442c-8c46-838862a60abd
 ---
 
 給 `c` 個 power stations，給 connections[i][j] 紀錄哪些 power stations 彼此有連接，給 query[i][j]，當 query[i][0] == 1，表示要檢查 query[i][1] 這個 station，如果這個 station 是 online，就把這個 station 推進去 result，如果這個 station 是 offline，就把連接的 station 中最小的 online station 推進去 result

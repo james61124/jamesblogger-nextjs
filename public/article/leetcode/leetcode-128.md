@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency : 1
 readTime: 3
+id: c4c2a774-9b78-45da-932b-55f26ef3303a
 ---
 
 給一個 unsorted array `nums`，return longest consecutive sequence 的長度。

@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 217afd10-4a2a-4245-9fcd-4a5170f124c9
 ---
 
 給一個只包含非負整數、+、-、*、/ 和空格的 string，計算它的 value。運算順序需符合標準的數學運算規則（ 先乘除，後加減 ），但不允許使用 eval()。

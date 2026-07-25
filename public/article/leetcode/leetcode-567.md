@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 4e278199-7c5a-4946-9e3d-5d069991121c
 ---
 
 給兩個 string `s1`, `s2`，問 `s2` 中是否有 `s1` 的 permutation 的 substring

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: f2b1ceff-9f61-4e03-8caa-9aa8ca63237d
 ---
 
 給你一個 9×9 的數獨棋盤（board），檢查這個數獨是否 Valid。Valid 的條件是：

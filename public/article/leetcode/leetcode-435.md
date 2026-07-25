@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 2
 readTime: 2
+id: e74eb6a7-3406-4011-8bbd-21a7d53985f0
 ---
 
 給定一組 intervals，要從中刪除最少的區間，使得剩下的區間互不重疊。

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 3
 readTime: 3
+id: 25d1ae23-bc85-47ec-a60c-251716283833
 ---
 
 這題是 Two Sum 的變體，給定一個「遞增排序」的 array，要求找出兩個數，使它們的和等於目標值，並返回這兩個數的「1-based index」

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: aea7b0eb-809d-44bf-8615-b73d963fb807
 ---
 
 給一個只包含 `'('`, `')'`, `'{'`, `'}'`, `'['`, `']'` 的 string `s`，檢查這個 string 是否是 valid 的括號組合。

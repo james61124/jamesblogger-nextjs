@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: 2b663ae9-f8ff-46f9-96c2-ad57730684ec
 ---
 
 實作一個 class，裡面有三個 function，`insert(val)` 要可以插入 `val`，但裡面如果已經有 `val` 就不要再插入了，`remove(val)` 要可以移除 `val`，但如果裡面本來就沒有 `val` 也不要動作，最後要 `getRandom()` 要隨機取一個值，其中三個 function 都要在 O(1) 時間內完成。

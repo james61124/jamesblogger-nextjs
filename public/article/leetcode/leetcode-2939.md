@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: c76b040b-a497-4b0f-a8a0-08ba6382bb3f
 ---
 
 給 a, b, n，要找到一個數字 x，使得 (a ^ x) * (b ^ x) 最大，其中 0 <= x <= 2^n

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 3
+id: 82aa8401-f175-4311-879c-34690a7cf8b9
 ---
 
 給兩個 string `a`, `b`，兩個 string 都是一個 binary 的形式，各代表一個數字，要回傳這兩個數字相加的 binary

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: dbec5735-a085-45d6-9e86-7009530e8020
 ---
 
 如果那個 column 或 row 原本有 0，就要把整條都標成 0，而這個轉換必須在 in-place 完成

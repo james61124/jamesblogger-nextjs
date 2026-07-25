@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: c0045307-21df-4e2f-860e-cc70101c0856
 ---
 
 Koko 有一堆香蕉，每一堆有 piles[i] 根香蕉。她會以固定的速度 k 吃香蕉（每小時吃 k 根）。若某一堆香蕉小於 k，她就花 1 小時吃完那一堆，若超過 k 根，她就只吃 k 根，剩下的留到下一小時繼續吃（等於向上取整），總共有 h 小時，要求 Koko 最小要有多少的吃香蕉速度 k，才能在 h 小時內吃完所有香蕉？

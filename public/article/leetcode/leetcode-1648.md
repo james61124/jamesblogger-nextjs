@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: e3a7cfbd-9901-486e-b9b0-bd2f707fe5b1
 ---
 
 給一個 inventory[i]，每一個 inventory[i] 代表一種球的 value，每當這種球被賣出去一顆，那他的 value 就會變成 inventory[i]，假設總共能賣出 `orders` 顆球，問最大的總 profit 會是多少。

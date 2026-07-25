@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: 683d45bc-b69b-4b32-a022-df7a3f4c5a16
 ---
 
 給 nums[i]，要把所有 0 搬到後面並且不影響到其他 non-zero 的相對順序

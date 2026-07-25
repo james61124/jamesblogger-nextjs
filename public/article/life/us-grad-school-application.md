@@ -5,6 +5,7 @@ author: James
 tags: United States,Grad School,MCS
 image: /images/life/us-grad-school-application/application.png
 description: "我發現我很不適合寫攻略，所以就寫寫自己的心路歷程跟心得就好。其實，一開始「美國留學」完全不在人生規劃裡。大四已經過了一半，出國這個選項突然出現在生命中，我自己都覺得很荒謬。但認真想了一下，發現好像不是完全沒有可能。"
+id: 3bcc307d-bb34-4992-afca-cff73518d33f
 ---
 
 我發現我很不適合寫攻略，所以就寫寫自己的心路歷程跟心得就好。

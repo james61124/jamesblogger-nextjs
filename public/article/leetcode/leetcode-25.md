@@ -7,6 +7,7 @@ difficulty: Hard
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: b8f60208-6fd7-42d3-b120-225e925fe369
 ---
 
 給定一個 linked list `head`，你需要將每 k 個 node 為一組進行反轉，如果最後剩下的 node 數量不足 k，就保留原狀。

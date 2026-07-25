@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 3
+id: 397c4967-29a3-41dd-9f64-ad54a2ebcc86
 ---
 
 給定一棵 Binary Tree，找出一條路徑的 node 的值總和最大的那條 path，並回傳這個最大總和。其中 path 可以從樹中任意一個 node 開始，也可以在任意 node 結束，這條 path 必須連續，而且 path 中不能重複經過同一個 node。

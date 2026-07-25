@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 20d21b05-1b4f-4966-b070-81cc19bc57b0
 ---
 
 給一個 intervals[i] = [starti, endi]，求最多同時重疊的 intervals 有多少個？

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 3
 readTime: 3
+id: e65b3fb1-8c8e-405e-b9c4-85e61a94c222
 ---
 
 給一個 Matrix，return 他順時針轉 90 度的結果。

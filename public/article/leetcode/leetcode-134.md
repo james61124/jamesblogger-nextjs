@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 2
+id: 41a994c1-5df3-4116-bf6c-5d57f12cde0f
 ---
 
 你在一條圓形路線上有 n 個加油站，每個加油站 `i` 有 gas[i] 單位的汽油可以加，開車到下一個加油站需要花費 cost[i] 單位的汽油，你有一台油箱無限大的車，一開始油箱是空的。你可以從任意一個加油站出發，順時針開車，目標是回到起點，要回傳從哪個加油站出發可以回原點，不行的話就回傳 `-1`。

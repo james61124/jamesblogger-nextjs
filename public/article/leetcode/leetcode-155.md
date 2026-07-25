@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 2
 readTime: 2
+id: e4f067c2-f86f-4821-902c-b9fd3858e145
 ---
 
 實作 min stack，除了要可以實現一般 stack 的功能，還要多實現 `getMin`，在 O(1) 的時間要找到 stack 中的最小值。

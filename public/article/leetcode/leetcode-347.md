@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 3
 readTime: 3
+id: d56a3bba-7ba2-40a1-894e-708f1a9ee70c
 ---
 
 給一個 array `nums`，找出前 k 個出現最多次的數字。

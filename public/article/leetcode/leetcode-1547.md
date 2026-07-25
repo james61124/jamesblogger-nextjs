@@ -7,6 +7,7 @@ difficulty: Hard
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 823d018b-e182-43df-b804-00db81953059
 ---
 
 有一根長度為 n 的木棍，並且你有一個整數陣列 cuts，其中 cuts[i] 表示你需要在位置 cuts[i] 上切這根木棍。每次切割會將木棍切成兩段，切割的成本等於這次被切的那段木棍的長度。目標是決定一個切割順序，讓總成本最小，並回傳成本。

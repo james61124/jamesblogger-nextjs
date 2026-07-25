@@ -6,6 +6,7 @@ tags: Algorithm,Shortest Path,Bellman-Ford
 image: /images/program/algorithm.png
 description: "Bellman-Ford 是一個 single source shortest path 的 Algorithm，運用在 weighted graph 上，可以找到 single source 到其他所有 nodes 的 shortest path，因此會輸出一個 dist[i] 代表從 starting point 到 node `i` 的最短距離，他跟 Dijkstra 最大的差別是，他可以運用在有 negative edges 的 graph 上，不過如果出現 negative cycle 就不行。"
 readTime: 2
+id: be9d5c54-f36e-4a95-9433-79c80267535d
 ---
 
 Bellman-Ford 是一個 single source shortest path 的 Algorithm，運用在 weighted graph 上，可以找到 single source 到其他所有 nodes 的 shortest path，因此會輸出一個 dist[i] 代表從 starting point 到 node `i` 的最短距離，他跟 Dijkstra 最大的差別是，他可以運用在有 negative edges 的 graph 上，不過如果出現 negative cycle 就不行。
@@ -64,7 +65,7 @@ for (int i = 0; i < V - 1; i++) {
 }
 ```
 
-### **Negative Cycle Detection**
+## Negative Cycle Detection
 
 而做完 V - 1 次的 relax，如果發現繼續 relax dist[i] 還可以繼續被修改，就表示我們遇到 negative cycle 了，也就是說我們可以利用 bellman-ford 來 detect negative cycle
 
@@ -92,9 +93,9 @@ for (auto [from, to, cost] : edges) {
 }
 ```
 
-**Time Complexity** - `O((V x E)`，比 Dijkstra 慢，但可以用在 negative edges 身上<br>
-**Space Complexity** - `O(V)`
+- Time Complexity - `O(V x E)`，比 Dijkstra 慢，但可以用在 negative edges 身上<br>
+- Space Complexity - `O(V)`
 
-### **範例**
+## Example
 
 [[ Leetcode 787 ] Cheapest Flights Within K Stops](https://www.jamesblogger.com/leetcode/articles/leetcode-787)

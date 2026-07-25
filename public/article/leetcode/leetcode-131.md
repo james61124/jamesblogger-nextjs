@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: 690e674b-9ca6-4cdb-8352-7a3cf5311bfa
 ---
 
 給一個 string `s`，找出 所有可能的劃分方式，使得每個被切割出來的 substring 都是 palindrome。

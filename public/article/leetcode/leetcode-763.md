@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: cb8f62b6-8573-4ceb-a780-781d83982bee
 ---
 
 給一個 string `s`，同一個字母不可以出現在兩個 block 裡，要將 `s` 盡可能分成最多的 block 並回傳每個 block 的長度。

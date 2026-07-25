@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: b54bfe50-3f19-4275-afce-3a3463462a52
 ---
 
 給一個 string `s`，計算 `s` 中有多少回文。

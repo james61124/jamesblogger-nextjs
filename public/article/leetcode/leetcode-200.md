@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: 4138f152-1d7f-4bac-a954-f0cd07117f5e
 ---
 
 給一個由 '1'（陸地）和 '0'（水）組成的 2D Array，計算島嶼的數量。島嶼是由水平或垂直方向相連的 '1'（陸地）組成的一個區域，而且被 '0'（水）包圍。

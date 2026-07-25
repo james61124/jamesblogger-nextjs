@@ -6,6 +6,7 @@ tags: Algorithm,Graph,Topological Sort
 image: /images/program/algorithm.png
 description: "Topological Sort 是一種用在 Directed Acyclic Graph 的 Sorting 方法，他可以找到一條 Order 滿足所有 dependency，例如說 u->v，那在那條 Order 中 u 就一定會出現在 v 前面。"
 readTime: 2
+id: dbac9796-0426-48dd-bc2d-06e78627f673
 ---
 
 Topological Sort 是一種用在 Directed Acyclic Graph 的 Sorting 方法，他可以找到一條 Order 滿足所有 dependency，例如說 u->v，那在那條 Order 中 u 就一定會出現在 v 前面。

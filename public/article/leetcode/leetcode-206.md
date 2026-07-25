@@ -7,6 +7,7 @@ difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 60327a19-4c5c-4585-b7b7-dfdbdd1e368b
 ---
 
 給一條 Linked List，return 一條 reverse 過的 Linked List

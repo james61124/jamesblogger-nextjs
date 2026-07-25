@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 3
+id: 815b61a8-6588-4232-a5da-0dd0bc30e746
 ---
 
 給一個字串 s 和一個整數 numRows，將字串按照 Zigzag（Z 字形）排列，然後依照「逐行讀取」的方式輸出。

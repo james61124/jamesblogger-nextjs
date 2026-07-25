@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: 617f4e2b-8780-4b4c-bbd9-1d6b9e136fff
 ---
 
 給一個 integer `n`，找到 unique 的 ｎ 個數字總和是 0

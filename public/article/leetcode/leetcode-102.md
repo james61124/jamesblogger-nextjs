@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 2
+id: 2fc9464c-ad3d-4630-8176-75b237e61ee6
 ---
 
 給一個 Binary Tree，要 return Level Order Traversal 的結果，而每一層的 node 從左到右都是一個 subarray。

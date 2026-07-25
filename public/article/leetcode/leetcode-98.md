@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: ccf88edc-aaea-4a0c-a6e4-052efe0a151a
 ---
 
 給一個 Binary Tree，判斷他是不是 valid Binary Search Tree。

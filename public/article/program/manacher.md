@@ -6,6 +6,7 @@ tags: Algorithm,String Matching,EAC,Manacher
 image: /images/program/algorithm.png
 description: "Manacher Algorithm 底層其實還是 EAC，但是可以利用回文的特性省略掉一些重複的部分，進而讓時間複雜度降低。"
 readTime: 2
+id: 5de46de6-2cb9-4e13-919d-d90fd32ab07c
 ---
 
 當我們今天要處理回文相關的問題的時候，例如說我們要找到一個 string 中所有回文，或是最長的回文長度，最簡單的做法就是 Expand Around Center (EAC)，因為回文會有兩種狀況，奇數中心跟偶數中心，所以我們只要針對這兩種中心，從中間往外擴展看看兩邊的字有沒有一樣就可以了。

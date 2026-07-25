@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: b828849d-3003-479d-92a4-b4a514acc74f
 ---
 
 設計一個 class，其中

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 3
 readTime: 3
+id: 8f04d457-e0f9-4713-a6ed-b60558616546
 ---
 
 你是一名專業竊賊，計劃搶劫一排房子。每間房子內藏有一定金額的現金，nums[i] 代表第 i 間房子的金額。要注意的是相鄰的兩間房不能在同一晚搶，否則會觸發警報，而且房子呈環狀排列，所以第一間房與最後一間房相鄰。題目要求是給整數 array `nums`，回傳你在不觸發警報的前提下，最多可以搶到多少錢。

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 3
 readTime: 3
+id: 7161ce55-ef30-4b2f-91a6-20b50c1d670e
 ---
 
 給兩個 string `s`, `t`，判斷兩個 string 是否是 isomorphic，意思就是每種字元的對應必須要一對一的，多對一跟一對多都不行。

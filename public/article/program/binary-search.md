@@ -6,6 +6,7 @@ tags: Algorithm,Binary Search
 image: /images/program/algorithm.png
 description: "最基本款的 Binary Search，就是在 sorted array `nums` 中找到特定的 target，並回傳 index，但是用時只需要 `O(logn)`，他的原理就是先用兩個 pointers `left`, `right` 分別在 array 的最左跟最右，並計算兩個 pointers 的中點 `mid`，如果 `nums[mid] > target`，表示 target 在左半邊，就把 right 縮到左半邊，反之就是表示 target 在右半邊，就把 left 縮到右半邊，持續這個過程直到 `nums[mid] == target` 就代表找到了，聽起來很簡單，實作起來長這樣："
 readTime: 5
+id: f0b83ba3-25eb-4111-b109-836979a8a7f7
 ---
 
 最基本款的 Binary Search，就是在 sorted array `nums` 中找到特定的 target，並回傳 index，但是用時只需要 `O(logn)`。
@@ -41,7 +42,7 @@ mid 這裡也可以很簡單的直接用 `mid = (left + right)/2`，但這樣 le
 
 而 mid 在除不盡的情況下會站在中間偏左的那個位置，例如 left = 1, right = 4，理論上 mid 會是 2.5，但根本就沒有這個 index，因為我們都用 integer 的關係所以他會落在 2。
 
-### **Binary Tree 變體**
+## Binary Tree 變體
 
 解 Binary Tree 的題目不會這麼單純，一定會有很多奇怪的情況，例如說：
 
@@ -77,7 +78,7 @@ is_valid = [0, 0, 1, 1, 1, 1, 1]
 
 我們讓 `is_valid == true` 的地方全部都設為 1，會發現最後不管怎麼樣，left 都會停在第一個 1 的位置。我們來 trace 一次就知道了，不管今天題目怎麼變，`left == right` 的位置一定會停留在 0 跟 1 的交界處，假設他停在 0，也就是現在 index = 1 的位置，那我們就會讓 left + 1，left 就會到第一個 1 的位置了，如果現在停在 1，那我們會讓 right - 1，那 left 還是一樣停在第一個 1 的位置，所以照這個邏輯我們只要設計好 `is_valid` 就可以解開所有題目，可以舉一些例子一個一個來看。
 
-### **Lower Bound**
+### Lower Bound
 
 > return 大於等於 target 的最小值( lower_bound )
 
@@ -89,7 +90,7 @@ bool is_valid(vector<int>& nums, int mid, int target){
 }
 ```
 
-### **Upper Bound**
+### Upper Bound
 
 > return 大於 target 的最小值( upper_bound )
 
@@ -101,7 +102,7 @@ bool is_valid(vector<int>& nums, int mid, int target){
 }
 ```
 
-### **Duplicates + Return First Index**
+### Duplicates + Return First Index
 
 > 如果 nums 有重複的值，要回傳大於等於 target 最小值的最左邊的 index
 
@@ -111,7 +112,7 @@ bool is_valid(vector<int>& nums, int mid, int target){
 }
 ```
 
-### **Peak Element in Bitonic Array**
+### Peak Element in Bitonic Array
 
 > 有一個先遞增再遞減的 array，要 return 他的 peak
 
@@ -138,7 +139,7 @@ bool is_valid(vector<int>& nums, int mid){
 }
 ```
 
-### **Find Unique in Duplicates**
+### Find Unique in Duplicates
 
 > 一個 sorted array 中所有 value 都會重複兩次，只有一個會重複一次，找出那一個
 
@@ -161,6 +162,6 @@ bool is_valid(vector<int>& nums, int mid){
 }
 ```
 
-### **結語**
+## 結語
 
 所以 Binary Search 其實不該只是用來「找 sorted array 中的 target」，而是如果這個 array 可以找到一個 function 讓他左邊都是 false，右邊都是 true，就可以用 Binary Search 來解。

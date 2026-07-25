@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: fa803a54-ebde-4c6b-b3a1-b4265f72c7c3
 ---
 
 給一個 string `text`，裡面有不同的 words 彼此用空格隔開，再給一個 `brokenLetters` 表示有哪些字母我們打不出來，要輸出 `text` 中我們可以成功打出多少 words。

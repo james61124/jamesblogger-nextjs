@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: 8b5ee407-3f82-4d0e-b255-673fe5b6bf7c
 ---
 
 給一個 Binary Tree，看看有沒有從 root -> leaf 的 path 總和是 `targetSum`，有就回傳 `true`

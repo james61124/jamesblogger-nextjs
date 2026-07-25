@@ -7,6 +7,7 @@ difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: cb05329d-808e-424c-ae43-fc4972065258
 ---
 
 給一個 Binary Tree，判斷它是否為高度平衡的 Binary Tree，Balanced Binary Tree 意思就是兩邊的 subtree 高度差不會超過 1。

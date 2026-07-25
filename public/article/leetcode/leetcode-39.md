@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 3
+id: b97b2ec0-c4b2-428f-822d-785021533b18
 ---
 
 給一組不重複的正整數 `candidates` 和一個 `target`，找出所有可以使總和等於 target 的組合。其中每個數字可以被選擇無限次，但組合中的數字順序不影響結果。

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 2
+id: ea32f508-b55a-4579-b642-5a5ec44f676f
 ---
 
 給一個 citations[i] 代表每一篇論文獲得的引用次數，找到最大的數 h，讓至少有 h 篇論文的引用次數 ≥ h。

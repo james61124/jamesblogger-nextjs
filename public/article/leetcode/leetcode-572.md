@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 2
+id: cb72a346-7b8a-4f5b-b3ba-48a0ad9ae8a2
 ---
 
 給兩個 Binary Tree `root` 和 `subRoot`，判斷 `subRoot` 是不是 `root` 的 sub tree。

@@ -7,6 +7,7 @@ difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: d31b5a37-f0af-431f-a2b0-fc01849edab8
 ---
 
 給一個 cost[i] 代表從 stair `i` 往下爬的 cost，可以從 stair 0 或 stair 1 開始爬，每一次可以爬 1 格或是 2 格，問爬到底部需要的最小 cost 是多少？

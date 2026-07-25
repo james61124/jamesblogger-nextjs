@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 9119929d-6aba-4bb2-81fb-6b77ae68acda
 ---
 
 給定一個正整數 n，將其拆分為至少兩個正整數的和，並 return 這些數的最大乘積。

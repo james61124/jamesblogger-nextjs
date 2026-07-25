@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 28e08145-b30d-4548-a2a6-3caccdf69553
 ---
 
 設計一個簡化版的 Twitter，有 4 個 function：

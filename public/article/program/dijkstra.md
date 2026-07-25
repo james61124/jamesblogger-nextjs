@@ -6,6 +6,7 @@ tags: Algorithm,Shortest Path,Dijkstra
 image: /images/program/algorithm.png
 description: "Dijkstra 是一個 single source shortest path 的 Algorithm，運用在 weighted graph 上，可以找到 single source 到其他所有 nodes 的 shortest path，因此輸出是一個 dist[i]，代表起始點 `k` 到每一個 nodes 的最短距離。"
 readTime: 2
+id: 6152c360-b5e4-4c66-9225-c9730b01b81a
 ---
 
 Dijkstra 是一個 single source shortest path 的 Algorithm，運用在 weighted graph 上，可以找到 single source 到其他所有 nodes 的 shortest path，因此輸出是一個 dist[i]，代表起始點 `k` 到每一個 nodes 的最短距離。

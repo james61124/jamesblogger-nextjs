@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 3
 readTime: 3
+id: 5e5fee0a-4b2f-4ec0-916c-43d57c57d9d9
 ---
 
 給一個只包含數字的 string `s`（例如 "12"），請問這個字串有多少種方式可以被 decode 成英文字母？

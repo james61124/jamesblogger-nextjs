@@ -7,6 +7,7 @@ difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: 1d89eb36-d40c-451a-9ca3-774d6dc184b1
 ---
 
 給一個 array `nums`，裡面只有一個數字出現一次，其他數字都有出現兩次，找出只出現一次的數字。

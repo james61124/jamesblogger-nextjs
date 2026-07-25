@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 3
+id: 77db540d-c0b3-458c-91c2-5965136e1182
 ---
 
 給定一個長度為 `n` 的整數 array `nums` 和一個大小為 k 的 slidinw window，請找出每個 sliding window 中的最大值。

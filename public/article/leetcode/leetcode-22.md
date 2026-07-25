@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 3
+id: 8ff973a6-2a98-4df3-a577-21b79a476502
 ---
 
 給一個 n，生成所有有效的 n 對括號組合。

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: ff5d5b1b-6a96-4671-b0a4-67c89635dd41
 ---
 
 給一個整數 array `nums`，判斷是否存在重複的數字。

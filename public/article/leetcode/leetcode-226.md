@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: 3b81d297-2f23-4179-933d-bebd744ce97d
 ---
 
 給一個 Binary Tree，把他的左右顛倒。

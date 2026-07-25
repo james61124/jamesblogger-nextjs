@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 3
+id: 01f8f663-6642-4676-bba5-0f9f423d152f
 ---
 
 給一個 Binary Tree，當呼叫 `next()` 要回傳下一個 in-order 順序的 node，呼叫 `hasNext()` 要判斷 in-order traversal 中還有沒有下一個 node

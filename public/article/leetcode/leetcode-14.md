@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 2
+id: 28fe1c78-19c0-4977-bb4a-1be316dc5b41
 ---
 
 給一個 string 的 array `strs`，輸出最長的 common prefix。

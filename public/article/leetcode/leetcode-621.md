@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 76252cbe-79a9-46c7-9d62-fa4c61ab1698
 ---
 
 給一堆任務 tasks[i]，每一個任務所需的時間為 1，但是同樣任務需要冷卻 `n` 才能再做一次，問最小需要多長時間可以做完所有 tasks。

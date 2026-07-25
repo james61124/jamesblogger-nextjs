@@ -7,6 +7,7 @@ difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: 312669fe-04a8-4168-8143-3ed1ba42e547
 ---
 
 給兩個 string `s`, `t`，`t` 是 `s` random shuffle 後再加上一個字母的結果，找出那個字母

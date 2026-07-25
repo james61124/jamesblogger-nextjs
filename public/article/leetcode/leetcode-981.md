@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 23b610e5-ddbb-49bf-b71b-9c2cfd734f5b
 ---
 
 設計兩個 function - `set` 和 `get`

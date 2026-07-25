@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: bbe1af34-0a15-40ef-bd28-8fb55dc68c00
 ---
 
 給 prices[i] 代表每天股票的價格，一次只持有一張股票，但是隨時可以買隨時可以賣，問 max profit 是多少。

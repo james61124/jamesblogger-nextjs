@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: 6c61fd2e-2333-4f7d-a632-bb6f4960e47f
 ---
 
 給兩個整數陣列 `nums1` 和 `nums2`，找出它們的交集，並且結果中每個元素只能出現一次。

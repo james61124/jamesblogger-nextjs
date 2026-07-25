@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 8cfd2ba5-e195-4f1b-b97d-276b73a1e2ee
 ---
 
 給一個 nums[i]，裡面都是非負整數，可以對每個元素選擇加號 + 或減號 -，把所有元素相加後的結果，必須剛好等於 target，回傳有幾種不同的加減組合可以達到 target。

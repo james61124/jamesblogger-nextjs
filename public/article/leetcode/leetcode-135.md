@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 2
+id: 8c0c3aab-a894-4f40-835d-8cb5ee940715
 ---
 
 有一排小孩，每個小孩都有一個分數（ratings）。要幫他們分配糖果，每個小孩至少要有一顆糖，如果一個小孩的分數比他的鄰居高，那麼他的糖果數必須比鄰居多，問在滿足規則的情況下，最少需要多少糖果？

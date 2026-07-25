@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: a550fbf7-a92b-44db-9750-1b297e8b44e6
 ---
 
 實作出 pow(x, n) 這個次方的 function。

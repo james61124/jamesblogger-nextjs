@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 2
+id: b8c2c2f8-e322-4391-8bcb-685bebef5505
 ---
 
 給一個 Binary Tree，要 return Inorder Traversal 的結果。

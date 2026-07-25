@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 2
+id: 30995186-a295-4c26-aba0-194a9483e950
 ---
 
 把 `n` 每個位數平方後加總，得到新的數字，重複此過程，若最終可以變成 1，則是 Happy Number，否則若進入循環永遠無法變成 1，就不是。

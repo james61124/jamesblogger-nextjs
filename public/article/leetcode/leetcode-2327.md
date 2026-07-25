@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: da941484-44ae-4f14-80d3-ac59c51f10e1
 ---
 
 一個人第 1 天知道一個秘密，從知道後滿 `delay` 天開始，他每天可以把秘密告訴 1 個新的人，但在知道後滿 `forget` 天就會忘記，忘記後就不再傳播。給整數 `n`, `delay`, `forget`，問到第 `n` 天結束時，還有多少人知道這個秘密（沒忘記的人數），答案要 mod 10^9 + 7。

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 3
+id: 4c068528-44b5-4629-b1fa-c390638230db
 ---
 
 複製一個 Graph，但不能直接 return 這個 Graph 的 pointer 回去。

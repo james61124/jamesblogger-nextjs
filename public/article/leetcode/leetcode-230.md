@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: d4076bad-b17d-4e1c-a6d2-85df6e64dd44
 ---
 
 給一個 Binary Tree，回傳第 k 小的 element。

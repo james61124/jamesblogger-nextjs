@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 22974b65-037b-441b-90a1-b211010c99d9
 ---
 
 給一個 Binary Tree，第一層由左到右 traverse，下一層由右到左，再下一層由左到右以此類推，把 traverse 的順序填到 2D array

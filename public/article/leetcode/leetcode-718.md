@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: 92df9a70-20b1-451a-a511-c1ceeff3936f
 ---
 
 給定兩個整數陣列 nums1 和 nums2，找出它們中長度最長的「連續」相同子陣列（subarray）的長度。

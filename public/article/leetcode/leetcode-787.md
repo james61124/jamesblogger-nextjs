@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: f121ee3a-c2b3-44fb-a90d-fe02b5ccf382
 ---
 
 給一個 weighted directed graph，代表飛機從一個 node 飛到下一個需要花費的錢，要算出從 `src` 飛到 `dst` 最省可以花到多少就到達，而其中只能經過 `k` 個中轉站。

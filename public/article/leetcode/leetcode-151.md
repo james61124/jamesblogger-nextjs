@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 3
 readTime: 3
+id: e4de1959-fabf-4f29-8ee9-3b44835ada01
 ---
 
 給一個 string `s`，可能包含多個空格，要反轉字串中的單字順序，並且保證單字之間只有一個空格。

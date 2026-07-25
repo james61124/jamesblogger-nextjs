@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 2
+id: 7abb56ed-7aaa-47e5-a167-cb3a652b2866
 ---
 
 給 `n`，輸出小於 `n` 的所有質數數量

@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: 1fc69cf1-dd9f-4ff2-921c-359ccf41fb7c
 ---
 
 給三個 string `s1`、`s2` 和 `s3`，請判斷 `s3` 是否可以由 `s1` 和 `s2` 交錯（interleave）而成。

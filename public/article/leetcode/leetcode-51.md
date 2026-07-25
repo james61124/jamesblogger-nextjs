@@ -7,6 +7,7 @@ difficulty: Hard
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: 9ea52413-9f92-4a2d-ac3f-0a0f26f429d1
 ---
 
 給一個 integer `n`，找出 `n x n` 棋盤中可以排列 n 個 Queens 的方法。 

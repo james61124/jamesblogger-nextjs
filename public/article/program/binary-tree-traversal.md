@@ -6,6 +6,7 @@ tags: Data Structure,Binary Tree
 image: /images/program/data-structure.png
 description: "Binary Tree 的定義就是在一個 tree 中，每一個 node 的 children 數量不能超過兩個，所以如果寫成一個 class 的話可以這樣表示"
 readTime: 2
+id: e87fffff-9a82-43e4-a34c-07c665656a9a
 ---
 
 Binary Tree 的定義就是在一個 tree 中，每一個 node 的 children 數量不能超過兩個，所以如果寫成一個 class 的話可以這樣表示

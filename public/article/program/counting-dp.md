@@ -6,6 +6,7 @@ tags: Algorithm,DP,Counting DP
 image: /images/program/algorithm.png
 description: "Counting DP 有別於一般 DP 求最大值 / 最小值，他主要是用來計算某種「方法數」、「組合數」、「路徑數」等結果的總數，所以 Transition Function 是用加法轉移的，不是 max() 或是 min()。"
 readTime: 2
+id: 7483e96e-c701-4645-8c20-6a7a20577934
 ---
 
 Counting DP 有別於一般 DP 求最大值 / 最小值，他主要是用來計算某種「方法數」、「組合數」、「路徑數」等結果的總數，所以 Transition Function 是用加法轉移的，不是 max() 或是 min()。

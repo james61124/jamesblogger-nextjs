@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 3
+id: 9b8c4945-c6dd-40dc-82d8-221cced7c297
 ---
 
 給定兩個 array `nums1` 和 `nums2`，其中 `nums1` 是 `nums2` 的 subset，我們需要在 `nums2` 中為 `nums1` 中的每個數字找到下一個較大元素。

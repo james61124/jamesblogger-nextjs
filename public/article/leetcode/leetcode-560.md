@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 2
+id: 2609827a-bd0a-4438-97d3-17d4be356639
 ---
 
 給一個 nums[i]，輸出有多少 subarray 的 sum 為 `k`

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 2
+id: 093d9dbb-c297-4f71-9eb3-345d40305763
 ---
 
 給一個整數 array `nums`，找到一個連續 subarray（至少包含一個數字），使其和最大，並返回該最大和。

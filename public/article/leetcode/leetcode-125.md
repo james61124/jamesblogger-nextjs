@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: f85109d8-5431-4e99-8c36-db21abb8048a
 ---
 
 這題要求判斷給定的字串是否是「回文」（Palindrome），忽略大小寫和非字母數字字符。

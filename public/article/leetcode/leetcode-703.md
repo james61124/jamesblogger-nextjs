@@ -7,6 +7,7 @@ difficulty: Easy
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 096efd40-bfb8-4e0e-820f-3504a60c3f50
 ---
 
 給一個 `nums` 並設計一個 class，要隨時可以加入新的數字，並回傳目前第 k 大的數字。

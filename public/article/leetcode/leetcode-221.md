@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 2
+id: b70b9f12-6a95-495a-a4d7-9971dfd949a2
 ---
 
 給定一個 `m × n` 的 matrix，其中：

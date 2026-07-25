@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: e48ce33b-b8ce-421a-a1cd-777dfd1620bb
 ---
 
 給定多門課的成績資料 `classes` = [`pass_i`, `total_i`]，以及 `extraStudents` 個一定會通過的額外學生；把這些學生分配到各課後，每門課會變成 [`pass_i`+1, `total_i`+1]。目標是分配完後，使所有課的平均通過率（各課 `pass_i`/`total_i` 的平均）最大，並回傳這個最大平均值。

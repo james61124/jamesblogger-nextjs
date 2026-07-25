@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 2
+id: 96b532fc-10aa-4e6d-afa0-8588364597aa
 ---
 
 給一個 Binary Search Tree (BST) 的 `root` 和一個整數 `val`，要在 BST 中找到 value 等於 `val` 的 node，並 return 該 node。如果找不到，就 return null。

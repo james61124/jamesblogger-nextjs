@@ -7,6 +7,7 @@ difficulty: Hard
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: 9b3886c4-1e4f-4c29-b49e-2def3505ed25
 ---
 
 給兩個 string `s` 和 `t`，求在 `s` 中有多少個 subsequences 等於 `t`。

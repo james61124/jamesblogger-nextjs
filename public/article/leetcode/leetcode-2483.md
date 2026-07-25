@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 3
 readTime: 3
+id: 0ca07524-2692-47cc-9d37-c74316c254fa
 ---
 
 給一個 string `customers`，每個 char 代表每一小時有沒有顧客會來，`Y` 代表有顧客，`N` 代表沒有顧客，你可以選擇在第 i 小時關門，如果關門前店開著但沒有客人，一小時 penalty 就加一，如果關門後但有客人來了，一小時 penalty 也加一，找到一個關門的時間 i 使得 penalty 最小。

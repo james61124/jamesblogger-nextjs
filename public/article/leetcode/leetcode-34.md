@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: 0a660302-aeef-4360-89bb-89a2886d32a6
 ---
 
 給一個 non-decreasing 的 array，回傳 target 的起始 index 跟結束 index，如果整個 array 找不到 target，就回傳 {-1, -1}

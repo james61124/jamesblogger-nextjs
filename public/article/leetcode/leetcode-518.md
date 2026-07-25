@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 5fd039cd-feec-423f-81b5-81d1213fb8c1
 ---
 
 給一個 coins[i]，代表不同面額的 coins，每一個 coin 都有無限多個，要回傳有幾種方法可以組合成 `amount`。

@@ -7,6 +7,7 @@ difficulty: Hard
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: 19d43068-cb57-41c4-b4e6-30e32331319a
 ---
 
 給一個 heights[i]，每個元素代表一個寬度為 1 的直條高度，請找出能構成的最大矩形面積。

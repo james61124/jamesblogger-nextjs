@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 2
+id: 6aae60af-1cce-42f6-a939-9baeec7a0622
 ---
 
 給一個 string，裡面有 words 跟一些 space，問最後一個字的長度是多少。

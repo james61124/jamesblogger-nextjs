@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 2
+id: b889fa88-0cd2-4368-a502-b2c46640953d
 ---
 
 給一個 Binary Search Tree (BST) 的 `root` 和一個整數 `val`，要在 BST 中 insert `val` 到對的位置。

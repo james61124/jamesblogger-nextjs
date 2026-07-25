@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: edd03e40-4101-4270-9f4d-84248f808f40
 ---
 
 給一個整數 array `nums` 和一個目標數字 `target`，要在 array 中找到兩個數，使它們的和等於 target，並回傳它們的 index。

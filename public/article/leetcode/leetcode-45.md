@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 2
+id: fba63f22-64c3-4d63-92bb-2bc05370b5b0
 ---
 
 給一個 nums[i]，其中每個元素代表你在該位置最多可以跳躍的步數。從 index 0 開始，目標是跳到最後一個位置，請回傳最少需要幾次跳躍，才能從起點跳到終點。

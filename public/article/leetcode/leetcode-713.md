@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 2
 readTime: 3
+id: 21e9200e-253b-45fa-bd5a-dfcaae745dae
 ---
 
 給一個正整數 array `nums` 和一個正整數 `k`，找出乘積小於 `k` 的 subarray 數量。

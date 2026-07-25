@@ -12,6 +12,7 @@
         "image": "/images/life/asml/asml.jpg",
         "description": "分享我在荷蘭 ASML 總部實習半年的所見所聞，從科技巨頭的工作環境、多元文化的團隊合作，到歐洲生活的點滴體驗，這段經歷讓我開拓視野，學會在工作與生活間找到平衡，也深刻體會到旅行與成長的價值。",
         "readTime": 8,
+        "id": "b7ea6fe6-8544-462b-a5d7-d7c1788d9c59",
         "path": "asml"
     },
     {
@@ -25,6 +26,7 @@
         ],
         "image": "/images/life/us-grad-school-application/application.png",
         "description": "我發現我很不適合寫攻略，所以就寫寫自己的心路歷程跟心得就好。其實，一開始「美國留學」完全不在人生規劃裡。大四已經過了一半，出國這個選項突然出現在生命中，我自己都覺得很荒謬。但認真想了一下，發現好像不是完全沒有可能。",
+        "id": "3bcc307d-bb34-4992-afca-cff73518d33f",
         "path": "us-grad-school-application",
         "readTime": 7
     },
@@ -38,6 +40,7 @@
         ],
         "image": "/images/life/guitar-club/guitar-club.jpg",
         "description": "擔任交大吉他社社長的一年，是我第一次真正帶領一個團隊，也讓我重新理解什麼是責任、決策與領導。",
+        "id": "48604402-7cb2-4014-9db1-d580227144bf",
         "path": "guitar-club",
         "readTime": 4
     },
@@ -52,6 +55,7 @@
         "image": "/images/life/meichu-hackathon-event-planning-leader/10th-meiChu-hackathon.jpg",
         "description": "梅竹黑客松是全台最大的校園黑客松，先稍微介紹一下黑客松，黑客松其實就是「Hack」跟「Marathon」兩個字合在一起的結果，比賽期間參賽者須要在很短的時間內完成一個專案，這其中包含想法的發想以及專案的實作，算是挑戰性很高的一個比賽，因此籌備團隊的目的就是要確保活動順利的進行，並且通過一整年的準備，將過去的弊病解決並推陳出新，將這個活動越辦越好。",
         "readTime": 5,
+        "id": "f1181200-6196-4f87-9318-c78c1431e63f",
         "path": "meichu-hackathon-event-planning-leader"
     },
     {
@@ -65,6 +69,7 @@
         "image": "/images/life/11th-meichu-hackathon/meichu-hackathon.jpg",
         "description": "梅竹黑客松是一個比賽時長沒有很長的黑客松比賽，先簡單介紹一下他的賽制，總共分成「黑客組」跟「創客組」，黑客組會邀請各大企業參與命題，除了要提出專案企劃以外，同時還要在幾天的時間內做出最小可行性產品，所以是一項兼具企劃發想跟技術實力的比賽，但是為了不要讓梅竹黑客松的參與人員侷限在技術人才，主辦方還設立了「創客組」，由新竹市政府命題，參賽者就不需要真的實作出產品，只要提出完善的專案計畫即可。",
         "readTime": 6,
+        "id": "f3437c4c-6b3d-4bbb-b8fe-4747b58c1c7f",
         "path": "11th-meichu-hackathon"
     },
     {
@@ -78,6 +83,7 @@
         ],
         "image": "/images/life/rice-work-search/work.png",
         "description": "來 Rice 第一年最主要的目標就是找 summer intern，因為如果畢業後暫時想先留美國工作的話，有美國 base 的 summer intern 會好操作很多。所以這篇主要記錄找工吧，有時候真的會懷疑自己在台灣待得好好的，工作輕鬆找為什麼要來這裡找自己麻煩，因為競爭太激烈了，所以很多細節要注意，最麻煩的是拿不到面試根本就沒有辦法知道哪個環節出問題，有時候其實也就是運氣問題也不是什麼環節出問題，只能想辦法把各種細節做好，然後準備好面對隨時會出現的面試。",
+        "id": "25d26ba7-7ed8-45a0-b9db-77d4d5c8cc03",
         "path": "rice-work-search",
         "readTime": 9
     }

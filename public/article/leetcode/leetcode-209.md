@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: 67fa559a-4884-4a01-8703-aae4ceb434c1
 ---
 
 給定一個正整數陣列 nums 和一個目標數 target，找出最短的連續子陣列，使得其數字總和大於或等於 target。如果沒有符合條件的子陣列，則回傳 0。

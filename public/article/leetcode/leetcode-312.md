@@ -7,6 +7,7 @@ difficulty: Hard
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 2
+id: 0b4a27e2-c38e-4a3e-bbb3-26806f637ede
 ---
 
 你面前有一排氣球，每個氣球都有一個編號，存放在 `nums` 陣列中，每次你可以戳破一顆氣球，獲得的金幣數是：

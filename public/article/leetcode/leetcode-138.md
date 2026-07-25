@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 2
+id: 78eaf6c5-9f01-4517-8de8-2fa42f100ec9
 ---
 
 很多人第一個想到的解法都是 Hash Map。

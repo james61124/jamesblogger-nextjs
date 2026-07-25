@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 3
+id: 968e4967-c123-4afd-bfba-4255eb3195e0
 ---
 
 給一個 nums[i]，一個 operation 可以將 nums[i], nums[i + 1] 其中一個數字轉成 gcd(nums[i], nums[i + 1])，要回傳最小可以讓所有數字都變成 1 的 operations 數量

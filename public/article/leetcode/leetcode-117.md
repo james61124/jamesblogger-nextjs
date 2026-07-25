@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 3804de0f-f2fb-49a5-8085-1984db9a8ee7
 ---
 
 給一個 Binary Tree，每一個 node 都有一個 `next` pointer，目標是讓每個 node 的 `next` pointer 指向該層的右邊那個 node，如果已經是最右邊的 node 就指向 `nullptr`。

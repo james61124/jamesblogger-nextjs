@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""  
 readTime: 2
+id: 85d0374d-41a5-43ef-b4c9-15b9614ac548
 ---
 
 給定一個 ratated increasing array `nums`（不含重複元素），以及一個 `target`，要在 array 中找出 target 的 index，若不存在則回傳 -1。

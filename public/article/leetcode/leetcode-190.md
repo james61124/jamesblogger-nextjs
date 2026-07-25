@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 3
+id: 8ed9121f-8c1c-4369-af0e-f8d14ce12600
 ---
 
 給一個 32 bits unsigned integer，return reversed 過的數。

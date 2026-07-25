@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: b20cd333-940b-4ace-beea-7ce66a152642
 ---
 
 給一個 weighted graph times[i]，其中 times[i] = [u, v, w]，代表從 u 傳訊號到 v 需要時間 w，給一個起點 k，訊號從 k 開始傳。要回傳從 k 出發，把訊號傳到所有 node 需要多久？如果有 node 永遠收不到訊號，回傳 -1。

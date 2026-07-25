@@ -6,6 +6,7 @@ tags: Algorithm,Linked List,Two Pointers
 image: /images/program/algorithm.png
 description: "Two Pointers 中，原本是分三種 : 1. Opposite Direction Two Pointers - 一頭一尾方向不同 2. Fast and Slow Pointers - 同方向"
 readTime: 2
+id: bda315d5-c0e9-45ae-8684-dd3f58ba4ba6
 ---
 
 Two Pointers 中，原本是分三種 : 

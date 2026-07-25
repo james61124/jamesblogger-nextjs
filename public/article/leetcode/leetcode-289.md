@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: 331e3f9b-46a2-4604-8e2b-5b52d479b03a
 ---
 
 給一個 board[i][j]，每個 cell 如果是 1 代表 live cell，如果是 0 代表 dead cell，根據以下規則更新 board

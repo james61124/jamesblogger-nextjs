@@ -11,6 +11,7 @@
         "image": "/images/program/data-structure.png",
         "description": "Binary Search Tree 除了每個 node 最多只能有兩個 children 外，還必須符合下面這條規則",
         "readTime": 3,
+        "id": "311b8f03-211e-4a8c-9b3c-4e23897ccad9",
         "path": "binary-search-tree"
     },
     {
@@ -25,6 +26,7 @@
         "image": "/images/program/data-structure.png",
         "description": "Stack 是一種 Last In, First Out (LIFO) 的 data structure，有點像是疊積木，所以最大的特色就是，你永遠只能看到最上面這個 element，要 remove element 也只能 remove 最上面的這個，所以沒有辦法看到其他的 element。",
         "readTime": 2,
+        "id": "b2c98d99-06e1-44e1-94ac-3d172628df7b",
         "path": "stack"
     },
     {
@@ -41,6 +43,7 @@
         "image": "/images/program/algorithm.png",
         "description": "背包問題是一種很經典的 DP 問題，敘述如下：有一個背包，他最多可以容納總重 W 的物品，而我總共有 n 個物品，每個物品的重量為 w[i]，價值為 v[i]，請選擇一組放物品的方法讓背包內的重量不會超重且價值最大化。",
         "readTime": 12,
+        "id": "f742443d-3ebf-48ee-836d-9a0656067c9d",
         "path": "knapsack-problem"
     },
     {
@@ -58,6 +61,7 @@
         "image": "/images/program/data-structure.png",
         "description": "Hash Table 是一種基於 key-value pair 的 data structure，主要目的就是要讓 search, delete, insert 這些操作都是 O(1)，他利用一個 Hash Function 將 Key 映射到一個 index，然後再把 value 填進來，所以才可以用極短的時間就做到 searching 的動作。常見的 C++ Hash Table 包括下面幾種：",
         "readTime": 4,
+        "id": "9e5dbef5-839b-4bf2-9ae1-a49c92908236",
         "path": "hash-table"
     },
     {
@@ -72,6 +76,7 @@
         "image": "/images/program/algorithm.png",
         "description": "最基礎的 DP，就是從遞迴講起，有一種題目一看就是用遞迴解，但是如果就只有這樣的話會碰到很多重複的狀態，因此大大增加時間複雜度，舉一個最經典的例子，我們要計算一個 Fibonacci 數列的第 n 為的數字，最簡單的方式就是遞迴：",
         "readTime": 2,
+        "id": "211e1496-2ad6-426e-945a-d5e2b19385da",
         "path": "dp-memo"
     },
     {
@@ -85,6 +90,7 @@
         "image": "/images/program/data-structure.png",
         "description": "Binary Tree 除了要會三種基本的 traversal，如何從這些 traversal 的 array 重新建構出一棵樹也是很重要的，下面舉了三種最常見的例子跟解題思路，簡單來說，我們要先找到其中一種 traversal 的 root，在另一邊定位出來之後，就可以很好的分辨 left subtree 跟 right subtree 的位置了。",
         "readTime": 10,
+        "id": "30fec699-b75f-41b4-9c38-ee4eb31e5ac6",
         "path": "binary-tree-reconstruction"
     },
     {
@@ -98,6 +104,7 @@
         "image": "/images/program/algorithm.png",
         "description": "Union Find 是一種 Tree Structure，專門用來判斷兩個 element 是不是隸屬同一個 Disjoint Set，而他的想法非常好理解，只要兩個 element 的 root 是同一個人，就表示他們在同一顆 Tree 中，也就是他們在同一個 Disjoint Set 裡面。",
         "readTime": 5,
+        "id": "5f225eba-9e81-4a1b-a9c6-c9edc2955547",
         "path": "union-find"
     },
     {
@@ -112,6 +119,7 @@
         "image": "/images/program/algorithm.png",
         "description": "Digit DP 指的是在數字上做 DP，這裡的數字指的是個位、十位、百位等等。",
         "readTime": 7,
+        "id": "477abb3a-ee8d-45fd-8715-7cfb6f3b4283",
         "path": "digit-dp"
     },
     {
@@ -125,6 +133,7 @@
         "image": "/images/program/algorithm.png",
         "description": "Backtracking 的想法很簡單，我通常會把他想成 DFS，每一個 level 可以有至多 n 種 actions，當看完一種要回到現在這個狀態繼續看下一種，那這種「現在的 decision 不合適或是不夠，就撤回這個 decision 繼續嘗試其他 action」，就是 Backtracking。",
         "readTime": 2,
+        "id": "ec1df475-8ae9-4234-9d20-b2c256725d66",
         "path": "backtracking"
     },
     {
@@ -139,6 +148,7 @@
         "image": "/images/program/algorithm.png",
         "description": "當一個問題可以被分成「線性順序」的多個階段，而每個階段只依賴前面幾個階段的狀態，就是 Linear DP",
         "readTime": 7,
+        "id": "a0453b78-23ce-402d-9574-0fe770337d4f",
         "path": "linear-dp"
     },
     {
@@ -154,6 +164,7 @@
         "image": "/images/program/algorithm.png",
         "description": "Manacher Algorithm 底層其實還是 EAC，但是可以利用回文的特性省略掉一些重複的部分，進而讓時間複雜度降低。",
         "readTime": 25,
+        "id": "5de46de6-2cb9-4e13-919d-d90fd32ab07c",
         "path": "manacher"
     },
     {
@@ -168,6 +179,7 @@
         "image": "/images/program/algorithm.png",
         "description": "Counting DP 有別於一般 DP 求最大值 / 最小值，他主要是用來計算某種「方法數」、「組合數」、「路徑數」等結果的總數，所以 Transition Function 是用加法轉移的，不是 max() 或是 min()。",
         "readTime": 2,
+        "id": "7483e96e-c701-4645-8c20-6a7a20577934",
         "path": "counting-dp"
     },
     {
@@ -181,6 +193,7 @@
         "image": "/images/program/algorithm.png",
         "description": "如果想要在一個 string `text` 底下判斷 string `pattern` 是不是他的 substring，暴力解非常直覺，舉個例：",
         "readTime": 7,
+        "id": "4d2f65b4-5de6-4f50-ae75-0c76664eb4af",
         "path": "kmp"
     },
     {
@@ -194,6 +207,7 @@
         "image": "/images/program/algorithm.png",
         "description": "最基本款的 Binary Search，就是在 sorted array `nums` 中找到特定的 target，並回傳 index，但是用時只需要 `O(logn)`，他的原理就是先用兩個 pointers `left`, `right` 分別在 array 的最左跟最右，並計算兩個 pointers 的中點 `mid`，如果 `nums[mid] > target`，表示 target 在左半邊，就把 right 縮到左半邊，反之就是表示 target 在右半邊，就把 left 縮到右半邊，持續這個過程直到 `nums[mid] == target` 就代表找到了，聽起來很簡單，實作起來長這樣：",
         "readTime": 5,
+        "id": "f0b83ba3-25eb-4111-b109-836979a8a7f7",
         "path": "binary-search"
     },
     {
@@ -208,6 +222,7 @@
         "image": "/images/program/algorithm.png",
         "description": "Bellman-Ford 是一個 single source shortest path 的 Algorithm，運用在 weighted graph 上，可以找到 single source 到其他所有 nodes 的 shortest path，因此會輸出一個 dist[i] 代表從 starting point 到 node `i` 的最短距離，他跟 Dijkstra 最大的差別是，他可以運用在有 negative edges 的 graph 上，不過如果出現 negative cycle 就不行。",
         "readTime": 3,
+        "id": "be9d5c54-f36e-4a95-9433-79c80267535d",
         "path": "bellman-ford"
     },
     {
@@ -222,6 +237,7 @@
         "image": "/images/program/data-structure.png",
         "description": "Stack 是一種 Last In, First Out (LIFO) 的 data structure，有點像是疊積木，所以最大的特色就是，你永遠只能看到最上面這個 element，要 remove element 也只能 remove 最上面的這個，所以沒有辦法看到其他的 element。",
         "readTime": 2,
+        "id": "bbe00e6c-db89-4bf9-87e0-410c84156d1f",
         "path": "queue"
     },
     {
@@ -235,6 +251,7 @@
         "image": "/images/program/algorithm.png",
         "description": "Sliding Window 就是利用 left 和 right 兩個指標來維持一個動態區間 ( window )，透過移動這個 window 來減少重複運算，主要用在處理 subarray 或是 substring 之類的問題。",
         "readTime": 2,
+        "id": "7577400c-b169-43b5-aee6-11cc2a89e610",
         "path": "sliding-window"
     },
     {
@@ -249,6 +266,7 @@
         "image": "/images/program/algorithm.png",
         "description": "Dijkstra 是一個 single source shortest path 的 Algorithm，運用在 weighted graph 上，可以找到 single source 到其他所有 nodes 的 shortest path，因此輸出是一個 dist[i]，代表起始點 `k` 到每一個 nodes 的最短距離。",
         "readTime": 4,
+        "id": "6152c360-b5e4-4c66-9225-c9730b01b81a",
         "path": "dijkstra"
     },
     {
@@ -263,6 +281,7 @@
         "image": "/images/program/algorithm.png",
         "description": "Topological Sort 是一種用在 Directed Acyclic Graph 的 Sorting 方法，他可以找到一條 Order 滿足所有 dependency，例如說 u->v，那在那條 Order 中 u 就一定會出現在 v 前面。",
         "readTime": 3,
+        "id": "dbac9796-0426-48dd-bc2d-06e78627f673",
         "path": "topological-sort"
     },
     {
@@ -277,6 +296,7 @@
         "image": "/images/program/algorithm.png",
         "description": "要 traverse 一個 Graph 有兩種方式，一種是深度優先，也就是所謂的 DFS，我們找到 neighbor 之後不會急著把所有 neighbor 都找到，會再繼續往下找 neighbor 的 neighbor 直到找到底再回來，那另一種就是廣度優先，也就是所謂的 BFS，我們會先把所有 neighbors 找到之後再往下找他們各自的所有 neighbors，這裡根據這兩種方式來進行討論：",
         "readTime": 2,
+        "id": "636ffb79-f221-4acf-a899-17d16bd7b2cc",
         "path": "DFS-BFS"
     },
     {
@@ -290,6 +310,7 @@
         "image": "/images/program/algorithm.png",
         "description": "Two Pointers 就是 iterate 的時候不是用一個指標，用兩個指標 iterate，用不同速度、方向、位置等等來想辦法找到題目所求，Two Pointers 大致上分成三類：",
         "readTime": 2,
+        "id": "25206d80-642f-4bb7-ba0f-cd8de123ec16",
         "path": "two-pointers"
     },
     {
@@ -303,6 +324,7 @@
         "image": "/images/program/algorithm.png",
         "description": "Quick Select 是一種「在 unsorted array 中找出第 k 大或第 k 小」的 Algorithm，跟 Quick Sort 的想法很像，都是用 Divide and Conquer 來做思考的。",
         "readTime": 7,
+        "id": "1e6ceec4-abea-47d8-85b4-b4d0812498d4",
         "path": "quick-select"
     },
     {
@@ -317,6 +339,7 @@
         "image": "/images/program/algorithm.png",
         "description": "Two Pointers 中，原本是分三種 : 1. Opposite Direction Two Pointers - 一頭一尾方向不同 2. Fast and Slow Pointers - 同方向",
         "readTime": 2,
+        "id": "bda315d5-c0e9-45ae-8684-dd3f58ba4ba6",
         "path": "linked-list-two-pointer"
     },
     {
@@ -331,6 +354,7 @@
         "image": "/images/program/algorithm.png",
         "description": "狀態描述如果是一個區間的 DP，沒有特別整理過第一次遇到都會想不太到，這邊整理了兩種遇到 Interval DP 可以去思考的方向。",
         "readTime": 5,
+        "id": "781c41ee-3ab0-4027-bc5c-f991e1435f7c",
         "path": "interval-dp"
     },
     {
@@ -344,6 +368,7 @@
         "image": "/images/program/data-structure.png",
         "description": "Binary Tree 的定義就是在一個 tree 中，每一個 node 的 children 數量不能超過兩個，所以如果寫成一個 class 的話可以這樣表示",
         "readTime": 3,
+        "id": "e87fffff-9a82-43e4-a34c-07c665656a9a",
         "path": "binary-tree-traversal"
     },
     {
@@ -357,6 +382,7 @@
         "image": "/images/program/algorithm.png",
         "description": "Dynamic Programming (DP) 是一種算法技巧，簡單來說想要求得原問題的最優解，就先往下拆解成小問題，最後把小問題的解組合起來得到原問題的解",
         "readTime": 3,
+        "id": "07c9658c-5d4c-4ff0-996d-dcf44c1a15dd",
         "path": "dp"
     },
     {
@@ -370,6 +396,7 @@
         "image": "/images/program/algorithm.png",
         "description": "Greedy Algorithm 最核心的價值就是每一步都選擇當前狀況下最優的選擇，期望能夠得到全局最優解，這種算法不考慮未來的後果，只專注於當前的局部最優解。",
         "readTime": 3,
+        "id": "e58efb63-11e0-49d3-b15c-a5a42512d7bf",
         "path": "Greedy"
     }
 ]

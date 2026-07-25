@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 7fcfe017-54a9-4ea6-b10d-805096903b06
 ---
 
 給一個 `m × n` 的 Matrix，一個機器人從左上角 (0,0) 出發，每次只能向右或向下移動，最終到達右下角 (m-1, n-1)，問有多少條不同的路徑？

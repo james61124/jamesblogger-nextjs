@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 54150382-ad04-428c-b214-df085fa4ff3c
 ---
 
 給一些 equations，例如

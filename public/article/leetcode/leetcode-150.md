@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 2
+id: 7398b262-4268-4ef9-890f-f07da56cedba
 ---
 
 給一組 string 的陣列 `tokens`，這是一個 Reverse Polish Notation，要回傳對應的整數，例如：

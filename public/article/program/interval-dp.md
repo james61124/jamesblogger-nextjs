@@ -6,6 +6,7 @@ tags: Algorithm,DP,Interval DP
 image: /images/program/algorithm.png
 description: "狀態描述如果是一個區間的 DP，沒有特別整理過第一次遇到都會想不太到，這邊整理了兩種遇到 Interval DP 可以去思考的方向。"
 readTime: 2
+id: 781c41ee-3ab0-4027-bc5c-f991e1435f7c
 ---
 
 狀態描述如果是一個區間的 DP，沒有特別整理過第一次遇到都會想不太到，這邊整理了兩種遇到 Interval DP 可以去思考的方向。

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 3
+id: 8a451358-b0c0-46a0-87ea-09613c9cf0d6
 ---
 
 給定一個 ascending sorted array - `nums`，要原地移除重複出現的元素，使得每個元素只出現一次，並返回移除後的陣列長度。

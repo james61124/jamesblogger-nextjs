@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: abf2714f-307a-4b4f-acee-2b63de16f7c0
 ---
 
 給一個 Binary Tree，要 flatten 成一個 linked list，順序是 pre-order，攤平後的每個 node 的 right 指向下一個 node，left 要指向 nullptr

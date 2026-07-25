@@ -12,6 +12,7 @@
         "image": "/images/travel/Switzerland-20240914/scenary.jpg",
         "description": "瑞士就是一個全世界物價最高的地方，原本以為荷蘭、英國已經很貴了，但這裡的物價體感幾乎是這些地區的 1.5 ~ 2 倍。不過即便是這樣，瑞士還是目前所有國家中我最喜歡的，之前聽到瑞士不外乎就是幾個關鍵字，一堆有錢人、手錶、阿爾卑斯山、然後壯闊的大自然，這次就來實地感受一下。",
         "readTime": 16,
+        "id": "0ed7e7dd-8da2-4ef3-a7d5-5880ba608fb1",
         "path": "Switzerland-20240914"
     },
     {
@@ -26,6 +27,7 @@
         "image": "/images/travel/Hamburg-20240829/Hamburg.jpg",
         "description": "漢堡簡單來說就是一個海港，我覺得德國的城市特色都不會到太鮮明，像義大利的城市可能各個城市之間就差距很大，德國就是務實，不會有太多很浮誇的東西。",
         "readTime": 8,
+        "id": "9002cc2e-f4ea-47ce-ab13-d1f2a56af4a5",
         "path": "hamburg-20240829"
     },
     {
@@ -40,6 +42,7 @@
         "image": "/images/travel/miniatur-wunderland/concert.jpg",
         "description": "太喜歡這裡了所以決定拉一篇出來寫，這裡因為太熱門了所以一定要提前預約，然後要選好的時段，因為我們總共在這裡待了 5 個小時，如果逛到最後時間不夠一定會覺得超可惜。",
         "readTime": 11,
+        "id": "8c4f3b28-ad21-4ce6-9f66-1ed6b4d4faf0",
         "path": "miniatur-wunderland"
     },
     {
@@ -53,6 +56,7 @@
         "image": "/images/travel/ljubljana-20250116/lake-observation.JPG",
         "description": "如果不是因為來歐洲半年，我覺得這輩子可能都不會來這個國家，畢竟歐洲國家太多了，先挑最重要的幾個去怎麼想都不會想到要去斯洛維尼亞，來這邊除了可以開發幾個比較冷門的國家試試看，他剛好在我們的上一站 - 匈牙利跟下一站 - 波蘭的中間，我們從布達佩斯搭 Flixbus 來到這裡，可以充當一個過渡站。",
         "readTime": 12,
+        "id": "5f617ead-1749-47af-a214-f975ba6a4a68",
         "path": "ljubljana-20250116"
     },
     {
@@ -66,6 +70,7 @@
         "image": "/images/travel/dubai-20250126/night.jpg",
         "description": "在歐洲待了半年終於要回台灣了，因為搭阿聯酋的關係有這個機會可以在長轉機順便入境杜拜一天看看，覺得非常值得。在歐洲待了七個月，看遍歷史人文古蹟，已經快忘記現代化建築長什麼樣子了，杜拜是一個很特別的地方，市中心摩天大樓一棟接著一棟，但是往郊外開車一個小時的車程竟然就到人跡罕至的沙漠，至今還是覺得非常神奇。",
         "readTime": 9,
+        "id": "c9e56562-5c7a-40d8-976e-b1d085c49ab3",
         "path": "dubai-20250126"
     },
     {
@@ -79,6 +84,7 @@
         "image": "/images/travel/stockholm-20250108/museum-5.JPG",
         "description": "雖然北歐五國已經去過冰島，但冰島算是一個奇葩我都下意識沒把他當北歐，也雖然波羅的海三小國文化上是屬於北歐的，但是大部分定義上還是沒有把他們歸進去北歐五國，所以這次踏上瑞典有一種第一次踏上北歐的錯覺。",
         "readTime": 13,
+        "id": "6fd4b804-a154-4804-ab98-4c92d4f6c038",
         "path": "stockholm-20250108"
     },
     {
@@ -93,6 +99,7 @@
         "image": "/images/travel/ghent-20240727/scenery.jpg",
         "description": "前幾個禮拜在跟同事聊天，就有聊到比利時如果要選幾個城市來的話，反而不是推首都 - Brussels，應該要直接去 Ghent 跟 Bruges，剛好這周末是根特節的最後一天，就順便來朝聖一下。",
         "readTime": 5,
+        "id": "9ab2234e-64c7-421e-b38e-2859e22c2fd4",
         "path": "ghent-20240727"
     },
     {
@@ -106,6 +113,7 @@
         "image": "/images/travel/Munich-20240823/scenery.jpg",
         "description": "這次是我們第一次到慕尼黑，也是第一次到德國，德國給我的感覺很務實，路上的街景不會看到太華麗的裝飾，也沒有一個很明顯的特色，但這座城市最獨特的地方就在他的簡樸與沉穩，而走在大街上，卻又能感受到濃厚的歷史氛圍，讓每一個瞬間都充滿探索的價值。",
         "readTime": 13,
+        "id": "3e43857a-46a7-49cb-8361-4dabee974fb2",
         "path": "Munich-20240823"
     }
 ]

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 3
 readTime: 3
+id: 55801888-d78c-4abc-ad13-5b5f80dffb31
 ---
 
 給定兩個字串 text1 和 text2，找出它們的最長公共子序列（LCS，Longest Common Subsequence）的長度。

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 2
+id: e5e5cfbb-c896-4284-a332-aa8044747b4f
 ---
 
 你有一個 `m x n` 的整數矩陣 `heights`，代表地圖上每個格子的高度。水可以從任一格流向**上下左右**相鄰且高度小於等於自己的格子。而地圖的左邊界與上邊界 是太平洋（Pacific），右邊界與下邊界是大西洋（Atlantic）。

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 2
+id: 321853ad-16b4-4eb7-8d2f-bf957413c688
 ---
 
 給你一個字串，表示一個 羅馬數字，請將它轉換成對應的整數。

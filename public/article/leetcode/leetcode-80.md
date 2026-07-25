@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 3
+id: 10908f93-c372-4cd1-9b05-4846accb8c61
 ---
 
 給一個 sorted array nums[i]，每個數最多只能出現兩次，in-place 移除多餘的元素並回傳新的陣列長度。

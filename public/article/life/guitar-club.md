@@ -5,6 +5,7 @@ author: James
 tags: NYCU,Guitar Club
 image: /images/life/guitar-club/guitar-club.jpg
 description: "擔任交大吉他社社長的一年，是我第一次真正帶領一個團隊，也讓我重新理解什麼是責任、決策與領導。"
+id: 48604402-7cb2-4014-9db1-d580227144bf
 ---
 
 大二這一年，我做了一個很重要的決定，我去競選了交大吉他社社長。

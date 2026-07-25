@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 87e2cbef-6426-4817-b395-6eb598437484
 ---
 
 給一個 Tree，回傳哪些 nodes 當 root 樹的高度會最小。

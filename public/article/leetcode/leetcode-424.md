@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 2
 readTime: 2
+id: 3c3d8ae1-8cdd-4bfd-896d-8a7911b55e0b
 ---
 
 給一個只包含大寫英文字母的字串 `s`，你最多可以將其中 k 個字母替換成其他字母。請你找出一個最長的 substring，使得這個 substring 中所有字母都相同（在最多 k 次替換後）。

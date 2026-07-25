@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 2
 readTime: 2
+id: 9f30ff1d-9ac5-4bb7-912c-b994c13bd2d7
 ---
 
 給一個 Binary Tree，想像你從右邊看這棵樹，回傳總共會看到哪些 node。

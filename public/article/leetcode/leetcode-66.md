@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 2
+id: 75622268-7b2a-47b2-9b95-debff0f92fcc
 ---
 
 給一個 array `digits`，代表一個大整數（ 高位在前 ），請回傳加一後的結果（ 同樣以陣列形式回傳 ）。

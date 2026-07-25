@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 3
 readTime: 3
+id: 686602e4-e7b3-4b02-9cb3-2b6195d8e655
 ---
 
 給一個 string `pattern`（例如 "abba"），給一個由空白分隔的 string `s`（例如 "dog cat cat dog"），判斷 `s` 的結構跟 `pattern` 有沒有一樣

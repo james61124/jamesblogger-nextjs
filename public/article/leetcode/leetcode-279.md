@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 3
 readTime: 3
+id: 2478671f-f310-458b-878d-faec87a31371
 ---
 
 給一個正整數 n，請找出最少需要幾個完全平方數 (Perfect Squares) 之和，才能表示該數字 n。

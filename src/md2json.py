@@ -2,6 +2,40 @@ import os
 import yaml
 from datetime import datetime
 import json
+import uuid
+import re
+
+def ensure_markdown_has_id(file_path):
+    """Insert a permanent UUID into front matter if it doesn't exist."""
+
+    with open(file_path, "r", encoding="utf-8") as file:
+        content = file.read()
+
+    if not content.startswith("---"):
+        return
+
+    end = content.find("---", 3)
+    if end == -1:
+        return
+
+    front_matter = content[3:end]
+
+    # Already has id
+    if re.search(r"^id\s*:", front_matter, re.MULTILINE):
+        return
+
+    new_id = str(uuid.uuid4())
+
+    new_content = (
+        content[:end]
+        + f"id: {new_id}\n"
+        + content[end:]
+    )
+
+    with open(file_path, "w", encoding="utf-8") as file:
+        file.write(new_content)
+
+    print(f"Added id to {file_path}")
 
 def parse_markdown_metadata(file_path):
     """Parses the metadata from a Markdown file's front matter."""
@@ -85,6 +119,7 @@ def process_folder(folder_name, directory, output_folder):
     # Store metadata from all files
     all_metadata = []
     for markdown_file in markdown_files:
+        ensure_markdown_has_id(markdown_file)
         metadata = parse_markdown_metadata(markdown_file)
         if metadata:  # Only add if metadata exists
             all_metadata.append(metadata)

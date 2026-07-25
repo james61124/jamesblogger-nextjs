@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 7a357f4b-88b9-4e4d-9d63-7517994cd584
 ---
 
 給一個 grid[i][j]，其中 `0` 代表 empty，`1` 代表 fresh orange，`2` 代表 rotten orange，每隔一分鐘 rotten orange 可以將相鄰的 fresh orange 變成 rotten orange，問經過幾分鐘所有 orange 都會變 rotten orange，如果沒有辦法所有橘子都變 rotten orange，就回傳 `-1`。 

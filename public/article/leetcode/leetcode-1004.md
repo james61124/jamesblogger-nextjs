@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 282a59a2-e7b7-489b-a36c-13ca6e7bb399
 ---
 
 給 nums[i] 跟 k，其中 nums[i] 裡面只有 0 or 1，回傳如果最多只能將 0 -> 1 k 次，回傳最長的 subarray with 1's 的長度

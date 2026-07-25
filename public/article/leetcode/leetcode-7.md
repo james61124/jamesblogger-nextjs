@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 30421edb-021b-4702-bb2e-67e7a0b95a67
 ---
 
 給一個 integer，給出反轉後的結果，但反轉後的數字如果在 [-2^31, 2^31 - 1] 之外，就要回傳 0

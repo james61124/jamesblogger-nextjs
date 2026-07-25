@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 3
+id: ff73d04a-d55b-4c09-82da-27b980b79bba
 ---
 
 給一個 Binary Search Tree，還有兩個其中的 node，找到這兩個 node 最低的共同 Ancestor。

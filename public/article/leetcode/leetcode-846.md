@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: a7f9db9e-e965-499c-a2dc-44d1f8c43a90
 ---
 
 你有一堆數字牌（可以重複），這些牌被表示為 hand[i]。現在你想把這些牌分成若干組，每一組剛好有 `groupSize` 張牌，並且每一組的牌是連續的整數（例如 [3, 4, 5]），請判斷是否可以把 `hand` 中的所有牌完全分組成這樣的連續群組。

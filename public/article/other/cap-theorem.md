@@ -6,6 +6,7 @@ tags: System Design,CAP Theorem
 image: /images/program/system-design.png
 description: "設計 Distributed System 時不可能同時滿足 Consistency ( 一致性 ), Availability ( 可用性 ), Partition Tolerance ( 分區容錯性 ) 三角，我們一次只能保證 Consistency 或是 Availability 兩件事的其中一件，也就是我們需要 trade-off"
 readTime: 5
+id: 4c73612a-71f2-48c5-910d-f3d96b51b5c1
 ---
 
 當我們在使用資料庫時，會發現單一機器是有極限的，當應用變多，使用者變多時，可能會遇到以下四種限制

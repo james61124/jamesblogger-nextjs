@@ -6,6 +6,7 @@ tags: Algorithm,Sliding Window
 image: /images/program/algorithm.png
 description: "Sliding Window 就是利用 left 和 right 兩個指標來維持一個動態區間 ( window )，透過移動這個 window 來減少重複運算，主要用在處理 subarray 或是 substring 之類的問題。"
 readTime: 2
+id: 7577400c-b169-43b5-aee6-11cc2a89e610
 ---
 
 Sliding Window 就是利用 left 和 right 兩個指標來維持一個動態區間 ( window )，透過移動這個 window 來減少重複運算，主要用在處理 subarray 或是 substring 之類的問題。

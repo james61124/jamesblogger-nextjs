@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 3
 readTime: 2
+id: 0713ee77-a459-4fef-a711-6aa045dfe411
 ---
 
 給一個 integer，判斷這個數字是不是回文。

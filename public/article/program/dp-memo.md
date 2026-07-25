@@ -6,6 +6,7 @@ tags: Algorithm,DP,Memorization
 image: /images/program/algorithm.png
 description: "最基礎的 DP，就是從遞迴講起，有一種題目一看就是用遞迴解，但是如果就只有這樣的話會碰到很多重複的狀態，因此大大增加時間複雜度，舉一個最經典的例子，我們要計算一個 Fibonacci 數列的第 n 為的數字，最簡單的方式就是遞迴："
 readTime: 2
+id: 211e1496-2ad6-426e-945a-d5e2b19385da
 ---
 
 最基礎的 DP，就是從遞迴講起，有一種題目一看就是用遞迴解，但是如果就只有這樣的話會碰到很多重複的狀態，因此大大增加時間複雜度，舉一個最經典的例子，我們要計算一個 Fibonacci 數列的第 n 為的數字，最簡單的方式就是遞迴：

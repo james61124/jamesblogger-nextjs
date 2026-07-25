@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 3
+id: aa34427c-de4f-4869-a10c-b1b4d6df18ac
 ---
 
 給你一個 string `s` 和一個字典 `wordDict`，請判斷 `s` 是否能夠被切割成一連串存在於字典中的單字。

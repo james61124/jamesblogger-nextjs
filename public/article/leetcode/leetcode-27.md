@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 2
+id: f762ebd4-2080-4787-a8f6-ceec17ac0ec9
 ---
 
 輸入 nums[i] 和一個數字 `val`，要 in-place 移除所有等於 `val` 的元素，並回傳移除後的陣列長度，多餘的元素可以不用管，但不能新建額外的陣列。

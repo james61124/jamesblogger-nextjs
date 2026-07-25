@@ -9,7 +9,8 @@ import Image from "next/image";
 // import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 // import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 import ShareAndCopy from "@/components/ShareAndCopy";
-import MarkdownRenderer from "@/components/article/MarkdownRenderer";
+import MarkdownRenderer from "@/components/articles/MarkdownRenderer";
+import CommentSection from "@/components/comments/CommentSection";
 
 function parseFrontmatter(raw) {
   const match = raw.match(/^---([\s\S]*?)---/);
@@ -237,201 +238,6 @@ export default function Article({ category, fileName, json_path, title }) {
 
           <article className="min-w-0">
             <MarkdownRenderer content={content} />
-            {/* <ReactMarkdown
-              remarkPlugins={[remarkGfm]}
-              rehypePlugins={[rehypeRaw]}
-              components={{
-                strong: ({ children }) => {
-                  return (
-                    <strong className="font-bold text-[#1f1c18]">
-                      {children}
-                    </strong>
-                  );
-                },
-                h1: ({ children, ...props }) => (
-                  <h1
-                    id={slugify(textOf(children))}
-                    className="mb-8 mt-16 scroll-mt-28 font-serif text-4xl font-normal leading-tight tracking-[-0.025em] text-[#29251f] sm:text-5xl"
-                    {...props}
-                  >
-                    {children}
-                  </h1>
-                ),
-                h2: ({ children, ...props }) => (
-                  <h2
-                    id={slugify(textOf(children))}
-                    className="mb-6 mt-16 scroll-mt-28 font-serif text-[2.35rem] font-normal leading-[1.15] tracking-[-0.025em] text-[#302b25] sm:text-[2.75rem]"
-                    {...props}
-                  >
-                    {children}
-                  </h2>
-                ),
-                h3: ({ children, ...props }) => (
-                  <h3
-                    id={slugify(textOf(children))}
-                    className="mb-4 mt-11 scroll-mt-28 font-serif text-[1.8rem] font-normal leading-tight tracking-[-0.018em] text-[#38322b]"
-                    {...props}
-                  >
-                    {children}
-                  </h3>
-                ),
-                h4: ({ children, ...props }) => (
-                  <h4
-                    className="mb-3 mt-9 text-lg font-semibold text-[#3c3730]"
-                    {...props}
-                  >
-                    {children}
-                  </h4>
-                ),
-                p: ({ node, children, ...props }) => {
-                  const isImageOnly =
-                    node?.children?.length === 1 &&
-                    node.children[0]?.tagName === "img";
-
-                  if (isImageOnly) {
-                    // 不要再包一層 <p>
-                    return <>{children}</>;
-                  }
-
-                  return (
-                    <p
-                      className="mb-6 font-serif text-[1.08rem] leading-[2] text-[#504a43] sm:text-[1.12rem]"
-                      {...props}
-                    >
-                      {children}
-                    </p>
-                  );
-                },
-                a: ({ children, ...props }) => (
-                  <a
-                    className="text-[#426a9d] underline decoration-[#426a9d]/35 underline-offset-[5px] hover:text-[#2f537e]"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    {...props}
-                  >
-                    {children}
-                  </a>
-                ),
-                img: ({ src, alt }) => (
-                  <figure className="my-12">
-                    <Image
-                      src={src || ""}
-                      alt={alt || ""}
-                      width={1600}
-                      height={1200}
-                      sizes="(max-width: 900px) 100vw, 900px"
-                      className="h-auto w-full rounded-xl shadow-[0_16px_38px_rgba(60,48,31,0.10)]"
-                    />
-
-                    {alt && (
-                      <figcaption className="mt-3 text-center font-serif text-sm italic text-[#7d7468]">
-                        {alt}
-                      </figcaption>
-                    )}
-                  </figure>
-                ),
-                code: ({ inline, className, children, ...props }) => {
-                  const match = /language-(\w+)/.exec(className || "");
-                  const value = String(children).replace(/\n$/, "");
-
-                  if (!inline && match) {
-                    return (
-                      <div className="my-10 overflow-hidden rounded-xl border border-[#8b8174]/16 bg-[#fbf8f2] shadow-[0_10px_28px_rgba(55,44,29,0.06)]">
-                        <div className="border-b border-[#8b8174]/12 px-5 py-3 font-mono text-[11px] uppercase tracking-[0.15em] text-[#8a7f72]">
-                          {match[1]}
-                        </div>
-                        <SyntaxHighlighter
-                          language={match[1]}
-                          style={prism}
-                          customStyle={{
-                            margin: 0,
-                            padding: "22px",
-                            background: "transparent",
-                            fontSize: "14px",
-                            lineHeight: "1.75",
-                          }}
-                          {...props}
-                        >
-                          {value}
-                        </SyntaxHighlighter>
-                      </div>
-                    );
-                  }
-
-                  return (
-                    <code
-                      className="rounded bg-[#e8dfd2] px-1.5 py-0.5 font-mono text-[0.88em] text-[#3d3730]"
-                      {...props}
-                    >
-                      {children}
-                    </code>
-                  );
-                },
-                pre: ({ children }) => <>{children}</>,
-                blockquote: ({ children, ...props }) => (
-                  <blockquote
-                    className="my-12 bg-[#eee4d5] px-7 py-7 font-serif text-xl italic leading-9 text-[#5d554b] sm:px-9"
-                    {...props}
-                  >
-                    {children}
-                  </blockquote>
-                ),
-                hr: () => (
-                  <div className="my-16 flex justify-center gap-3">
-                    <span className="h-1 w-1 rounded-full bg-[#8a7e70]/40" />
-                    <span className="h-1 w-1 rounded-full bg-[#8a7e70]/40" />
-                    <span className="h-1 w-1 rounded-full bg-[#8a7e70]/40" />
-                  </div>
-                ),
-                ul: ({ children, ...props }) => (
-                  <ul
-                    className="mb-7 list-disc space-y-2 pl-6 font-serif text-[1.06rem] leading-8 text-[#514b43] marker:text-[#6782a6]"
-                    {...props}
-                  >
-                    {children}
-                  </ul>
-                ),
-                ol: ({ children, ...props }) => (
-                  <ol
-                    className="mb-7 list-decimal space-y-2 pl-6 font-serif text-[1.06rem] leading-8 text-[#514b43] marker:text-[#6782a6]"
-                    {...props}
-                  >
-                    {children}
-                  </ol>
-                ),
-                li: ({ children, ...props }) => (
-                  <li className="pl-1" {...props}>{children}</li>
-                ),
-                table: ({ children, ...props }) => (
-                  <div className="my-10 overflow-x-auto">
-                    <table className="w-full border-collapse text-left" {...props}>
-                      {children}
-                    </table>
-                  </div>
-                ),
-                thead: ({ children }) => (
-                  <thead className="border-b border-[#7e7468]/28">{children}</thead>
-                ),
-                th: ({ children, ...props }) => (
-                  <th
-                    className="px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#70675c]"
-                    {...props}
-                  >
-                    {children}
-                  </th>
-                ),
-                td: ({ children, ...props }) => (
-                  <td
-                    className="border-b border-[#7e7468]/14 px-4 py-4 font-serif text-[15px] leading-7 text-[#544e46]"
-                    {...props}
-                  >
-                    {children}
-                  </td>
-                ),
-              }}
-            >
-              {content}
-            </ReactMarkdown> */}
 
             <section className="mt-20 border-y border-[#746b5e]/14 py-12 text-center">
               <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-[#8a7e70]">
@@ -448,6 +254,11 @@ export default function Article({ category, fileName, json_path, title }) {
               </div>
             </section>
 
+            <CommentSection
+              articleId={meta.id}
+              articleSlug={`${category}/${fileName}`}
+            />
+
             <div className="mt-12">
               <Link
                 href={`/${category}`}
@@ -456,6 +267,7 @@ export default function Article({ category, fileName, json_path, title }) {
                 ← Back to {categoryLabel}
               </Link>
             </div>
+
           </article>
 
           <aside className="hidden lg:block">
@@ -470,6 +282,8 @@ export default function Article({ category, fileName, json_path, title }) {
               </div>
             </div>
           </aside>
+
+          
         </div>
       </div>
     </main>

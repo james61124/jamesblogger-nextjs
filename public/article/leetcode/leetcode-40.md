@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 2
+id: dbd131e3-d54f-4f54-8e87-a1600de752b3
 ---
 
 給一個 array `candidates` 和一個 `target`，請找出所有不重複的組合，這些組合中的數字加總起來等於 target。

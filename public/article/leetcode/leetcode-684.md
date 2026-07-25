@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: ecbe10d0-a911-45c0-852c-3e6373027149
 ---
 
 原本有一個 Tree，其中裡面多加了一個 edge 就產生了 cycle，找出那個 edge。

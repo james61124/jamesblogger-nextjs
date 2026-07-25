@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 2
+id: 6675ffb2-ba6f-4313-87c8-fe0c0dce76ed
 ---
 
 給兩個已經排好序的整數陣列：

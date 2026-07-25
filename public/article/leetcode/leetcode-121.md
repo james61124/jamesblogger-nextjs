@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 3
+id: 88b7df35-2a84-435b-9f56-ac42641f6ee1
 ---
 
 給一個價格 array `prices`，其中 prices[i] 表示第 i 天的股票價格，請找出如果只能交易一次的最大 profit。

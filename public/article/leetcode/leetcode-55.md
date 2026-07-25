@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 2
+id: 03625c14-665a-41d7-845f-fa035700d13a
 ---
 
 給一個 array `nums`，其中 nums[i] 表示在 index `i` 時 最多可以往前跳多少步，判斷是否能從 index 0 跳到最後一個位置，若可以則返回 true，否則返回 false。

@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 1
 readTime: 2
+id: 43bb0296-8428-4513-872e-79c632997045
 ---
 
 給一個 height[i]，每個元素代表直條圖中對應位置的柱子高度。假設每根柱子的寬度都是 1，當下雨時，問這些柱子之間最多可以「接住」多少單位的雨水？

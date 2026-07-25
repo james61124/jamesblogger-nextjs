@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 25c0f6de-6424-40e6-9133-86759919d608
 ---
 
 給 nums[i]，找到一個最長的 subarray，裡面只包含兩種數字，回傳 subarray 長度

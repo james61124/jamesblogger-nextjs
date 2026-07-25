@@ -6,6 +6,7 @@ tags: Algorithm,DP,Digit DP
 image: /images/program/algorithm.png
 description: "Digit DP 指的是在數字上做 DP，這裡的數字指的是個位、十位、百位等等。"
 readTime: 2
+id: 477abb3a-ee8d-45fd-8715-7cfb6f3b4283
 ---
 
 Digit DP 指的是在數字上做 DP，這裡的數字指的是個位、十位、百位等等。

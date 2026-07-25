@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 2
+id: be5e0070-3c60-4f1b-8169-ff59d4b96f7f
 ---
 
 給一個 Binary Tree，要 return Postorder Traversal 的結果。

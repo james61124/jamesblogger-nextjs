@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 2
 readTime: 2
+id: 95d6f19a-54fd-406c-a337-710ba00f9749
 ---
 
 給一個終點 target，有 n 輛車，每輛車有初始位置 position[i] 和行駛速度 speed[i]，每台車會持續往終點方向移動。車子不能超車，但如果一輛車追上前面的車，就會與前車以相同速度前進，形成一個「車隊（fleet）」，要回傳最後會有幾個車隊到達終點。

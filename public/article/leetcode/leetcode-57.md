@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 4
 readTime: 3
+id: 38e9f5d2-67db-4219-8ba4-69345d7c8de5
 ---
 
 給一個不重疊且按起點排序的 intervals[i]，以及一個新的區間 newInterval，將 newInterval 插入到 intervals 中，並確保最終的區間仍然有序且無重疊。

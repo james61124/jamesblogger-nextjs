@@ -7,6 +7,7 @@ difficulty: Medium
 image: /images/program/Leetcode.jpeg
 description: ""
 readTime: 3
+id: 4c98e221-f065-46f8-8e1e-f9b83b0b9db5
 ---
 
 總共要上 `numCourses` 門課（編號為 0 ~ numCourses - 1），有一些課程有先修要求，若 prerequisites[i] = [a, b]，代表要先修課程 b 才能修課程 a，請判斷是否有可能完成所有課程？

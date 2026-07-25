@@ -8,6 +8,7 @@ image: /images/program/Leetcode.jpeg
 description: ""
 proficiency: 5
 readTime: 2
+id: c680977b-e143-4efb-9d1e-a2802e3f100d
 ---
 
 給兩個數字，輸出他們的和
