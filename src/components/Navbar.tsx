@@ -121,6 +121,8 @@ export default function Navbar() {
       }
     }
 
+    loadUser();
+
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange(async (_event, session) => {

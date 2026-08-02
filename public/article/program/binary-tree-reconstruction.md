@@ -13,19 +13,19 @@ Binary Tree 除了要會三種基本的 traversal，如何從這些 traversal �
 
 簡單來說，我們要先找到其中一種 traversal 的 root，在另一邊定位出來之後，就可以很好的分辨 left subtree 跟 right subtree 的位置了。
 
-### **Construct Binary Tree from Preorder and Inorder Traversal**
+## Construct Binary Tree from Preorder and Inorder Traversal
 
 這是 preorder traversal 的 array
 
-```
+<div class="callout">
 [Root] [Left Subtree] [Right Subtree]
-```
+</div>
 
 這是 inorder traversal 的 array
 
-```
+<div class="callout">
 [Left Subtree] [Root] [Right Subtree]
-```
+</div>
 
 preorder traversal 的第一個一定是 root，利用這個 root 我們可以知道他在 inorder traversal 的 index，在這個 index 左邊的 subarray size 就是 left subtree size，所以就可以知道 preorder traversal left subtree 是從哪裡到哪裡，剩下的部分就是 right subtree，所以有 left subtree, right subtree 就可以繼續 recursive 下去，最後建成完整的 tree。
 
@@ -51,17 +51,17 @@ for(int i=0; i<inorder.size(); i++){
 
 而在將 subtree 的資訊傳給下一層遞迴時不用再建一個 array，我們直接用 `preLeft`, `preRight`, `inLeft`, `inRight` 來標示就行了
 
-**Construct Left Subtree:**<br>
-> `preLeft = preLeft + 1` - 因為就是 root 的下一個<br>
-> `preRight = preLeft + leftSize` - 因為 leftSize 就是 left subtree 的大小，那剩下就是 right subtree 了<br>
-> `inLeft = inLeft` - 這個不動，應該也很好理解<br>
-> `inRight = rootInorderIndex - 1` - 因為 root 的左邊就全部都是 left subtree
+Construct Left Subtree:
+- preLeft = preLeft + 1 - 因為就是 root 的下一個
+- preRight = preLeft + leftSize - 因為 leftSize 就是 left subtree 的大小，那剩下就是 right subtree 了
+- inLeft = inLeft - 這個不動，應該也很好理解
+- inRight = rootInorderIndex - 1 - 因為 root 的左邊就全部都是 left subtree
 
-**Construct Right Subtree:**<br>
-> `preLeft = preLeft + leftSize + 1` - preLeft + leftSize 是 left subtree 的範圍，後面開始就是 right subtree 了<br>
-> `preRight = preRight` - 這個不動，應該也很好理解<br>
-> `inLeft = rootInorderIndex + 1` - inorder 中 root 的右邊就是 right subtree 的開始<br>
-> `inRight = inRight` - 這個就一樣不用動
+Construct Right Subtree:
+- preLeft = preLeft + leftSize + 1 - preLeft + leftSize 是 left subtree 的範圍，後面開始就是 right subtree 了<br>
+- preRight = preRight - 這個不動，應該也很好理解<br>
+- inLeft = rootInorderIndex + 1 - inorder 中 root 的右邊就是 right subtree 的開始<br>
+- inRight = inRight - 這個就一樣不用動
 
 
 ```cpp
@@ -93,7 +93,7 @@ inorder  = [2, 3, 4, 5, 1]
 
 假設 root 在 inorder 中的 index 是 `rootInorderIndex`，那 right subtree 的 inLeft = rootInorderIndex + 1，但 inRight 不會變，因為 inorder 的最右邊那個元素本來就是 right subtree 的，是因為現在沒有 right subtree 所以那邊才會是 root，也就是說這個 case `inleft > inRight` 了，就代表他沒有 right subtree，也就應該 return nullptr。
 
-#### **Template**
+### Template
 
 ```cpp
 TreeNode* buildTreeHelper(vector<int>& preorder, unordered_map<int, int>& umap, 
@@ -126,7 +126,7 @@ TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
 }
 ```
 
-### **Construct Binary Tree from Inorder and Postorder Traversal**
+## Construct Binary Tree from Inorder and Postorder Traversal
 
 這是 inorder traversal 的 array
 
@@ -205,7 +205,7 @@ inorder  = [2, 3, 4, 1, 5]
 
 假設 root 在 inorder 中的 index 是 `rootInorderIndex`，那 right subtree 的 inLeft = rootInorderIndex + 1，但 inRight 不會變，因為 inorder 的最右邊那個元素本來就是 right subtree 的，是因為現在沒有 right subtree 所以那邊才會是 root，也就是說這個 case `inleft > inRight` 了，就代表他沒有 right subtree，也就應該 return nullptr。
 
-#### **Template**
+### Template
 
 ```cpp
 TreeNode* buildTreeHelper(vector<int>& postorder, unordered_map<int, int>& umap, 
@@ -237,7 +237,7 @@ TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
 }
 ```
 
-### **Construct Binary Tree from Preorder and Postorder Traversal**
+## Construct Binary Tree from Preorder and Postorder Traversal
 
 這是 preorder traversal 的 array
 
@@ -296,7 +296,7 @@ umap[postorder[i]] = i;
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Template**
+### Template
 
 ```cpp
 TreeNode* buildTreeHelper(vector<int>& preorder, unordered_map<int, int>& umap, 

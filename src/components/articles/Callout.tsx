@@ -8,9 +8,9 @@ type CalloutProps = {
 };
 
 const toneStyles: Record<EditorialTone, string> = {
-  blue: "border-[#5579a6]/25 bg-[#e8edf3]/55",
-  green: "border-[#3f8a6b]/25 bg-[#e7efe9]/60",
-  neutral: "border-[#8a7e70]/20 bg-[#eee5d8]/55",
+  blue: "bg-[#eef3f7]",
+  green: "bg-[#edf4ef]",
+  neutral: "bg-[#f3eee6]",
 };
 
 export default function Callout({
@@ -20,14 +20,21 @@ export default function Callout({
 }: CalloutProps) {
   return (
     <aside
-      className={`my-10 rounded-xl border px-6 py-6 font-serif text-[1rem] leading-8 text-[#554e46] sm:px-8 ${toneStyles[tone]}`}
+      className="
+        my-8
+        flex
+        items-center
+        bg-[#ebe3d6]
+        px-8
+        py-5
+        text-[#554e46]
+        [&_p]:text-[0.95rem]
+        [&_p]:leading-7
+      "
     >
-      {title && (
-        <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#72695f]">
-          {title}
-        </p>
-      )}
-      {children}
+      <div className="w-full [&>*:first-child]:mt-0 [&>*:last-child]:mb-0">
+        {children}
+      </div>
     </aside>
   );
 }

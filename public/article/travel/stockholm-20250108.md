@@ -277,7 +277,7 @@ id: 6fd4b804-a154-4804-ab98-4c92d4f6c038
 沉船博物館應該是所有查斯德哥爾摩景點會跳出來的前幾名的景點，他在講一艘在幾百年前出航沒多久就原地沉沒的故事，但當時因為實在是距離岸邊太近了所以大部分人是有獲救的很幸運，一入館就會看到這艘高 52 公尺，長 69 公尺的超大沉船，裡面每一層都在講這個故事，從歷史故事、啟程、沉沒、到近代很困難的打撈、還有保存，個人是覺得非常厲害。
 
 <figure>
-  <img src="/images/travel/stockholm-20250108/ship-6.JPG" alt="我感覺沒有一個完美的拍照角度可以表示他到底有多巨大，但是他真的超大的，整個博物館只裝了這艘船" />
+  <img src="/images/travel/stockholm-20250108/ship-6.jpg" alt="我感覺沒有一個完美的拍照角度可以表示他到底有多巨大，但是他真的超大的，整個博物館只裝了這艘船" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>

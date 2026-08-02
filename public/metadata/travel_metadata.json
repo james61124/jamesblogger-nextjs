@@ -115,5 +115,20 @@
         "readTime": 13,
         "id": "3e43857a-46a7-49cb-8361-4dabee974fb2",
         "path": "Munich-20240823"
+    },
+    {
+        "title": "美國 DC 特區週末隨意晃晃",
+        "date": "2026-06-20",
+        "author": "James",
+        "tags": [
+            "Travel",
+            "USA",
+            "DC"
+        ],
+        "image": "/images/travel/dc-20260620/capitol-2.JPG",
+        "description": "簡單記錄一下三個月實習的時間因為 Peggy 來找我，我們撥了一個週末到 DC 晃晃。如果把美國比喻成一間公司，Washington D.C. 就是他的總部，就是常聽到的 DC 特區，主要就是為了作為美國首都而設立，這邊其實有一大堆的博物館可以逛，真的要玩應該是可以逛好多天。",
+        "readTime": 2,
+        "id": "cfb4e084-1f27-4f4a-8c7c-5e3ca96c8663",
+        "path": "dc-20260620"
     }
 ]

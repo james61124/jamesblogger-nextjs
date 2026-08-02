@@ -234,7 +234,7 @@ export default function CommentSection({
   }
 
   return (
-    <section className="mx-auto mt-16 w-full max-w-3xl border-t border-neutral-200 pt-10">
+    <section className="mx-auto mt-16 w-full max-w-3xl border-neutral-200 pt-10">
       <div className="mb-8">
         <p className="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-neutral-500">
           Discussion
