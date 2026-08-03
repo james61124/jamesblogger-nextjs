@@ -233,6 +233,19 @@ export default function CommentSection({
     }
   }
 
+  async function handleSignIn() {
+    const supabase = createClient();
+
+    await supabase.auth.signInWithOAuth({
+      provider: "google",
+      options: {
+        redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(
+          window.location.pathname + window.location.search
+        )}`,
+      },
+    });
+  }
+
   return (
     <section className="mx-auto mt-16 w-full max-w-3xl border-neutral-200 pt-10">
       <div className="mb-8">
@@ -282,8 +295,13 @@ export default function CommentSection({
       ) : (
         <div className="mb-10 rounded-2xl border border-neutral-200 bg-neutral-50 px-5 py-4">
           <p className="text-sm text-neutral-600">
-            Sign in with the account icon in the navigation bar to
-            leave a comment.
+            <button
+              onClick={handleSignIn}
+              className="cursor-pointer font-medium text-neutral-900 underline underline-offset-2 hover:text-neutral-700"
+            >
+              Sign in
+            </button>{" "}
+            to leave a comment.
           </p>
         </div>
       )}

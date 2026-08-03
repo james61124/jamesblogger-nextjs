@@ -82,3 +82,38 @@ export async function ensureArticle({
 
   throw new Error(error?.message ?? "Failed to create article.");
 }
+
+export async function incrementArticleView(
+  articleId: string
+) {
+  const supabase = createClient();
+
+  const { data, error } = await supabase.rpc(
+    "increment_article_view",
+    {
+      article_uuid: articleId,
+    }
+  );
+
+  if (error) {
+    throw new Error(error.message);
+  }
+}
+
+export async function getArticleById(
+  articleId: string
+): Promise<ArticleRecord> {
+  const supabase = createClient();
+
+  const { data, error } = await supabase
+    .from("articles")
+    .select("*")
+    .eq("id", articleId)
+    .single();
+
+  if (error) {
+    throw new Error(error.message);
+  }
+
+  return data;
+}

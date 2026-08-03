@@ -11,6 +11,22 @@ import Image from "next/image";
 import ShareAndCopy from "@/components/ShareAndCopy";
 import MarkdownRenderer from "@/components/articles/MarkdownRenderer";
 import CommentSection from "@/components/comments/CommentSection";
+import {
+  incrementArticleView,
+  getArticleById,
+} from "@/lib/supabase/article";
+
+import {
+  getArticleLikeInfo,
+  toggleArticleLike,
+} from "@/lib/supabase/articleLike";
+
+import { createClient } from "@/lib/supabase/client";
+import {
+  Eye,
+  Heart,
+  MessageCircle,
+} from "lucide-react";
 
 function parseFrontmatter(raw) {
   const match = raw.match(/^---([\s\S]*?)---/);
@@ -49,6 +65,15 @@ export default function Article({ category, fileName, json_path, title }) {
   const [metadata, setMetadata] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [article, setArticle] = useState(null);
+  const [user, setUser] = useState(null);
+  const [liked, setLiked] = useState(false);
+  const [likeCount, setLikeCount] = useState(0);
+
+  const meta = useMemo(
+    () => Object.fromEntries(Object.entries(metadata).map(([k, v]) => [k, clean(v)])),
+    [metadata]
+  );
 
   useEffect(() => {
     let cancelled = false;
@@ -78,10 +103,66 @@ export default function Article({ category, fileName, json_path, title }) {
     };
   }, [file]);
 
-  const meta = useMemo(
-    () => Object.fromEntries(Object.entries(metadata).map(([k, v]) => [k, clean(v)])),
-    [metadata]
-  );
+  useEffect(() => {
+    if (!meta.id) return;
+
+    async function load() {
+      const key = `article-view-${meta.id}`;
+
+      const lastViewed = Number(
+        localStorage.getItem(key)
+      );
+
+      const oneDay =
+        24 * 60 * 60 * 1000;
+
+      if (
+        !lastViewed ||
+        Date.now() - lastViewed >
+          oneDay
+      ) {
+        await incrementArticleView(meta.id);
+
+        localStorage.setItem(
+          key,
+          Date.now().toString()
+        );
+      }
+
+      const current =
+        await getArticleById(meta.id);
+
+      setArticle(current);
+
+      const likeInfo = await getArticleLikeInfo(
+        meta.id,
+        user?.id
+      );
+
+      setLiked(likeInfo.liked);
+      setLikeCount(likeInfo.count);
+    }
+
+    load().catch(console.error);
+    console.log("Increment view:", meta.id);
+
+  }, [meta.id]);
+
+  useEffect(() => {
+    async function loadUser() {
+      const supabase = createClient();
+
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+
+      setUser(user);
+    }
+
+    loadUser();
+  }, []);
+
+  
 
   const tags = useMemo(
     () =>
@@ -92,40 +173,67 @@ export default function Article({ category, fileName, json_path, title }) {
   );
 
   const calculatedReadTime = useMemo(() => {
-  if (!content) return 1;
+    if (!content) return 1;
 
-  const plainText = content
-    .replace(/```[\s\S]*?```/g, " ")
-    .replace(/`([^`]+)`/g, "$1")
-    .replace(/!\[[^\]]*\]\([^)]*\)/g, " ")
-    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/[#>*_~-]/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
+    const plainText = content
+      .replace(/```[\s\S]*?```/g, " ")
+      .replace(/`([^`]+)`/g, "$1")
+      .replace(/!\[[^\]]*\]\([^)]*\)/g, " ")
+      .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+      .replace(/<[^>]+>/g, " ")
+      .replace(/[#>*_~-]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
 
-  const chineseCharacters =
-    plainText.match(/[\u3400-\u4dbf\u4e00-\u9fff]/g)?.length ?? 0;
+    const chineseCharacters =
+      plainText.match(/[\u3400-\u4dbf\u4e00-\u9fff]/g)?.length ?? 0;
 
-  const nonChineseText = plainText.replace(
-    /[\u3400-\u4dbf\u4e00-\u9fff]/g,
-    " "
-  );
+    const nonChineseText = plainText.replace(
+      /[\u3400-\u4dbf\u4e00-\u9fff]/g,
+      " "
+    );
 
-  const englishWords =
-    nonChineseText.match(/[A-Za-z0-9]+(?:['’-][A-Za-z0-9]+)*/g)?.length ?? 0;
+    const englishWords =
+      nonChineseText.match(/[A-Za-z0-9]+(?:['’-][A-Za-z0-9]+)*/g)?.length ?? 0;
 
-  const minutes =
-    chineseCharacters / 450 +
-    englishWords / 220;
+    const minutes =
+      chineseCharacters / 450 +
+      englishWords / 220;
 
-  return Math.max(1, Math.ceil(minutes));
-}, [content]);
+    return Math.max(1, Math.ceil(minutes));
+  }, [content]);
 
   const articleTitle = meta.title || title || "Untitled Story";
   const categoryLabel = category
     ? category.charAt(0).toUpperCase() + category.slice(1)
     : "Journal";
+
+  async function handleLike() {
+    const supabase = createClient();
+
+    if (!user) {
+      await supabase.auth.signInWithOAuth({
+        provider: "google",
+      });
+
+      return;
+    }
+
+    try {
+      const newLiked = await toggleArticleLike(
+        meta.id,
+        user.id
+      );
+
+      setLiked(newLiked);
+
+      setLikeCount((prev) =>
+        newLiked ? prev + 1 : prev - 1
+      );
+    } catch (err) {
+      console.error(err);
+    }
+  }
 
   if (loading) {
     return (
@@ -243,12 +351,57 @@ export default function Article({ category, fileName, json_path, title }) {
               <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-[#8a7e70]">
                 End of story
               </p>
+
               <h2 className="mt-5 font-serif text-3xl font-normal tracking-[-0.02em] text-[#302b25]">
                 Thanks for reading.
               </h2>
-              <p className="mx-auto mt-4 max-w-md font-serif text-base italic leading-7 text-[#70675d]">
+
+              <div className="mt-7 flex items-center justify-center gap-8">
+                {/* View Count */}
+                <div className="flex items-center gap-2 text-[15px] text-[#6f665c]">
+                  <Eye size={17} strokeWidth={1.8} />
+                  <span>{article?.view_count.toLocaleString() ?? 0}</span>
+                  <span className="text-[#93887c]">views</span>
+                </div>
+
+                {/* Like Button */}
+                <button
+                  onClick={handleLike}
+                  className={`
+                    flex items-center gap-2
+                    rounded-full
+                    border
+                    px-4 py-2
+                    text-[14px]
+                    font-medium
+                    transition
+                    ${
+                      liked
+                        ? "border-red-300 bg-red-50 text-red-600"
+                        : "border-[#d8cfc2] text-[#5b5349] hover:bg-[#f7f2eb]"
+                    }
+                  `}
+                >
+                  <Heart
+                    size={17}
+                    strokeWidth={1.8}
+                    fill={liked ? "currentColor" : "none"}
+                  />
+
+                  <span>{liked ? "Liked" : "Like"}</span>
+
+                  {likeCount > 0 && (
+                    <span className="text-[#8f8578]">
+                      {likeCount}
+                    </span>
+                  )}
+                </button>
+              </div>
+
+              <p className="mx-auto mt-6 max-w-md font-serif text-base italic leading-7 text-[#70675d]">
                 If this story resonated with you, feel free to save it or share it.
               </p>
+
               <div className="mt-8 flex justify-center">
                 <ShareAndCopy />
               </div>
