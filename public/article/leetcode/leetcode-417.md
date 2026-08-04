@@ -17,13 +17,13 @@ id: e5e5cfbb-c896-4284-a332-aa8044747b4f
 
 題目連結 🔗：[https://leetcode.com/problems/pacific-atlantic-water-flow/](https://leetcode.com/problems/pacific-atlantic-water-flow/)
 
-### **問題分析**
+## 問題分析
 
 這題如果每一個 grid 都 dfs 看看是不是可以碰到 Pacific 跟 Atlantic，結果一定會 TLE，他實際上有更快的做法。
 
 我們的目標只是找到可以流到邊邊的 flow，所以那些只會留在中間的 flow 我們根本不用理他，所以這題最正確的做法是反過來做，從邊邊出發往上爬，看看哪一些 grid 可以流到邊邊這些格子，而同時可以流到 Pacific 跟 Atlantic 的 grid 就是我們要的。
 
-### **解題思路 - DFS**
+## 解題思路 - DFS
 
 這題知道解法之後實作應該就不是什麼問題了，建立兩個 2D array `Pacific` 跟 `Atlantic` 紀錄可以流到這兩個海洋的 grid，再來從四條邊出發，一路往上爬更新可以碰到的 grid，只要走得到的就標成 `true`。
 
@@ -67,7 +67,7 @@ for(int i = 0; i < m; i++){
 **Time Complexity** - `O(m*n)`<br>
 **Space Complexity** - `O(m*n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 void dfs(vector<vector<int>>& heights, vector<vector<bool>>& visit, int i, int j){

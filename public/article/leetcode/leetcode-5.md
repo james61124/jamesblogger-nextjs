@@ -15,13 +15,13 @@ id: 114d4423-05ae-4982-ba7a-c5a79d611fea
 
 題目連結 🔗：[https://leetcode.com/problems/longest-palindromic-substring/](https://leetcode.com/problems/longest-palindromic-substring/)
 
-### **問題分析**
+## 問題分析
 
 先劇透一下，這題的最佳解要用到 Manacher Algorithm，一個除了這題我目前還沒看到有任何題目可以用到這個的演算法，但一起來看一下。
 
 這題最直接反應到的應該就是 Expand Around Center (EAC) 了，Palindromic Substring 有兩種形式，第一種 length 是奇數，第二種 length 是偶數，所以可以跑兩次 loop，第一次看中心點只有一個的情況，然後往外擴展看看是不是 Palindromic，同時更新最大長度，第二種就是看兩個 char 一樣的情況，把他們當中心點往外擴展。
 
-### **Expand Around Center (EAC)**
+## Expand Around Center (EAC)
 
 這題方法比較直覺，我們直接來討論怎麼寫比較優雅。
 
@@ -52,7 +52,7 @@ int longestPalindromeHelper(string& s, int left, int right){
 **Time Complexity** - `O(n^2)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int longestPalindromeHelper(string& s, int left, int right){
@@ -82,7 +82,7 @@ string longestPalindrome(string s) {
 }
 ```
 
-### **時間優化 - Manacher Algorithm**
+## 時間優化 - Manacher Algorithm
 
 Manacher Algorithm 是一個 based on EAC 的演算法，他可以把時間複雜度從 O(n^2) 降到 O(n)，我另外寫了一篇文章專門講 Manacher's Algorithm，看完了這題基本上也就解了。
 
@@ -93,7 +93,7 @@ Manacher Algorithm 是一個 based on EAC 的演算法，他可以把時間複�
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 string preprocess(const string& s) {

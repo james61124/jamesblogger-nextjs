@@ -14,13 +14,13 @@ id: 22974b65-037b-441b-90a1-b211010c99d9
 
 題目連結 🔗：[https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
 
-### **問題分析**
+## 問題分析
 
 這題基本上就是 level order traversal 的小變形，我們知道 level order 就是利用 queue 記錄下一層的每個 nodes，只是題目說要一正一反要怎麼做呢？
 
 其實沒那麼複雜，每一層在 visit 的時候會需要將 node 從 queue 裡面拿出來放進去 result 的 vector 裡面，遇到反的就從後面開始放就好，這樣我們就不用動 traversal 的部分
 
-### **解題思路 - Level Order Traversal**
+## 解題思路 - Level Order Traversal
 
 我們先完成一個 Level Order Traversal
 
@@ -75,7 +75,7 @@ return result;
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(W)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 vector<vector<int>> zigzagLevelOrder(TreeNode* root) {

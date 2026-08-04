@@ -15,7 +15,7 @@ id: 2fc9464c-ad3d-4630-8176-75b237e61ee6
 
 題目連結 🔗：[https://leetcode.com/problems/binary-tree-level-order-traversal/](https://leetcode.com/problems/binary-tree-level-order-traversal/)
 
-### **解題思路 - BFS**
+## 解題思路 - BFS
 
 因為要一層一層看的原因，所以直接用 BFS 去想，BFS 就是當我看完一個 node，我就把我的 children push 進去 queue 裡，然後每拿出一個 node 就一樣找他的 children 再推進去 queue 裡，這裡只需要解決一個問題，就是只要分辨哪些 node 是同一層就行了，因為同一層的 node 要放在同一個 subarray 裡。
 
@@ -24,7 +24,7 @@ id: 2fc9464c-ad3d-4630-8176-75b237e61ee6
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 vector<vector<int>> levelOrder(TreeNode* root) {

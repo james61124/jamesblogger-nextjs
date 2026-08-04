@@ -15,11 +15,11 @@ id: 815b61a8-6588-4232-a5da-0dd0bc30e746
 
 題目連結🔗：[https://leetcode.com/problems/zigzag-conversion/](https://leetcode.com/problems/zigzag-conversion/)
 
-### **題目分析**
+## 題目分析
 
 這題如果開一個 `vector<string>` 從上到下再從下到上把每一個字都填進去，最後再一排一排輸出應該大家都會，所以我就在想，這種有規律的題目肯定可以用數學公式解決，只要找到規律性應該就可以省掉這個 `O(n)` 的空間。
 
-### **解題思路**
+## 解題思路
 
 我們先試著簡化問題，把不同 `numRows` 字母的順序寫出來
 
@@ -104,7 +104,7 @@ for(int row = 0; row < numRows; row++){
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 string convert(string s, int numRows) {

@@ -15,13 +15,13 @@ id: 8ed9121f-8c1c-4369-af0e-f8d14ce12600
 
 題目連結 🔗：[https://leetcode.com/problems/reverse-bits/](https://leetcode.com/problems/reverse-bits/)
 
-### **問題分析**
+## 問題分析
 
 先記錄一下，這是我的第一題 Bit Manipulation，以前看到 Bit Manipulation 都不太想學直接先跳過，現在要回來還債了。
 
 如果是按照一般 vector 的邏輯，要 reverse 一個 vector，可能就是利用一個 `right` pointer 一直紀錄最後一個數字，然後把他塞到另一個 vector 裡面，`right` 一直縮進來直到結束就可以了，所以初步判斷 Reverse Bits 應該也是差不多思路，一直紀錄最後一個 bit，然後塞到另一個 uint32_t 裡，所以關鍵就是怎麼達成「紀錄最後一個 bit」這件事。
 
-### **解題思路 - Bit Manipulation**
+## 解題思路 - Bit Manipulation
 
 「保留某某位數」這件事情，一律使用 bitmask 來解決，要保留哪一位數 mask 就設為 1，然後跟原本的 unsigned int 做 `and` operation，舉個例子，有個數 `n = 1010` 想要保留最後兩位數：
 
@@ -42,7 +42,7 @@ uint32_t tmp = (n & 1);
 **Time Complexity** - `O(32) = O(1)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 uint32_t reverseBits(uint32_t n) {
@@ -55,7 +55,7 @@ uint32_t reverseBits(uint32_t n) {
 }
 ```
 
-### **時間優化 - Divide and Conquer**
+## 時間優化 - Divide and Conquer
 
 結果沒想到這題還可以再優化，直接舉例來看，如果今天有一個 8 bits 的數想要 reverse
 
@@ -91,7 +91,7 @@ n = (n & 0xcc) >> 2 | (n & 0x33) << 2;
 **Time Complexity** - `O(1)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 uint32_t reverseBits(uint32_t n) {
@@ -106,11 +106,11 @@ uint32_t reverseBits(uint32_t n) {
 }
 ```
 
-### **Follow up**
+## Follow up
 
 這題題目給了另一個延伸思考，如果 Bit Reverse 需要 reverse 無限多次的話，一定會有重複的狀況，所以我們可以用 Hash Table 直接 cache，這樣就可以直接查表，但是 2^32 太大了沒有辦法全部都存到 Hash Table，所以我們可以退而求其次，cache 住 8 bits 的情況就好，所以我們把 32 bits 分割成 4 個 8 bits 的 block，查四次表，最後再拼回他們正確的地方。
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 uint32_t reverseBits(uint32_t n) {

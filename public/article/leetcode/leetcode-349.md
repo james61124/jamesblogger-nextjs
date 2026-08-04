@@ -15,7 +15,7 @@ id: 6c61fd2e-2333-4f7d-a632-bb6f4960e47f
 
 題目連結 🔗：[https://leetcode.com/problems/intersection-of-two-arrays/](https://leetcode.com/problems/intersection-of-two-arrays/)
 
-### **解題思路 - Hash Table**
+## 解題思路 - Hash Table
 
 這題想法很簡單，因為要找交集，所以 iterate 一個陣列的時候，查找另一個陣列有沒有這個元素就可以了，但是如果要使「查找」這件事情是 O(1)，我們可以先將 `nums1` 轉成 unordered_set，也就是 hash table，這樣查找 `nums2` 的元素時，就可以用 O(1) 快速判斷是否存在。
 
@@ -24,7 +24,7 @@ id: 6c61fd2e-2333-4f7d-a632-bb6f4960e47f
 **Time Complexity** - `O( m + n )`，因為 iterate 兩個 vector。<br>
 **Space Complexity** - `O(m)`，因為開了一個 1D unordered_set 還有一個 1D vector。
 
-### **Implementation**
+## Implementation
 
 ```cpp
 vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {

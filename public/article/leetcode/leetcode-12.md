@@ -34,7 +34,7 @@ id: 149d429f-36b4-4103-9c0f-67bd3d5cb48f
 
 題目連結 🔗：[https://leetcode.com/problems/integer-to-roman/](https://leetcode.com/problems/integer-to-roman/)
 
-### **解題思路**
+## 解題思路
 
 這題原本想法是先建立一個 Hash Table 儲存 symbol 跟 value 的對應關係，再來一個一個看要放哪些 symbol，當遇到 symbol 要連續放四次的就用減法解決。
 
@@ -62,7 +62,7 @@ for(auto &[value, symbol] : v) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 string intToRoman(int num) {

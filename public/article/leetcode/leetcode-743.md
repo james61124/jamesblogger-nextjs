@@ -14,13 +14,13 @@ id: b20cd333-940b-4ace-beea-7ce66a152642
 
 題目連結 🔗：[https://leetcode.com/problems/network-delay-time/](https://leetcode.com/problems/network-delay-time/)
 
-### **問題分析**
+## 問題分析
 
 這題轉成白話文其實意思就是找到從 `k` 出發到最遠的點的最短距離，而如果有 node 跟 `k` 的距離是無限大，也就是到不了，那就要回傳 `-1`。而在 Shortest Path 的 Algorithm 中，有一種就是專門處理 single source 且沒有負數 edges 的，那就是 Dijkstra，詳情可以參考下面這篇文章。
 
 [[ Algorithm ] Shortest Path - Dijkstra | 核心概念與 Leetcode 題型解析](https://www.jamesblogger.com/program/articles/dijkstra)
 
-### **解題思路 - Dijkstra Algorithm**
+## 解題思路 - Dijkstra Algorithm
 
 首先先建立 adjacency list
 

@@ -15,11 +15,11 @@ id: ccf88edc-aaea-4a0c-a6e4-052efe0a151a
 
 題目連結 🔗：[https://leetcode.com/problems/validate-binary-search-tree/](https://leetcode.com/problems/validate-binary-search-tree/)
 
-### **問題分析**
+## 問題分析
 
 Valid Binary Search Tree 有兩個條件，對於每一個 node 來說，左邊的所有 node 都要小於自己，右邊的所有 node 都要大於自己，所以解法也很直覺，只要 dfs 檢查是不是所有 node 都符合這些條件就可以了。
 
-### **解題思路 - DFS**
+## 解題思路 - DFS
 
 dfs 要傳下去的參數，除了 node 本身以外，我們還需要傳他最大只能是多少，還有他最小只能是多少，如果超過這兩個條件就直接 return false 就行了。
 
@@ -39,7 +39,7 @@ bool dfs(TreeNode* node, int minNum, int maxNum){
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 bool dfs(TreeNode* node, long long minNum, long long maxNum){
@@ -56,14 +56,14 @@ bool isValidBST(TreeNode* root) {
 }
 ```
 
-### **另一種寫法**
+## 另一種寫法
 
 不過與其把 int 調成 long long，我們其實可以直接紀錄「最大值的 node」跟「最小值的 node」就好，這樣也不用多開 long long 的空間了。
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 bool dfs(TreeNode* node, TreeNode* minNode, TreeNode* maxNode){

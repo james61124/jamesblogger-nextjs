@@ -15,11 +15,11 @@ id: cb72a346-7b8a-4f5b-b3ba-48a0ad9ae8a2
 
 題目連結 🔗：[https://leetcode.com/problems/subtree-of-another-tree/](https://leetcode.com/problems/subtree-of-another-tree/)
 
-### **問題分析**
+## 問題分析
 
 這題可以先照最直覺的思路慢慢思考，在還沒看到 subRoot 以前就一直看，直到看到 subRoot 就開始檢查下面的 sub tree 有沒有一樣。
 
-### **解題思路 - DFS**
+## 解題思路 - DFS
 
 首先在還沒有找到 subRoot 以前，只要任何一個 child 回傳他們找到 sub tree 了就可以了，所以 dfs function 的想法是這樣：
 
@@ -78,7 +78,7 @@ bool dfs(TreeNode* root, TreeNode* target){
 **Time Complexity** - `O(n*m)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 bool isSame(TreeNode* root, TreeNode* target){
@@ -99,7 +99,7 @@ bool isSubtree(TreeNode* root, TreeNode* subRoot) {
 }
 ```
 
-### **另解 - KMP**
+## 另解 - KMP
 
 用 DFS 我們就會發現，如果在 `root` 中有很多重複的 `subRoot`，例如 root = "A, A, A, A, B", subRoot = "A, A, A, B"，這樣就要重複好幾個 node 都做一次 DFS，其實是滿暴力的做法，事實上 KMP 就是負責解決這種重複的事情。
 
@@ -110,7 +110,7 @@ KMP 是一個 O(m + n) 的 Algorithm，可以在一個 string `text` 底下判�
 **Time Complexity** - `O(m+n)`<br>
 **Space Complexity** - `O(m+n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 void serialize(TreeNode* root, string& s) {

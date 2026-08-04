@@ -14,13 +14,13 @@ id: 87c24057-d959-49fb-ab24-0b1910bf82ca
 
 題目連結🔗：[https://leetcode.com/problems/simplify-path/](https://leetcode.com/problems/simplify-path/)
 
-### **問題分析**
+## 問題分析
 
 這題可以利用 istringstream 來將 string 用 `/` 切開成一個一個 token，再來只要處理掉幾種特殊的 rules 即可，像是遇到 `..` 需要倒退一個 folder，所以我們可以將所有 token 都先存到 stack 中，如果遇到 `..` 就 pop 掉一個。
 
 這樣做沒什麼問題，只是最後真的要輸出 result 時，利用 stack 一個一個 pop 出來結果會反過來，所以我們可以選擇不要將結果存到 stack 中，只要存到一個可以 `pop_back()` 的 data structure，但最後 iterate 時可以從頭走的，那用 vector 就可以了。
 
-### **解題思路**
+## 解題思路
 
 再來就照順序實作，先將 `path` 利用 `/` 切成很多 token
 
@@ -61,7 +61,7 @@ for(int i = 0; i < vec.size(); i++) result += "/" + vec[i];
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 string simplifyPath(string path) {

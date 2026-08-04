@@ -18,22 +18,22 @@ id: d35590f6-c088-4864-9d72-fc37bf2d9f18
 
 題目連結 🔗：[https://leetcode.com/problems/course-schedule-ii/](https://leetcode.com/problems/course-schedule-ii/)
 
-### **問題分析**
+## 問題分析
 
 題目說要返回合理的修課順序，如果把這些課程先修後修的關係畫成一張 Directed Graph，我們要確保每門課程只有在所有先修課完成後才會出現在順序中，所以我們需要的就是 Topological Sort 後的 Order。
 
-### **解題思路 - Topological Sort**
+## 解題思路 - Topological Sort
 
 如果知道什麼是 Topological Sort 跟怎麼實作的話就很單純了，詳情請洽 Topological Sort 頁面，唯一需要注意的應該只有一點：
 
-#### **轉成 Adjacency List 比較好實作**
+### 轉成 Adjacency List 比較好實作
 
 題目給的是 Directed Graph 的 edge 而已，跑個迴圈轉成 Adjacency List 就可以直接實作 Topological Sort 了。
 
 **Time Complexity** - `O( V + E )`，因為用 BFS traverse 過整個 Graph<br>
 **Space Complexity** - `O( V + E )`，建了一個 Adjacency List
 
-### **Implementation**
+## Implementation
 
 ```cpp
 vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {

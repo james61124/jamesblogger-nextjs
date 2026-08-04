@@ -15,11 +15,11 @@ id: 968e4967-c123-4afd-bfba-4255eb3195e0
 
 題目連結 🔗：[https://leetcode.com/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/](https://leetcode.com/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/)
 
-### **問題分析**
+## 問題分析
 
 這題很數學，首先最小的 operations 會出現在當 array 中有第一個 1 出現的時候，他就會像感染一樣將身邊所有數字都「感染」成 1，簡單來說，如果我用了 k 個 operations 讓 array 中出現第一個 1，那最小的 operations 數量就是 k + n - 1，利用這個概念就可以解完整題了
 
-### **解題思路 - Math**
+## 解題思路 - Math
 
 首先 array 中有可能已經先有 1，那最小 operations 數量就是這些 1 去「感染」出來的
 
@@ -63,7 +63,7 @@ return minSpan + n - 1;
 **Time Complexity** - `O(n^2 * logA)`，A 是 max(nums)<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int minOperations(vector<int>& nums) {

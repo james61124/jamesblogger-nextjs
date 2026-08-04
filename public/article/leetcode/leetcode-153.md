@@ -15,13 +15,13 @@ id: 19767747-f368-4f32-b21d-08f78628aaad
 
 題目連結 🔗：[https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 
-### **問題分析**
+## 問題分析
 
 這題翻成白話文就是「找到最小數字的 index」，所以最直覺的解就是 O(n)，但因為這題給的是 rotated sorted array，雖然不是真的 sorted array，但感覺上應該要有方法可以用 O(logn) 解決。
 
 按照前面的思路，sorted array 變體中，要找到特定 target，可以從 Binary Search 想想看。
 
-### **解題思路 - Binary Search**
+## 解題思路 - Binary Search
 
 Binary Search 不只可以用在「找 sorted array 中的 target」，而是如果這個 array 可以找到一個 function 讓他左邊都是 false，右邊都是 true，就可以用 Binary Search 來解，詳細內容可以看我整理的這篇文章：[[ Algorithm ] Binary Search | 核心概念與 Leetcode 題型解析](https://www.jamesblogger.com/program/articles/binary-search)
 
@@ -47,7 +47,7 @@ is_valid = [0, 0, 0, 0, 0, 0, 1]
 **Time Complexity** - `O(logn)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 bool isValid(vector<int>& nums, int mid, int& threshold){

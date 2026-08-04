@@ -15,11 +15,11 @@ id: 7abb56ed-7aaa-47e5-a167-cb3a652b2866
 
 題目連結 🔗：[https://leetcode.com/problems/count-primes/](https://leetcode.com/problems/count-primes/)
 
-### **問題分析**
+## 問題分析
 
 這妥妥的數學題，找質數最直覺的方法就是從目前的質數出發，一路往上找他的倍數，全部標成非質數，再一直往上找下一個質數直到 `sqrt(n)`，簡單來說，第一個質數是 2，所以把 2, 4, 6, ... 都標起來，再來下一個是 3，所以把 3, 5, 9, ... 也都標起來以此類推，這樣就會過了
 
-### **解題思路**
+## 解題思路
 
 概念上是這樣，不過實作其實可以優化很多地方，首先依照上面思路我們必須建一個長度為 n 的 isPrime[i]，但問題是所有偶數除了 2 都不會是質數，那我們乾脆偶數就都不考慮進來了，直接見一個長度為 `n / 2 + 1` 的 isPrime[i]，省掉一半的空間，而這個 array 只存奇數，所以 index 跟真實數字的對應關係如下
 
@@ -87,7 +87,7 @@ for(int i = 2; i <= bound; i++) {
 **Time Complexity** - `O(n logn logn)`，因為劃掉的次數大約是 n/2 + n/3 + n/5 ...<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int countPrimes(int n) {

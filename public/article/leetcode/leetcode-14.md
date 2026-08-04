@@ -15,7 +15,7 @@ id: 28fe1c78-19c0-4977-bb4a-1be316dc5b41
 
 題目連結 🔗：[https://leetcode.com/problems/longest-common-prefix/](https://leetcode.com/problems/longest-common-prefix/)
 
-### **解題思路**
+## 解題思路
 
 這題最直覺的做法應該是 i 從 0 開始，比較每一個字串的第 i 個字，直到有字串不一樣就輸出答案，不過這樣做的時間複雜度是 `O(n * m)`，其中 n 是 `strs` 的長度，m 是最短字串的長度，理論上會有更快的做法。
 
@@ -24,7 +24,7 @@ id: 28fe1c78-19c0-4977-bb4a-1be316dc5b41
 **Time Complexity** - `O(n log n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 string longestCommonPrefix(vector<string>& strs) {

@@ -14,7 +14,7 @@ id: c5a92c0a-9eb8-4043-a7d4-c1d637ec4c22
 
 題目連結 🔗：[https://leetcode.com/problems/implement-trie-prefix-tree/](https://leetcode.com/problems/implement-trie-prefix-tree/)
 
-### **問題分析 - Trie 介紹**
+## 問題分析 - Trie 介紹
 
 <figure>
   <img src="/images/leetcode/leetcode-208/trie.png" alt="Trie" />
@@ -25,7 +25,7 @@ id: c5a92c0a-9eb8-4043-a7d4-c1d637ec4c22
 
 Trie 又叫 Prefix Tree，架構圖大概長這樣，他是一個樹狀的 Data Structure，特別適合用來儲存 string 跟查找 string。所以對於每一個 node 來說，最多會有 26 個 children，而每一條 trajectory 就是一個字。
 
-### **解題思路**
+## 解題思路
 
 所以對於每一個 node 來說，我們需要一個 size 為 26 的 vector 儲存所有可能的 children，當這個 node 有對應的 child 時就接一個 TrieNode* 上去，然後我們需要一個 `isEnd` 來判斷這個是不是結尾的 node，因為如果今天我們 insert `apple`，search `app` 的時候必須 return false，所以需要判斷這個 node 是不是最後一個。
 
@@ -76,7 +76,7 @@ bool startsWith(string prefix) {
 }
 ```
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 class Trie {

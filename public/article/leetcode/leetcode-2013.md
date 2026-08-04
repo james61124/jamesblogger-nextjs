@@ -17,7 +17,7 @@ id: b828849d-3003-479d-92a4-b4a514acc74f
 
 題目連結 🔗：[https://leetcode.com/problems/detect-squares/](https://leetcode.com/problems/detect-squares/)
 
-### **解題思路 - Hash Table**
+## 解題思路 - Hash Table
 
 這題最主要要計算以 `point` 為一個頂點的正方形數量，由於要計算的是正方形，所以每條邊長度會是一樣的，因此只要定位出 x 軸上的兩個頂點，剩下的兩個點位置就會是固定的，也就可以計算正方形數量。
 
@@ -65,7 +65,7 @@ int count(vector<int> point) {
 **Time Complexity** - `O(k)`，k 為跟 `point` x 座標一樣的 points 數量<br>
 **Space Complexity** - `O(n)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 class DetectSquares {

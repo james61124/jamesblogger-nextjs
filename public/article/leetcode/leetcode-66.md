@@ -15,11 +15,11 @@ id: 75622268-7b2a-47b2-9b95-debff0f92fcc
 
 題目連結 🔗：[https://leetcode.com/problems/plus-one/](https://leetcode.com/problems/plus-one/)
 
-### **問題分析**
+## 問題分析
 
 這題不用把 array 轉成數字加完之後再轉回 array，直接利用普通進位的觀念更新 array 就好。
 
-### **解題思路 - **
+## 解題思路 - 
 
 對於個位數來說，會變成 (digits[i] + 1) / 10，然後進位 `c` 往後丟，而後面的每個都是 (digits[i] + c) / 10 然後進位再往後丟，因此我們可以把 c 初始化為 1，對每個位數進行更新。
 
@@ -44,7 +44,7 @@ if(c > 0) digits.insert(digits.begin(), 1);
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 vector<int> plusOne(vector<int>& digits) {

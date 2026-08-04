@@ -15,14 +15,14 @@ id: 63788f38-d2a4-406f-bb68-fb8989255053
 
 題目連結 🔗：[https://leetcode.com/problems/same-tree/](https://leetcode.com/problems/same-tree/)
 
-### **問題分析**
+## 問題分析
 
 這題非常單純，跑一個 DFS 判斷每一個 node 是不是都一樣的就可以了。
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 bool dfs(TreeNode* p, TreeNode* q){

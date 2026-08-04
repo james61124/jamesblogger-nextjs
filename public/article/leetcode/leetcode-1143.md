@@ -20,7 +20,7 @@ id: 55801888-d78c-4abc-ad13-5b5f80dffb31
 
 題目連結 🔗：[https://leetcode.com/problems/longest-common-subsequence/](https://leetcode.com/problems/longest-common-subsequence/)
 
-### **解題思路 - DP (Double-Sequence Linear DP Problem)**
+## 解題思路 - DP (Double-Sequence Linear DP Problem)
 
 這題可以透過 Double-Sequence Linear DP 來解，因為他的輸入是兩條 string，所以我們就開一個 dp[i+1][j+1] 來代表以 text1[i] 為結尾及以 text2[j] 為結尾的 longest common sequence 長度。
 
@@ -37,7 +37,7 @@ id: 55801888-d78c-4abc-ad13-5b5f80dffb31
 **Time Complexity** - `O(m×n)`，因為 iterate 過兩個 string<br>
 **Space Complexity** - `O(m×n)`，因為開了一個 m x n 的 2D array
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int longestCommonSubsequence(string text1, string text2) {
@@ -56,7 +56,7 @@ int longestCommonSubsequence(string text1, string text2) {
 }
 ```
 
-### **空間優化**
+## 空間優化
 
 以上是正常的 dp 建表，但是我們其實只需要 dp 裡面的兩個 row 就可以了，不用把整個 dp 的錶都建出來，所以就可以將空間優化為 O(min(m,n))。
 

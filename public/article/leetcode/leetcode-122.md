@@ -15,7 +15,7 @@ id: bbe1af34-0a15-40ef-bd28-8fb55dc68c00
 
 題目連結 🔗：[https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
 
-### **問題分析**
+## 問題分析
 
 題目沒有限制買跟賣的次數，只有說一次只能持有一張股票，問最多可以賺多少錢，這其實就是一個非常簡單的邏輯，我們只要捕捉每一段上升，下降的都不要管，那自然就會是賺最多錢的方法了。
 
@@ -24,7 +24,7 @@ id: bbe1af34-0a15-40ef-bd28-8fb55dc68c00
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int maxProfit(vector<int>& prices) {

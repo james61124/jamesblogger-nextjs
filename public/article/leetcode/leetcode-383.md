@@ -15,14 +15,14 @@ id: 52c06c74-7b3c-46e3-a5e1-36709ff3fdb0
 
 題目連結 🔗：[https://leetcode.com/problems/ransom-note/](https://leetcode.com/problems/ransom-note/)
 
-### **問題分析**
+## 問題分析
 
 沒啥特別的，就建個 Hash Table 儲存每個字母出現過的次數就好
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 bool canConstruct(string ransomNote, string magazine) {

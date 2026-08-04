@@ -18,7 +18,7 @@ id: 0b4a27e2-c38e-4a3e-bbb3-26806f637ede
 
 題目連結 🔗：[https://leetcode.com/problems/burst-balloons/](https://leetcode.com/problems/burst-balloons/)
 
-### **問題分析**
+## 問題分析
 
 這題是個有點反直覺的 dp，先來看一個範例，如果要計算 `nums = [3, 1, 5, 8]`，假設 dp[interval] 代表這個區間內可以得到的最大 value，我們可以這樣看
 
@@ -46,7 +46,7 @@ dp[i][j] 代表區間 i ~ j ( 不含 i, j 本身 ) 可以獲得的最大值，�
 
 [[ Algorithm ] Dynamic Programming (五) - Interval DP | 核心概念與 Leetcode 題型解析](https://www.jamesblogger.com/program/articles/interval-dp)
 
-### **解題思路 - Interval DP**
+## 解題思路 - Interval DP
 
 我們會發現大區間都是由小區間得到的，所以更新這個 dp table 要先從小區間開始
 
@@ -74,7 +74,7 @@ for(int len = 2; len < n; len++){
 **Time Complexity** - `O(n^2)`<br>
 **Space Complexity** - `O(n^2)`
 
-### **Implementation**
+## Implementation
 ```cpp
 int maxCoins(vector<int>& nums) {
     nums.insert(nums.begin(), 1);

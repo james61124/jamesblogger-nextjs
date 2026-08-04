@@ -17,7 +17,7 @@ Two Pointers 中，原本是分三種 :
 
 但在 Linked List 中，因為是單向的，所以不會有 Opposite Direction Two Pointers，下面就來細講 Linked List 的 Two Pointers 分類。
 
-### **Fast and Slow Pointers**
+## Fast and Slow Pointers
 
 主要用途：尋找倒數第 n 個 node、判斷 cycle、判斷 middle 等等
 
@@ -27,7 +27,7 @@ Two Pointers 中，原本是分三種 :
 
 尋找倒數第 n 個 node 可以這樣解，例如說 [ Leetcode 19 ] Remove Nth Node From End of List，就是利用 fast, slow 兩個 pointers 來找倒數第 n 個 node 的，fast 先移到第 n 個 node，再來兩個 pointers 用相同的速度移動，最後 fast 碰到底的時候 slow 就會落在倒數第 n 個 node 身上。
 
-#### **Template**
+### Template
 
 ```cpp
 ListNode* fastAndSlowPointer(ListNode* head) {
@@ -53,7 +53,7 @@ ListNode* fastAndSlowPointer(ListNode* head) {
 
 [ Leetcode 876 ] Middle of the Linked List 就是找 middle 的範例題，讓 fast 用 slow 兩倍的速度往前走，fast 走到底的時候 slow 就會在 middle 的位置了。
 
-#### **Template**
+### Template
 
 ```cpp
 ListNode* fastAndSlowPointer(ListNode* head) {
@@ -73,17 +73,17 @@ ListNode* fastAndSlowPointer(ListNode* head) {
 }
 ```
 
-#### **範例**
+### 範例
 
 [[ Leetcode 19 ] Remove Nth Node From End of List | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-19)<br>
 [[ Leetcode 141 ] Linked List Cycle | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-141)<br>
 [[ Leetcode 876 ] Middle of the Linked List | 解題思路分享](https://www.jamesblogger.com/leetcode/articles/leetcode-876)
 
-### **Seperate Two Pointers**
+## Seperate Two Pointers
 
 主要用途：不同 linked list 的 intersection, merge, comparison 等等
 
-#### **Template**
+### Template
 
 ```cpp
 ListNode* left_1 = list1;
@@ -101,6 +101,6 @@ while(left_1 && left_2){
 }
 ```
 
-#### **範例**
+### 範例
 
 [[ Leetcode 21 ] Merge Two Sorted Lists | 解題思路分享](https://www.jamesblogger.com/leetcode/articles/leetcode-21)

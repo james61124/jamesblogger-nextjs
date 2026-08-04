@@ -15,14 +15,14 @@ id: cccb9b30-b469-499c-8341-7b437638f0c0
 
 題目連結 🔗：[https://leetcode.com/problems/reverse-linked-list-ii/](https://leetcode.com/problems/reverse-linked-list-ii/)
 
-### **問題分析**
+## 問題分析
 
 題目說把 left ~ right 中間的 node 進行 reverse，沒什麼特別的技巧，用頭插法就可以解決了。
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 ListNode* reverseBetween(ListNode* head, int left, int right) {

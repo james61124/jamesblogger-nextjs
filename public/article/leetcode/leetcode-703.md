@@ -14,7 +14,7 @@ id: 096efd40-bfb8-4e0e-820f-3504a60c3f50
 
 題目連結 🔗：[https://leetcode.com/problems/kth-largest-element-in-a-stream/](https://leetcode.com/problems/kth-largest-element-in-a-stream/)
 
-### **問題分析**
+## 問題分析
 
 這題主要可以往幾個方向思考，如果利用 Binary Search 找到指定位置 insert 進去，然後直接輸出第 k 個，找到正確位置的部分是 O(logn) 沒錯，但 vector 的 insert 是 O(n) 所以這樣不太好，而 insert 是 O(1) 的 data structure 都沒有辦法直接 search 到第 k 的 index。
 
@@ -24,7 +24,7 @@ id: 096efd40-bfb8-4e0e-820f-3504a60c3f50
 
 我們要利用 O(logn) 幫新進的 element 找到正確的 index，並維護這個 data structure 的 size 為 k，而每次都取出最尾巴最小的值即可，符合這些條件的 data structure 就是 Priority Queue - Min Heap。
 
-### **解題思路 - Priority Queue**
+## 解題思路 - Priority Queue
 
 想到這邊這題就解完了，對於每一個新進的數字來說，如果比 minHeap 的 top 還要小就不管，不然就 push 進去後直接 pop 掉最小的
 
@@ -65,7 +65,7 @@ KthLargest(int k, vector<int>& nums) {
 **Time Complexity** - `O(log k)`，這是單次 `add`，所以初始化的時候是 `O(nlogk)`<br>
 **Space Complexity** - `O(k)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 class KthLargest {

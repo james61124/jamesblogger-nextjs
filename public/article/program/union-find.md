@@ -158,6 +158,6 @@ public:
 
 > 雖然個別合併可能不是最短路徑，但只要結合「rank + 路徑壓縮」，最壞情況的整體摺疊效果仍然是非常快的
 
-### **範例**
+## 範例
 
 [[ Leetcode 200 ] Number of Islands | 解題思路分享](https://www.jamesblogger.com/leetcode/articles/leetcode-200)

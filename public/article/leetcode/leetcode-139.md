@@ -15,11 +15,11 @@ id: aa34427c-de4f-4869-a10c-b1b4d6df18ac
 
 題目連結 🔗：[https://leetcode.com/problems/word-break/](https://leetcode.com/problems/word-break/)
 
-### **問題分析**
+## 問題分析
 
 我這題第一感其實是 recursion + memorization，解起來也沒有不好，但是總覺得缺乏了一點紀律。
 
-### **解題思路 - Recursion + Memorization**
+## 解題思路 - Recursion + Memorization
 
 我們需要 iterate s[i] 來取得一個 substring，並判斷該 substring 是不是已經在 wordDict 裡了，如果是的話，就清空 substring 然後往下一層送，最後如果發現結果是 false，就要回到這層繼續接 substring，舉例來說：
 
@@ -70,7 +70,7 @@ bool dfs(int i, string& s, string substring,
 **Time Complexity** - `O(n^2)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 bool dfs(int i, string& s, string substring, 
@@ -97,7 +97,7 @@ bool wordBreak(string s, vector<string>& wordDict) {
 }
 ```
 
-### **思路優化 - DP**
+## 思路優化 - DP
 
 上面的解法總覺得思路有一點亂，所以嘗試從 DP 下手試試看，不過這題第一次寫的時候我也沒有想到 DP 的解，因為他不太像是什麼可以把問題拆成「子問題」的題目，我就一直以為不是 DP。
 
@@ -130,7 +130,7 @@ bool wordBreak(string s, vector<string>& wordDict) {
 **Time Complexity** - `O(n*L)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 bool wordBreak(string s, vector<string>& wordDict) {

@@ -14,13 +14,13 @@ id: ecbe10d0-a911-45c0-852c-3e6373027149
 
 題目連結 🔗：[https://leetcode.com/problems/redundant-connection/](https://leetcode.com/problems/redundant-connection/)
 
-### **問題分析**
+## 問題分析
 
 這題要找到會產生 cycle 的一條 edge，這其實就是 Minimum Spanning Tree 中 Kruskal’s Algorithm 的變形，Kruskal's Algorithm 會先將每條 edge 進行 sorting，由最小 cost 的 edge 開始，逐一加進去 Graph 中，如果發現加入的 edge 會形成 cycle 就丟棄這個 edge，這可以直接運用在這題。
 
 我們一樣將 edge 逐條加入 Graph 中，只要發現 cycle 就直接 return 這個 edge 就行了，而在 Kruskal's Algorithm 中是利用 Union Find 來判斷有沒有出現 cycle。
 
-### **解題思路 - Union Find**
+## 解題思路 - Union Find
 
 簡單來說每一條 edge 上的 node 都會被 unite 起來，而當發現有一條 edge 的 node 在同一個 disjoint set 底下，就代表加入這條 edge 會形成 cycle。
 
@@ -80,7 +80,7 @@ vector<int> findRedundantConnection(vector<vector<int>>& edges) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 class UnionFind {

@@ -14,13 +14,13 @@ id: 75cc2324-93e0-4111-9892-2f1b8f588d34
 
 題目連結 🔗：[https://leetcode.com/problems/decode-string/](https://leetcode.com/problems/decode-string/)
 
-### **問題分析**
+## 問題分析
 
 遇到這種括號的題目直覺是用 stack 解，這題其實也可以但是不太好想，最直覺的 stack 解是計算完括號裡面的內容後推回去 stack，最後把 stack 裡面的所有東西再重新 pop 出來組合就可以了，但是這樣如果有 nested 的括號就要一直重複 push, pop
 
 所以這題我換個思路用 recursion 做，當遇到數字表示有後面的東西需要重複好幾次，就進到下一層 recursion 裡去處理，處理完回傳回來再繼續往下即可
 
-### **解題思路 - Recursion**
+## 解題思路 - Recursion
 
 我們建立一個 recursion 的 function 來協助我們，i 代表目前 visit 到的 index，而這個 function 會回傳當下這個括號 repeat n 次之後的結果
 
@@ -104,7 +104,7 @@ string buildString(string& s, int n, int& i) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int convertStrToNum(string& s, int& i){
@@ -144,6 +144,6 @@ string decodeString(string s) {
 }
 ```
 
-### **Optimization**
+## Optimization
 
 這題其實有可能的小優化可以做，用 stack 版本比較不好想但是寫起來比較優雅，另外 repeat n 次的部分如果 n 大一點，可以用 2 的冪次方做優化，不過這邊就先省略這部分。

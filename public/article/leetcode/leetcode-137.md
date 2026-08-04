@@ -14,7 +14,7 @@ id: 5b5a154d-dc1e-40c8-8827-6c6da0464088
 
 題目連結 🔗：[https://leetcode.com/problems/single-number-ii/](https://leetcode.com/problems/single-number-ii/)
 
-### **問題分析**
+## 問題分析
 
 這種找 unique number 在 Bit Manipulation 中有一個很常用的觀念
 
@@ -23,7 +23,7 @@ id: 5b5a154d-dc1e-40c8-8827-6c6da0464088
 
 換句話說，如果整個 array 只有一種數字只出現一次，把所有數字都 XOR 起來，就會留下他，因為其他數字都會變成 0，但這題的每種數字都會出現三次，如果全部都 XOR 起來是行不通的，所以我們要想其他方法
 
-### **解題思路 - Bit Manipulation**
+## 解題思路 - Bit Manipulation
 
 如果一種數字最多出現兩次，用剛剛 XOR 的方法可以把數字記錄成 state
 
@@ -72,7 +72,7 @@ second = (second ^ num) & (~first);
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int singleNumber(vector<int>& nums) {

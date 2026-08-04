@@ -15,13 +15,13 @@ id: 77db540d-c0b3-458c-91c2-5965136e1182
 
 題目連結 🔗：[https://leetcode.com/problems/sliding-window-maximum/](https://leetcode.com/problems/sliding-window-maximum/)
 
-### **問題分析**
+## 問題分析
 
 這題要維護一個 sliding window 很簡單，關鍵在於要怎麼找到 sliding window 裏面的最大值，最暴力的方法就是再跑一次迴圈看 sliding window 裏面最大的是多少，但這樣一定超時，所以如果我們可以把 sliding window 裡的資訊放到一個可以排序的 STL 的話，就可以拿到 maximum。
 
 能排序的 STL 其實很多，這題也可以用 map 做，insert 進去時 map 就會自動排序，sliding window 移動的時候再把用不到的 element 從 map 中 erase 就行了，不過我們來看一下 priority queue 的解法。
 
-### **解題思路 - Priority Queue**
+## 解題思路 - Priority Queue
 
 其實在這個 STL 裏面，不一定要剛好存放 sliding window 的內容物，如果我們在 priority queue 裏面存 `pair<int, int> p(nums[index], index)`，這樣 pq.top() 就會是最大值，但 sliding window 移動時我們不用特別找到被移出去的 element 把他 erase，我們只要判斷一下 pq.top() 的 index 如果在 sliding window 外，那把他 pop 掉看下一個就好，不用一直維護 priority queue 讓他符合 sliding window 的數量。
 
@@ -38,7 +38,7 @@ while(pq.top().second<i-k+1){
 **Time Complexity** - `O(n * log k)`，因為 insert 是 `O(logk)`<br>
 **Space Complexity** - `O( k )`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 vector<int> maxSlidingWindow(vector<int>& nums, int k) {
@@ -62,7 +62,7 @@ vector<int> maxSlidingWindow(vector<int>& nums, int k) {
 }
 ```
 
-### **時間優化 - Monotonic Deque**
+## 時間優化 - Monotonic Deque
 
 但這題其實有更快的解法，我們甚至不用將資訊儲存進去可以自動排序的 STL，我們可以手動維護一個遞減的 Monotonic Deque，這樣 insert 的時候就不用耗費 O(logn)，用 O(1) 就可以解決了，而且還可以保證 dq.front() 是最大值。
 
@@ -79,7 +79,7 @@ while (!dq.empty() && nums[dq.back()] <= nums[i]) {
 **Time Complexity** - `O( n )`<br>
 **Space Complexity** - `O( n )`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 vector<int> maxSlidingWindow(vector<int>& nums, int k) {

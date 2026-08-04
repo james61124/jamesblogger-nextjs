@@ -15,7 +15,7 @@ id: 958c2f86-b121-4362-bb71-b9bdddd6a9c2
 
 題目連結 🔗：[https://leetcode.com/problems/delete-node-in-a-bst/](https://leetcode.com/problems/delete-node-in-a-bst/)
 
-### **解題思路 - Binary Search Tree**
+## 解題思路 - Binary Search Tree
 
 Binary Search Tree 除了每個 node 最多只能有兩個 children 外，還符合下面這條規則
 
@@ -35,7 +35,7 @@ else if(key > root->val) root->right = deleteNode(root->right, key);
 **Time Complexity** - `O(logn)`，因為 Tree 的平均高度就是 logn<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int findMin(TreeNode* root) {

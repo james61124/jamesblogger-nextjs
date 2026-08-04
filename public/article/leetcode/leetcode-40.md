@@ -15,13 +15,13 @@ id: dbd131e3-d54f-4f54-8e87-a1600de752b3
 
 題目連結 🔗：[https://leetcode.com/problems/combination-sum-ii/](https://leetcode.com/problems/combination-sum-ii/)
 
-### **問題分析**
+## 問題分析
 
 遇到要列出所有組合的，滿明顯就是 backtracking，可以先看過下面這篇 backtracking 的整理。
 
 [[ Algorithm ] Backtracking | 核心概念與 Leetcode 題型解析](https://www.jamesblogger.com/program/articles/backtracking)
 
-### **解題思路 - Backtracking**
+## 解題思路 - Backtracking
 
 由於 candidates[i] 中會有重複的元素，而輸出的答案中不能包含重複的組合，因此我們可以先將 candidates[i] 排序，比較好避免掉重複的組合。
 
@@ -92,7 +92,7 @@ void backTracking(vector<int>& candidates, vector<vector<int>>& result, vector<i
 **Time Complexity** - `O(2^n * n)`，因為最多會有 `2^n` 個解，每個數字都可以選跟不選的關係，而每個答案需要 O(n) 的時間去儲存，不過實際上因為排序跟剪枝的關係，時間會遠遠小於這個<br>
 **Space Complexity** - `O(2^n * n)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 void backTracking(vector<int>& candidates, vector<vector<int>>& result, vector<int>& ans, 

@@ -15,13 +15,13 @@ id: e60b9dc0-41e6-4804-88b4-61ba95d36f10
 
 題目連結 🔗：[https://leetcode.com/problems/3sum/](https://leetcode.com/problems/3sum/)
 
-### **問題分析**
+## 問題分析
 
 這題最直覺的解是沿用 2Sum 的解法用 Hash Map，for loop iterate nums[i]，對於每一個 nums[i] 而言找到一個 nums[j] 然後看看 `target-nums[i]-nums[j]` 有沒有在 Hash Map 裡，不過這樣就需要多開一個 Hash Map 的 O(n) 的空間，這題其實有更省的解法。
 
 我們先一樣定住一個 element，然後想辦法用有效率的方法來找總和為 `target - element` 的兩個 value，如果我們先將 array sort 好了，用 two pointers 來找符合條件的 elements，這樣就會很快了。
 
-### **解題思路 - Two Pointers**
+## 解題思路 - Two Pointers
 
 所以想法很簡單，for loop 走過每一個 nums[i]，因為 target = 0，所以我們要找到 nums[i] 右邊的兩個 elements 總和等於 -nums[i]，我們需要 `left = i + 1`, `right = nums.size() - 1`，如果先把 array 排序好，`left + right` 太大就縮 `right`，`left + right` 太小就縮 `left`，非常直覺，不過我們必須解決一些 edge case。
 
@@ -43,7 +43,7 @@ while(left < right && nums[right] == nums[right+1]) right--;
 **Time Complexity** - `O(n^2)`，sort 是 `O(nlogn)`，不過 two pointers 還是 `O(n^2)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 vector<vector<int>> threeSum(vector<int>& nums) {

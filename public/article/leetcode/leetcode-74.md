@@ -14,11 +14,11 @@ id: 24b12445-447b-45c8-a682-a8027e5b51b1
 
 題目連結 🔗：[https://leetcode.com/problems/search-a-2d-matrix/](https://leetcode.com/problems/search-a-2d-matrix/)
 
-### **問題分析**
+## 問題分析
 
 題目說要在 sorted 的東西裡面 search target，所以很明顯就是要用 binary search，那關鍵就是在於要如何在 2D matrix 裡面使用 binary search。
 
-### **解題思路 - **
+## 解題思路 - 
 
 binary search 我有一套很喜歡用的模板，詳情可以參考下面這篇文章。
 
@@ -117,7 +117,7 @@ bool searchMatrix(vector<vector<int>>& matrix, int target) {
 **Time Complexity** - `O(logn)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 bool is_valid(vector<vector<int>>& matrix, int mid, int target) {

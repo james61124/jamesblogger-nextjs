@@ -15,11 +15,11 @@ id: db5ccc7a-899c-416c-a81b-e16c68d5945e
 
 題目連結 🔗：[https://leetcode.com/problems/max-area-of-island/](https://leetcode.com/problems/max-area-of-island/)
 
-### **問題分析**
+## 問題分析
 
 這題沒有什麼特殊的技巧，就是 DFS。對每一個 grid 做 DFS，遇到水就直接跳過，如果遇到 island 就往四個方向進行 DFS，把每一個方向回傳回來的 DFS 深度加起來就是這個 island 的 area。
 
-### **解題思路 - DFS**
+## 解題思路 - DFS
 
 這邊注意幾個小地方就好，其中走過的 grid 不會再被走一次，但我們不需要重新定義一個 2D vector `visit` 來儲存，可以直接改 grid 上的資訊即可。
 
@@ -59,7 +59,7 @@ int maxAreaOfIsland(vector<vector<int>>& grid) {
 **Time Complexity** - `O(m * n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int dfs(vector<vector<int>>& grid, int x, int y){

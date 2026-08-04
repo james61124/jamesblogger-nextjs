@@ -14,7 +14,7 @@ id: abf2714f-307a-4b4f-acee-2b63de16f7c0
 
 題目連結 🔗：[https://leetcode.com/problems/flatten-binary-tree-to-linked-list/](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)
 
-### **問題分析**
+## 問題分析
 
 題目要求把 binary tree 的 node 用 pre-order 的順序全部丟到 right sub-tree，我們如果先用 pre-order 的順序 traverse 過整顆 tree，也就是 root -> left -> right，我們會發現我們需要把左邊的東西接到 root 跟 right 的中間，然後中間每一層都要這樣做，聽起來有一點繞。
 
@@ -33,7 +33,7 @@ id: abf2714f-307a-4b4f-acee-2b63de16f7c0
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 TreeNode* pre = nullptr;

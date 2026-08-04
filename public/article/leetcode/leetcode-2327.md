@@ -14,7 +14,7 @@ id: da941484-44ae-4f14-80d3-ac59c51f10e1
 
 題目連結 🔗：[https://leetcode.com/problems/number-of-people-aware-of-a-secret/](https://leetcode.com/problems/number-of-people-aware-of-a-secret/)
 
-### **問題分析**
+## 問題分析
 
 這題一開始看的時候覺得是 Greedy，我就先順著題目走，設一個 nums[i] 代表已經知道 secret i 天的人數有多少，例如 A, B 已經知道 secret 3 天了，那 nums[3] 就是 2，再來就是 iterate `n` 次更新這個表格，所以一開始 nums[1] = 1，對每一天來說有三件事情要做
 
@@ -26,7 +26,7 @@ id: da941484-44ae-4f14-80d3-ac59c51f10e1
 
 這看起來滿合理的，只是整個 array 往右 shift 時間複雜度太差了，這題利用前面天數的狀態來取得後面天數的狀態，事實上就是一種 DP 的思維，雖然這題真的藏得很深。
 
-### **解題思路 - DP**
+## 解題思路 - DP
 
 這題難在 dp[i] 不是第 i 天總共有多少人知道 secret，而是第 i 天有多少新的人知道這個 secret，而所有新知道的人，都是從 `delay` 天前 ~ `forget` 天前這段時間內新知道的人傳過來的，所以 Transition Function 就很清楚了
 
@@ -94,7 +94,7 @@ for(int i = n; i > n - forget && i > 0; i--) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 #define MOD 1000000007

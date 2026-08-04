@@ -14,11 +14,11 @@ id: 823d018b-e182-43df-b804-00db81953059
 
 題目連結 🔗：[https://leetcode.com/problems/minimum-cost-to-cut-a-stick/](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/)
 
-### **問題分析**
+## 問題分析
 
 這題最直覺的解法應該是 `cuts` 的每一種排列都切切看，但這樣的時間複雜度是 `O(n!)`，一定會太高，所以我們嘗試從 DP 想想看，因為是切線段的關係，所以可以傾向從 Interval DP 的方向想。
 
-### **解題思路 - DP**
+## 解題思路 - DP
 
 對於 Interval DP 來說，我們會需要一個 dp[i][j]，這題一開始都沒什麼想法，所以 dp[i][j] 就先照著題目走，暫時定義成「i 到 j 這段的 minimum cost」，以範例的這題來說，
 
@@ -76,7 +76,7 @@ for(int k = i + 1; k < j; k++){
 **Time Complexity** - `O(c^3)`，其中 c 是 cuts 的 size<br>
 **Space Complexity** - `O(c^2)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int minCost(int n, vector<int>& cuts) {

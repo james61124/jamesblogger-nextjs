@@ -19,9 +19,9 @@ id: 8a451358-b0c0-46a0-87ea-09613c9cf0d6
 
 題目連結 🔗：[https://leetcode.com/problems/remove-duplicates-from-sorted-array/](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 
-### **解題思路 - Fast and Slow Pointers**
+## 解題思路 - Fast and Slow Pointers
 
-#### **為什麼使用 Two Pointers？**
+### 為什麼使用 Two Pointers？
 
 我們可以使用 Two Pointers，其中
 - **Fast Pointer** 用來遍歷整個陣列
@@ -32,7 +32,7 @@ fast 一直往前走，當 nums[fast] != nums[slow]，代表找到新元素，�
 **Time Complexity** - `O(n)`，每個元素最多被 fast 掃過一次。<br>
 **Space Complexity** - `O(1)`，只使用了兩個指針
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int removeDuplicates(vector<int>& nums) {

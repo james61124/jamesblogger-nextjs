@@ -13,7 +13,7 @@ const roadmapData = [
     description: "Pointer movement, window optimization, and linked-list patterns.",
     items: [
       { id: "two-pointers", title: "[ Algorithm ] Two Pointers | 核心概念與 Leetcode 題型解析", difficulty: "Easy", link: "/program/articles/two-pointers" },
-      { id: "sliding-window", title: "[ Algorithm ] Sliding Window | 核心概念與 Leetcode 題型解析", difficulty: "Medium", link: "/program/articles/sliding-Window" },
+      { id: "sliding-window", title: "[ Algorithm ] Sliding Window | 核心概念與 Leetcode 題型解析", difficulty: "Medium", link: "/program/articles/sliding-window" },
       { id: "linked-list-two-pointer", title: "[ Algorithm ] Two Pointers - Linked List | 核心概念與 Leetcode 題型解析", difficulty: "Medium", link: "/program/articles/linked-list-two-pointer" },
     ],
   },

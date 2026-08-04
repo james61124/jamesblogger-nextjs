@@ -15,7 +15,7 @@ id: 10908f93-c372-4cd1-9b05-4846accb8c61
 
 題目連結 🔗：[https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
 
-### **解題思路 - Two Pointers**
+## 解題思路 - Two Pointers
 
 這題可以利用 Two Pointers 解決，`fast` 可以一直跑，把可以留下的數字放到 `slow`，如果寫成 pesudo code 會像這樣
 
@@ -46,7 +46,7 @@ if(slow < 2 || nums[fast] != nums[slow - 2])
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int removeDuplicates(vector<int>& nums) {

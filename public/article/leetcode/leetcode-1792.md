@@ -14,7 +14,7 @@ id: e48ce33b-b8ce-421a-a1cd-777dfd1620bb
 
 題目連結 🔗：[https://leetcode.com/problems/maximum-average-pass-ratio/](https://leetcode.com/problems/maximum-average-pass-ratio/)
 
-### **問題分析**
+## 問題分析
 
 這題基本上只有一個關鍵，`extraStudents` 要加在哪個 class 才會讓整體的 ratio 提升最多，我們只需要比較加 student 前跟加 student 後的 ratio 差就可以了，簡單來說，我們要找到的是在所有 classes 中
 
@@ -22,7 +22,7 @@ id: e48ce33b-b8ce-421a-a1cd-777dfd1620bb
 
 然後把一個 student 丟過去這個班，但因為丟一次 student，這個值就會變，所以我們要一個一個學生丟然後去找到每一輪的最大值是哪一個，那用 Priority Queue 就可以解決了
 
-### **解題思路 - Greedy**
+## 解題思路 - Greedy
 
 這就是一種 Greedy，思路很簡單，首先我們要找到最大值，所以就建個 Max Heap，把所有東西都丟進去
 
@@ -71,7 +71,7 @@ while(!pq.empty()) {
 **Time Complexity** - `O(n + klogn)`<br>
 **Space Complexity** - `O(n)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 static inline double gain(double x, double y) {

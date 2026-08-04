@@ -14,7 +14,7 @@ id: f3991e1c-2a10-443e-baae-2568ad019d55
 
 題目連結 🔗：[https://leetcode.com/problems/string-to-integer-atoi/](https://leetcode.com/problems/string-to-integer-atoi/)
 
-### **解題思路**
+## 解題思路
 
 這題前面的 leading whitespace, 正負號, leading zeros 都可以很直覺得直接判斷，比較麻煩的是 round up 的部分，由於會有 overflow 的問題，所以沒有辦法寫 condition 讓數字超過 2^31 - 1 或是小於 -2^31 就 round up 回來，所以我們必須在他可能會超過的時候就判斷出來
 
@@ -100,7 +100,7 @@ if(!sign && (-result < INT_MIN / 10 || (-result == INT_MIN / 10 && (s[i] - '0') 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 class Solution {

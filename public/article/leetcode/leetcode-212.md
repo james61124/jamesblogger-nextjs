@@ -14,7 +14,7 @@ id: 97c478d8-f956-4551-aa22-c161a2adf431
 
 題目連結 🔗：[https://leetcode.com/problems/word-search-ii/](https://leetcode.com/problems/word-search-ii/)
 
-### **問題分析**
+## 問題分析
 
 這題可以直接一步一步分析，首先如果要找到 board 中有沒有「一個 word」，直接對每一個 board[i][j] 做 dfs 就可以了，但是如果是要看 words[i] 有沒有在 board 中，在對 board[i][j] 做 dfs 的同時需要很快的可以判斷目前走過的 trajectory 是不是在 words[i] 中，最直覺的做法是 Hash Table，但 Hash Table 其實還不夠好，假設我判斷 "a" 不在 Hash Table 中，“ab” 不在 Hash Table 中，但我們無法判斷 "ab" 是不是其他字的 substring，因為 words[i] 中還是有可能有 "abcde"，所以如果用 Hash Table 就還是得一個一個檢查，因此這裡用 Trie 是最快的。
 
@@ -29,7 +29,7 @@ Trie 又叫 Prefix Tree，架構圖大概長這樣，他是一個樹狀的 Data 
 
 也就是說我們可以將 words[i] 存到 Trie 中，這樣我們可以解決 substring 的問題，例如說如果 "ab" 不在 Trie 中，那也就不用繼續檢查了，因為絕對不會有任何字 starts with "ab"。
 
-### **解題思路 - Trie + DFS**
+## 解題思路 - Trie + DFS
 
 思路清晰後這題就不是特別難了，就是實作完了之後需要大量的優化。
 
@@ -136,7 +136,7 @@ if(node->word != ""){
 **Time Complexity** - `O(m * n * 4^L)`，這只是最壞的情況，`m*n` 是 board size，L 是所有 word 中最長的長度，因為 dfs 有四個方向所以是 `4^L`，不過這只是最壞情況，實際上因為 Trie 的關係會 prune 掉很多所以是很高效的<br>
 **Space Complexity** - `O(W * L)`，最壞情況就是每一個字母對應一個 node
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 struct TrieNode {

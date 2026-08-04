@@ -14,11 +14,11 @@ id: 87e2cbef-6426-4817-b395-6eb598437484
 
 題目連結 🔗：[https://leetcode.com/problems/minimum-height-trees/](https://leetcode.com/problems/minimum-height-trees/)
 
-### **問題分析**
+## 問題分析
 
 這題我覺得超難，我有看到 rerooting DP 的解法，不過那個太複雜了以後有機會再整理，先講看起來實作起來最快的類 Topological Sort 解法。
 
-### **解題思路 - 類 Topological Sort**
+## 解題思路 - 類 Topological Sort
 
 首先我們要先知道一個很重要的解題關鍵
 
@@ -182,7 +182,7 @@ if(n <= 2) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 vector<int> findMinHeightTrees(int n, vector<vector<int>>& edges) {

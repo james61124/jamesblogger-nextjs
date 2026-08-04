@@ -15,7 +15,7 @@ id: 50bb855f-32e6-46bd-960a-e77711949e8a
 
 題目連結 🔗：[https://leetcode.com/problems/count-complete-tree-nodes/](https://leetcode.com/problems/count-complete-tree-nodes/)
 
-### **問題分析**
+## 問題分析
 
 這題的關鍵在於，如果最左邊的 height 跟最右邊的 height 高度一樣，那他一定是顆 perfect tree，nodes 數是 2 ^ height - 1，這樣我們就不用把每個 nodes 都 visit 過。
 
@@ -32,7 +32,7 @@ int dfs(TreeNode* root) {
 
 簡單來說，只要找到 perfect tree，就可以直接計算這個 subtree 的 nodes 數量，不用整個 visit 過。
 
-### **解題思路**
+## 解題思路
 
 實作應該不難，首先先計算左右兩邊的 height
 
@@ -63,7 +63,7 @@ int countNodes(TreeNode* root) {
 **Time Complexity** - `O((log n)^2)`，因為 tree height 是 log n，但是最多有可能需要做 log n 次 dfs<br>
 **Space Complexity** - `O(log n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int countLeftHeight(TreeNode* root) {

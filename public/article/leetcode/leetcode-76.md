@@ -14,11 +14,11 @@ id: a0e7669b-b85b-49c3-9954-7d0cf75a9095
 
 題目連結 🔗：[https://leetcode.com/problems/minimum-window-substring/](https://leetcode.com/problems/minimum-window-substring/)
 
-### **問題分析**
+## 問題分析
 
 題目問說符合 「window 內包含所有 string `t` 的元素」的最小 window size 是什麼，sliding window 的思路應該滿直覺的，如果我們的 `right` pointer 一直往右移，移到包含了所有 t 的元素後，慢慢收縮 `left` pointer 直到 sliding window 內不再有全部 t 的元素，然後就再繼續把 `right` pointer 往右移，重複這個過程紀錄最小的 window size 就可以了。 
 
-### **解題思路 - Sliding Window**
+## 解題思路 - Sliding Window
 
 思路沒有很難，所以一步步來想實作細節。
 
@@ -65,7 +65,7 @@ for(int right = 0, left = 0; right<s.size(); right++){
 **Time Complexity** - `O(m+n)`<br>
 **Space Complexity** - `O(n)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 string minWindow(string s, string t) {

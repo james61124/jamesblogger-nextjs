@@ -14,7 +14,7 @@ id: 4a4a5405-050c-4857-b5d8-5e7ea07ba381
 
 題目連結 🔗：[https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/)
 
-### **問題分析**
+## 問題分析
 
 這是 Preorder Traversal 的 Array
 
@@ -30,17 +30,17 @@ id: 4a4a5405-050c-4857-b5d8-5e7ea07ba381
 
 所以我們目標就是要從這兩種 Array 中還原出原本的 Tree。Preorder Traversal 的第一個跟 Postorder Traversal 的最後一個都會是 root，但是光只有這些資訊是沒有辦法組合出唯一的 Tree 的，因為我們不知道 Left Subtree 跟 Right Subtree 的分界在哪裡，因此這題說只要給出一種解就可以了。
 
-### **解題思路 - Binary Tree Reconstruction**
+## 解題思路 - Binary Tree Reconstruction
 
 首先可以觀察到 Preorder Traversal 的第一個一定是 Root，那第二個就是 Left Subtree 的 Root，利用這個 LeftSubtree Root 我們可以知道他在 Postorder Traversal 的 index，在這個 index 左邊的 subarray size 就是 Left Subtree Size，所以就可以知道 Preorder Traversal Left Subtree 是從哪裡到哪裡，剩下的部分就是 Right Subtree。
 
 所以有 Left Subtree, Right Subtree 就可以繼續 recursive 下去，最後建成完整的 Tree。
 
-#### **如何快速找到 Postorder Traversal 中 Root 的 index**
+### 如何快速找到 Postorder Traversal 中 Root 的 index
 
 直接建立 Hash Table - Unordered_map 就行了。
 
-#### **Subtree 的資訊傳遞**
+### Subtree 的資訊傳遞
 
 在將 Subtree 的資訊傳給下一層遞迴時不用再建一個 Array，我們直接用 `preLeft`, `preRight`, `postLeft`, `postRight` 來標示就行了
 
@@ -56,7 +56,7 @@ id: 4a4a5405-050c-4857-b5d8-5e7ea07ba381
 `postLeft = postLeft + leftSize` - 因為 Left Subtree 的後面就是 Right Subtree<br>
 `postRight = postRight - 1` - 因為 Root 的左邊就是 Right Subtree 的最右邊
 
-#### **如何判斷這個 node 是 null 要 return？**
+### 如何判斷這個 node 是 null 要 return？
 
 preLeft 跟 preRight 代表的是 preorder 的有效區間，所以如果今天 `preLeft > preRight`，那就表示這個 Subtree 根本不存在。
 
@@ -65,7 +65,7 @@ preLeft 跟 preRight 代表的是 preorder 的有效區間，所以如果今天 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 TreeNode* buildTreeHelper(vector<int>& preorder, unordered_map<int, int>& umap, 

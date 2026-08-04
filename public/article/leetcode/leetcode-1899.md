@@ -14,7 +14,7 @@ id: f9b8fd2d-e681-4a7f-b2f6-c29b6c06b027
 
 題目連結 🔗：[https://leetcode.com/problems/merge-triplets-to-form-target-triplet/](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/)
 
-### **解題思路 - Greedy**
+## 解題思路 - Greedy
 
 如果三個位置分開來看，我們要找的是所有 Triplets 中不大於 target 的最大值，但假設 index 0 確實是目前 不大於 target 的最大值，很有可能 index 1 或是 index 2 是大於 target 的，這樣這個 Triplets 就不能用了。
 
@@ -23,7 +23,7 @@ id: f9b8fd2d-e681-4a7f-b2f6-c29b6c06b027
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 bool mergeTriplets(vector<vector<int>>& triplets, vector<int>& target) {

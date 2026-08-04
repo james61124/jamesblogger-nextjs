@@ -14,7 +14,7 @@ id: 9119929d-6aba-4bb2-81fb-6b77ae68acda
 
 題目連結 🔗：[https://leetcode.com/problems/integer-break/](https://leetcode.com/problems/integer-break/)
 
-### **解題思路 - DP (Non-sequential Linear DP Problems)**
+## 解題思路 - DP (Non-sequential Linear DP Problems)
 
 這題的 dp 並不難想，我們用最正常的邏輯來慢慢拆解這題，假如今天 n=4，我們判斷 maximum product 的流程就是 `1*3`、`2*2`、`3*1`，但是 3 可能還可以被拆分，如果今天 n=5，流程就是 `1*4`、`2*3`、`3*2`、`4*1`，但是 4, 3, 2 都可能可以被拆分，這個「被拆分」所需要花的重複時間就可以用 dp 解決。
 
@@ -41,7 +41,7 @@ for(int i=2; i<=n; i++){
 **Time Complexity** - `O( n^2 )`<br>
 **Space Complexity** - `O( n )`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int integerBreak(int n) {
@@ -56,15 +56,15 @@ int integerBreak(int n) {
 }
 ```
 
-### **解法二 - 數學解**
+## 解法二 - 數學解
 
 標準解應該是 DP 沒有錯，但是這題可以用數學角度切入，時間複雜度直接變成 O(1)，也不用開 dp 的空間。這題的核心思想就是我們要將 `n` 拆分成最多的 `3`，下面我來證明這件事情。
 
-#### **為什麼拆分後不會出現大於 4 的數字**
+### 為什麼拆分後不會出現大於 4 的數字
 
 假設今天有一個 x >= 4，他在拆分成 `2 * (x-2)` 時一定會比 x 本身還要大，因為 `2(x-2)>=4` 這條不等式在 x>=4 時是恆等式，所以拆分之後只會出現很多的 2 跟 3。
 
-#### **要如何選擇 2 還是 3**
+### 要如何選擇 2 還是 3
 
 在所有的拆分中，`2` 的數量絕對不會 >= 3，因為 `2*2*2 < 3*3`，所以遇到可以拆分成三個 2 的情況，還不如直接選擇拆成兩個 3。
 
@@ -79,7 +79,7 @@ int integerBreak(int n) {
 **Time Complexity** - `O( 1 )`<br>
 **Space Complexity** - `O( 1 )`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int integerBreak(int n) {

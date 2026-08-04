@@ -15,11 +15,11 @@ id: 0713ee77-a459-4fef-a711-6aa045dfe411
 
 題目連結 🔗：[https://leetcode.com/problems/palindrome-number/](https://leetcode.com/problems/palindrome-number/)
 
-### **問題分析**
+## 問題分析
 
 這題最直覺的做法就是轉成字串後直接判斷是不是回文，但這樣需要多耗一個 string 的空間，而實際上這題可以利用 O(1) 的空間就解決。
 
-### **解題思路**
+## 解題思路
 
 我們只要將整串數字的後半段反轉並分離出來，就可以跟前半段來比較是不是回文了，舉例來說，題目給一個偶數位數的 integer = `1221`，我們可以逐步將後半段分離出來
 
@@ -57,7 +57,7 @@ if(x < 0 || (x % 10 == 0 && x != 0)) return false;
 **Time Complexity** - `O(logn)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 bool isPalindrome(int x) {

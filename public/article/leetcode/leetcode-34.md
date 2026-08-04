@@ -14,13 +14,13 @@ id: 0a660302-aeef-4360-89bb-89a2886d32a6
 
 題目連結 🔗：[https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 
-### **問題分析**
+## 問題分析
 
 這題是 sorted array 裡面找 target，直接用 Binary Search 就好
 
 [[ Algorithm ] Binary Search | 核心概念與 Leetcode 題型解析](https://www.jamesblogger.com/program/articles/binary-search)
 
-### **解題思路 - Binary Search**
+## 解題思路 - Binary Search
 
 利用上面 Binary Search 的技巧可以來解這題，首先我們需要定義出 `is_valid()` function 來將整個 array 分成左半邊跟右半邊，我們要讓 left pointer 最後落在第一個 target 身上，大概像這樣
 
@@ -70,7 +70,7 @@ return {left, left_1 - 1};
 **Time Complexity** - `O(logn)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 vector<int> searchRange(vector<int>& nums, int target) {

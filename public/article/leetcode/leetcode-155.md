@@ -15,11 +15,11 @@ id: e4f067c2-f86f-4821-902c-b9fd3858e145
 
 題目連結 🔗：[https://leetcode.com/problems/min-stack/](https://leetcode.com/problems/min-stack/)
 
-### **問題分析**
+## 問題分析
 
 我們如果直接用一般的 stack 做，會遇到的問題是我們沒有辦法找到最小值，會需要 iterate 整個 stack。所以我們可以往下思考，能不能同步紀錄每個狀態下的最小值，這樣在 pop 的時候，就一起把該狀態下的最小值一起 pop 掉就好。
 
-### **解題思路 - Stack**
+## 解題思路 - Stack
 
 簡單來說，我們需要另一個 stack，在 push 的時候同時紀錄當下的最小值就行了，所以我們先定義兩個 stack
 
@@ -58,7 +58,7 @@ int getMin() {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-### **Implementation**
+## Implementation
 ```cpp
 class MinStack {
 private:

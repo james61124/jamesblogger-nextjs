@@ -15,7 +15,7 @@ id: 0f8bb808-cf38-45c9-adc0-1b05ba461c3d
 
 題目連結 🔗：[https://leetcode.com/problems/product-of-array-except-self/](https://leetcode.com/problems/product-of-array-except-self/)
 
-### **問題分析**
+## 問題分析
 
 這題題目要求要找到 O(n) 但不能用除法的解法，所以最直覺的暴力法已經不能使用，我們順著題目看看能不能分析出另一種解法。
 
@@ -41,7 +41,7 @@ for(int i = 0; i < n; i++){
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 vector<int> productExceptSelf(vector<int>& nums) {

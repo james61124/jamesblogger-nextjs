@@ -14,7 +14,7 @@ id: 0ade77c4-85fc-40b6-bd3a-5475bbee8f9f
 
 題目連結 🔗：[https://leetcode.com/problems/binary-search/](https://leetcode.com/problems/binary-search/)
 
-### **問題分析**
+## 問題分析
 
 真的就是 Binary Search 而已，詳情可以參考這篇文章：
 
@@ -23,7 +23,7 @@ id: 0ade77c4-85fc-40b6-bd3a-5475bbee8f9f
 **Time Complexity** - `O(log n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 bool is_valid(vector<int>& nums, int target, int mid) {

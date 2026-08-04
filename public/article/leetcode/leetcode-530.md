@@ -14,11 +14,11 @@ id: 7524758d-2451-4c6c-b2c8-5dbefdf5ecad
 
 題目連結 🔗：[https://leetcode.com/problems/minimum-absolute-difference-in-bst/](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)
 
-### **問題分析**
+## 問題分析
 
 這題一開始可以照直覺去想，對於 root 來說，跟他最近的 node 就是 left subtree 中最右邊的 node 以及 right subtree 中最左邊的 node，但我們會發現整個 BST 中每一個 node 最鄰近的點都不一樣，他很難一路往上傳，但仔細想想就發現，這不就是 In Order Traversal 而已嗎？
 
-### **解題思路 - In Order Traversal**
+## 解題思路 - In Order Traversal
 
 對於一個 root 來說，如果用 in order traversal，那他 left subtree 中最右邊的 node 就會是上一個 visit 到的 node，他 right subtree 中最左邊的 node 就會是下一個會 visit 到的 node，那只要一直計算這中間的差值即可，非常簡單。
 
@@ -61,7 +61,7 @@ int getMinimumDifference(TreeNode* root) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 void inOrder(TreeNode* root, int& prev, int& result){

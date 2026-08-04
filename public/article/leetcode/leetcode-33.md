@@ -14,13 +14,13 @@ id: 85d0374d-41a5-43ef-b4c9-15b9614ac548
 
 題目連結 🔗：[https://leetcode.com/problems/search-in-rotated-sorted-array/](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
-### **問題分析**
+## 問題分析
 
 這題是很典型的 Binary Search 變形，為什麼他可以用 Binary Search 解呢？可以先看我整理的這篇文章：
 
 [[ Algorithm ] Binary Search | 核心概念與 Leetcode 題型解析](https://www.jamesblogger.com/program/articles/binary-search)
 
-### **解題思路 - Binary Search**
+## 解題思路 - Binary Search
 
 看完文章後我們可以得到一個觀念
 
@@ -119,7 +119,7 @@ int search(vector<int>& nums, int target) {
 **Time Complexity** - `O(log n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 bool is_valid(vector<int>& nums, int left, int mid, int target){

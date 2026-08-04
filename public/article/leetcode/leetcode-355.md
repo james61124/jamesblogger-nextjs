@@ -19,7 +19,7 @@ id: 28e08145-b30d-4548-a2a6-3caccdf69553
 
 題目連結 🔗：[https://leetcode.com/problems/design-twitter/](https://leetcode.com/problems/design-twitter/)
 
-### **問題分析**
+## 問題分析
 
 趙題目的說法這題應該有兩種儲存的方式，第一種直接照著 post 的順序存，然後存 tweetId 跟 userId
 
@@ -42,7 +42,7 @@ id: 28e08145-b30d-4548-a2a6-3caccdf69553
 
 [[ Leetcode 23 ] Merge k Sorted Lists | 解題思路分享](https://www.jamesblogger.com/leetcode/articles/leetcode-23)
 
-### **解題思路 - Merge k Sorted Lists**
+## 解題思路 - Merge k Sorted Lists
 
 首先我們需要一個 Hash Table 來儲存所有人發的貼文，需要另一個 Hash Table 儲存每個 user follow 的人，再來需要一個 `count` 紀錄目前發了幾篇文了，這樣才可以紀錄每一篇文被發的時間。
 
@@ -154,7 +154,7 @@ vector<int> getNewsFeed(int userId) {
 **Time Complexity** - `O(mlogk)`，m 是 10，k 是該 user following 的人數<br>
 **Space Complexity** - `O(n)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 class Twitter {

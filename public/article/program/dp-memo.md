@@ -40,7 +40,7 @@ int fib(int n, vector<int>& dp) {
 }
 ```
 
-### **DP 其他系列文章**
+## DP 其他系列文章
 
 [[ Algorithm ] Dynamic Programming (一) - Introduction | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/dp/)<br>
 [[ Algorithm ] Dynamic Programming (三) - Linear DP | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/linear-dp/)<br>

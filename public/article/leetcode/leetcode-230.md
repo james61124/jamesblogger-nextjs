@@ -15,7 +15,7 @@ id: d4076bad-b17d-4e1c-a6d2-85df6e64dd44
 
 題目連結 🔗：[https://leetcode.com/problems/kth-smallest-element-in-a-bst/](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
 
-### **解題思路**
+## 解題思路
 
 Binary Tree 中如果要由小到大 Traverse 過所有 node，就是直接想到 Inorder Traversal，因為 Inorder Traversal 長這樣：
 
@@ -28,7 +28,7 @@ Binary Tree 中如果要由小到大 Traverse 過所有 node，就是直接想�
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int result = 0;

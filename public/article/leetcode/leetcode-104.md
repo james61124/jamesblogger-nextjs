@@ -15,14 +15,14 @@ id: aa5c5156-168e-4218-8a93-f7842cbaf1ca
 
 題目連結 🔗：[https://leetcode.com/problems/maximum-depth-of-binary-tree/](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 
-### **問題分析**
+## 問題分析
 
 這題非常單純，跑一個 DFS，對於每一個 node 而言，回傳他 left subtree 跟 right subtree 可以碰到的最大深度即可。
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int dfs(TreeNode* node, int level){

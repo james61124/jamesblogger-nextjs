@@ -49,7 +49,7 @@ Greedy 最難的不在於問題的解，而在於是正確性的證明，但是�
 
 所以這題要用 DP 來解。
 
-### **範例**
+## 範例
 
 [[ Leetcode 455 ] Assign Cookies | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-455/)<br>
 [[ Leetcode 55 ] Jump Game | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-55/)

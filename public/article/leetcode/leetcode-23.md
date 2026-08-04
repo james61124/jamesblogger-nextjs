@@ -14,13 +14,13 @@ id: 5d802e5b-bb05-4133-9e2c-5fd28c3b83b2
 
 題目連結 🔗：[https://leetcode.com/problems/merge-k-sorted-lists/](https://leetcode.com/problems/merge-k-sorted-lists/)
 
-### **問題分析**
+## 問題分析
 
 這題考的是進階版的 merge sort，假設 lists 中有 i 條 linked list，思路其實非常單純，我們開一個空的 `ListNode* cur`，找到 i 個 node 中最小的，然後接上去，再來繼續比較剩下的 head 中最小的，一直接就可以了，所以這題的關鍵在於我們要如何有效率的從這 i 個 node 中找到最小的。
 
 如果我們可以找到一個 Data Structure，在 push value 進去的時候都可以自動排序，這樣就不用每次都跑 loop 判斷最小的了，而最省空間的這種 Data Structure 就是 priority queue。
 
-### **解題思路 - Priority Queue**
+## 解題思路 - Priority Queue
 
 我們需要 MinHeap 版本的 Priority Queue，而且我們放的是 ListNode*，Priority Queue 沒辦法排這種自定義的 class，所以我們必須幫他寫一個 Compare Function，寫起來會長這樣：
 
@@ -55,7 +55,7 @@ while(!pq.empty()){
 **Time Complexity** - `O(nlogk)`，n 是 node 數量，k 是 `vector<ListNode*>` 的 size，logk 是因為每 push 進去 priority queue 一次就需要排序一次<br>
 **Space Complexity** - `O(k)`，priority queue 的 size
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 struct Compare {

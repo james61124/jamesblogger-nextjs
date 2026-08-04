@@ -15,7 +15,7 @@ id: 02bb4941-646d-4a54-a160-914d306822ac
 
 題目連結 🔗：[https://leetcode.com/problems/edit-distance/](https://leetcode.com/problems/edit-distance/)
 
-### **解題思路 - DP (Double-Sequence Linear DP Problem)**
+## 解題思路 - DP (Double-Sequence Linear DP Problem)
 
 這題可以透過 Double-Sequence Linear DP 來解，因為他的輸入是兩個 string，所以我們就開一個 dp[i+1][j+1] 來代表 「word1 前 i 個字元」轉換成「word2 前 j 個字元」最少需要的 operation 數量。
 
@@ -84,7 +84,7 @@ dp[i][j] = min(dp[i-1][j-1], min(dp[i-1][j], dp[i][j-1])) + 1;
 **Time Complexity** - `O( m × n )`，因為 iterate 過兩個 array<br>
 **Space Complexity** - `O( m × n )`，因為開了一個 m x n 的 2D array
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int minDistance(string word1, string word2) {

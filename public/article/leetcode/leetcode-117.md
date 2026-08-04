@@ -14,11 +14,11 @@ id: 3804de0f-f2fb-49a5-8085-1984db9a8ee7
 
 題目連結 🔗：[https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
 
-### **問題分析**
+## 問題分析
 
 這題最直覺的做法就是一層一層 iterate，然後按照順序把他們接起來就好，而 level order traversal 有點像是 bfs，利用一個 queue 就可以完成，這樣也可以，但是需要花到 O(n) 的空間，事實上這題可以用 O(1) 的空間就解決。
 
-### **解題思路**
+## 解題思路
 
 這題我們其實不用把每一層的 node 都先推到 queue 裡面，我們可以在 iterate 一層時把下一層的 children 都連起來，這樣就不用靠 queue 就可以知道該層的 node 有哪些，有點繞但我舉個例子
 
@@ -76,7 +76,7 @@ while(curr) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 Node* connect(Node* root) {

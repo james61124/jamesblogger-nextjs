@@ -15,11 +15,11 @@ id: 397c4967-29a3-41dd-9f64-ad54a2ebcc86
 
 題目連結 🔗：[https://leetcode.com/problems/binary-tree-maximum-path-sum/](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
 
-### **問題分析**
+## 問題分析
 
 對於每一個 node 而言，經過這個 node 的 maximum path sum 就是「left subtree 的最大貢獻值 + node->val + right subtree 的最大貢獻值」，所以我們只要看過所有 node 判斷最大的 path sum 是什麼就可以了，這種可以把一個問題切成很多子問題的，我們就朝 DP 去想。
 
-### **解題思路 - DP**
+## 解題思路 - DP
 
 因為我們需要看過所有 node，所以一定是 dfs 走過一次，所以關鍵在於我們要計算什麼，回傳什麼，以及紀錄什麼。
 
@@ -49,7 +49,7 @@ int dfs(TreeNode* node){
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int result = INT_MIN;

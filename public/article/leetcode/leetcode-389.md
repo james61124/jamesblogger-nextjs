@@ -14,7 +14,7 @@ id: 312669fe-04a8-4168-8143-3ed1ba42e547
 
 題目連結 🔗：[https://leetcode.com/problems/find-the-difference/](https://leetcode.com/problems/find-the-difference/)
 
-### **問題分析**
+## 問題分析
 
 這題當然可以用 Hash Table 做，但是用 Bit Manipulation 是最快也最省空間的，只要知道一條公式就可以了
 
@@ -23,7 +23,7 @@ id: 312669fe-04a8-4168-8143-3ed1ba42e547
 **Time Complexity** - `O(1)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 char findTheDifference(string s, string t) {

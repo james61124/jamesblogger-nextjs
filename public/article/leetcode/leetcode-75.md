@@ -14,11 +14,11 @@ id: c9953a2f-65d5-4b0a-a656-a61eb51d6a55
 
 題目連結 🔗：[https://leetcode.com/problems/sort-colors/](https://leetcode.com/problems/sort-colors/)
 
-### **問題分析**
+## 問題分析
 
 這題的目標是要想一個 O(n) 而且不用到任何 extra space 的方法，如果簡單使用 quick sort，那就會是 O(nlogn)，因此關鍵在於如何利用「nums[i] 裡面只包含三種數字」這個訊息來解決問題。
 
-### **解題思路 - Dutch National Flag Algorithm**
+## 解題思路 - Dutch National Flag Algorithm
 
 因為只有三種數字，所以可以把最小的丟到最前面，最大的丟到最後面，那這其實就是 two pointers，指針慢慢往內收攏即可。
 
@@ -62,7 +62,7 @@ void sortColors(vector<int>& nums) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 void sortColors(vector<int>& nums) {

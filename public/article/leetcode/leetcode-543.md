@@ -14,11 +14,11 @@ id: 733ca795-a71b-4181-8b19-9c5919bc5292
 
 題目連結 🔗：[https://leetcode.com/problems/diameter-of-binary-tree/](https://leetcode.com/problems/diameter-of-binary-tree/)
 
-### **問題分析**
+## 問題分析
 
 這題原則上就是 dfs 走過每一個 node，把 left subtree 的資訊跟 right subtree 的資訊統整找出最大的 path 就可以了，稍微注意他問的是 path 長度不是 node 數量就好。
 
-### **解題思路 - DFS**
+## 解題思路 - DFS
 
 思路很簡單，一個 node 中最長的 path 就是 left subtree 的深度 + right subtree 的深度，然後比較每一個 node 找到的 path 長度並更新到 `maxLength`，像這樣
 
@@ -49,7 +49,7 @@ int dfs(TreeNode* root) {
 **Time Complexity** - `O(V + E)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int maxLength = 0;

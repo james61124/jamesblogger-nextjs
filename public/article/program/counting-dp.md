@@ -32,7 +32,7 @@ dp[i][j] = dp[i-1][j] + dp[i][j-1]
 
 [[ Leetcode 62 ] Unique Paths | 解題思路分享](https://www.jamesblogger.com/leetcode/articles/leetcode-62)
 
-### **DP 其他系列文章**
+## DP 其他系列文章
 
 [[ Algorithm ] Dynamic Programming (一) - Introduction | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/dp/)<br>
 [[ Algorithm ] Dynamic Programming (二) - Memorization | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/memorization/)<br>

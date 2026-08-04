@@ -15,7 +15,7 @@ id: 349d43e8-868d-4719-b00d-5cc1c1b73ae5
 
 題目連結 🔗：[https://leetcode.com/problems/merge-intervals/](https://leetcode.com/problems/merge-intervals/)
 
-### **解題思路 - Greedy**
+## 解題思路 - Greedy
 
 假設我們現在有 intervals[i], intervals[j]，如果這兩段有重疊的話，要嘛 `intervals[i][0] <= intervals[j][0] <= intervals[i][1]`，要嘛 `intervals[i][0] <= intervals[j][1] <= intervals[i][1]`，我們如果固定其中一個就只要判斷一種情況就好，所以我們可以選擇將 intervals 做 sorting，這樣在 iterate intervals 時，intervals[j][0] 一定會大於等於 intervals[i][0]，我們就只需要判斷 intervals[j] 的右端點是不是在 intervals[i] 之間就行了。
 
@@ -26,7 +26,7 @@ id: 349d43e8-868d-4719-b00d-5cc1c1b73ae5
 **Time Complexity** - `O(nlogn)`，因為我們有 sorting<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 vector<vector<int>> merge(vector<vector<int>>& intervals) {

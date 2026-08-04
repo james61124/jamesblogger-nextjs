@@ -15,7 +15,7 @@ id: f892b223-6c51-47e2-bf4e-365510851e13
 
 題目連結 🔗：[https://leetcode.com/problems/symmetric-tree/](https://leetcode.com/problems/symmetric-tree/)
 
-### **問題分析**
+## 問題分析
 
 如果一個 Binary Tree 是對稱的，那他 left subtree 的右半邊會跟 right subtree 的左半邊一樣，而他的 left subtree 的左半邊會跟 right subtree 的右半邊一樣，所以我們可以把 left subtree 跟 right subtree 都丟到 dfs function 裡面簡單判斷一下就好
 
@@ -24,7 +24,7 @@ id: f892b223-6c51-47e2-bf4e-365510851e13
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(h)`，h 代表 tree height
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 bool dfs(TreeNode* left, TreeNode* right) {

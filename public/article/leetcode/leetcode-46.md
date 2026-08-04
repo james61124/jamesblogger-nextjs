@@ -14,13 +14,13 @@ id: ca6f7716-22cb-4b27-999c-f8e576df9222
 
 題目連結 🔗：[https://leetcode.com/problems/permutations/](https://leetcode.com/problems/permutations/)
 
-### **問題分析**
+## 問題分析
 
 遇到要列出所有組合的，可以先往 backtracking 想。
 
 [[ Algorithm ] Backtracking | 核心概念與 Leetcode 題型解析](https://www.jamesblogger.com/program/articles/backtracking)
 
-### **解題思路 - Backtracking**
+## 解題思路 - Backtracking
 
 看完上面的文章會發現，backtracking 可以寫出一個 decision tree，而我們需要去思考每一個節點會有哪些 actions 可以走，假設 nums = [1, 2, 3, 4]，每一層理論上 1, 2, 3, 4 都可以選，但是同一條路徑上數字不能重複選，也就是說一個 nodes 的 actions 是全部的數字扣除上面已經用過的部分，所以時間複雜度是 `O(n!)`。
 
@@ -89,7 +89,7 @@ void backTracking(vector<vector<int>>&result, vector<int>&ans, vector<int>& nums
 **Time Complexity** - `O(n!)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 void backTracking(vector<vector<int>>&result, vector<int>&ans, vector<int>& nums, int& state){

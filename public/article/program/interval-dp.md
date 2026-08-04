@@ -13,7 +13,7 @@ id: 781c41ee-3ab0-4027-bc5c-f991e1435f7c
 
 Interval DP 的 dp[i][j] 定義都是「區段 i ~ j 中間的最佳解」，但是從 dp[i][j] 的來源可以分成以下兩種：「從中間向兩側轉移的 Interval DP」還有「從多個小區間轉移到大區間的 Interval DP」
 
-### **第一種 - 從中間向兩側轉移的 Interval DP**
+## 第一種 - 從中間向兩側轉移的 Interval DP
 
 用 Transition Function 表示可以寫成這樣
 
@@ -36,7 +36,7 @@ else dp[i][j] = max(dp[i+1][j], dp[i][j-1]);
 
 [[ Leetcode 516 ] Longest Palindromic Subsequence | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-516/)
 
-### **第二種 - 從多個小區間轉移到大區間的 Interval DP**
+## 第二種 - 從多個小區間轉移到大區間的 Interval DP
 
 用 Transition Function 表示可以寫成這樣：
 
@@ -80,7 +80,7 @@ dp[0][4] = min(6, 7) = 6
 
 [[ Leetcode 1547 ] Minimum Cost to Cut a Stick | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-1547/)
 
-### **DP 其他系列文章**
+## DP 其他系列文章
 
 [[ Algorithm ] Dynamic Programming (一) - Introduction | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/dp/)<br>
 [[ Algorithm ] Dynamic Programming (二) - Memorization | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/memorization/)<br>

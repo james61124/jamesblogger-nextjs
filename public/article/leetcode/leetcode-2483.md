@@ -15,7 +15,7 @@ id: 0ca07524-2692-47cc-9d37-c74316c254fa
 
 題目連結 🔗：[https://leetcode.com/problems/minimum-penalty-for-a-shop/](https://leetcode.com/problems/minimum-penalty-for-a-shop/)
 
-### **問題分析**
+## 問題分析
 
 這題我們需要把 string 分成兩邊，左邊是關門前，右邊是關門後，我們得到的 penalty 就是左邊 `N` 的數量 + 右邊 `Y` 的數量，只要找到從哪裡切開這個數字最小即可。
 
@@ -65,7 +65,7 @@ int bestClosingTime(string customers) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int bestClosingTime(string customers) {

@@ -15,11 +15,11 @@ id: b56cf223-ab17-45e5-8a92-5d0566d6024a
 
 題目連結 🔗：[https://leetcode.com/problems/apply-substitutions/](https://leetcode.com/problems/apply-substitutions/)
 
-### **問題分析**
+## 問題分析
 
 這題第一眼看到就覺得暴力解是 DFS，例如說 `A` 的 value 裡面可能會有 `B`，`B` 的 value 裡面可能會有 `C`，所以一定要從 leaf node 開始一路替換回來，那其實就是 DFS，但因為他用 string 包裝過看起來變得很複雜，結果他還真的就是 DFS 而已。
 
-### **解題思路 - DFS**
+## 解題思路 - DFS
 
 我們先來想辦法處理 string，如果要在 string 中 replace `%<key>%` 變成另一個 string `pattern`，最快的方法不是用 insert，而是開一個新的 string，把前面的部分 append 進來，再來把 `pattern` append 進來，最後把剩餘部分 append 進來。
 
@@ -93,7 +93,7 @@ string dfs(string key) {
 
 大概就這樣而已，底下附上完整程式碼
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 class Solution {

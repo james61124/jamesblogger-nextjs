@@ -14,14 +14,14 @@ id: a6d2a93e-c4aa-4cba-8110-d8d5f9093db4
 
 題目連結 🔗：[https://leetcode.com/problems/odd-even-linked-list/](https://leetcode.com/problems/odd-even-linked-list/)
 
-### **問題分析**
+## 問題分析
 
 這題沒什麼特別的，用兩個 pointers 把兩條 linked list 串起來就好了
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 ListNode* oddEvenList(ListNode* head) {

@@ -15,11 +15,11 @@ id: 38e9f5d2-67db-4219-8ba4-69345d7c8de5
 
 題目連結 🔗：[https://leetcode.com/problems/insert-interval/](https://leetcode.com/problems/insert-interval/)
 
-### **問題分析**
+## 問題分析
 
 題目要求把 interval insert 進去，所以我們需要處理三種狀態，newInterval 前的 interval 都不需要動，newInterval 後的 interval 也不用動，只要判斷哪裡會 overlap，把中間所有會 overlap 的 interval 合併成一個就可以了。
 
-### **解題思路**
+## 解題思路
 
 所以我們需要判斷什麼樣的條件下 newInterval 會跟 intervals[i] overlap，第一個階段中，只要 `intervals[i][1] < newInterval[0]`，那就表示他們不會重疊，所以可以直接先寫出來：
 
@@ -55,7 +55,7 @@ while(i<intervals.size()){
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {

@@ -15,7 +15,7 @@ id: 4c068528-44b5-4629-b1fa-c390638230db
 
 題目連結🔗：[https://leetcode.com/problems/clone-graph/](https://leetcode.com/problems/clone-graph/)
 
-### **解題思路 - DFS**
+## 解題思路 - DFS
 
 這題其實就是 DFS 整個 Graph 把他們都 clone 出來就沒事了，所以最大的問題就是 DFS 時這些被 clone 出來的 node 要放哪裡。
 
@@ -26,7 +26,7 @@ id: 4c068528-44b5-4629-b1fa-c390638230db
 **Time Complexity** - `O(V+E)`，V 是 node 數量，E 是 edge 數量。<br>
 **Space Complexity** - `O(V)`，開了一個 unordered_map。
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 Node* DFS(Node* node, unordered_map<Node*, Node*>&visit){

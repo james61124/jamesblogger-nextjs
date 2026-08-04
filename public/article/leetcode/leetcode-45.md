@@ -15,13 +15,13 @@ id: fba63f22-64c3-4d63-92bb-2bc05370b5b0
 
 題目連結 🔗：[https://leetcode.com/problems/jump-game-ii/](https://leetcode.com/problems/jump-game-ii/)
 
-### **問題分析**
+## 問題分析
 
 這題需要釐清的是，nums[i] 給的是「最遠可以 reach 的位置」，而不是指 i 只能跳到 i + nums[i]，也就是說從 i ~ i + nums[i] 中間每一個點 i 都可以 jump 到。
 
 意思是說我們不用把每一格 i 跳得到的位置都抓出來跳跳看，一路 dfs 看哪一種路徑 jump 數量最小，我們可以利用 Greedy 計算每一次 jump 最遠可以跳到哪即可，下面來詳細解釋。
 
-### **解題思路 - Greedy**
+## 解題思路 - Greedy
 
 舉例來說，nums = [3, 2, 4, 1, 5, 3, 2, 1, 2]
 
@@ -32,7 +32,7 @@ id: fba63f22-64c3-4d63-92bb-2bc05370b5b0
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int jump(vector<int>& nums) {

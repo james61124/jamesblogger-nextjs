@@ -15,11 +15,11 @@ id: ff946542-2420-4c77-9090-15bae3b2de8e
 
 題目連結 🔗：[https://leetcode.com/problems/add-two-numbers/](https://leetcode.com/problems/add-two-numbers/)
 
-### **問題分析**
+## 問題分析
 
 題目的 node 是 reverse order，也就是說我們如果按照順序加總每一個 node，就等於是按照個位數 -> 十位數 -> 百位數這個正確的順序計算了，再來只要處理好進位就沒問題了。
 
-### **解題思路 - Linked List**
+## 解題思路 - Linked List
 
 總共分三個步驟：
 
@@ -125,7 +125,7 @@ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {

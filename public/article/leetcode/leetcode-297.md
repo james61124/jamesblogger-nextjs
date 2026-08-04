@@ -14,13 +14,13 @@ id: e15dbe74-e6ff-4113-b8ba-bb10ea725a89
 
 題目連結 🔗：[https://leetcode.com/problems/serialize-and-deserialize-binary-tree/](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
 
-### **問題分析**
+## 問題分析
 
 常見的 Binary Tree Traversal 有三種：inorder, preorder, postorder，但這三種在轉成 array 之後是沒有辦法恢復成唯一的 Binary Tree 的，必須組合起來才可以，所以這題不能用這三種 traversal 來解，那我們怎麼做呢？
 
 我們可以用類似 level order traversal 來解，一層一層把資訊推進去 array 中，這樣 reconstruct binary tree 的時候就可以一層一層解析了，比較不一樣的是除了一層一層放，我們還要把每一層的 `nullptr` 也放進去，這樣才能真的 reconstruct 出唯一的 binary tree。
 
-### **解題思路 - BFS**
+## 解題思路 - BFS
 
 先來看 serialize，我們要把 Tree 轉成 string，而既然是一層一層來解析，那我們可以用 BFS 來由左到右 traverse 過所有 node，可以寫出一個像這樣的框架：
 
@@ -173,7 +173,7 @@ TreeNode* deserialize(string data) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 string serialize(TreeNode* root) {

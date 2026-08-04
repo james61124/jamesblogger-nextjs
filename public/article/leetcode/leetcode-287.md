@@ -14,7 +14,7 @@ id: a5fe6f35-870a-4064-a7b8-5467b6e2a5c9
 
 題目連結 🔗：[https://leetcode.com/problems/find-the-duplicate-number/](https://leetcode.com/problems/find-the-duplicate-number/)
 
-### **問題分析**
+## 問題分析
 
 最簡單的方式肯定是 Hash Table，但這題的空間複雜度實際上可以用 O(1) 就解決。
 
@@ -30,7 +30,7 @@ nums[i] -> nums[nums[i]] -> nums[nums[nums[i]]]
 
 不過這題會遇到另一個問題，他想要找的是重複的數字，也就是 cycle 開始的那個 node，而不是單純只是要判斷有沒有 cycle 而已，這樣要怎麼做呢？所以我們需要 Floyd's Cycle Detection 的幫忙。
 
-### **解題思路 - Floyd's Cycle Detection**
+## 解題思路 - Floyd's Cycle Detection
 
 我們來畫一張圖
 
@@ -86,7 +86,7 @@ return slow;
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 ```cpp
 int findDuplicate(vector<int>& nums) {
     int slow = nums[0];

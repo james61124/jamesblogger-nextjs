@@ -14,11 +14,11 @@ id: 700ab870-715a-491f-80c3-f6e897081e90
 
 題目連結 🔗：[https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
 
-### **問題分析**
+## 問題分析
 
 這題因為沒有辦法賣完隔天馬上再買，所以沒有辦法碰到最低點就買最高點就賣，因為如果遇到最高點跟最低點相隔只有一天，這樣做就會出錯，所以這題滿清楚就是要往 DP 想。
 
-### **解題思路 - DP**
+## 解題思路 - DP
 
 Transition Function 會根據每天不同的狀態來做轉移，而這題一天當中會有三種狀態
 
@@ -71,7 +71,7 @@ return max(dp[n-1][1], dp[n-1][2]);
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-### **Implementation**
+## Implementation
 ```cpp
 int maxProfit(vector<int>& prices) {
     int n = prices.size();
@@ -88,7 +88,7 @@ int maxProfit(vector<int>& prices) {
 }
 ```
 
-### **空間優化**
+## 空間優化
 
 再來我們發現每一個 state 基本上只關注上一格的資訊，所以我們不用宣告一整條陣列的大小，只需要一個 int 就可以了。
 
@@ -115,7 +115,7 @@ return max(sold, rest);
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 ```cpp
 int maxProfit(vector<int>& prices) {
     int n = prices.size();

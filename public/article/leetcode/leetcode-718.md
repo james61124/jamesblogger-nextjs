@@ -19,7 +19,7 @@ id: 92df9a70-20b1-451a-a511-c1ceeff3936f
 
 題目連結 🔗：[https://leetcode.com/problems/maximum-length-of-repeated-subarray/](https://leetcode.com/problems/maximum-length-of-repeated-subarray/)
 
-### **解題思路 - DP (Double-Sequence Linear DP Problem)**
+## 解題思路 - DP (Double-Sequence Linear DP Problem)
 
 這題可以透過 Double-Sequence Linear DP 來解，因為他的輸入是兩條 array，所以我們就開一個 dp[i+1][j+1] 來代表以 nums1[i] 為結尾及以 nums2[j] 為結尾的最長 repeated subarray 長度。
 
@@ -38,7 +38,7 @@ if(nums1[i]==nums2[j]){
 **Time Complexity** - `O( m × n )`，因為 iterate 過兩個 array<br>
 **Space Complexity** - `O( m × n )`，因為開了一個 m x n 的 2D array
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int findLength(vector<int>& nums1, vector<int>& nums2) {
@@ -59,7 +59,7 @@ int findLength(vector<int>& nums1, vector<int>& nums2) {
 }
 ```
 
-### **空間優化**
+## 空間優化
 
 以上是正常的 dp 建表，但是我們其實只需要 dp 裡面的兩個 row 就可以了，不用把整個 dp 的 table 都建出來，新建兩個 1D Array `prev`, `cur`，當更新完一條 row 之後就 swap 兩個 array 讓 `cur` 跑到 `prev` 然後繼續往下更新，所以就可以將空間優化為 O(min(m,n))。
 

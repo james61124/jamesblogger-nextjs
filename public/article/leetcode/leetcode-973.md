@@ -14,11 +14,11 @@ points[i] 代表不同點的點座標，找出離原點最近的 `k` 個點。
 
 題目連結 🔗：[https://leetcode.com/problems/k-closest-points-to-origin/](https://leetcode.com/problems/k-closest-points-to-origin/)
 
-### **問題分析**
+## 問題分析
 
 這題簡單來說就是找前 k 小的，最直覺就是 Priority Queue
 
-### **解題思路 - Priority Queue**
+## 解題思路 - Priority Queue
 
 計算每個點跟原點的距離，直接推入 minHeap 中取出前 n 個即可，而因為可能會有小數點被捨棄的問題，這邊的計算都不用加 `sqrt()`
 
@@ -66,7 +66,7 @@ vector<vector<int>> kClosest(vector<vector<int>>& points, int k) {
 **Time Complexity** - `O(n x log k)`<br>
 **Space Complexity** - `O(k)`
 
-### **時間優化 - Quick Select**
+## 時間優化 - Quick Select
 
 要找前 k 小的數，事實上有一個演算法可以在 O(n) 完成，那就是 Quick Select，詳細細節可以參考下面的文章
 

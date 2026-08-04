@@ -17,7 +17,7 @@ id: e29e116c-6a20-442c-8c46-838862a60abd
 
 題目連結 🔗：[https://leetcode.com/problems/power-grid-maintenance/](https://leetcode.com/problems/power-grid-maintenance/)
 
-### **問題分析**
+## 問題分析
 
 要解這題我們必須克服幾個問題
 
@@ -30,7 +30,7 @@ id: e29e116c-6a20-442c-8c46-838862a60abd
 
 所以我們在建立完 Union Find 後，可以利用每一個 Disjoint Set 的 root 來當作每一個 set 的 id，利用 2D vector 來紀錄每一個 Disjoint Set 由小到大的順序，再來建立一個 pointer 來紀錄目前最小的 online power station 的位置，當有 power station 被轉成 offline，就移動 pointer 來更新就好，這樣每一次查找最小的 online power stations 就只需要 O(1)，直接來看程式碼
 
-### **解題思路 - Union Find**
+## 解題思路 - Union Find
 
 首先先建立一個 Union Find Class
 
@@ -131,7 +131,7 @@ for(auto &q : queries){
 **Time Complexity** - `O((station + connections.size() + query) * α(station))`，幾乎就是線性時間<br>
 **Space Complexity** - `O(station + query)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 class UnionFind {

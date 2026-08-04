@@ -20,7 +20,7 @@ id: b70b9f12-6a95-495a-a4d7-9971dfd949a2
 
 題目連結 🔗：[https://leetcode.com/problems/maximal-square/](https://leetcode.com/problems/maximal-square/)
 
-### **解題思路 - DP (Matrix-based Dynamic Programming)**
+## 解題思路 - DP (Matrix-based Dynamic Programming)
 
 這題最關鍵的就在於 grid 本身跟其他 grid 的關係是甚麼，我們可以簡化問題來想，如果一個 grid 可以組成邊長是 2 的正方形，除了自己是 '1'，表示他的左邊、左上、上面的 grid 都是 '1'，如果一個 grid 可以組成邊長是 3 的正方形，那他的左邊、左上、上面的 grid 都要有能力可以組成邊長是 2 的正方形，所以 dp 轉換式就很明顯了。
 
@@ -33,7 +33,7 @@ dp[i][j] = min(dp[i-1][j-1], min(dp[i-1][j], dp[i][j-1])) + 1;
 **Time Complexity** - `O( m × n )`，因為 iterate 過 matrix<br>
 **Space Complexity** - `O( m × n )`，因為開了一個 m x n 的 dp
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int maximalSquare(vector<vector<char>>& matrix) {

@@ -15,7 +15,7 @@ id: 3c3d8ae1-8cdd-4bfd-896d-8a7911b55e0b
 
 題目連結 🔗：[https://leetcode.com/problems/longest-repeating-character-replacement/](https://leetcode.com/problems/longest-repeating-character-replacement/)
 
-### **問題分析**
+## 問題分析
 
 看到要找 longest substring，就直接往 sliding window 的方向試試看，而一個「合法」的 substring 表示「substring 內數量最多的字母數 + k」會大於等於 substring size，這樣才可以在 replace k 次內把 substring 所有字母都變一樣。
 
@@ -29,7 +29,7 @@ while right < n:
         left++
 ```
 
-### **解題思路 - Sliding Window**
+## 解題思路 - Sliding Window
 
 最直覺的做法，我們需要一個方法讓我們可以快速找到當下 sliding window 內數量最多的字母數，基本上用一個 map 就可以解了，因為 map 會自動排序，而且還可以快速更新數量。
 
@@ -88,7 +88,7 @@ while(right < n){
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int characterReplacement(string s, int k) {

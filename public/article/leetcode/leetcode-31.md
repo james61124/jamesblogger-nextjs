@@ -15,7 +15,7 @@ id: 5cc734d4-4c35-49f4-b114-aa9cf0d8df05
 
 題目連結🔗：[https://leetcode.com/problems/next-permutation/](https://leetcode.com/problems/next-permutation/)
 
-### **題目分析**
+## 題目分析
 
 這題需要來分析一下規律，簡單分成幾種狀況
 
@@ -25,7 +25,7 @@ id: 5cc734d4-4c35-49f4-b114-aa9cf0d8df05
 
 第三種，也是最 general 的狀況，假設 nums = [1, 3, 5, 4, 2]，我們把整條數列分成兩部分 (...) + (pivot) + (decreasing part)，這個範例的 next permutation = [1, 4, 2, 3, 5]，我直接講結論，pivot 會變成「decreasing part 中比 pivot 大的最小的數字」，(...) 這個區域不會動，而 decreasing part 把 pivot 換進來之後整條會 reverse 成 increasing，大概就是這三種狀況
 
-### **解題思路**
+## 解題思路
 
 所以這題的關鍵是我們要找到「pivot 的下一個 index」，也就是 decreasing part 開始的 index，這邊先用 `i` 來表示
 
@@ -111,7 +111,7 @@ void nextPermutation(vector<int>& nums) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int binarySearch(vector<int>& nums, int target, int left, int right){

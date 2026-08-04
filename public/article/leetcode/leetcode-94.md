@@ -15,7 +15,7 @@ id: 14f4920a-690e-418e-87cd-a4cfa9dcaf3b
 
 題目連結 🔗：[https://leetcode.com/problems/binary-tree-inorder-traversal/](https://leetcode.com/problems/binary-tree-inorder-traversal/)
 
-### **解題思路 - Inorder Traversal**
+## 解題思路 - Inorder Traversal
 
 Inorder Traversal 就是先看左邊的 Subtree，再看自己，再看右邊的 Subtree，往下看 Subtree 時也是一樣的模式，所以生成的 Array 就會長這樣
 
@@ -28,7 +28,7 @@ Inorder Traversal 就是先看左邊的 Subtree，再看自己，再看右邊的
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 void inorder(vector<int>& result, TreeNode* node){

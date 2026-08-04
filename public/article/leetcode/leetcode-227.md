@@ -14,15 +14,15 @@ id: 217afd10-4a2a-4245-9fcd-4a5170f124c9
 
 題目連結🔗：[https://leetcode.com/problems/basic-calculator-ii/](https://leetcode.com/problems/basic-calculator-ii/)
 
-### **問題分析**
+## 問題分析
 
 這題要想辦法解決先乘除後加減的問題，所以可能會有 last in first out 發生，所以選擇用 stack 去思考。
 
-### **解題思路 - Stack**
+## 解題思路 - Stack
 
 直覺就是利用 stack，然後當遇到 '*', '/' 的時候就把數字 pop 出來計算，再塞回去。這裡會先需要處理一些問題：
 
-#### **數字的判讀**
+### 數字的判讀
 
 由於會出現非個位數的情況，這邊可以用一個很聰明的解法，這樣就可以計算出目前 iterate 到的整數 `num`。
 
@@ -34,7 +34,7 @@ for(char c : s){
 }
 ```
 
-#### **Operator 的判讀**
+### Operator 的判讀
 
 再來我們必須處理 operator 的問題，這裡分四種情況討論，遇到 operator 後：
 
@@ -50,7 +50,7 @@ for(char c : s){
 **Time Complexity** - `O(n)`，因為 iterate 一個 string<br>
 **Space Complexity** - `O(n)`，因為開了一個 stack
 
-### **Implementation**
+## Implementation
 
 ```cpp
 void updateParam( char& op, int& num, stack<int>& st) {
@@ -100,7 +100,7 @@ int calculate(string s) {
 }
 ```
 
-### **空間優化**
+## 空間優化
 
 但其實仔細觀察會發現，我們從頭到尾都只需要用到 stack 的 top() 而已，前面的數字我們可以提前先加起來，就不用一直 store 在 stack 中，這樣就可以節省掉 stack 的空間，因此這邊做一個優化，拿掉 stack 後新增兩個變數：
 
@@ -110,7 +110,7 @@ int calculate(string s) {
 **Time Complexity** - `O(n)`，因為 iterate 一個 string<br>
 **Space Complexity** - `O(1)`，不用開 stack 了
 
-### **Implementation**
+## Implementation
 
 ```cpp
 void updateParam( char& op, int& result, int& num, int& topNum ) {

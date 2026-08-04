@@ -15,11 +15,11 @@ id: b97b2ec0-c4b2-428f-822d-785021533b18
 
 題目連結 🔗：[https://leetcode.com/problems/combination-sum/](https://leetcode.com/problems/combination-sum/)
 
-### **問題分析**
+## 問題分析
 
 這題問的是總和 = target 的所有組合，這乍聽之下很像 Unbounded Knapsack Problem，就好像是有限重 = target 的背包，candidates[i] 是 items 的重量，求所有可以把背包填滿的組合，但是 DP 比較能用來解決「最優解」或是「可能狀況的數量」，這裡要求的是「所有可能的組合」，DP 就沒有辦法做了，所以遇到需要列舉所有組合的朝 Backtracking 想比較好。
 
-### **解題思路 - Backtracking**
+## 解題思路 - Backtracking
 
 對於每一個 candidates[i] 而言，都會有 `candidates.size()` 個 actions 可以接（ 因為可以 duplicate ），如果正常做 backtracking 的 DFS 會有組合重複的問題，例如今天搜到 [2, 3]，但是等等在看 3 的時候，又會回頭再接到 2，所以我們應該先把 candidates[i] 排序過，等等 DFS 的時候每一個 candidates[i] 只能接比他們大的 value。
 
@@ -56,7 +56,7 @@ if(target<candidates[i]) return;
 **Space Complexity** - `O(N)`
 
 
-### **Implementation**
+## Implementation
 
 ```cpp
 void backTracking(vector<vector<int>>& result, 

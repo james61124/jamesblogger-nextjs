@@ -15,11 +15,11 @@ id: 43bb0296-8428-4513-872e-79c632997045
 
 題目連結 🔗：[https://leetcode.com/problems/trapping-rain-water/](https://leetcode.com/problems/trapping-rain-water/)
 
-### **問題分析**
+## 問題分析
 
 我一開始的想法非常直覺，這題看起來就很像 Monotonic Stack，維持一個 decreasing 的 Monotonic Stack，代表還等待填入水的 height，當遇到比 stack 的頭還要大的 height，表示遇到牆了可以儲水了，就把元素從 Stack 中移出來計算儲水量，這個版本乍看沒甚麼問題也是 O(n)，但想起來就是有一點繞，沒想到這題竟然可以用 Two Pointers 解。
 
-### **解題思路 - Opposite Directional Two Pointers**
+## 解題思路 - Opposite Directional Two Pointers
 
 這題是 Opposite Directional Two Pointers，我們需要兩個 pointers `left`, `right` 分別在最左跟最右，再來慢慢縮進來。
 
@@ -80,7 +80,7 @@ while (left < right) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int trap(vector<int>& height) {

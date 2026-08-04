@@ -14,14 +14,14 @@ id: 17074389-f479-4feb-b899-5fd4d51618db
 
 題目連結 🔗：[https://leetcode.com/problems/delete-node-in-a-linked-list/](https://leetcode.com/problems/delete-node-in-a-linked-list/)
 
-### **解題思路**
+## 解題思路
 
 因為沒有辦法 access `head`，沒有辦法用以前 delete node 的方法，把 prev 指向 next，我們只能 access 題目給的 node 跟往後的所有 node，那我們就把下一個 node 的資訊複製過來，然後把下一個 node 刪除掉就可以了
 
 **Time Complexity** - `O(1)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 void deleteNode(ListNode* node) {

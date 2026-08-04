@@ -21,7 +21,7 @@ struct TreeNode {
 
 Binary Tree 最重要的就是三種 traverse 的方法：Preorder Traversal, Inorder Traversal, Postorder Traversal，從 root 開始依照特定的順序 visit 每一個 node 一次，最後把 traverse 的順序輸出成一個 array，下面就來一個一個討論。
 
-### **Preorder Traversal**
+## Preorder Traversal
 
 簡單來說就是先看自己，再看左邊的 Subtree，再看右邊的 Subtree，往下看 Subtree 時也是一樣的模式，所以生成的 Array 就會長這樣
 
@@ -29,7 +29,7 @@ Binary Tree 最重要的就是三種 traverse 的方法：Preorder Traversal, In
 [Root][Left Subtree][Right Subtree]
 ```
 
-#### **Template**
+### Template
 
 ```cpp
 void preorder(vector<int>& result, TreeNode* node){
@@ -40,11 +40,11 @@ void preorder(vector<int>& result, TreeNode* node){
 }
 ```
 
-#### **範例**
+### 範例
 
 [[ Leetcode 144 ] Binary Tree Preorder Traversal | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-144/)
 
-### **Inorder Traversal**
+## Inorder Traversal
 
 簡單來說就是先看左邊的 Subtree，再看自己，再看右邊的 Subtree，往下看 Subtree 時也是一樣的模式，所以生成的 Array 就會長這樣
 
@@ -52,7 +52,7 @@ void preorder(vector<int>& result, TreeNode* node){
 [Left Subtree] [Root] [Right Subtree]
 ```
 
-#### **Template**
+### Template
 
 ```cpp
 void inorder(vector<int>& result, TreeNode* node){
@@ -63,11 +63,11 @@ void inorder(vector<int>& result, TreeNode* node){
 }
 ```
 
-#### **範例**
+### 範例
 
 [[ Leetcode 94 ] Binary Tree Inorder Traversal | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-94/)
 
-### **Postorder Traversal**
+## Postorder Traversal
 
 簡單來說就是先看左邊的 Subtree，再看右邊的 Subtree，再看自己，往下看 Subtree 時也是一樣的模式，所以生成的 Array 就會長這樣
 
@@ -75,7 +75,7 @@ void inorder(vector<int>& result, TreeNode* node){
 [Left Subtree] [Right Subtree] [Root]
 ```
 
-#### **Template**
+### Template
 
 ```cpp
 void postorder(vector<int>& result, TreeNode* node){
@@ -86,11 +86,11 @@ void postorder(vector<int>& result, TreeNode* node){
 }
 ```
 
-#### **範例**
+### 範例
 
 [[ Leetcode 145 ] Binary Tree Postorder Traversal | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-145/)
 
-### **Level Order Traversal**
+## Level Order Traversal
 
 將 traverse 的結果由左到右由上到下一層一層放到 array 裡，每一層都是一個 subarray，所以最後的結果是一個 2D Array，有點像這樣
 
@@ -102,7 +102,7 @@ void postorder(vector<int>& result, TreeNode* node){
 
 這個問題也很好解決，當一層處理完要處理下一層的時候，表示現在 queue 裡只會有下一層的 node，所以 queue 的 size 就是下一層的 node 的數量，紀錄這個數字 `currentSize`，我們只要 pop `currentSize` 個 node 就是處理完下一層了。
 
-#### **Template**
+### Template
 
 ```cpp
 vector<vector<int>> levelOrder(TreeNode* root) {
@@ -124,6 +124,6 @@ vector<vector<int>> levelOrder(TreeNode* root) {
 }
 ```
 
-#### **範例**
+### 範例
 
 [[ Leetcode 102 ] Binary Tree Level Order Traversal | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-102/)

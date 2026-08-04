@@ -15,14 +15,14 @@ id: c1f2c8b8-a5d8-4dff-b674-106cd604deb3
 
 題目連結🔗：[https://leetcode.com/problems/linked-list-cycle/](https://leetcode.com/problems/linked-list-cycle/)
 
-### **解題思路 - Fast and Slow Pointers ( Floyd's Cycle Detection Algorithm )**
+## 解題思路 - Fast and Slow Pointers ( Floyd's Cycle Detection Algorithm )
 
 這是最經典的 linked list 判斷有沒有 cycle 的題目，讓 fast iterate 的速度是 slow 的兩倍，如果 linked list 有 cycle 的話，fast 最後會追上 slow。
 
 **Time Complexity** - `O(n)`，最多 iterate n 個 node<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 bool hasCycle(ListNode *head) {

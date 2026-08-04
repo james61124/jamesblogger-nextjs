@@ -15,14 +15,14 @@ id: c680977b-e143-4efb-9d1e-a2802e3f100d
 
 題目連結 🔗：[https://leetcode.com/problems/add-two-integers/](https://leetcode.com/problems/add-two-integers/)
 
-### **問題分析**
+## 問題分析
 
 為什麼這種題會出現在 Leetcode 裡？
 
 **Time Complexity** - `O(1)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int sum(int num1, int num2) {

@@ -9,17 +9,17 @@ readTime: 2
 id: bbe00e6c-db89-4bf9-87e0-410c84156d1f
 ---
 
-### **Queue**
+## Queue
 
 Queue 是一種 FIFO(First in, First out) 的 data structure，就很像排隊一樣，所以最先被 push 進去的，在 pop 的時候就會最先出來，而在 queue 中沒有辦法看到中間正在排隊的 element，只能看到頭尾。
 
-#### **宣告**
+### 宣告
 
 ```cpp
 queue<int>q;
 ```
 
-#### **可用的 Function**
+### 可用的 Function
 
 比較需要注意的應該是因為是 queue 的關係，所以用的是 front 不是 top，再來就是他除了可以拿 front 還可以拿 back。
 
@@ -32,11 +32,11 @@ queue<int>q;
 | empty()     | 檢查 queue 是否為 empty        | O(1)             |
 | size()      | 返回佇列中的元素數量           | O(1)             |
 
-### **Priority Queue**
+## Priority Queue
 
 priority queue 在 C++ 中是一個 STL，可以直接調用，他跟 queue 不一樣的地方在於他在 push value 的時候會把整個 queue 排列過一次，而 pop 的時候會按照 value 大小來決定誰先出來，所以需要耗費 O(log n) 來 push，剩下的部分就跟 queue 差不多了。
 
-#### **宣告**
+### 宣告
 
 C++ 的 priority queue 預設是 maxHeap，所以在 pop() 的時候是大的會先出，寫起來是這樣：
 
@@ -64,7 +64,7 @@ priority_queue<int, vector<int>, Compare> pq;
 
 這裡 compare 的意思是 如果 return `true`，那 ａ 的 priority 會變最低，所以實際上是 b 會先出，也就是 minHeap 的概念。
 
-#### **可用的 Function**
+### 可用的 Function
 
 | Function      | Description                                | Time Complexity    |
 |---------------|---------------------------------------|-------------------|
@@ -76,7 +76,7 @@ priority_queue<int, vector<int>, Compare> pq;
 
 pop 也是 O(log n) 是因為 queue 是用 binary heap 實作的，pop 的過程涉及到 heapify，而這個過程需要 O(log n)。
 
-#### **範例**
+### 範例
 
 [[ Leetcode 239 ] Sliding Window Maximum | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-239/)<br>
 [[ Leetcode 347 ] Top K Frequent Elements | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-347/)

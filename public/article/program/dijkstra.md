@@ -95,7 +95,7 @@ while(!pq.empty()){
 **Time Complexity** - `O((V + E) log V)`<br>
 **Space Complexity** - `O(V + E)`
 
-### **Dijkstra 的限制**
+## Dijkstra 的限制
 
 因為 Dijkstra 是利用類似 Greedy 的方式
 
@@ -103,7 +103,7 @@ while(!pq.empty()){
 
 這只有在所有邊的權重都是非負的時才成立，如果今天出現 negative weight edges，後面可能出現「繞遠路但有負邊」的更短路徑，Dijkstra 就會出錯了，而這個時候就必須用到 - Bellman-Ford Algorithm。
 
-### **Template**
+## Template
 
 ```cpp
 vector<int> dijkstra(int n, int k, vector<vector<pair<int, int>>>&adj){
@@ -130,6 +130,6 @@ vector<int> dijkstra(int n, int k, vector<vector<pair<int, int>>>&adj){
 }
 ```
 
-### **範例**
+## 範例
 
 [[ Leetcode 743 ] Network Delay Time | 解題思路分享](https://www.jamesblogger.com/leetcode/articles/leetcode-743)

@@ -14,13 +14,13 @@ id: 9ea52413-9f92-4a2d-ac3f-0a0f26f429d1
 
 題目連結 🔗：[https://leetcode.com/problems/n-queens/](https://leetcode.com/problems/n-queens/)
 
-### **解題思路 - Backtracking**
+## 解題思路 - Backtracking
 
 如果要找所有的組合，每一個 rows 就可以有至多 n 種 actions，當看完一種要回到現在這個狀態繼續看下一種，那這種 `現在的 decision 不合適或是不夠，就撤回這個 decision 繼續嘗試其他 action`，就是 Backtracking。
 
 Backtracking 需要考量以下三點，找出所有 action、找出 recursive 的 terminate 條件、backtracking 的方式，以下一一分析：
 
-#### **找出所有 action**
+### 找出所有 action
 
 對於每一個 rows 來說，也就是每一層來說，我可以選擇至多 n 個位置放 Queen，所以至多 n 種 actions，但是我必須判斷哪一些 index 是已經不能放 Queens 的了，也就是說我需要找到一個有效率的方法來判斷那個 column, diagonal 上有沒有 Queens。
 
@@ -58,7 +58,7 @@ vector<int>antiDiagonal;
 (3, 3)                         -> x+y = 6  -> index = 6
 ```
 
-#### **recursive 的 terminate 條件**
+### recursive 的 terminate 條件
 
 ```cpp
 if(index == n){
@@ -69,7 +69,7 @@ if(index == n){
 
 當我一個 trajectory 走到底了，也就是 `index == n` 時，就必須把現在這條路上決策的 board 放到 result 中。
 
-#### **backtracking 的方式**
+### backtracking 的方式
 
 ```cpp
 col[i] = 0;
@@ -85,7 +85,7 @@ board[index][i] = '.';
 **Time Complexity** - `O(n!)`，因為第一個 rows 有 n 種 actions，然後每個 rows 的 actions 數量會逐層減一<br>
 **Space Complexity** - `O(n^2)`，主要是 board 的 size
 
-### **Implementation**
+## Implementation
 
 ```cpp
 void dfs(vector<vector<string>>& result, vector<string>& board, 
@@ -127,13 +127,13 @@ vector<vector<string>> solveNQueens(int n) {
 }
 ```
 
-### **空間優化 - Bit Manipulation**
+## 空間優化 - Bit Manipulation
 
 傳統的 Backtracking 需要利用很多 array 來儲存 column, diagonal 的狀態，但是如果用 Bit Mask 的技巧就可以節省這些空間，不是很直觀，但也非常 fancy。
 
 我們把需要紀錄的三個東西 ( column, main diagonal, anti diagonal ) 分別改成三個 integer 來儲存：`int col`, `int diag1`, `int dia2`，假設 `col = 0b1000`，第 0 個 column 不能放 Queens。
 
-#### **計算當前 rows 有多少可以放 queens 的 position**
+### 計算當前 rows 有多少可以放 queens 的 position
 
 ```cpp
 int availablePositions = ((1 << n) - 1) & ~(col | diag1 | diag2);
@@ -157,7 +157,7 @@ int dia2 = 0b0001;
 
 所以 availablePositions 就是 0b1111 & 0b0010 = 0b0010，意思就是這個 row 中所有可以放 Queens 的地方就是 1，`(1 << n) - 1`不能省，他是用來規範整個 integer 要有 n 個 bits。
 
-#### **具體如何將 availablePositions 轉成 index?**
+### 具體如何將 availablePositions 轉成 index?
 
 ```cpp
 while (availablePositions) {
@@ -200,7 +200,7 @@ availablePositions ^= position; // availablePositions = 0b1000
 ```
 第三行 `int columnIndex = __builtin_ctz(position);` 就是 return 最右邊的 1 的 index，所以 `position = 0b0010`，`columnIndex` = 1，到這裡我們就把 availablePositions 轉成 index 而且做更新了。
 
-#### **backtracking 的部分怎麼更新 col, diag1, diag2?**
+### backtracking 的部分怎麼更新 col, diag1, diag2?
 
 ```cpp
 board[row][columnIndex] = 'Q';
@@ -217,7 +217,7 @@ diag2 用 `(diag2 | position) >> 1` 更新，基本上就是反過來，到這�
 **Time Complexity** - `O(n!)`，因為第一個 rows 有 n 種 actions，然後每個 rows 的 actions 數量會逐層減一<br>
 **Space Complexity** - `O(n^2)`，主要是 board 的 size，但是少掉其他 status 所需要的 array 空間
 
-### **Implementation**
+## Implementation
 
 ```cpp
 void dfs(int row, int n, int col, int diag1, int diag2, vector<string>& board, vector<vector<string>>& res) {

@@ -22,7 +22,7 @@ dp[i][j] = dp[i-1][j] + dp[i][j-1]
 
 按照輸入的狀態可以分成下面幾種類型：Single Sequence, Two Sequences, Grid DP, 還有 No Sequence，下面會一一舉例介紹：
 
-### **Linear DP - Single Sequence**
+## Linear DP - Single Sequence
 
 在處理只有一個序列的 DP，通常只會需要 1D 的 dp table，這種可以統稱為 Single Sequence Linear DP，那最常見的兩種 dp[i] 的定義方式如下：
 
@@ -78,7 +78,7 @@ ps. dp[i] 在這兩種情況是「思路上」的分類，他在宣告上有可�
 [[ Leetcode 300 ] Longest Increasing Subsequence | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-300/)<br>
 [[ Leetcode 213 ] House Robber II | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-213/)
 
-### **Linear DP - Two Sequences**
+## Linear DP - Two Sequences
 
 在輸入狀態為兩個序列的 DP，通常就會需要 2D 的 dp table，這種我都將他歸類成 Two Sequences Linear DP，那最常見的兩種 dp[i][j] 的定義方式如下：
 
@@ -107,7 +107,7 @@ ps. 一樣的狀況，dp[i][j] 在這兩種情況是「思路上」的分類，�
 
 [[ Leetcode 72 ] Edit Distance | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-72/)
 
-### **Linear DP - Grid DP**
+## Linear DP - Grid DP
 
 在輸入為一個 2D 的 Matrix 時，通常就會需要一個 2D 的 dp table，這種可以歸類成 Grid DP，最常見的 dp[i][j] 的定義如下：
 
@@ -130,7 +130,7 @@ dp[i][j] = min(dp[i-1][j-1], min(dp[i-1][j], dp[i][j-1])) + 1;
 
 [[ Leetcode 221 ] Maximal Square | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-221/)
 
-### **Linear DP - No Sequence**
+## Linear DP - No Sequence
 
 最後一種 Linear DP，就是如果問題的輸入沒有明確的形式，但是還是可以分成很多子 DP 問題的話，就可以被歸類成 No Sequence 的 Linear DP 問題，這種 dp[i] 就比較沒有規則可言，但是按照我目前的經驗來說，如果完全沒有想法可以先把 dp[i] 設為「題目所求」，常常就可以寫出相對應的 Transition Function。
 
@@ -150,7 +150,7 @@ for(int i=2; i<=n; i++){
 
 [[ Leetcode 343 ] Integer Break | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-343/)
 
-### **DP 其他系列文章**
+## DP 其他系列文章
 
 [[ Algorithm ] Dynamic Programming (一) - Introduction | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/dp/)<br>
 [[ Algorithm ] Dynamic Programming (二) - Memorization | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/memorization/)<br>

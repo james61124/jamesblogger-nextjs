@@ -15,13 +15,13 @@ id: e2515db2-1b7c-461f-8ead-555e51834129
 
 題目連結 🔗：[https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/)
 
-### **問題分析**
+## 問題分析
 
 這題最關鍵的訊息是「整個 graph 只有 n - 1 條 edges」，這代表整張圖是一個 tree，點到點只會有唯一一條路線，沒有 cycle 的存在
 
 因此，基本上可以看成利用 DFS 從 node 0 出發，如果遇到「逆向」的 edge，表示這個 node 可以正常抵達 node 0，如果遇到「正向」的 node，表示這個 edge 需要 reverse 之後這個 node 才能正常抵達 node 0，至於為什麼可以直接翻轉呢？是因為整條 Graph 都沒有 cycle，所以表示不管是正向的 edge 還是逆向的 edge，這條路都是唯一一個可以到達 node 0 的方式，也就是說，從 node 0 出發，我們只要計算路上會遇到多少「正向」的 edge 就好。
 
-### **解題思路 - DFS**
+## 解題思路 - DFS
 
 我們可以先幫 edges 做 label，所有「正向」的 edge 都標成 0，將他們反過來之後就會變成「逆向」的 edge，標成 1
 
@@ -54,7 +54,7 @@ void dfs(int x, vector<bool>& visit, vector<vector<pair<int, int>>>& adj, int &r
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 void dfs(int x, vector<bool>& visit, vector<vector<pair<int, int>>>& adj, int &result) {

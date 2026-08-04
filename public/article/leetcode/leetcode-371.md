@@ -14,11 +14,11 @@ id: c63beea1-5f86-4292-955b-b904deca843c
 
 題目連結 🔗：[https://leetcode.com/problems/counting-bits/](https://leetcode.com/problems/counting-bits/)
 
-### **問題分析**
+## 問題分析
 
 這題就是在考加法器的基本原理，這邊直接進行一個上課的動作。
 
-### **解題思路 - Bit Manipulation**
+## 解題思路 - Bit Manipulation
 
 先從兩個正數的 case 講起，我們在做加法的時候就是把低位數加起來，再來做進位對吧？在 Bit 的世界中步驟是一模一樣的，舉個例子：
 
@@ -141,7 +141,7 @@ b   = 0000
 **Time Complexity** - `O(1)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int getSum(int a, int b) {

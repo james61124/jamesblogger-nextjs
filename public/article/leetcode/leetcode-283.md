@@ -15,14 +15,14 @@ id: 683d45bc-b69b-4b32-a022-df7a3f4c5a16
 
 題目連結 🔗：[https://leetcode.com/problems/move-zeroes/](https://leetcode.com/problems/move-zeroes/)
 
-### **問題分析**
+## 問題分析
 
 這題沒什麼特別的技巧，只要把 non-zero 的數全部搬來前面，後面全部填成 0 就好了
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 void moveZeroes(vector<int>& nums) {

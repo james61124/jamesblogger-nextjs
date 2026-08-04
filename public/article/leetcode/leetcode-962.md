@@ -15,7 +15,7 @@ id: 85cc2c6d-7dd3-45d3-929c-88edf9b00778
 
 題目連結 🔗：[https://leetcode.com/problems/maximum-width-ramp/](https://leetcode.com/problems/maximum-width-ramp/)
 
-### **問題分析**
+## 問題分析
 
 這題需要掌握一個關鍵，對於一個數 nums[i] 來說，如果有一個 j，其中 j < i 且 nums[j] < nums[i]，那不管 nums[i] 的右邊是什麼東西，nums[j] 都可以跟右邊的東西組成 width 更大的 ramp，也就是說
 
@@ -23,7 +23,7 @@ id: 85cc2c6d-7dd3-45d3-929c-88edf9b00778
 
 舉例來說，nums = [9, 8, 3, 4, 5, 2]，我們只需要一個從最左邊開始 decreasing 的 array，也就是 [9, 8, 5, 2]，而這可以用 Monotonic Stack 來實作。
 
-### **解題思路 - Monotonic Stack**
+## 解題思路 - Monotonic Stack
 
 我們先把這個 Monotonic Stack 寫出來
 
@@ -51,7 +51,7 @@ for(int i = n - 1; i >= 0 && !st.empty(); i--){
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int maxWidthRamp(vector<int>& nums) {

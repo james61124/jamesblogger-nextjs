@@ -25,13 +25,13 @@ id: 81931f80-50f5-477b-ad3e-445542851348
 
 題目連結 🔗：[https://leetcode.com/problems/letter-combinations-of-a-phone-number/](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
 
-### **問題分析**
+## 問題分析
 
 遇到需要列出所有情況的，就是利用 backtracking 走過所有路徑就可以了。
 
 文章連結🔗：[[ Algorithm ] Backtracking | 核心概念與 Leetcode 題型解析](https://www.jamesblogger.com/program/articles/backtracking)
 
-### **解題思路 - Backtracking**
+## 解題思路 - Backtracking
 
 針對每一個電話號碼建立 table，這樣就知道 backtracking 的每一層有哪些 action 可以走。
 
@@ -44,7 +44,7 @@ vector<string>dict = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", 
 **Time Complexity** - `O(4^n)`，假設有 n 層，每一層最多有 4 個 actions<br>
 **Space Complexity** - `O(n * 4^n)`，最多有 4^n 個組合，每一個組合的長度是 n
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 vector<string>dict = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};

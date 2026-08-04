@@ -15,7 +15,7 @@ id: 8cccabb0-17ae-4bb0-9762-e45523fc0a14
 
 題目連結 🔗：[https://leetcode.com/problems/factorial-trailing-zeroes/](https://leetcode.com/problems/factorial-trailing-zeroes/)
 
-### **問題分析**
+## 問題分析
 
 這題關鍵只有一個
 
@@ -37,7 +37,7 @@ while(fives <= n){
 **Time Complexity** - `O(logn)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int trailingZeroes(int n) {

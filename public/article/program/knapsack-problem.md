@@ -19,7 +19,7 @@ id: f742443d-3ebf-48ee-836d-9a0656067c9d
 2. **Unbounded Knapsack Problem** - 每個物品有無限多個。
 3. **Bounded Knapsack Problem** - 每個物品有限數量，每一個物品的限制都不一樣。
 
-### **0/1 Knapsack Problem**
+## 0/1 Knapsack Problem
 
 > 有 n 種物品和只能裝 W 的背包，第 i 種 item 的重量和價值分別是 w[i], v[i]，每種物品只有一個，要求不超過限重的情況下背包能裝的最大 value 是多少。
 
@@ -91,7 +91,7 @@ int knapsack01(int W, const vector<int>& w, const vector<int>& v) {
 
 [[ Leetcode 416 ] Partition Equal Subset Sum | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-416/)
 
-### **Unbounded Knapsack Problem**
+## Unbounded Knapsack Problem
 
 > 有 n 種物品和只能裝 W 的背包，第 i 種 item 的重量和價值分別是 w[i], v[i]，每種物品有無限多個，要求不超過限重的情況下背包能裝的最大 value 是多少。
 
@@ -164,13 +164,13 @@ int unboundedKnapsack1D(int W, const vector<int>& w, const vector<int>& v) {
 
 [[ Leetcode 279 ] Perfect Squares | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-279/)
 
-### **Bounded Knapsack Problem**
+## Bounded Knapsack Problem
 
 > 有 n 種物品和只能裝 W 的背包，第 i 種 item 的重量是 weight[i], value 是 value[i], 數量上限是 count[i]，要求不超過限重的情況下背包能裝的最大 value 是多少。
 
 這個問題跟 0/1, Bounded 不一樣的地方在於每件 item 都有固定數量，而且每件還不一樣。
 
-#### **2D DP**
+### 2D DP
 
 參考前面的思路，所以對於每一個 item `i` 來說，我們有我們有「不選 / 選 1 個 / 選 2 個 / ... / 選 count[i] 個」的這些 actions，dp[i][j] 用來描述「前 i 個 items 在限重 j 的背包中可以裝的最大 value」，我們可以根據這些寫出我們的 Transition Function :
 
@@ -214,7 +214,7 @@ int boundedKnapsack(int W, vector<int>& w, vector<int>& v, vector<int>& c) {
 **Time Complexity** - `O(n × W × max(c[i]))`<br>
 **Space Complexity** - `O(n × W)`
 
-#### **空間優化 - 1D DP**
+### 空間優化 - 1D DP
 
 當然我們可以優化，因為 Knapsack Problem 只會用到 dp 的兩個 rows，所以一樣用 dp[j] 來存數據就可以了，那這裡就跟 0/1 Knapsack Problem 一樣，因為 dp[i][j] 是從 item i-1 來的，所以我們要逆著更新：
 
@@ -237,7 +237,7 @@ int boundedKnapsack(int W, vector<int>& w, vector<int>& v, vector<int>& c) {
 **Time Complexity** - `O(n × W × max(c[i]))`<br>
 **Space Complexity** - `O(W)`
 
-#### **時間優化 - Binary Optimization**
+### 時間優化 - Binary Optimization
 
 然而 Bounded Knapsack Problem 不像 Unbounded Knapsack Problem 可以減少一層迴圈的數量，我們還是需要三層的 loop，但是我們可以用 Binary 的技巧大幅降低迴圈時間。
 
@@ -283,11 +283,11 @@ int boundedKnapsack(int W, vector<int>& w, vector<int>& v, vector<int>& c) {
 **Time Complexity** - `O(n × W × log(c[i]))`<br>
 **Space Complexity** - `O(W)`
 
-### **小結**
+## 小結
 
 事實上 Knapsack Problem 除了這三類，還有其他非常多種分類，像是 Multiple Knapsack Problem, Group Knapsack 等等，但 Leetcode 的題目比較常見都是集中於 0/1 Knapsack Problem 跟 Unbounded Knapsack Problem，所以剩下的以後有空再慢慢整理出來。
 
-### **DP 其他系列文章**
+## DP 其他系列文章
 
 [[ Algorithm ] Dynamic Programming (一) - Introduction | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/dp/)<br>
 [[ Algorithm ] Dynamic Programming (二) - Memorization | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/memorization/)<br>

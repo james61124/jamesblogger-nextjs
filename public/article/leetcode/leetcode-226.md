@@ -15,14 +15,14 @@ id: 3b81d297-2f23-4179-933d-bebd744ce97d
 
 題目連結 🔗：[https://leetcode.com/problems/invert-binary-tree/](https://leetcode.com/problems/invert-binary-tree/)
 
-### **解題思路**
+## 解題思路
 
 這題其實沒啥好講的，dfs 走過每一個 node，把 left, right 交換就好了。
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 void dfs(TreeNode* node){

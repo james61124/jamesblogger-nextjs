@@ -15,7 +15,7 @@ id: ff222981-0aa8-483b-83ab-77889683f040
 
 題目連結 🔗：[https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 
-### **解題思路**
+## 解題思路
 
 這題關鍵在於 dfs 要回傳什麼東西回來，我們分兩種情況分析，如果 `q` 是 `p` 底下 subtree 的其中一個 node，那 lowest common ancestor 就是 `p` 自己，所以 dfs 到 `p` 的時候就可以直接 return 自己回來。
 
@@ -59,7 +59,7 @@ TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(log n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {

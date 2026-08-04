@@ -17,13 +17,13 @@ id: 9989beee-7281-4574-ae0f-7009166ff4bd
 
 題目連結 🔗：[https://leetcode.com/problems/lru-cache/](https://leetcode.com/problems/lru-cache/)
 
-### **問題分析**
+## 問題分析
 
 不論是 `get` 還是 `put`，看起來只要能快速找到或更新 key-value 就可以了，這部分是 Hash Table 可以做到的事，關鍵在於如果超出 capacity，要可以「刪除近期最沒有被用到的 key」，也就是說我們要可以快速定位 least recently used key，當 key 被使用，可以更新狀態也好，或是更新位置
 
 因此這個時候我們需要一個可以雙向操作的 data structure，當一個 key 被使用，就將它搬到最前面，最後面留下來的就是最少用到的 key，那也因此我們要可以快速定位 key 在甚麼位置，這樣才可以進行搬運，而 Hash Table + Double Linked List 可以完美解決這件事，Hash Table 儲存 key 跟 Double Linked List 的 iterator，這樣從 Hash Table 可以快速定位 key 在哪裡，然後利用 Double Linked List 可以從頭或是尾巴進行操作。 
 
-### **解題思路 - Hash Table + Double Linked List**
+## 解題思路 - Hash Table + Double Linked List
 
 Double Linked List 可以自己寫，不過 c++ 有內建 Double Linked List 的 STL - list 可以直接用，我們直接用 list 寫，首先我們需要一個 double linked list 跟 hash table
 
@@ -175,7 +175,7 @@ public:
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-### **Implementation**
+## Implementation
 ```cpp
 class LRUCache {
 private:

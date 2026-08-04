@@ -14,6 +14,7 @@ import CommentSection from "@/components/comments/CommentSection";
 import {
   incrementArticleView,
   getArticleById,
+  ensureArticle,
 } from "@/lib/supabase/article";
 
 import {
@@ -115,6 +116,11 @@ export default function Article({ category, fileName, json_path, title }) {
 
       const oneDay =
         24 * 60 * 60 * 1000;
+
+      await ensureArticle({
+        id: meta.id,
+        slug: `${category}/${fileName}`,
+      });
 
       if (
         !lastViewed ||

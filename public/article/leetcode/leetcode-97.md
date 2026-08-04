@@ -14,7 +14,7 @@ id: 1fc69cf1-dd9f-4ff2-921c-359ccf41fb7c
 
 題目連結 🔗：[https://leetcode.com/problems/interleaving-string/](https://leetcode.com/problems/interleaving-string/)
 
-### **問題分析**
+## 問題分析
 
 先來確實了解題目，題目問的是是否能夠用 `s1`, `s2` 組合，而且是要完整的組合，也就是說，如果用「部分的 `s1`」跟「部分的 `s2`」組合也是不行的。
 
@@ -22,7 +22,7 @@ id: 1fc69cf1-dd9f-4ff2-921c-359ccf41fb7c
 
 由剛剛的思路我們可以發現 `s3[i]` 要嘛是從 s1 來的要嘛是從 s2 來的，可以利用 Linear DP 思考看看。
 
-### **解題思路 - DP**
+## 解題思路 - DP
 
 我們可以定義一個 dp[i][j] 代表「`s3[0...i+j-1]` 是否能利用 `s1[0...i-1]` 跟 `s2[0...j-1]` 組合而成」，也就是 2D DP 中典型的「以 nums1 中前 i 個元素」與「以 nums2 中前 j 個元素」組成的解。
 
@@ -87,7 +87,7 @@ bool isInterleave(string s1, string s2, string s3) {
 **Time Complexity** - `O(m*n)`<br>
 **Space Complexity** - `O(n)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 bool isInterleave(string s1, string s2, string s3) {

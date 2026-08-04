@@ -15,14 +15,14 @@ id: 42405387-b437-458f-bf4a-7b8854dbc0f6
 
 題目連結 🔗：[https://leetcode.com/problems/count-binary-substrings/](https://leetcode.com/problems/count-binary-substrings/)
 
-### **問題分析**
+## 問題分析
 
 我們可以計算每一群 `0`, `1` 的數量，而 substring 的數量就是 min(前一群數量, 這一群數量)，把每相鄰兩群的 substring 數量都加起來就好
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int countBinarySubstrings(string s) {

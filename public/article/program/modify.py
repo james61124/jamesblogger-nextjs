@@ -1,10 +1,23 @@
 import re
 from pathlib import Path
 
-path = Path("binary-tree-reconstruction.md")
-text = path.read_text(encoding="utf-8")
+root = Path("../leetcode")  # 或 Path("你的資料夾")
 
-text = re.sub(r"^###\s+\*\*(.+?)\*\*$", r"## \1", text, flags=re.MULTILINE)
-text = re.sub(r"^####\s+\*\*(.+?)\*\*$", r"### \1", text, flags=re.MULTILINE)
+for path in root.rglob("*.md"):
+    text = path.read_text(encoding="utf-8")
 
-path.write_text(text, encoding="utf-8")
+    text = re.sub(
+        r"^###\s+\*\*(.+?)\*\*$",
+        r"## \1",
+        text,
+        flags=re.MULTILINE,
+    )
+    text = re.sub(
+        r"^####\s+\*\*(.+?)\*\*$",
+        r"### \1",
+        text,
+        flags=re.MULTILINE,
+    )
+
+    path.write_text(text, encoding="utf-8")
+    print(f"Processed: {path}")

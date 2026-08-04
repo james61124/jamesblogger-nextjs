@@ -15,7 +15,7 @@ id: 01f8f663-6642-4676-bba5-0f9f423d152f
 
 題目連結 🔗：[https://leetcode.com/problems/binary-search-tree-iterator/](https://leetcode.com/problems/binary-search-tree-iterator/)
 
-### **問題分析**
+## 問題分析
 
 題目說要 in-order，最直接的方式就是把整顆 Tree 都先照反的順序 dump 到 stack 中，再來就一個一個 pop 出來即可。這我覺得沒有什麼好講的，直接給程式碼
 
@@ -49,7 +49,7 @@ public:
 
 但如果題目沒有說不可以破壞原本 Tree Structure 的情況下，其實有另一個解法可以不用開 O(n) 的空間，那就是 Morris Traversal
 
-### **解題思路 - Morris Traversal**
+## 解題思路 - Morris Traversal
 
 Morris Traversal 是一種「不透過遞迴及 stack 的情況，暫時改動 Tree Structure 來完成 in order traversal」的方法。
 
@@ -145,7 +145,7 @@ while(curr) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 class BSTIterator {

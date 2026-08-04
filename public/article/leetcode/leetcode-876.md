@@ -15,15 +15,15 @@ id: 0cbadc8c-db19-45d4-858d-6a52dc16589a
 
 題目連結 🔗：[https://leetcode.com/problems/middle-of-the-linked-list/](https://leetcode.com/problems/middle-of-the-linked-list/)
 
-### **問題分析**
+## 問題分析
 
 這題就是想辦法找到中間的 node 就可以了。
 
-### **解題思路 - Fast and Slow Pointer**
+## 解題思路 - Fast and Slow Pointer
 
 讓 fast iterate 的速度是 slow 的兩倍，這樣 fast 到底的時候 slow 就會剛好落在 middle 的位置。
 
-#### **Two Pointer 起始位置**
+### Two Pointer 起始位置
 
 稍微思考一下長度奇偶數的狀況就行，兩個 pointers 都從 head 開始
 
@@ -33,7 +33,7 @@ id: 0cbadc8c-db19-45d4-858d-6a52dc16589a
 **Time Complexity** - `O(n)`，每個元素最多被 fast 掃過。<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 ListNode* middleNode(ListNode* head) {

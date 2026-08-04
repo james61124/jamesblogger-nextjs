@@ -14,13 +14,13 @@ id: e9169e7b-79e7-4b9b-aad2-5cfe1f440944
 
 題目連結 🔗：[https://leetcode.com/problems/subsets-ii/](https://leetcode.com/problems/subsets-ii/)
 
-### **問題分析**
+## 問題分析
 
 列出所有 subsets，那很明顯就是朝 backtracking 的方向去想。
 
 [[ Algorithm ] Backtracking | 核心概念與 Leetcode 題型解析](https://www.jamesblogger.com/program/articles/backtracking)
 
-### **解題思路 - Backtracking**
+## 解題思路 - Backtracking
 
 看完上面的文章，我們會發現 backtracking 就是先列出一個 decision tree，再來將每一個 trajectory 推進去 result 中，不過這題最關鍵的地方是我們需要解決 duplicate。
 
@@ -69,7 +69,7 @@ sort(nums.begin(), nums.end());
 **Time Complexity** - `O(2^n * n)`，最多有 2^n 個 subsets，每一個最長是 n<br>
 **Space Complexity** - `O(n)`，每一個 `ans` 最長就是 n
 
-### **Implementation**
+## Implementation
 
 ```cpp
 void backtracking(vector<int>& nums, vector<vector<int>>& result, vector<int>& ans, int index) {

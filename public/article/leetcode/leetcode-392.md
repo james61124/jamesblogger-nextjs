@@ -15,14 +15,14 @@ id: 9063c2d1-c3da-4384-b823-5bbd0a17b540
 
 題目連結🔗：[https://leetcode.com/problems/is-subsequence/](https://leetcode.com/problems/is-subsequence/)
 
-### **解題思路**
+## 解題思路
 
 這題超簡單，按照順序比一下 `s` 的每個字母是不是都有按照順序出現在 `t` 裡就好。
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 bool isSubsequence(string s, string t) {

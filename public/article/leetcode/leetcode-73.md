@@ -15,18 +15,18 @@ id: dbec5735-a085-45d6-9e86-7009530e8020
 
 題目連結 🔗：[https://leetcode.com/problems/set-matrix-zeroes/](https://leetcode.com/problems/set-matrix-zeroes/)
 
-### **問題分析**
+## 問題分析
 
 這題最直覺的解法，就是遇到 0 的話，就把那一個 column, row 標記起來，等等看哪一個 column, row 被標記起來的就整排都設成 0，所以直接用 Hash Table 就可以寫了。
 
-### **解題思路 - Hash Table**
+## 解題思路 - Hash Table
 
 標記也不用用什麼很特別的 STL，`bool` 就可以直接存。
 
 **Time Complexity** - `O(m x n)`<br>
 **Space Complexity** - `O(max(m, n))`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 void setZeroes(vector<vector<int>>& matrix) {
@@ -60,7 +60,7 @@ void setZeroes(vector<vector<int>>& matrix) {
 }
 ```
 
-### **空間優化**
+## 空間優化
 
 不過我們會發現，如果這個 column 或是 row 需要被設成 0，那其實直接用 matrix 本身的第一個 column 或是 row 來標記就好，因為他們本來就得要被設成 0，這樣就不用再多花 Hash Table 的空間。
 
@@ -95,7 +95,7 @@ if(firstRowZero){
 **Time Complexity** - `O(m x n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 void setZeroes(vector<vector<int>>& matrix) {

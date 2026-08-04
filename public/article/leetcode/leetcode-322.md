@@ -14,13 +14,13 @@ id: 20645195-cc56-44cc-84da-910b557fa121
 
 題目連結 🔗：[https://leetcode.com/problems/coin-change/](https://leetcode.com/problems/coin-change/)
 
-### **問題分析**
+## 問題分析
 
 這題我們可以換個思維想，他其實是在問說一個限重為 `amount` 的包包，可以利用最少的幾個 coins 裝滿，這樣就可以利用 Knapsack Problem 來解了。
 
 [[ Algorithm ] Dynamic Programming (四) - Knapsack Problem | 核心概念與 Leetcode 題型解析](https://www.jamesblogger.com/program/articles/knapsack-problem)
 
-### **解題思路 - Knapsack Problem**
+## 解題思路 - Knapsack Problem
 
 用 Knapsack Problem 來想，我們需要一個 dp[i][j] 代表「前 i 個 coins 最少可以只用幾個來裝滿 `amount`」，而每一個物品都有無限多個可以選，所以實際上這個是 Unbounded Knapsack Problem，根據上面的文章，這類問題會有「不選 / 選 n 次」多種 actions。
 
@@ -65,7 +65,7 @@ return dp[n-1][m-1] == INT_MAX ? -1 : dp[n-1][m-1];
 **Time Complexity** - `O(m*n)`<br>
 **Space Complexity** - `O(m*n)`
 
-### **Implementation**
+## Implementation
 ```cpp
 int coinChange(vector<int>& coins, int amount) {
     int n = coins.size();
@@ -90,14 +90,14 @@ int coinChange(vector<int>& coins, int amount) {
 }
 ```
 
-### **空間優化**
+## 空間優化
 
 Unbounded Knapsack Problem 一次只會關注 dp table 的兩個格子，所以不用宣告整個 dp table，只需要用一個就行了，這邊看完文章應該都可以直接轉換，所以就直接給解法了。
 
 **Time Complexity** - `O(m*n)`<br>
 **Space Complexity** - `O(m)`
 
-### **Implementation**
+## Implementation
 ```cpp
 int coinChange(vector<int>& coins, int amount) {
     int n = coins.size();

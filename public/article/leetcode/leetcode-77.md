@@ -14,7 +14,7 @@ id: 6b8eb84d-d7ed-492b-b87f-99efeaf25980
 
 題目連結 🔗：[https://leetcode.com/problems/combinations/](https://leetcode.com/problems/combinations/)
 
-### **問題分析**
+## 問題分析
 
 看到這種要列出所有排列組合的題目八成就是 Backtracking 了，所以我們可以畫出一個 Decision Tree 類似像這樣
 
@@ -28,7 +28,7 @@ id: 6b8eb84d-d7ed-492b-b87f-99efeaf25980
 
 每一層的起始數字都是上一層 + 1，總共會有 k 層，那每一條 path 就是一個答案
 
-### **解題思路 - Backtracking**
+## 解題思路 - Backtracking
 
 畫出 Decision Tree 之後實作應該不難，如果該條 path 已經有 k 層了，就直接把它推進去 result
 
@@ -61,7 +61,7 @@ for(int i = start; i <= n - k + subRes.size() + 1; i++){
 **Time Complexity** - `O(C(n, k) * k)`，因為一組答案是 k，總共有 C(n, k) 組答案<br>
 **Space Complexity** - `O(k)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 void backTracking(vector<vector<int>>&result, vector<int>&subRes, int n, int k, int start){

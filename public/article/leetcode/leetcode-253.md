@@ -14,7 +14,7 @@ id: 20d21b05-1b4f-4966-b070-81cc19bc57b0
 
 題目連結 🔗：[https://leetcode.com/problems/meeting-rooms-ii/](https://leetcode.com/problems/meeting-rooms-ii/)
 
-### **問題分析**
+## 問題分析
 
 我們要找到方法紀錄同一個時間重疊的 intervals 有多少個，我們可以把所有重疊的 intervals 都記錄在一個 list 裡面，但關鍵是要怎麼判斷有新的 intervals 進來這個 list，誰跟新進來的沒有 overlap 要出去？
 
@@ -22,7 +22,7 @@ id: 20d21b05-1b4f-4966-b070-81cc19bc57b0
 
 這樣想就清楚很多，只要把所有重疊的 intervals 放到 priority queue 裡面就行了
 
-### **解題思路 - Priority Queue**
+## 解題思路 - Priority Queue
 
 我們先將 intervals sort 過
 
@@ -58,7 +58,7 @@ for(auto& interval : intervals){
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int minMeetingRooms(vector<vector<int>>& intervals) {

@@ -15,7 +15,7 @@ id: 8c0c3aab-a894-4f40-835d-8cb5ee940715
 
 題目連結 🔗：[https://leetcode.com/problems/candy/description/](https://leetcode.com/problems/candy/description/)
 
-### **解題思路 - Greedy**
+## 解題思路 - Greedy
 
 先從左到右來解題，從左到右 iterate `ratings`，如果右邊的 rating 比左邊的 rating 大，那右邊的糖果數量一定會比左邊的多，所以所有人糖果數量先初始化為 1，如果右邊比左邊大，右邊的糖果數就設為左邊加一，舉個例子，`ratings = [1, 0, 2, 4, 3, 2]`，那糖果數量可以先計算為 `candies = [1, 1, 2, 3, 1, 1]`。
 
@@ -67,7 +67,7 @@ for(int i = 0; i < n; i++){
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int candy(vector<int>& ratings) {

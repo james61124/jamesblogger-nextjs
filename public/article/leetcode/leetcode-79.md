@@ -15,11 +15,11 @@ id: 47a22340-50c4-4702-9b24-e665be47c06b
 
 題目連結 🔗：[https://leetcode.com/problems/word-search/](https://leetcode.com/problems/word-search/)
 
-### **問題分析**
+## 問題分析
 
 這題第一感就是 DFS，每一格都做 DFS，如果該格是 word[w] 那就繼續往下一層找，直到找到所有的 word 就 return true，滿直覺的。
 
-### **解題思路 - DFS**
+## 解題思路 - DFS
 
 其實就是普通的 DFS，有上下左右四個 neighbors，唯一要注意的只有 visit[i][j] 在搜完所有 neighbors 後要復原，也就是 backtracking 的部分，因為 board[i][j] 在其中一條 trajectory 不是答案，但可能在另一條就是答案，舉例來說：
 
@@ -37,7 +37,7 @@ word = "AAB";
 **Time Complexity** - `O(m x n x (3^L))`，因為每一個 node 可以看到三個不同的方向（ 不含回頭 ），而 L 是 word 的長度<br>
 **Space Complexity** - `O( L )`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 vector<vector<int>>directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
@@ -72,7 +72,7 @@ bool exist(vector<vector<char>>& board, string word) {
 }
 ```
 
-### **空間 + 時間優化**
+## 空間 + 時間優化
 
 寫完了之後才發現怎麼時間跟空間都這麼差，所以就來思考一下怎麼優化，這題的大致思路其實就是這樣，沒有新的演算法技巧，但是在實作上有很多可以節省的地方。
 
@@ -137,7 +137,7 @@ for(unordered_map<char, int>::iterator iter = wordFreq.begin();
 **Time Complexity** - `O(m x n x (3^L))`，因為每一個 node 可以看到三個不同的方向（ 不含回頭 ），而 L 是 word 的長度<br>
 **Space Complexity** - `O( L )`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 bool dfs(vector<vector<char>>& board, string& word, int i, int j, int w){

@@ -14,7 +14,7 @@ id: 4c98e221-f065-46f8-8e1e-f9b83b0b9db5
 
 題目連結 🔗：[https://leetcode.com/problems/course-schedule/](https://leetcode.com/problems/course-schedule/)
 
-### **問題分析**
+## 問題分析
 
 這題應該是 Topological Sort 最經典的題目，各種課程有 dependency 的關係，可以畫出一個 dependency graph，要問說這個 graph 能不能產出一個 valid 的修課順序，也就是問說這個 dependency graph 裡面有沒有 cycle，那用 Topological Sort 就可以判斷一個 Graph 有沒有 cycle 了。
 
@@ -22,7 +22,7 @@ id: 4c98e221-f065-46f8-8e1e-f9b83b0b9db5
 
 [[ Algorithm ] Topological Sort | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/topological-sort)
 
-### **解題思路 - Topological Sort**
+## 解題思路 - Topological Sort
 
 所以這題思路很簡單，先把 `prerequisites` 轉成 adjacency list，做完 Topological Sort 之後判斷 Graph 中有沒有 cycle 即可。
 
@@ -87,7 +87,7 @@ bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
 **Time Complexity** - `O(V + E)`<br>
 **Space Complexity** - `O(V + E)`
 
-### **Implementation**
+## Implementation
 ```cpp
 void topologicalSort(vector<vector<int>>& adj, vector<int>& order) {
     queue<int>q;

@@ -15,7 +15,7 @@ id: 41a994c1-5df3-4116-bf6c-5d57f12cde0f
 
 題目連結 🔗：[https://leetcode.com/problems/gas-station/](https://leetcode.com/problems/gas-station/)
 
-### **問題分析**
+## 問題分析
 
 最直覺的想法，就是從每一個加油站 `i` 出發，模擬開車繞一圈的過程，先把油加入油箱 ( `tank += gas[j % n]` )，再扣掉開到下一站的油 ( `tank -= cost[j % n]` )，如果 在任一個加油站 `tank < 0` 表示從這個 starting point 沒辦法繞一圈，就再往下看下一個加油站，而這樣的時間複雜度是 O(n^2)。
 
@@ -35,7 +35,7 @@ sum(gas[i...j-1] > sum(cost[i...j-1]))
 
 這表示 `gas[j] < cost[j]`，而這也是造成油箱不夠的主要元兇，如果從 i 開始油箱都會不夠了，從 i+1, i+2 開始更不可能，因為少了 gas[i] 的貢獻，所以實際上這題 `O(n)` 就可以解了。
 
-### **解題思路 - Greedy**
+## 解題思路 - Greedy
 
 知道方法後實際上就很簡單了，我們一樣從 i 開始模擬開車一圈的過程，先加油再扣油，如果在 `j` 發現油不夠，油箱清空再往 `j+1` 看，可以簡單寫成這樣。
 
@@ -77,7 +77,7 @@ return (index >= n) || (total < 0) ? -1 : index;
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {

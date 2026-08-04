@@ -14,7 +14,7 @@ id: 8cfd2ba5-e195-4f1b-b97d-276b73a1e2ee
 
 題目連結 🔗：[https://leetcode.com/problems/target-sum/](https://leetcode.com/problems/target-sum/)
 
-### **問題分析**
+## 問題分析
 
 這題最暴力的解法應該是 dfs + backtracking，但即便把重複的數字 prune 掉，時間複雜度還是 O(2^n) 這樣太高了，所以這題有更快的方式。
 
@@ -50,7 +50,7 @@ sum(positive) = (target + totalSum) / 2
 
 [[ Leetcode 416 ] Partition Equal Subset Sum | 解題思路分享](https://www.jamesblogger.com/leetcode/articles/leetcode-416)
 
-### **解題思路 - 0/1 Knapsack Problem**
+## 解題思路 - 0/1 Knapsack Problem
 
 我們需要一個 dp[i][j] 代表「前 i 個數字中有多少 subset 可以組合出 j」，而 nums[i] 只有「選 / 不選」兩種 actions，所以是 0/1 Knapsack Problem。
 
@@ -101,7 +101,7 @@ if(totalSum < abs(target) || (totalSum + target) % 2 != 0) return 0;
 **Time Complexity** - `O(n * m)`<br>
 **Space Complexity** - `O(n * m)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int findTargetSumWays(vector<int>& nums, int target) {
@@ -128,14 +128,14 @@ int findTargetSumWays(vector<int>& nums, int target) {
 }
 ```
 
-### **空間優化**
+## 空間優化
 
 0/1 Knapsack Problem 因為 Transition Function 一次只會關注兩格，所以我們不需要宣告完整的 2d dp table，可以簡單優化成 1D
 
 **Time Complexity** - `O(n * m)`<br>
 **Space Complexity** - `O(m)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int findTargetSumWays(vector<int>& nums, int target) {

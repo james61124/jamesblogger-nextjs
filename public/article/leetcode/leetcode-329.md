@@ -14,11 +14,11 @@ id: 4222cf5f-1159-4073-91f3-a12bc76edcc7
 
 題目連結 🔗：[https://leetcode.com/problems/longest-increasing-path-in-a-matrix/](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/)
 
-### **問題分析**
+## 問題分析
 
 這題最直覺就是每一格都 dfs，然後往數字越更高的走，那計算出每一格當起點的 path 長度就可以知道最大的是哪一條了，不過這樣肯定會走到很多重複的路線，所以我們可以開一個 2d dp table 來記錄這些已經走過的 path。
 
-### **解題思路 - DFS + Memorization**
+## 解題思路 - DFS + Memorization
 
 從 matrix[i][j] 出發的 path，途中經過的每一個 grid 都算是已經計算完成不用重新計算，因為 dfs 往下走到下一個 grid，他會計算完這個 grid 的最大 path 才會回傳回去，所以上面那一層的 path 長度就是下面那一層的 path + 1，而走過的 grid 再重新走一次也不會有新的結果，直接記錄起來就可以了。
 
@@ -71,7 +71,7 @@ int dfs(vector<vector<int>>&matrix, vector<vector<int>>&dp, int i, int j){
 **Time Complexity** - `O(m*n)`<br>
 **Space Complexity** - `O(m*n)`
 
-### **Implementation**
+## Implementation
 ```cpp
 int dfs(vector<vector<int>>&matrix, vector<vector<int>>&dp, int i, int j){
     int m = matrix.size();

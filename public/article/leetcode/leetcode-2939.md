@@ -14,7 +14,7 @@ id: c76b040b-a497-4b0f-a8a0-08ba6382bb3f
 
 題目連結 🔗：[https://leetcode.com/problems/maximum-xor-product/](https://leetcode.com/problems/maximum-xor-product/)
 
-### **問題分析**
+## 問題分析
 
 我們的目標是找到一個 x，使得 (a ^ x) 跟 (b ^ x) 每個 bits 可以保留最多的 1，最好的情況就是把兩邊的所有 bits 都變成 1 對吧？所以如果 a 跟 b 的第 i 位都是 1，那 x 第 i 位設成 0 就可以讓 (a ^ x) 跟 (b ^ x) 的第 i 位都是 1，反過來說也是，如果 a 跟 b 的第 i 位都是 0，那 x 第 i 位設成 1 就可以讓 (a ^ x) 跟 (b ^ x) 的第 i 位都是 1
 
@@ -45,7 +45,7 @@ b ^ x = b1111
 
 > 保留高位已經確定的數字中較小的那邊
 
-### **解題思路 - Bit Manipulation**
+## 解題思路 - Bit Manipulation
 
 所以我們要來計算 x 的大小，先跑一個迴圈從高位跑到低位，然後要取出 a, b 各自的第 i 個 bit
 
@@ -111,7 +111,7 @@ return (((a ^ x) % MOD) * ((b ^ x) % MOD)) % MOD;
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 #define MOD 1000000007

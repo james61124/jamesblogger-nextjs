@@ -20,7 +20,7 @@ id: 331e3f9b-46a2-4604-8e2b-5b52d479b03a
 
 題目連結 🔗：[https://leetcode.com/problems/game-of-life/](https://leetcode.com/problems/game-of-life/)
 
-### **問題分析**
+## 問題分析
 
 這題唯一要注意的只有不要一開始就把 board[i][j] 的值改掉，因為後續可能其他人在查看 neighbor 的時候還是會看到這塊，所以我們可以簡單幫幾個不同的 status 分組
 
@@ -34,7 +34,7 @@ id: 331e3f9b-46a2-4604-8e2b-5b52d479b03a
 **Time Complexity** - `O(m x n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 void gameOfLife(vector<vector<int>>& board) {
@@ -65,6 +65,6 @@ void gameOfLife(vector<vector<int>>& board) {
 }
 ```
 
-### **進階思考**
+## 進階思考
 
 如果 board[i][j] 是一個無限大的板子，或是這個板子 live 數量很稀疏，我們可以選擇不要用 2D vector 來存板子，可以用 Hash Table 存座標跟鄰居中 live cell 的數量就好。

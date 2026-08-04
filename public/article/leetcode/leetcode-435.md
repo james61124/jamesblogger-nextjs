@@ -15,7 +15,7 @@ id: e74eb6a7-3406-4011-8bbd-21a7d53985f0
 
 題目連結 🔗：[https://leetcode.com/problems/non-overlapping-intervals/](https://leetcode.com/problems/non-overlapping-intervals/)
 
-### **問題分析**
+## 問題分析
 
 我們要刪除 intervals 讓 intervals 間不要有重疊，這題的重點其實只有一個
 
@@ -23,7 +23,7 @@ id: e74eb6a7-3406-4011-8bbd-21a7d53985f0
 
 這樣代表後面可以放越多 intervals，也就代表我們需要 remove 的 intervals 越少，那這種「局部最優解」，就是 Greedy 的範疇。
 
-### **解題思路 - Greedy**
+## 解題思路 - Greedy
 
 我們要為後面的 intervals - [start, end] 留空間，意味著我們要先將 intervals 按照 end 排序，如果我們按照 start 排序，可能會出現我們不小心把 [1, 2] 刪掉，但是留下 [1, 10] 這種超長的 interval，導致後面跟他重疊的全部都要被刪掉，那如果用 end 排序，就可以控制我們只會刪掉有重疊且比較短的 interval。
 
@@ -82,7 +82,7 @@ static int compare(int a, int b) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 static bool compare(const vector<int>& a, const vector<int>& b) {

@@ -14,11 +14,11 @@ id: 9b3886c4-1e4f-4c29-b49e-2def3505ed25
 
 題目連結 🔗：[https://leetcode.com/problems/distinct-subsequences/](https://leetcode.com/problems/distinct-subsequences/)
 
-### **問題分析**
+## 問題分析
 
 這題真的有點難想到，所以直接介紹吧，他要用 DP 解。
 
-### **解題思路 - DP**
+## 解題思路 - DP
 
 首先我們定義 `dp[i][j]` 為「`t[0...j-1]` 在 `s[0...i-1]` 有多少 subsequences」，我們來慢慢思考 `t[0...j-1]` 跟 `s[0...i-1]` 的關係。
 
@@ -82,7 +82,7 @@ return dp[n];
 **Time Complexity** - `O(m*n)`<br>
 **Space Complexity** - `O(n)`
 
-### **Implementation**
+## Implementation
 ```cpp
 int numDistinct(string s, string t) {
     int m = s.size(), n = t.size();

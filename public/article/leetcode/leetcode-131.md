@@ -14,11 +14,11 @@ id: 690e674b-9ca6-4cdb-8352-7a3cf5311bfa
 
 題目連結 🔗：[https://leetcode.com/problems/palindrome-partitioning/](https://leetcode.com/problems/palindrome-partitioning/)
 
-### **問題分析**
+## 問題分析
 
 這題要列出所有回文組合，所以理論上是 backtracking，但是還真的沒有很好想。
 
-### **解題思路 - Backtracking**
+## 解題思路 - Backtracking
 
 題目說要把整個字串切成好幾段，而且每段都必須是回文，最後輸出所有合法的切法，如果是人腦來解這題會怎麼切字串呢？是不是從第一個字元切，慢慢往後切 1 個字、2 個字、3 個字，每切一段就檢查：是不是回文？如果是，就往下繼續切剩下的部分，如果不是，就跳過這個切法，所以
 
@@ -129,7 +129,7 @@ vector<vector<string>> partition(string s) {
 **Time Complexity** - `O(2^n x n)`，每個切點都可以決定要不要切，所以會產生 2^(n-1) 種組合，每條路徑最長是 n，需要複製進去 result，所以是 O(n)<br>
 **Space Complexity** - `O(n^2)`，因為 dp table
 
-### **Implementation**
+## Implementation
 
 ```cpp
 void backtracking(vector<vector<bool>>&dp, vector<vector<string>>&result, vector<string>&ans, string s, int start){
@@ -167,7 +167,7 @@ vector<vector<string>> partition(string s) {
 }
 ```
 
-### **其他想法 - Manachers Algorithm**
+## 其他想法 - Manachers Algorithm
 
 但我就在思考，dp[i][j] 如果用 Transition Function 更新的話，dp table 需要更新 O(n^2)，但是可能有好大一部分都是 false，如果用 Manachers Algorithm 算出每個 char 的最大回文半徑 p[i]，這樣只需要 O(n)，再來利用 p[i] 就可以只更新 true 的部分了，是不是會比較快？
 

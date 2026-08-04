@@ -27,7 +27,7 @@ id: 321853ad-16b4-4eb7-8d2f-bf957413c688
 
 題目連結 🔗：[https://leetcode.com/problems/roman-to-integer/](https://leetcode.com/problems/roman-to-integer/)
 
-### **解題思路**
+## 解題思路
 
 首先各個英文字母跟對應的 value 可以直接建一個 Hash Table 對照
 
@@ -53,7 +53,7 @@ for (int i = 0; i < s.size(); i++) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int romanToInt(string s) {

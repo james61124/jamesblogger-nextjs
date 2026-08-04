@@ -14,7 +14,7 @@ id: 71ce1eae-4666-47c0-81c7-3f49e06ac5c9
 
 題目連結 🔗：[https://leetcode.com/problems/counting-bits/](https://leetcode.com/problems/counting-bits/)
 
-### **問題分析**
+## 問題分析
 
 這題一開始如果沒有什麼想法，先從找規律開始。
 
@@ -32,14 +32,14 @@ id: 71ce1eae-4666-47c0-81c7-3f49e06ac5c9
 
 把這些數字向右對齊後會發現，`2~3` 的結果是 `0~1` 的結果 + 1，`4~7` 的結果是 `0~3` 的結果 + 1，所以以此類堆 `8~15` 的結果也會是 `0~7` 的結果 + 1，如果用這個方法算的話我們就不用每遇到一個數字就計算一次。
 
-### **解題思路 - Bit Manipulation**
+## 解題思路 - Bit Manipulation
 
 利用上面的分析，我們可以寫出第一種實作方法，`offset` 在遇到 2 的冪次方時就自動乘 2，而最終結果 res[i] 就用 res[i - offset] + 1 更新即可。
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 vector<int> countBits(int n) {
@@ -53,7 +53,7 @@ vector<int> countBits(int n) {
 }
 ```
 
-### **解題思路二 - Bit Manipulation**
+## 解題思路二 - Bit Manipulation
 
 第二個思路是這樣，當一個數字 `n` 除以 2，相當於他的 binary 右移了一位，舉個例子：
 
@@ -71,7 +71,7 @@ res[i] = res[i/2] + i%2;
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 vector<int> countBits(int n) {

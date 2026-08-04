@@ -130,15 +130,15 @@ TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
 
 這是 inorder traversal 的 array
 
-```
+<div class="callout">
 [Left Subtree] [Root] [Right Subtree]
-```
+</div>
 
 這是 postorder traversal 的 array
 
-```
+<div class="callout">
 [Left Subtree] [Right Subtree] [Root]
-```
+</div>
 
 postorder traversal 的最後一個一定是 root，利用這個 root 我們可以知道他在 inorder traversal 的 index，在這個 index 左邊的 subarray size 就是 left subtree size，所以就可以知道 postorder traversal left subtree 是從哪裡到哪裡，剩下的部分就是 right subtree。所以有 left subtree, right subtree 就可以繼續 recursive 下去，最後建成完整的 tree。
 
@@ -241,15 +241,15 @@ TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
 
 這是 preorder traversal 的 array
 
-```
+<div class="callout">
 [Root] [Left Subtree] [Right Subtree]
-```
+</div>
 
 這是 postorder traversal 的 array
 
-```
+<div class="callout">
 [Left Subtree] [Right Subtree] [Root]
-```
+</div>
 
 所以我們目標就是要從這兩種 array 中還原出原本的 tree。preorder traversal 的第一個跟 postorder traversal 的最後一個都會是 root，但是光只有這些資訊是沒有辦法組合出唯一的 tree 的，因為我們不知道 left subtree 跟 right subtree 的分界在哪裡，所以這邊先講至少找到一種的情況。
 

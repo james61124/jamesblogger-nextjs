@@ -15,18 +15,18 @@ id: 44c2b481-7f16-45f2-a5ed-48cf45d5ab73
 
 題目連結 🔗：[https://leetcode.com/problems/valid-anagram/](https://leetcode.com/problems/valid-anagram/)
 
-### **問題分析**
+## 問題分析
 
 這題我們必須記錄其中一個 string 的 char，然後去另一個 string 判斷是否都在裡面，所以很明顯要用 Hash Table 來紀錄。
 
-### **解題過程 - Hash Table**
+## 解題過程 - Hash Table
 
 這題第一感可以直接用 unordered_map 解，也確實可以用 unordered_map 解，但是如果是這種紀錄字母的題目，Hash Table 最多也只會有 26 個 key 而已，所以其實直接用 size 26 的 array 就可以了，這樣速度也會更快。
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 bool isAnagram(string s, string t) {

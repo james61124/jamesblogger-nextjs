@@ -15,14 +15,14 @@ id: f762ebd4-2080-4787-a8f6-ceec17ac0ec9
 
 題目連結 🔗：[https://leetcode.com/problems/remove-element/](https://leetcode.com/problems/remove-element/)
 
-### **解題思路 - Two Pointers**
+## 解題思路 - Two Pointers
 
 這題還滿簡單的，因為他不用管剩下的空間要放什麼，所以只要設兩個 pointers，`right` 一直往前跑，跑到跟 `val` 不一樣就丟給 `left`，這題基本上就解完了
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int removeElement(vector<int>& nums, int val) {

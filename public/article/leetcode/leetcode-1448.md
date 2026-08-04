@@ -14,11 +14,11 @@ id: 06121719-5fd3-402e-89af-e7c63dc8cbbd
 
 題目連結 🔗：[https://leetcode.com/problems/count-good-nodes-in-binary-tree/](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)
 
-### **問題分析**
+## 問題分析
 
 簡單來說，對於每一個 node 而言，他要拿到從 root 走來這路上最大的 value 是什麼，所以 parent 只要將目前最大的 value 往下傳這題就解完了
 
-### **解題思路 - DFS**
+## 解題思路 - DFS
 
 對每個 node 來說，如果發現從上面傳下來的 `maxValue` 沒有比自己大，就表示自己是 good node，`result` 就可以加上自己
 
@@ -46,7 +46,7 @@ void dfs(TreeNode* root, int maxValue, int &result){
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 void dfs(TreeNode* root, int maxValue, int &result){

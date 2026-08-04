@@ -14,7 +14,7 @@ id: 5fd039cd-feec-423f-81b5-81d1213fb8c1
 
 題目連結 🔗：[https://leetcode.com/problems/coin-change-ii/](https://leetcode.com/problems/coin-change-ii/)
 
-### **問題分析**
+## 問題分析
 
 這題白話文就是問利用 coins[i] 的組合，有幾種方法可以組合出 `amount`，那其實就是變形的 [ Leetcode 494 ] Target Sum
 
@@ -24,7 +24,7 @@ id: 5fd039cd-feec-423f-81b5-81d1213fb8c1
 
 [[ Algorithm ] Dynamic Programming (四) - Knapsack Problem | 核心概念與 Leetcode 題型解析](https://www.jamesblogger.com/program/articles/knapsack-problem)
 
-### **解題思路 - Unbounded Knapsack Problem**
+## 解題思路 - Unbounded Knapsack Problem
 
 我們需要一個 dp[i][j] 代表「前 i 個 coins 組成 j 的方法數」，因為是 Unbounded Knapsack Problem，每一個 coins[i] 有「不選 / 選 n 個」這幾種 actions，如果不選，表示方法數是「前 i - 1 個 coins 組成 j 的方法數」，如果選 n 個，表示方法數是「前 i 個 coins 組成 j - coins[i] 的方法數」，兩者相加即可，所以 Transition Function 是這樣；
 
@@ -60,7 +60,7 @@ for(int i = 1; i < n; i++){
 **Time Complexity** - `O(n * m)`<br>
 **Space Complexity** - `O(n * m)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int change(int amount, vector<int>& coins) {
@@ -83,14 +83,14 @@ int change(int amount, vector<int>& coins) {
 }
 ```
 
-### **空間優化**
+## 空間優化
 
 Unbounded Knapsack Problem 一次只會關注兩格，所以其實不用開到 2D DP Table 這麼大，可以簡化為 1D
 
 **Time Complexity** - `O(n * m)`<br>
 **Space Complexity** - `O(m)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int change(int amount, vector<int>& coins) {

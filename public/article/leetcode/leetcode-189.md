@@ -15,11 +15,11 @@ id: ee91a105-dd08-4d8e-b7b0-38a332d45db8
 
 題目連結 🔗：[https://leetcode.com/problems/rotate-array/](https://leetcode.com/problems/rotate-array/)
 
-### **題目分析**
+## 題目分析
 
 這題可以直接使用 Reverse Array 來完成，不用另外開新的空間。
 
-### **解題思路**
+## 解題思路
 
 我們先簡單用圖示來看一下 rotate k 次後的 array 會長什麼樣子
 
@@ -52,7 +52,7 @@ k %= nums.size();
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 void rotate(vector<int>& nums, int k) {

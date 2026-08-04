@@ -15,7 +15,7 @@ id: af8c40c0-8e50-41af-b232-a88934b9383a
 
 題目連結 🔗：[https://leetcode.com/problems/minimum-path-sum/](https://leetcode.com/problems/minimum-path-sum/)
 
-### **解題思路 - DP (Matrix-based Dynamic Programming)**
+## 解題思路 - DP (Matrix-based Dynamic Programming)
 
 這題要問從左上走到左下的 minimum path sum，然後只能往右或是往下走，換句話說就是要到達一個 grid 只可能從上面來或是從左邊來，所以如果知道上面的 minimum path sum，知道左邊的 minimum path sum，兩個之中比較小的再加上自己的 grid[i][j] 就是這格的 minimum path sum 了。
 
@@ -28,7 +28,7 @@ dp[i][j] = min(dp[i-1][j], dp[i][j-1]) + grid[i][j];
 **Time Complexity** - `O( m × n )`，因為 iterate 過 matrix<br>
 **Space Complexity** - `O( m × n )`，因為開了一個 m x n 的 dp
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int minPathSum(vector<vector<int>>& grid) { 
@@ -47,7 +47,7 @@ int minPathSum(vector<vector<int>>& grid) {
 }
 ```
 
-### **空間優化**
+## 空間優化
 
 但是我們會發現我們從頭到尾只會用到 dp 的兩個 rows，所以可以把 2D `dp` 改寫成 1D `dp`。每一個 grid 都會跟他的左邊那格跟上面那格拿資訊，所以在更新這個 1D dp 的時候，假設現在換到 grid[i][j]，左邊那格一樣就跟 dp[j-1] 拿，上面那格的資訊就是現在這個 dp[j]，因為上一個 row 的資訊會保留在這，所以更新上去就可以了，轉換式在這：
 
@@ -58,7 +58,7 @@ dp[j] = min(dp[j-1], dp[j]) + grid[i][j];
 **Time Complexity** - `O( m × n )`，因為 iterate 過 matrix<br>
 **Space Complexity** - `O( n )`，因為開了一個 n 的 dp
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int minPathSum(vector<vector<int>>& grid) {

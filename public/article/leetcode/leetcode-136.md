@@ -14,21 +14,21 @@ id: 1d89eb36-d40c-451a-9ca3-774d6dc184b1
 
 題目連結 🔗：[https://leetcode.com/problems/single-number/](https://leetcode.com/problems/single-number/)
 
-### **問題分析**
+## 問題分析
 
 這題是 Bit Manipulation，基本上只要知道一個技巧就解完了
 
 > a ^ a = 0<br>
 > a ^ 0 = a
 
-### **解題思路 - Bit Manipulation**
+## 解題思路 - Bit Manipulation
 
 所以就是全部的數字都做 XOR，最後的答案就是 single number。
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int singleNumber(vector<int>& nums) {

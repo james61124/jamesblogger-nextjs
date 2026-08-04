@@ -14,13 +14,13 @@ id: 2b663ae9-f8ff-46f9-96c2-ad57730684ec
 
 題目連結 🔗：[https://leetcode.com/problems/insert-delete-getrandom-o1/](https://leetcode.com/problems/insert-delete-getrandom-o1/)
 
-### **問題分析**
+## 問題分析
 
 這題最大的問題是所有 function 都要在 O(1) 之內完成，先用最直覺的思路想，insert / remove 如果想要在 O(1) 的時間完成可以直接開 unordered_set，但是取 random 就沒有辦法，因為 C++ 取 random 的方式是 `rand()`，也就是說我們可以利用 `rand() % size` 來拿到一個 index 去取裡面的值。
 
 所以問題就來了，要怎麼確保三個 function 都可以 O(1) 呢？
 
-### **解題思路**
+## 解題思路
 
 因為取 random 的方式比較侷限，如果利用 `rand()` 可以拿到一個隨機的 index，代表所有數字可能都必須要存在 vector 中，如果想要快速 insert，我們必須在 O(1) 時間內判斷 `val` 是不是已經在 vector 裡了，那我們可以額外開一個 Hash Table 儲存 {value, index} 的對應關係，這樣 insert 就可以確保在 O(1) 完成。
 
@@ -29,7 +29,7 @@ id: 2b663ae9-f8ff-46f9-96c2-ad57730684ec
 **Time Complexity** - `O(1)`<br>
 **Space Complexity** - `O(n)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 class RandomizedSet {

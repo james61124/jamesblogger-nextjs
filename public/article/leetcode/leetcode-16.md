@@ -15,14 +15,14 @@ id: 83d897bc-5f26-4b71-827f-d6432e26f9e0
 
 題目連結 🔗：[https://leetcode.com/problems/3sum-closest/](https://leetcode.com/problems/3sum-closest/)
 
-### **問題分析**
+## 問題分析
 
 這題解法基本上跟 3Sum 一模一樣，差別只是每一次 two pointers 移動的時候都要檢查一次現在的總和是不是更接近 target
 
 **Time Complexity** - `O(n^2)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int threeSumClosest(vector<int>& nums, int target) {

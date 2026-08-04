@@ -14,11 +14,11 @@ id: cb05329d-808e-424c-ae43-fc4972065258
 
 題目連結 🔗：[https://leetcode.com/problems/balanced-binary-tree/](https://leetcode.com/problems/balanced-binary-tree/)
 
-### **問題分析**
+## 問題分析
 
 這題應該滿單純的，基本上 dfs 就可以計算每一個 node 的 height 了，判斷一下兩邊的高度差即可。
 
-### **解題思路 - DFS**
+## 解題思路 - DFS
 
 所以首先先寫一個可以計算每一個 node 的高度的 dfs。
 
@@ -55,7 +55,7 @@ int dfs(TreeNode* root){
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int dfs(TreeNode* root){

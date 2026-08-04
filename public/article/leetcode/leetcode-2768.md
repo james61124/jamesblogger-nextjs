@@ -14,7 +14,7 @@ id: af8cffa8-9ce1-4f60-8ea7-9ea77f97801c
 
 題目連結 🔗：[https://leetcode.com/problems/number-of-black-blocks/](https://leetcode.com/problems/number-of-black-blocks/)
 
-### **問題分析**
+## 問題分析
 
 如果是暴力解，對於每一個「2 * 2」的 block 都要計算 block 裡的 grid 中有多少 black grid，這樣會重複計算到很多 grid，我們應該要想辦法讓這些重複的部分計算一次就好。
 
@@ -49,7 +49,7 @@ return result;
 **Time Complexity** - `O(n * m)`<br>
 **Space Complexity** - `O(n * m)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int directions[4][2] = {{0, 0}, {-1, 0}, {0, -1}, {-1, -1}};

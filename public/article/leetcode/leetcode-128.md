@@ -15,11 +15,11 @@ id: c4c2a774-9b78-45da-932b-55f26ef3303a
 
 題目連結 🔗：[https://leetcode.com/problems/longest-consecutive-sequence/](https://leetcode.com/problems/longest-consecutive-sequence/)
 
-### **問題分析**
+## 問題分析
 
 題目要求要控制在 O(n) 以內，所以我們不能將 array sort 過，我們可以先從頭想，當我看到 nums[i]，我如果要看 consecutive sequence 的話，我就會想要知道 nums[i]+1 是不是在裡面，那 nums[i]+2 是不是也在裡面，這種需要 search 極快的問題就可以用 Hash Table 解。
 
-### **解題思路 - Hash Table**
+## 解題思路 - Hash Table
 
 延續剛剛的思路，我們可以先將 nums 轉成一張 Hash Table。
 
@@ -58,7 +58,7 @@ for(int num : uset){
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int longestConsecutive(vector<int>& nums) {

@@ -15,7 +15,7 @@ id: dd51607b-f889-4df6-a602-7437496ed158
 
 題目連結 🔗：[https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/](https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/)
 
-### **問題分析**
+## 問題分析
 
 這題如果照題目的邏輯直覺去想怎麼 simulate 這個過程的話，就會發現很麻煩，舉個例子來說，nums = [1, 2, 1, 2, 1, 2]，我們可以先找整個 array 的最小值 1 把他們全部變成 0，這樣 nums = [0, 2, 0, 2, 0, 2]，然後我們就會發現所有 2 都被切開了，他們沒有辦法在一次 operation 中全部歸零，因為 0 比 2 還要小，如果我們要照這個邏輯一層一層 simulate 時間複雜度太高了，要想別的方法。
 
@@ -49,7 +49,7 @@ op = 4
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int minOperations(vector<int>& nums) {

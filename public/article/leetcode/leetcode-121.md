@@ -15,14 +15,14 @@ id: 88b7df35-2a84-435b-9f56-ac42641f6ee1
 
 題目連結 🔗：[https://leetcode.com/problems/maximum-depth-of-binary-tree/](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 
-### **問題分析**
+## 問題分析
 
 對於每一個 prices[i] 來說，他的最大的 profit 就是 prices[i] 減掉前面看過的所有 price 中最小的，所以我們就一直維護目前最小的 price，然後持續更新 maxProfit 就可以了。
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int maxProfit(vector<int>& prices) {

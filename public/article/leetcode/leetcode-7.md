@@ -14,7 +14,7 @@ id: 30421edb-021b-4702-bb2e-67e7a0b95a67
 
 題目連結 🔗：[https://leetcode.com/problems/reverse-integer/](https://leetcode.com/problems/reverse-integer/)
 
-### **問題分析**
+## 問題分析
 
 反轉數字只要照下面的步驟一個數字一個數字 parse 出來就好，大概像是這樣
 
@@ -72,7 +72,7 @@ int reverse(int x) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int reverse(int x) {

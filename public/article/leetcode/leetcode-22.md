@@ -15,11 +15,11 @@ id: 8ff973a6-2a98-4df3-a577-21b79a476502
 
 題目連結 🔗：[https://leetcode.com/problems/generate-parentheses/](https://leetcode.com/problems/generate-parentheses/)
 
-### **問題分析**
+## 問題分析
 
 這題看到「列出所有解」，第一個想法就是朝 backtracking 想了。但這裡比較不像一般的 backtracking 一樣這麼好想 decision tree，我們需要一層一層剖析。
 
-### **解題思路 - Backtracking**
+## 解題思路 - Backtracking
 
 對於每一個位置來說，我們都要可以放 `(` 還有 `)`，所以我們要思考的是甚麼情況下不能放 `(`，甚麼情況下不能放 `)`。
 
@@ -106,7 +106,7 @@ vector<string> generateParenthesis(int n) {
 **Time Complexity** - `O(Catalan(n) * 2n)` = `O(4^n / sqrt(n))`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 void backTracking(vector<string>& result, string s, int n, int open, int close){

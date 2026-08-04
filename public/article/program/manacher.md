@@ -27,7 +27,7 @@ for (int i = 0; i < s.size(); i++) {
 
 而這種解法最差的情況就是 string 中所有 char 都一樣，這樣對於每個中心來說，都得擴展到底才會停止，也因此時間複雜度是 `O(n^2)`，因此這邊就要介紹 Manacher's Algorithm，可以把整個過程的時間複雜度降為 O(n)。
 
-### **Manacher's Algorithm**
+## Manacher's Algorithm
 
 Manacher 底層其實還是 EAC，但是可以利用回文的特性省略掉一些重複的部分，進而讓時間複雜度降低。
 

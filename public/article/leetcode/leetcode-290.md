@@ -15,7 +15,7 @@ id: 686602e4-e7b3-4b02-9cb3-2b6195d8e655
 
 題目連結🔗：[https://leetcode.com/problems/word-pattern/](https://leetcode.com/problems/word-pattern/)
 
-### **問題分析**
+## 問題分析
 
 這題我覺得跟 [ Leetcode 205 ] Isomorphic Strings 有點像，同樣都要判斷兩邊的對應是不是一對一，所以核心觀念就是
 
@@ -23,7 +23,7 @@ id: 686602e4-e7b3-4b02-9cb3-2b6195d8e655
 
 我們可以用兩個 Hash Table，一邊紀錄字母出現的最後一個 index，一邊紀錄單字出現的最後一個 index，如果檢查到出現過的兩邊最後一個 index 不一樣，就表示要直接 return false
 
-### **解題思路**
+## 解題思路
 
 簡單舉幾個例子，如果相同的字母對應到不同的字，例如
 
@@ -96,7 +96,7 @@ return index == pattern.size();
 **Time Complexity** - `O(n)`，s 的長度<br>
 **Space Complexity** - `O(k)`，s 中不同的單字數 + pattern 中不同的字元數
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 bool wordPattern(string pattern, string s) {

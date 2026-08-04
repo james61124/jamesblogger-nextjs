@@ -14,7 +14,7 @@ id: 2855b541-fc97-4822-92dc-b1dca6f6bd39
 
 題目連結 🔗：[https://leetcode.com/problems/increasing-triplet-subsequence/](https://leetcode.com/problems/increasing-triplet-subsequence/)
 
-### **問題分析**
+## 問題分析
 
 這題不是 coin change，因為順序不一樣也會被當作不同方法，所以不能把他當 knapsack problem 來想
 
@@ -28,14 +28,14 @@ dp[3] = dp[2] + dp[1] + dp[0]，一樣因為我們可以放 1 or 2 or 3，所以
 
 最後 dp[4] = dp[3] + dp[2] + dp[1]
 
-### **解題思路 - DP**
+## 解題思路 - DP
 
 知道方法之後實作就很簡單了
 
 **Time Complexity** - `O(n * target)`<br>
 **Space Complexity** - `O(target)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int combinationSum4(vector<int>& nums, int target) {

@@ -15,7 +15,7 @@ id: 8b5ee407-3f82-4d0e-b255-673fe5b6bf7c
 
 題目連結 🔗：[https://leetcode.com/problems/path-sum/](https://leetcode.com/problems/path-sum/)
 
-### **問題分析**
+## 問題分析
 
 這應該就是普通的 dfs，我們可以將 `targetSum` - 現在 node 的 val 傳遞到下面一層，最後在 leaf 判斷是不是變成 0 就可以了。
 
@@ -34,7 +34,7 @@ return hasPathSum(root->left, targetSum - root->val) || hasPathSum(root->right, 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(h)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 bool hasPathSum(TreeNode* root, int targetSum) {

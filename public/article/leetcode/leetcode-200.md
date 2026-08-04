@@ -15,15 +15,15 @@ id: 4138f152-1d7f-4bac-a954-f0cd07117f5e
 
 題目連結🔗：[https://leetcode.com/problems/number-of-islands/](https://leetcode.com/problems/number-of-islands/)
 
-### **解題思路 - DFS**
+## 解題思路 - DFS
 
 這題滿直接的，就是 iterate 整個 matrix 然後對每一個 '1' 都做 DFS，因為 '0' 不會被 visit 的關係，所以只要在同一次 DFS 中被 visit 到就代表是同一個 island，所以最後計算的時候只要看我們做了幾次 DFS 就是代表有幾個 island。
 
-#### **時間複雜度是否會太高?**
+### 時間複雜度是否會太高?
 
 理論上 iterate 一次，每一個 grid 都做一次 DFS，這樣時間複雜度是 O(n^2)，但在這題如果 DFS 過後被看過的 grid 會把它標記成 visited，表示這些是已經被看過的 island，就不需要再做 DFS 看一次，所以這題的時間複雜度其實還是 O(n)，因為每一個 grid 只會被看到一次。
 
-#### **如何判斷 Neighbor**
+### 如何判斷 Neighbor
 
 每一個 grid 都會有至多上下左右的四個 neighbors，所以邊界設好避免 segmentation fault 就可以了。
 
@@ -47,7 +47,7 @@ for(vector<int>& d : direction){
 **Time Complexity** - `O(mxn)`，iterate 時每個 grid 都碰到一次。<br>
 **Space Complexity** - `O(mxn)`，開了一個 2D Array 儲存 visit。
 
-### **Implementation**
+## Implementation
 
 ```cpp
 void DFS(vector<vector<char>>& grid, vector<vector<bool>>& visit, int x, int y){
@@ -74,19 +74,19 @@ int numIslands(vector<vector<char>>& grid) {
 }
 ```
 
-### **思路二 - Union Find**
+## 思路二 - Union Find
 
 這題其實也可以用 Union Find 解，只是實做起來真的有點麻煩，但兩種方法的效能分析其實是差不多的，所以就當學習用了。
 
-#### **Union Find 思路**
+### Union Find 思路
 
 一樣直接 iterate 整個 2D array，當遇到 '1' 就做 unite，這樣看最後有幾個獨立的 Disjoint Set 就是答案了。
 
-#### **如何計算 Disjoint Set 數量?**
+### 如何計算 Disjoint Set 數量?
 
 這裡關鍵在於如何計算總共有多少個獨立的 Disjoint Set，所以我們可以維護一個 integer **count**，用來計算 island 數量 + water 數量，先初始化為 grid 的總數，當一個 grid 被 unite 後 count 就減一就行了。至於 water 的總數在 iterate 2D array 的時候就可以計算，最後答案把 count - water 數量就是 island 數量。
 
-#### **2D Array 在 Union Find 的 parent 中怎麼存放?**
+### 2D Array 在 Union Find 的 parent 中怎麼存放?
 
 `vector<int>parent` 存的是每一個對應的 grid 的 parent，問題是這個 vector 是 1D 的，我們的 grid 是 2D 的，因此可以利用 Linear Mapping 把 2D Array 轉成 1D 的 index。
 
@@ -97,7 +97,7 @@ index = i * n + j
 **Time Complexity** - `O( m × n × α(n) )`，Unite 的操作是 α(n)，但是成長極為緩慢可以被忽略，基本上就是 `O( m × n )`<br>
 **Space Complexity** - `O( m × n )`，需要儲存 Union-Find 的 parent 和 rank array。
 
-### **Implementation**
+## Implementation
 
 ```cpp
 class UnionFind {

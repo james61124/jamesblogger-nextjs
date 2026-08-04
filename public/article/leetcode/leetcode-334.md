@@ -14,7 +14,7 @@ id: ee953dc3-5a37-4113-908e-8b9a920677da
 
 題目連結 🔗：[https://leetcode.com/problems/increasing-triplet-subsequence/](https://leetcode.com/problems/increasing-triplet-subsequence/)
 
-### **問題分析**
+## 問題分析
 
 這題我們只要維護 (i, j, k) 裡面的 (i, j) 就可以解決了，我們紀錄「目前」的 (i, j)，所以只要找到比 j 還要大的，就可以直接 return true，但我們要怎麼紀錄「目前」的 (i, j) 呢？
 
@@ -31,7 +31,7 @@ id: ee953dc3-5a37-4113-908e-8b9a920677da
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 bool increasingTriplet(vector<int>& nums) {

@@ -14,7 +14,7 @@ id: f121ee3a-c2b3-44fb-a90d-fe02b5ccf382
 
 題目連結 🔗：[https://leetcode.com/problems/cheapest-flights-within-k-stops/](https://leetcode.com/problems/cheapest-flights-within-k-stops/)
 
-### **問題分析**
+## 問題分析
 
 分析這題的本質，就是要找
 
@@ -24,7 +24,7 @@ id: f121ee3a-c2b3-44fb-a90d-fe02b5ccf382
 
 [[ Algorithm ] Shortest Path - Dijkstra | 核心概念與 Leetcode 題型解析](https://www.jamesblogger.com/program/articles/dijkstra)
 
-### **解題思路 - Dijkstra**
+## 解題思路 - Dijkstra
 
 Dijkstra 其實只能解決 shortest path，對於限制路徑長是沒有辦法的，我們需要額外處理這部分。
 
@@ -155,7 +155,7 @@ int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int
 **Time Complexity** - `O(E log E)`，因為有 `E` 個 edge，每一次 push / pop 都是 `log E`<br>
 **Space Complexity** - `O(E + n)`，priority queue size 最多是 E，還有一個 size n 的 `bestStop`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {
@@ -187,7 +187,7 @@ int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int
 }
 ```
 
-### **時間空間優化 - Bellman-Ford Algorithm**
+## 時間空間優化 - Bellman-Ford Algorithm
 
 為什麼 Bellman-Ford 會適合這題？因為我們發現 Dijkstra 需要重複 relax 同一個 node，表示每一個 `stops` 其實都是不同狀態，那與其我們需要手動維護 priority queue 中 `stops` 的狀態，不如利用 Bellman-Ford 一次 relax 所有 edges，這樣就把所有 stops 都考慮進去了
 
@@ -266,7 +266,7 @@ int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int
 **Time Complexity** - `O(KE)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {

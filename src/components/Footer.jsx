@@ -133,9 +133,7 @@ import {
 const navigation = [
   { label: "Home", href: "/" },
   { label: "Life", href: "/life" },
-  { label: "Travel", href: "/travel" },
-  { label: "Projects", href: "/other" },
-  { label: "Leetcode", href: "/leetcode" },
+  { label: "Travel", href: "/travel" }
 ];
 
 const socialLinks = [

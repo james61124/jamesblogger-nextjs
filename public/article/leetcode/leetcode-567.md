@@ -14,13 +14,13 @@ id: 4e278199-7c5a-4946-9e3d-5d069991121c
 
 題目連結 🔗：[https://leetcode.com/problems/permutation-in-string/](https://leetcode.com/problems/permutation-in-string/)
 
-### **問題分析**
+## 問題分析
 
 這題是可以找到 O(n) 的解法的，看到要比較 substring，可以往 sliding window 想想看。
 
 白話來說，如果 `s2` 中能找到一個 sliding window，裡面的所有字母數量都跟 `s1` 一樣，那就表示可以回傳 `true`，因此我們可以直接把 sliding window 拉到跟 `s1` 一樣大，比較內容物即可，我們可以利用 Hash Table 紀錄 sliding window 跟 `s1` 每一種字母的數量，這樣可以快速比較，而在移動 sliding window 時也可以快速更新。
 
-### **解題思路 - Hash Table**
+## 解題思路 - Hash Table
 
 思路很簡單，移動 `right` 就加進 Hash Table 內，移動 `left` 就把字母從 Hash Table 移出，所以關鍵在於如何快速比較兩個 Hash Table 有沒有一樣。
 
@@ -88,7 +88,7 @@ while(right < m){
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 bool checkInclusion(string s1, string s2) {

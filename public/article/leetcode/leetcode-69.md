@@ -15,13 +15,13 @@ id: 0592c694-6a06-48fd-81aa-8f585cf45981
 
 題目連結 🔗：[https://leetcode.com/problems/sqrtx/](https://leetcode.com/problems/sqrtx/)
 
-### **問題分析**
+## 問題分析
 
 如果暴力解就是從 1 ~ n 把所有數字都看過，這樣是 `O(n)`，那肯定有更好的解法，這題可以想成是從 1 ~ n 的 list 中找到平方後小於 n 的最大值，相當於在一個 sorted array 中找到一個 target，那一切線索都指向 Binary Search
 
 [[ Algorithm ] Binary Search | 核心概念與 Leetcode 題型解析](https://www.jamesblogger.com/program/articles/binary-search)
 
-### **解題思路 - Binary Search**
+## 解題思路 - Binary Search
 
 看完文章後我們可以得到一個觀念
 
@@ -56,7 +56,7 @@ is_valid = 0 0 0 1 1 1 1 1 1 1
 **Time Complexity** - `O(nlogn)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int mySqrt(int x) {

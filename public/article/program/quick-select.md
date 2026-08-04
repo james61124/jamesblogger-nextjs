@@ -43,7 +43,7 @@ pivot 會選哪個數字是由 partition 這個 function 決定的，以這個 c
 
 再來就要講決定 Quick Sort 效率的關鍵 - Partition，Partition 的方法決定了 Quick Sort 的速度，這邊介紹兩種方法：Lomuto Partition 與 Hoare Partition
 
-### **Lomuto Partition**
+## Lomuto Partition
 
 首先，pivot 不管選哪一個數字，先把他放到最右邊，而我們需要兩個指標 `storeIndex` 跟 `i`，`i` 會 iterate 過整個 array，當發現 nums[i] 比 pivot 大，就要無腦的把他往左邊丟，`storeIndex` 就好像是一個分界，負責記錄「比 pivot 大」還有「比 pivot 小」的分界，所以在把 nums[i] 丟到左邊的過程就要持續更新 `storeIndex`，最後再把 pivot 放到 `storeIndex`，我們就完成「pivot 的左邊比 pivot 大，右邊比 pivot 小」的目標了。
 
@@ -66,7 +66,7 @@ int partition(vector<int>& nums, int left, int right) {
 
 雖然這種方法很好理解，但這種方法有一個小問題，就是他 swap 的次數 = 「比 pivot 大的元素個數」，意思就是比 pivot 大的數有幾個就要 swap 幾次，但是問題是有一些比 pivot 大的數字，他可能原本就在左半邊了，所以理論上他不用 swap 也可以完成「pivot 的左邊比 pivot 大，右邊比 pivot 小」的目標，為了減少 swap 的次數，就又有另一種 partition 的方法。
 
-### **Hoare Partition**
+## Hoare Partition
 
 首先不管 pivot 選什麼數字，我們都先把他放到最左邊，再來我們把整個 array 分成三個區塊「左半邊」、「pivot」、「右半邊」，我們只要檢查每一個數字是不是都在正確的區塊就可以了，如果不是的話就把他換到另一個區塊，所以我們需要兩個 pointer `l` 和 `r`，分別放在左右兩邊，不過因為最左邊已經有 pivot 了，所以實際上是這樣：
 
@@ -158,7 +158,7 @@ int quickSelect(vector<int>& nums, int left, int right, int k) {
 }
 ```
 
-### **C++ Function**
+## C++ Function
 
 不過 Quick Select 其實不用自己寫，C++ 的 Algorithm 有 function 可以直接用，用法如下：
 
@@ -172,7 +172,7 @@ nth_element(nums.begin(), nums.begin() + k, nums.end(), compare);
 
 如果 compare function return `true`，代表 a 會放在 b 前面，所以這個 case 來說，第 `k + 1` 小的會放在 nums[k] 的位置，而因為 partition 的關係，左側的數字都會比 nums[k] 小，而右側都會比 nums[k] 大。
 
-### **應用場景**
+## 應用場景
 
 > 1. 找「第 k 大 / 第 k 小」
 > 2. 找「前 k 大 / 前 k 小」

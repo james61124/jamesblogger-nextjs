@@ -17,11 +17,11 @@ id: b46b01aa-bc1f-4654-a52f-978c98691352
 
 題目連結 🔗：[https://leetcode.com/problems/find-median-from-data-stream/](https://leetcode.com/problems/find-median-from-data-stream/)
 
-### **問題分析**
+## 問題分析
 
 我原本想得很簡單，只要找到一個可以排序的 data structure 例如 map 或是 priority queue，這樣 addNum 的 time complexity 就是 O(logn)，但在尋找中位數這件事情上就會變得有點麻煩，因為這些 data structure 不像 array 這樣可以直接 access 到中間的 index，所以這題非常 fancy 的會用到一個技巧 - Two Heaps。
 
-### **解題思路 - Two Heaps**
+## 解題思路 - Two Heaps
 
 Two Heaps 簡單來說就是維護兩個 Priority Queue - Max Heap 和 Min Heap，利用 Max Heap 儲存數據的左半部，Min Heap 儲存數據的右半部，同時維持 Max Heap 裡的最大值 >= Min Heap 裡的最小值，這樣我們就可以輕鬆 access 到整個數據中間的位置，舉例來說：
 
@@ -59,7 +59,7 @@ Median  = 7
 **Time Complexity - findMedian** - `O(1)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 class MedianFinder {

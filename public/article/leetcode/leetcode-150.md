@@ -23,11 +23,11 @@ result = 9
 
 題目連結 🔗：[https://leetcode.com/problems/evaluate-reverse-polish-notation/](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 
-### **問題分析**
+## 問題分析
 
 看到這種四則運算的題目，基本上可以先往 stack 去想，因為越靠近 operator 的會越先做，符合 First In Last Out 的特性。
 
-### **解題思路 - Stack**
+## 解題思路 - Stack
 
 思路不會太複雜，如果遇到數字，就直接推進去 stack，如果遇到 operator，表示需要被計算了，就把 stack 中最外面的兩個數字拿出來計算，算完再塞回去 stack。
 
@@ -145,7 +145,7 @@ int stringToInt(const string& s) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-### **Implementation**
+## Implementation
 ```cpp
 int calculate(int num1, int num2, char op){
     if(op == '+') return num1 + num2;

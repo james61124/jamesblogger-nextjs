@@ -14,13 +14,13 @@ id: e3a7cfbd-9901-486e-b9b0-bd2f707fe5b1
 
 題目連結 🔗：[https://leetcode.com/problems/sell-diminishing-valued-colored-balls/](https://leetcode.com/problems/sell-diminishing-valued-colored-balls/)
 
-### **問題分析**
+## 問題分析
 
 這題如果暴力解，可以用一個 max heap 找到「目前 value 最大的球」，每一次都購買 value 最大的球一個一個計算就好，但是這樣如果 value 是一個超級大的數字，我們需要計算 value, value - 1, value - 2, ... 的總和，但這其實是「等差級數」，也就是一個公式就可以解決的事
 
 因此這題實際上應該是 Binary Search
 
-### **解題思路 - Binary Search**
+## 解題思路 - Binary Search
 
 我們要找的是一個最大的 k，其中這個 k 是「所有 value >= k 的球的數量」必須要 <= `orders`，舉例來說 inventory = [10, 7, 5, 5]，如果 k = 7，「value >= k 的球的數量」就是 5，而這個數量要小於等於 `orders`，如果 k 調大，球的數量就會更少，k 調小，球的數量就會更多
 
@@ -78,7 +78,7 @@ profit = (profit + ((long long)orders * (left - 1))) % mod;
 **Time Complexity** - `O(nlogn)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int mod = 1000000007;

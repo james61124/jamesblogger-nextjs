@@ -47,16 +47,18 @@ const navLinks: NavLink[] = [
         path: { pathname: "/leetcode-roadmap" },
       },
       {
+        label: "Leetcode Notes",
+        description: "Leetcode solution shared.",
+        path: { pathname: "/leetcode" },
+      },
+      {
         label: "Others",
         description: "Experiments, builds, and technical notes.",
         path: { pathname: "/other" },
       },
     ],
   },
-  {
-    label: "Leetcode",
-    path: { pathname: "/leetcode" },
-  },
+  
 ];
 
 export default function Navbar() {

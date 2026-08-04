@@ -15,7 +15,7 @@ id: b8c2c2f8-e322-4391-8bcb-685bebef5505
 
 題目連結 🔗：[https://leetcode.com/problems/binary-tree-preorder-traversal/](https://leetcode.com/problems/binary-tree-preorder-traversal/)
 
-### **解題思路 - Preorder Traversal**
+## 解題思路 - Preorder Traversal
 
 Preorder Traversal 就是先看自己，再看左邊的 Subtree，再看右邊的 Subtree，往下看 Subtree 時也是一樣的模式，所以生成的 Array 就會長這樣
 
@@ -28,7 +28,7 @@ Preorder Traversal 就是先看自己，再看左邊的 Subtree，再看右邊�
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 void preorder(vector<int>& result, TreeNode* node){

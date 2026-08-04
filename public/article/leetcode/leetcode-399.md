@@ -21,7 +21,7 @@ b / c = 3
 
 題目連結🔗：[https://leetcode.com/problems/evaluate-division/](https://leetcode.com/problems/evaluate-division/)
 
-### **問題分析**
+## 問題分析
 
 先舉個例子
 
@@ -54,7 +54,7 @@ root(y) = r # r / y = 2
 
 [[ Algorithm ] Union Find | 核心概念與 Leetcode 題型解析](https://www.jamesblogger.com/program/articles/union-find)
 
-### **解題思路 - Union Find**
+## 解題思路 - Union Find
 
 我們要來重新設計 Union Find 的 class，多加一個變數來儲存每個 nodes 跟 root 的比例關係，我們把他叫 weight[i]，初始化時因為每個 node 的 parent 都是自己，所以 weight 也設置成 1
 
@@ -255,7 +255,7 @@ for(auto q : queries) {
 **Time Complexity** - `O(E * α(N) + q * α(N))`，建圖總共看了 E 條 equations，最後 query 了 q 次<br>
 **Space Complexity** - `O(N)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 class UnionFind {

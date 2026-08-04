@@ -14,14 +14,14 @@ id: 282a59a2-e7b7-489b-a36c-13ca6e7bb399
 
 題目連結 🔗：[https://leetcode.com/problems/max-consecutive-ones-iii/](https://leetcode.com/problems/max-consecutive-ones-iii/)
 
-### **問題分析**
+## 問題分析
 
 我們可以利用 two pointers 維護一個 sliding window，其中 window 內代表「有可能全部都是 1」的 subarray，也就是說如果 right pointers 再繼續走會發現沒辦法再繼續將 0 -> 1 了因為次數不夠，那 left pointer 就縮進來直到次數夠用，這樣就只需要 O(n) 就可以解完整題
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int longestOnes(vector<int>& nums, int k) {

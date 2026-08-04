@@ -14,13 +14,13 @@ id: 2eb0689a-546f-482f-8457-03716c8c45c8
 
 題目連結 🔗：[https://leetcode.com/problems/valid-parenthesis-string/](https://leetcode.com/problems/valid-parenthesis-string/)
 
-### **問題分析**
+## 問題分析
 
 這題如果用一般解括號的題目利用 Stack 解題，會發現時間複雜度會非常高，因為 `*` 有三種狀況，如果每一種狀況都 dfs 出去，時間複雜度會成指數成長。
 
 這題的核心想法在於，我們不需要知道具體哪一條路是正確的，我們只要確定有路可以成功就可以了。`*` 如果當成 `)` 可以減少目前左括號的數量，反過來說如果當成 `(` 就會增加左括號數量，而正確的路會落在這個區間，也就是說，我們可以設兩個變數 `low`, `high`，`low` 代表目前左括號最少的數量，`high` 代表目前左括號最多的數量，如果最後結束的時候左括號最少的數量剛好是 0，表示所有左括號都有辦法被不管 `*` 或是 `)` 消除，那就可以回傳 `true`。
 
-### **解題思路 - 區間上下界 Greedy**
+## 解題思路 - 區間上下界 Greedy
 
 講白話一點，如果 `*` 全部都當成 `)`，那就是 `low`，如果全部都當成 `(`，那就是 `high`。
 
@@ -58,7 +58,7 @@ if(low < 0) low = 0;
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 bool checkValidString(string s) {

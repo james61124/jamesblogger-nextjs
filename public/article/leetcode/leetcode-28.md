@@ -15,7 +15,7 @@ id: d057bc65-a4f2-4c49-ac38-58192d211532
 
 題目連結 🔗：[https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)
 
-### **解題思路**
+## 解題思路
 
 這題直接暴力解需要花 O(n * m) 的時間，所以必須用到鼎鼎大名的 KMP Algorithm，但這真的有點複雜，我寫在另一篇文章裡面，基本上看完就解完了，程式碼一模一樣。
 
@@ -24,7 +24,7 @@ id: d057bc65-a4f2-4c49-ac38-58192d211532
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(m)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int strStr(string haystack, string needle) {

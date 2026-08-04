@@ -14,7 +14,7 @@ id: a550fbf7-a92b-44db-9750-1b297e8b44e6
 
 題目連結 🔗：[https://leetcode.com/problems/powx-n/](https://leetcode.com/problems/powx-n/)
 
-### **問題分析**
+## 問題分析
 
 指數的世界中，可以很粗略的分成三類，指數 `n` 大於 0, 等於 0, 小於 0 三種情況，如果 n > 0，就是最簡單的自己乘自己 n 次，假設叫做 function `cal(x, n)`，那分類起來會長這樣：
 
@@ -32,7 +32,7 @@ double myPow(double x, int n) {
 }
 ```
 
-### **解題思路 - Base Conversion**
+## 解題思路 - Base Conversion
 
 最簡單的方式當然就是照字面上的意思，自己乘自己 n 次，也就是 O(n) 的時間複雜度。
 
@@ -119,7 +119,7 @@ function `cal` 寫出來這題也就結束了，直接看下面的 implementatio
 **Time Complexity** - `O(logn)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 double cal(double x, long long n) {

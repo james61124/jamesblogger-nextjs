@@ -14,13 +14,13 @@ id: a7f9db9e-e965-499c-a2dc-44d1f8c43a90
 
 題目連結 🔗：[https://leetcode.com/problems/hand-of-straights/](https://leetcode.com/problems/hand-of-straights/)
 
-### **問題分析**
+## 問題分析
 
 仔細想這題的結構，如果手上目前最小的牌是 `i`，groupSize 是 `3`，那表示我們一定要多找到 `i + 1`, `i + 2` 兩張牌，才有機會 return `true`，不然就可以直接 return `false` 了，因為沒有比 `i` 更小的牌可以跟他搭配。
 
 當然我們可以直接計算目前最小的牌有幾張，假設 `i` 有 4 張，我們就必須找到 `i + 1`, `i + 2` 各 4 張，抽掉這些牌後，一樣繼續重複這個步驟，找當前最小的牌，往上數有沒有相對應的數目，直到把所有牌都抽完。
 
-### **解題思路 - Greedy**
+## 解題思路 - Greedy
 
 這就是 Greedy 關鍵在於我們要怎麼實作。
 
@@ -69,7 +69,7 @@ if(hand.size() % groupSize != 0) return false;
 **Time Complexity** - `O(n log n + n x g)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 bool isNStraightHand(vector<int>& hand, int groupSize) {

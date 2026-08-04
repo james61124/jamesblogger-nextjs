@@ -14,11 +14,11 @@ id: b54bfe50-3f19-4275-afce-3a3463462a52
 
 題目連結 🔗：[https://leetcode.com/problems/palindromic-substrings/](https://leetcode.com/problems/palindromic-substrings/)
 
-### **問題分析**
+## 問題分析
 
 遇到 Palindromic 最直覺的就是 Expand Around Center (EAC)，只要處理好奇數中心跟偶數中心即可。
 
-### **解題思路 - Expand Around Center (EAC)**
+## 解題思路 - Expand Around Center (EAC)
 
 非常直覺，對於每一組奇數跟偶數中心，用 Two Pointers 從中心擴展看看是不是回文，找到一組就更新 `count`，基本上就結束了。
 
@@ -79,7 +79,7 @@ center = 3 -> left = 1, right = 2
 **Time Complexity** - `O(n^2)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int countSubstrings(string s) {
@@ -97,7 +97,7 @@ int countSubstrings(string s) {
 }
 ```
 
-### **時間優化 - Manacher**
+## 時間優化 - Manacher
 
 Manacher Algorithm 是一個 based on EAC 的演算法，他可以把時間複雜度從 O(n^2) 降到 O(n)，我另外寫了一篇文章專門講 Manacher's Algorithm，先看完再來解這題。
 
@@ -126,7 +126,7 @@ Manacher Algorithm 是一個 based on EAC 的演算法，他可以把時間複�
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 string preprocess(const string& s) {

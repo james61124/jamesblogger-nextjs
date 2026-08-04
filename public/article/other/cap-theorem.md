@@ -20,11 +20,11 @@ id: 4c73612a-71f2-48c5-910d-f3d96b51b5c1
 
 > 設計 Distributed System 時不可能同時滿足 Consistency ( 一致性 ), Availability ( 可用性 ), Partition Tolerance ( 分區容錯性 ) 三角，我們一次只能保證 Consistency 或是 Availability 兩件事的其中一件，也就是我們需要 trade-off
 
-### **CAP 三個核心概念定義**
+## CAP 三個核心概念定義
 
 首先先介紹一下 CAP 中三個最重要的名詞解釋：Consistency, Availability 以及 Partition Tolerance
 
-#### **Consistency 一致性**
+### Consistency 一致性
 
 如果一個 Distributed System 符合 Consistency，表示
 
@@ -34,7 +34,7 @@ id: 4c73612a-71f2-48c5-910d-f3d96b51b5c1
 
 不過需要注意的是 Consistency 不一定代表「資料正確」，只是代表所有機器上的資料版本都一樣而已。
 
-#### **Availability 可用性**
+### Availability 可用性
 
 如果一個 Distributed System 符合 Availability，表示
 
@@ -42,7 +42,7 @@ id: 4c73612a-71f2-48c5-910d-f3d96b51b5c1
 
 對 Availability 來說，「有回應」比「回應正確」還要來得重要，所以即使這個 node 的資料還沒有完全同步，只要收到 request 他還是會給 response，即使給的是舊資料，也就是說他的讀寫操作都會盡量不失敗或是等太久。
 
-#### **Partition Tolerance**
+### Partition Tolerance
 
 如果一個 Distributed System 符合 Partition Tolerance，表示
 
@@ -50,7 +50,7 @@ id: 4c73612a-71f2-48c5-910d-f3d96b51b5c1
 
 所以其實 Partition Tolerance 不是一個「選項」，而是一個 Distributed System 設計的前提，因為「部分 node 通訊斷掉」是所有 Distributed System 一定會遇到的情況，所以所有的 Distributed System 都一定要符合 Partition Tolerance。
 
-### **CAP Theorem 本身**
+## CAP Theorem 本身
 
 CAP Theorem 説三種特質裡面我們一定只能滿足其中兩種，所以就要做 trade off，但是因為 Partition Tolerance 是所有 Distributed System 都一定要滿足的，所以實際上我們只有兩個選擇 : CP 系統 vs. AP 系統
 
@@ -62,7 +62,7 @@ CP 系統顧名思義就是犧牲 Availability 選擇 Consistency，所以在一
 
 AP 跟 CP 只是一個觀念，但是大部分情況是沒有辦法非黑即白的分辨什麼資料庫是 AP 什麼是 CP，大型系統的設計上是可以透過協議跟架構模糊這個選擇的，可能某些資料需要比較好的 Consistency，某些資料比較需要 Availability，都是可以自由設計的。
 
-### **SQL != CP, noSQL != AP**
+## SQL != CP, noSQL != AP
 
 那有些人可能就會有疑問，這麼說來
 

@@ -15,11 +15,11 @@ id: a70f37f8-f345-45fb-9b50-91dbc7f547f8
 
 題目連結 🔗：[https://leetcode.com/problems/sum-root-to-leaf-numbers/](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
 
-### **問題分析**
+## 問題分析
 
 這題可以不用建立額外的空間存之前 visit 過的數字，我們只要將目前 path visit 過的數字往下傳就好，這邊會用到一個小技巧，如果我前面 visit 過 495，下一個要 visit 的是 6，我們就將上一個數字 * 10 再加上目前的數字就好，所以 495 * 10 + 6 = 4956，然後再把 4956 往下傳即可
 
-### **解題思路**
+## 解題思路
 
 我們用上面講到的方式往下傳當前總和
 
@@ -62,7 +62,7 @@ int dfs(TreeNode* root, int curr) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(h)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int dfs(TreeNode* root, int curr) {

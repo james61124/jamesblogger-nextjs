@@ -15,11 +15,11 @@ id: ae77015e-48a3-41ce-b02a-2f40c7c5abdf
 
 題目連結🔗：[https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/)
 
-### **解題思路 - DP + Hash Table**
+## 解題思路 - DP + Hash Table
 
 這題可以透過 Single-Sequence Linear DP 來解，但與一般的 1D DP 不太一樣，因為我們的狀態轉移需要依賴兩個數字作為 subsequence 的結尾，因此我們需要使用二維 DP（2D DP） 來儲存狀態。
 
-#### **狀態定義**
+### 狀態定義
 
 我們使用一個 dp[j][i] 來表示「以 arr[j] 和 arr[i] 結尾的最長 Fibonacci subsequence 的長度」。對於每一個數 arr[i]，我們檢查他前面的每一個數 arr[j]，如果存在一個 k 使得 `arr[i] + arr[j] = arr[k]`，就表示 `dp[i][k] = dp[i][j] + 1`，此時更新 `dp[i][k] = dp[i][j] + 1`。
 
@@ -30,7 +30,7 @@ id: ae77015e-48a3-41ce-b02a-2f40c7c5abdf
 **Time Complexity** - `O(n^2)`，用雙層 loop iterate 過整個 array<br>
 **Space Complexity** - `O(n^2)`，開了一個 2D DP Table
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int lenLongestFibSubseq(vector<int>& arr) {

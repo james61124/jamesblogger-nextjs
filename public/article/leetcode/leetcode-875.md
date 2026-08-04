@@ -14,7 +14,7 @@ Koko 有一堆香蕉，每一堆有 piles[i] 根香蕉。她會以固定的速�
 
 題目連結 🔗：[https://leetcode.com/problems/koko-eating-bananas/](https://leetcode.com/problems/koko-eating-bananas/)
 
-### **問題分析**
+## 問題分析
 
 分析一下這題，如果有一個 `k` 代表一次吃幾個 banana，我們可以計算出需要吃多少小時
 
@@ -43,7 +43,7 @@ for(int &pile : piles){
 
 [[ Algorithm ] Binary Search | 核心概念與 Leetcode 題型解析](https://www.jamesblogger.com/program/articles/binary-search)
 
-### **解題思路 - Binary Search**
+## 解題思路 - Binary Search
 
 如果看完上面的文章，就會知道只要找出 `is_valid` function，binary search 就算是寫完了，舉個例子
 
@@ -93,7 +93,7 @@ bool is_valid(vector<int>& piles, int h, int mid){
 **Time Complexity** - `O(n x log maxPile)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 bool is_valid(vector<int>& piles, int h, int mid){

@@ -15,7 +15,7 @@ id: be5e0070-3c60-4f1b-8169-ff59d4b96f7f
 
 題目連結 🔗：[https://leetcode.com/problems/binary-tree-postorder-traversal/](https://leetcode.com/problems/binary-tree-postorder-traversal/)
 
-### **解題思路 - Postorder Traversal**
+## 解題思路 - Postorder Traversal
 
 Postorder Traversal 就是先看左邊的 Subtree，再看右邊的 Subtree，再看自己，往下看 Subtree 時也是一樣的模式，所以生成的 Array 就會長這樣
 
@@ -28,7 +28,7 @@ Postorder Traversal 就是先看左邊的 Subtree，再看右邊的 Subtree，�
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 void postorder(vector<int>& result, TreeNode* node){

@@ -15,7 +15,7 @@ id: 96b532fc-10aa-4e6d-afa0-8588364597aa
 
 題目連結 🔗：[https://leetcode.com/problems/search-in-a-binary-search-tree/](https://leetcode.com/problems/search-in-a-binary-search-tree/)
 
-### **解題思路 - Binary Search Tree**
+## 解題思路 - Binary Search Tree
 
 Binary Search Tree 除了每個 node 最多只能有兩個 children 外，還符合下面這條規則
 
@@ -28,7 +28,7 @@ Binary Search Tree 除了每個 node 最多只能有兩個 children 外，還符
 **Time Complexity** - `O(logn)`，因為 Tree 的平均高度就是 logn<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 TreeNode* searchBST(TreeNode* root, int val) {

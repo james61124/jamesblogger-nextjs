@@ -14,13 +14,13 @@ id: 7fcfe017-54a9-4ea6-b10d-805096903b06
 
 題目連結 🔗：[https://leetcode.com/problems/unique-paths/](https://leetcode.com/problems/unique-paths/)
 
-### **問題分析**
+## 問題分析
 
 這種算總路徑和的題目如果用 DP 解就是建個 dp[i][j] 代表從左上角的格子走到 (i, j) 總共的路徑數量，所以對於每個 dp[i][j] 把左邊跟上面的格子加起來變成自己，邊邊因為只有一條可以到所以都設 1，這樣一路加到右下角就是答案了，轉換式為 `dp[i][j] = dp[i-1][j] + dp[i][j-1]`。
 
 但是 dp 解我覺得不是這題最大的價值，因為這個大家都想得到，所以我就不特別紀錄了，這題應該是排列組合中「同物排列」的問題，我們直接來看數學解要怎麼寫。
 
-### **解題思路 - Math**
+## 解題思路 - Math
 
 簡單來說以 `m = 5, n = 7` 為例，相當於路徑中我們有 m-1 個 `→` 跟 n-1 個 `↓` 要做排列組合，最後組合出多少種路徑就是我們的答案，所以 C(m-1+n-1, n-1) 就是我們的答案。
 
@@ -41,7 +41,7 @@ for (int i = 1; i <= small; i++) {
 **Time Complexity** - `O(1)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int uniquePaths(int m, int n) {

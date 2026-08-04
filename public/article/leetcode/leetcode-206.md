@@ -14,11 +14,11 @@ id: 60327a19-4c5c-4585-b7b7-dfdbdd1e368b
 
 題目連結 🔗：[https://leetcode.com/problems/reverse-linked-list/](https://leetcode.com/problems/reverse-linked-list/)
 
-### **問題分析**
+## 問題分析
 
 這題有分 iterate 的解法跟 recursion 的解法，不過 iterate 的解法應該還是比較直覺也比較快。
 
-### **解題思路 - Iterate**
+## 解題思路 - Iterate
 
 簡單來說如果 A -> B -> C，我們需要三個 pointers，讓 B->next 指向 A，再來 A pointer 跑到 B，B pointer 跑到 C，C 再往後跑，這樣一路做到底就 reverse 完整條了。
 
@@ -27,7 +27,7 @@ id: 60327a19-4c5c-4585-b7b7-dfdbdd1e368b
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 ListNode* reverseList(ListNode* head) {
@@ -46,7 +46,7 @@ ListNode* reverseList(ListNode* head) {
 }
 ```
 
-### **另一種思路 - Recursion**
+## 另一種思路 - Recursion
 
 Recursion 的思路大致上是這樣，對於每一層來說，我們都需要拿到最尾巴的 node 來當我們的 newHead，所以最後可以直接回傳這個 node
 
@@ -59,7 +59,7 @@ ListNode* newHead = reverseList(head->next);
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 ListNode* reverseList(ListNode* head) {

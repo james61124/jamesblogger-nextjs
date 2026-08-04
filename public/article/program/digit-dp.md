@@ -27,7 +27,7 @@ Digit DP 通常可以用來解 [left, right] 區間內符合某條件的數值�
   </figcaption>
 </figure>
 
-### **建構思路**
+## 建構思路
 
 先介紹一下 dfs 需要的幾個參數 `i`, `isLimit`, `isNum`：
 
@@ -223,7 +223,7 @@ int numDupDigitsAtMostN(int n) {
 
 [[ Leetcode 1012 ] Numbers With Repeated Digits | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-1012/)
 
-### **DP 其他系列文章**
+## DP 其他系列文章
 
 [[ Algorithm ] Dynamic Programming (一) - Introduction | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/dp/)<br>
 [[ Algorithm ] Dynamic Programming (二) - Memorization | 核心概念與 Leetcode 題型解析](https://jamesblogger.com/program/articles/memorization/)<br>

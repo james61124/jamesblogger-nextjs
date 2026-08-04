@@ -11,18 +11,18 @@ id: 9e5dbef5-839b-4bf2-9ae1-a49c92908236
 
 Hash Table 是一種基於 key-value pair 的 data structure，主要目的就是要讓 search, delete, insert 這些操作都是 O(1)，他利用一個 Hash Function 將 Key 映射到一個 index，然後再把 value 填進來，所以才可以用極短的時間就做到 searching 的動作。常見的 C++ Hash Table 包括下面幾種：
 
-### **Unordered Set**
+## Unordered Set
 
 Unordered Set 有兩個特色：
 
 1. 不允許重複的 element，如果 insert 相同的 value，會覆蓋舊的 value
 2. insert 的時候不用排序，所以 insert 是 O(1)
 
-#### **宣告**
+### 宣告
 
 `unordered_set<int> uset;`
 
-#### **常用 function**
+### 常用 function
 
 | Function | Description | Time Complexity |
 |-------------|----------------|---------------------|
@@ -39,7 +39,7 @@ Unordered Set 有兩個特色：
 
 Unordered Set 之所有也算是 Hash Table，是因為他的 key-value pair 隱藏了 value 只留下 key，他的 value 只用來標示這個 element 存不存在而已。
 
-### **Unordered Map**
+## Unordered Map
 
 Unordered Map 是一個 key-value 的結構，有點像 dictionary 的感覺。
 
@@ -48,11 +48,11 @@ Unordered Map 有幾個特色：
 1. Key 不允許重複，如果插入相同的 Key，會覆蓋舊的 Value
 2. insert / search / erase 操作的 time complexity 為 O(1)，因為 insert 的時候不用排序
 
-#### **宣告**
+### 宣告
 
 `unordered_map<int, int> umap;`
 
-#### **常用 function**
+### 常用 function
 
 | Function | Description | Time Complexity |
 |-------------|----------------|---------------------|
@@ -70,15 +70,15 @@ Unordered Map 有幾個特色：
 
 這邊可以注意一件事情，如果 key 原本不在 unordered_map 中，但是只要寫到 umap[key]，就算是在 if 的 condition 中沒有賦值給他他也會自動把 key 放到 umap 中並初始化為 ０，所以如果要查詢一個 key 是不是在 unordered_map 中盡量用 count 或是 find，不要直接 umap[key] == 0。
 
-### **Unordered Multiset**
+## Unordered Multiset
 
 跟 set 幾乎一樣，唯一不一樣就是他可以允許 duplicate。
 
-#### **宣告**
+### 宣告
 
 `unordered_multiset<int> umset;`
 
-#### **常用 function**
+### 常用 function
 
 | Function | Description | Time Complexity |
 |-------------|----------------|---------------------|
@@ -97,15 +97,15 @@ for (unordered_multiset<int>::iterator it = range.first; it != range.second; ++i
 }
 ```
 
-### **Unordered Multimap**
+## Unordered Multimap
 
 當一個 key 需要對應多個 value 的時候就可以用這個，換句話說他的 key 不是唯一。
 
-#### **宣告**
+### 宣告
 
 `unordered_multimap<Key, Value> ummap;`
 
-#### **常用 function**
+### 常用 function
 
 | **Function** | **Description** | **Time Complexity** |
 |-------------|----------------|---------------------|
@@ -124,7 +124,7 @@ for (unordered_multimap<int, string>::iterator it = range.first; it != range.sec
 }
 ```
 
-### **範例**
+## 範例
 
 [[ Leetcode 20 ] Valid Parentheses | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-20/)<br>
 [[ Leetcode 227 ] Basic Calculator II | 解題思路分享](https://jamesblogger.com/leetcode/articles/leetcode-227/)

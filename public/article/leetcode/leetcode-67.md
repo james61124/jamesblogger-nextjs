@@ -15,7 +15,7 @@ id: 82aa8401-f175-4311-879c-34690a7cf8b9
 
 題目連結 🔗：[https://leetcode.com/problems/add-binary/](https://leetcode.com/problems/add-binary/)
 
-### **問題分析**
+## 問題分析
 
 這題沒什麼好講的，就用直式加法計算，從尾巴加到頭，記得處理進位就好。
 
@@ -23,7 +23,7 @@ id: 82aa8401-f175-4311-879c-34690a7cf8b9
 **Space Complexity** - `O(1)`
 
 
-### **Implementation**
+## Implementation
 
 ```cpp
 string addBinary(string a, string b) {

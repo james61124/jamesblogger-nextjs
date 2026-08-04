@@ -15,11 +15,11 @@ id: 8f04d457-e0f9-4713-a6ed-b60558616546
 
 題目連結 🔗：[https://leetcode.com/problems/house-robber-ii/](https://leetcode.com/problems/house-robber-ii/)
 
-### **問題分析**
+## 問題分析
 
 這題如果嘗試找到所有 subsequence，時間複雜度會指數型成長，所以滿明顯是 DP 的，關鍵在於怎麼逐步推導出 Transition Function。
 
-### **解題思路 - DP**
+## 解題思路 - DP
 
 這題環狀的設計有一個很好的方式可以直接解決，對於一個 size 為 n 的 nums，我們只要分析這兩個 array 中比較大的就行了：nums[0...n-2], nums[1...n-1]，總之就是取頭不取尾，取尾不取頭
 
@@ -55,7 +55,7 @@ return dp[right];
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int maxMoney(vector<int>&nums, int left, int right){

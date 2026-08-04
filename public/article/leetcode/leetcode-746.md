@@ -14,7 +14,7 @@ id: d31b5a37-f0af-431f-a2b0-fc01849edab8
 
 題目連結 🔗：[https://leetcode.com/problems/min-cost-climbing-stairs/](https://leetcode.com/problems/min-cost-climbing-stairs/)
 
-### **問題分析**
+## 問題分析
 
 題目有一個關鍵限制，一次可以走一格或是兩格，也就是說
 
@@ -22,7 +22,7 @@ id: d31b5a37-f0af-431f-a2b0-fc01849edab8
 
 這種 linear 的 state 轉換，就是很明顯的 Linear DP
 
-### **解題思路 - DP**
+## 解題思路 - DP
 
 我們需要一個 dp[i] 代表從 stair `i` 要往下走所需的最小 cost，而 stair `i` 只可能會從 `i-1` 或是 `i-2` 走來，Transition Function 如下
 
@@ -68,7 +68,7 @@ int minCostClimbingStairs(vector<int>& cost) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int minCostClimbingStairs(vector<int>& cost) {

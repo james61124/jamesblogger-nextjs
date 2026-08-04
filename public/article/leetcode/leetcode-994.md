@@ -14,11 +14,11 @@ id: 7a357f4b-88b9-4e4d-9d63-7517994cd584
 
 題目連結 🔗：[https://leetcode.com/problems/rotting-oranges/](https://leetcode.com/problems/rotting-oranges/)
 
-### **問題分析**
+## 問題分析
 
 這種擴散式的題目用 DFS 會很不好做，所以我們選擇用 BFS 來解，但是 rotten orange 可能會有很多顆要怎麼辦呢？只要利用 multiple source 的 BFS 技巧就可以了，把 rotten orange 一開始就全部塞到 queue 裡面，非常簡單。
 
-### **解題思路 - BFS**
+## 解題思路 - BFS
 
 我們先寫出 bfs 框架，並將 multiple source 先推進去，在 bfs 探訪的時候只走 fresh orange
 

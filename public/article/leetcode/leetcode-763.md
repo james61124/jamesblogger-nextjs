@@ -14,7 +14,7 @@ id: cb8f62b6-8573-4ceb-a780-781d83982bee
 
 題目連結 🔗：[https://leetcode.com/problems/partition-labels/](https://leetcode.com/problems/partition-labels/)
 
-### **問題分析**
+## 問題分析
 
 一開始可以先慢慢想，iterate 整個 string，如果看到 `a`，表示我需要知道從後面數過來最後一個 `a` 在哪裏，決定了這個 block 最小會落在哪，繼續往後 iterate 也是一樣的，所以可以先簡單用一個 data structure 紀錄 [start, end]:
 
@@ -32,7 +32,7 @@ c : [4, 5]
 
 Interval Merge 最重要的其實只是每一段區間的 end，我們只要知道這個 block 最遠的 end 會落在哪裡就好，其實每一段 interval 的 start 並不重要，所以我們完全可以只紀錄每一個字母的 end，往外推這個 block 最遠會落在哪，就可以分離出每一個 block 了。
 
-### **解題思路 - Greedy**
+## 解題思路 - Greedy
 
 直接來實作，首先先紀錄每一個字母 end 的位置
 
@@ -72,7 +72,7 @@ for(int i = 0; i < n; i++){
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 vector<int> partitionLabels(string s) {

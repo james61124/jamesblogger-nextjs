@@ -14,7 +14,7 @@ id: 9f2a702f-7897-457f-b284-1cc609ec7035
 
 題目連結 🔗：[https://leetcode.com/problems/make-array-elements-equal-to-zero/](https://leetcode.com/problems/make-array-elements-equal-to-zero/)
 
-### **問題分析**
+## 問題分析
 
 這題只能從 nums[i] = 0 的地方出發，可以選擇往右或往左，所以可以把整個 array 分成左半部跟右半部分。
 
@@ -25,7 +25,7 @@ id: 9f2a702f-7897-457f-b284-1cc609ec7035
 
 利用這個規律就可以 O(n) 算出有多少 possible selection 了
 
-### **解題思路**
+## 解題思路
 
 由於只有左半邊跟右半邊，我們可以先計算整體的 totalSum，等下用 totalSum 減掉左邊總和就是右邊總和
 
@@ -63,7 +63,7 @@ for(int i = 0; i < nums.size(); i++){
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int countValidSelections(vector<int>& nums) {

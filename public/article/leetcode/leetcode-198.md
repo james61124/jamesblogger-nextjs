@@ -15,11 +15,11 @@ id: 9b878a22-4f64-4219-9cc7-59dd368000c8
 
 題目連結 🔗：[https://leetcode.com/problems/house-robber/](https://leetcode.com/problems/house-robber/)
 
-### **問題分析**
+## 問題分析
 
 這題翻成白話文是不能同時拿相鄰的兩個值，我們可以發現他有最優子問題，也就是「偷到第 i 間，怎麼偷金額最大」，各個子問題間也有重疊，因此不太會是 Greedy，應該比較頃向 DP。
 
-### **解題思路 - DP**
+## 解題思路 - DP
 
 對於每個房子，我們都可以「選 / 不選」，我們需要一個 dp[i] 表示「偷到第 i 間最大的金額」。
 
@@ -76,7 +76,7 @@ return num2;
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 ```cpp
 int rob(vector<int>& nums) {
     int n = nums.size();

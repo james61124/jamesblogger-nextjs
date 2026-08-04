@@ -20,11 +20,11 @@ id: 6675ffb2-ba6f-4313-87c8-fe0c0dce76ed
 
 題目連結 🔗：[https://leetcode.com/problems/merge-sorted-array/](https://leetcode.com/problems/merge-sorted-array/)
 
-### **問題分析**
+## 問題分析
 
 這題看似在考 merge sort，但是卻不能用到額外的空間，也就是說 merge 出來的結果要全部存在 `nums1` 裡面。但如果很直覺的從頭開始直接 merge 會把 `nums1` 的內容覆蓋掉，因此我們需要利用唯一空出來的空間，也就是 `nums1` 的後半段來實作。
 
-### **解題思路 - Two Pointers**
+## 解題思路 - Two Pointers
 
 想要從 `nums1` 的後半段開始填，我們可以換個思路，只要先填大的就可以了，一路從尾巴填到 `nums1` 的頭，這樣就不會有把前面的數字蓋掉的問題，同時填入的數字又都是在正確的位置上。
 
@@ -62,7 +62,7 @@ while(right_2 >= 0){
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {

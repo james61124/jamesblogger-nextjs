@@ -21,11 +21,11 @@ id: a25344c6-7b1e-44f7-b5cc-e6a0ba1d10c7
 
 題目連結 🔗：[https://leetcode.com/problems/copy-list-with-random-pointer/](https://leetcode.com/problems/copy-list-with-random-pointer/)
 
-### **問題分析**
+## 問題分析
 
 這題沒有辦法像 array 的處理一樣，用 two pointers 讓 `right` 從後面更新回來插入 `left`，因為 linked list 沒有辦法從後面 iterate，所以最效率的方法是想辦法利用 node 之間重新排列組合來達成目的。
 
-### **解題思路 - Linked List**
+## 解題思路 - Linked List
 
 所以這題總共需要三個步驟：
 
@@ -117,7 +117,7 @@ if (!head || !head->next) return;
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 void reorderList(ListNode* head) {

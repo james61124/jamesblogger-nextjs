@@ -14,7 +14,7 @@ id: 19d43068-cb57-41c4-b4e6-30e32331319a
 
 題目連結 🔗：[https://leetcode.com/problems/largest-rectangle-in-histogram/](https://leetcode.com/problems/largest-rectangle-in-histogram/)
 
-### **問題分析**
+## 問題分析
 
 區間內的 area 計算公式如下：
 
@@ -32,7 +32,7 @@ id: 19d43068-cb57-41c4-b4e6-30e32331319a
 </figure>
 
 
-### **解題思路 - Monotonic Stack**
+## 解題思路 - Monotonic Stack
 
 那這件事情可以利用 increasing 的 Monotonic Stack 解決
 
@@ -117,7 +117,7 @@ for(int i = 0; i < heights.size(); i++){
 **Time Complexity** - `O(logn)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int largestRectangleArea(vector<int>& heights) {

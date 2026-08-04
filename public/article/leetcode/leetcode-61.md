@@ -15,7 +15,7 @@ id: e4977433-d64b-4509-bc68-15e6dbf01789
 
 題目連結 🔗：[https://leetcode.com/problems/rotate-list/](https://leetcode.com/problems/rotate-list/)
 
-### **問題分析**
+## 問題分析
 
 第一感其實是 reverse list，先把整個 list reverse，再分兩邊各自 reverse，其實也是 O(n)，不過標準解法更簡潔一點。
 
@@ -24,7 +24,7 @@ id: e4977433-d64b-4509-bc68-15e6dbf01789
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 ListNode* rotateRight(ListNode* head, int k) {

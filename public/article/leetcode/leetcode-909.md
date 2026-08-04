@@ -14,13 +14,13 @@ id: 16687a93-387b-4cfa-a717-09eedf77e0bd
 
 題目連結 🔗：[https://leetcode.com/problems/snakes-and-ladders/](https://leetcode.com/problems/snakes-and-ladders/)
 
-### **問題分析**
+## 問題分析
 
 這題要找到是最短的 steps，最 brute force 的解就是 dfs / bfs 開始一路走，看看哪條 path 會先到終點對吧？看起來這個方法會重複走到很多同樣的 grid，但實際上這題 `O(n^2)` 就可以解決。
 
 仔細想我們就會發現，如果用 bfs 來走，一層 bfs 就是一個 step，最終答案如果是 i 個 steps，我們就只需要 i 層 bfs，這樣就可以避免 dfs 時多走了一大堆用不到的 path。再來對於每一格 grid 其實他們各自到終點的最少 steps 數是一樣的，也就是說走過的 grid 不用再走一次，所以每一個 grid 最多只會被看一次就可以找到答案了。
 
-### **解題思路 - BFS**
+## 解題思路 - BFS
 
 首先我們要先來處理 (x, y) 座標跟 board 編號的問題，他的編號方式是螺旋狀有點特別，像是這樣
 
@@ -147,7 +147,7 @@ while(!q.empty()){
 **Time Complexity** - `O(n^2)`<br>
 **Space Complexity** - `O(n^2)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int snakesAndLadders(vector<vector<int>>& board) {

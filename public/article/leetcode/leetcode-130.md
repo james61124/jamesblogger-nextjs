@@ -15,7 +15,7 @@ id: 5b373957-7363-4684-bc95-ff17c6624dce
 
 題目連結 🔗：[https://leetcode.com/problems/surrounded-regions/](https://leetcode.com/problems/surrounded-regions/)
 
-### **問題分析**
+## 問題分析
 
 這題看起來很單純，如果按照順序每一格都進行 dfs，如果那一組 dfs 有碰到邊界，就回傳狀態整組都標記起來，而這樣時間複雜度是 O(m*n)，因為碰到 `X` 就不會繼續走了，寫起來有點像這樣。
 
@@ -36,7 +36,7 @@ bool dfs() {
 
 所以這題其實要反著做 dfs，從邊邊的 `O` 開始，把 not surrounded 的 grid 都先標成另一個字母，例如說 `N`，最後更新完剩下的 `O` 就是 surrounded，`N` 就是 not surrounded，`X` 就一樣是牆壁，所以最後把全部的 `O` 改成 `X`，`N` 改成 `O` 就行了。
 
-### **解題思路 - DFS**
+## 解題思路 - DFS
 
 所以首先我們要先用 dfs 把所有 not surrounded 都改成 `N`，dfs 朝四個方向走
 
@@ -82,7 +82,7 @@ for(int i = 0; i < m; i++){
 **Time Complexity** - `O(m*n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 void dfs(vector<vector<char>>& board, int i, int j){

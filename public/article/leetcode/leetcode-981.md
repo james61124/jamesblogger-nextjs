@@ -16,7 +16,7 @@ id: 23b610e5-ddbb-49bf-b71b-9c2cfd734f5b
 
 題目連結 🔗：[https://leetcode.com/problems/time-based-key-value-store/](https://leetcode.com/problems/time-based-key-value-store/)
 
-### **問題分析**
+## 問題分析
 
 簡單來說，這題想要一個 data structure，可以快速找到「小於等於 `timestamp` 的最大值」，但 `timestamp` 的儲存順序是遞增的。
 
@@ -24,7 +24,7 @@ id: 23b610e5-ddbb-49bf-b71b-9c2cfd734f5b
 
 [[ Algorithm ] Binary Search | 核心概念與 Leetcode 題型解析](https://www.jamesblogger.com/program/articles/binary-search)
 
-### **解題思路 - Binary Search**
+## 解題思路 - Binary Search
 
 先來看 `set`，我們要儲存 `key` 對應到的 `value` list，所以開一個 Hash Table 就可以了，非常單純
 
@@ -96,7 +96,7 @@ string get(string key, int timestamp) {
 **Time Complexity** - `O(log n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 class TimeMap {

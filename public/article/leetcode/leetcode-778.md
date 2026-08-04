@@ -14,7 +14,7 @@ id: 203ccf65-9bec-49be-9a3d-836f33f093d4
 
 題目連結 🔗：[https://leetcode.com/problems/swim-in-rising-water/](https://leetcode.com/problems/swim-in-rising-water/)
 
-### **問題分析**
+## 問題分析
 
 這題的核心本質是要找到從 starting point 出發到 end point
 
@@ -32,7 +32,7 @@ dp[i][j] = max(dp[i][j], min(dp[i-1][j], dp[i][j-1]))
 
 [[ Algorithm ] Shortest Path - Dijkstra | 核心概念與 Leetcode 題型解析](https://www.jamesblogger.com/program/articles/dijkstra)
 
-### **解題思路 - Dijkstra**
+## 解題思路 - Dijkstra
 
 我們先拿出 Dijkstra 的 template 來分析一下
 
@@ -130,7 +130,7 @@ if(x == n-1 && y == m-1) return srcCost;
 **Time Complexity** - `O(n^2 log n)`，因為有 `n^2` 個 edge，每一次 push / pop 都是 `log n`<br>
 **Space Complexity** - `O(n^2)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int swimInWater(vector<vector<int>>& grid) {

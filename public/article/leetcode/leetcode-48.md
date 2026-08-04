@@ -15,7 +15,7 @@ id: e65b3fb1-8c8e-405e-b9c4-85e61a94c222
 
 題目連結 🔗：[https://leetcode.com/problems/rotate-image/](https://leetcode.com/problems/rotate-image/)
 
-### **問題分析**
+## 問題分析
 
 直接先來暴力分析一下問題，rotate 的話一定有他的規律，所以列出來找找看：
 
@@ -33,7 +33,7 @@ id: e65b3fb1-8c8e-405e-b9c4-85e61a94c222
 
 從這個列表，我們可以找到轉換式 `(i, j) -> (j, n - i - 1)`，所以理論上就是 iterate 完所有 (i, j) 就解完這題了，但我們會發現他交換的模式其實是四個點一個循環，所以我們就用「四點交換法 (four-way swap)」來解。
 
-### **解題思路 - Four-Way Swap**
+## 解題思路 - Four-Way Swap
 
 根據上面的轉換式，我們可以寫出四個點彼此的轉換式：
 
@@ -49,7 +49,7 @@ matrix[j][n - i - 1] = matrix[i][j];
 **Time Complexity** - `O(n^2)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 void rotate(vector<vector<int>>& matrix) {
@@ -67,14 +67,14 @@ void rotate(vector<vector<int>>& matrix) {
 }
 ```
 
-### **解題思路 2 - Math**
+## 解題思路 2 - Math
 
 這題其實可以用數學解，如果要將 Matrix 順時針 rotate，先將 matrix transpose，然後再 reverse 每一個 row 就好了。
 
 **Time Complexity** - `O(n^2)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 void rotate(vector<vector<int>>& matrix) {

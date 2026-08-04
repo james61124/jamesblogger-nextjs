@@ -15,11 +15,11 @@ id: fb776d26-2751-46f2-9866-7c0f4d7be493
 
 題目連結🔗：[https://leetcode.com/problems/maximum-product-subarray/](https://leetcode.com/problems/maximum-product-subarray/)
 
-### **問題分析**
+## 問題分析
 
 這題看到滿足某某條件的 subarray，先往 two pointers 想，但是因為不是 sorted array，所以沒有辦法控制 left, right 來取得限制條件，所以判斷有可能是 DP，從 DP 想想看。
 
-### **解題思路 - DP**
+## 解題思路 - DP
 
 如果是 DP 的話，我們會需要一個 dp[i] 代表「以 nums[i] 為結尾的 maximum product subarray 的 product」，所以 iterate 完所有 i，我們就已經把所有 subarray 的組合看過，最後答案就是取 dp[i] 裡最大的，也就是 max(dp)。
 
@@ -37,7 +37,7 @@ dp[2] 如果用 max(-5, 4*(-5)) 這樣就錯了，因為 dp[2] 實際上是 `(-3
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int maxProduct(vector<int>& nums) {
@@ -62,7 +62,7 @@ int maxProduct(vector<int>& nums) {
 }
 ```
 
-### **空間優化**
+## 空間優化
 
 我們會發現在這些 dp 的 array 中，我們同時都只需要關注 i 及 i-1 的格子，甚至因為 i 的 value 是從 i-1 來的，所以我們其實算是只在關注 i-1 的 value，我們只需要一個 integer 的空間就好了，不需要整個 dp array。
 
@@ -77,7 +77,7 @@ minNum[i] 用 curMin 表示，也是一樣意思，再來當 nums[i] 為負數�
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int maxProduct(vector<int>& nums) {

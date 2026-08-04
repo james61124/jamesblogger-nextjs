@@ -15,14 +15,14 @@ id: fa803a54-ebde-4c6b-b3a1-b4265f72c7c3
 
 題目連結 🔗：[https://leetcode.com/problems/maximum-number-of-words-you-can-type/](https://leetcode.com/problems/maximum-number-of-words-you-can-type/)
 
-### **問題分析**
+## 問題分析
 
 這題就簡單照著題目走即可，因為要快速判斷 broken letter 有哪些，所以全部丟進去 hash table，再來一個一個字元比，如果發現遇到 broken letter，就跳去下一個字，如果發現都沒事然後就遇到下一個空格了，`result` 就可以加一表示我們可以打出這個字
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int canBeTypedWords(string text, string brokenLetters) {

@@ -15,11 +15,11 @@ id: d56a3bba-7ba2-40a1-894e-708f1a9ee70c
 
 題目連結 🔗：[https://leetcode.com/problems/top-k-frequent-elements/](https://leetcode.com/problems/top-k-frequent-elements/)
 
-### **問題分析**
+## 問題分析
 
 這題其實有很多方法可以解，最簡單的用一個 array 存 frequency 最後 sort，或是建個 map 把 frequency 存進去他就會自己排好了，不過這些方法都是 `O(n * logn)`，題目下面有說我們要找出比這個還要快的方法，所以下一個思路就是，我們真的需要一次 sort n 個 element 嗎？
 
-### **解題思路 - Priority Queue**
+## 解題思路 - Priority Queue
 
 這種題目是典型的前 k 大的問題，所以可以思考看看我們能不能局部排序就好，priority queue 就是一個很好用的工具，因為我們只需要關注前 k 個 element，我們就一直保持 priority queue 只有 k 個值，剩下的直接 pop 掉我們就也不用幫他們排序了，這樣就可以在 `O(n * logk)` 解完。
 
@@ -28,7 +28,7 @@ id: d56a3bba-7ba2-40a1-894e-708f1a9ee70c
 **Time Complexity** - `O(n * logk)`，因為我們做了局部排序<br>
 **Space Complexity** - `O( n )`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 vector<int> topKFrequent(vector<int>& nums, int k) {

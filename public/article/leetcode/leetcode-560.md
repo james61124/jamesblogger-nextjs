@@ -15,11 +15,11 @@ id: 2609827a-bd0a-4438-97d3-17d4be356639
 
 題目連結 🔗：[https://leetcode.com/problems/subarray-sum-equals-k/](https://leetcode.com/problems/subarray-sum-equals-k/)
 
-### **問題分析**
+## 問題分析
 
 遇到 subarray 的 sum，可以往 sliding window, two pointers, prefix sum 等方向去想，但是因為這題不是 sorted array，two pointers 執行起來可能有難度，所以試著朝 prefix sum 想想看。
 
-### **解題思路 - Prefix Sum**
+## 解題思路 - Prefix Sum
 
 prefix sum 的核心概念是
 
@@ -34,7 +34,7 @@ prefix sum 的核心概念是
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int subarraySum(vector<int>& nums, int k) {

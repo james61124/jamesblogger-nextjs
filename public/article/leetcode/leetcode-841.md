@@ -15,11 +15,11 @@ id: 44093491-c8bf-4afa-b824-c80459ac0b82
 
 題目連結🔗：[https://leetcode.com/problems/keys-and-rooms/](https://leetcode.com/problems/keys-and-rooms/)
 
-### **解法 - DFS**
+## 解法 - DFS
 
 其實就是 DFS 而已，因為它本質上是一個 Graph Traversal 問題。房間和它們的鑰匙形成了一個 Directed Graph，其中 rooms[i] 中的一把鑰匙表示從房間 i 到另一個房間的一個 edge。
 
-### **Implementation**
+## Implementation
 
 ```cpp
 

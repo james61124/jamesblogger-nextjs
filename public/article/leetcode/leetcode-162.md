@@ -15,7 +15,7 @@ id: f2b2028c-50ff-4f54-a443-fe33aed9f7b8
 
 題目連結 🔗：[https://leetcode.com/problems/find-peak-element/](https://leetcode.com/problems/find-peak-element/)
 
-### **問題分析**
+## 問題分析
 
 這題一看就是 Binary Search，因為他符合一個 pattern
 
@@ -25,7 +25,7 @@ id: f2b2028c-50ff-4f54-a443-fe33aed9f7b8
 
 [[ Algorithm ] Binary Search | 核心概念與 Leetcode 題型解析](https://www.jamesblogger.com/program/articles/binary-search)
 
-### **解題思路 - Binary Search**
+## 解題思路 - Binary Search
 
 看個例子，nums = [1, 2, 3, 4, 3, 2, 1]，我們為他設計一個 `is_valid` function
 
@@ -39,7 +39,7 @@ is_valid = [0, 0, 0, 1, 1, 1, 1]
 **Time Complexity** - `O(logn)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 bool is_valid(vector<int>& nums, int mid) {

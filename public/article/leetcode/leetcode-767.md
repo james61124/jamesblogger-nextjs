@@ -14,7 +14,7 @@ id: 42c868bb-93b6-432a-a50f-2e7560a0fe43
 
 題目連結 🔗：[https://leetcode.com/problems/reorganize-string/](https://leetcode.com/problems/reorganize-string/)
 
-### **問題分析**
+## 問題分析
 
 這題第一眼就知道要從數量最多的字開始放，但是關鍵在於要怎麼放，我們其實只要將數量最多的字母拆開來放，也就是先放偶數 index，剩下的字母再把空隙填滿就好了，這樣就確保重複的字母一定不會相鄰。
 
@@ -72,7 +72,7 @@ for(int c = 0; c < 26; c++){
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 string reorganizeString(string s) {

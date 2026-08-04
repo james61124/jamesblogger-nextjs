@@ -14,14 +14,14 @@ id: fefa1970-e47b-4469-b5fd-6f1232dca68a
 
 題目連結 🔗：[https://leetcode.com/problems/smallest-number-with-all-set-bits/](https://leetcode.com/problems/smallest-number-with-all-set-bits/)
 
-### **問題分析**
+## 問題分析
 
 這題我直覺是用 Binary Search 解，結果看了一下 n 的限制只到 1000，那一個一個算可能還比較快，最多就 10 次而已
 
 **Time Complexity** - `O(1)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int smallestNumber(int n) {

@@ -15,11 +15,11 @@ id: 2478671f-f310-458b-878d-faec87a31371
 
 題目連結 🔗：[https://leetcode.com/problems/perfect-squares/](https://leetcode.com/problems/perfect-squares/)
 
-### **問題分析**
+## 問題分析
 
 分析一下這題，暴力解應該是每一個小於 n 的平方數都可以不選或是選很多次，這樣我們可以用 dfs 跑過每一種狀況找出最小的組合，但這樣我們會看到很多重複的 state，所以判斷可以用 dp 來記錄這個重複的 state。
 
-### **解題思路 - DP(Unbounded Knapsack Problem)**
+## 解題思路 - DP(Unbounded Knapsack Problem)
 
 先判斷剛剛重複的部分，因為 n 在做完一個平方數 `x^2` 會變成 n-x^2，所以相同的 `n - x^2` 可能會重複多次計算，這個是可以建表的。而題目是問最少可以組成正整數 n 的平方數組合，dp[i][j] 可以用最直覺的方法，代表數字 i 利用前 j 個平方數組成的最小數量是多少，這其實就是 Unbounded Knapsack Problem，數字 j 可以放無限多次，但是不可以放超過 i，比較不一樣的只是我們要紀錄最小的 i 的數量。
 
@@ -44,7 +44,7 @@ for(int j=1; j<dp[0].size(); j++){
 **Time Complexity** - `O(n*sqrt(n))`<br>
 **Space Complexity** - `O(n*sqrt(n))`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int numSquares(int n) {
@@ -64,14 +64,14 @@ int numSquares(int n) {
 }
 ```
 
-### **空間優化 - 1D DP**
+## 空間優化 - 1D DP
 
 我們可以看到 Unbounded Knapsack Problem 一次只用到兩個 rows 而已，所以我們可以用 1D Array 就紀錄完 dp，只是這邊要注意的是 Unbounded Knapsack Problem 因為同一個 item 可以放無限多次，所以更新 1D Array 的時候要正著更新，不能像 0/1 Knapsack Problem 一樣反著更新。
 
 **Time Complexity** - `O(n*sqrt(n))`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int numSquares(int n) {
@@ -90,7 +90,7 @@ int numSquares(int n) {
 }
 ```
 
-### **另一種思路 - 數學解**
+## 另一種思路 - 數學解
 
 很遺憾這題有數學解，就是一個沒有學過就完全不知道的解法，這邊就打起來供參考。
 
@@ -107,7 +107,7 @@ int numSquares(int n) {
 **Time Complexity** - `O(sqrt(n))`，只有在找 2 的時候跑了一個 loop <br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 bool isPerfectSquare(int n) {

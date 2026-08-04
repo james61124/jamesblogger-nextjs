@@ -15,11 +15,11 @@ id: 5e5fee0a-4b2f-4ec0-916c-43d57c57d9d9
 
 題目連結 🔗：[https://leetcode.com/problems/decode-ways/](https://leetcode.com/problems/decode-ways/)
 
-### **問題分析**
+## 問題分析
 
 第一感看到他寫找到所有組合，直覺就是 backtracking，因為一個 node 可能會有兩個 actions，選兩個或是選一個，往下走之後再 backtrack 就好，不過題目說的是找到「所有組合的數量」，所以 DP 應該就可以解決了。
 
-### **解題思路 - DP**
+## 解題思路 - DP
 
 dp[i] 代表「以 s[i-1] 為結尾的 substring 的所有 decode 數量」，而 dp[i] 總共會有兩種情況，第一種是 decode 的結果以 s[i-1] 為結尾（ A ~ I ），如果這種情況 valid，方法數量會跟 dp[i-1] 一樣，第二種是把 s[i-2] 跟 s[i-1] 一起看的情況 ( J ~ Z )，如果這種情況 valid，方法數量會跟 dp[i-2] 一樣，而 dp[i] 的 Transition Function 就是把兩種情況加起來。
 
@@ -37,7 +37,7 @@ if(twoDigit <= 26 && twoDigit >= 10) dp[i] += dp[i-2];
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int numDecodings(string s) {
@@ -62,14 +62,14 @@ int numDecodings(string s) {
 }
 ```
 
-### **空間優化**
+## 空間優化
 
 再來我們就會發現對於 dp[i] 來說，我們一次只會看兩格而已，所以我們其實不需要宣告整條 dp array，我們只需要兩個 integer 即可。
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 int numDecodings(string s) {

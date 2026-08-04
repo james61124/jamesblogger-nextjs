@@ -15,11 +15,11 @@ id: ea32f508-b55a-4579-b642-5a5ec44f676f
 
 題目連結 🔗：[https://leetcode.com/problems/h-index/](https://leetcode.com/problems/h-index/)
 
-### **問題分析**
+## 問題分析
 
 最直覺的做法就是 sorting，再來由尾巴開始慢慢比較，但是 sorting 需要耗費 O(nlogn)，有沒有方法可以只用 O(n) 就解決這個問題呢？
 
-### **解題思路 - Counting Sort**
+## 解題思路 - Counting Sort
 
 舉個例子，`citations = [3, 0, 6, 1, 5]`，sorting 後的結果是 [0, 1, 3, 5, 6]，再來我們開始由後面比較，citations >= 6 有一篇論文，citations >= 5 有兩篇論文，citations >= 3 有三篇論文，所以答案就是 3，我們如果只是要計算 citations >= `x` 有幾篇論文，我們不需要先將 array sort 過才能實現這件事情，完全可以先計算起來放著。
 
@@ -49,7 +49,7 @@ for(int i = count.size() - 1; i >= 0; i--){
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int hIndex(vector<int>& citations) {

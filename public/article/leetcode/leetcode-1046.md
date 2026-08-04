@@ -14,11 +14,11 @@ id: 90e96ba8-0d4b-4594-98cb-180a5b038e08
 
 題目連結 🔗：[https://leetcode.com/problems/last-stone-weight/](https://leetcode.com/problems/last-stone-weight/)
 
-### **問題分析**
+## 問題分析
 
 這題要找到當下最大的兩個數字，拿出來計算完差值後推回去再繼續找下兩個，直到整個陣列剩下一個數字，這種「找最大 / 小的前 k 個數字」用 Priority Queue 就可以了，沒什麼特別的地方
 
-### **解題思路 - Priority Queue**
+## 解題思路 - Priority Queue
 
 先將所有 stones 放入 priority queue
 
@@ -46,7 +46,7 @@ return pq.empty() ? 0 : pq.top();
 **Time Complexity** - `O(n log n)`<br>
 **Space Complexity** - `O(n)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 int lastStoneWeight(vector<int>& stones) {

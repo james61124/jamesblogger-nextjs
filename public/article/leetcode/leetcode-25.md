@@ -14,11 +14,11 @@ id: b8f60208-6fd7-42d3-b120-225e925fe369
 
 題目連結 🔗：[https://leetcode.com/problems/reverse-nodes-in-k-group/](https://leetcode.com/problems/reverse-nodes-in-k-group/)
 
-### **問題分析**
+## 問題分析
 
 遇到 Reverse Linked List，我們可以用一個很有名的演算法 - 頭插法 ( Head Insertion Method )。
 
-### **解題思路 - Head Insertion Method**
+## 解題思路 - Head Insertion Method
 
 頭插法的思路其實很簡單，我們需要三個指標：`groupPrev`, `prev`, `curr`，`groupPrev` 會落在要反轉的那段 Linked List 的前面，而 `curr` 是當下需要被反轉的 node，會一直保持在 `prev` 後面。過程中只要一直把 `curr` 插入 `groupPrev` 的後面，然後更新 `curr` 到 `prev`，一直重複這個動作就可以把那段 Linked List 反轉了，圖示如下：
 
@@ -98,7 +98,7 @@ ListNode* reverseKGroup(ListNode* head, int k) {
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-### **Implementation**
+## Implementation
 
 ```cpp
 ListNode* reverseKGroup(ListNode* head, int k) {

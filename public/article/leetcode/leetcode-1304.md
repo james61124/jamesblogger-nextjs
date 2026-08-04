@@ -15,14 +15,14 @@ id: 617f4e2b-8780-4b4c-bbd9-1d6b9e136fff
 
 題目連結 🔗：[https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/)
 
-### **問題分析**
+## 問題分析
 
 (+i, -i) 這樣算一組，組合會是 0，總共會出現 n / 2 次，最後多出來的次數補 0 就好。
 
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(1)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 vector<int> sumZero(int n) {

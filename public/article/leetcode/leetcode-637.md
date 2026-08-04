@@ -14,11 +14,11 @@ id: c94fb564-870e-409e-8908-16a604e03a69
 
 題目連結 🔗：[https://leetcode.com/problems/average-of-levels-in-binary-tree/](https://leetcode.com/problems/average-of-levels-in-binary-tree/)
 
-### **問題分析**
+## 問題分析
 
 這題順著做就可以了，做一個 level order traversal，把每一層的 nodes 都加起來取平均。
 
-### **解題思路 - Level Order Traversal**
+## 解題思路 - Level Order Traversal
 
 我們先做一個 Level Order Traversal，他需要一個 queue 把下一層的 nodes 存起來
 
@@ -65,7 +65,7 @@ return result;
 **Time Complexity** - `O(n)`<br>
 **Space Complexity** - `O(n)`
 
-#### **Implementation**
+### Implementation
 
 ```cpp
 vector<double> averageOfLevels(TreeNode* root) {
