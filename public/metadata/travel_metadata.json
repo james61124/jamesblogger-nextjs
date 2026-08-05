@@ -117,6 +117,20 @@
         "path": "Munich-20240823"
     },
     {
+        "title": "冰島九日自駕遊紀錄 (上)",
+        "date": "2024-11-04",
+        "author": "James",
+        "tags": [
+            "Travel",
+            "Iceland"
+        ],
+        "image": "/images/travel/iceland-20241104-1/rainbow.JPG",
+        "description": "感覺來歐洲交換的人冰島絕對是必去的一個地方，我們原本因為內建只有兩個人，而且又都不會開車，所以我們決定上社團徵旅伴，沒想到迴響比想像中來的踴躍非常多，真的太多人想要來冰島玩了。",
+        "readTime": 11,
+        "id": "ff744a8e-9647-4fa8-957e-151c49b64626",
+        "path": "iceland-20241104"
+    },
+    {
         "title": "美國 DC 特區週末隨意晃晃",
         "date": "2026-06-20",
         "author": "James",
@@ -127,7 +141,7 @@
         ],
         "image": "/images/travel/dc-20260620/capitol-2.JPG",
         "description": "簡單記錄一下三個月實習的時間因為 Peggy 來找我，我們撥了一個週末到 DC 晃晃。如果把美國比喻成一間公司，Washington D.C. 就是他的總部，就是常聽到的 DC 特區，主要就是為了作為美國首都而設立，這邊其實有一大堆的博物館可以逛，真的要玩應該是可以逛好多天。",
-        "readTime": 2,
+        "readTime": 3,
         "id": "cfb4e084-1f27-4f4a-8c7c-5e3ca96c8663",
         "path": "dc-20260620"
     }
