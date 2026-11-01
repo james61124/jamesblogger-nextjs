@@ -1,14 +1,10 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-// import ReactMarkdown from "react-markdown";
-// import remarkGfm from "remark-gfm";
-// import rehypeRaw from "rehype-raw";
 import Link from "next/link";
 import Image from "next/image";
-// import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-// import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 import ShareAndCopy from "@/components/ShareAndCopy";
+import PaperTexture from "@/components/PaperTexture";
 import MarkdownRenderer from "@/components/articles/MarkdownRenderer";
 import CommentSection from "@/components/comments/CommentSection";
 import {
@@ -23,41 +19,25 @@ import {
 } from "@/lib/supabase/articleLike";
 
 import { createClient } from "@/lib/supabase/client";
+import { parseFrontmatter, calculateReadTime } from "@/lib/markdown";
 import {
   Eye,
   Heart,
-  MessageCircle,
 } from "lucide-react";
 
-function parseFrontmatter(raw) {
-  const match = raw.match(/^---([\s\S]*?)---/);
-  if (!match) return { metadata: {}, body: raw };
-
-  const metadata = match[1].split("\n").reduce((acc, line) => {
-    const [key, ...value] = line.split(":");
-    if (key && value.length) acc[key.trim()] = value.join(":").trim();
-    return acc;
-  }, {});
-
-  return { metadata, body: raw.replace(match[0], "").trim() };
-}
+const ONE_DAY_MS = 24 * 60 * 60 * 1000;
 
 function clean(value) {
   return typeof value === "string" ? value.replace(/^['"]|['"]$/g, "") : value;
 }
 
-function textOf(children) {
-  if (typeof children === "string" || typeof children === "number") return String(children);
-  if (Array.isArray(children)) return children.map(textOf).join("");
-  return children?.props?.children ? textOf(children.props.children) : "";
-}
-
-function slugify(value) {
-  return String(value)
-    .toLowerCase()
-    .trim()
-    .replace(/[^\w\u4e00-\u9fff]+/g, "-")
-    .replace(/^-+|-+$/g, "");
+function DetailItem({ label, children }) {
+  return (
+    <div>
+      <p className="text-[10px] uppercase tracking-[0.14em] text-[#9a8f80]">{label}</p>
+      <p className="mt-1">{children}</p>
+    </div>
+  );
 }
 
 export default function Article({ category, fileName, json_path, title }) {
@@ -114,9 +94,6 @@ export default function Article({ category, fileName, json_path, title }) {
         localStorage.getItem(key)
       );
 
-      const oneDay =
-        24 * 60 * 60 * 1000;
-
       await ensureArticle({
         id: meta.id,
         slug: `${category}/${fileName}`,
@@ -125,7 +102,7 @@ export default function Article({ category, fileName, json_path, title }) {
       if (
         !lastViewed ||
         Date.now() - lastViewed >
-          oneDay
+          ONE_DAY_MS
       ) {
         await incrementArticleView(meta.id);
 
@@ -139,7 +116,16 @@ export default function Article({ category, fileName, json_path, title }) {
         await getArticleById(meta.id);
 
       setArticle(current);
+    }
 
+    load().catch(console.error);
+  }, [meta.id]);
+
+  // 讚的狀態跟使用者有關，user 載入後要重新抓一次
+  useEffect(() => {
+    if (!meta.id) return;
+
+    async function loadLikeInfo() {
       const likeInfo = await getArticleLikeInfo(
         meta.id,
         user?.id
@@ -149,10 +135,8 @@ export default function Article({ category, fileName, json_path, title }) {
       setLikeCount(likeInfo.count);
     }
 
-    load().catch(console.error);
-    console.log("Increment view:", meta.id);
-
-  }, [meta.id]);
+    loadLikeInfo().catch(console.error);
+  }, [meta.id, user?.id]);
 
   useEffect(() => {
     async function loadUser() {
@@ -168,8 +152,6 @@ export default function Article({ category, fileName, json_path, title }) {
     loadUser();
   }, []);
 
-  
-
   const tags = useMemo(
     () =>
       meta.tags
@@ -178,36 +160,7 @@ export default function Article({ category, fileName, json_path, title }) {
     [meta.tags]
   );
 
-  const calculatedReadTime = useMemo(() => {
-    if (!content) return 1;
-
-    const plainText = content
-      .replace(/```[\s\S]*?```/g, " ")
-      .replace(/`([^`]+)`/g, "$1")
-      .replace(/!\[[^\]]*\]\([^)]*\)/g, " ")
-      .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
-      .replace(/<[^>]+>/g, " ")
-      .replace(/[#>*_~-]/g, " ")
-      .replace(/\s+/g, " ")
-      .trim();
-
-    const chineseCharacters =
-      plainText.match(/[\u3400-\u4dbf\u4e00-\u9fff]/g)?.length ?? 0;
-
-    const nonChineseText = plainText.replace(
-      /[\u3400-\u4dbf\u4e00-\u9fff]/g,
-      " "
-    );
-
-    const englishWords =
-      nonChineseText.match(/[A-Za-z0-9]+(?:['’-][A-Za-z0-9]+)*/g)?.length ?? 0;
-
-    const minutes =
-      chineseCharacters / 450 +
-      englishWords / 220;
-
-    return Math.max(1, Math.ceil(minutes));
-  }, [content]);
+  const calculatedReadTime = useMemo(() => calculateReadTime(content), [content]);
 
   const articleTitle = meta.title || title || "Untitled Story";
   const categoryLabel = category
@@ -275,15 +228,7 @@ export default function Article({ category, fileName, json_path, title }) {
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#f4efe6] px-5 pb-28 pt-32 sm:px-8 lg:px-12">
-      <div
-        aria-hidden
-        className="pointer-events-none fixed inset-0 opacity-25"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 1px 1px, rgba(70,61,49,0.12) 0.65px, transparent 0)",
-          backgroundSize: "6px 6px",
-        }}
-      />
+      <PaperTexture />
 
       <div className="relative mx-auto max-w-[1260px]">
         <header className="mx-auto max-w-4xl text-center">
@@ -366,7 +311,7 @@ export default function Article({ category, fileName, json_path, title }) {
                 {/* View Count */}
                 <div className="flex items-center gap-2 text-[15px] text-[#6f665c]">
                   <Eye size={17} strokeWidth={1.8} />
-                  <span>{article?.view_count.toLocaleString() ?? 0}</span>
+                  <span>{(article?.view_count ?? 0).toLocaleString()}</span>
                   <span className="text-[#93887c]">views</span>
                 </div>
 
@@ -435,9 +380,9 @@ export default function Article({ category, fileName, json_path, title }) {
                 Details
               </p>
               <div className="mt-5 space-y-5 font-serif text-sm leading-6 text-[#766d62]">
-                {meta.author && <div><p className="text-[10px] uppercase tracking-[0.14em] text-[#9a8f80]">Author</p><p className="mt-1">{meta.author}</p></div>}
-                {meta.date && <div><p className="text-[10px] uppercase tracking-[0.14em] text-[#9a8f80]">Published</p><p className="mt-1">{meta.date}</p></div>}
-                {meta.readTime && <div><p className="text-[10px] uppercase tracking-[0.14em] text-[#9a8f80]">Reading time</p><p className="mt-1">{calculatedReadTime} minutes</p></div>}
+                {meta.author && <DetailItem label="Author">{meta.author}</DetailItem>}
+                {meta.date && <DetailItem label="Published">{meta.date}</DetailItem>}
+                {meta.readTime && <DetailItem label="Reading time">{calculatedReadTime} minutes</DetailItem>}
               </div>
             </div>
           </aside>

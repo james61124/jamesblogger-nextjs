@@ -5,6 +5,9 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { Search, ArrowUpRight, X } from "lucide-react";
+import PaperTexture from "./PaperTexture";
+
+const ITEMS_PER_PAGE = 20;
 
 const difficultyStyles = {
   Easy: "border-[#3c7b5c]/20 bg-[#3c7b5c]/7 text-[#3c7b5c]",
@@ -18,6 +21,19 @@ const difficultyOrder = {
   Hard: 3,
 };
 
+function extractLeetcodeNumber(title) {
+  const match = title.match(/\[ Leetcode (\d+) \]/i);
+  return match ? parseInt(match[1], 10) : Infinity;
+}
+
+function getSortValue(article, key) {
+  if (key === "difficulty") return difficultyOrder[article.difficulty] || 0;
+  if (key === "title") return extractLeetcodeNumber(article.title);
+  if (key === "proficiency") return article.proficiency || 0;
+  if (key === "date") return new Date(article.date);
+  return article[key];
+}
+
 export default function LeetCodeList({ json_path, category }) {
   const [articles, setArticles] = useState([]);
   const [sortConfig, setSortConfig] = useState({
@@ -30,7 +46,6 @@ export default function LeetCodeList({ json_path, category }) {
   const [searchTag, setSearchTag] = useState("");
   const [query, setQuery] = useState("");
 
-  const ITEMS_PER_PAGE = 20;
   const [currentPage, setCurrentPage] = useState(1);
 
   const searchParams = useSearchParams();
@@ -95,11 +110,6 @@ export default function LeetCodeList({ json_path, category }) {
     setSelectedTags((current) => current.filter((item) => item !== tag));
   };
 
-  const extractLeetcodeNumber = (title) => {
-    const match = title.match(/\[ Leetcode (\d+) \]/i);
-    return match ? parseInt(match[1], 10) : Infinity;
-  };
-
   const filteredArticles = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
 
@@ -123,38 +133,8 @@ export default function LeetCodeList({ json_path, category }) {
         return matchesDifficulty && matchesTags && matchesQuery;
       })
       .sort((a, b) => {
-        if (sortConfig.key === "difficulty") {
-          const aValue = difficultyOrder[a.difficulty] || 0;
-          const bValue = difficultyOrder[b.difficulty] || 0;
-          return sortConfig.direction === "asc"
-            ? aValue - bValue
-            : bValue - aValue;
-        }
-
-        if (sortConfig.key === "title") {
-          const aValue = extractLeetcodeNumber(a.title);
-          const bValue = extractLeetcodeNumber(b.title);
-          return sortConfig.direction === "asc"
-            ? aValue - bValue
-            : bValue - aValue;
-        }
-
-        if (sortConfig.key === "proficiency") {
-          const aValue = a.proficiency || 0;
-          const bValue = b.proficiency || 0;
-          return sortConfig.direction === "asc"
-            ? aValue - bValue
-            : bValue - aValue;
-        }
-
-        const aValue =
-          sortConfig.key === "date"
-            ? new Date(a.date)
-            : a[sortConfig.key];
-        const bValue =
-          sortConfig.key === "date"
-            ? new Date(b.date)
-            : b[sortConfig.key];
+        const aValue = getSortValue(a, sortConfig.key);
+        const bValue = getSortValue(b, sortConfig.key);
 
         if (aValue < bValue) return sortConfig.direction === "asc" ? -1 : 1;
         if (aValue > bValue) return sortConfig.direction === "asc" ? 1 : -1;
@@ -188,15 +168,7 @@ export default function LeetCodeList({ json_path, category }) {
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#f4efe6] px-5 pb-28 pt-32 sm:px-8 lg:px-12">
-      <div
-        aria-hidden
-        className="pointer-events-none fixed inset-0 opacity-25"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 1px 1px, rgba(70,61,49,0.12) 0.65px, transparent 0)",
-          backgroundSize: "6px 6px",
-        }}
-      />
+      <PaperTexture />
 
       <div className="relative mx-auto max-w-6xl">
         <header className="mx-auto mb-14 max-w-3xl text-center sm:mb-16">

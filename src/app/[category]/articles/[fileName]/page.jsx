@@ -1,37 +1,10 @@
 import Article from "../../../../components/Article";
-import fs from "fs";
-import path from "path";
 import { Suspense } from "react";
+import { CATEGORIES, getArticleFileNames, getCategoryConfig } from "@/lib/categories";
 
-export default async function CategoryPage({
-  params,
-  searchParams,
-}) {
+export default async function ArticlePage({ params }) {
   const { category, fileName } = await params;
-
-  const defaultConfig = {
-    life: {
-      title: "Life Journal",
-      json_path: "/metadata/life_metadata.json",
-    },
-    travel: {
-      title: "Journey Memories",
-      json_path: "/metadata/travel_metadata.json",
-    },
-    program: {
-      title: "Program Notes",
-      json_path: "/metadata/program_metadata.json",
-    },
-    other: {
-      title: "Program Notes",
-      json_path: "/metadata/other_metadata.json",
-    },
-  };
-
-  const { title, json_path } = defaultConfig[category] || {
-    title: "Default Articles",
-    json_path: "/metadata/default_metadata.json",
-  };
+  const { title, json_path } = getCategoryConfig(category);
 
   if (!fileName) {
     return (
@@ -54,28 +27,7 @@ export default async function CategoryPage({
 }
 
 export async function generateStaticParams() {
-  const categories = ["life", "program", "travel", "other"];
-  const paths = [];
-
-  categories.forEach((category) => {
-    const dirPath = path.join(
-      process.cwd(),
-      "public",
-      "article",
-      category
-    );
-
-    if (fs.existsSync(dirPath)) {
-      const files = fs.readdirSync(dirPath);
-
-      files.forEach((file) => {
-        paths.push({
-          category,
-          fileName: path.parse(file).name,
-        });
-      });
-    }
-  });
-
-  return paths;
+  return CATEGORIES.flatMap((category) =>
+    getArticleFileNames(category).map((fileName) => ({ category, fileName }))
+  );
 }

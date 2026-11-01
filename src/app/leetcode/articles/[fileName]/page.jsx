@@ -1,9 +1,8 @@
-import fs from "fs";
-import path from "path";
 import Article from "@/components/Article";
 import { Suspense } from "react";
+import { getArticleFileNames, LEETCODE_JSON_PATH } from "@/lib/categories";
 
-export default async function CategoryPage({ params }) {
+export default async function ArticlePage({ params }) {
   const { fileName } = await params;
 
   if (!fileName) {
@@ -12,17 +11,11 @@ export default async function CategoryPage({ params }) {
 
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <Article category="leetcode" fileName={fileName} json_path="/metadata/leetcode_metadata.json" title="Leetcode Notes" />
+      <Article category="leetcode" fileName={fileName} json_path={LEETCODE_JSON_PATH} title="Leetcode Notes" />
     </Suspense>
   );
-  
 }
 
 export async function generateStaticParams() {
-  const articlesPath = path.join(process.cwd(), "public", "article", "leetcode");
-  const filenames = fs.readdirSync(articlesPath);
-
-  return filenames.map((file) => ({
-    fileName: file.replace(".md", ""),
-  }));
+  return getArticleFileNames("leetcode").map((fileName) => ({ fileName }));
 }

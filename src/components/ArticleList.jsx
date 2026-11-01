@@ -2,20 +2,19 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { useSearchParams } from "next/navigation";
 import Pagination from "./Pagination";
+import PaperTexture from "./PaperTexture";
 
-const articlesPerPage = 24;
+const ARTICLES_PER_PAGE = 24;
 
-export default function ArticleListPage({ json_path, title, category }) {
+export default function ArticleList({ json_path, title, category }) {
   const [articles, setArticles] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [realTitle, setTitle] = useState(title);
-  
-  const router = useRouter();
+  const [displayTitle, setDisplayTitle] = useState(title);
+
   const searchParams = useSearchParams();
   const selectedTag = searchParams.get("tag");
 
@@ -27,21 +26,21 @@ export default function ArticleListPage({ json_path, title, category }) {
           ? data.filter((article) => article.tags && article.tags.includes(selectedTag))
           : data;
 
-          const sortedData = filteredData.sort((a, b) => new Date(b.date) - new Date(a.date));
+        const sortedData = filteredData.sort((a, b) => new Date(b.date) - new Date(a.date));
 
         setArticles(sortedData);
-        setTitle(selectedTag || title);
+        setDisplayTitle(selectedTag || title);
       })
       .catch((error) => {
         console.error("Error loading metadata.json:", error);
       });
   }, [json_path, selectedTag]);
 
-  const totalPages = Math.ceil(articles.length / articlesPerPage);
+  const totalPages = Math.ceil(articles.length / ARTICLES_PER_PAGE);
 
   const currentArticles = articles.slice(
-    (currentPage - 1) * articlesPerPage,
-    currentPage * articlesPerPage
+    (currentPage - 1) * ARTICLES_PER_PAGE,
+    currentPage * ARTICLES_PER_PAGE
   );
 
   const goToPage = (page) => {
@@ -53,15 +52,7 @@ export default function ArticleListPage({ json_path, title, category }) {
 return (
   <main className="min-h-screen bg-[#f4efe6] px-5 pb-28 pt-32 sm:px-8 lg:px-12">
     {/* 紙張紋理 */}
-    <div
-      aria-hidden
-      className="pointer-events-none fixed inset-0 opacity-25"
-      style={{
-        backgroundImage:
-          "radial-gradient(circle at 1px 1px, rgba(70,61,49,0.12) 0.65px, transparent 0)",
-        backgroundSize: "6px 6px",
-      }}
-    />
+    <PaperTexture />
 
     <div className="relative mx-auto max-w-[1450px]">
       {/* 頁面標題 */}
@@ -76,7 +67,7 @@ return (
         </p>
 
         <h1 className="mt-4 font-serif text-5xl font-normal tracking-[-0.025em] text-[#29251f] sm:text-6xl">
-          {realTitle}
+          {displayTitle}
         </h1>
 
         <div className="mx-auto mt-7 h-px w-14 bg-[#786f63]/35" />
