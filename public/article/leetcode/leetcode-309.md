@@ -4,7 +4,7 @@ date: "2025-06-27"
 author: James
 tags: Array,DP
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: 700ab870-715a-491f-80c3-f6e897081e90

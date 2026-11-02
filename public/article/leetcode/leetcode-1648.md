@@ -4,7 +4,7 @@ date: "2025-03-11"
 author: James
 tags: Binary Search,Amazon
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: e3a7cfbd-9901-486e-b9b0-bd2f707fe5b1

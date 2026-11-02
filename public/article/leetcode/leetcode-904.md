@@ -4,7 +4,7 @@ date: "2025-11-21"
 author: James
 tags: Array,Sliding Window,Hash Table,Google
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: 25c0f6de-6424-40e6-9133-86759919d608

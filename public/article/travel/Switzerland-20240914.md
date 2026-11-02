@@ -3,7 +3,7 @@ title: 瑞士四天自由行全紀錄
 date: "2024-12-06"
 author: James
 tags: Switzerland,Bern,Interlaken,Jungfraujoch
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/scenary.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/scenary.webp
 description: "瑞士就是一個全世界物價最高的地方，原本以為荷蘭、英國已經很貴了，但這裡的物價體感幾乎是這些地區的 1.5 ~ 2 倍。不過即便是這樣，瑞士還是目前所有國家中我最喜歡的，之前聽到瑞士不外乎就是幾個關鍵字，一堆有錢人、手錶、阿爾卑斯山、然後壯闊的大自然，這次就來實地感受一下。"
 readTime: 3
 id: 0ed7e7dd-8da2-4ef3-a7d5-5880ba608fb1
@@ -16,7 +16,7 @@ id: 0ed7e7dd-8da2-4ef3-a7d5-5880ba608fb1
 這裡的風景一天比一天精彩，從小鎮、湖泊、山谷、雪山甚麼都有，而這裡先據透一下，個人是最喜歡第二天的湖跟第四天的雪景。
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/start.webp" alt="夕陽下的車站，這幾天天氣真的不錯" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/start.webp" alt="夕陽下的車站，這幾天天氣真的不錯" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -29,7 +29,7 @@ id: 0ed7e7dd-8da2-4ef3-a7d5-5880ba608fb1
 ### 時鐘樓 Clock Tower
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Clock-Tower.webp" alt="老城區的時鐘樓" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/clock-tower.webp" alt="老城區的時鐘樓" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -42,7 +42,7 @@ id: 0ed7e7dd-8da2-4ef3-a7d5-5880ba608fb1
 ### 百年巧克力店 Confiserie Tschirren
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Confiserie-Tschirren.webp" alt="Confiserie Tschirren 很有質感的包裝" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/confiserie-tschirren.webp" alt="Confiserie Tschirren 很有質感的包裝" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -55,7 +55,7 @@ TRUFFE CLASSIQUE 經典松露巧克力是這裡的鎮店之寶，據說全世界
 ### 伯恩大教堂 Berner Münster
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/church.webp" alt="伯恩大教堂外面的樣子，中間看起來好像剛好在施工" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/church.webp" alt="伯恩大教堂外面的樣子，中間看起來好像剛好在施工" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -64,7 +64,7 @@ TRUFFE CLASSIQUE 經典松露巧克力是這裡的鎮店之寶，據說全世界
 來到歐洲真的看太多教堂了，我其實已經有點不知道這些教堂的差異到底在哪裡了，但沒想到這座教堂還是世界文化遺產，太震驚了。這座教堂可以登頂，爬 344 階階梯就可以登上去，他除了是哥德式設計之外，也是全瑞士最高的鐘塔。
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/church-2.webp" alt="伯恩大教堂內部 layout" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/church-2.webp" alt="伯恩大教堂內部 layout" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -83,7 +83,7 @@ TRUFFE CLASSIQUE 經典松露巧克力是這裡的鎮店之寶，據說全世界
 瑞士物價真的太高了，我們完全不敢進餐廳吃飯，所以這幾天的伙食全部都是在這裡的一間連鎖 supermarket - Coop 解決。基本上我覺得我們已經 view 過所有我們看的到可以吃的東西，想辦法用住處的微波爐搞出我們的午餐晚餐，沒辦法還是個窮學生。
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/coop.webp" alt="Coop 裡面我覺得超好吃的阿華田麵包" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/coop.webp" alt="Coop 裡面我覺得超好吃的阿華田麵包" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -106,7 +106,7 @@ TRUFFE CLASSIQUE 經典松露巧克力是這裡的鎮店之寶，據說全世界
 這條路線是 Interlaken 市區主要一條觀光的路線，雖然不會經過湖邊，不過可以直接地感受到瑞士市區的街景，瑞士的房子給人一種很簡約很舒服的感覺，不會太過華麗，感覺他們的生活有山有湖特別悠閒。
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Interlaken.webp" alt="路邊的大草原" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/interlaken.webp" alt="路邊的大草原" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -115,7 +115,7 @@ TRUFFE CLASSIQUE 經典松露巧克力是這裡的鎮店之寶，據說全世界
 山上下來的滑翔傘都會降落在這個地方，不過滑翔傘要玩的話大概要台幣 6000，後來想想就算了。
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Interlaken-2.webp" alt="沿路上的一條河，顏色真的很漂亮" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/interlaken-2.webp" alt="沿路上的一條河，顏色真的很漂亮" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -124,7 +124,7 @@ TRUFFE CLASSIQUE 經典松露巧克力是這裡的鎮店之寶，據說全世界
 雖然看不到湖，但是這條路會路過一條河，推測是直接流進去湖水裡的，而河水的顏色很夢幻，整條河都是這種非常乾淨的綠。
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Interlaken-3.webp" alt="被偷拍了！" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/interlaken-3.webp" alt="被偷拍了！" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
   </figcaption>
 </figure>
@@ -136,7 +136,7 @@ Interlaken Ost 火車站位置🔗：[https://maps.app.goo.gl/xg3CzF1uNM1cqgWG8]
 ### Speiz
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Speiz-4.webp" alt="從 Speiz 下公車之後的路邊，這一整天天氣超好拍照起來光線都很完美" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/speiz-4.webp" alt="從 Speiz 下公車之後的路邊，這一整天天氣超好拍照起來光線都很完美" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -145,7 +145,7 @@ Interlaken Ost 火車站位置🔗：[https://maps.app.goo.gl/xg3CzF1uNM1cqgWG8]
 原本的計畫是要從 Interlaken Ost 搭船回 Speiz，但是因為我們到的時候剛好是他們中午休息時間，所以就乾脆搭公車回 Speiz，先在這裡晃晃之後再搭船回 Interlaken。
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Speiz.webp" alt="這些房子的主視覺都很一致，不知道是不是特別設計過的" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/speiz.webp" alt="這些房子的主視覺都很一致，不知道是不是特別設計過的" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -154,7 +154,7 @@ Interlaken Ost 火車站位置🔗：[https://maps.app.goo.gl/xg3CzF1uNM1cqgWG8]
 路上的風景感覺隨便拍都是電影畫面，有點可惜自己竟然不會攝影。
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Speiz-2.webp" alt="走下去的一個運動區，游泳池、球場等等應有盡有，很熱鬧" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/speiz-2.webp" alt="走下去的一個運動區，游泳池、球場等等應有盡有，很熱鬧" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -163,7 +163,7 @@ Interlaken Ost 火車站位置🔗：[https://maps.app.goo.gl/xg3CzF1uNM1cqgWG8]
 這裡還滿熱鬧的，走到湖邊有個運動區，各種運動都有，也可以看到很多人帶小孩來這裡玩。
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Speiz-3.webp" alt="港口邊上的風景" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/speiz-3.webp" alt="港口邊上的風景" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -175,15 +175,7 @@ Interlaken Ost 火車站位置🔗：[https://maps.app.goo.gl/xg3CzF1uNM1cqgWG8]
 
 如果天氣許可的話，這邊強烈建議這趟要搭！因為我覺得不管在哪裡看到的 view 都不會比在湖上看到的還要壯觀，不過重點是 friend ticket 有涵蓋搭船的部分，所以又更划算了。
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-  <iframe 
-    src="https://www.youtube.com/embed/cEmyxzFA5Kk" 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-    encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-  </iframe>
-</div>
-<div style="height: 15px;"></div>
+<video src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/interlaken-lake-cruise.mp4"></video>
 
 整片的湖水都是很清澈的藍色，在船上你會感覺被世界包圍，四周全部都是山峰，真的很壯觀。這個季節山峰的地方已經開始出現雪了，所以可以看到整片的湖、整片的山谷、還有零星的雪山，陽光撒下來有第一次感覺到波光粼粼是什麼感覺，絕對是夢幻級的美景。
 
@@ -194,7 +186,7 @@ Speiz 碼頭位置🔗：[https://maps.app.goo.gl/f1CVn5aabsBrcYas9](https://map
 下船後可以走來這個攻略上會出現的橋，這天的天氣真的很好，整條河綠的很清澈很舒服。
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Golden-Bridge.webp" alt="從來沒有看過這種顏色的小河，也算是開了眼界" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/golden-bridge.webp" alt="從來沒有看過這種顏色的小河，也算是開了眼界" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -202,7 +194,7 @@ Speiz 碼頭位置🔗：[https://maps.app.goo.gl/f1CVn5aabsBrcYas9](https://map
 
 這是岸邊的景，當下我只知道這是綠色很好看，但是旅伴們很堅持說這是 Tiffany 綠哈哈。但真的滿好奇為什麼不同的水會呈現不一樣的顏色，像國王湖就是整片的綠色，這裡就是整片藍色，但是到小河上又呈現這種不一樣的綠色，覺得很特別。
 
-![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Golden-Bridge-2.webp)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/golden-bridge-2.webp)
 
 Golden Bridge 位置🔗：[https://maps.app.goo.gl/fbefporhP9WqZGgJA](https://maps.app.goo.gl/fbefporhP9WqZGgJA)
 
@@ -220,21 +212,21 @@ Golden Bridge 位置🔗：[https://maps.app.goo.gl/fbefporhP9WqZGgJA](https://m
 
 據說是瀑布小鎮，如果沒有往內走太多的話主要道路其實短短的，不過滿可惜的是這個季節瀑布的水量稍嫌少了些。瑞士小鎮的房子都很簡約很可愛，顏色都很乾淨不會太華麗，很有童話故事的感覺。
 
-![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Lauterbrunnen.webp)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/lauterbrunnen.webp)
 
 剛下火車站就可以看到這裡的街景，光看路上的人跟天色應該就可以感覺到今天超冷了。遠遠的就可以看到雪山，感覺跟這些雪山又更進一步了。
 
-![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Lauterbrunnen-2.webp)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/lauterbrunnen-2.webp)
 
 走一走會先到這個最有名的拍照地點，可以看到整個山谷、背後的雪山、還有旁邊的瀑布，不過瀑布因為季節的關係水流量還真的有點小，倒是可惜了。
 
-![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Lauterbrunnen-3.webp)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/lauterbrunnen-3.webp)
 
 而這裡差不多是我們走到的最遠處，我覺得很特別的是這裡的河水竟然也是這種很特別的綠，即使今天陽光沒有很強。
 
-![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Lauterbrunnen-5.webp)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/lauterbrunnen-5.webp)
 
-![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Lauterbrunnen-4.webp)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/lauterbrunnen-4.webp)
 
 Viewpoint 位置🔗：[https://maps.app.goo.gl/4av5oghQZj48Pvg68](https://maps.app.goo.gl/4av5oghQZj48Pvg68)
 
@@ -242,11 +234,11 @@ Viewpoint 位置🔗：[https://maps.app.goo.gl/4av5oghQZj48Pvg68](https://maps.
 
 溫根小鎮的自然景觀應該不是最厲害的，但我一定要介紹這些超好玩的東西。
 
-![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Wengen.webp)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/wengen.webp)
 
 這個大西洋棋是可以下的ㄟ，如果不是因為時間壓力的話，我一定會抓一個路人跟他一起玩，然後不知道為什麼這裡的很多店都可以看到有在賣西洋棋。
 
-![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Wengen-2.webp)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/wengen-2.webp)
 
 這邊有好多這種奇妙的小東西，像是這種軌道球，據說可以跟服務中心買球來玩但我不是很確定。
 
@@ -254,15 +246,7 @@ Viewpoint 位置🔗：[https://maps.app.goo.gl/4av5oghQZj48Pvg68](https://maps.
 
 我們原本計劃是要到米倫小鎮的，但是怕當地有下雪我們裝備會不夠，所以就改到格林德瓦。我們沒有停留太久，算是直奔夢幻山坡去的，因為大家也累了，不過在這裏我們真正感受到壯觀的山谷，勞特布龍嫩的山谷也好看，但跟這裡比起來就是小巫見大巫了。
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-  <iframe 
-    src="https://www.youtube.com/embed/f6w114pzoVE" 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-    encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-  </iframe>
-</div>
-<div style="height: 15px;"></div>
+<video src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/truffersbrunnen.mp4"></video>
 
 這裡就是夢幻山坡，可以感覺到他們的山坡的綠色都綠的很一致，山上的房子主視覺也都很一致的感覺，所以就會覺得很夢幻，很像電影才會出現的場景。
 
@@ -284,25 +268,17 @@ Viewpoint 位置🔗：[https://maps.app.goo.gl/4av5oghQZj48Pvg68](https://maps.
 
 ### Grindwald Terminal
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-  <iframe 
-    src="https://www.youtube.com/embed/6OvC_zgx0Bs" 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-    encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-  </iframe>
-</div>
-<div style="height: 15px;"></div>
+<video src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/grindelwald-terminal.mp4"></video>
 
 這是 Grindwald Terminal 旁邊的山景，今天山上的雲普遍都偏低，我們嚴重懷疑那些雲的位置就是我們原本要去的 Männlichen，所以必須得要上到這些雲層之上才會有藍天。阿爾卑斯山山谷都很大很壯觀，草的顏色也很乾淨，搭配中間隨機的幾叢小木屋，真的是超級漂亮的風景。
 
 ### Grindwald Terminal - Eigergletscher
 
-![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Jungfraujoch-4.webp)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/jungfraujoch-4.webp)
 
 纜車才上不到一半的高度就覺得這趟值得了，世界之大是我們無法想像的，在纜車中就覺得自己被群山環繞，站在制高點俯瞰整座山谷，非常壯觀。而且這邊的纜車跟在台灣看到的很不一樣，除了車廂很大可以容納超過 20 個人，落地窗的設計可以讓我們可以看到更廣闊的視野。
 
-![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Jungfraujoch-5.webp)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/jungfraujoch-5.webp)
 
 這就是要上到雲層前的景象了，往下看的話就是整片綠色的山谷，往上就會進到雪線，也會直接衝進去雲層裡，再來搭火車穿過雲層就會到少女峰了。
 
@@ -314,49 +290,41 @@ Viewpoint 位置🔗：[https://maps.app.goo.gl/4av5oghQZj48Pvg68](https://maps.
 
 終於說到重點了，當天大概 -2 度，下火車之後路線他們都有規劃好，基本上很好逛，逛一圈剛好可以回火車站，雖然當地人是建議我們停留 minimum 2 hours，但是因為我們太晚上了怕趕不上末班車所以只停留一個小時，算是有點趕啦但是該逛的其實也都有看到。
 
-![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Jungfraujoch.webp)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/jungfraujoch.webp)
 
 第一個室外點這邊可以看到滑雪道的痕跡所以推測這裡應該是個滑雪場，久沒看到雪景真的很興奮，可以看到遠處疑似是冰川的峽谷，晴空萬里的藍天、還有整片的雪山超感動。我本來以為美中不足的是我穿運動鞋上雪山，不過到現場反而覺得還好，本來以為鞋子會濕掉甚麼的，不過因為可以行走的地方大部分遊客都已經踏過了，所以都是硬的那種冰，不太會弄濕我的鞋子，但是抓地力很不好，配上山上很強的風，真的是挺滑的，但還是很值得。
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-  <iframe 
-    src="https://www.youtube.com/embed/Kt2qrR4l42g" 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-    encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-  </iframe>
-</div>
-<div style="height: 15px;"></div>
+<video src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/jungfraujoch.mp4"></video>
 
 看大太陽底下的雪景感覺還是要帶太陽眼鏡比較好，當天太緊急了也太興奮了完全沒有注意到這件事，回頭想想好像真的有點亮。
 
 ### 觀景台
 
-![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Jungfraujoch-2.webp)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/jungfraujoch-2.webp)
 
 再來繼續走可以走到一個觀景台，這邊是我最喜歡的風景，往右看是一大片冰川跟雪山，壯觀的峽谷一覽無遺，往左看是成片的雲海，可以想像我們的纜車跟火車就是穿透這一片雲到峰頂的，真的很壯觀。
 
-![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Jungfraujoch-6.webp)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/jungfraujoch-6.webp)
 
 往右看就是這樣，非常大一片峽谷，超級壯觀，瞬間就覺得來這趟值得了。
 
-![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Jungfraujoch-7.webp)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/jungfraujoch-7.webp)
 
 ### 冰宮 Ice Palace
 
 而這裡也有一個冰屋可以參觀，冰屋這種東西，對台灣人來說吸引力是很大的，因為台灣沒有地方有足夠的氣溫去搭建一個不會融化的冰屋，所以基本上很難看到這種東西。以前都會思考這種冰屋到底會不會有融化的問題，所以第一次參觀這種冰屋超有趣，用手摸一下那些冰牆，也比想像中還要堅固跟滑順，氣溫在零下也根本就不會有融化的問題，超好玩的！
 
-![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Ice-Palace-2.webp)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/ice-palace-2.webp)
 
 長長的走道無窮無盡，其實走到這因為一個人都沒有，有一點怕怕的不知道會不會被關在這裡還怎樣的哈哈，出來玩總是會東想西想。
 
-![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Ice-Palace.webp)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/ice-palace.webp)
 
 這裡很多像這樣的冰雕，選一個我最喜歡的分享給大家！
 
 ### 瑞士國旗
 
-![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/Jungfraujoch-3.webp)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/jungfraujoch-3.webp)
 
 最後就是這個大多攻略都會提到的，排很久然後來跟別人的國旗拍照，算是一個打卡點。很多人其實不是很喜歡這裡，因為據說旺季要排很久就為了跟別人的國旗拍照，但我可能運氣滿好的，淡季又加上鄰近關閉時間其實沒有很多人，很快就可以拍照，但其實最大的問題不是人，而是山上的風。因為這邊是有點坡度的，我因為沒有任何準備就衝上山所以鞋子抓地力很差，完全不知道怎麼在風超大的山頂上站穩，下山的時候乾脆直接坐地上溜下來，但其實滿好玩的。
 

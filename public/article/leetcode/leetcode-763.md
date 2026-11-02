@@ -4,7 +4,7 @@ date: "2025-07-14"
 author: James
 tags: Two Pointers,String,Greedy,Hash Table
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: cb8f62b6-8573-4ceb-a780-781d83982bee

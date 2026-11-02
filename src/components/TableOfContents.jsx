@@ -16,6 +16,15 @@ export default function TableOfContents({ containerRef, content }) {
     const container = containerRef.current;
     if (!container) return;
 
+    // 同名標題（例如兩個「Implementation」）會產生相同的 id，
+    // 第二個以後加上 -1、-2，讓連結和反白都能對到正確的段落
+    const seen = new Map();
+    for (const el of container.querySelectorAll("[id]")) {
+      const count = seen.get(el.id) ?? 0;
+      seen.set(el.id, count + 1);
+      if (count > 0) el.id = `${el.id}-${count}`;
+    }
+
     let chapter = 0;
     const found = [...container.querySelectorAll("h2[id], h3[id]")]
       .filter((el) => el.id)

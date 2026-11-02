@@ -4,7 +4,7 @@ date: "2025-07-23"
 author: James
 tags: Priority Queue
 difficulty: Easy
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: 90e96ba8-0d4b-4594-98cb-180a5b038e08

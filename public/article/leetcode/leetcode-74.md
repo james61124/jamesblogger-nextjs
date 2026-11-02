@@ -4,7 +4,7 @@ date: "2025-06-13"
 author: James
 tags: Array,Binary Search,Matrix
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 2
 id: 24b12445-447b-45c8-a682-a8027e5b51b1

@@ -4,7 +4,7 @@ date: "2025-10-13"
 author: James
 tags: Math,Greedy,Bit Manipulation
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: c76b040b-a497-4b0f-a8a0-08ba6382bb3f

@@ -4,7 +4,7 @@ date: "2025-10-09"
 author: James
 tags: Tree,Binary Tree,DFS,BFS,Top Interview
 difficulty: Easy
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: c94fb564-870e-409e-8908-16a604e03a69

@@ -4,7 +4,7 @@ date: "2025-11-20"
 author: James
 tags: Array,Simulation,Google
 difficulty: Easy
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: 9f2a702f-7897-457f-b284-1cc609ec7035

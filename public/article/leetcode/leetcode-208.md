@@ -4,7 +4,7 @@ date: "2025-04-15"
 author: James
 tags: Hash Table,Trie,String,Design
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: c5a92c0a-9eb8-4043-a7d4-c1d637ec4c22

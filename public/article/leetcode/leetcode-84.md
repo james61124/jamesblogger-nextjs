@@ -4,7 +4,7 @@ date: "2025-06-13"
 author: James
 tags: Array,Stack,Monotonic Stack
 difficulty: Hard
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 2
 id: 19d43068-cb57-41c4-b4e6-30e32331319a

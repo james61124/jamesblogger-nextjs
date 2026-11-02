@@ -4,7 +4,7 @@ date: "2025-06-09"
 author: James
 tags: Array,Binary Search
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""  
 readTime: 2
 id: 85d0374d-41a5-43ef-b4c9-15b9614ac548

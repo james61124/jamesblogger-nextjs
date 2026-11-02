@@ -4,7 +4,7 @@ date: "2025-04-01"
 author: James
 tags: Math,DP,Combinatorics
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: 7fcfe017-54a9-4ea6-b10d-805096903b06

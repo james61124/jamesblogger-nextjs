@@ -4,7 +4,7 @@ date: "2025-05-23"
 author: James
 tags: Linked List,Math,Recursion,Google,Meta
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 proficiency: 3
 readTime: 2

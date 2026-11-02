@@ -4,7 +4,7 @@ date: "2025-05-12"
 author: James
 tags: DP,Bit Manipulation
 difficulty: Easy
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 2
 id: 71ce1eae-4666-47c0-81c7-3f49e06ac5c9

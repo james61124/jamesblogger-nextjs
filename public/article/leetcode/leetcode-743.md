@@ -4,7 +4,7 @@ date: "2025-07-14"
 author: James
 tags: Graph,Shortest Path,Dijkstra
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: b20cd333-940b-4ace-beea-7ce66a152642

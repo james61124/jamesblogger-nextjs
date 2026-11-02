@@ -4,7 +4,7 @@ date: "2025-01-29"
 author: James
 tags: DP,Array,Binary Search,Greedy
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 proficiency: 1
 readTime: 3

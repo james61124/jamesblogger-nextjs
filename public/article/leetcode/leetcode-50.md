@@ -4,7 +4,7 @@ date: "2025-06-12"
 author: James
 tags: Math,Base Conversion
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 2
 id: a550fbf7-a92b-44db-9750-1b297e8b44e6

@@ -4,7 +4,7 @@ date: "2025-06-15"
 author: James
 tags: Array,Backtracking
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 2
 id: e9169e7b-79e7-4b9b-aad2-5cfe1f440944

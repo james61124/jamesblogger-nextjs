@@ -4,7 +4,7 @@ date: "2025-03-12"
 author: James
 tags: String,Amazon
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: 42c868bb-93b6-432a-a50f-2e7560a0fe43

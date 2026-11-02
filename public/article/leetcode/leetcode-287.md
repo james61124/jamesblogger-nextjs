@@ -4,7 +4,7 @@ date: "2025-06-26"
 author: James
 tags: Array,Two Pointers,Floyd's Cycle Detection
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: a5fe6f35-870a-4064-a7b8-5467b6e2a5c9

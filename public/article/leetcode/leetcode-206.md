@@ -4,7 +4,7 @@ date: "2025-04-15"
 author: James
 tags: Linked List,Recursion
 difficulty: Easy
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: 60327a19-4c5c-4585-b7b7-dfdbdd1e368b

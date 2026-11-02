@@ -4,7 +4,7 @@ date: "2025-09-01"
 author: James
 tags: Array,String,Top Interview,Google,Meta
 difficulty: Easy
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 proficiency: 4
 readTime: 2

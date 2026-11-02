@@ -4,7 +4,7 @@ date: "2025-07-15"
 author: James
 tags: Graph,Shortest Path,Dijkstra,Bellman-Ford
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: f121ee3a-c2b3-44fb-a90d-fe02b5ccf382

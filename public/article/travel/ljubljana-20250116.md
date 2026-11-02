@@ -134,15 +134,7 @@ Skocjan Caves 要事先預約，他一定要有導覽才有辦法進去，然後
 
 坐火車進去的感覺差不多像這樣，真的整個洞都是鐘乳石非常壯觀，他們會在路徑上的一些地方設燈，不過雖然很漂亮，我感覺為了觀光設這些燈跟開發道路應該還是滿傷生態的。
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-  <iframe 
-    src="https://www.youtube.com/embed/J0aJqveuCFw" 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-    encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-  </iframe>
-</div>
-<div style="height: 15px;"></div>
+<video src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/ljubljana-20250116/skocjan-caves.mp4"></video>
 
 這些鐘乳石平均一百年只能長 1 公分，很難想像這些超大的柱子都是經過多少年的積累，我個人是覺得非常壯觀，很像是走進去一個奇幻王國。
 

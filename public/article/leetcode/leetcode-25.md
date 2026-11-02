@@ -4,7 +4,7 @@ date: "2025-06-09"
 author: James
 tags: Linked List,Head Insertion Method
 difficulty: Hard
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 2
 id: b8f60208-6fd7-42d3-b120-225e925fe369

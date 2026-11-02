@@ -4,7 +4,7 @@ date: "2025-11-18"
 author: James
 tags: String,Stack,Recursion,Google
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: 75cc2324-93e0-4111-9892-2f1b8f588d34

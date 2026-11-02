@@ -4,7 +4,7 @@ date: "2025-06-18"
 author: James
 tags: Array,Bit Manipulation
 difficulty: Easy
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 2
 id: 1d89eb36-d40c-451a-9ca3-774d6dc184b1

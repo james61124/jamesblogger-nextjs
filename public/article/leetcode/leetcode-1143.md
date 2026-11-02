@@ -4,7 +4,7 @@ date: "2025-03-01"
 author: James
 tags: String,DP
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 proficiency: 3
 readTime: 3
@@ -26,7 +26,7 @@ id: 55801888-d78c-4abc-ad13-5b5f80dffb31
 
 首先 dp 先初始化為 0，因為如果是空字串的話 LCS 長度就是 0。下圖以 text1 = "ace"，text2 = "abcde" 來示範。
 
-![DP](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-1143/DP-Table.webp)
+![DP](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-1143/dp-table.webp)
 
 雙迴圈 iterate 過兩個 string，左邊這張圖表示當兩個 char 一樣的時候，LCS 的長度就是拿掉這兩個 char 的 LCS 的長度再加一，也就是 dp[i+1][j+1] = dp[i][j] + 1。
 

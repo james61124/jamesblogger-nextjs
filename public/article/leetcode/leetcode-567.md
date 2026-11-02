@@ -4,7 +4,7 @@ date: "2025-07-04"
 author: James
 tags: Hash Table,Sliding Window
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: 4e278199-7c5a-4946-9e3d-5d069991121c

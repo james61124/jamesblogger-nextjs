@@ -4,7 +4,7 @@ date: "2025-09-25"
 author: James
 tags: Linked List,Tree,Binary Tree,BFS,Top Interview
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: 3804de0f-f2fb-49a5-8085-1984db9a8ee7

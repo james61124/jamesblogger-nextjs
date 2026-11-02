@@ -4,7 +4,7 @@ date: "2025-04-16"
 author: James
 tags: Array,String,Backtracking,Trie,Matrix
 difficulty: Hard
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: 97c478d8-f956-4551-aa22-c161a2adf431

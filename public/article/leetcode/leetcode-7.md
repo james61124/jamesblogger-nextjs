@@ -4,7 +4,7 @@ date: "2025-11-18"
 author: James
 tags: Math,Google
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: 30421edb-021b-4702-bb2e-67e7a0b95a67

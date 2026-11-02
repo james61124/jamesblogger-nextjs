@@ -4,7 +4,7 @@ date: "2025-05-27"
 author: James
 tags: Backtracking,Hash Table,String
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 2
 id: 81931f80-50f5-477b-ad3e-445542851348

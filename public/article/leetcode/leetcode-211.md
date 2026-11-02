@@ -4,7 +4,7 @@ date: "2025-04-16"
 author: James
 tags: String,DFS,Trie,Design
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: e45a6fa3-0418-404a-b232-294d5670e972

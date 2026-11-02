@@ -4,7 +4,7 @@ date: "2025-06-17"
 author: James
 tags: String,DP,Backtracking,Manacher
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 2
 id: 690e674b-9ca6-4cdb-8352-7a3cf5311bfa

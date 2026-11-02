@@ -4,7 +4,7 @@ date: "2025-07-02"
 author: James
 tags: Hash Table,Linked List,Priority Queue
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: 28e08145-b30d-4548-a2a6-3caccdf69553

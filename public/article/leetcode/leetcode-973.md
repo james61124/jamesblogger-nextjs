@@ -4,7 +4,7 @@ date: "2025-07-17"
 author: James
 tags: Priority Queue, Quick Select
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: 02a78a8b-e4f7-4610-bf95-e9532c0ccf68

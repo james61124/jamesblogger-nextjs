@@ -42,7 +42,7 @@ Digit DP 通常可以用來解 [left, right] 區間內符合某條件的數值�
 > `isLimit`：如果 `isLimit` 是 `true`，代表下一層不是從 0 看到 9，而是有個上限，例如說這題的區間是 [0, 67]，那如果十位數那層已經到 6 了，表示個位數那層只能從 0 跑到 7，不能跑到 9<br>
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/digit-dp/isLimit.webp" alt="Digit-DP" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/digit-dp/islimit.webp" alt="Digit-DP" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
   </figcaption>
 </figure>
@@ -50,7 +50,7 @@ Digit DP 通常可以用來解 [left, right] 區間內符合某條件的數值�
 > `isNum`：首先我們要知道 Digit DP 是不容許有前導 0 出現的，因此如果這個 node 還不是數字的話，`isNum` 就會是 `false`，那就會被跳過不會填成 0，就像圖上那些 null 一樣，而他們的下一層就要從 1 開始，而不能從 0 開始。
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/digit-dp/isNum.webp" alt="Digit-DP" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/digit-dp/isnum.webp" alt="Digit-DP" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
   </figcaption>
 </figure>

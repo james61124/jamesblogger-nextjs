@@ -4,7 +4,7 @@ date: "2025-04-25"
 author: James
 tags: Array,Prefix Sum,Top Interview
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 proficiency: 2
 readTime: 3

@@ -87,14 +87,18 @@ export const markdownComponents: Components = {
 
   p: ({ node, children, ...props }) => {
     const hastNode = node as {
-      children?: Array<{ tagName?: string }>;
+      children?: Array<{ tagName?: string; type?: string; value?: string }>;
     };
 
-    const isImageOnly =
-      hastNode?.children?.length === 1 &&
-      hastNode.children[0]?.tagName === "img";
+    // 圖片和影片會渲染成 <figure>，不能包在 <p> 裡，否則會 hydration error
+    const meaningful = (hastNode?.children || []).filter(
+      (child) => !(child.type === "text" && !child.value?.trim())
+    );
+    const isMediaOnly =
+      meaningful.length === 1 &&
+      (meaningful[0]?.tagName === "img" || meaningful[0]?.tagName === "video");
 
-    if (isImageOnly) return <>{children}</>;
+    if (isMediaOnly) return <>{children}</>;
 
     return (
       <p

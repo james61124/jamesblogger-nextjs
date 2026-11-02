@@ -4,7 +4,7 @@ date: "2025-05-20"
 author: James
 tags: String,Two Pointers,Manacher,EAC
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 2
 id: b54bfe50-3f19-4275-afce-3a3463462a52

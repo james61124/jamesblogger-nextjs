@@ -4,7 +4,7 @@ date: "2025-05-06"
 author: James
 tags: Quick Select,Priority Queue,Google
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 2
 id: fff1c216-c9b5-4b0d-a78a-a791b88bbd1c

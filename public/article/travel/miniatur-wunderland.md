@@ -35,23 +35,15 @@ id: 8c4f3b28-ad21-4ce6-9f66-1ed6b4d4faf0
 ## 普羅旺斯
 
 <!-- <video width="100%" controls>
-  <source src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/Provence.mp4" type="video/mp4">
+  <source src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/provence.mp4" type="video/mp4">
 </video> -->
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-  <iframe 
-    src="https://www.youtube.com/embed/bJNLMbKPfn4" 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-    encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-  </iframe>
-</div>
-<div style="height: 15px;"></div>
+<video src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/provence-2.mp4"></video>
 
 這應該是普羅旺思薰衣草，整片的薰衣草很漂亮，最特別的是這裡的火車竟然會動，然後這些火車不是進到山洞就沒事了，過山洞之後後面還有一整片的鐵路網絡在運行，所以這些都只是冰山一角
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/Provence-1.webp" alt="整片的薰衣草超壯觀" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/provence-1.webp" alt="整片的薰衣草超壯觀" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -62,18 +54,10 @@ id: 8c4f3b28-ad21-4ce6-9f66-1ed6b4d4faf0
 這邊有一個我覺得很棒的巧思，每隔可能 15 分鐘就會天黑一次，各個景都會設計白天模式跟夜晚模式，真的很用心，我們因為逛很慢很慢，很想把每個細節都欣賞到，所以幾乎每一個點的白天跟晚上都有看到。
 
 <!-- <video width="100%" controls>
-  <source src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Miniatur-Wunderland/boat.mp4" type="video/mp4">
+  <source src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/boat.mp4" type="video/mp4">
 </video> -->
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-  <iframe 
-    src="https://www.youtube.com/embed/accDqfWifow" 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-    encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-  </iframe>
-</div>
-<div style="height: 15px;"></div>
+<video src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/ship.mp4"></video>
 
 裡面就是很多這種小動畫，超好玩。
 
@@ -108,7 +92,7 @@ id: 8c4f3b28-ad21-4ce6-9f66-1ed6b4d4faf0
 羅馬競技場，最經典的羅馬地標，真的做得很細節，他的平台，地下室的石牆，還有外圍的觀眾席，都跟記憶中的一模一樣。
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/Collis-Palatium.webp" alt="帕拉提諾之丘" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/collis-palatium.webp" alt="帕拉提諾之丘" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -135,7 +119,7 @@ id: 8c4f3b28-ad21-4ce6-9f66-1ed6b4d4faf0
 梵諦岡就是一個包在羅馬裡面的超小國家，從羅馬進去約等於穿越一道柵欄就可以了，他甚至沒有擋起來，結果這樣一個酷酷的國家竟然是我們的邦交國，也是我們唯一在歐洲的邦交國。
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/Pompeii.webp" alt="龐貝城" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/pompeii.webp" alt="龐貝城" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -183,29 +167,21 @@ id: 8c4f3b28-ad21-4ce6-9f66-1ed6b4d4faf0
 
 再來一定要介紹這個火山，這是一個只有在夜晚模式才會有的小彩蛋，把火山噴發做得栩栩如生，岩漿的流動、高溫的黑煙、還有噴發的聲音，火山噴發的各種面向都被做出來了，真的超厲害。
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-  <iframe 
-    src="https://www.youtube.com/embed/r6hmvMZ2bVw" 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-    encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-  </iframe>
-</div>
-<div style="height: 15px;"></div>
+<video src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/volcano.mp4"></video>
 
 ## 瑞士 Switzerland
 
 義大利的下一個空間就是瑞士，跟前面很不一樣，瑞士這區把上下層打通用一個超高的天花板把山跟峽谷裝起來，超級壯觀。我在猜這些山應該是水泥做的，裡面可能是鋼筋之類的東西把它的骨架撐起來，超厲害。
 
-![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/Switzerland.webp)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/switzerland.webp)
 
 就是像這樣超壯觀，整片都是山。不過也因為是自然景觀的關係，夜晚模式的瑞士看點就比較沒有這麼多。
 
-![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/Switzerland-2.webp)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/switzerland-2.webp)
 
 這種整片的東西我真的可以站在這裡看很久。
 
-![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/Switzerland-3.webp)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/switzerland-3.webp)
 
 這是從二樓俯視的全景，瑞士的好山好水都被整個複製下來了。
 
@@ -225,7 +201,7 @@ id: 8c4f3b28-ad21-4ce6-9f66-1ed6b4d4faf0
 ## 新天鵝堡
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/Neuschwanstein-Castle.webp" alt="" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/neuschwanstein-castle.webp" alt="" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -234,7 +210,7 @@ id: 8c4f3b28-ad21-4ce6-9f66-1ed6b4d4faf0
 到漢堡的前一個禮拜剛去新天鵝堡玩，所以特別有感覺，不然平常可能不會注意到這個。
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/Neuschwanstein-Castle-2.webp" alt="" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/neuschwanstein-castle-2.webp" alt="" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -247,18 +223,10 @@ id: 8c4f3b28-ad21-4ce6-9f66-1ed6b4d4faf0
 在經過前面這些洗禮之後看到這個大機場，我們就很期待這些飛機會不會飛起來，這邊圍了一堆人大家在這裡等超久，結果他還真的飛起來了超帥
 
 <!-- <video width="100%" controls>
-  <source src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Miniatur-Wunderland/boat.mp4" type="video/mp4">
+  <source src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/boat.mp4" type="video/mp4">
 </video> -->
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-  <iframe 
-    src="https://www.youtube.com/embed/wGwaigJJpI0" 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-    encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-  </iframe>
-</div>
-<div style="height: 15px;"></div>
+<video src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/airport.mp4"></video>
 
 除了超大的飛機場以外，我們還發現了一個小彩蛋，這裡竟然有飛機起飛降落的時刻表，而且跟真正模型飛機起飛時間跟航空公司都不會落差太大。
 
@@ -274,7 +242,7 @@ id: 8c4f3b28-ad21-4ce6-9f66-1ed6b4d4faf0
 美國的場景其實其實不太多不曉得為什麼，可能歐洲國家真的太多了，景點也相對多很多。
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/USA.webp" alt="" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/usa.webp" alt="" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
 
   </figcaption>
@@ -283,7 +251,7 @@ id: 8c4f3b28-ad21-4ce6-9f66-1ed6b4d4faf0
 這應該是美國大峽谷吧我猜，美國的建築風格跟自然景觀跟歐洲的真的截然不同，從下面的拉斯維加斯也可以看的出來，但是跟歐洲比起來，總感覺美國的部分做得比歐洲稍微陽春一點點，不知道是不是錯覺。
 
 <figure>
-  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/USA-2.webp" alt="拉斯維加斯" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/usa-2.webp" alt="拉斯維加斯" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -303,22 +271,14 @@ id: 8c4f3b28-ad21-4ce6-9f66-1ed6b4d4faf0
 </figure>
 
 <!-- <video width="100%" controls>
-  <source src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Miniatur-Wunderland/boat.mp4" type="video/mp4">
+  <source src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/boat.mp4" type="video/mp4">
 </video> -->
 <!-- {{< youtube fZuf7-4XTF0 >}}
 <div style="height: 15px;"></div> -->
 
 水上的很多東西都是會動的，已經看了這麼多區會動的東西了還是覺得很神奇，每一區都會有不同的驚喜可以看。
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-  <iframe 
-    src="https://www.youtube.com/embed/fZuf7-4XTF0" 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-    encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-  </iframe>
-</div>
-<div style="height: 15px;"></div>
+<video src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/norway.mp4"></video>
 
 不過除了這艘船其實還有很多船都會動，超喜歡這個設計。
 

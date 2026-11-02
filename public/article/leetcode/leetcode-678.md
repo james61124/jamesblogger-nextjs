@@ -4,7 +4,7 @@ date: "2025-07-04"
 author: James
 tags: Greedy
 difficulty: Medium
-image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/leetcode.webp
 description: ""
 readTime: 3
 id: 2eb0689a-546f-482f-8457-03716c8c45c8
