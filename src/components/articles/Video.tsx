@@ -6,7 +6,7 @@ type VideoProps = {
 
 export default function Video({ src, caption, poster }: VideoProps) {
   return (
-    <figure className="relative left-1/2 my-14 w-[min(94vw,1000px)] -translate-x-1/2">
+    <figure className="my-14">
       <video
         controls
         playsInline

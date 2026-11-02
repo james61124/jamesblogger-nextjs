@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import ShareAndCopy from "@/components/ShareAndCopy";
 import PaperTexture from "@/components/PaperTexture";
+import TableOfContents from "@/components/TableOfContents";
 import MarkdownRenderer from "@/components/articles/MarkdownRenderer";
 import CommentSection from "@/components/comments/CommentSection";
 import {
@@ -50,6 +51,7 @@ export default function Article({ category, fileName, json_path, title }) {
   const [user, setUser] = useState(null);
   const [liked, setLiked] = useState(false);
   const [likeCount, setLikeCount] = useState(0);
+  const articleRef = useRef(null);
 
   const meta = useMemo(
     () => Object.fromEntries(Object.entries(metadata).map(([k, v]) => [k, clean(v)])),
@@ -227,7 +229,7 @@ export default function Article({ category, fileName, json_path, title }) {
   }
 
   return (
-    <main className="relative min-h-screen overflow-hidden bg-[#f4efe6] px-5 pb-28 pt-32 sm:px-8 lg:px-12">
+    <main className="relative min-h-screen overflow-x-clip bg-[#f4efe6] px-5 pb-28 pt-32 sm:px-8 lg:px-12">
       <PaperTexture />
 
       <div className="relative mx-auto max-w-[1260px]">
@@ -285,17 +287,11 @@ export default function Article({ category, fileName, json_path, title }) {
         <div className="mx-auto mt-12 grid max-w-[1160px] grid-cols-1 gap-14 lg:grid-cols-[180px_minmax(0,760px)_1fr]">
           <aside className="hidden lg:block">
             <div className="sticky top-28">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-[#8b7f70]">
-                Story
-              </p>
-              <div className="mt-5 h-px w-10 bg-[#7d7366]/25" />
-              <p className="mt-5 font-serif text-sm italic leading-6 text-[#746c61]">
-                Travel Notes
-              </p>
+              <TableOfContents containerRef={articleRef} content={content} />
             </div>
           </aside>
 
-          <article className="min-w-0">
+          <article ref={articleRef} className="min-w-0">
             <MarkdownRenderer content={content} />
 
             <section className="mt-20 border-y border-[#746b5e]/14 py-12 text-center">

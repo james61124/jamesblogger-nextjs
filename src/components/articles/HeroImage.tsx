@@ -8,7 +8,7 @@ type HeroImageProps = {
 
 export default function HeroImage({ src, alt = "", caption }: HeroImageProps) {
   return (
-    <figure className="relative left-1/2 my-16 w-[min(94vw,1280px)] -translate-x-1/2">
+    <figure className="my-16">
       <Image
         src={src}
         alt={alt}

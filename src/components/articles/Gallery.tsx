@@ -7,7 +7,7 @@ type GalleryProps = {
 
 export default function Gallery({ images }: GalleryProps) {
   return (
-    <figure className="relative left-1/2 my-14 w-[min(94vw,1180px)] -translate-x-1/2">
+    <figure className="my-14">
       <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">
         {images.map((image, index) => (
           <div

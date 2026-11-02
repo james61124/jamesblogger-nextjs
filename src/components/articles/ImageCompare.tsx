@@ -8,7 +8,7 @@ type ImageCompareProps = {
 
 export default function ImageCompare({ before, after }: ImageCompareProps) {
   return (
-    <figure className="relative left-1/2 my-14 w-[min(94vw,1100px)] -translate-x-1/2">
+    <figure className="my-14">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {[["Before", before], ["After", after]].map(([label, image]) => {
           const item = image as ArticleImage;

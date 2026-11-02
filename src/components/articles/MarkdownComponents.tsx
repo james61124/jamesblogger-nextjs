@@ -168,7 +168,11 @@ export const markdownComponents: Components = {
     }
 
     if (classes.includes("two-images")) {
-      return <TwoImages images={images} />;
+      const variant =
+        (getProperty(hastNode, "dataVariant") ||
+          getProperty(hastNode, "data-variant") ||
+          "default") as "default" | "portrait" | "mixed";
+      return <TwoImages images={images} variant={variant} />;
     }
 
     if (classes.includes("three-images")) {

@@ -9,7 +9,7 @@ export default function ThreeImages({ images }: ThreeImagesProps) {
   const visible = images.slice(0, 3);
 
   return (
-    <figure className="relative left-1/2 my-14 w-[min(94vw,1180px)] -translate-x-1/2">
+    <figure className="my-14">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {visible.map((image, index) => (
           <div
