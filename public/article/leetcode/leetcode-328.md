@@ -4,7 +4,7 @@ date: "2025-12-02"
 author: James
 tags: Linked List,Google
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: a6d2a93e-c4aa-4cba-8110-d8d5f9093db4

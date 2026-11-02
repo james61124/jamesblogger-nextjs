@@ -40,3 +40,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+
+# media migration: original photos and converted output (not in git)
+/backup/media-originals/
+/backup/media-web/
+/public/images/

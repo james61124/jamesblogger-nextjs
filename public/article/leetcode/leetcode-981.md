@@ -4,7 +4,7 @@ date: "2025-07-17"
 author: James
 tags: String,Hash Table,Binary Search,Design
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: 23b610e5-ddbb-49bf-b71b-9c2cfd734f5b

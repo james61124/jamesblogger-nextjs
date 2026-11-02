@@ -13,12 +13,14 @@ export default function EditorialImage({
   priority = false,
   fullBleed = false,
 }: EditorialImageProps) {
-  const isExternal = src.startsWith("http://") || src.startsWith("https://");
+  // R2 上的圖片在 next.config 的 remotePatterns 裡，可以照常經過 next/image 優化
+  const isR2 = src.startsWith("https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/");
+  const isExternal = !isR2 && (src.startsWith("http://") || src.startsWith("https://"));
   return (
     <figure
       className={
         fullBleed
-          ? "relative left-1/2 my-14 w-[min(94vw,1280px)] -translate-x-1/2"
+          ? "my-14"
           : "my-12"
       }
     >

@@ -3,7 +3,7 @@ title: "[ Algorithm ] Shortest Path - Bellman-Ford | 核心概念與 Leetcode �
 date: "2025-07-15"
 author: James
 tags: Algorithm,Shortest Path,Bellman-Ford
-image: /images/program/algorithm.png
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/algorithm.webp
 description: "Bellman-Ford 是一個 single source shortest path 的 Algorithm，運用在 weighted graph 上，可以找到 single source 到其他所有 nodes 的 shortest path，因此會輸出一個 dist[i] 代表從 starting point 到 node `i` 的最短距離，他跟 Dijkstra 最大的差別是，他可以運用在有 negative edges 的 graph 上，不過如果出現 negative cycle 就不行。"
 readTime: 2
 id: be9d5c54-f36e-4a95-9433-79c80267535d

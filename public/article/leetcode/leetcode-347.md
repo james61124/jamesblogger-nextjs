@@ -4,7 +4,7 @@ date: "2025-03-24"
 author: James
 tags: Array,Hash Table,Queue,Priority Queue,Partial Sorting
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 proficiency: 3
 readTime: 3

@@ -3,7 +3,7 @@ title: "[ Algorithm ] Manacher's Algorithm | 核心概念與 Leetcode 題型解�
 date: "2025-05-22"
 author: James
 tags: Algorithm,String Matching,EAC,Manacher
-image: /images/program/algorithm.png
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/algorithm.webp
 description: "Manacher Algorithm 底層其實還是 EAC，但是可以利用回文的特性省略掉一些重複的部分，進而讓時間複雜度降低。"
 readTime: 2
 id: 5de46de6-2cb9-4e13-919d-d90fd32ab07c

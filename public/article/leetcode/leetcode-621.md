@@ -4,7 +4,7 @@ date: "2025-07-04"
 author: James
 tags: Hash Table,Greedy
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: 76252cbe-79a9-46c7-9d62-fa4c61ab1698

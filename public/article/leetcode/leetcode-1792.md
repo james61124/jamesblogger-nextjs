@@ -4,7 +4,7 @@ date: "2025-09-21"
 author: James
 tags: Greedy,Priority Queue,Google,Meta
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: e48ce33b-b8ce-421a-a1cd-777dfd1620bb

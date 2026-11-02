@@ -4,7 +4,7 @@ date: "2025-07-02"
 author: James
 tags: Array,DP,0/1 Knapsack Problem
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: 8cfd2ba5-e195-4f1b-b97d-276b73a1e2ee

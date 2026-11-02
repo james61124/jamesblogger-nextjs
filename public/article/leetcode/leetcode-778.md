@@ -4,7 +4,7 @@ date: "2025-07-14"
 author: James
 tags: Matrix,Shortest Path, Dijkstra
 difficulty: Hard
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: 203ccf65-9bec-49be-9a3d-836f33f093d4

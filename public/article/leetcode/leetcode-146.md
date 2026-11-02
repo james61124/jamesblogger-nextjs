@@ -4,7 +4,7 @@ date: "2025-06-25"
 author: James
 tags: Hash Table,Linked List,Double Linked List,Google
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 2
 id: 9989beee-7281-4574-ae0f-7009166ff4bd

@@ -4,7 +4,7 @@ date: "2025-12-03"
 author: James
 tags: Array,Greedy,Google
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: 2855b541-fc97-4822-92dc-b1dca6f6bd39

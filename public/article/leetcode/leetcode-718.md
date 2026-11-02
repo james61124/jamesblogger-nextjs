@@ -4,7 +4,7 @@ date: "2025-03-01"
 author: James
 tags: Array,DP
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 2
 id: 92df9a70-20b1-451a-a511-c1ceeff3936f
@@ -23,7 +23,7 @@ id: 92df9a70-20b1-451a-a511-c1ceeff3936f
 
 這題可以透過 Double-Sequence Linear DP 來解，因為他的輸入是兩條 array，所以我們就開一個 dp[i+1][j+1] 來代表以 nums1[i] 為結尾及以 nums2[j] 為結尾的最長 repeated subarray 長度。
 
-![DP](/images/leetcode/leetcode-718/dp-table.jpg)
+![DP](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-718/dp-table.webp)
 
 用這張圖來看就很清楚，雙層迴圈 iterate 兩個 array，如果兩個 char 不一樣 ( 最左邊那張圖 )，那就直接填 0，如果一樣 ( 中間跟右邊的圖 )，那目前 repeated subarray 的長度就是左上角那格 + 1，意思就是拿掉這兩個 char 的狀態下的 subarray 長度 + 1，最後整個 dp table 最大的數值就是 maximum length of repeated subarray。
 

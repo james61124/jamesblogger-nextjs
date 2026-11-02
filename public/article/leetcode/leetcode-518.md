@@ -4,7 +4,7 @@ date: "2025-07-03"
 author: James
 tags: Array,DP,Unbounded Knapsack Problem,Google
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: 5fd039cd-feec-423f-81b5-81d1213fb8c1

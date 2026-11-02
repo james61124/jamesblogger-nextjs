@@ -4,7 +4,7 @@ date: "2025-11-18"
 author: James
 tags: Array,Priority Queue,Google
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: 20d21b05-1b4f-4966-b070-81cc19bc57b0

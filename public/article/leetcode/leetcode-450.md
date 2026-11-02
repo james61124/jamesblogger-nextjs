@@ -4,7 +4,7 @@ date: "2025-03-21"
 author: James
 tags: Tree,Binary Tree,Binary Search Tree
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 proficiency: 5
 readTime: 2

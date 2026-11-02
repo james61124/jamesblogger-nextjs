@@ -3,7 +3,7 @@ title: "[ Algorithm ] Backtracking | 核心概念與 Leetcode 題型解析"
 date: "2025-03-30"
 author: James
 tags: Algorithm,Backtracking
-image: /images/program/algorithm.png
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/algorithm.webp
 description: "Backtracking 的想法很簡單，我通常會把他想成 DFS，每一個 level 可以有至多 n 種 actions，當看完一種要回到現在這個狀態繼續看下一種，那這種「現在的 decision 不合適或是不夠，就撤回這個 decision 繼續嘗試其他 action」，就是 Backtracking。"
 readTime: 2
 id: ec1df475-8ae9-4234-9d20-b2c256725d66
@@ -14,7 +14,7 @@ Backtracking 的想法很簡單，我通常會把他想成 DFS，每一個 level
 通常遇到「列出所有組合」類型的題目，就很有可能是 Backtracking，舉 [ Leetcode 78 ] Subsets 為例，題目要求我們找出一個 array 中的所有 subset，所以每一個 index 都會面臨「選 / 不選」的決策，當看完一種決策要回到現在這個狀態繼續看下一種，這就是一題很典型的 Backtracking。
 
 <figure>
-  <img src="/images/leetcode/leetcode-78/decision-tree.png" alt="Array = [1, 2, 3], Decision Tree 的圖解" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-78/decision-tree.webp" alt="Array = [1, 2, 3], Decision Tree 的圖解" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>

@@ -4,7 +4,7 @@ date: "2025-06-16"
 author: James
 tags: String,DP
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 2
 id: 1fc69cf1-dd9f-4ff2-921c-359ccf41fb7c

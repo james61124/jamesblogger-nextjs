@@ -4,7 +4,7 @@ date: "2025-03-03"
 author: James
 tags: Array,Sliding Window
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: fed0a6e1-b43c-4336-be63-fd61380a529d

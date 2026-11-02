@@ -3,7 +3,7 @@ title: "[ Algorithm ] Dynamic Programming (六) - Digit DP | 核心概念與 Lee
 date: "2025-06-02"
 author: James
 tags: Algorithm,DP,Digit DP
-image: /images/program/algorithm.png
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/algorithm.webp
 description: "Digit DP 指的是在數字上做 DP，這裡的數字指的是個位、十位、百位等等。"
 readTime: 2
 id: 477abb3a-ee8d-45fd-8715-7cfb6f3b4283
@@ -22,7 +22,7 @@ Digit DP 通常可以用來解 [left, right] 區間內符合某條件的數值�
 簡單來說，對於每一個區間而言，可以畫出類似這樣子的 Tree，那每一條 trajectory 就是一個數字，利用 dfs 走完每一個數字就可以計算出我們要的答案了。
 
 <figure>
-  <img src="/images/program/digit-dp/tree.png" alt="Digit-DP" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/digit-dp/tree.webp" alt="Digit-DP" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
   </figcaption>
 </figure>
@@ -34,7 +34,7 @@ Digit DP 通常可以用來解 [left, right] 區間內符合某條件的數值�
 > `i`：表示現在在第 i 層
 
 <figure>
-  <img src="/images/program/digit-dp/i.png" alt="Digit-DP" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/digit-dp/i.webp" alt="Digit-DP" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
   </figcaption>
 </figure>
@@ -42,7 +42,7 @@ Digit DP 通常可以用來解 [left, right] 區間內符合某條件的數值�
 > `isLimit`：如果 `isLimit` 是 `true`，代表下一層不是從 0 看到 9，而是有個上限，例如說這題的區間是 [0, 67]，那如果十位數那層已經到 6 了，表示個位數那層只能從 0 跑到 7，不能跑到 9<br>
 
 <figure>
-  <img src="/images/program/digit-dp/isLimit.png" alt="Digit-DP" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/digit-dp/isLimit.webp" alt="Digit-DP" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
   </figcaption>
 </figure>
@@ -50,7 +50,7 @@ Digit DP 通常可以用來解 [left, right] 區間內符合某條件的數值�
 > `isNum`：首先我們要知道 Digit DP 是不容許有前導 0 出現的，因此如果這個 node 還不是數字的話，`isNum` 就會是 `false`，那就會被跳過不會填成 0，就像圖上那些 null 一樣，而他們的下一層就要從 1 開始，而不能從 0 開始。
 
 <figure>
-  <img src="/images/program/digit-dp/isNum.png" alt="Digit-DP" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/digit-dp/isNum.webp" alt="Digit-DP" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
   </figcaption>
 </figure>

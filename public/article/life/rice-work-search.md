@@ -3,7 +3,7 @@ title: 美國留學找工紀錄與分享
 date: "2026-07-10"
 author: James
 tags: United States,Grad School,MCS
-image: /images/life/rice-work-search/work.png
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/rice-work-search/work.webp
 description: "來 Rice 第一年最主要的目標就是找 summer intern，因為如果畢業後暫時想先留美國工作的話，有美國 base 的 summer intern 會好操作很多。所以這篇主要記錄找工吧，有時候真的會懷疑自己在台灣待得好好的，工作輕鬆找為什麼要來這裡找自己麻煩，因為競爭太激烈了，所以很多細節要注意，最麻煩的是拿不到面試根本就沒有辦法知道哪個環節出問題，有時候其實也就是運氣問題也不是什麼環節出問題，只能想辦法把各種細節做好，然後準備好面對隨時會出現的面試。"
 id: 25d26ba7-7ed8-45a0-b9db-77d4d5c8cc03
 ---
@@ -14,7 +14,7 @@ id: 25d26ba7-7ed8-45a0-b9db-77d4d5c8cc03
 
 ## Resume
 
-![](/images/life/rice-work-search/resume.png)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/rice-work-search/resume.webp)
 
 首先最重要的就是履歷，履歷上硬實力的區別就不在這裡討論了，但在自己有限的 work experience 跟 project 身上，還是要想辦法把自己優勢凸顯出來，像是每一點 bullet point 都要很認真修過，一些基本觀念我覺得大家都知道，要放跟 highlight technical keywords、要有可以量化的 impact、句型要統一動詞開頭等等，但除了這些，我後來發現如果太過依賴 AI 給出來的東西沒有認真思考過應該怎麼寫，很容易寫出來的東西會太 generic。
 
@@ -22,7 +22,7 @@ id: 25d26ba7-7ed8-45a0-b9db-77d4d5c8cc03
 
 ## Linkedin
 
-![](/images/life/rice-work-search/linkedin.png)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/rice-work-search/linkedin.webp)
 
 再來就是 Linkedin 的經營，我很努力想要把 Linkedin 打造成一個看起來很專業的人在用的，從開始經營後我就開始瘋狂按 connection 想辦法把自己 connect 數量提升到 500+，因為 500 以上就只會顯示 500+，然後寫好我自己的各個 section 像是 About, Work Experience, Skills 等等，接下來還得發文跟在其他人的文底下互動，最後花錢跑去拍了形象照跟換了一個不錯看的封面照，我覺得有沒有用很難說，這感覺已經變成一個門檻，就是大家都會做的，但我覺得除了會增加一點點機會讓 recruiter 看見自己，真正跟別人建立 connection 的時候也會更有底氣。
 
@@ -32,7 +32,7 @@ id: 25d26ba7-7ed8-45a0-b9db-77d4d5c8cc03
 
 ## Job Fair
 
-![](/images/life/rice-work-search/job-fair.png)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/rice-work-search/job-fair.webp)
 
 Rice 的 Job Fair 真的不怎麼樣啊必須說，扣掉非 software 的再扣掉沒有 sponsor 的，剩下的公司感覺一隻手的算得出來，不過不得不說這東西是真的挺重要的，我上半年幾乎什麼面試都沒有，海投跟白丟的一樣，但唯二拿到的面試都是 Job Fair 聊出來的。
 
@@ -44,7 +44,7 @@ Rice 的 Job Fair 真的不怎麼樣啊必須說，扣掉非 software 的再扣�
 
 ## Referral & Coffee Chat
 
-![](/images/life/rice-work-search/coffee-chat.png)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/rice-work-search/coffee-chat.webp)
 
 我自己其實沒有很直接的受益於這兩項，但我不否認這兩件事情的價值。
 
@@ -56,7 +56,7 @@ Rice 的 Job Fair 真的不怎麼樣啊必須說，扣掉非 software 的再扣�
 
 ---
 
-![](/images/life/rice-work-search/interview.png)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/rice-work-search/interview.webp)
 
 通常會先拿到 online assessment，俗稱 OA，這個每間公司其實大同小異，就是線上做做題，比較重要的應該是拿到 OA 我會在最短的時間內把它寫完，最大化我比同期的人更早拿到面試的可能，雖然不一定但畢竟先做完就比較有機會先被往前推進度。
 

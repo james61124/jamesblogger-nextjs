@@ -4,7 +4,7 @@ date: "2025-09-10"
 author: James
 tags: Array,Two Pointers,Google
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: c9953a2f-65d5-4b0a-a656-a61eb51d6a55

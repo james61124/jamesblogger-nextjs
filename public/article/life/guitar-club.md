@@ -3,7 +3,7 @@ title: 交大吉他社回顧
 date: "2024-02-23"
 author: James
 tags: NYCU,Guitar Club
-image: /images/life/guitar-club/guitar-club.jpg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/guitar-club/guitar-club.webp
 description: "擔任交大吉他社社長的一年，是我第一次真正帶領一個團隊，也讓我重新理解什麼是責任、決策與領導。"
 id: 48604402-7cb2-4014-9db1-d580227144bf
 ---

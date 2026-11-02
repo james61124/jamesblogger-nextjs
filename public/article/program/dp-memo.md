@@ -3,7 +3,7 @@ title: "[ Algorithm ] Dynamic Programming (二) - Memorization | 核心概念與
 date: "2025-05-28"
 author: James
 tags: Algorithm,DP,Memorization
-image: /images/program/algorithm.png
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/algorithm.webp
 description: "最基礎的 DP，就是從遞迴講起，有一種題目一看就是用遞迴解，但是如果就只有這樣的話會碰到很多重複的狀態，因此大大增加時間複雜度，舉一個最經典的例子，我們要計算一個 Fibonacci 數列的第 n 為的數字，最簡單的方式就是遞迴："
 readTime: 2
 id: 211e1496-2ad6-426e-945a-d5e2b19385da
@@ -21,7 +21,7 @@ int fib(int n) {
 但是這樣做會遇到很大的問題，舉例來說，紅色圈起來的這塊被重複計算到了，實際上他們做的是一樣的事情
 
 <figure>
-  <img src="/images/program/dp-memo/fibonacci.png" alt="Memo" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/dp-memo/fibonacci.webp" alt="Memo" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     Fibonacci 中重複計算的部分
   </figcaption>

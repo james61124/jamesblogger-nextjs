@@ -4,7 +4,7 @@ date: "2025-05-20"
 author: James
 tags: Tree,DFS,Binary Tree,KMP
 difficulty: Easy
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 proficiency: 1
 readTime: 2

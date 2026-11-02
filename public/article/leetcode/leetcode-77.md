@@ -4,7 +4,7 @@ date: "2025-10-13"
 author: James
 tags: Backtracking,Top Interview
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: 6b8eb84d-d7ed-492b-b87f-99efeaf25980

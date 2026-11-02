@@ -4,7 +4,7 @@ date: "2025-04-08"
 author: James
 tags: Tree,DFS,Binary Tree,DP
 difficulty: Hard
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 proficiency: 4
 readTime: 3

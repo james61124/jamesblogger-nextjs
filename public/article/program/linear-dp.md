@@ -3,7 +3,7 @@ title: "[ Algorithm ] Dynamic Programming (三) - Linear DP | 核心概念與 Le
 date: "2025-05-29"
 author: James
 tags: Algorithm,DP,Linear DP
-image: /images/program/algorithm.png
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/algorithm.webp
 description: "當一個問題可以被分成「線性順序」的多個階段，而每個階段只依賴前面幾個階段的狀態，就是 Linear DP"
 readTime: 2
 id: a0453b78-23ce-402d-9574-0fe770337d4f

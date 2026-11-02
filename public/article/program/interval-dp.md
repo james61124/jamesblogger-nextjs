@@ -3,7 +3,7 @@ title: "[ Algorithm ] Dynamic Programming (五) - Interval DP | 核心概念與 
 date: "2025-06-01"
 author: James
 tags: Algorithm,DP,Interval DP
-image: /images/program/algorithm.png
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/algorithm.webp
 description: "狀態描述如果是一個區間的 DP，沒有特別整理過第一次遇到都會想不太到，這邊整理了兩種遇到 Interval DP 可以去思考的方向。"
 readTime: 2
 id: 781c41ee-3ab0-4027-bc5c-f991e1435f7c

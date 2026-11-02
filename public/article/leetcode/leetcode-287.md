@@ -4,7 +4,7 @@ date: "2025-06-26"
 author: James
 tags: Array,Two Pointers,Floyd's Cycle Detection
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: a5fe6f35-870a-4064-a7b8-5467b6e2a5c9
@@ -35,7 +35,7 @@ nums[i] -> nums[nums[i]] -> nums[nums[nums[i]]]
 我們來畫一張圖
 
 <figure>
-  <img src="/images/leetcode/leetcode-287/cycle.png" alt="Cycle" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-287/cycle.webp" alt="Cycle" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
 
   </figcaption>

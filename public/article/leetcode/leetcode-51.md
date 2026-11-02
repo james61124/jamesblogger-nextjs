@@ -4,7 +4,7 @@ date: "2025-03-22"
 author: James
 tags: Array,Backtracking,Bit Manipulation
 difficulty: Hard
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 2
 id: 9ea52413-9f92-4a2d-ac3f-0a0f26f429d1

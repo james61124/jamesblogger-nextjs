@@ -4,7 +4,7 @@ date: "2025-06-10"
 author: James
 tags: Array,Backtracking
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 proficiency: 4
 readTime: 2
@@ -28,7 +28,7 @@ id: dbd131e3-d54f-4f54-8e87-a1600de752b3
 如果有看完上面那篇文章，Backtracking 的過程可以畫出一個 decision tree，每一層都有很多 actions 可以選擇，以這題來說，第 i 層就是每一個答案中第 i 個數字，舉例來說，candidates = [1, 1, 3, 4, 6, 7, 10]，第一層能夠放所有的數字，第二層開始就只能放 parent 的 index 後面的數字，畫出來會像這樣
 
 <figure>
-  <img src="/images/leetcode/leetcode-40/decision-tree.png" alt="Decision Tree" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-40/decision-tree.webp" alt="Decision Tree" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     Decision Tree
   </figcaption>

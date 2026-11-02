@@ -4,7 +4,7 @@ date: "2025-07-08"
 author: James
 tags: Binary Search
 difficulty: Easy
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: 0ade77c4-85fc-40b6-bd3a-5475bbee8f9f

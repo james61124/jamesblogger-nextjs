@@ -4,7 +4,7 @@ date: "2025-06-12"
 author: James
 tags: Array,Backtracking
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 2
 id: ca6f7716-22cb-4b27-999c-f8e576df9222
@@ -25,7 +25,7 @@ id: ca6f7716-22cb-4b27-999c-f8e576df9222
 看完上面的文章會發現，backtracking 可以寫出一個 decision tree，而我們需要去思考每一個節點會有哪些 actions 可以走，假設 nums = [1, 2, 3, 4]，每一層理論上 1, 2, 3, 4 都可以選，但是同一條路徑上數字不能重複選，也就是說一個 nodes 的 actions 是全部的數字扣除上面已經用過的部分，所以時間複雜度是 `O(n!)`。
 
 <figure>
-  <img src="/images/leetcode/leetcode-46/decision-tree.png" alt="decision-tree" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-46/decision-tree.webp" alt="decision-tree" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
 
   </figcaption>

@@ -4,7 +4,7 @@ date: "2025-11-17"
 author: James
 tags: Array,Hash Table
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: af8cffa8-9ce1-4f60-8ea7-9ea77f97801c

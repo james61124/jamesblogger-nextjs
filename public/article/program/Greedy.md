@@ -3,7 +3,7 @@ title: "[ Algorithm ] Greedy | 核心概念與 Leetcode 題型解析"
 date: "2025-04-20"
 author: James
 tags: Algorithm,Greedy
-image: /images/program/algorithm.png
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/algorithm.webp
 description: "Greedy Algorithm 最核心的價值就是每一步都選擇當前狀況下最優的選擇，期望能夠得到全局最優解，這種算法不考慮未來的後果，只專注於當前的局部最優解。"
 readTime: 2
 id: e58efb63-11e0-49d3-b15c-a5a42512d7bf

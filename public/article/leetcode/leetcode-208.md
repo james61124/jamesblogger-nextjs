@@ -4,7 +4,7 @@ date: "2025-04-15"
 author: James
 tags: Hash Table,Trie,String,Design
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: c5a92c0a-9eb8-4043-a7d4-c1d637ec4c22
@@ -17,7 +17,7 @@ id: c5a92c0a-9eb8-4043-a7d4-c1d637ec4c22
 ## 問題分析 - Trie 介紹
 
 <figure>
-  <img src="/images/leetcode/leetcode-208/trie.png" alt="Trie" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-208/trie.webp" alt="Trie" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     Trie 架構圖
   </figcaption>

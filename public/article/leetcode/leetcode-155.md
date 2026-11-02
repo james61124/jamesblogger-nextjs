@@ -4,7 +4,7 @@ date: "2025-06-24"
 author: James
 tags: Stack,Design
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 proficiency: 2
 readTime: 2

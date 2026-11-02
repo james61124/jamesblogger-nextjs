@@ -4,7 +4,7 @@ date: "2025-03-08"
 author: James
 tags: DFS,BFS,Graph,Hash Table
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 proficiency: 4
 readTime: 3

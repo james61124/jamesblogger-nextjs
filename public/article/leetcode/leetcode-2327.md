@@ -4,7 +4,7 @@ date: "2025-09-21"
 author: James
 tags: DP,Google,Meta
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: da941484-44ae-4f14-80d3-ac59c51f10e1

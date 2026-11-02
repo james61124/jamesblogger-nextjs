@@ -4,7 +4,7 @@ date: "2025-03-22"
 author: James
 tags: Array,Backtracking,Bit Manipulation
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 proficiency: 5
 readTime: 2
@@ -20,7 +20,7 @@ id: 8efe1fcf-a999-470c-9b59-81554c3c3314
 如果要找所有的 subset，每一個 node 就會面臨「選 / 不選」的決策，當看完一種決策要回到現在這個狀態繼續看下一種，那這種「現在的 decision 不合適或是不夠，就撤回這個 decision 繼續嘗試其他 action」，就是 Backtracking。
 
 <figure>
-  <img src="/images/leetcode/leetcode-78/decision-tree.png" alt="backtracking" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-78/decision-tree.webp" alt="backtracking" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     Array = [1, 2, 3], Decision Tree 的圖解
   </figcaption>

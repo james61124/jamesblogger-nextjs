@@ -4,7 +4,7 @@ date: "2025-06-13"
 author: James
 tags: Array,Stack,Monotonic Stack
 difficulty: Hard
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 2
 id: 19d43068-cb57-41c4-b4e6-30e32331319a
@@ -25,7 +25,7 @@ id: 19d43068-cb57-41c4-b4e6-30e32331319a
 那要如何利用 heights[i] 計算出屬於他的 area 呢？只需要找到他「上一個比他小的 heights[i]」以及「下一個比他小的 heights[i]」即可，中間夾起來的區間就符合「heights[i] 為最小值」的性質，而 area 就是（ 區間寬度 ）* heights[i]。
 
 <figure>
-  <img src="/images/leetcode/leetcode-84/intro.png" alt="Intro" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-84/intro.webp" alt="Intro" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
   
   </figcaption>

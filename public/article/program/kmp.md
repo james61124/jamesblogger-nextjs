@@ -3,7 +3,7 @@ title: "[ Algorithm ] KMP Algorithm | 核心概念與 Leetcode 題型解析"
 date: "2025-09-05"
 author: James
 tags: Algorithm,KMP
-image: /images/program/algorithm.png
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/algorithm.webp
 description: "如果想要在一個 string `text` 底下判斷 string `pattern` 是不是他的 substring，暴力解非常直覺，舉個例："
 readTime: 2
 id: 4d2f65b4-5de6-4f50-ae75-0c76664eb4af
@@ -28,7 +28,7 @@ step n :               a a a b
 事實上當我們比較完一次 `pattern`，由於前面的部分都讀過了，一些重複的部分是不用重新比較的，舉例來說：
 
 <figure>
-  <img src="/images/program/kmp/initial.png" alt="kmp" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/kmp/initial.webp" alt="kmp" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
   </figcaption>
 </figure>
@@ -40,7 +40,7 @@ step n :               a a a b
 我們要怎麼判斷 `pattern` 每次可以跳過多少字母 `text` 的 pointer 才不用走回去重新比較呢？我們會計算出一個 `lps` array，我們先不管他是怎麼來的，KMP Algorithm 在發現 `text` 跟 `pattern` 字母不一樣的時候，會去查找上一個相同的字母的 `lps` 的數字，這個數字代表的是「下一個 step 可以跳過多少字母」，看下面的例子
 
 <figure>
-  <img src="/images/program/kmp/lps.png" alt="kmp" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/kmp/lps.webp" alt="kmp" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
   </figcaption>
 </figure>
@@ -84,7 +84,7 @@ for (int i = 0, j = 0; i < n;) {
 但這邊要注意，如果第一個字母就匹配失敗，那這個 step 就沒有所謂的「上一個匹配成功的字母的 lps」，也就是說，`text` 的 pointer 就要直接往下移動到下一個字母繼續比較，畫成圖就是這樣
 
 <figure>
-  <img src="/images/program/kmp/match-fail.png" alt="kmp" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/kmp/match-fail.webp" alt="kmp" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
   </figcaption>
 </figure>
@@ -120,7 +120,7 @@ for (int i = 0, j = 0; i < n;) {
 再來我們要來看 `lps` 是怎麼產生的，我們先來看一下 `lps` 的本質，他可以讓 `pattern` 跳過一部分的字母不用重新比較，一定是因為跳過的部分他上一個 step 已經比較過了，至於這是為什麼呢？是因為上一個 step 比較過表示他們擁有「相同的 prefix 跟 suffix」，prefix 就是前綴，表示加在 string 前面的字母，suffix 就是後綴，就是加在 string 後面的字母，來看看是什麼意思。
 
 <figure>
-  <img src="/images/program/kmp/lps-explanation.png" alt="kmp" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/kmp/lps-explanation.webp" alt="kmp" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
   </figcaption>
 </figure>
@@ -130,7 +130,7 @@ lps 的數值要找的是「最長的相同 prefix 跟 suffix」，所以紅色�
 至於要怎麼有效率的找到相同的 prefix, suffix，我們可以分兩種情況來看，像現在這樣我們已經計算到第六個字母，我們也知道目前相同的前後綴長度是 2，也就是 `len = 2`
 
 <figure>
-  <img src="/images/program/kmp/lps-1.png" alt="kmp" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/kmp/lps-1.webp" alt="kmp" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
   </figcaption>
 </figure>
@@ -138,7 +138,7 @@ lps 的數值要找的是「最長的相同 prefix 跟 suffix」，所以紅色�
 當後面的字母跟 prefix 下一個字母一樣，很好理解，lps[i] 就是當前共同前後綴長度 + 1
 
 <figure>
-  <img src="/images/program/kmp/lps-2.png" alt="kmp" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/kmp/lps-2.webp" alt="kmp" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
   </figcaption>
 </figure>
@@ -146,7 +146,7 @@ lps 的數值要找的是「最長的相同 prefix 跟 suffix」，所以紅色�
 但是當後面的字母跟 prefix 下一個字母不一樣，我們就要找當前的共同前後綴是不是可以組成更短的前後綴，那我們已經知道 `text` 前綴三個字母跟後綴三個字母完全一樣，所以我們可以直接從前面來找有沒有更短的「共同前後綴」，那因為前綴最後一個字的 lps 是 1，所以我們可以把目前共同前後綴的長度縮小成 1，也就是把 `len` 縮小成 1
 
 <figure>
-  <img src="/images/program/kmp/lps-3.png" alt="kmp" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/kmp/lps-3.webp" alt="kmp" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
   </figcaption>
 </figure>
@@ -154,7 +154,7 @@ lps 的數值要找的是「最長的相同 prefix 跟 suffix」，所以紅色�
 再來就可以繼續回到原先的步驟，檢查下一個數字有沒有一樣，然後我們發現下一個數字一樣，所以 lps 長度就是當前共同前後綴長度 + 1，也就是 2
 
 <figure>
-  <img src="/images/program/kmp/lps-4.png" alt="kmp" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/kmp/lps-4.webp" alt="kmp" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
   </figcaption>
 </figure>

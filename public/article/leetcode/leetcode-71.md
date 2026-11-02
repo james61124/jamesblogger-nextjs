@@ -4,7 +4,7 @@ date: "2025-10-09"
 author: James
 tags: String,Stack,Top Interview
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: 87c24057-d959-49fb-ab24-0b1910bf82ca

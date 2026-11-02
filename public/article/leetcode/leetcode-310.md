@@ -4,7 +4,7 @@ date: "2025-06-02"
 author: James
 tags: DFS,Tree,Topological Sort
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: 87e2cbef-6426-4817-b395-6eb598437484

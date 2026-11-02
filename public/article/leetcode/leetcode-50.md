@@ -4,7 +4,7 @@ date: "2025-06-12"
 author: James
 tags: Math,Base Conversion
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 2
 id: a550fbf7-a92b-44db-9750-1b297e8b44e6
@@ -59,7 +59,7 @@ x^13 = (x^1) * (x^4) * (x^8)
 這其實就是 Base Conversion 的問題，我們只要將指數 n 拆解成二進位制就行了，舉 13 為例子，轉成二進位後會發現 1, 4, 8 的位置都是 1，所以 13 就是拆成 1 次方, 4 次方, 8 次方。
 
 <figure>
-  <img src="/images/leetcode/leetcode-50/base-conversion.png" alt="base-conversion" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-50/base-conversion.webp" alt="base-conversion" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
 
   </figcaption>

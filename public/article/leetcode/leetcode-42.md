@@ -4,7 +4,7 @@ date: "2025-06-10"
 author: James
 tags: Array,Two Pointers,Stack,Monotonic Stack,Google,Meta
 difficulty: Hard
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 proficiency: 1
 readTime: 2
@@ -30,7 +30,7 @@ id: 43bb0296-8428-4513-872e-79c632997045
 這裡我們來觀察一件事情，對於每一個 `left` 來說，`leftMax` 一定會比自己高，只要確認右邊有比 `leftMax` 高的 height，那剩下的 height 不論怎麼排列，每一個 `left` 的儲水量就是 leftMax - height[left]，圖示如下，藍色部分就是確定可以儲存的水量。
 
 <figure>
-  <img src="/images/leetcode/leetcode-42/introduction.png" alt="leetcode-42" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-42/introduction.webp" alt="leetcode-42" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -55,7 +55,7 @@ while (left < right) {
 我們如果不是從 height 比較小的那邊縮，我們就沒有辦法確定另一邊一定會有一到更高的牆，這樣計算儲水量可能就會出錯。
 
 <figure>
-  <img src="/images/leetcode/leetcode-42/error.png" alt="leetcode-42" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-42/error.webp" alt="leetcode-42" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>

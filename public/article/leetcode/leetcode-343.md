@@ -4,7 +4,7 @@ date: "2025-03-23"
 author: James
 tags: DP,Math
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: 9119929d-6aba-4bb2-81fb-6b77ae68acda

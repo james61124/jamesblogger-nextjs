@@ -3,7 +3,7 @@ title: 第十一屆梅竹黑客松參賽紀錄
 date: "2024-04-20"
 author: James
 tags: Life, Hackathon
-image: /images/life/11th-meichu-hackathon/meichu-hackathon.jpg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/11th-meichu-hackathon/meichu-hackathon.webp
 description: "梅竹黑客松是一個比賽時長沒有很長的黑客松比賽，先簡單介紹一下他的賽制，總共分成「黑客組」跟「創客組」，黑客組會邀請各大企業參與命題，除了要提出專案企劃以外，同時還要在幾天的時間內做出最小可行性產品，所以是一項兼具企劃發想跟技術實力的比賽，但是為了不要讓梅竹黑客松的參與人員侷限在技術人才，主辦方還設立了「創客組」，由新竹市政府命題，參賽者就不需要真的實作出產品，只要提出完善的專案計畫即可。"
 readTime: 3
 id: f3437c4c-6b3d-4bbb-b8fe-4747b58c1c7f
@@ -43,24 +43,24 @@ id: f3437c4c-6b3d-4bbb-b8fe-4747b58c1c7f
 
 ### Life in Sight - Text Mode
 
-![](/images/life/11th-meichu-hackathon/text-mode-introduction.png)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/11th-meichu-hackathon/text-mode-introduction.webp)
 
 這個功能主要是為了視力不好的人設計的，家裡有些長輩看一些小字的時候常常會看不清楚，例如說標籤、說明書等等，因此我們設計了「文字放大鏡」來解決這個問題。
 使用者可以將當下他要閱讀的文本拍攝下來，利用圖像轉文字的 API 我們可以分離出文字，再來結合大型語言模型重新整合資訊並排版再呈現給使用者，同時使用者可以根據文本的內容作提問，例如說他可以問：這瓶飲料保存期限為何？我們的 App 整合完資訊後就會回答使用者，方便他們擷取自己需要的資訊。
 
 ### Life in Sight - Object Mode
 
-![](/images/life/11th-meichu-hackathon/object-mode-introduction.png)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/11th-meichu-hackathon/object-mode-introduction.webp)
 
 這個功能主要是為了讓視障者有獨立生活的能力，我們的目標是視障者在找尋物品的時候，透過影像辨識，可以根據 APP 給的提示就走到物品真正的位置。使用者首先會告訴 APP 說他想要找尋甚麼樣的物品，再來根據影像辨識的結果，APP 會提示使用者方位，例如：向左走、向右走等等，最終就可以找到目標物品。在 Demo 的時候我們就在桌上擺了好幾瓶飲料，然後讓矇眼的人只利用 APP 的提示音就找到哪一瓶是真正的麥香，算是我們設計的一個小噱頭。
 
 ## 技術架構
 
-![](/images/life/11th-meichu-hackathon/text-mode-technique.png)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/11th-meichu-hackathon/text-mode-technique.webp)
 
 Text Mode 的部分我們利用 ML Kit 將圖片轉成文字，再來利用大型語言模型，給定設計過的 Prompt 讓其整合我們傳過去的資料，並讓他可以回答使用者的問題。
 
-![](/images/life/11th-meichu-hackathon/object-mode-technique.png)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/11th-meichu-hackathon/object-mode-technique.webp)
 
 Object Mode 我們利用 lightweight Yolov5 來處理影像判斷物體位置，我們可以直接讓輕量的模型跑在手機上，這樣可以實現離線處理的功能以及提高它的效能。再來我們使用客製化的 Dataset 來 fine tune 我們的 model，讓他可以更精準的判斷目標物體的位置。
 

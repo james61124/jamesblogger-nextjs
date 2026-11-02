@@ -3,7 +3,7 @@ title: 美國留學申請心得
 date: "2026-07-06"
 author: James
 tags: United States,Grad School,MCS
-image: /images/life/us-grad-school-application/application.png
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/us-grad-school-application/application.webp
 description: "我發現我很不適合寫攻略，所以就寫寫自己的心路歷程跟心得就好。其實，一開始「美國留學」完全不在人生規劃裡。大四已經過了一半，出國這個選項突然出現在生命中，我自己都覺得很荒謬。但認真想了一下，發現好像不是完全沒有可能。"
 id: 3bcc307d-bb34-4992-afca-cff73518d33f
 ---
@@ -38,7 +38,7 @@ id: 3bcc307d-bb34-4992-afca-cff73518d33f
 
 ## 英文考試
 
-![](/images/life/us-grad-school-application/english.png)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/us-grad-school-application/english.webp)
 
 考英文是個有點無聊但一定要先做的事情，因為英檢有可能一次達不了標要考兩三次，我當初的策略是先準備 GRE 再準備雅思托福，因為 GRE 非常難考，但我後來發現這是準備期間的一大敗筆。GRE 絕對是我這輩子考過最難的考試，扣掉當時因為大四下要畢業跟出國了所以一天到晚跟朋友 hang out，剩下時間我幾乎都在準備這個考試，somehow 拖慢了寫文件還有讀雅思的進度，所以真的是有點後悔，GRE 核心 2000 單幾乎一個字都沒看過，題目出來像火星文一樣，結果花了一大堆時間除了考得很爛，後來發現想申請的學校稍微排一下就剩下 CMU 一定要看 GRE，但 CMU 對我來說太貴了我不考慮申請他，因此後來我也懶得重考 GRE 了，我直接選擇不放 GRE 成績在我的申請裡。
 
@@ -46,7 +46,7 @@ id: 3bcc307d-bb34-4992-afca-cff73518d33f
 
 ## 文件準備
 
-![](/images/life/us-grad-school-application/documentation.png)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/us-grad-school-application/documentation.webp)
 
 而文件準備主要就是 SOP、CV 還有推薦信，我一個一個來分享。
 
@@ -66,7 +66,7 @@ SOP 全名是 Statement of Purpose，最主要目的是寫一份「選擇該學�
 
 ## 送出申請
 
-![](/images/life/us-grad-school-application/submit.png)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/us-grad-school-application/submit.webp)
 
 最後申請時間到了就都送一送，有些學校是 rolling 也就是先到先審，像是 NEU，這種就要先送，其他就按照 due date 排個順序。我自己是夢幻組幾乎都沒上，經過一些選擇，最後就來 Rice，這應該算我的 target school。我自己其實沒有很追求名校光環，名校學生上岸率高，究竟是因為名校光環，還是因為學生本身實力就強進入名校，所以才上岸率高，我到現在還是沒搞清楚，或許都有，如果畢業後能拿到一份不錯的 job offer，說實在我其實沒有很在乎我到底念的是什麼學校，但對我來說那就會是一個好的選擇，簡單來說我覺得學校的選擇不光是要看學校的排名，學校地理位置、就業狀況等等這些我覺得都可以考慮進去。但這再講下去實在是太長了，我如果真的很閒的話再來記錄細節吧。
 

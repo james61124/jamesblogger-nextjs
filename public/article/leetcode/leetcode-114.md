@@ -4,7 +4,7 @@ date: "2025-09-27"
 author: James
 tags: Tree,Binary Tree,Top Interview
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: abf2714f-307a-4b4f-acee-2b63de16f7c0

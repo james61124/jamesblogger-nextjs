@@ -4,7 +4,7 @@ date: "2025-03-21"
 author: James
 tags: Array, Hash Table, Divide and Conquer,Tree,Binary Tree
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 2
 id: 379d7f6f-cf5b-41f7-9d5a-7bae64688eb1

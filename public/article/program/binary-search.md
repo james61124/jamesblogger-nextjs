@@ -3,7 +3,7 @@ title: "[ Algorithm ] Binary Search | 核心概念與 Leetcode 題型解析"
 date: "2025-04-11"
 author: James
 tags: Algorithm,Binary Search
-image: /images/program/algorithm.png
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/algorithm.webp
 description: "最基本款的 Binary Search，就是在 sorted array `nums` 中找到特定的 target，並回傳 index，但是用時只需要 `O(logn)`，他的原理就是先用兩個 pointers `left`, `right` 分別在 array 的最左跟最右，並計算兩個 pointers 的中點 `mid`，如果 `nums[mid] > target`，表示 target 在左半邊，就把 right 縮到左半邊，反之就是表示 target 在右半邊，就把 left 縮到右半邊，持續這個過程直到 `nums[mid] == target` 就代表找到了，聽起來很簡單，實作起來長這樣："
 readTime: 5
 id: f0b83ba3-25eb-4111-b109-836979a8a7f7

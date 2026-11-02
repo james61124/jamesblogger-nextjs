@@ -4,7 +4,7 @@ date: "2025-06-09"
 author: James
 tags: Array,Binary Search
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""  
 readTime: 2
 id: 85d0374d-41a5-43ef-b4c9-15b9614ac548
@@ -47,7 +47,7 @@ nums     = [4, 5, 6, 7, 0, 1, 2]
 我們首先來觀察一下，因為 `nums` 是 rotated sorted array，所以可以分成 left section 跟 right section，用顏色來分類會長這樣：
 
 <figure>
-  <img src="/images/leetcode/leetcode-33/section.png" alt="Section" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-33/section.webp" alt="Section" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
 
   </figcaption>
@@ -58,7 +58,7 @@ nums     = [4, 5, 6, 7, 0, 1, 2]
 再來要判斷甚麼樣的 nums[mid] 要在 is_valid 裡面回傳 true，如果 target 落在 right section，nums[mid] 落在 right section 同時 nums[mid] >= target 那 is_valid 就要被標成 1。
 
 <figure>
-  <img src="/images/leetcode/leetcode-33/right-section.png" alt="Section" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-33/right-section.webp" alt="Section" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
 
   </figcaption>
@@ -67,7 +67,7 @@ nums     = [4, 5, 6, 7, 0, 1, 2]
 那如果 target 落在 left section，如果 nums[mid] 落在 right section 或是 nums[mid] >= target，那 is_valid 就要被標成 1。
 
 <figure>
-  <img src="/images/leetcode/leetcode-33/left-section.png" alt="Section" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-33/left-section.webp" alt="Section" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
 
   </figcaption>

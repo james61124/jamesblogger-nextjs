@@ -4,7 +4,7 @@ date: "2025-06-30"
 author: James
 tags: Array,DP,DFS,Memorization
 difficulty: Hard
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 2
 id: 4222cf5f-1159-4073-91f3-a12bc76edcc7

@@ -4,7 +4,7 @@ date: "2025-03-06"
 author: James
 tags: String,Stack,Math
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: 217afd10-4a2a-4245-9fcd-4a5170f124c9

@@ -4,7 +4,7 @@ date: "2025-04-15"
 author: James
 tags: Bit Manipulation,Divide and Conquer
 difficulty: Easy
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: b79246ff-97e2-438b-9669-15864bd44ec5

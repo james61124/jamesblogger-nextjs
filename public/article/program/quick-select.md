@@ -3,7 +3,7 @@ title: "[ Algorithm ] Quick Select | 核心概念與 Leetcode 題型解析"
 date: "2025-05-05"
 author: James
 tags: Algorithm,Quick Select
-image: /images/program/algorithm.png
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/algorithm.webp
 description: "Quick Select 是一種「在 unsorted array 中找出第 k 大或第 k 小」的 Algorithm，跟 Quick Sort 的想法很像，都是用 Divide and Conquer 來做思考的。"
 readTime: 2
 id: 1e6ceec4-abea-47d8-85b4-b4d0812498d4

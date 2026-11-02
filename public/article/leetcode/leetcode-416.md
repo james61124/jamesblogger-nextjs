@@ -4,7 +4,7 @@ date: "2025-03-24"
 author: James
 tags: Array,DP,0/1 Knapsack Problem
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 proficiency: 1
 readTime: 2
@@ -27,11 +27,11 @@ id: b3a29228-99e9-4f73-92a0-533ccec15889
 
 那再來就很簡單了，dp[i][j] 代表「在限重為 i 的空間中，前 j 個物品可以放的最大重量」，以 `nums = [1,5,11,5]` 舉例，我們的 (sum/2) 是 11，所以 DP Table 長這樣：
 
-![DP](/images/leetcode/leetcode-416/initial.jpg)
+![DP](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-416/initial.webp)
 
 第 1 個 row 是 1，在限重 >= 1 的空間中他都可以放，所以這樣填：
 
-![DP](/images/leetcode/leetcode-416/first-row.jpg)
+![DP](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-416/first-row.webp)
 
 第二排開始， dp 轉換式為 
 
@@ -41,7 +41,7 @@ dp[i][j] = max(dp[i-1][j], dp[i-1][j-nums[i]]+nums[i]);
 
 `dp[i-1][j]` 代表這個 item 沒有放的話這個空間最大的重量，`dp[i-1][j-weight]+nums[i]` 代表如果放了的話這個空間最大的重量，兩個取比較大的填入，所以會像這樣：
 
-![DP](/images/leetcode/leetcode-416/update.jpg)
+![DP](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-416/update.webp)
 
 最後判斷右下角那格是不是 11 就行了，是 11 的話表示他可以達成我們的 target `(sum/2)`，那就 return `true`。
 

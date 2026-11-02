@@ -3,7 +3,7 @@ title: "[ Algorithm ] Two Pointers - Linked List | 核心概念與 Leetcode 題�
 date: "2025-04-23"
 author: James
 tags: Algorithm,Linked List,Two Pointers
-image: /images/program/algorithm.png
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/algorithm.webp
 description: "Two Pointers 中，原本是分三種 : 1. Opposite Direction Two Pointers - 一頭一尾方向不同 2. Fast and Slow Pointers - 同方向"
 readTime: 2
 id: bda315d5-c0e9-45ae-8684-dd3f58ba4ba6

@@ -3,7 +3,7 @@ title: ASML 荷蘭總部實習紀錄
 date: "2025-02-21"
 author: James
 tags: ASML,Veldhoven,Netherlands,Intern
-image: /images/life/asml/asml.jpg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/asml/asml.webp
 description: "分享我在荷蘭 ASML 總部實習半年的所見所聞，從科技巨頭的工作環境、多元文化的團隊合作，到歐洲生活的點滴體驗，這段經歷讓我開拓視野，學會在工作與生活間找到平衡，也深刻體會到旅行與成長的價值。"
 readTime: 3
 id: b7ea6fe6-8544-462b-a5d7-d7c1788d9c59
@@ -21,7 +21,7 @@ ASML 荷蘭總部位在 Veldhoven，他是一個在 Eindhoven 旁邊的小鎮，
 
 那 Veldhoven 簡單來說就是一個很寧靜很舒服的小鎮，附近都是住宅區，優點就是非常的安靜，也非常的安全，長期住在這裡真的會忘記所有可能會遇到的危險，沒有颱風、沒有龍捲風、沒有地震、政治安定、公民福利極好等等，但當然方便性跟台灣就沒有辦法比了，像是走到最近的 supermarket 可能就要一公里，騎腳踏車到最近的車站也要八公里，附近也沒有 convenience store 可以隨時都去添購一些東西，也沒有 24-hour 的店可以點宵夜。
 
-![ASML 的工作環境，大家沒有固定位置，來了就隨便坐](/images/life/asml/table.JPG)
+![ASML 的工作環境，大家沒有固定位置，來了就隨便坐](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/asml/table.webp)
 
 我覺得歐洲跟台灣最不一樣的地方是生活步調，真正的「下班 = 下班」是我最驚訝的文化衝擊之一，這邊很講究 work life balance，很多來這邊短期出差兩三個禮拜的台灣一二線工程師也會提到這點，除了下午四點多如果當天覺得工作完成的差不多就會發現陸陸續續開始有人就回家了，然後聽他們說這裡一周原則上是可以兩天 work from home，所以就會發現星期五根本整個 team 的人都不會出現。
 
@@ -29,7 +29,7 @@ ASML 荷蘭總部位在 Veldhoven，他是一個在 Eindhoven 旁邊的小鎮，
 
 ## 同事的組成
 
-![實習結束前團隊內的最後一次聚餐](/images/life/asml/members.JPG)
+![實習結束前團隊內的最後一次聚餐](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/asml/members.webp)
 
 雖然這裡是荷蘭總部，但是荷蘭人的比例還真的沒有很高，以我的 team member 來說，group leader 是義大利人，project leader 是土耳其跟比利時雙國籍，剩餘成員有巴西人、中國人、只有一個荷蘭人，然後在其他活動還有認識到印尼人、克羅埃西亞人等等，是個文化大熔爐。
 
@@ -42,7 +42,7 @@ ASML 荷蘭總部位在 Veldhoven，他是一個在 Eindhoven 旁邊的小鎮，
 不過 mentor 很快又找到了另一個 project 可以讓我完成，簡單來說 competence engineers 會評估這個 issue 的各種指標，他們的 project leaders 負責 prioritize 各種 issue 並 drive 給不同的部門，在 prioritize 各種 issues 的時候沒有一個整合平台來幫他們統整這些資訊，所以需要一個平台來 visualize 這些資料並做一些資料分析，這就是我後來都在協助的部分。
 
 <figure>
-  <img src="/images/life/asml/badminton.JPG" alt="很幸運參加到的羽球比賽場地" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/asml/badminton.webp" alt="很幸運參加到的羽球比賽場地" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
   </figcaption>
 </figure>
@@ -52,7 +52,7 @@ ASML 荷蘭總部位在 Veldhoven，他是一個在 Eindhoven 旁邊的小鎮，
 ## 歐洲生活體驗
 
 <figure>
-  <img src="/images/life/asml/cooked.jpg" alt="cooked" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/asml/cooked.webp" alt="cooked" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     來歐洲廚藝真的不得不進步，雖然我們秉持的原則還是會熟就好
   </figcaption>
@@ -65,7 +65,7 @@ ASML 荷蘭總部位在 Veldhoven，他是一個在 Eindhoven 旁邊的小鎮，
 他們也很喜歡曬太陽，因為冬天日照時間太短了，可能白天出門還沒天亮，晚上回家天就黑了，幾乎整天都看不到太陽，所以他們很珍惜夏天的陽光。不過這邊天氣變化滿大的，可能前一天大太陽30度，隔天突然變超冷剩 17、18 度，或是早上大太陽，然後突然就大暴雨。
 
 <figure>
-  <img src="/images/life/asml/sunset.JPG" alt="實習最後一天公司外的夕陽" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/asml/sunset.webp" alt="實習最後一天公司外的夕陽" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
   </figcaption>
 </figure>
@@ -75,7 +75,7 @@ ASML 荷蘭總部位在 Veldhoven，他是一個在 Eindhoven 旁邊的小鎮，
 荷蘭給我的感覺比台灣安全很多，不知道是不是錯覺。歐洲每個國家都有自己的特色，荷蘭是我看到最務實也最自由的國家，這裡相對其實很安全，除了腳踏車可能會被偷，其實不太會有小偷或黑手黨在路上亂偷亂搶，所以走在路上基本上我非常放鬆，還有很宜居的地方就是這邊也沒甚麼天災，沒有地震、颱風、火山、戰爭，出生即養老，非常愜意。
 
 <figure>
-  <img src="/images/life/asml/bike.jpg" alt="陪伴我們半年的腳踏車" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/asml/bike.webp" alt="陪伴我們半年的腳踏車" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
   </figcaption>
 </figure>

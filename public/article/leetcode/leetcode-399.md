@@ -4,7 +4,7 @@ date: "2025-10-06"
 author: James
 tags: DFS,BFS,Graph,Union Find,Top Interview
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: 54150382-ad04-428c-b214-df085fa4ff3c

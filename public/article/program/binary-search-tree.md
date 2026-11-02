@@ -3,7 +3,7 @@ title: "[ Data Structure ] Binary Search Tree | 核心概念與 Leetcode 題型�
 date: "2025-03-21"
 author: James
 tags: Data Structure,Binary Tree,Binary Search Tree
-image: /images/program/data-structure.png
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/data-structure.webp
 description: "Binary Search Tree 除了每個 node 最多只能有兩個 children 外，還必須符合下面這條規則"
 readTime: 2
 id: 311b8f03-211e-4a8c-9b3c-4e23897ccad9

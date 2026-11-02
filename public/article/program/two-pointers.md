@@ -3,7 +3,7 @@ title: "[ Algorithm ] Two Pointers | 核心概念與 Leetcode 題型解析"
 date: "2025-03-05"
 author: James
 tags: Algorithm,Two Pointers
-image: /images/program/algorithm.png
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/algorithm.webp
 description: "Two Pointers 就是 iterate 的時候不是用一個指標，用兩個指標 iterate，用不同速度、方向、位置等等來想辦法找到題目所求，Two Pointers 大致上分成三類："
 readTime: 2
 id: 25206d80-642f-4bb7-ba0f-cd8de123ec16
@@ -20,7 +20,7 @@ Two Pointers 就是 iterate 的時候不是用一個指標，用兩個指標 ite
 ## Opposite Directional Two Pointers
 
 <figure>
-  <img src="/images/program/two-pointers/opposite-directional.png" alt="Opposite Directional Two Pointers" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/two-pointers/opposite-directional.webp" alt="Opposite Directional Two Pointers" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -49,7 +49,7 @@ while( left < right ){
 ## Fast and Slow Pointers
 
 <figure>
-  <img src="/images/program/two-pointers/fast-slow.png" alt="Fast and Slow Pointers" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/two-pointers/fast-slow.webp" alt="Fast and Slow Pointers" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>
@@ -77,7 +77,7 @@ while( fast < nums.size() ){
 ## Seperate Two Pointers
 
 <figure>
-  <img src="/images/program/two-pointers/seperate.png" alt="Seperate Two Pointers" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/two-pointers/seperate.webp" alt="Seperate Two Pointers" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     
   </figcaption>

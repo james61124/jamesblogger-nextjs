@@ -3,7 +3,7 @@ title: "[ Algorithm ] Dynamic Programming (四) - Knapsack Problem | 核心概�
 date: "2025-05-30"
 author: James
 tags: Algorithm,DP,0/1 Knapsack Problem,Unbounded Knapsack Problem,Bounded Knapsack Problem
-image: /images/program/algorithm.png
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/algorithm.webp
 description: "背包問題是一種很經典的 DP 問題，敘述如下：有一個背包，他最多可以容納總重 W 的物品，而我總共有 n 個物品，每個物品的重量為 w[i]，價值為 v[i]，請選擇一組放物品的方法讓背包內的重量不會超重且價值最大化。"
 readTime: 2
 id: f742443d-3ebf-48ee-836d-9a0656067c9d
@@ -34,7 +34,7 @@ dp[i][j] = max(dp[i-1][j], dp[i-1][j-w[i]] + v[i])
 畫成 table 會長這樣
 
 <figure>
-  <img src="/images/program/knapsack-problem/0-1.png" alt="Knapsack" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/knapsack-problem/0-1.webp" alt="Knapsack" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     0/1 knapsack problem item2 的更新
   </figcaption>
@@ -67,7 +67,7 @@ int knapsack01(int W, const vector<int>& w, const vector<int>& v) {
 我們可以從後面反向更新 dp[j]，這樣 Transition Function 中的 `dp[i-1][j]` 就是原本留在 array 中的 dp[j]，那 `dp[i-1][j-w[i]] + v[i]` 自然就是 `dp[j - w[i]] + v[i]`，而為什麼需要反向更新呢？因為我們在更新 dp[j] 的時候會用到上一輪的資料，所以不能先把它洗掉，反向更新的話等到把它洗掉了我們也用不著了。
 
 <figure>
-  <img src="/images/program/knapsack-problem/0-1-2.png" alt="Knapsack" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/knapsack-problem/0-1-2.webp" alt="Knapsack" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     0/1 knapsack problem item2 的更新
   </figcaption>
@@ -106,7 +106,7 @@ dp[i][j] = max(dp[i-1][j], dp[i][j-w[i]] + v[i])
 畫成 table 會長這樣
 
 <figure>
-  <img src="/images/program/knapsack-problem/unbounded.png" alt="Knapsack" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/knapsack-problem/unbounded.webp" alt="Knapsack" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     Unbounded Knapsack Problem item 2 的更新
   </figcaption>
@@ -139,7 +139,7 @@ int unboundedKnapsack(int W, const vector<int>& w, const vector<int>& v) {
 我們可以開一個 dp[j] 就好，再來從 `j >= w[i - 1]` 的地方開始正向更新 dp[j]，因為 `j < w[i - 1]` 表示目前的空間根本放不下這個 item，就可以直接用上一個 item 留下來的資訊，而 Transition Function 中的 `dp[i-1][j]` 就是原本留在 array 中的 dp[j]，那 `dp[i][j-w[i]] + v[i]` 自然就是 `dp[j - w[i]] + v[i]`，一路更新完所有 item 就可以得到答案了。
 
 <figure>
-  <img src="/images/program/knapsack-problem/unbounded-2.png" alt="Knapsack" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/knapsack-problem/unbounded-2.webp" alt="Knapsack" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     Unbounded Knapsack Problem item 2 的更新
   </figcaption>
@@ -187,7 +187,7 @@ for (int k = 0; k <= count[i - 1] && k * weight[i - 1] <= j; k++) {
 畫出 table 會長這樣
 
 <figure>
-  <img src="/images/program/knapsack-problem/bounded.png" alt="Knapsack" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/knapsack-problem/bounded.webp" alt="Knapsack" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     Bounded Knapsack Problem item 2 的更新
   </figcaption>

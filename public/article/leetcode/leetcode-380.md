@@ -4,7 +4,7 @@ date: "2025-08-31"
 author: James
 tags: Array,Hash Table,Top Interview,Google
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 2
 id: 2b663ae9-f8ff-46f9-96c2-ad57730684ec

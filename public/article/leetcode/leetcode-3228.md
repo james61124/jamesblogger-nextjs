@@ -4,7 +4,7 @@ date: "2025-11-19"
 author: James
 tags: String,Greedy,Google
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: 121c5248-5c5a-4c9c-a096-c9938df10a36

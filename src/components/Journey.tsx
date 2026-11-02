@@ -12,7 +12,7 @@ const journeyItems: JourneyItem[] = [
     subtitle: "SDE Intern",
     description:
       "My first experience as a software engineer in the United States, building large-scale distributed systems while learning how software is developed and operated at Amazon's scale.",
-    image: "/images/amazon.JPG",
+    image: "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/amazon.webp",
     imageAlt: "Amazon office building",
     stamp: "Jul 2026 · USA",
     accent: "blue",
@@ -25,7 +25,7 @@ const journeyItems: JourneyItem[] = [
     subtitle: "Master of Computer Science",
     description:
       "My first time living in the United States. Beyond graduate studies, this chapter has been about adapting to a new culture, making lifelong friends, and pursuing opportunities that eventually led me to Amazon.",
-    image: "/images/rice.png",
+    image: "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/rice.webp",
     imageAlt: "Rice University campus",
     stamp: "Houston · Texas",
     accent: "green",
@@ -38,7 +38,7 @@ const journeyItems: JourneyItem[] = [
     subtitle: "R&D Full-time Software Engineer",
     description:
       "Returned to the team as a full-time engineer, taking ownership of production backend systems, cloud infrastructure, and AI-powered security analysis after my internship.",
-    image: "/images/blockchain-2.jpeg",
+    image: "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/blockchain-2.webp",
     imageAlt: "Cybersecurity dashboard",
     accent: "blue",
   },
@@ -50,7 +50,7 @@ const journeyItems: JourneyItem[] = [
     subtitle: "Software Engineer Intern",
     description:
       "My first experience living abroad. Six unforgettable months in the Netherlands introduced me to European work culture, travel, and a completely different way of life beyond engineering.",
-    image: "/images/life/asml/members.JPG",
+    image: "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/asml/members.webp",
     imageAlt: "ASML campus in the Netherlands",
     stamp: "Netherlands · 2024",
     accent: "green",
@@ -63,7 +63,7 @@ const journeyItems: JourneyItem[] = [
     subtitle: "R&D Software Engineer Intern",
     description:
       "My first software engineering internship, where I built production Go/Gin backend services, large-scale data pipelines, and an AI-assisted security analysis system that transformed classroom knowledge into real-world engineering.",
-    image: "/images/blockchain-1.jpeg",
+    image: "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/blockchain-1.webp",
     imageAlt: "Software monitoring dashboard",
     accent: "blue",
   },
@@ -75,7 +75,7 @@ const journeyItems: JourneyItem[] = [
     subtitle: "B.S. in Computer Science",
     description:
       "Where the journey began. It was my first time leaving home, discovering computer science, meeting incredible friends, and building the foundation for everything that came after.",
-    image: "/images/nycu.png",
+    image: "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/nycu.webp",
     imageAlt: "National Yang Ming Chiao Tung University campus",
     stamp: "Taiwan · The beginning",
     accent: "green",

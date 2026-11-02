@@ -3,7 +3,7 @@ title: "[ Algorithm ] Dynamic Programming (一) - Introduction | 核心概念與
 date: "2025-05-27"
 author: James
 tags: Algorithm,DP
-image: /images/program/algorithm.png
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/algorithm.webp
 description: "Dynamic Programming (DP) 是一種算法技巧，簡單來說想要求得原問題的最優解，就先往下拆解成小問題，最後把小問題的解組合起來得到原問題的解"
 readTime: 2
 id: 07c9658c-5d4c-4ff0-996d-dcf44c1a15dd

@@ -9,7 +9,7 @@
             "Interlaken",
             "Jungfraujoch"
         ],
-        "image": "/images/travel/Switzerland-20240914/scenary.jpg",
+        "image": "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Switzerland-20240914/scenary.webp",
         "description": "瑞士就是一個全世界物價最高的地方，原本以為荷蘭、英國已經很貴了，但這裡的物價體感幾乎是這些地區的 1.5 ~ 2 倍。不過即便是這樣，瑞士還是目前所有國家中我最喜歡的，之前聽到瑞士不外乎就是幾個關鍵字，一堆有錢人、手錶、阿爾卑斯山、然後壯闊的大自然，這次就來實地感受一下。",
         "readTime": 16,
         "id": "0ed7e7dd-8da2-4ef3-a7d5-5880ba608fb1",
@@ -24,7 +24,7 @@
             "Hamburg",
             "Lübeck"
         ],
-        "image": "/images/travel/Hamburg-20240829/Hamburg.jpg",
+        "image": "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Hamburg-20240829/Hamburg.webp",
         "description": "漢堡簡單來說就是一個海港，我覺得德國的城市特色都不會到太鮮明，像義大利的城市可能各個城市之間就差距很大，德國就是務實，不會有太多很浮誇的東西。",
         "readTime": 8,
         "id": "9002cc2e-f4ea-47ce-ab13-d1f2a56af4a5",
@@ -39,7 +39,7 @@
             "Hamburg",
             "Miniatur Wunderland"
         ],
-        "image": "/images/travel/miniatur-wunderland/concert.jpg",
+        "image": "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/concert.webp",
         "description": "太喜歡這裡了所以決定拉一篇出來寫，這裡因為太熱門了所以一定要提前預約，然後要選好的時段，因為我們總共在這裡待了 5 個小時，如果逛到最後時間不夠一定會覺得超可惜。",
         "readTime": 11,
         "id": "8c4f3b28-ad21-4ce6-9f66-1ed6b4d4faf0",
@@ -53,7 +53,7 @@
             "Republic of Slovenia",
             "Ljubljana"
         ],
-        "image": "/images/travel/ljubljana-20250116/lake-observation.JPG",
+        "image": "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/ljubljana-20250116/lake-observation.webp",
         "description": "如果不是因為來歐洲半年，我覺得這輩子可能都不會來這個國家，畢竟歐洲國家太多了，先挑最重要的幾個去怎麼想都不會想到要去斯洛維尼亞，來這邊除了可以開發幾個比較冷門的國家試試看，他剛好在我們的上一站 - 匈牙利跟下一站 - 波蘭的中間，我們從布達佩斯搭 Flixbus 來到這裡，可以充當一個過渡站。",
         "readTime": 12,
         "id": "5f617ead-1749-47af-a214-f975ba6a4a68",
@@ -67,7 +67,7 @@
             "United Arab Emirates",
             "Dubai"
         ],
-        "image": "/images/travel/dubai-20250126/night.jpg",
+        "image": "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/dubai-20250126/night.webp",
         "description": "在歐洲待了半年終於要回台灣了，因為搭阿聯酋的關係有這個機會可以在長轉機順便入境杜拜一天看看，覺得非常值得。在歐洲待了七個月，看遍歷史人文古蹟，已經快忘記現代化建築長什麼樣子了，杜拜是一個很特別的地方，市中心摩天大樓一棟接著一棟，但是往郊外開車一個小時的車程竟然就到人跡罕至的沙漠，至今還是覺得非常神奇。",
         "readTime": 9,
         "id": "c9e56562-5c7a-40d8-976e-b1d085c49ab3",
@@ -81,7 +81,7 @@
             "Sweden",
             "Stockholm"
         ],
-        "image": "/images/travel/stockholm-20250108/museum-5.JPG",
+        "image": "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/stockholm-20250108/museum-5.webp",
         "description": "雖然北歐五國已經去過冰島，但冰島算是一個奇葩我都下意識沒把他當北歐，也雖然波羅的海三小國文化上是屬於北歐的，但是大部分定義上還是沒有把他們歸進去北歐五國，所以這次踏上瑞典有一種第一次踏上北歐的錯覺。",
         "readTime": 13,
         "id": "6fd4b804-a154-4804-ab98-4c92d4f6c038",
@@ -96,7 +96,7 @@
             "Brussels",
             "Belgium"
         ],
-        "image": "/images/travel/ghent-20240727/scenery.jpg",
+        "image": "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/ghent-20240727/scenery.webp",
         "description": "前幾個禮拜在跟同事聊天，就有聊到比利時如果要選幾個城市來的話，反而不是推首都 - Brussels，應該要直接去 Ghent 跟 Bruges，剛好這周末是根特節的最後一天，就順便來朝聖一下。",
         "readTime": 5,
         "id": "9ab2234e-64c7-421e-b38e-2859e22c2fd4",
@@ -110,7 +110,7 @@
             "Germany",
             "Munich"
         ],
-        "image": "/images/travel/Munich-20240823/scenery.jpg",
+        "image": "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/Munich-20240823/scenery.webp",
         "description": "這次是我們第一次到慕尼黑，也是第一次到德國，德國給我的感覺很務實，路上的街景不會看到太華麗的裝飾，也沒有一個很明顯的特色，但這座城市最獨特的地方就在他的簡樸與沉穩，而走在大街上，卻又能感受到濃厚的歷史氛圍，讓每一個瞬間都充滿探索的價值。",
         "readTime": 13,
         "id": "3e43857a-46a7-49cb-8361-4dabee974fb2",
@@ -124,7 +124,7 @@
             "Travel",
             "London"
         ],
-        "image": "/images/travel/london-20240907/tower-bridge.JPG",
+        "image": "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/london-20240907/tower-bridge.webp",
         "description": "倫敦就是一個可能我三歲就知道的城市，只是一直沒有去過。對於這些大城市只知道一些關鍵字，像是霧都、大笨鐘、倫敦鐵橋等等，這次非常興奮終於有機會去現場晃晃。不過倫敦可以去的地方實在是太多了，兩天其實玩不了甚麼東西，所以我們就挑最重要的幾個 landmark 看一下，剩下的就等下一次再來逛。",
         "readTime": 9,
         "id": "c805a977-b528-48a2-80e7-ed38c515ba9a",
@@ -138,7 +138,7 @@
             "Travel",
             "Iceland"
         ],
-        "image": "/images/travel/iceland-20241104-1/rainbow.JPG",
+        "image": "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/iceland-20241104-1/rainbow.webp",
         "description": "感覺來歐洲交換的人冰島絕對是必去的一個地方，我們原本因為內建只有兩個人，而且又都不會開車，所以我們決定上社團徵旅伴，沒想到迴響比想像中來的踴躍非常多，真的太多人想要來冰島玩了。",
         "readTime": 11,
         "id": "ff744a8e-9647-4fa8-957e-151c49b64626",
@@ -153,7 +153,7 @@
             "USA",
             "DC"
         ],
-        "image": "/images/travel/dc-20260620/capitol-2.JPG",
+        "image": "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/dc-20260620/capitol-2.webp",
         "description": "簡單記錄一下三個月實習的時間因為 Peggy 來找我，我們撥了一個週末到 DC 晃晃。如果把美國比喻成一間公司，Washington D.C. 就是他的總部，就是常聽到的 DC 特區，主要就是為了作為美國首都而設立，這邊其實有一大堆的博物館可以逛，真的要玩應該是可以逛好多天。",
         "readTime": 3,
         "id": "cfb4e084-1f27-4f4a-8c7c-5e3ca96c8663",

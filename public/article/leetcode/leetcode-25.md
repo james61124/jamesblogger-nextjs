@@ -4,7 +4,7 @@ date: "2025-06-09"
 author: James
 tags: Linked List,Head Insertion Method
 difficulty: Hard
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 2
 id: b8f60208-6fd7-42d3-b120-225e925fe369
@@ -23,7 +23,7 @@ id: b8f60208-6fd7-42d3-b120-225e925fe369
 頭插法的思路其實很簡單，我們需要三個指標：`groupPrev`, `prev`, `curr`，`groupPrev` 會落在要反轉的那段 Linked List 的前面，而 `curr` 是當下需要被反轉的 node，會一直保持在 `prev` 後面。過程中只要一直把 `curr` 插入 `groupPrev` 的後面，然後更新 `curr` 到 `prev`，一直重複這個動作就可以把那段 Linked List 反轉了，圖示如下：
 
 <figure>
-  <img src="/images/leetcode/leetcode-25/insert-to-head.png" alt="Linked List" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-25/insert-to-head.webp" alt="Linked List" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     Head Insertion Method
   </figcaption>

@@ -4,7 +4,7 @@ date: "2025-02-27"
 author: James
 tags: Array,Two Pointers,Greedy,Top Interview
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 proficiency: 5
 readTime: 2

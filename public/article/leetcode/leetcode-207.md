@@ -4,7 +4,7 @@ date: "2025-06-25"
 author: James
 tags: Graph,DFS,BFS,Topological Sort
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: 4c98e221-f065-46f8-8e1e-f9b83b0b9db5

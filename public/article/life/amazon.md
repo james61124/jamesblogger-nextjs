@@ -3,7 +3,7 @@ title: Amazon Summer Intern 心得
 date: "2026-07-20"
 author: James
 tags: Life,Amazon,SWE,Intern
-image: /images/life/amazon/co-worker.JPG
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/amazon/co-worker.webp
 description: "首先很幸運可以在找 summer intern 的幾乎最後關頭收到 Amazon offer，前前後後改了不知道幾版履歷，找了多少內推，還去行天宮拜拜，把去日本買的御守拿出來供俸，我是一個不太相信玄學的人，可見我是真的已經沒招了，所以是真的滿感謝的。"
 readTime: 3
 id: 0726deac-3f9c-4b9c-966d-540707e234eb
@@ -27,11 +27,11 @@ Amazon Arlington 辦公室就在五角大廈附近，真的是附近，大概一
 
 我從來沒有來過東岸，但是跟其他地方的感覺截然不同。這邊沒有車其實也能活下來，地鐵雖然不能到所有地方，但基本上大部分常去的地方都還是有 cover 到，商店也算滿密集的，有點像生活在 downtown 的感覺，自己住的話我覺得是挺方便，不過就是台灣人偏少，所以比較沒有像在其他地方一樣有很大的台灣人 community。
 
-![](/images/life/amazon/building.JPG)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/amazon/building.webp)
 
 Amazon 辦公室是滿舒服的，但福利就是沒有很好，每天只有一杯免費咖啡跟免費香蕉，其他東西都要錢，零食要付錢，水果要付錢，早餐午餐也要付錢。然後 policy 是說不能 remote，所以我們 team 有一個固定的區域可以辦公，而我基本上都坐在同一個位子工作。
 
-![Amazon 香蕉車，我每天都會拿三條，剛好早餐午餐晚餐](/images/life/amazon/banana.JPG)
+![Amazon 香蕉車，我每天都會拿三條，剛好早餐午餐晚餐](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/amazon/banana.webp)
 
 ## Code Contribution
 
@@ -39,7 +39,7 @@ Amazon 辦公室是滿舒服的，但福利就是沒有很好，每天只有一�
 
 在大公司裡面寫 code 跟平常在寫 code 真的不太一樣，首先我覺得整個開發流程很嚴謹，雖然會有點麻煩但是 contribute 起來會讓人很放心。每一個 repo 都有很完整的 pipeline，所以每個 pr merge 進去之後會經過 beta / gamma 最後沒問題才會走到 prod，每個 pr 都需要經過一兩個人 review 才能 merge 進去，所以基本上不太會有把 prod 搞砸的機會。但這其實有點麻煩的地方，因為你的進度就是會被 review 的速度擋住。所以 pr 的管理也是門學問，我是盡可能把我的 project 扁平化，確保 pr 待審的時候我還有事情做，因為如果同時送兩三個有 dependency 的 pr，前面的 pr 改了後面可能就需要重改，我覺得這樣反而沒有比較快。
 
-![](/images/life/amazon/ai.png)
+![](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/amazon/ai.webp)
 
 然後 Amazon 的 AI 化程度比我想像中高，我不曉得是不是所有公司都變成這樣，撇除掉 SWE 會不會因此 position 變少的問題，現在開發起來是真的挺方便的。他們用的 AI Agent - Kiro 我後來查好像不是 internal 的，我之前是沒聽過，但他接了很多內部工具，簡單來說我今天要從頭理解我們 team 的整個系統在幹嘛，他有海量的 microservices 海量的 APIs，在研究 project 要怎麼做的時候沒有人跟我說有哪些工具可以用，在沒有 AI 的情況我可能得想辦法從一大堆 repo 裡面翻有沒有能用的東西，然後一直來回問同事，但是有 AI Agent 基本上他能查 internal website 能查所有 repo 還能快速讀 code，做這種事情真的超級快。
 
@@ -55,7 +55,7 @@ Amazon 辦公室是滿舒服的，但福利就是沒有很好，每天只有一�
 
 ## 組內氣氛
 
-![小組的人，裡面有我的舊 mentor 跟新 mentor](/images/life/amazon/co-worker.JPG)
+![小組的人，裡面有我的舊 mentor 跟新 mentor](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/amazon/co-worker.webp)
 
 這個組氣氛我覺得很不錯，我滿喜歡組內的人的，但我剛好在這個組正在 migrate 的時候出現。
 
@@ -67,15 +67,15 @@ Amazon 辦公室是滿舒服的，但福利就是沒有很好，每天只有一�
 
 除了上班，也算是在這裡交了不少朋友，三個月的時間我感覺我做了不少事情，平常沒事打打球打打牌打打桌遊，偶爾跟朋友出去晃晃，其實也算是過得挺滋潤。我本來以為來到了一個相對沒有認識的人的地方會比較無聊，但後來發現來了之後總會遇到一些新的人，做一些酷酷的事。
 
-![仙境幽谷，來這邊玩了好多次](/images/life/amazon/board-game.png)
+![仙境幽谷，來這邊玩了好多次](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/amazon/board-game.webp)
 
-![一個 pool bar，如果不是朋友約自己是沒什麼機會來這種地方玩的](/images/life/amazon/bar.JPG)
+![一個 pool bar，如果不是朋友約自己是沒什麼機會來這種地方玩的](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/amazon/bar.webp)
 
-![Guunston Community Center，在這邊也認識很多新朋友](/images/life/amazon/badminton.JPG)
+![Guunston Community Center，在這邊也認識很多新朋友](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/amazon/badminton.webp)
 
 這中間 Baltimore 去了兩次，全世界數一數二危險的地方，一次就是單純去晃晃，一次是去看 airshow。看 airshow 的時候很荒謬啊很好笑，我們一群人開了大老遠的車跑到 Baltimore，然後以為飛機秀還沒開始，就先悠閒的跑去吃飯，然後出來之後跑到一個小山坡上想說等等看看什麼時候開始，結果發現他早就開始了，但是不知道為什麼只能看到遠遠的小小的飛機，都沒有從頭頂飛過去的，所以我們還是決定跑到小紅書上說的比較好看的地方，結果搭了計程車又走過去好不容易到了結果他就結束了，真的有夠荒謬。
 
-![大概就看到這麼大的飛機而已，但還是滿酷的](/images/life/amazon/air-show.JPG)
+![大概就看到這麼大的飛機而已，但還是滿酷的](https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/life/amazon/air-show.webp)
 
 有一次 Peggy 來也去 DC 晃了一圈，這個就寫在另一篇文好了，不然這篇文會變太長。
 

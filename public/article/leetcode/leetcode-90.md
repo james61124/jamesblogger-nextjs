@@ -4,7 +4,7 @@ date: "2025-06-15"
 author: James
 tags: Array,Backtracking
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 2
 id: e9169e7b-79e7-4b9b-aad2-5cfe1f440944
@@ -27,7 +27,7 @@ id: e9169e7b-79e7-4b9b-aad2-5cfe1f440944
 但這題不像傳統的 decision tree 可以直接列出每一層的 actions，例如說「選 / 不選」，如果是這樣會選出非常多的 duplicate，我們可以先試著走過他的每一種組合，所以每一層會列出所有往後的 index，這樣就可以走完所有組合。
 
 <figure>
-  <img src="/images/leetcode/leetcode-90/duplicate.png" alt="Decision Tree" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-90/duplicate.webp" alt="Decision Tree" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
 
   </figcaption>
@@ -36,7 +36,7 @@ id: e9169e7b-79e7-4b9b-aad2-5cfe1f440944
 但如果單純只是這樣，因為同一層有重複數字的關係，會重複處理到一樣的數字，所以會出現非常多 duplicate，我們試著讓同一層中不要出現重複的數字：
 
 <figure>
-  <img src="/images/leetcode/leetcode-90/correct.png" alt="Decision Tree" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-90/correct.webp" alt="Decision Tree" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
 
   </figcaption>

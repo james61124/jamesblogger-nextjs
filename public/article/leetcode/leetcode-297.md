@@ -4,7 +4,7 @@ date: "2025-05-23"
 author: James
 tags: String,Tree,BFS,Binary Tree,Design
 difficulty: Hard
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 2
 id: e15dbe74-e6ff-4113-b8ba-bb10ea725a89
@@ -41,7 +41,7 @@ string serialize(TreeNode* root) {
 我們來思考最後的 string 具體長什麼樣子，以這棵樹為例，string 會長這樣：
 
 <figure>
-  <img src="/images/leetcode/leetcode-297/binary-tree.png" alt="Street" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-297/binary-tree.webp" alt="Street" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
 
   </figcaption>

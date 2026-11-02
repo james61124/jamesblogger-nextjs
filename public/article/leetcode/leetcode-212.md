@@ -4,7 +4,7 @@ date: "2025-04-16"
 author: James
 tags: Array,String,Backtracking,Trie,Matrix
 difficulty: Hard
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: 97c478d8-f956-4551-aa22-c161a2adf431
@@ -19,7 +19,7 @@ id: 97c478d8-f956-4551-aa22-c161a2adf431
 這題可以直接一步一步分析，首先如果要找到 board 中有沒有「一個 word」，直接對每一個 board[i][j] 做 dfs 就可以了，但是如果是要看 words[i] 有沒有在 board 中，在對 board[i][j] 做 dfs 的同時需要很快的可以判斷目前走過的 trajectory 是不是在 words[i] 中，最直覺的做法是 Hash Table，但 Hash Table 其實還不夠好，假設我判斷 "a" 不在 Hash Table 中，“ab” 不在 Hash Table 中，但我們無法判斷 "ab" 是不是其他字的 substring，因為 words[i] 中還是有可能有 "abcde"，所以如果用 Hash Table 就還是得一個一個檢查，因此這裡用 Trie 是最快的。
 
 <figure>
-  <img src="/images/leetcode/leetcode-208/trie.png" alt="Trie" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-208/trie.webp" alt="Trie" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     Trie 架構圖
   </figcaption>

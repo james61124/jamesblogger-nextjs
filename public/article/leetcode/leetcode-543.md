@@ -4,7 +4,7 @@ date: "2025-07-03"
 author: James
 tags: Tree,Binary Tree,DFS
 difficulty: Easy
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: 733ca795-a71b-4181-8b19-9c5919bc5292

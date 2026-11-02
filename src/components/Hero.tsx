@@ -16,7 +16,7 @@ export default function Hero() {
       <motion.div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/Guitar.JPEG')",
+          backgroundImage: "url('https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/Guitar.webp')",
           y: backgroundY,
           scale: backgroundScale,
         }}

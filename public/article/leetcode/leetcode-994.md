@@ -4,7 +4,7 @@ date: "2025-07-23"
 author: James
 tags: BFS
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: 7a357f4b-88b9-4e4d-9d63-7517994cd584

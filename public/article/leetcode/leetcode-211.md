@@ -4,7 +4,7 @@ date: "2025-04-16"
 author: James
 tags: String,DFS,Trie,Design
 difficulty: Medium
-image: /images/program/Leetcode.jpeg
+image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/program/Leetcode.webp
 description: ""
 readTime: 3
 id: e45a6fa3-0418-404a-b232-294d5670e972
@@ -17,7 +17,7 @@ id: e45a6fa3-0418-404a-b232-294d5670e972
 ## 問題分析 - Trie 介紹
 
 <figure>
-  <img src="/images/leetcode/leetcode-208/trie.png" alt="Trie" />
+  <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/leetcode/leetcode-208/trie.webp" alt="Trie" />
   <figcaption style="font-size: 0.8em; text-align: center; color: gray; margin-top: 5px; margin-bottom: 10px;">
     Trie 架構圖
   </figcaption>
