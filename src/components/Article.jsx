@@ -164,6 +164,10 @@ export default function Article({ category, fileName, json_path, title }) {
 
   const calculatedReadTime = useMemo(() => calculateReadTime(content), [content]);
 
+  // 照片集：沒有目錄和閱讀時間，改顯示照片張數
+  const isPhotos = meta.type === "photos";
+  const photoCount = useMemo(() => (content.match(/<(img|video)\b/g) || []).length, [content]);
+
   const articleTitle = meta.title || title || "Untitled Story";
   const categoryLabel = category
     ? category.charAt(0).toUpperCase() + category.slice(1)
@@ -245,7 +249,7 @@ export default function Article({ category, fileName, json_path, title }) {
           <div className="mt-5 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-[12px] uppercase tracking-[0.14em] text-[#776f64]">
             {meta.date && <span>{meta.date}</span>}
             {meta.date && <span>·</span>}
-            <span>{calculatedReadTime} min read</span>
+            <span>{isPhotos ? `${photoCount} photos` : `${calculatedReadTime} min read`}</span>
             {tags[0] && <span>·</span>}
             {tags[0] && <span className="text-[#476b9a]">{tags[0]}</span>}
           </div>
@@ -287,7 +291,7 @@ export default function Article({ category, fileName, json_path, title }) {
         <div className="mx-auto mt-12 grid max-w-[1160px] grid-cols-1 gap-14 lg:grid-cols-[180px_minmax(0,760px)_1fr]">
           <aside className="hidden lg:block">
             <div className="sticky top-28">
-              <TableOfContents containerRef={articleRef} content={content} />
+              {!isPhotos && <TableOfContents containerRef={articleRef} content={content} />}
             </div>
           </aside>
 
@@ -300,7 +304,7 @@ export default function Article({ category, fileName, json_path, title }) {
               </p>
 
               <h2 className="mt-5 font-serif text-3xl font-normal tracking-[-0.02em] text-[#302b25]">
-                Thanks for reading.
+                {isPhotos ? "Story coming soon." : "Thanks for reading."}
               </h2>
 
               <div className="mt-7 flex items-center justify-center gap-8">
@@ -378,7 +382,7 @@ export default function Article({ category, fileName, json_path, title }) {
               <div className="mt-5 space-y-5 font-serif text-sm leading-6 text-[#766d62]">
                 {meta.author && <DetailItem label="Author">{meta.author}</DetailItem>}
                 {meta.date && <DetailItem label="Published">{meta.date}</DetailItem>}
-                {meta.readTime && <DetailItem label="Reading time">{calculatedReadTime} minutes</DetailItem>}
+                {meta.readTime && !isPhotos && <DetailItem label="Reading time">{calculatedReadTime} minutes</DetailItem>}
               </div>
             </div>
           </aside>

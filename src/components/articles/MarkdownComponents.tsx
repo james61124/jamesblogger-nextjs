@@ -10,6 +10,7 @@ import FullWidthImage from "./FullWidthImage";
 import Gallery from "./Gallery";
 import HeroImage from "./HeroImage";
 import ImageCompare from "./ImageCompare";
+import PhotoEssay from "./PhotoEssay";
 import PullQuote from "./PullQuote";
 import Quote from "./Quote";
 import SideNote from "./SideNote";
@@ -138,6 +139,10 @@ export const markdownComponents: Components = {
     const hastNode = node as never;
     const classes = String(className || "").split(/\s+/);
     const images = getImages(hastNode);
+
+    if (classes.includes("photo-essay")) {
+      return <PhotoEssay node={node} />;
+    }
 
     if (classes.includes("quote")) {
       return (
