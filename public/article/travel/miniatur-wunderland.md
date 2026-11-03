@@ -3,6 +3,8 @@ title: 德國漢堡｜微縮景觀世界 Miniatur Wunderland 實錄
 date: "2025-05-25"
 author: James
 tags: Germany,Hamburg,Miniatur Wunderland
+country: germany
+cities: hamburg
 image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/miniatur-wunderland/concert.webp
 description: "太喜歡這裡了所以決定拉一篇出來寫，這裡因為太熱門了所以一定要提前預約，然後要選好的時段，因為我們總共在這裡待了 5 個小時，如果逛到最後時間不夠一定會覺得超可惜。"
 readTime: 3

@@ -3,6 +3,8 @@ title: 瑞士四天自由行全紀錄
 date: "2024-12-06"
 author: James
 tags: Switzerland,Bern,Interlaken,Jungfraujoch
+country: switzerland
+cities: interlaken
 image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/switzerland-20240914/scenary.webp
 description: "瑞士就是一個全世界物價最高的地方，原本以為荷蘭、英國已經很貴了，但這裡的物價體感幾乎是這些地區的 1.5 ~ 2 倍。不過即便是這樣，瑞士還是目前所有國家中我最喜歡的，之前聽到瑞士不外乎就是幾個關鍵字，一堆有錢人、手錶、阿爾卑斯山、然後壯闊的大自然，這次就來實地感受一下。"
 readTime: 3

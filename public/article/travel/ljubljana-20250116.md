@@ -3,6 +3,8 @@ title: 斯洛維尼亞三天小旅行
 date: "2025-05-19"
 author: James
 tags: Republic of Slovenia,Ljubljana
+country: slovenia
+cities: ljubljana
 image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/ljubljana-20250116/lake-observation.webp
 description: "如果不是因為來歐洲半年，我覺得這輩子可能都不會來這個國家，畢竟歐洲國家太多了，先挑最重要的幾個去怎麼想都不會想到要去斯洛維尼亞，來這邊除了可以開發幾個比較冷門的國家試試看，他剛好在我們的上一站 - 匈牙利跟下一站 - 波蘭的中間，我們從布達佩斯搭 Flixbus 來到這裡，可以充當一個過渡站。"
 readTime: 3

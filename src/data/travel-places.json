@@ -1,0 +1,207 @@
+{
+  "countries": [
+    {
+      "slug": "germany",
+      "continent": "europe",
+      "id": "276",
+      "name": {
+        "zh": "德國",
+        "en": "Germany"
+      }
+    },
+    {
+      "slug": "switzerland",
+      "continent": "europe",
+      "id": "756",
+      "name": {
+        "zh": "瑞士",
+        "en": "Switzerland"
+      }
+    },
+    {
+      "slug": "belgium",
+      "continent": "europe",
+      "id": "056",
+      "name": {
+        "zh": "比利時",
+        "en": "Belgium"
+      }
+    },
+    {
+      "slug": "united-kingdom",
+      "continent": "europe",
+      "id": "826",
+      "name": {
+        "zh": "英國",
+        "en": "United Kingdom"
+      }
+    },
+    {
+      "slug": "iceland",
+      "continent": "europe",
+      "id": "352",
+      "name": {
+        "zh": "冰島",
+        "en": "Iceland"
+      }
+    },
+    {
+      "slug": "sweden",
+      "continent": "europe",
+      "id": "752",
+      "name": {
+        "zh": "瑞典",
+        "en": "Sweden"
+      }
+    },
+    {
+      "slug": "slovenia",
+      "continent": "europe",
+      "id": "705",
+      "name": {
+        "zh": "斯洛維尼亞",
+        "en": "Slovenia"
+      }
+    },
+    {
+      "slug": "united-arab-emirates",
+      "continent": "asia",
+      "id": "784",
+      "name": {
+        "zh": "阿聯",
+        "en": "United Arab Emirates"
+      }
+    },
+    {
+      "slug": "united-states",
+      "continent": "americas",
+      "id": "840",
+      "name": {
+        "zh": "美國",
+        "en": "United States"
+      }
+    }
+  ],
+  "cities": [
+    {
+      "slug": "munich",
+      "country": "germany",
+      "name": {
+        "zh": "慕尼黑",
+        "en": "Munich"
+      },
+      "lat": 48.137,
+      "lon": 11.575
+    },
+    {
+      "slug": "hamburg",
+      "country": "germany",
+      "name": {
+        "zh": "漢堡",
+        "en": "Hamburg"
+      },
+      "lat": 53.551,
+      "lon": 9.993
+    },
+    {
+      "slug": "interlaken",
+      "country": "switzerland",
+      "name": {
+        "zh": "因特拉肯",
+        "en": "Interlaken"
+      },
+      "lat": 46.686,
+      "lon": 7.863
+    },
+    {
+      "slug": "ghent",
+      "country": "belgium",
+      "name": {
+        "zh": "根特",
+        "en": "Ghent"
+      },
+      "lat": 51.054,
+      "lon": 3.717
+    },
+    {
+      "slug": "brussels",
+      "country": "belgium",
+      "name": {
+        "zh": "布魯塞爾",
+        "en": "Brussels"
+      },
+      "lat": 50.85,
+      "lon": 4.352
+    },
+    {
+      "slug": "london",
+      "country": "united-kingdom",
+      "name": {
+        "zh": "倫敦",
+        "en": "London"
+      },
+      "lat": 51.507,
+      "lon": -0.128
+    },
+    {
+      "slug": "south-iceland",
+      "country": "iceland",
+      "name": {
+        "zh": "冰島南岸",
+        "en": "South Iceland"
+      },
+      "lat": 63.75,
+      "lon": -19.5
+    },
+    {
+      "slug": "stockholm",
+      "country": "sweden",
+      "name": {
+        "zh": "斯德哥爾摩",
+        "en": "Stockholm"
+      },
+      "lat": 59.329,
+      "lon": 18.069
+    },
+    {
+      "slug": "ljubljana",
+      "country": "slovenia",
+      "name": {
+        "zh": "盧比安納",
+        "en": "Ljubljana"
+      },
+      "lat": 46.056,
+      "lon": 14.506
+    },
+    {
+      "slug": "dubai",
+      "country": "united-arab-emirates",
+      "name": {
+        "zh": "杜拜",
+        "en": "Dubai"
+      },
+      "lat": 25.204,
+      "lon": 55.27
+    },
+    {
+      "slug": "washington-dc",
+      "country": "united-states",
+      "name": {
+        "zh": "華盛頓 DC",
+        "en": "Washington, D.C."
+      },
+      "lat": 38.907,
+      "lon": -77.037
+    },
+    {
+      "slug": "new-york",
+      "country": "united-states",
+      "name": {
+        "zh": "紐約",
+        "en": "New York"
+      },
+      "lat": 40.728,
+      "lon": -73.955
+    }
+  ]
+}
