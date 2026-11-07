@@ -89,7 +89,7 @@
     },
     {
         "title": "根特 + 布魯塞爾自由行紀錄",
-        "date": "2024-09-09",
+        "date": "2024-07-27",
         "author": "James",
         "tags": [
             "Ghent",
@@ -167,10 +167,38 @@
             "United States",
             "New York"
         ],
-        "image": "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/new-york-20261025/20261025-2007-4125.webp",
+        "image": "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/new-york-20261025/20261026-1640-697f.webp",
         "description": "",
         "readTime": 1,
         "id": "662fcdec-781f-4238-9e1e-a052128f9c31",
         "path": "new-york-20261025"
+    },
+    {
+        "title": "斯洛伐克布拉提斯拉瓦一日遊",
+        "date": "2025-01-20",
+        "author": "James",
+        "tags": [
+            "Slovakia",
+            "Bratislava"
+        ],
+        "image": "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/bratislava-20250120/20250120-1213-6acf.webp",
+        "description": "",
+        "readTime": 1,
+        "id": "902634b7-885d-473f-b1df-306d64b0e550",
+        "path": "bratislava-20250120"
+    },
+    {
+        "title": "黃石 + 大提頓國家公園",
+        "date": "2026-09-29",
+        "author": "James",
+        "tags": [
+            "Yellowstone",
+            "Grand Teton"
+        ],
+        "image": "https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/yellowstone-20260929/20260930-1803-2484.webp",
+        "description": "",
+        "readTime": 1,
+        "id": "4be182eb-3985-4489-a914-21cff9b450a6",
+        "path": "yellowstone-20260929"
     }
 ]
