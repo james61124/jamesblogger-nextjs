@@ -80,6 +80,15 @@
         "zh": "美國",
         "en": "United States"
       }
+    },
+    {
+      "slug": "slovakia",
+      "continent": "europe",
+      "id": "703",
+      "name": {
+        "zh": "斯洛伐克",
+        "en": "Slovakia"
+      }
     }
   ],
   "cities": [
@@ -202,6 +211,36 @@
       },
       "lat": 40.728,
       "lon": -73.955
+    },
+    {
+      "slug": "bratislava",
+      "country": "slovakia",
+      "name": {
+        "zh": "布拉提斯拉瓦",
+        "en": "Bratislava"
+      },
+      "lat": 48.181,
+      "lon": 17.101
+    },
+    {
+      "slug": "yellowstone",
+      "country": "united-states",
+      "name": {
+        "zh": "黃石",
+        "en": "Yellowstone"
+      },
+      "lat": 44.428,
+      "lon": -110.588
+    },
+    {
+      "slug": "grand-teton",
+      "country": "united-states",
+      "name": {
+        "zh": "大提頓",
+        "en": "Grand Teton"
+      },
+      "lat": 43.79,
+      "lon": -110.682
     }
   ]
 }

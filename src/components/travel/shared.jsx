@@ -3,7 +3,7 @@
 // 三欄入口和各洲故事頁共用的地圖工具、配色和卡片
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
+import CoverGrid from "@/components/CoverGrid";
 
 export const NAV_H = 72; // Navbar 高度
 export const EASE = "cubic-bezier(0.22, 1, 0.36, 1)";
@@ -197,25 +197,6 @@ export function PassportStamp({ country }) {
 }
 
 // 照片集的封面：一大兩小的拼貼
-function PhotoMosaic({ photos, title, eager }) {
-  return (
-    <div className="absolute inset-0 grid grid-cols-[2fr_1fr] grid-rows-2 gap-[3px] bg-[#f4efe6]">
-      {photos.slice(0, 3).map((src, index) => (
-        <div key={src} className={["relative overflow-hidden", index === 0 ? "row-span-2" : ""].join(" ")}>
-          <Image
-            src={src}
-            alt={index === 0 ? title : ""}
-            fill
-            loading={eager ? "eager" : "lazy"}
-            sizes={index === 0 ? "(min-width: 1024px) 15vw, 66vw" : "(min-width: 1024px) 8vw, 33vw"}
-            className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.025]"
-          />
-        </div>
-      ))}
-    </div>
-  );
-}
-
 export function CityNumber({ number }) {
   return (
     <span
@@ -244,16 +225,13 @@ export function PostCard({ post, cityNumbers, highlighted, eager }) {
       />
       <article className="grid gap-5 sm:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] sm:gap-7">
         <div className="relative aspect-[4/3] overflow-hidden bg-[#ddd5c8]">
-          {post.type === "photos" && post.preview.length >= 3 ? (
-            <PhotoMosaic photos={post.preview} title={post.title} eager={eager} />
-          ) : post.image || post.preview[0] ? (
-            <Image
-              src={post.image || post.preview[0]}
-              alt={post.title}
-              fill
-              loading={eager ? "eager" : "lazy"}
-              sizes="(min-width: 1280px) 20vw, (min-width: 1024px) 22vw, (min-width: 640px) 40vw, 100vw"
-              className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.025]"
+          {post.cover.images.length ? (
+            <CoverGrid
+              layout={post.cover.layout}
+              images={post.cover.images}
+              title={post.title}
+              eager={eager}
+              sizes={post.cover.layout === "single" ? "(min-width: 1280px) 20vw, (min-width: 1024px) 22vw, (min-width: 640px) 40vw, 100vw" : "(min-width: 1024px) 15vw, 66vw"}
             />
           ) : (
             <div className="absolute inset-3 flex items-center justify-center border border-dashed border-[#bfb3a2]">
@@ -270,7 +248,7 @@ export function PostCard({ post, cityNumbers, highlighted, eager }) {
           <h3 className="mt-2.5 font-serif text-[1.45rem] font-normal leading-[1.25] tracking-[-0.018em] text-[#29251f] transition-colors duration-300 group-hover:text-[#456b9b]">
             {post.title}
           </h3>
-          {post.type !== "photos" && post.description && (
+          {post.description && (
             <p className="mt-2.5 line-clamp-3 font-serif text-[15px] leading-7 text-[#6b645a]">{post.description}</p>
           )}
           {cities.length > 0 && (

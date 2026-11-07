@@ -94,11 +94,12 @@ function ContinentMap({ continent, active, orderedCities, onSelect, onOverview, 
 
   const markers = useMemo(() => {
     if (!map || !active) return [];
-    return orderedCities.map((city) => {
+    const points = orderedCities.map((city) => {
       const [px, py] = map.projection([city.lon, city.lat]);
       return { ...city, x: px * view.k + view.x, y: py * view.k + view.y };
     });
-  }, [map, active, orderedCities, view]);
+    return placeLabels(spreadPins(points), size);
+  }, [map, active, orderedCities, view, size]);
 
   const hoverLabel = useMemo(() => {
     const bounds = hovered && map?.mainBounds.get(hovered.slug);
@@ -192,9 +193,10 @@ function ContinentMap({ continent, active, orderedCities, onSelect, onOverview, 
                   {city.number}
                 </text>
                 <text
-                  x={city.x + 15}
-                  y={city.y + 4}
-                  fontSize="13"
+                  x={city.label.x}
+                  y={city.label.y}
+                  textAnchor={city.label.anchor}
+                  fontSize={LABEL_SIZE}
                   fill={PALETTE.ink}
                   stroke="rgba(246,241,232,0.9)"
                   strokeWidth="3"
@@ -202,8 +204,7 @@ function ContinentMap({ continent, active, orderedCities, onSelect, onOverview, 
                   paintOrder="stroke"
                   className="font-serif"
                 >
-                  {city.name.zh} {city.name.en}
-                  {city.photosOnly && " · Photos"}
+                  {labelText(city)}
                 </text>
               </motion.g>
             ))}
@@ -333,6 +334,83 @@ function Chapter({ country, number, cityNumbers, eager, highlightedPath }) {
       </div>
     </section>
   );
+}
+
+// ── 城市標籤的擺放 ──
+// 標籤原本固定放在圖釘右邊，城市靠太近會疊在一起、靠右邊會被切掉。
+// 現在每個標籤試右、左、上、下幾個位置，挑第一個不超出地圖、不壓到其他圖釘和標籤的。
+
+const LABEL_SIZE = 13;
+const PIN_R = 10;
+const PIN_GAP = 22; // 兩根圖釘中心至少隔這麼遠，不然推開一點
+
+const labelText = (city) => `${city.name.zh} ${city.name.en}`;
+
+// 中文字大約一個字高寬，英文大約一半
+const labelWidth = (text) => [...text].reduce((sum, ch) => sum + (/[\u2E80-\uFFFF]/.test(ch) ? LABEL_SIZE : LABEL_SIZE * 0.55), 0);
+
+// 距離太近的圖釘互相推開，地理位置差一點點沒關係，至少每根都點得到
+function spreadPins(points) {
+  const result = points.map((point) => ({ ...point }));
+  for (let round = 0; round < 12; round += 1) {
+    let moved = false;
+    for (let i = 0; i < result.length; i += 1) {
+      for (let j = i + 1; j < result.length; j += 1) {
+        const a = result[i];
+        const b = result[j];
+        let dx = b.x - a.x;
+        let dy = b.y - a.y;
+        let distance = Math.hypot(dx, dy);
+        if (distance >= PIN_GAP) continue;
+        if (distance < 0.01) {
+          dx = 0;
+          dy = 1;
+          distance = 1;
+        }
+        const push = (PIN_GAP - distance) / 2;
+        a.x -= (dx / distance) * push;
+        a.y -= (dy / distance) * push;
+        b.x += (dx / distance) * push;
+        b.y += (dy / distance) * push;
+        moved = true;
+      }
+    }
+    if (!moved) break;
+  }
+  return result;
+}
+
+const overlap = (a, b) =>
+  Math.max(0, Math.min(a.x1, b.x1) - Math.max(a.x0, b.x0)) * Math.max(0, Math.min(a.y1, b.y1) - Math.max(a.y0, b.y0));
+
+function placeLabels(points, size) {
+  const margin = 6;
+  const placed = points.map((p) => ({ x0: p.x - PIN_R, x1: p.x + PIN_R, y0: p.y - PIN_R, y1: p.y + PIN_R }));
+  return points.map((point) => {
+    const width = labelWidth(labelText(point));
+    const half = LABEL_SIZE * 0.7;
+    const candidates = [
+      { anchor: "start", x: point.x + 15, y: point.y + 4 },
+      { anchor: "end", x: point.x - 15, y: point.y + 4 },
+      { anchor: "middle", x: point.x, y: point.y - 17 },
+      { anchor: "middle", x: point.x, y: point.y + 27 },
+      { anchor: "start", x: point.x + 11, y: point.y - 13 },
+      { anchor: "start", x: point.x + 11, y: point.y + 21 },
+      { anchor: "end", x: point.x - 11, y: point.y - 13 },
+      { anchor: "end", x: point.x - 11, y: point.y + 21 },
+    ].map((candidate) => {
+      const x0 = candidate.anchor === "start" ? candidate.x : candidate.anchor === "end" ? candidate.x - width : candidate.x - width / 2;
+      return { ...candidate, box: { x0, x1: x0 + width, y0: candidate.y - half - 4, y1: candidate.y + 4 } };
+    });
+    const score = ({ box }) => {
+      const outside =
+        Math.max(0, margin - box.x0) + Math.max(0, box.x1 - (size.width - margin)) + Math.max(0, margin - box.y0) + Math.max(0, box.y1 - (size.height - margin));
+      return outside * 1000 + placed.reduce((sum, other) => sum + overlap(box, other), 0);
+    };
+    const best = candidates.reduce((winner, candidate) => (score(candidate) < score(winner) ? candidate : winner));
+    placed.push(best.box);
+    return { ...point, label: best };
+  });
 }
 
 export default function ContinentStory({ continent, others }) {

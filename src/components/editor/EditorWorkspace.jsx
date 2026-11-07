@@ -7,8 +7,9 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import MarkdownRenderer from "@/components/articles/MarkdownRenderer";
 import { api, isMediaFile, uploadFiles } from "./api";
-import { essayBlock, imagesIn, newPhotoItem, newSectionItem, parseEssay, photoLine, serializeEssay } from "./essay";
+import { essayBlock, imagesIn, newPhotoItem, parseEssay, photoLine, serializeEssay } from "./essay";
 import PlaceFields from "./PlaceFields";
+import CoverPicker from "./CoverPicker";
 import PhotoBoard from "./PhotoBoard";
 import { Field, inputClass, UploadProgress } from "./ui";
 
@@ -61,7 +62,7 @@ export default function EditorWorkspace({ initial, countries, cities }) {
 
   const updateEssay = useCallback((next) => {
     setEssay(next);
-    setBody(serializeEssay(next.intro, next.items));
+    setBody(serializeEssay(next.intro, next.items, next.manual));
   }, []);
 
   const switchType = (type) => {
@@ -233,26 +234,12 @@ export default function EditorWorkspace({ initial, countries, cities }) {
             <input value={meta.tags || ""} onChange={(e) => setField("tags", e.target.value)} className={inputClass} />
           </Field>
 
-          {!isPhotos && (
-            <Field label="摘要" hint="列表卡片上顯示的那段話">
-              <textarea value={meta.description || ""} onChange={(e) => setField("description", e.target.value)} rows={3} className={inputClass} />
-            </Field>
-          )}
+          <Field label="摘要" hint={isPhotos ? "可空白；有寫的話會顯示在旅遊頁的卡片上" : "列表卡片上顯示的那段話"}>
+            <textarea value={meta.description || ""} onChange={(e) => setField("description", e.target.value)} rows={isPhotos ? 2 : 3} className={inputClass} />
+          </Field>
 
-          <Field label="封面照" hint={images.length ? "點一張設為封面" : "上傳照片後可以在這裡選"}>
-            <div className="flex gap-2 overflow-x-auto pb-1">
-              {images.map((src) => (
-                <button
-                  key={src}
-                  type="button"
-                  onClick={() => setField("image", src)}
-                  className={["h-16 w-20 shrink-0 overflow-hidden", meta.image === src ? "ring-2 ring-[#c4896b] ring-offset-2 ring-offset-[#f4efe6]" : "opacity-70 hover:opacity-100"].join(" ")}
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={src} alt="" loading="lazy" className="h-full w-full object-cover" />
-                </button>
-              ))}
-            </div>
+          <Field label="封面">
+            <CoverPicker meta={meta} images={images} isPhotos={isPhotos} onChange={(changes) => setMeta((current) => ({ ...current, ...changes }))} />
           </Field>
 
           <div className="space-y-3">
@@ -286,12 +273,7 @@ export default function EditorWorkspace({ initial, countries, cities }) {
               <Field label="開頭的一段話（可空白）">
                 <textarea value={essay.intro} onChange={(e) => updateEssay({ ...essay, intro: e.target.value })} rows={3} className={inputClass} />
               </Field>
-              <PhotoBoard
-                items={essay.items}
-                onChange={(items) => updateEssay({ ...essay, items })}
-                onAddFiles={addFiles}
-                onAddSection={() => updateEssay({ ...essay, items: [...essay.items, newSectionItem()] })}
-              />
+              <PhotoBoard essay={essay} onChange={(next) => updateEssay({ ...essay, ...next })} onAddFiles={addFiles} category={category} slug={slug} />
             </>
           ) : (
             <textarea

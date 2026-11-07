@@ -25,12 +25,14 @@ async function writePlaces(places) {
   return places;
 }
 
-// 地圖上畫得出來的國家（world-atlas 的名字和代碼），新增國家時從這裡挑
+// 地圖上畫得出來的國家（world-atlas 的名字和代碼），新增國家時從這裡挑。
+// 同一個代碼可能有好幾塊（澳洲和 Ashmore 群島都是 036），只留第一個，也就是本土
 export function atlasCountries() {
-  return atlas.objects.countries.geometries
-    .filter((country) => country.id)
-    .map((country) => ({ id: country.id, name: country.properties.name }))
-    .sort((a, b) => a.name.localeCompare(b.name));
+  const byId = new Map();
+  for (const country of atlas.objects.countries.geometries) {
+    if (country.id && !byId.has(country.id)) byId.set(country.id, { id: country.id, name: country.properties.name });
+  }
+  return [...byId.values()].sort((a, b) => a.name.localeCompare(b.name));
 }
 
 export async function addCountry({ id, zh, continent }) {

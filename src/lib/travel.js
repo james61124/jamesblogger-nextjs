@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { parseFrontmatter } from "@/lib/markdown";
 import places from "@/data/travel-places.json";
+import { resolveCover } from "@/lib/cover";
 
 // 旅遊入口的三大洲。extent 是地圖要顯示的範圍 [[西, 南], [東, 北]]；
 // cover 是入口的封面照，沒寫的話用該洲最新一篇文章的封面
@@ -49,7 +50,8 @@ export function getTravelPosts() {
         country: meta.country || "",
         cities: splitList(meta.cities),
         type: meta.type === "photos" ? "photos" : "article",
-        // 照片集的卡片用前幾張照片拼貼
+        coverLayout: meta.coverLayout || "",
+        coverImages: meta.coverImages || "",
         photos: [...body.matchAll(/<img\b[^>]*\bsrc="([^"]+)"/g)].map((match) => match[1]),
       };
     })
@@ -89,7 +91,7 @@ export function getExplorerCountries(posts = getTravelPosts()) {
       })),
       posts: posts
         .filter((post) => post.country === country.slug)
-        .map(({ path, title, date, image, description, cities, type, photos }) => ({
+        .map(({ path, title, date, image, description, cities, type, photos, coverLayout, coverImages }) => ({
           path,
           title,
           date,
@@ -98,7 +100,7 @@ export function getExplorerCountries(posts = getTravelPosts()) {
           citySlugs: cities,
           type,
           photoCount: photos.length,
-          preview: photos.slice(0, 3),
+          cover: resolveCover({ coverLayout, coverImages, image, photos, type }),
           cityNames: cities.map((slug) => CITIES.find((city) => city.slug === slug)?.name.en).filter(Boolean),
         })),
     };

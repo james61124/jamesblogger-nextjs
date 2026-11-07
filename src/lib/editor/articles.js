@@ -13,7 +13,7 @@ const ARTICLE_DIR = path.join(ROOT, "public", "article");
 // 編輯器能新增文章的分類（leetcode 有自己的流程，不放進來）
 export const EDITOR_CATEGORIES = CATEGORIES;
 
-const FIELD_ORDER = ["title", "date", "author", "tags", "country", "cities", "type", "image", "description", "readTime", "id"];
+const FIELD_ORDER = ["title", "date", "author", "tags", "country", "cities", "type", "image", "coverLayout", "coverImages", "description", "readTime", "id"];
 const QUOTED = new Set(["date", "description"]);
 
 export const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
