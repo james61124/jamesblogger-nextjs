@@ -8,12 +8,12 @@ cities: bratislava
 type: photos
 image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/bratislava-20250120/20250120-1213-6acf.webp
 coverLayout: feature-left
-coverImages: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/bratislava-20250120/20250120-1543-0849.webp,https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/bratislava-20250120/20250120-1353-ed70.webp
+coverImages: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/bratislava-20250120/20250120-1213-6acf.webp,https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/bratislava-20250120/20250120-1543-0849.webp,https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/bratislava-20250120/20250120-1353-ed70.webp
 readTime: 1
 id: 902634b7-885d-473f-b1df-306d64b0e550
 ---
 
-<div class="photo-essay">
+<div class="photo-essay" data-style="magazine">
 <div class="photo-section">雪中的舊城</div>
 <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/bratislava-20250120/20250120-1154-806d.webp" width="2250" height="3000" alt="聖米迦勒門" data-size="full" />
 <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/bratislava-20250120/20250120-1038-c91b.webp" width="2250" height="3000" alt="從人孔蓋探出頭" />

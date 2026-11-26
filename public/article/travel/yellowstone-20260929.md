@@ -8,12 +8,12 @@ cities: yellowstone,grand-teton
 type: photos
 image: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/yellowstone-20260929/20261002-1624-4cdd.webp
 coverLayout: feature-left
-coverImages: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/yellowstone-20260929/20261002-1339-d168.webp,https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/yellowstone-20260929/20261001-1207-3ef3.webp
+coverImages: https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/yellowstone-20260929/20261002-1624-4cdd.webp,https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/yellowstone-20260929/20261002-1339-d168.webp,https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/yellowstone-20260929/20261001-1207-3ef3.webp
 readTime: 1
 id: 4be182eb-3985-4489-a914-21cff9b450a6
 ---
 
-<div class="photo-essay">
+<div class="photo-essay" data-style="magazine">
 <div class="photo-section">黃石 · Hot Springs</div>
 <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/yellowstone-20260929/20260929-1734-6804.webp" width="2250" height="3000" alt="" />
 <img src="https://pub-503a3f28f35c423785d131f4a589a3f0.r2.dev/images/travel/yellowstone-20260929/20260930-1129-897b.webp" width="3000" height="2250" alt="石灰華梯田" />
