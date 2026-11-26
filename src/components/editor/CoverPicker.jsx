@@ -1,7 +1,7 @@
 "use client";
 
-// 封面設定：先選版型，再點預覽裡的格子、從下面的照片挑一張放進去。
-// 第一格存在 image，其他格存在 coverImages，版型存在 coverLayout。
+// 拼貼封面（旅遊頁時間軸上的卡片）：先選版型，再點預覽裡的格子、從下面的照片挑一張放進去。
+// 每一格依序存在 coverImages，版型存在 coverLayout。文章頁最上面的大圖是另外的 image，用 HeroPicker 選。
 
 import { useState } from "react";
 import CoverGrid from "@/components/CoverGrid";
@@ -29,8 +29,7 @@ export default function CoverPicker({ meta, images, isPhotos, onChange }) {
   const slots = Array.from({ length: slotCount(layout) }, (_, index) => cover.images[index] || "");
 
   const save = (nextLayout, nextSlots) => {
-    const [first, ...rest] = nextSlots;
-    onChange({ image: first || "", coverLayout: nextLayout, coverImages: rest.filter(Boolean).join(",") });
+    onChange({ coverLayout: nextLayout, coverImages: nextSlots.filter(Boolean).join(",") });
   };
 
   const chooseLayout = (next) => {
@@ -74,7 +73,7 @@ export default function CoverPicker({ meta, images, isPhotos, onChange }) {
       <div className="relative aspect-[4/3] max-w-sm">
         <CoverGrid layout={layout} images={slots} sizes="400px" activeSlot={activeSlot} onSlotClick={setActiveSlot} />
       </div>
-      {slots.length > 1 && <p className="text-xs text-[#9a8f80]">點上面的格子選要換哪一格（目前：第 {activeSlot + 1} 格），再點下面的照片。第一格也是文章頁的封面。</p>}
+      {slots.length > 1 && <p className="text-xs text-[#9a8f80]">點上面的格子選要換哪一格（目前：第 {activeSlot + 1} 格），再點下面的照片。</p>}
 
       <div className="flex gap-2 overflow-x-auto pb-1">
         {images.map((src) => {
@@ -95,6 +94,26 @@ export default function CoverPicker({ meta, images, isPhotos, onChange }) {
           );
         })}
       </div>
+    </div>
+  );
+}
+
+// 文章主圖：點進文章後最上面那張大圖，和拼貼封面分開
+export function HeroPicker({ image, images, onChange }) {
+  if (!images.length) return <p className="text-sm text-[#9a8f80]">上傳照片後可以在這裡選主圖</p>;
+  return (
+    <div className="flex gap-2 overflow-x-auto pb-1">
+      {images.map((src) => (
+        <button
+          key={src}
+          type="button"
+          onClick={() => onChange(src)}
+          className={["h-16 w-20 shrink-0 overflow-hidden", src === image ? "ring-2 ring-[#c4896b] ring-offset-2 ring-offset-[#f4efe6]" : "opacity-70 hover:opacity-100"].join(" ")}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={src} alt="" loading="lazy" className="h-full w-full object-cover" />
+        </button>
+      ))}
     </div>
   );
 }

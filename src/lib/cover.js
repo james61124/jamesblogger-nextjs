@@ -1,9 +1,9 @@
 // 文章卡片的封面版型。frontmatter 寫法：
 //
-// image: 第一格（大格）的照片，也是文章頁和列表的封面
 // coverLayout: feature-left
-// coverImages: 第二格網址,第三格網址
+// coverImages: 第一格網址,第二格網址,第三格網址
 //
+// 拼貼和文章頁最上面的大圖（image）分開設定；沒寫 coverImages 時第一格用 image。
 // 沒寫 coverLayout 時：照片集用 feature-left，一般文章用 single。
 
 export const COVER_LAYOUTS = {
@@ -25,7 +25,8 @@ const splitList = (value) => (value ? String(value).split(",").map((item) => ite
 export function resolveCover({ coverLayout, coverImages, image, photos = [], type }) {
   const fallback = type === "photos" && photos.length >= 3 ? "feature-left" : "single";
   let layout = COVER_LAYOUTS[coverLayout] ? coverLayout : fallback;
-  const chosen = [image || photos[0], ...splitList(coverImages)].filter(Boolean);
+  const listed = splitList(coverImages);
+  const chosen = listed.length ? listed : [image || photos[0]].filter(Boolean);
   const spare = photos.filter((src) => !chosen.includes(src));
   const images = [];
   for (let index = 0; index < slotCount(layout); index += 1) {

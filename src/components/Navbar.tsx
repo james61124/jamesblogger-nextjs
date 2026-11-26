@@ -491,7 +491,6 @@ export default function Navbar() {
                     className="flex items-center justify-between border-b border-black/[0.07] px-1 py-4 font-serif text-[1.65rem] text-[#29251f]"
                   >
                     <span>{link.label}</span>
-                    <span className="text-base text-[#8a7f70]">↗</span>
                   </Link>
                 );
               })}

@@ -80,12 +80,14 @@ async function convertVideo(buffer, name) {
     await run(
       "ffmpeg",
       ["-y", "-i", input, "-vf", scale, "-fpsmax", String(VIDEO_MAX_FPS), "-c:v", "libx264", "-crf", String(VIDEO_CRF),
-        "-preset", "medium", "-pix_fmt", "yuv420p", "-movflags", "+faststart", "-an", output],
+        "-preset", "medium", "-pix_fmt", "yuv420p", "-movflags", "+faststart", "-c:a", "aac", "-b:a", "128k", output],
       { maxBuffer: 1024 * 1024 * 64 }
     );
     const { stdout } = await run("ffprobe", ["-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0", output]);
     const [width, height] = stdout.trim().split(",").map(Number);
-    return { data: await readFile(output), width, height, ext: "mp4", contentType: "video/mp4", kind: "video" };
+    // 有聲音的影片在網站上會多一個開聲音的按鈕
+    const audio = (await run("ffprobe", ["-v", "error", "-select_streams", "a", "-show_entries", "stream=index", "-of", "csv=p=0", output])).stdout.trim() !== "";
+    return { data: await readFile(output), width, height, audio, ext: "mp4", contentType: "video/mp4", kind: "video" };
   });
 }
 
@@ -98,5 +100,5 @@ export async function uploadMedia({ buffer, name, lastModified, category, slug }
   const reused = await exists(key);
   if (!reused) await put(key, converted.data, converted.contentType);
 
-  return { url: publicUrl(key), key, width: converted.width, height: converted.height, kind: converted.kind, reused, size: converted.data.length };
+  return { url: publicUrl(key), key, width: converted.width, height: converted.height, kind: converted.kind, audio: Boolean(converted.audio), reused, size: converted.data.length };
 }

@@ -241,6 +241,56 @@
       },
       "lat": 43.79,
       "lon": -110.682
+    },
+    {
+      "slug": "las-vegas",
+      "country": "united-states",
+      "name": {
+        "zh": "拉斯維加斯",
+        "en": "Las Vegas"
+      },
+      "lat": 36.17,
+      "lon": -115.14
+    },
+    {
+      "slug": "page",
+      "country": "united-states",
+      "name": {
+        "zh": "佩吉",
+        "en": "Page"
+      },
+      "lat": 36.915,
+      "lon": -111.456
+    },
+    {
+      "slug": "monument-valley",
+      "country": "united-states",
+      "name": {
+        "zh": "紀念碑谷",
+        "en": "Monument Valley"
+      },
+      "lat": 36.998,
+      "lon": -110.098
+    },
+    {
+      "slug": "san-deigo",
+      "country": "united-states",
+      "name": {
+        "zh": "聖地牙哥",
+        "en": "San Diego"
+      },
+      "lat": 32.861,
+      "lon": -117.142
+    },
+    {
+      "slug": "orlando",
+      "country": "united-states",
+      "name": {
+        "zh": "奧蘭多",
+        "en": "Orlando"
+      },
+      "lat": 28.384,
+      "lon": -81.555
     }
   ]
 }

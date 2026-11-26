@@ -60,12 +60,18 @@ function ContinentMap({ continent, active, orderedCities, onSelect, onOverview, 
   const countries = continent.chapters;
   const byId = useMemo(() => new Map(countries.map((c) => [c.id, c])), [countries]);
 
+  // 國界路徑很多，重新投影很花時間：只照寬度和看過最高的高度投影一次，
+  // 手機版地圖縮矮時只改外層的縮放位移，不重算路徑
+  const tallest = useRef(0);
+  tallest.current = Math.max(tallest.current, size.height);
+  const geomHeight = tallest.current;
+
   const map = useMemo(() => {
-    if (!geo || !size.width || !size.height) return null;
+    if (!geo || !size.width || !geomHeight) return null;
     const { d3, features } = geo;
     const projection = d3
       .geoMercator()
-      .fitExtent([[24, 24], [size.width - 24, size.height - 24]], extentFeature(continent.extent));
+      .fitExtent([[24, 24], [size.width - 24, geomHeight - 24]], extentFeature(continent.extent));
     const pathOf = d3.geoPath(projection);
     const maxPosts = Math.max(1, ...countries.map((c) => c.postCount));
     const step = Math.min(160, 900 / Math.max(1, countries.length));
@@ -83,14 +89,18 @@ function ContinentMap({ continent, active, orderedCities, onSelect, onOverview, 
       features.filter((f) => byId.has(f.id)).map((f) => [byId.get(f.id).slug, pathOf.bounds(mainland(d3, f))])
     );
     return { projection, shapes, mainBounds };
-  }, [geo, size.width, size.height, continent.extent, countries, byId]);
+  }, [geo, size.width, geomHeight, continent.extent, countries, byId]);
 
   // 沒有章節在畫面上時看整個洲，有的話飛到那個國家
   const view = useMemo(() => {
     const bounds = active && map?.mainBounds.get(active.slug);
-    if (!bounds) return { k: 1, x: 0, y: 0 };
+    if (!bounds) {
+      // 地圖比投影時矮：整個洲等比縮小、水平置中
+      const k = geomHeight ? Math.min(1, size.height / geomHeight) : 1;
+      return { k, x: (size.width * (1 - k)) / 2, y: 0 };
+    }
     return fitTransform(bounds, [[MAP_PAD, MAP_PAD], [size.width - MAP_PAD, size.height - MAP_PAD]], 6);
-  }, [active, map, size]);
+  }, [active, map, size, geomHeight]);
 
   const markers = useMemo(() => {
     if (!map || !active) return [];
@@ -341,10 +351,11 @@ function Chapter({ country, number, cityNumbers, eager, highlightedPath }) {
 // 現在每個標籤試右、左、上、下幾個位置，挑第一個不超出地圖、不壓到其他圖釘和標籤的。
 
 const LABEL_SIZE = 13;
+const MAP_COMPACT_VH = 0.2; // 手機版捲動後地圖的高度，和地圖的 h-[20vh] 一致
 const PIN_R = 10;
 const PIN_GAP = 22; // 兩根圖釘中心至少隔這麼遠，不然推開一點
 
-const labelText = (city) => `${city.name.zh} ${city.name.en}`;
+const labelText = (city) => city.name.zh;
 
 // 中文字大約一個字高寬，英文大約一半
 const labelWidth = (text) => [...text].reduce((sum, ch) => sum + (/[\u2E80-\uFFFF]/.test(ch) ? LABEL_SIZE : LABEL_SIZE * 0.55), 0);
@@ -463,7 +474,7 @@ export default function ContinentStory({ continent, others }) {
         syncActive();
       },
       // 手機版上方被地圖佔掉，判斷線往下移到可讀區域的中間
-      { rootMargin: window.matchMedia("(min-width: 1024px)").matches ? "-45% 0px -54% 0px" : "-68% 0px -31% 0px" }
+      { rootMargin: window.matchMedia("(min-width: 1024px)").matches ? "-45% 0px -54% 0px" : "-55% 0px -44% 0px" }
     );
     sections.forEach((section) => observer.observe(section));
     return () => observer.disconnect();
@@ -485,6 +496,13 @@ export default function ContinentStory({ continent, others }) {
   const mapBox = useRef(null);
   const [highlightedPath, setHighlightedPath] = useState(null);
 
+  // 手機版：一進來地圖完整顯示，往下捲之後縮成一條，讓文章有空間；按按鈕可以再展開
+  const [mapExpanded, setMapExpanded] = useState(false);
+  useEffect(() => {
+    if (!scrolled) setMapExpanded(false);
+  }, [scrolled]);
+  const mapCompact = scrolled && !mapExpanded;
+
   const lockTo = useCallback((slug) => {
     lock.current = { slug };
     setActiveSlug(slug);
@@ -499,7 +517,8 @@ export default function ContinentStory({ continent, others }) {
   const scrollToElement = useCallback((el) => {
     if (!el) return;
     const wide = window.matchMedia("(min-width: 1024px)").matches;
-    const offset = wide ? NAV_H + 32 : (mapBox.current?.getBoundingClientRect().bottom ?? NAV_H) + 24;
+    // 捲下去之後地圖會縮小，用縮小後的高度算
+    const offset = wide ? NAV_H + 32 : NAV_H + window.innerHeight * MAP_COMPACT_VH + 24;
     window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - offset, behavior: "smooth" });
   }, []);
 
@@ -530,16 +549,28 @@ export default function ContinentStory({ continent, others }) {
         {/* 地圖：寬螢幕固定在左邊，手機固定在上方 */}
         <div
           ref={mapBox}
-          className="sticky z-10 h-[36vh] border-b border-[#786f63]/15 bg-[#f4efe6] lg:h-[calc(100dvh-72px)] lg:border-b-0 lg:border-r"
+          className={[
+            "sticky z-10 border-b border-[#786f63]/15 bg-[#f4efe6] lg:h-[calc(100dvh-72px)] lg:border-b-0 lg:border-r",
+            mapCompact ? "h-[20vh]" : "h-[36vh]",
+          ].join(" ")}
           style={{ top: NAV_H }}
         >
           <ContinentMap continent={continent} active={mapActive} orderedCities={mapCities} onSelect={goToChapter} onOverview={goToOverview} onCity={goToCity} />
+          {scrolled && (
+            <button
+              type="button"
+              onClick={() => setMapExpanded((value) => !value)}
+              className="absolute bottom-2 left-3 rounded-full border border-[#786f63]/20 bg-[#f4efe6]/90 px-3 py-1 text-[11px] tracking-[0.12em] text-[#6b645a] backdrop-blur lg:hidden"
+            >
+              {mapExpanded ? "收起地圖 ▴" : "展開地圖 ▾"}
+            </button>
+          )}
         </div>
 
         <div className="px-5 pb-28 sm:px-10 lg:px-14 xl:px-20">
           {/* 洲的標題壓成一小條，第一章在第一個畫面就看得到 */}
           <motion.header
-            className="border-b border-[#786f63]/15 pb-7 pt-10 sm:pt-12"
+            className="border-b border-[#786f63]/15 pb-5 pt-6 sm:pb-7 sm:pt-12"
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, ease: EASE_ARRAY }}

@@ -9,11 +9,13 @@
 // - 鍵盤：← → 移動選取的照片、Delete 刪除、⌘Z 復原
 //
 // 一開始是自動排版；換排、合併這類調整會自動切成手動排版，之後排法就完全照你排的。
+// 勾了「雜誌排版」就改用 MagazineBoard 照雜誌排版的樣子畫。
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { layoutRows, rowItemStyle } from "@/lib/photoLayout";
 import { api } from "./api";
 import { newBreakItem, newPhotoItem, newSectionItem, newTextItem } from "./essay";
+import MagazineBoard from "./MagazineBoard";
 
 const SIZE_OPTIONS = [
   { value: "auto", label: "自動", title: "跟其他照片並排" },
@@ -54,6 +56,21 @@ function tidy(items) {
   }
   while (result[result.length - 1]?.type === "break") result.pop();
   return result;
+}
+
+// 設成這段的主圖（滿版）；同一段原本的滿版照片改回一般，主圖才會是這張
+function applyHero(list, id, on = true) {
+  const index = list.findIndex((item) => item.id === id);
+  if (index < 0) return list;
+  let start = index;
+  while (start > 0 && list[start - 1].type !== "section") start -= 1;
+  let end = index;
+  while (end < list.length - 1 && list[end + 1].type !== "section") end += 1;
+  return list.map((item, position) => {
+    if (item.id === id) return { ...item, size: on ? "full" : "auto" };
+    if (on && position >= start && position <= end && item.type === "photo" && item.size === "full") return { ...item, size: "auto" };
+    return item;
+  });
 }
 
 // 把目前自動算出來的排法寫成明確的換排，切到手動排版時畫面不會跳
@@ -172,6 +189,7 @@ export default function PhotoBoard({ essay, onChange, onAddFiles, category, slug
   const [drop, setDrop] = useState(null); // { id, side }
   const [fileOver, setFileOver] = useState(false);
   const [library, setLibrary] = useState([]);
+  const [device, setDevice] = useState("desktop"); // 雜誌排版預覽：desktop 三欄、mobile 兩欄
   const history = useRef([]);
 
   const rows = useMemo(() => layoutRows(items, { manual }), [items, manual]);
@@ -298,7 +316,7 @@ export default function PhotoBoard({ essay, onChange, onAddFiles, category, slug
 
   const hasFiles = (event) => [...(event.dataTransfer?.types || [])].includes("Files");
 
-  const dragProps = (item) => ({
+  const dragProps = (item, axis = "x") => ({
     draggable: true,
     onDragStart: (event) => {
       event.dataTransfer.effectAllowed = "move";
@@ -309,7 +327,7 @@ export default function PhotoBoard({ essay, onChange, onAddFiles, category, slug
       if (hasFiles(event)) return;
       event.preventDefault();
       const box = event.currentTarget.getBoundingClientRect();
-      const side = event.clientX - box.left < box.width / 2 ? "before" : "after";
+      const side = (axis === "y" ? event.clientY - box.top < box.height / 2 : event.clientX - box.left < box.width / 2) ? "before" : "after";
       if (drop?.id !== item.id || drop?.side !== side) setDrop({ id: item.id, side });
     },
     onDragLeave: () => setDrop((current) => (current?.id === item.id ? null : current)),
@@ -334,6 +352,21 @@ export default function PhotoBoard({ essay, onChange, onAddFiles, category, slug
     },
   });
 
+  // 拖到主圖上：把拖過來的照片放到主圖前面，並設成主圖
+  const dropOnHero = async (hero, event) => {
+    const libraryUrl = event.dataTransfer.getData("application/x-library");
+    if (libraryUrl) {
+      const file = library.find((entry) => entry.url === libraryUrl);
+      if (!file) return;
+      const photo = newPhotoItem({ url: file.url, kind: file.kind, ...(await measure(file.url, file.kind)) });
+      setItems(applyHero(moveTo([...items, photo], photo.id, hero.id, "before"), photo.id));
+    } else if (dragId) {
+      setItems(applyHero(moveTo(items, dragId, hero.id, "before"), dragId));
+    }
+    setDragId(null);
+    setDrop(null);
+  };
+
   let previousRow = null;
 
   return (
@@ -354,6 +387,7 @@ export default function PhotoBoard({ essay, onChange, onAddFiles, category, slug
       className={["border-2 border-dashed p-3 transition-colors", fileOver ? "border-[#456b9b] bg-[#456b9b]/5" : "border-transparent"].join(" ")}
     >
       <div className="sticky top-[72px] z-10 -mx-3 mb-4 flex flex-wrap items-center gap-3 border-b border-[#786f63]/15 bg-[#f4efe6]/95 px-3 py-2 backdrop-blur" onClick={(event) => event.stopPropagation()}>
+        {!essay.magazine && (
         <div className="flex border border-[#786f63]/30">
           {[
             [false, "自動排版"],
@@ -373,7 +407,29 @@ export default function PhotoBoard({ essay, onChange, onAddFiles, category, slug
             </button>
           ))}
         </div>
-        <span className="text-[11px] text-[#9a8f80]">{manual ? "排法完全照你排的" : "照片順序和大小由你決定，換排自動算"}</span>
+        )}
+        {!essay.magazine && <span className="text-[11px] text-[#9a8f80]">{manual ? "排法完全照你排的" : "照片順序和大小由你決定，換排自動算"}</span>}
+        <label className="flex items-center gap-1.5 text-[12px] text-[#504a43]">
+          <input type="checkbox" checked={Boolean(essay.magazine)} onChange={(event) => onChange({ magazine: event.target.checked })} />
+          雜誌排版
+        </label>
+        {essay.magazine && (
+          <div className="flex border border-[#786f63]/30">
+            {[
+              ["desktop", "電腦"],
+              ["mobile", "手機"],
+            ].map(([value, label]) => (
+              <button
+                key={value}
+                type="button"
+                onClick={() => setDevice(value)}
+                className={[chip, "px-3 py-1.5", device === value ? "bg-[#29251f] text-[#f4efe6]" : "bg-white/70 text-[#504a43] hover:bg-white"].join(" ")}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        )}
         <button type="button" onClick={undo} disabled={!history.current.length} className="ml-auto text-[11px] text-[#456b9b] disabled:opacity-30">
           ↶ 復原
         </button>
@@ -381,6 +437,26 @@ export default function PhotoBoard({ essay, onChange, onAddFiles, category, slug
 
       {items.length === 0 ? (
         <p className="py-16 text-center text-sm text-[#9a8f80]">把照片或影片拖進來，或按上方的「加入照片」</p>
+      ) : essay.magazine ? (
+        <div className={["mx-auto", device === "mobile" ? "max-w-[390px]" : "max-w-[760px]"].join(" ")}>
+          <MagazineBoard
+            items={items}
+            columns={device === "mobile" ? 2 : 3}
+            selectedId={selectedId}
+            onSelect={setSelectedId}
+            dragProps={dragProps}
+            drop={drop}
+            dragId={dragId}
+            onChange={replaceItem}
+            onAction={action}
+            onSetHero={(item, on) => setItems(applyHero(items, item.id, on))}
+            onDropOnHero={dropOnHero}
+            insertBefore={insertBefore}
+            newSectionItem={newSectionItem}
+            newTextItem={newTextItem}
+            remove={remove}
+          />
+        </div>
       ) : (
         <div className="mx-auto max-w-[760px]">
           {rows.map((row, index) => {

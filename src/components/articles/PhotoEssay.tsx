@@ -13,7 +13,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import { layoutRows, rowItemStyle } from "@/lib/photoLayout";
+import { heroRatio, layoutRows, magazineChapters, masonryColumns, rowItemStyle } from "@/lib/photoLayout";
 
 type HastNode = {
   type?: string;
@@ -32,6 +32,7 @@ type Photo = {
   height: number;
   caption: string;
   size: "auto" | "medium" | "full";
+  audio: boolean;
 };
 
 type Item = Photo | { type: "section"; title: string } | { type: "text"; text: string } | { type: "break" };
@@ -70,6 +71,7 @@ export function parseEssay(node: HastNode | undefined): Item[] {
         ratio: width / height,
         caption: prop(current, "alt") || prop(current, "dataCaption"),
         size: SIZES.has(size) ? (size as Photo["size"]) : feature !== "" && feature !== "false" ? "full" : "auto",
+        audio: prop(current, "dataAudio") === "true",
       });
       return;
     }
@@ -92,8 +94,27 @@ export function parseEssay(node: HastNode | undefined): Item[] {
   return items;
 }
 
+// 瀏覽器只允許靜音自動播放，有聲音的影片右下角多一個按鈕讓讀者自己開聲音
+function SoundVideo({ src }: { src: string }) {
+  const [muted, setMuted] = useState(true);
+  return (
+    <div className="relative h-full w-full">
+      <video src={src} className="block h-full w-full object-cover" autoPlay muted={muted} loop playsInline />
+      <button
+        type="button"
+        onClick={() => setMuted((value) => !value)}
+        aria-label={muted ? "開啟聲音" : "關閉聲音"}
+        className="absolute bottom-3 right-3 rounded-full bg-[#1d1a16]/60 px-3 py-1.5 text-[12px] tracking-[0.08em] text-[#f4efe6] backdrop-blur transition-colors hover:bg-[#1d1a16]/80"
+      >
+        {muted ? "🔇 開聲音" : "🔊 聲音開啟"}
+      </button>
+    </div>
+  );
+}
+
 function Media({ photo, sizes, onOpen }: { photo: Photo; sizes: string; onOpen: () => void }) {
   if (photo.kind === "video") {
+    if (photo.audio) return <SoundVideo src={photo.src} />;
     return <video src={photo.src} className="block h-full w-full object-cover" autoPlay muted loop playsInline />;
   }
   return (
@@ -174,14 +195,130 @@ function Lightbox({ photos, index, onClose, onMove }: { photos: Photo[]; index: 
   );
 }
 
+// 雜誌排版（data-style="magazine"）：每段一張主圖、標題壓在主圖上，其他照片排成瀑布流
+type Chapter = {
+  title: string;
+  hero: Photo | null;
+  blocks: ({ type: "grid"; photos: Photo[] } | { type: "text"; item: { text: string } })[];
+};
+
+function MasonryPhoto({ photo, onOpen }: { photo: Photo; onOpen: (photo: Photo) => void }) {
+  return (
+    <figure className="group/fig m-0">
+      <div className="relative overflow-hidden rounded-[3px] bg-[#ddd5c8]" style={{ aspectRatio: String(photo.ratio) }}>
+        <Media photo={photo} sizes="(min-width: 820px) 260px, 50vw" onOpen={() => onOpen(photo)} />
+        {photo.caption && (
+          // 有滑鼠的裝置：滑上去才浮出來
+          <p className="pointer-events-none absolute inset-x-0 bottom-0 hidden bg-gradient-to-t from-black/50 to-transparent px-3 pb-2 pt-8 text-[12px] text-white opacity-0 transition-opacity duration-300 group-hover/fig:opacity-100 [@media(hover:hover)]:block">
+            {photo.caption}
+          </p>
+        )}
+      </div>
+      {photo.caption && (
+        // 手機沒有 hover，圖說直接放在照片下面
+        <figcaption className="mt-1 text-[11px] leading-4 text-[#817769] [@media(hover:hover)]:hidden">{photo.caption}</figcaption>
+      )}
+    </figure>
+  );
+}
+
+function Masonry({ photos, onOpen }: { photos: Photo[]; onOpen: (photo: Photo) => void }) {
+  if (photos.length === 1) {
+    return (
+      <div className="mx-auto mt-2 max-w-md sm:mt-3">
+        <MasonryPhoto photo={photos[0]} onOpen={onOpen} />
+      </div>
+    );
+  }
+  // 手機兩欄、電腦三欄，兩種各排一份，用 CSS 切換
+  const layouts: [number, string][] = [
+    [2, "flex sm:hidden"],
+    [Math.min(3, photos.length), "hidden sm:flex"],
+  ];
+  return (
+    <>
+      {layouts.map(([count, visibility]) => (
+        <div key={count + visibility} className={["mt-2 items-start gap-2 sm:mt-3 sm:gap-3", visibility].join(" ")}>
+          {(masonryColumns(photos, count) as Photo[][]).map((column, index) => (
+            <div key={index} className="flex min-w-0 flex-1 flex-col gap-2 sm:gap-3">
+              {column.map((photo) => (
+                <MasonryPhoto key={photo.src} photo={photo} onOpen={onOpen} />
+              ))}
+            </div>
+          ))}
+        </div>
+      ))}
+    </>
+  );
+}
+
+function MagazineEssay({ items, onOpen }: { items: Item[]; onOpen: (photo: Photo) => void }) {
+  const chapters = useMemo(() => magazineChapters(items) as Chapter[], [items]);
+  let number = 0;
+  return (
+    <>
+      {chapters.map((chapter, index) => {
+        if (chapter.title) number += 1;
+        const { hero } = chapter;
+        return (
+          <section key={index} className={index === 0 ? "" : "mt-14 sm:mt-20"}>
+            {hero ? (
+              <figure className="relative m-0 overflow-hidden rounded-[3px] bg-[#ddd5c8]" style={{ aspectRatio: String(heroRatio(hero)) }}>
+                <Media photo={hero} sizes="(min-width: 820px) 760px, 100vw" onOpen={() => onOpen(hero)} />
+                {chapter.title && (
+                  <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/55 via-black/20 to-transparent px-5 pb-5 pt-20 text-white sm:px-7 sm:pb-7">
+                    <p className="text-[11px] font-semibold tabular-nums tracking-[0.3em] text-white/75">{String(number).padStart(2, "0")}</p>
+                    <h3 className="mt-1 font-serif text-[26px] leading-tight sm:text-[34px]">{chapter.title}</h3>
+                  </figcaption>
+                )}
+              </figure>
+            ) : (
+              chapter.title && (
+                <header className="mb-4">
+                  <p className="text-[11px] font-semibold tabular-nums tracking-[0.3em] text-[#a0806a]">{String(number).padStart(2, "0")}</p>
+                  <h3 className="mt-1 font-serif text-[26px] leading-tight text-[#29251f] sm:text-[34px]">{chapter.title}</h3>
+                </header>
+              )
+            )}
+            {chapter.blocks.map((block, blockIndex) =>
+              block.type === "text" ? (
+                block.item.text && (
+                  <p key={blockIndex} className="mx-auto my-10 max-w-[34rem] whitespace-pre-line font-serif text-[17px] leading-8 text-[#3f3a33]">
+                    {block.item.text}
+                  </p>
+                )
+              ) : (
+                <Masonry key={blockIndex} photos={block.photos} onOpen={onOpen} />
+              ),
+            )}
+          </section>
+        );
+      })}
+    </>
+  );
+}
+
 export default function PhotoEssay({ node }: { node: unknown }) {
   const items = useMemo(() => parseEssay(node as HastNode), [node]);
   const manual = prop(node as HastNode, "dataLayout") === "manual";
+  const magazine = prop(node as HastNode, "dataStyle") === "magazine";
   const rows = useMemo(() => layoutRows(items, { manual }) as Row[], [items, manual]);
   const images = useMemo(() => items.filter((item): item is Photo => item.type === "photo" && item.kind === "image"), [items]);
   const [open, setOpen] = useState<number | null>(null);
   const move = useCallback((step: number) => setOpen((i) => (i === null ? i : (i + step + images.length) % images.length)), [images.length]);
   const close = useCallback(() => setOpen(null), []);
+  const lightbox = (
+    <AnimatePresence>{open !== null && images[open] && <Lightbox photos={images} index={open} onClose={close} onMove={move} />}</AnimatePresence>
+  );
+
+  if (magazine) {
+    return (
+      <div className="my-12">
+        <MagazineEssay items={items} onOpen={(photo) => setOpen(images.indexOf(photo))} />
+        {lightbox}
+      </div>
+    );
+  }
 
   let sectionNumber = 0;
 
@@ -232,7 +369,7 @@ export default function PhotoEssay({ node }: { node: unknown }) {
         );
       })}
 
-      <AnimatePresence>{open !== null && images[open] && <Lightbox photos={images} index={open} onClose={close} onMove={move} />}</AnimatePresence>
+      {lightbox}
     </div>
   );
 }

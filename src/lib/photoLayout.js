@@ -74,3 +74,48 @@ export function rowItemStyle(row, item) {
   if (single && item.ratio < 1) return { width: `min(100%, calc(80vh * ${item.ratio}))` };
   return { flex: `${item.ratio} 1 0%` };
 }
+
+// 雜誌排版（data-style="magazine"）：每個分段一章，章的主圖是第一張滿版的照片，
+// 沒有的話用第一張橫的照片；其他照片依序排成瀑布流，遇到文字段落就斷開。
+// 回傳 { section, title, hero, blocks }，blocks 是 { type: "grid", photos } 或 { type: "text", item }
+export function magazineChapters(items) {
+  const groups = [{ section: null, items: [] }];
+  for (const item of items) {
+    if (item.type === "section") groups.push({ section: item, items: [] });
+    else if (item.type !== "break") groups[groups.length - 1].items.push(item);
+  }
+  return groups
+    .filter((group) => group.section || group.items.length)
+    .map((group) => {
+      const photos = group.items.filter((item) => item.type === "photo");
+      const images = photos.filter((photo) => photo.kind === "image");
+      const hero = photos.find((photo) => photo.size === "full") || images.find((photo) => photo.ratio >= 1) || images[0] || null;
+      const blocks = [];
+      for (const item of group.items) {
+        if (item === hero) continue;
+        if (item.type === "text") {
+          blocks.push({ type: "text", item });
+          continue;
+        }
+        const last = blocks[blocks.length - 1];
+        if (last?.type === "grid") last.photos.push(item);
+        else blocks.push({ type: "grid", photos: [item] });
+      }
+      return { section: group.section, title: group.section?.title || "", hero, blocks };
+    });
+}
+
+// 瀑布流：照順序把每張照片放進目前最矮的那一欄，欄跟欄的高度才會錯開
+export function masonryColumns(photos, count) {
+  const columns = Array.from({ length: count }, () => []);
+  const heights = new Array(count).fill(0);
+  for (const photo of photos) {
+    const shortest = heights.indexOf(Math.min(...heights));
+    columns[shortest].push(photo);
+    heights[shortest] += 1 / photo.ratio;
+  }
+  return columns;
+}
+
+// 主圖太直會佔滿整個畫面，最多裁到 4:5
+export const heroRatio = (photo) => Math.max(photo.ratio, 0.8);

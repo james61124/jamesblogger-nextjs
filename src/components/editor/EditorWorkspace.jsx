@@ -9,7 +9,7 @@ import MarkdownRenderer from "@/components/articles/MarkdownRenderer";
 import { api, isMediaFile, uploadFiles } from "./api";
 import { essayBlock, imagesIn, newPhotoItem, parseEssay, photoLine, serializeEssay } from "./essay";
 import PlaceFields from "./PlaceFields";
-import CoverPicker from "./CoverPicker";
+import CoverPicker, { HeroPicker } from "./CoverPicker";
 import PhotoBoard from "./PhotoBoard";
 import { Field, inputClass, UploadProgress } from "./ui";
 
@@ -62,7 +62,7 @@ export default function EditorWorkspace({ initial, countries, cities }) {
 
   const updateEssay = useCallback((next) => {
     setEssay(next);
-    setBody(serializeEssay(next.intro, next.items, next.manual));
+    setBody(serializeEssay(next.intro, next.items, next.manual, next.magazine));
   }, []);
 
   const switchType = (type) => {
@@ -238,7 +238,11 @@ export default function EditorWorkspace({ initial, countries, cities }) {
             <textarea value={meta.description || ""} onChange={(e) => setField("description", e.target.value)} rows={isPhotos ? 2 : 3} className={inputClass} />
           </Field>
 
-          <Field label="封面">
+          <Field label="文章主圖" hint="點進文章後最上面那張大圖">
+            <HeroPicker image={meta.image} images={images} onChange={(src) => setField("image", src)} />
+          </Field>
+
+          <Field label="拼貼封面" hint="旅遊頁時間軸上的卡片">
             <CoverPicker meta={meta} images={images} isPhotos={isPhotos} onChange={(changes) => setMeta((current) => ({ ...current, ...changes }))} />
           </Field>
 

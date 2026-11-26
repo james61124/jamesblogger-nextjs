@@ -1,6 +1,6 @@
 // 照片集在 markdown 裡的格式：
 //
-// <div class="photo-essay" data-layout="manual">
+// <div class="photo-essay" data-layout="manual">        ← 加 data-style="magazine" 是雜誌排版
 // <img src="…" width="3000" height="2000" alt="圖說" data-size="full" />
 // <div class="photo-break"></div>
 // <div class="photo-section">少女峰</div>
@@ -43,6 +43,7 @@ export function parseEssay(body) {
         ratio: width && height ? width / height : 1.5,
         caption: attr(trimmed, "alt"),
         size: SIZES.has(size) ? size : attr(trimmed, "data-feature") === "true" ? "full" : "auto",
+        audio: attr(trimmed, "data-audio") === "true",
       });
     } else if (trimmed.startsWith('<div class="photo-section">')) {
       items.push({ id: id(), type: "section", title: trimmed.replace(/<[^>]+>/g, "").trim() });
@@ -52,28 +53,29 @@ export function parseEssay(body) {
       items.push({ id: id(), type: "break" });
     }
   }
-  return { intro, items, manual: /data-layout="manual"/.test(match?.[1] || "") };
+  const attrs = match?.[1] || "";
+  return { intro, items, manual: /data-layout="manual"/.test(attrs), magazine: /data-style="magazine"/.test(attrs) };
 }
 
-export function photoLine({ kind = "image", src, width, height, caption = "", size = "auto" }) {
+export function photoLine({ kind = "image", src, width, height, caption = "", size = "auto", audio = false }) {
   const dims = width && height ? ` width="${width}" height="${height}"` : "";
   const sizeAttr = SIZES.has(size) ? ` data-size="${size}"` : "";
-  if (kind === "video") return `<video src="${escapeAttr(src)}"${dims}${sizeAttr}></video>`;
+  if (kind === "video") return `<video src="${escapeAttr(src)}"${dims}${sizeAttr}${audio ? ' data-audio="true"' : ""}></video>`;
   return `<img src="${escapeAttr(src)}"${dims} alt="${escapeAttr(caption)}"${sizeAttr} />`;
 }
 
-export function essayBlock(items, manual = false) {
+export function essayBlock(items, manual = false, magazine = false) {
   const lines = items.map((item) => {
     if (item.type === "section") return `<div class="photo-section">${escapeAttr(item.title).replace(/&quot;/g, '"')}</div>`;
     if (item.type === "break") return '<div class="photo-break"></div>';
     if (item.type === "text") return `<div class="photo-text">${encodeText(item.text)}</div>`;
     return photoLine(item);
   });
-  return `<div class="photo-essay"${manual ? ' data-layout="manual"' : ""}>\n${lines.join("\n")}\n</div>`;
+  return `<div class="photo-essay"${manual ? ' data-layout="manual"' : ""}${magazine ? ' data-style="magazine"' : ""}>\n${lines.join("\n")}\n</div>`;
 }
 
-export function serializeEssay(intro, items, manual = false) {
-  return [intro.trim(), items.length ? essayBlock(items, manual) : ""].filter(Boolean).join("\n\n");
+export function serializeEssay(intro, items, manual = false, magazine = false) {
+  return [intro.trim(), items.length ? essayBlock(items, manual, magazine) : ""].filter(Boolean).join("\n\n");
 }
 
 export const newPhotoItem = (upload) => ({
@@ -86,6 +88,7 @@ export const newPhotoItem = (upload) => ({
   ratio: upload.width && upload.height ? upload.width / upload.height : 1.5,
   caption: "",
   size: "auto",
+  audio: Boolean(upload.audio),
 });
 
 export const newSectionItem = (title = "") => ({ id: id(), type: "section", title });
