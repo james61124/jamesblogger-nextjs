@@ -311,6 +311,16 @@
       },
       "lat": 30.293,
       "lon": -97.715
+    },
+    {
+      "slug": "houston",
+      "country": "united-states",
+      "name": {
+        "zh": "休士頓",
+        "en": "Houston"
+      },
+      "lat": 29.558,
+      "lon": -95.089
     }
   ]
 }

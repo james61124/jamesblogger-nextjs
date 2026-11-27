@@ -238,7 +238,7 @@ export default function EditorWorkspace({ initial, countries, cities }) {
             <textarea value={meta.description || ""} onChange={(e) => setField("description", e.target.value)} rows={isPhotos ? 2 : 3} className={inputClass} />
           </Field>
 
-          <Field label="文章主圖" hint="點進文章後最上面那張大圖">
+          <Field label="文章主圖" hint="一般文章：點進去最上面那張大圖。照片集：不顯示在文章裡，只當列表縮圖">
             <HeroPicker image={meta.image} images={images} onChange={(src) => setField("image", src)} />
           </Field>
 

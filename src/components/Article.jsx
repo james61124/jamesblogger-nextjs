@@ -274,7 +274,8 @@ export default function Article({ category, fileName, json_path, title }) {
           <div className="mx-auto mt-7 h-px w-20 bg-[#7a7062]/25" />
         </header>
 
-        {meta.image && (
+        {/* 照片集內文就是照片，最上面不再放大圖，避免跟照片集重複；image 仍拿來當列表縮圖 */}
+        {meta.image && !isPhotos && (
           <div className="mx-auto mt-8 max-w-6xl">
             <Image
               src={meta.image}
