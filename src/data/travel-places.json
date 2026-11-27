@@ -273,7 +273,7 @@
       "lon": -110.098
     },
     {
-      "slug": "san-deigo",
+      "slug": "san-diego",
       "country": "united-states",
       "name": {
         "zh": "聖地牙哥",
@@ -291,6 +291,26 @@
       },
       "lat": 28.384,
       "lon": -81.555
+    },
+    {
+      "slug": "seattle",
+      "country": "united-states",
+      "name": {
+        "zh": "西雅圖",
+        "en": "Seattle"
+      },
+      "lat": 47.608,
+      "lon": -122.32
+    },
+    {
+      "slug": "austin",
+      "country": "united-states",
+      "name": {
+        "zh": "奧斯丁",
+        "en": "Austin"
+      },
+      "lat": 30.293,
+      "lon": -97.715
     }
   ]
 }
